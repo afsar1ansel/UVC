@@ -61,12 +61,15 @@
   background: url("../img/Group.png") no-repeat , #001F3F;
   background-blend-mode: overlay;
   display: flex;
+  position: sticky;
+  top: 0;
   justify-content: space-around;
   align-items: center;
   padding: 1rem;
   background-size: cover;
   overflow: hidden;
-  position: relative;
+  /* position: relative; */
+  z-index: 999;
 }
 
 .logoSection {
