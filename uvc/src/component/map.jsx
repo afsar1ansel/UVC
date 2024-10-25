@@ -1,7 +1,7 @@
 import { Box, Button, Flex, Heading, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import map from "@/img/map.png";
-import pins from "@/img/pins.png";
+import pins from "@/img/Pins.png";
 import style from "@/styles/map.module.css";
 export default function Map() {
   return (

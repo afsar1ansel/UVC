@@ -1,7 +1,7 @@
 import style from "../styles/hero.module.css";
 import man from "../img/man.png";
 import dir from "../img/dir.png";
-import vector from "../img/vector.png";
+import vector from "../img/Vector.png";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 

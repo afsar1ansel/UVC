@@ -8,7 +8,7 @@ import hand1 from "@/img/hand1.png";
 import man1 from "@/img/man1.png";
 import frame from "@/img/frame.png"
 import founder from "@/img/founder.png"
-import path from "@/img/path.png"
+import path from "@/img/Path.png"
 
 
 export default function Designing() {
