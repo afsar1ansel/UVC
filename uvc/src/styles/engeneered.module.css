@@ -1,0 +1,26 @@
+.span{
+    color: #0DA574;
+
+}
+
+.button1{
+    background-color: #FFC631;
+    border: #FFC631 2px solid;
+    color: black;
+    border-radius: 0px;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 20px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.button2{
+    border: #FFC631 2px solid;
+    color: #FFC631;
+    border-radius: 0px;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 20px;
+    height: auto;
+}
