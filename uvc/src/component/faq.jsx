@@ -40,25 +40,12 @@ const items = [
 
 export default function Faq(){
 
-  const [value, setValue] = useState(["second-item"]);
-     const [isOpen, setIsOpen] = useState({
-       question1: false,
-       question2: false,
-       question3: false,
-     });
-  
+ const [value, setValue] = useState([""]);
 
-     const toggleAccordion = (question) => {
-       for (let i in isOpen) {
-         if (i !== question) {
-           isOpen[i] = false;
-         }
-       }
-       setIsOpen({
-         ...isOpen,
-         [question]: !isOpen[question],
-       });
-     };
+function set(item) {
+  setValue(item);
+  console.log({value,item});
+}
 
     return (
       <Flex
@@ -126,51 +113,42 @@ export default function Faq(){
             </Box>
           </Flex>
           <Box width={"50%"}>
-            <AccordionRoot collapsible defaultValue={["b"]}>
-              <SimpleGrid spacing={6} gap={5} columns={{ sm: 1, md: 1, lg: 1 }}>
-                {items.map((item) => (
-                  <Box
-                    key={item.value}
-                    border={isOpen[item.value] ? "1px solid #0DA574" : "1px solid #E5E5E5"}
-                    padding={"0.5rem"}
-                  >
-                    <AccordionItem>
-                      <h2>
-                        <AccordionItemTrigger
-                          bg={"white"}
-                          onClick={() => toggleAccordion(item.value)}
-                        >
-                          <Box
-                            as="b"
-                            flex="1"
-                            textAlign="left"
-                            fontWeight={500}
-                            fontSize="1.3rem"
-                            color={isOpen[item.value] ? "#0DA574" : "black"}
-                          >
-                            {item.title}
-                          </Box>
-                          {/* {isOpen[item.value] ? (
-                            <GrFormSubtract color="#12406f" />
-                          ) : (
-                            <GrFormAdd color="black" />
-                          )} */}
-                        </AccordionItemTrigger>
-                      </h2>
-                      {isOpen[item.value] && (
-                        <AccordionItemContent
-                          pb={4}
-                          fontSize="1.3rem"
-                          width={"100%"}
-                          color={"#202C38"}
-                        >
-                          {item.cont}
-                        </AccordionItemContent>
-                      )}
+            <AccordionRoot
+              collapsible
+              value={value}
+              onValueChange={(e) => set(e.value)}
+              // border={"1px solid red"}
+              display={"flex"}
+              flexDirection={"column"}
+              gap={5}
+            >
+              {items.map(
+                (item, index) => (
+                  console.log({ item }),
+                  (
+                    <AccordionItem
+                      key={index}
+                      value={item.value}
+                      border={
+                        value.join(",") === item.value
+                          ? "1px solid #0DA574"
+                          : "1px solid #C8C8C8"
+                      }
+                      padding={"0.5rem"}
+                    >
+                      <AccordionItemTrigger
+                        color={
+                          value.join(",") === item.value ? "#0DA574" : "black"
+                        }
+                        fontWeight={500}
+                      >
+                        {item.title}
+                      </AccordionItemTrigger>
+                      <AccordionItemContent>{item.cont}</AccordionItemContent>
                     </AccordionItem>
-                  </Box>
-                ))}
-              </SimpleGrid>
+                  )
+                )
+              )}
             </AccordionRoot>
           </Box>
         </Box>
