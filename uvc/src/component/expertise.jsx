@@ -131,7 +131,7 @@ export default function Expertise() {
             <Text fontWeight={400} fontSize={"16px"}>
               Examine the significance of vacuum technology in the aerospace
               industry and its impact on safety and efficiency. This article
-              highlights how UVC's solutions contribute to advanced
+              highlights how UVCs solutions contribute to advanced
               manufacturing and testing.
             </Text>
             <Box height={"1px"} bgColor={"#C8C8C8"}></Box>
