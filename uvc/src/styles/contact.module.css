@@ -1,0 +1,32 @@
+.container{
+    border: solid 1px red;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 200px;
+    color: black;
+}
+
+.box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 122px;
+}
+
+.box1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.box2{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 10px;
+    width: 80%;
+}
+

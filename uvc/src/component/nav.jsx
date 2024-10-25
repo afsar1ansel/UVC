@@ -81,7 +81,7 @@ useEffect(() => {
         <div className={styles.navbar}>
           <div className={styles.logoSection}>
             <Image src={logo} alt="logo" width={50} height={50} />
-            <h1 className={styles.logoText}>UNC</h1>
+            <h1 className={styles.logoText}>UVC</h1>
           </div>
           <div className={styles.navOptions}>
             <div className={styles.navBtns}>
@@ -106,13 +106,11 @@ useEffect(() => {
             <button onClick={onOpen} className={styles.mobileNavBtn} >
               <GiHamburgerMenu />
             </button>{" "}
-            {/* Button to open the drawer */}
           </DrawerTrigger>
           <DrawerBackdrop />
           <DrawerContent>
             <DrawerCloseTrigger>
               <button onClick={onClose}>Close</button>{" "}
-              {/* Button to close the drawer */}
             </DrawerCloseTrigger>
             <DrawerHeader>
               <div className={styles.mobilelogoSection}>

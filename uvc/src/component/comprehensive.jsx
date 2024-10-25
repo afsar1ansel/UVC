@@ -2,6 +2,8 @@ import style from "@/styles/comperhensive.module.css";
 import { Box, Grid, Heading, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import green from "@/img/vector_green.png";
+
+
 export default function Comprehensive() {
     return (
       <div className={style.container}>
