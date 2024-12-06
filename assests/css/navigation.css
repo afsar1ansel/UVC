@@ -1,0 +1,81 @@
+/* navigation */
+
+.navigationBox {
+  position: absolute;
+  top: 1;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 8vw;
+  background-color: transparent;
+  backdrop-filter: blur(0.5px);
+  transition: background-color 0.3s ease;
+  height: 80px;
+  box-shadow: none;
+}
+
+.navigationBox.scrolled {
+  background-color: rgba(0, 31, 63, 1);
+  top: 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+.logo h1 {
+  font-family: Archive;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 24px;
+  line-height: 48px;
+  margin: 0;
+  display: flex;
+}
+
+.logo h1 .white {
+  color: white;
+}
+
+.logo h1 .orange {
+  color: #e67817;
+}
+
+.logo h1 .green {
+  color: #005534;
+}
+
+.navButtons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: white;
+}
+
+.navButtons div {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+  color: white;
+}
+
+#getQuote {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background-color: #ffc631;
+  color: black;
+  padding: 16px 28px;
+  font-weight: 600;
+  margin-left: 10px;
+}
