@@ -6,8 +6,8 @@ $(document).ready(function () {
     nav: false, // Disable next/prev buttons
     dots: true, // Show pagination dots
     autoplay: true, // Enable autoplay
-    autoplayTimeout: 1000, // Time between auto slides
-    smartSpeed: 1000, // Speed of the transition between slides
+    autoplayTimeout: 3000, // Time between auto slides
+    smartSpeed: 3000, // Speed of the transition between slides
     mouseDrag: false, // Disable dragging for vertical slides
     touchDrag: false, // Disable touch dragging for vertical slides
     animateIn: "fadeIn", // Optional: Fade transition in
