@@ -497,10 +497,9 @@ body {
 }
 .mapLeftNum h1 {
   color: var(--brand-colour-3, #0da574);
-  font-size: 80px;
+  font-size: 58px;
   font-style: normal;
-  font-weight: 800;
-  line-height: 80px; /* 100% */
+  font-weight: 700;
 }
 
 .mapLeftNum p {
@@ -608,16 +607,19 @@ body {
   font-weight: 600;
 }
 
-.futureVideo img{
+.futureVideo img {
   margin-top: 50px;
   width: 100%;
 }
 
-.futureBot{
+.futureBot {
   margin-top: 50px;
+  /* border: solid 1px red; */
+  display: flex;
+  justify-content: space-between;
 }
 
-.futureBotLeft{
+.futureBotLeft {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -625,10 +627,104 @@ body {
   width: 580px;
 }
 
-.futureBotLeft p{
+.futureBotLeft p {
   /* margin: 0; */
 }
 
+.futureBotRight {
+  background: radial-gradient(
+    235.52% 205.16% at -39.57% 150.37%,
+    rgba(255, 198, 49, 0) 0%,
+    rgba(255, 198, 49, 0.4) 100%
+  );
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.5px);
+  display: flex;
+  gap: 50px;
+  width: 500px;
+  padding: 45px 60px;
+  flex-direction: column;
+}
 
+.futureBotRight p {
+  color: #d0d0d0;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.futureBotRight div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  /* border: solid 1px red; */
+}
+
+.founder p {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+/* future end */
+
+/* accordion */
+.accordion {
+  padding: 9.64vw 12vw 8.33vw 12vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordionLeft {
+  /* border: solid 1px green; */
+  width: 480px;
+  display: flex;
+  flex-direction: column;
+  /* gap: 10px; */
+}
+
+.accordionLeft p {
+  color: #162739;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin-top: 16px;
+}
+
+.acontactBtn {
+  display: flex;
+  height: 61.716px;
+  padding: 18px 30px;
+  align-items: center;
+  gap: 10px;
+  background: #ffc631;
+  color: #000810;
+  width: 175px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 23px;
+  margin-top: 28px;
+  cursor: pointer;
+}
+
+.accordionRight{
+  border: solid 1px green;
+  /* display: flex !important;
+  flex-direction: column !important; */
+}
+
+#accordionExample{
+  display: flex;
+  flex-direction: column !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
 
 /* ----------------------- body end ---------------------- */
