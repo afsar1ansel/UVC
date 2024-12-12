@@ -678,10 +678,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
+  /* border: solid 5px green; */
 }
 
 .accordionLeft {
-  /* border: solid 1px green; */
   width: 480px;
   display: flex;
   flex-direction: column;
@@ -714,17 +715,234 @@ body {
   cursor: pointer;
 }
 
-.accordionRight{
-  border: solid 1px green;
+.accordionRight {
+  /* border: solid 1px green; */
   /* display: flex !important;
   flex-direction: column !important; */
 }
 
-#accordionExample{
-  display: flex;
+#accordionExample {
+  /* display: flex; */
   flex-direction: column !important;
   margin: 0 !important;
   padding: 0 !important;
+  /* border: orangered solid 1px !important; */
 }
+
+.accordion-header {
+  width: 600px;
+  border: 1px solid #c8c8c8;
+  border-bottom: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+.accordion-header:active {
+  /* border: 1px solid #000810 !important; */
+  border: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+  color: rgba(13, 165, 116, 1) !important;
+  background-color: #fff !important;
+  box-shadow: none !important;
+  outline: none !important;
+  border: 1px solid var(--brand-colour-3, #0da574) !important;
+  border-bottom: none !important;
+}
+
+.accordion-body {
+  width: 600px;
+  border: 1.5px solid var(--brand-colour-3, #0da574) !important;
+  border-top: none !important;
+}
+
+/* accordion end */
+
+/* curve img */
+
+.curveImg {
+  width: 100%;
+}
+
+.curveImg img {
+  width: 100%;
+}
+
+/* curve img end */
+
+/* innovation */
+.innovation {
+  padding: 9.64vw 12vw 180px 12vw;
+}
+
+.innovationHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.innovationbody {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+.innovationbody img {
+  width: 100%;
+}
+
+.innovationHeadBtn {
+  display: inline-flex;
+  height: 61.716px;
+  padding: 18px 30px;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  background: #ffc631;
+  color: #000810;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.innovationbodyBox {
+  /* border: solid 5px yellow; */
+  width: 370px;
+}
+
+.innovationbodyBoxP1 {
+  color: #202c38;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.innovationbodyBoxP2 {
+  color: #202c38;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.solutionGridBox h3 {
+  color: #000810;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 34px;
+}
+
+.innovationbody h6 {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(13, 165, 116, 1);
+  cursor: pointer;
+}
+
+.innovationbodyBoxline {
+  width: 100%;
+  border-top: solid 1px #c8c8c8;
+}
+/* innovation end */
+
+/* map */
+
+.map1 {
+  /* border: solid 2px red; */
+  padding: 0;
+}
+
+/* map end */
+
+/* contact */
+
+.contact {
+  padding: 9.64vw 12vw 180px 12vw;
+  display: flex;
+  justify-content: space-between;
+  gap: 110px;
+}
+
+.contactForm h1 {
+  width: 380px;
+  color: #000810;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  margin: 0;
+  padding: 0;
+}
+
+
+.formBox {
+  width: 630px; 
+  display: flex;
+  flex-direction: column; 
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.formBox div {
+  display: flex;
+  gap: 10px;
+}
+
+.formBox input, 
+.formBox textarea {
+  flex: 1; 
+  width: 100%;
+  height: 56px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  border: 1px solid #A9A9A9; 
+}
+
+#floatingTextarea2:focus {
+  outline: none !important;
+  box-shadow: none !important; 
+  border: 1px solid #A9A9A9; 
+}
+
+.formBox button{
+width: 630px;
+height: 62px;
+border: none;
+padding: 18px 30px;
+background: #FFC631;
+}
+
+.contactDetails{
+  padding-top: 50px;
+}
+
+.contactDetails p{
+  margin: 0;
+}
+
+.contactDetailsP1{
+  color: #A9A9A9;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+margin-top: 20px !important;
+}
+
+.contactDetailsP2{
+  color: #000810;
+  width: 280px;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 26px;
+}
+
 
 /* ----------------------- body end ---------------------- */
