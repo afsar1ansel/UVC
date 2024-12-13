@@ -79,3 +79,54 @@
   font-weight: 600;
   margin-left: 10px;
 }
+
+
+/* mobile nav */
+.offcanvas-header{
+  background-color: #001F3F;
+}
+
+.btn-close{
+  color: #fff !important;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.offcanvas-body{
+  /* border: solid 1px red; */
+  background: #001F3F;
+}
+
+.offcanvas-body a{
+  color: #fff;
+}
+
+#offcanvasNavbarLabel .white {
+  color: white;
+}
+
+#offcanvasNavbarLabel .orange {
+  color: #e67817;
+}
+
+#offcanvasNavbarLabel .green {
+  color: #005534;
+}
+
+#offcanvasNavbarLabel img{
+  height: 30px;
+}
+
+
+#getQuoteM {
+  display: flex;
+  width: 170px;
+  gap: 10px;
+  align-items: center;
+  background-color: #ffc631;
+  color: black;
+  padding: 8px 16px;
+  font-weight: 600;
+  margin-top: 30px;
+  /* margin-left: 10px; */
+}
