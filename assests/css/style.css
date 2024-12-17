@@ -14,10 +14,10 @@ body {
 .contanctNav {
   display: flex;
   border: solid 1px black;
-  height: 44px;
+  height: 40px;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 8vw 10px 8vw;
+  padding: 10px 5vw 5px 5vw;
   background-color: rgba(14, 18, 29, 1);
 }
 
@@ -27,9 +27,8 @@ body {
 
 .contanctNav p {
   color: #888c97;
-  font-size: 14px;
+  font-size: 0.729vw;
   font-weight: 500;
-  line-height: 24px;
 }
 
 .contacts {
@@ -127,16 +126,16 @@ body {
   /* border: solid 1px red; */
   margin: 20px 0 0 13.2vw;
   height: 100%;
-  width: 600px;
+  width: 31.25vw;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
 .leftBotHero h1 {
-  font-size: 3.5vw;
+  font-size: 3vw;
   font-weight: 800;
-  line-height: 60px;
+  line-height: 3.125vw;
 }
 
 .leftBotHero p {
@@ -159,14 +158,13 @@ body {
 
 .heroBtns button {
   display: flex;
-  padding: 12px 28px;
+  padding: 0.625vw 1.458vw;
   border: 1px solid rgba(255, 198, 49, 1);
   background-color: rgba(255, 198, 49, 1);
   color: #000810;
-  font-size: 18px;
+  font-size: 0.938vw;
   font-weight: 600;
-  line-height: 24px;
-  /* border-radius: 8px; */
+  text-align: center;
   gap: 10px;
 }
 
@@ -176,9 +174,10 @@ body {
 }
 
 .arrow {
-  font-size: 20px;
+  font-size: 1.142vw;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.25vw;
+  text-align: center;
 }
 
 .rightBotHero {
@@ -189,7 +188,7 @@ body {
 }
 
 .rightBotHero img {
-  height: 65vh;
+  height: 35vw;
   width: 45vw;
 }
 
@@ -207,16 +206,16 @@ body {
 .heroCredits div h1 {
   color: #ffc631;
   /* font-family: Archivo; */
-  font-size: 48px;
+  font-size: 2.5vw;
   font-style: normal;
   font-weight: 700;
-  line-height: 55px;
+  /* line-height: 55px; */
 }
 
 .heroCredits div p {
   color: var(--off-white, #e9e6e6);
   /* font-family: Archivo; */
-  font-size: 19px;
+  font-size: 1.042vw;
   font-style: normal;
   font-weight: 300;
   line-height: 25px; /* 131.579% */
@@ -1191,6 +1190,10 @@ body {
   width: 100%;
 }
 
+#accordionExample{
+  width: 100% !important;
+}
+
 }
 
 @media (min-width: 580px) and (max-width: 770px) {
@@ -1255,7 +1258,7 @@ body {
 
 .accordionRight {
   /* border: solid 1px green; */
-  width: 28vw;
+  width: 70%;
 }
 
 #accordionExample {
@@ -1264,7 +1267,7 @@ body {
   margin: 0 !important;
   padding: 0 !important;
   /* border: orangered solid 1px !important; */
-  width: 39vw;
+  width: 100%;
 }
 
 .accordion-header {
@@ -1553,6 +1556,15 @@ body {
   height: 68px !important;
 }
 
+#contact .contactDetails h2{
+  font-size: 6vw;
+}
+
+#contact .contactDetails p {
+  margin: 0;
+  font-size: 3vw;
+}
+
 }
 
 @media (min-width: 580px) and (max-width: 770px){
@@ -1593,28 +1605,37 @@ body {
   background: #ffc631;
 }
 
+#contact .contactDetails h2{
+  font-size: 5vw;
+}
+
+#contact .contactDetails p {
+  margin: 0;
+  font-size: 2vw;
+}
+
 }
 
 .contact {
   padding: 9.64vw 12vw 180px 12vw;
   display: flex;
   justify-content: space-between;
-  gap: 110px;
+  gap: 5.729vw;
 }
 
 .contactForm h1 {
-  width: 380px;
+  width: 21.9vw;
   color: #000810;
-  font-size: 48px;
+  font-size: 2.5vw;
   font-style: normal;
   font-weight: 700;
-  line-height: 48px;
+  line-height: 2.5vw;
   margin: 0;
   padding: 0;
 }
 
 .formBox {
-  width: 630px;
+  width: 34vw;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -1630,7 +1651,7 @@ body {
 .formBox textarea {
   flex: 1;
   width: 100%;
-  height: 56px;
+  height: 2.92vw;
   padding-left: 20px;
   box-sizing: border-box;
   border: 1px solid #a9a9a9;
@@ -1643,8 +1664,7 @@ body {
 }
 
 .formBox button {
-  width: 630px;
-  height: 62px;
+  width: 34vw;
   border: none;
   padding: 18px 30px;
   background: #ffc631;
@@ -1654,8 +1674,13 @@ body {
   padding-top: 50px;
 }
 
+.contactDetails h2{
+  font-size: 1.975vw;
+}
+
 .contactDetails p {
   margin: 0;
+  font-size: 0.933vw;
 }
 
 .contactDetailsP1 {
@@ -1684,7 +1709,7 @@ footer{
 }
 
 .footer{
- width: 1322px;
+ width: 82vw;
  margin: 0 auto;
  padding: 80px 0;
  /* border: solid 2px red; */
@@ -1693,7 +1718,9 @@ footer{
 .footUp{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: start;
+  row-gap: 20px;
 }
 
 .footup1{
@@ -1782,6 +1809,7 @@ margin-top: 15px;
 
 .footBottom{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -1796,4 +1824,8 @@ font-size: 16px;
 font-style: normal;
 font-weight: 400;
 line-height: 23px;
+}
+
+.footBottom img{
+  width: 2.5vw;
 }

@@ -28,15 +28,13 @@
 }
 
 .logo img {
-  height: 40px;
+  height: 2.083vw;
   width: auto;
 }
 
 .logo h1 {
-  font-family: Archive;
-  font-size: 48px;
+  font-size: 2.5vw;
   font-weight: 800;
-  line-height: 24px;
   line-height: 48px;
   margin: 0;
   display: flex;
@@ -63,25 +61,70 @@
 
 .navButtons div {
   cursor: pointer;
-  font-size: 14px;
+  font-size: 0.829vw;
   font-weight: 600;
-  line-height: 22px;
   color: white;
 }
 
 #getQuote {
   display: flex;
-  gap: 10px;
+  gap: 0.500vw;
   align-items: center;
   background-color: #ffc631;
   color: black;
-  padding: 16px 28px;
+  padding: 0.833vw 1.458vw;
+  font-size: 0.833vw;
   font-weight: 600;
   margin-left: 10px;
 }
 
+.container-fluid{
+  /* border: solid 1px red; */
+  margin: 0;
+  margin: 0;
+  /* background-color: #001F3F; */
+}
+
 
 /* mobile nav */
+
+.navbar-toggler-icon{
+  color: red !important;
+}
+
+
+.logo2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo2 img {
+  height: 40px;
+  width: auto;
+}
+
+.logo2 h1 {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 48px;
+  margin: 0;
+  display: flex;
+}
+
+.logo2 h1 .white {
+  color: white;
+}
+
+.logo2 h1 .orange {
+  color: #e67817;
+}
+
+.logo2 h1 .green {
+  color: #005534;
+}
+
+
 .offcanvas-header{
   background-color: #001F3F;
 }

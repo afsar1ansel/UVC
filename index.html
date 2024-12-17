@@ -20,8 +20,31 @@
       href="./bootstrap-5.3.3-dist/css/bootstrap.min.css"
     />
   </head>
+  <style>
+  @media (max-width: 770px) {
+    .d-mobile {
+      display: block !important;
+    }
+    .d-desktop {
+      display: none !important;
+    }
+  }
+
+  @media (min-width: 771px) {
+    .d-mobile {
+      display: none !important;
+    }
+    .d-desktop {
+      display: block !important;
+    }
+  }
+</style>
+<!-- 
+<div class="d-desktop">Visible on desktop</div>
+<div class="d-mobile">Visible on mobile</div> -->
+
   <body>
-    <div class="d-none d-md-block">
+    <div class="d-desktop d-none d-md-block">
       <nav>
         <div class="contanctNav">
           <div class="contacts">
@@ -54,11 +77,11 @@
       </nav>
     </div>
     <!-- nav mobile -->
-    <div class="d-block d-md-none">
+    <div class="d-mobile d-block d-md-none">
       <nav class="navbar bg-body-tertiary fixed-top" id="navBarMobile">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"
-            ><div class="logo">
+            ><div class="logo2">
               <img src="./assests/img/logo.png" alt="" />
               <h1>
                 <span class="white">U</span>
@@ -75,7 +98,7 @@
             aria-controls="offcanvasNavbar"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon" style="color: black"></span>
+            <span class="navbar-toggler-icon"></span>
           </button>
           <div
             class="offcanvas offcanvas-end"
@@ -1246,10 +1269,11 @@
 
     <!-- footer -->
     <footer>
+      <!-- <div class="d-none d-md-block"> -->
       <div class="footer" id="footer">
         <div class="footUp">
           <div class="footup1">
-            <div class="logo" style="margin-bottom: 24px;">
+            <div class="logo2" style="margin-bottom: 24px;">
               <img src="./assests/img/logo.png" alt="" />
               <h1>
                 <span class="white">U</span>
@@ -1306,6 +1330,7 @@
           <img src="./assests/img/whapp1.png" alt=""></div>
         </div>
       </div>
+      <!-- </div> -->
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
