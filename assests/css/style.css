@@ -297,7 +297,7 @@ body {
 }
 
 .solutions {
-  padding: 9.64vw 16.41vw 8.33vw 16.41vw;
+  padding: 9.64vw 12vw 8.33vw 12vw;
 }
 
 /* .solutionsheading {
@@ -325,8 +325,8 @@ body {
 .solutionGridBox {
   border: 1px solid #c8c8c8;
   display: flex;
-  width: 20.9vw;
-  padding: 30px 20px 24px 20px;
+  width: 24.9vw;
+  padding: 1.458vw 1.042vw 1.458vw 1.042vw;
   flex-direction: column;
   align-items: flex-start;
   transition: color 0.3s ease;
@@ -805,7 +805,7 @@ body {
 
 .mapLeft .mapTopP {
   color: #202c38;
-  font-size: 1vw;
+  font-size: 1.3vw;
   font-style: normal;
   font-weight: 400;
   line-height: 1.35vw;
@@ -821,7 +821,7 @@ body {
 
 .mapLeftNum p {
   color: #202c38;
-  font-size: 1vw;
+  font-size: 1.2vw;
   font-style: normal;
   font-weight: 400;
   line-height: 1.35vw;

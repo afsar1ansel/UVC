@@ -21,9 +21,8 @@ nav.innerHTML = `<div class="logo">
 </svg></div>
         </div>`;
 
-
 window.addEventListener("scroll", () => {
-  const navigationBox = document.querySelector(".navigationBox");
+  const navigationBox = document.querySelector(".navigationBox2");
 
   if (window.scrollY > 0) {
     navigationBox.classList.add("scrolled");

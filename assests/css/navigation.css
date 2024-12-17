@@ -80,16 +80,22 @@
 
 .container-fluid{
   /* border: solid 1px red; */
-  margin: 0;
-  margin: 0;
-  /* background-color: #001F3F; */
+  position: absolute;
+  top: 0;
+  /* padding: 0; */
+  /* margin: 0; */
+  background-color: #001F3F;
 }
 
 
 /* mobile nav */
 
-.navbar-toggler-icon{
-  color: red !important;
+.navbar-toggler{
+  color: #ffc631 !important;
+  font-size: 58px;
+  font-weight: bolder;
+  border: solid 1.9px #ffc631 !important;
+  padding: 5px 10px 8px 10px !important;
 }
 
 
