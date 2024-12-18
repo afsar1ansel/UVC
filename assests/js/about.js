@@ -4,14 +4,11 @@ $(document).ready(function(){
       loop: true,
       autoplay: true,
       autoplayTimeout: 5000,
-    //   autoplayHoverPause: true,
+      //   autoplayHoverPause: true,
       dots: false,
       nav: true,
       margin: 10,
-      navText: [
-        "button-pre",
-        "button-next"
-      ],
+      navText: [`←`, `→`],
       responsive: {
         0: {
           items: 1, // Show 1 full item and a bit of the next on small screens

@@ -441,15 +441,32 @@ padding: 3.1vw;
 }
 
 .carouselSection-owl .owl-nav button.owl-prev {
-  /* border: solid 1px red !important; */
+  border: solid 1px black !important;
+  border-radius: 50% !important;
+  width: 30px !important;
+  height: 30px !important;
+}
 
+.carouselSection-owl .owl-nav button :hover{
+  background-color: none !important;
+  color: #000810 !important;
+}
+
+.carouselSection-owl .owl-nav button.owl-next {
+  border: solid 1px black !important;
+  border-radius: 50% !important;
+  width: 30px !important;
+  height: 30px !important;
 }
 
 .carouselSection-owl .owl-nav {
   /* border: solid 2px green !important; */
   position: absolute;
-  top: -35%;
-  right: 10px;
+  background-color: white;
+  font-size: large;
+  font-weight: 700;
+  top: -20%;
+  right: 30px;
 
 }
 
