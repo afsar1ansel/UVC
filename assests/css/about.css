@@ -14,6 +14,20 @@
 
 /* ---------------- body ---------------- */
 /* hero */
+
+@media (max-width: 580px) {
+  #hero {
+    /* border: solid 3px red; */
+    margin-top: 58px;
+  }
+}
+@media (min-width: 580px) and (max-width: 770px){
+  #hero {
+    /* border: solid 3px red; */
+    margin-top: 50px;
+  }
+}
+
 .hero {
   margin: 80px 0;
 }
@@ -23,6 +37,109 @@
 }
 
 /* innovative we do */
+@media (max-width: 580px){
+   #innovative {
+    /* border: solid 1px red; */
+    margin-top: 0;
+    padding: 0;
+    width: 90%;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+   #innovative h1{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #innovative .innovativeLeft {
+    padding: 0;
+  }
+
+
+   #innovative .innovativeLeft p {
+  font-size: 2.8vw;
+  font-weight: 400;
+  line-height: 3vw;
+  /* padding: 0; */
+  margin: 0;
+  }
+
+  #innovative .innovativeRight  {
+    /* border: solid 1px green; */
+    width: 80vw;
+    height: 100%;
+    margin-top: 30px;
+  }
+
+  #innovative .innovativeRight img {
+  width: 80vw;
+}
+
+#innovative .innovateBtn {
+    margin: auto;
+  display: inline-flex;
+  width: 35vw;
+  height: 41px;
+  padding: 18px 30px;
+  align-items: center;
+  text-align: center;
+  /* gap: 10px; */
+  flex-shrink: 0;
+  background: #ffc631;
+  font-size: 2.2vw;
+  font-weight: 500;
+  z-index: 1;
+}
+
+}
+
+
+@media (min-width: 580px) and (max-width: 770px){
+  #innovative {
+    /* border: solid 1px red; */
+    width: 90%;
+    flex-direction: column;
+  }
+
+  #innovative h1{
+    width: 100%;
+  }
+
+  #innovative .innovativeLeft p {
+  font-size: 2vw;
+  font-weight: 400;
+  line-height: 2.2vw;
+  /* padding: 0; */
+  margin: 0;
+  }
+
+  #innovative .innovativeRight  {
+    /* border: solid 1px green; */
+    width: 35vw;
+    margin-top: 30px;
+  }
+
+  #innovative .innovateBtn {
+    margin: auto;
+  display: inline-flex;
+  width: 25vw;
+  height: 61.716px;
+  padding: 18px 30px;
+  align-items: center;
+  text-align: center;
+  /* gap: 10px; */
+  flex-shrink: 0;
+  background: #ffc631;
+  font-size: 2vw;
+  font-weight: 500;
+  z-index: 1;
+}
+
+
+}
+
 
 .innovative {
   background-size: auto 100%;
@@ -115,6 +232,135 @@
 
 /* process */
 
+@media (max-width: 580px){
+
+   #process .procesImg{
+    width: 100%;
+  height: 100%;
+  }
+
+  #process .procesImg h2 {
+    font-size: 7vw;
+    margin: 0;
+    padding: 0;
+  }
+
+   #process .procesImg p{
+    font-size: 2.8vw;
+    margin: 0;
+    padding: 0;
+   }
+
+  #process .processHead {
+  width: 90vw;
+  margin: auto;
+  /* border: solid 1px red; */
+  }
+
+  #process .processHead h1{
+    font-size: 6vw;
+    width: 100%;
+  }
+
+  #process .processdot-box {
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto;
+    /* width: 1900px; */
+}
+
+#process .processLing{
+  /* border: solid 1px red; */
+    width: 1360px;
+
+}
+
+#process .processLing .dotBox{
+  width: 1360px;
+  margin: 0;
+  /* border: solid 1px red; */
+  gap: 340px;
+}
+
+#process .processBot{
+  width: 1360px;
+  gap: 65px;
+}
+
+#process .pbcard {
+  width: 298px;
+  /* border: solid 1px yellow; */
+}
+
+#process .pbcard h3 {
+  font-size: 5vw;
+}
+
+#process .pbcard p {
+  font-size: 3vw;
+  line-height: 3.5vw;
+}
+
+}
+
+@media (min-width: 580px) and (max-width: 770px){
+ 
+  #process .procesImg{
+    width: 100%;
+  height: 100%;
+  }
+
+  #process .procesImg h2 {
+    font-size: 6vw;
+  }
+
+  #process .processHead {
+  width: 90vw;
+  margin: auto;
+  }
+
+  #process .processdot-box {
+    /* border: solid 1px red; */
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto;
+    /* width: 1900px; */
+}
+
+#process .processLing{
+  /* border: solid 1px red; */
+    width: 1360px;
+
+}
+
+#process .processLing .dotBox{
+  width: 1360px;
+  margin: 0;
+  /* border: solid 1px red; */
+  gap: 340px;
+}
+
+#process .processBot{
+  width: 1360px;
+  gap: 65px;
+}
+
+#process .pbcard {
+  width: 298px;
+  /* border: solid 1px yellow; */
+}
+
+#process .pbcard h3 {
+  font-size: 2.5vw;
+}
+
+#process .pbcard p {
+  font-size: 1.5vw;
+  line-height: 2vw;
+}
+
+}
+
 .process {
   background-color: #162739;
   background-image: url(../img/Group.png);
@@ -138,10 +384,8 @@
   justify-content: center;
   gap: 50px;
   align-items: center;
-  position: relative; /* Enables movement relative to its normal position */
-  transform: translateY(
-    -50%
-  ); /* Moves the element upward by 50% of its own height */
+  position: relative;
+  transform: translateY(-50%);
   z-index: 1;
 }
 
@@ -193,6 +437,7 @@
   left: 0;
   right: 0;
   width: 76vw;
+  
 }
 
 .procesDot {
@@ -233,6 +478,103 @@
 /* process end */
 
 /* choose */
+
+@media (max-width: 580px){
+   #choose {
+    width: 90%;
+    /* border: solid 1px red; */
+    padding: auto;
+    margin: auto;
+    flex-direction: column;
+  }
+
+  #choose h1{
+    width: 100%;
+    font-size: 3.5vw;
+  }
+
+  #choose .chooseBoxcontainer{
+    width: 100%;
+    flex-direction: column;
+    gap: 50px;
+    /* justify-content: space-between; */
+  }
+
+  #choose .chooseBoxL{
+    width: 95%;
+    /* padding: 10vw 2vw 10vw 2vw; */
+  }
+
+  #choose .chooseBoxL div h2{
+    font-size: 5.5vw;
+  }
+
+  #choose .chooseBoxL div p{
+    font-size: 3vw;
+  }
+
+  #choose .chooseBoxR{
+    width: 95%;
+    /* padding: 10vw 2vw 10vw 2vw; */
+  }
+
+  #choose .chooseBoxR div h2{
+    font-size: 4vw;
+  }
+
+  #choose .chooseBoxR div p{
+    font-size: 3vw;
+    line-height: 3.3vw;
+  }
+
+}
+
+@media (min-width: 580px) and (max-width: 770px){
+  #choose {
+    width: 90%;
+    /* border: solid 1px red; */
+    padding: auto;
+    margin: auto;
+    flex-direction: column;
+  }
+
+  #choose h1{
+    width: 100%;
+    font-size: 3.5vw;
+  }
+
+  #choose .chooseBoxcontainer{
+    width: 100%;
+    /* flex-direction: column; */
+    justify-content: space-between;
+  }
+
+  #choose .chooseBoxL{
+    width: 50vw;
+    /* padding: 10vw 2vw 10vw 2vw; */
+  }
+
+  #choose .chooseBoxL div h2{
+    font-size: 3.5vw;
+  }
+
+  #choose .chooseBoxL div p{
+    font-size: 1.5vw;
+  }
+
+  #choose .chooseBoxR{
+    width: 40vw;
+    /* padding: 10vw 2vw 10vw 2vw; */
+  }
+
+  #choose .chooseBoxR div h2{
+    font-size: 2vw;
+  }
+
+  #choose .chooseBoxR div p{
+    font-size: 1.5vw;
+  }
+}
 
 .choose {
   /* border: solid yellow 2px; */
@@ -406,7 +748,6 @@
 }
 
 .partnerBox {
-  
   width: 100%;
 }
 
