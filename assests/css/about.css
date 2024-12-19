@@ -490,7 +490,9 @@
 
   #choose h1{
     width: 100%;
-    font-size: 3.5vw;
+    font-size: 5vw;
+    padding: 0;
+    margin: 0;
   }
 
   #choose .chooseBoxcontainer{
@@ -498,6 +500,8 @@
     flex-direction: column;
     gap: 50px;
     /* justify-content: space-between; */
+    padding: 0px 0 40px 0;
+
   }
 
   #choose .chooseBoxL{
@@ -547,6 +551,7 @@
     width: 100%;
     /* flex-direction: column; */
     justify-content: space-between;
+    padding: 0px 0 40px 0;
   }
 
   #choose .chooseBoxL{
@@ -652,23 +657,60 @@
 
 /* transform */
 
-/* .transform{
-  width: 100%;
-  background: linear-gradient(85deg, #0DA574 0%, #001F3F 100%),
-  url(../img/Group.png);
-   background-size: cover;
-  background-repeat: no-repeat;
-  height: 590px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-blend-mode: overlay;
+@media (max-width: 580px){
+   #transform .transBox{
+    width: 90%;
+  }
+
+  #transform .transBox h1{
+    font-size: 4.5vw;
+  }
+
+  #transform .transBox p{
+    font-size: 2.5vw;
+    line-height: 2.5vw;
+    width: 100%;
+  }
+
+  #transform .transBtn{
+    font-size: 2vw;
+    width: 28vw;
+    height: 5.5vw;
+     padding: 2vw 3vw;
+
+  }
 }
 
+@media (min-width: 580px) and (max-width: 780px){
 
+  #transform .transBox{
+    width: 90%;
+  }
+
+  #transform .transBox h1{
+    font-size: 4.5vw;
+  }
+
+  #transform .transBox p{
+    font-size: 2.5vw;
+    line-height: 2.5vw;
+    width: 100%;
+  }
+
+  #transform .transBtn{
+    font-size: 2vw;
+    width: 28vw;
+    height: 5.5vw;
+     padding: 2vw 3vw;
+
+  }
+
+}
 
 .transBox{
   z-index: 20;
-} */
+  /* border: solid 1px red; */
+} 
 
 .transform {
   width: 100%;
@@ -732,6 +774,61 @@
 /* transform end */
 
 /* partners */
+
+@media (max-width: 580px){
+ #partners .carouselSection-owl .owl-nav{
+  display: none;
+ }
+
+  #partners .item.reviewerCar {
+  background: #F8F8F8;
+  width: 70vw;
+  padding: 3.1vw;
+/* border: solid red 1px; */
+}
+
+#partners .caroselBox p {
+  color: #000810;
+  font-size: 2.2vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.3vw;
+  margin: 0;
+  padding: 0;
+}
+
+}
+
+@media (min-width: 580px) and (max-width: 780px){
+  #partners .carouselSection-owl .owl-nav{
+  display: none;
+ }
+
+  #partners {
+    /* border: solid 1px red; */
+    width: 90%;
+  }
+
+  #partners .item.reviewerCar {
+  background: #F8F8F8;
+  width: 50vw;
+  padding: 3.1vw;
+/* border: solid red 1px; */
+}
+
+#partners .caroselBox p {
+  color: #000810;
+  font-size: 1.9vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2vw;
+  margin: 0;
+  padding: 0;
+}
+
+}
+
+
 .partners {
   /* border: solid 3px red; */
   margin: auto;

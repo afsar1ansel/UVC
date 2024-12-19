@@ -14,7 +14,7 @@ $(document).ready(function(){
           items: 1, // Show 1 full item and a bit of the next on small screens
         },
         480: {
-          items: 1.2, // Show 1.5 items on small tablets
+          items: 1,
         },
         768: {
           items: 2, // Show 2 full items and part of the next on medium screens
