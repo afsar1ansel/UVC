@@ -1,5 +1,9 @@
 /* navigation */
 
+.logoBoxA{
+  text-decoration: none;
+}
+
 .navigationBox {
   position: absolute;
   top: 1;
@@ -59,11 +63,12 @@
   color: white;
 }
 
-.navButtons div {
+.navButtons div a{
   cursor: pointer;
   font-size: 0.829vw;
   font-weight: 600;
   color: white;
+  text-decoration: none;
 }
 
 #getQuote {

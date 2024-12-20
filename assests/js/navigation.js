@@ -1,6 +1,6 @@
 const nav = document.getElementById("navBarBox");
 
-nav.innerHTML = `<div class="logo">
+nav.innerHTML = `<a href="index.html" class="logoBoxA" ><div class="logo">
           <img src="./assests/img/logo.png" alt="" />
           <h1>
             <span class="white">U</span>
@@ -8,10 +8,11 @@ nav.innerHTML = `<div class="logo">
             <span class="green">C</span>
           </h1>
         </div>
+        </a>
         <div class="navButtons">
-            <div>ABOUT</div>
-            <div>PRODUCTS +</div>
-            <div>SERVICES +</div>
+            <div><a href="about.html" id="about" >ABOUT</a></div>
+            <div><a href="product.html" id="product">PRODUCTS +</a></div>
+            <div> <a href="services.html" id="services"> SERVICES + </a></div>
             <div>INDUSTRIES SERVED</div>
             <div>CASE STUDIES +</div>
             <div>DOWNLOADS</div>
