@@ -144,66 +144,320 @@
 }
 
 .product-details h2 {
-    margin-top: 24px;
+  margin-top: 24px;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
 }
 
 .product-details p {
-    color: #4D5765;
-text-align: justify;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px;
+  color: #4d5765;
+  text-align: justify;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
 }
 
-.detailFeatures p{
-    /* border: solid 1px red; */
-    margin: 0;
-    padding: 0;
+.detailFeatures p {
+  /* border: solid 1px red; */
+  margin: 0;
+  padding: 0;
 }
 
 /* product end */
 
 /* table product */
 
-.product-table{
+.product-table {
+  /* border: solid 1px red; */
+  width: 76.5vw;
+  margin: auto;
+  margin-bottom: 30px;
+  margin-top: 100px;
+}
+
+.product-table h2 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  margin-bottom: 50px;
+}
+
+table {
+  border-collapse: collapse; /* Ensures no double lines */
+  width: 100%;
+  /* max-width: 500px; */
+  background: white;
+}
+
+th,
+td {
+  border: 1px solid #e6e6e6 !important;
+  padding: 10px;
+  text-align: left;
+  width: 65%;
+}
+
+th {
+  border: 1px solid #e6e6e6 !important;
+  font-weight: bold;
+  width: 35%;
+}
+
+/* table end */
+
+/* management */
+
+.manage {
+  /* border: solid 1px red; */
+  padding: 100px 10.9vw 0 10.9vw;
+}
+
+.manageBox {
+  /* border: solid 1px green; */
+  display: flex;
+  margin-top: 50px;
+}
+
+.mImgBox {
+}
+
+.manageBox img {
+  width: 35.083vw;
+  padding: 0;
+  margin: 0;
+}
+
+.mText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+}
+
+.mText h2 {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 44px;
+}
+
+.mText p {
+  color: #4d5765;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* management end*/
+
+/* expertiese */
+
+.expertise{
+  width: 80%;
+  margin: auto;
+}
+
+
+.expertHead {
+  /* border: solid 1px red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-top: 180px;
+}
+
+.expertHeadtext {
+  /* border: solid 3px green; */
+  width: 360px;
+}
+
+.consultBtn {
+  padding: 18px 30px;
+  background: #ffc631;
+  color: #000810;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.futureVideo img {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.lineText {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.lineText p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  /* line-height: 22px; */
+  margin: 0;
+  padding: 0;
+}
+
+/* expertiese end */
+
+/* partners */
+
+@media (max-width: 580px){
+ #partners .carouselSection-owl .owl-nav{
+  display: none;
+ }
+
+  #partners .item.reviewerCar {
+  background: #F8F8F8;
+  width: 70vw;
+  padding: 3.1vw;
+/* border: solid red 1px; */
+}
+
+#partners .caroselBox p {
+  color: #000810;
+  font-size: 2.2vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.3vw;
+  margin: 0;
+  padding: 0;
+}
+
+}
+
+@media (min-width: 580px) and (max-width: 780px){
+  #partners .carouselSection-owl .owl-nav{
+  display: none;
+ }
+
+  #partners {
     /* border: solid 1px red; */
-    width: 76.5vw;
-    margin: auto;
-    margin-bottom: 30px;
-    margin-top: 100px;
+    width: 90%;
+  }
+
+  #partners .item.reviewerCar {
+  background: #F8F8F8;
+  width: 50vw;
+  padding: 3.1vw;
+/* border: solid red 1px; */
 }
 
-.product-table h2{
-    font-size: 24px;
-font-style: normal;
-font-weight: 700;
-line-height: 32px;
-margin-bottom: 50px;
+#partners .caroselBox p {
+  color: #000810;
+  font-size: 1.9vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2vw;
+  margin: 0;
+  padding: 0;
 }
 
-  table {
-      border-collapse: collapse; /* Ensures no double lines */
-      width: 100%;
-      /* max-width: 500px; */
-      background: white;
-    }
-
-    th, td {
-      border: 1px solid #E6E6E6 !important;
-      padding: 10px;
-      text-align: left;
-      width: 65% ;
-    }
-    
-    th {
-        border: 1px solid #E6E6E6 !important;
-        font-weight: bold;
-        width: 35%;
-    }
+}
 
 
-    
+.partners {
+  /* border: solid 3px red; */
+  margin: auto;
+  /* height: 514px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  width: 72.448vw;
+}
+
+.partnerhead {
+  /* border: solid 3px red; */
+}
+
+.partnerBox {
+  /* border: solid 3px red; */
+  width: 100%;
+}
+
+.item.reviewerCar {
+  /* background: #F8F8F8; */
+  width: 300px;
+/* padding: 1.1vw; */
+/* border: solid red 1px; */
+}
+
+.caroselBox {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.caroselBox img {
+  width: 100%;
+  /* border: solid 1px red; */
+}
+
+.caroselBox h4 {
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 31, 63, 1);
+  font-size: 1.25vw;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.caroselBox p {
+  color: rgba(77, 87, 101, 1);
+  font-size: 0.938vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  margin: 0;
+  padding: 0;
+}
+
+.caroselBox div{
+  color: #0da574;
+  cursor: pointer;
+}
+
+.carouselSection-owl{
+  /* border: solid 1px red !important; */
+  /* display: flex !important;
+  flex-direction: column-reverse;
+  position: relative; */
+}
+
+.carouselSection-owl .owl-nav button.owl-prev {
+  border: solid 1px black !important;
+  border-radius: 50% !important;
+  width: 30px !important;
+  height: 30px !important;
+}
+
+.carouselSection-owl .owl-nav button :hover{
+  background-color: none !important;
+  color: #000810 !important;
+}
+
+.carouselSection-owl .owl-nav button.owl-next {
+  border: solid 1px black !important;
+  border-radius: 50% !important;
+  width: 30px !important;
+  height: 30px !important;
+}
+
+.carouselSection-owl .owl-nav {
+  /* border: solid 2px green !important; */
+  position: absolute;
+  background-color: white;
+  font-size: large;
+  font-weight: 700;
+  top: -20%;
+  right: 30px;
+
+}
