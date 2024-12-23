@@ -135,10 +135,11 @@
   padding: 0;
 }
 
-.gridBtn{
+.gridBtn a{
     color: rgba(13, 165, 116, 1);
     margin-top: 6px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 
