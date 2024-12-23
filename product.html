@@ -21,6 +21,25 @@
       href="./bootstrap-5.3.3-dist/css/bootstrap.min.css"
     />
   </head>
+   <style>
+  @media (max-width: 1024px) {
+    .d-mobile {
+      display: block !important;
+    }
+    .d-desktop {
+      display: none !important;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .d-mobile {
+      display: none !important;
+    }
+    .d-desktop {
+      display: block !important;
+    }
+  }
+</style>
   <body>
     <nav>
       <div class="d-desktop d-none d-md-block">

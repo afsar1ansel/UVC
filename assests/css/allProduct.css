@@ -70,12 +70,28 @@
 
 /* grid */
 
+@media (max-width: 580px){
+    #gridBox{
+        /* border: solid 1px red; */
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-content: center;
+        /* margin: auto; */
+        padding: auto;
+    }
+
+    #gridBox .grids{
+        width: 90%;
+        margin: auto;
+    }
+}
+
 @media (min-width: 580px) and (max-width: 772px) {
     #gridBox{
-        border: solid 1px red;
+        /* border: solid 1px red; */
         width: 100%;
   grid-template-columns: repeat(2, 1fr);
-
     }
 }
 

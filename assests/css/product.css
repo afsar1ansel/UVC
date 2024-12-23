@@ -60,12 +60,12 @@
   }
 
   #proGrid .gridBtn{
-    width: 40vw;
+    width: 36vw;
     font-size: 2vw;
   }
 
   #proGrid .gridBtn a{
-    font-size: 2vw;
+    font-size: 3vw;
   }
 }
 
