@@ -1,14 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Products</title>
-</head>
-<body>
+    <link rel="stylesheet" href="./assests/css/allProduct.css" />
+    <link rel="stylesheet" href="./assests/css/navigation.css" />
+    <link rel="stylesheet" href="./assests/css/footer.css" />
+    <link
+      rel="stylesheet"
+      href="./OwlCarousel2-master/OwlCarousel2-master/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./OwlCarousel2-master/OwlCarousel2-master/dist/assets/owl.theme.default.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.3.3-dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="d-desktop d-none d-md-block">
+        <div class="navigationBox scrolled" id="navBarBox"></div>
+      </div>
+
+      <!-- nav mobile -->
+      <div class="d-mobile d-block d-md-none">
+        <nav class="navbar bg-body-tertiary fixed-top" id="navBarMobile">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"
+              ><div class="logo2">
+                <img src="./assests/img/logo.png" alt="" />
+                <h1>
+                  <span class="white">U</span>
+                  <span class="orange">V</span>
+                  <span class="green">C</span>
+                </h1>
+              </div></a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+            >
+              ≡
+            </button>
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                  <img src="./assests/img/logo.png" alt="" />
+                  <span class="white">U</span>
+                  <span class="orange">V</span>
+                  <span class="green">C</span>
+                </h5>
+                <button
+                  style="
+                    margin-left: auto;
+                    box-shadow: none !important;
+                    background: none !important;
+                    border: none !important;
+                    font-size: 32px !important;
+                    color: #ffc631 !important;
+                  "
+                  type="button"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                >
+                  &#10539;
+                </button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./about.html"
+                      >ABOUT</a
+                    >
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      PRODUCTS+
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <hr class="dropdown-divider" />
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      SERVICES+
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <hr class="dropdown-divider" />
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">INDUSTRIES SERVED</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">CASE STUDIES+</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">DOWNLOADS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">CONTACT US</a>
+                  </li>
+                </ul>
+                <div id="getQuoteM">
+                  GET A QUOTE
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="12"
+                    height="13"
+                    viewBox="0 0 12 13"
+                    fill="none"
+                  >
+                    <path
+                      d="M1.98771 1.50635C1.98771 1.24113 2.09307 0.986777 2.28061 0.799241C2.46814 0.611705 2.7225 0.506348 2.98771 0.506348H10.9877C11.2529 0.506348 11.5073 0.611705 11.6948 0.799241C11.8824 0.986777 11.9877 1.24113 11.9877 1.50635V9.50635C11.9877 9.77156 11.8824 10.0259 11.6948 10.2135C11.5073 10.401 11.2529 10.5063 10.9877 10.5063C10.7225 10.5063 10.4681 10.401 10.2806 10.2135C10.0931 10.0259 9.98771 9.77156 9.98771 9.50635V3.92035L1.69471 12.2133C1.50611 12.3955 1.25351 12.4963 0.991311 12.494C0.729114 12.4917 0.478302 12.3866 0.292894 12.2012C0.107485 12.0158 0.00231622 11.7649 3.78025e-05 11.5027C-0.00224062 11.2406 0.0985542 10.9879 0.280712 10.7993L8.57371 2.50635H2.98771C2.7225 2.50635 2.46814 2.40099 2.28061 2.21345C2.09307 2.02592 1.98771 1.77156 1.98771 1.50635Z"
+                      fill="black"
+                    />
+                  </svg>
+                </div>
+                <!-- <form class="d-flex mt-3" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form> -->
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </nav>
+
+    <!-- hero -->
+    <div class="hero" id="hero">
+      <img src="./assests/img/Frame444.png" alt="" />
+    </div>
+
+    <!-- grid selector -->
+    <div class="gridSelectors">
+      <div class="selectBtn" data-value="1">button 1</div>
+      <div class="selectBtn" data-value="2">button 2</div>
+      <div class="selectBtn" data-value="3">button 3</div>
+      <div class="selectBtn" data-value="4">button 4</div>
+      <div class="selectBtn" data-value="5">button 5</div>
+    </div>
+
+    <!-- grid -->
+    <div class="gridBox" id="gridBox">
+    </div>
+
     
+    <!-- ready transform -->
+     <div class="transform" id="transform">
+          <div class="transBox">
+            <h1>Ready to Elevate Your Vacuum Technology?</h1>
+            <p>Unlock advanced, reliable vacuum solutions designed to meet your industry’s unique demands.</p>
+            <div class="transBtn">EXPLORE OUR SERVICES</div>
+          </div>
+        </div>
+
+        <!-- contact -->
+         <div class="contact" id="contact">
+        <div class="contactForm">
+          <div class="lineText">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="42"
+              height="3"
+              viewBox="0 0 42 3"
+              fill="none"
+            >
+              <path
+                d="M1 1.5H41"
+                stroke="#FFC631"
+                stroke-width="2"
+                stroke-linecap="square"
+              />
+            </svg>
+            <p>CONTACT US</p>
+          </div>
+          <h1>
+            Do You Have any
+            <span style="color: #0da574">Question ?</span>
+          </h1>
+
+          <div class="formBox">
+            <div>
+              <input type="text" placeholder="Name" />
+              <input type="text" name="" id="" placeholder="Phne" />
+            </div>
+            <div>
+              <input type="text" placeholder="Email" name="" id="" />
+            </div>
+            <div class="form-floating">
+              <textarea
+                class="form-control"
+                placeholder="Leave a comment here"
+                id="floatingTextarea2"
+                style="height: 140px"
+              ></textarea>
+              <label for="floatingTextarea2">Massage</label>
+            </div>
+            <button>SEND MESSAGE</button>
+          </div>
+        </div>
+        <div class="contactDetails">
+          <h2>Ready to elevate your vacuum solutions?</h2>
+          <p class="contactDetailsP1">ADDRESS</p>
+          <p class="contactDetailsP2">
+            No. 57, 8th cross, 1st B cross, Doddanna Industrial Estate,
+            Vishwaneedam post,Near Peenya 2nd stage,Bangalore-560091
+          </p>
+          <p class="contactDetailsP1">EMAIL</p>
+          <p class="contactDetailsP2">support@uniquevacuum.co.in</p>
+          <p class="contactDetailsP1">PHONE</p>
+          <p class="contactDetailsP2">9886726920 / 080-28367059</p>
+        </div>
+      </div>
 
 
+    <footer>
+      <div id="foot"></div>
+    </footer>
+
+    <script src="./assests/js/footer.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./assests/js/navigation.js"></script>
+    <script
+      src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+    <script src="./OwlCarousel2-master/OwlCarousel2-master/dist/owl.carousel.min.js"></script>
     <script src="./assests/js/allProduct.js"></script>
-</body>
+  </body>
 </html>

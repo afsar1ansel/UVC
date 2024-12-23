@@ -22,12 +22,13 @@ nav.innerHTML = `<a href="index.html" class="logoBoxA" ><div class="logo">
 </svg></div>
         </div>`;
 
-window.addEventListener("scroll", () => {
-  const navigationBox = document.querySelector(".navigationBox2");
+        
+// window.addEventListener("scroll", () => {
+//   const navigationBox = document.querySelector(".navigationBox2");
 
-  if (window.scrollY > 0) {
-    navigationBox.classList.add("scrolled");
-  } else {
-    navigationBox.classList.remove("scrolled");
-  }
-});
+//   if (window.scrollY > 0) {
+//     navigationBox.classList.add("scrolled");
+//   } else {
+//     navigationBox.classList.remove("scrolled");
+//   }
+// });
