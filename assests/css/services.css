@@ -42,36 +42,40 @@
 /* services */
 
 @media (max-width: 580px) {
-  #services .servicesBox {
+  #service .servicesBox {
     flex-direction: column;
     width: 90%;
+    margin-bottom: 20px;
+
   }
 
-  #services .servImg {
+  #service .servImg {
     width: 100%;
   }
 
-  #services .servText {
+  #service .servText {
     width: 100%;
   }
 }
 @media (min-width: 580px) and (max-width: 770px) {
-  #services .servicesBox {
+  #service .servicesBox {
     flex-direction: column;
     width: 90%;
+    margin-bottom: 20px;
   }
 
-  #services .servImg {
+  #service .servImg {
     width: 100%;
   }
 
-  #services .servText {
+  #service .servText {
     width: 100%;
   }
 }
 
-.services {
+.service {
   margin-bottom: 100px;
+  /* border: solid 1px red; */
 }
 
 .servicesBox {
@@ -81,6 +85,7 @@
   /* width: 100%; */
   width: 69.625vw;
   margin: auto;
+  margin-bottom: 20px;
 }
 
 .servImg {
@@ -112,7 +117,7 @@
   width: 180px;
 }
 
-.servText h3 {
+#service .servText h3 {
   color: #000;
   font-size: 24px;
   font-style: normal;
@@ -140,7 +145,7 @@
   font-weight: 600;
 }
 
-/* services end */
+/* service end */
 
 /* innovation */
 
