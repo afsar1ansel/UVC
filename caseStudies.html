@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UVC</title>
-    <link rel="stylesheet" href="./assests/css/style.css" />
+    <title>Case Studies</title>
+    <link rel="stylesheet" href="./assests/css/caseStudies.css" />
     <link rel="stylesheet" href="./assests/css/navigation.css" />
-    <link rel="stylesheet" href="./assests/css/footer.css">
+    <link rel="stylesheet" href="./assests/css/footer.css" />
     <link
       rel="stylesheet"
       href="./OwlCarousel2-master/OwlCarousel2-master/dist/assets/owl.carousel.min.css"
@@ -22,487 +22,181 @@
     />
   </head>
   <style>
-  @media (max-width: 1024px) {
-    .d-mobile {
-      display: block !important;
+    @media (max-width: 1024px) {
+      .d-mobile {
+        display: block !important;
+      }
+      .d-desktop {
+        display: none !important;
+      }
     }
-    .d-desktop {
-      display: none !important;
-    }
-  }
 
-  @media (min-width: 1024px) {
-    .d-mobile {
-      display: none !important;
+    @media (min-width: 1024px) {
+      .d-mobile {
+        display: none !important;
+      }
+      .d-desktop {
+        display: block !important;
+      }
     }
-    .d-desktop {
-      display: block !important;
-    }
-  }
-</style>
-<!-- 
-<div class="d-desktop">Visible on desktop</div>
-<div class="d-mobile">Visible on mobile</div> -->
-
+  </style>
   <body>
-    <div class="d-desktop d-none d-md-block">
-      <nav>
-        <div class="contanctNav">
-          <div class="contacts">
-            <div>
-              <img src="./assests/img/call.png" alt="" />
-              <p>9886726920 / 080-28367059</p>
-            </div>
-            |
-            <div>
-              <img src="./assests/img/mapdot.png" alt="" />
-              <p>No. 57, 8th Cross, Doddanna Industrial Estate</p>
-            </div>
-            |
-            <div>
-              <img src="./assests/img/msg.svg" alt="" />
-              <p>support@uniquevacuum.co.in</p>
-            </div>
-          </div>
-          <div class="socialNav">
-            <p>Follow Us:</p>
-            <div>
-              <img src="./assests/img/fb1.svg" alt="" />
-              <img src="./assests/img/twitter1.png" alt="" />
-              <img src="./assests/img/whapp1.png" alt="" />
-              <img src="./assests/img/insta1.png" alt="" />
-            </div>
-          </div>
-        </div>
-        <div class="navigationBox navigationBox2" id="navBarBox"></div>
-      </nav>
-    </div>
-    <!-- nav mobile -->
-    <div class="d-mobile d-block d-md-none">
-      <nav class="navbar bg-body-tertiary fixed-top" id="navBarMobile">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"
-            ><div class="logo2">
-              <img src="./assests/img/logo.png" alt="" />
-              <h1>
-                <span class="white">U</span>
-                <span class="orange">V</span>
-                <span class="green">C</span>
-              </h1>
-            </div></a
-          >
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar"
-            aria-label="Toggle navigation"
-          >
-            ≡
-          </button>
-          <div
-            class="offcanvas offcanvas-end"
-            tabindex="-1"
-            id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel"
-          >
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+    <nav>
+      <div class="d-desktop d-none d-md-block">
+        <div class="navigationBox scrolled" id="navBarBox"></div>
+      </div>
+
+      <!-- nav mobile -->
+      <div class="d-mobile d-block d-md-none">
+        <nav class="navbar bg-body-tertiary fixed-top" id="navBarMobile">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"
+              ><div class="logo2">
                 <img src="./assests/img/logo.png" alt="" />
-                <span class="white">U</span>
-                <span class="orange">V</span>
-                <span class="green">C</span>
-              </h5>
-              <button
-                style="
-                  margin-left: auto;
-                  box-shadow: none !important;
-                  background: none !important;
-                  border: none !important;
-                  font-size: 32px !important;
-                  color: #ffc631 !important;
-                "
-                type="button"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              >
-                &#10539;
-              </button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="./about.html">ABOUT</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link"
-                      href="product.html"
-                      role="button"
-                  >
-                    PRODUCTS+
-                  </a>
-                  <!-- <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul> -->
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    SERVICES+
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li>
-                      <hr class="dropdown-divider" />
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">INDUSTRIES SERVED</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">CASE STUDIES+</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">DOWNLOADS</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">CONTACT US</a>
-                </li>
-              </ul>
-              <div id="getQuoteM">
-                GET A QUOTE
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="12"
-                  height="13"
-                  viewBox="0 0 12 13"
-                  fill="none"
+                <h1>
+                  <span class="white">U</span>
+                  <span class="orange">V</span>
+                  <span class="green">C</span>
+                </h1>
+              </div></a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+            >
+              ≡
+            </button>
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                  <img src="./assests/img/logo.png" alt="" />
+                  <span class="white">U</span>
+                  <span class="orange">V</span>
+                  <span class="green">C</span>
+                </h5>
+                <button
+                  style="
+                    margin-left: auto;
+                    box-shadow: none !important;
+                    background: none !important;
+                    border: none !important;
+                    font-size: 32px !important;
+                    color: #ffc631 !important;
+                  "
+                  type="button"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
                 >
-                  <path
-                    d="M1.98771 1.50635C1.98771 1.24113 2.09307 0.986777 2.28061 0.799241C2.46814 0.611705 2.7225 0.506348 2.98771 0.506348H10.9877C11.2529 0.506348 11.5073 0.611705 11.6948 0.799241C11.8824 0.986777 11.9877 1.24113 11.9877 1.50635V9.50635C11.9877 9.77156 11.8824 10.0259 11.6948 10.2135C11.5073 10.401 11.2529 10.5063 10.9877 10.5063C10.7225 10.5063 10.4681 10.401 10.2806 10.2135C10.0931 10.0259 9.98771 9.77156 9.98771 9.50635V3.92035L1.69471 12.2133C1.50611 12.3955 1.25351 12.4963 0.991311 12.494C0.729114 12.4917 0.478302 12.3866 0.292894 12.2012C0.107485 12.0158 0.00231622 11.7649 3.78025e-05 11.5027C-0.00224062 11.2406 0.0985542 10.9879 0.280712 10.7993L8.57371 2.50635H2.98771C2.7225 2.50635 2.46814 2.40099 2.28061 2.21345C2.09307 2.02592 1.98771 1.77156 1.98771 1.50635Z"
-                    fill="black"
-                  />
-                </svg>
-              </div>
-              <!-- <form class="d-flex mt-3" role="search">
-                <input
-                  class="form-control me-2"
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search"
-                />
-                <button class="btn btn-outline-success" type="submit">
-                  Search
+                  &#10539;
                 </button>
-              </form> -->
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./about.html"
+                      >ABOUT</a
+                    >
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link" href="product.html" role="button">
+                      PRODUCTS+
+                    </a>
+                    <!-- <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <hr class="dropdown-divider" />
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul> -->
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="services.html"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      SERVICES+
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <hr class="dropdown-divider" />
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">INDUSTRIES SERVED</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">CASE STUDIES+</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">DOWNLOADS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">CONTACT US</a>
+                  </li>
+                </ul>
+                <div id="getQuoteM">
+                  GET A QUOTE
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="12"
+                    height="13"
+                    viewBox="0 0 12 13"
+                    fill="none"
+                  >
+                    <path
+                      d="M1.98771 1.50635C1.98771 1.24113 2.09307 0.986777 2.28061 0.799241C2.46814 0.611705 2.7225 0.506348 2.98771 0.506348H10.9877C11.2529 0.506348 11.5073 0.611705 11.6948 0.799241C11.8824 0.986777 11.9877 1.24113 11.9877 1.50635V9.50635C11.9877 9.77156 11.8824 10.0259 11.6948 10.2135C11.5073 10.401 11.2529 10.5063 10.9877 10.5063C10.7225 10.5063 10.4681 10.401 10.2806 10.2135C10.0931 10.0259 9.98771 9.77156 9.98771 9.50635V3.92035L1.69471 12.2133C1.50611 12.3955 1.25351 12.4963 0.991311 12.494C0.729114 12.4917 0.478302 12.3866 0.292894 12.2012C0.107485 12.0158 0.00231622 11.7649 3.78025e-05 11.5027C-0.00224062 11.2406 0.0985542 10.9879 0.280712 10.7993L8.57371 2.50635H2.98771C2.7225 2.50635 2.46814 2.40099 2.28061 2.21345C2.09307 2.02592 1.98771 1.77156 1.98771 1.50635Z"
+                      fill="black"
+                    />
+                  </svg>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
+    </nav>
+
+    <!-- hero -->
+    <div class="hero" id="hero">
+      <img src="./assests/img/Frame340.png" alt="" />
     </div>
 
-    <!-- BODY -->
-    <div class="body">
-      <!-- Hero -->
-      <div class="d-none d-md-block">
-        <div class="hero">
-          <div class="owl-carousel" id="heroCarousel">
-            <div class="item">
-              <div class="lineText">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16vw"
-                  height="3"
-                  viewBox="0 0 319 3"
-                  fill="none"
-                >
-                  <path
-                    d="M-37 1L318 1.5"
-                    stroke="#FFC631"
-                    stroke-width="2"
-                    stroke-linecap="square"
-                  />
-                </svg>
-                <p>INNOVATING PRECISION, ELEVATING STANDARDS</p>
-              </div>
-              <div class="heroBotDiv">
-                <div class="leftBotHero">
-                  <h1>Revolutionizing Vacuum Technology since 2001</h1>
-                  <p>
-                    Expert solutions for all your high vacuum engineering needs.
-                  </p>
-                  <div class="heroBtns">
-                    <button>DISCOVER MORE <span class="arrow">↗</span></button>
-                    <button>OUR SERVICES<span class="arrow">↗</span></button>
-                  </div>
-                  <div class="heroCredits">
-                    <div>
-                      <h1>20 +</h1>
-                      <p>YEARS OF EXPERIENCE</p>
-                    </div>
-                    <div>
-                      <h1>150 +</h1>
-                      <p>SUCCESSFUL INSTALLATIONS</p>
-                    </div>
-                    <div>
-                      <h1>50 +</h1>
-                      <p>GLOBAL PARTNERS</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="rightBotHero">
-                  <img src="./assests/img/man.png" alt="" />
-                </div>
-              </div>
-            </div>
-            <!-- <div class="item">item 4</div> -->
-          </div>
+    <!-- innovative real world -->
+    <div class="innovative" id="innovative">
+      <div class="innovationContainer">
+        <div class="innovativeRight">
+          <img src="./assests/img/Mask1a.png" alt="" />
         </div>
-      </div>
-
-      <!-- solutions -->
-
-      <div class="solutions" id="solutions">
-        <div class="lineText">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="42"
-            height="3"
-            viewBox="0 0 42 3"
-            fill="none"
-          >
-            <path
-              d="M1 1.5H41"
-              stroke="#FFC631"
-              stroke-width="2"
-              stroke-linecap="square"
-            />
-          </svg>
-          <p>LEADING WITH PRECISION</p>
-        </div>
-        <div class="solutionsheading">
-          <h1>
-            Comprehensive Vacuum Technology
-            <span style="color: #0da574">Solutions</span>
-          </h1>
-        </div>
-        <div class="solutionGrid">
-          <div class="solutionGridBox">
-            <h1>01</h1>
-            <p class="solGridpara1">ISO 9001-2015 Accredited for Quality</p>
-            <p class="solGridpara2">
-              We deliver high-quality solutions, certified by ISO 9001-2015,
-              ensuring excellence across all processes and products.
-            </p>
-            <p class="solGridpara3">DETAILS ➝</p>
-          </div>
-          <div class="solutionGridBox">
-            <h1>01</h1>
-            <p class="solGridpara1">ISO 9001-2015 Accredited for Quality</p>
-            <p class="solGridpara2">
-              We deliver high-quality solutions, certified by ISO 9001-2015,
-              ensuring excellence across all processes and products.
-            </p>
-            <p class="solGridpara3">DETAILS ➝</p>
-          </div>
-          <div class="solutionGridBox">
-            <h1>01</h1>
-            <p class="solGridpara1">ISO 9001-2015 Accredited for Quality</p>
-            <p class="solGridpara2">
-              We deliver high-quality solutions, certified by ISO 9001-2015,
-              ensuring excellence across all processes and products.
-            </p>
-            <p class="solGridpara3">DETAILS ➝</p>
-          </div>
-          <div class="solutionGridBox">
-            <h1>01</h1>
-            <p class="solGridpara1">ISO 9001-2015 Accredited for Quality</p>
-            <p class="solGridpara2">
-              We deliver high-quality solutions, certified by ISO 9001-2015,
-              ensuring excellence across all processes and products.
-            </p>
-            <p class="solGridpara3">DETAILS ➝</p>
-          </div>
-          <div class="solutionGridBox">
-            <h1>01</h1>
-            <p class="solGridpara1">ISO 9001-2015 Accredited for Quality</p>
-            <p class="solGridpara2">
-              We deliver high-quality solutions, certified by ISO 9001-2015,
-              ensuring excellence across all processes and products.
-            </p>
-            <p class="solGridpara3">DETAILS ➝</p>
-          </div>
-          <div class="solutionGridBox">
-            <h1>01</h1>
-            <p class="solGridpara1">ISO 9001-2015 Accredited for Quality</p>
-            <p class="solGridpara2">
-              We deliver high-quality solutions, certified by ISO 9001-2015,
-              ensuring excellence across all processes and products.
-            </p>
-            <p class="solGridpara3">DETAILS ➝</p>
-          </div>
-        </div>
-      </div>
-      <!-- </div> -->
-      <!-- product -->
-
-      <div class="product" id="product">
-        <div class="lineText">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="42"
-            height="3"
-            viewBox="0 0 42 3"
-            fill="none"
-          >
-            <path
-              d="M1 1.5H41"
-              stroke="#FFC631"
-              stroke-width="2"
-              stroke-linecap="square"
-            />
-          </svg>
-          <p style="color: white">ENGINEERING EXCELLENCE</p>
-        </div>
-        <div class="productHead">
-          <div class="producth1">
-            <h1>
-              Our Engineered
-              <span style="color: #0da574">Products</span>
-            </h1>
-          </div>
-          <div class="productHeadBtn">
-            <div>OUR PRODUCTS</div>
-            <div class="productHeadBtn2">OUR PARTNERS</div>
-          </div>
-        </div>
-        <div class="productGrid">
-          <div class="productGridBox">
-            <div class="productGridImg">
-              <img src="./assests/img/Mask.png" class="productImgs" alt="" />
-              <div class="productImgMiddle">
-                <div class="text">View Details</div>
-              </div>
-            </div>
-            <h1>Vacuum components and Service</h1>
-            <div class="productBoxLine">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="100%"
-                height="1"
-                viewBox="0 0 627 1"
-                fill="none"
-              >
-                <path d="M1 0.5H626" stroke="#A9A9A9" stroke-linecap="square" />
-              </svg>
-            </div>
-            <p>
-              We provide high-quality vacuum components and expert services for
-              efficient system performance and maintenance.
-            </p>
-          </div>
-          <div class="productGridBox">
-            <div class="productGridImg">
-              <img src="./assests/img/Mask.png" class="productImgs" alt="" />
-              <div class="productImgMiddle">
-                <div class="text">View Details</div>
-              </div>
-            </div>
-            <h1>Vacuum components and Services</h1>
-            <div class="productBoxLine">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="100%"
-                height="1"
-                viewBox="0 0 627 1"
-                fill="none"
-              >
-                <path d="M1 0.5H626" stroke="#A9A9A9" stroke-linecap="square" />
-              </svg>
-            </div>
-            <p>
-              We provide high-quality vacuum components and expert services for
-              efficient system performance and maintenance.
-            </p>
-          </div>
-          <div class="productGridBox">
-            <div class="productGridImg">
-              <img src="./assests/img/Mask.png" class="productImgs" alt="" />
-              <div class="productImgMiddle">
-                <div class="text">View Details</div>
-              </div>
-            </div>
-            <h1>Vacuum components and Services</h1>
-            <div class="productBoxLine">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="100%"
-                height="1"
-                viewBox="0 0 627 1"
-                fill="none"
-              >
-                <path d="M1 0.5H626" stroke="#A9A9A9" stroke-linecap="square" />
-              </svg>
-            </div>
-            <p>
-              We provide high-quality vacuum components and expert services for
-              efficient system performance and maintenance.
-            </p>
-          </div>
-          <div class="productGridBox">
-            <div class="productGridImg">
-              <img src="./assests/img/Mask.png" class="productImgs" alt="" />
-              <div class="productImgMiddle">
-                <div class="text">View Details</div>
-              </div>
-            </div>
-            <h1>Vacuum components and Services</h1>
-            <div class="productBoxLine">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="100%"
-                height="1"
-                viewBox="0 0 627 1"
-                fill="none"
-              >
-                <path d="M1 0.5H626" stroke="#A9A9A9" stroke-linecap="square" />
-              </svg>
-            </div>
-            <p>
-              We provide high-quality vacuum components and expert services for
-              efficient system performance and maintenance.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <!-- map -->
-
-      <div class="map" id="map">
-        <div class="mapRight">
+        <div class="innovativeLeft">
           <div class="lineText">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -518,49 +212,250 @@
                 stroke-linecap="square"
               />
             </svg>
-            <p>NATIONWIDE PRESENCE</p>
+            <h7>Achieving Excellence Together</h7>
           </div>
-          <div class="maph1">
-            <h1>
-              <span style="color: #0da574">Our Reach</span>
-              across India
-            </h1>
-          </div>
-          <div class="mapbox">
-            <img src="./assests/img/map-dot.svg" alt="" />
-          </div>
-        </div>
-        <div class="mapLeft">
-          <p class="mapTopP">
-            Unique Vacuum Solutions has a strong presence across India,
-            delivering high-quality vacuum solutions to industries such as
-            aerospace, automotive, electronics, and more. Our dedication to
-            precision and service has made us a trusted partner for businesses
-            throughout the country.
+          <h1>
+            Real-World <span style="color: #0da574">Success</span> Stories
+          </h1>
+          <p>
+            When XYZ Manufacturing Inc., a leader in automotive components
+            manufacturing, reached out to Unique Vacuum Solutions (UVC), they
+            needed a specialized solution to address high precision vacuum
+            requirements in their production process. Our team provided a
+            tailored suite of products and services to tackle inefficiencies,
+            high rejection rates, and non-compliance risks—ultimately optimizing
+            their approach to vacuum-based testing and leak detection.
           </p>
-          <div class="mapLeftStats">
-            <div class="mapLeftNum">
-              <h1>200 +</h1>
-              <p>Successful Installations across India</p>
-            </div>
-            <div class="mapLeftNum">
-              <h1>20 +</h1>
-              <p>Years of Expertise in Vacuum Technology</p>
-            </div>
-            <div class="mapLeftNum">
-              <h1>98 +</h1>
-              <p>Customer Satisfaction in Service Delivery</p>
-            </div>
+          <div>
+            <p><span style="color: #0da574">➜</span> Making lives easier</p>
+            <p>
+              <span style="color: #0da574">➜</span> Your One-Stop Technology
+              Partner
+            </p>
+            <p>
+              <span style="color: #0da574">➜</span> Pioneering Advanced
+              Engineering
+            </p>
+            <p>
+              <span style="color: #0da574">➜</span> Quality and Expertise
+              Combined
+            </p>
           </div>
-          <div class="mapDiv">Learn More About Us</div>
         </div>
       </div>
-      <!-- </div> -->
 
-      <!-- future -->
+      <div class="anymid">
+        <div class="anyMidText">
+          <h3>Our Specialized Leak Testing Methods</h3>
+          <div class="anyTextBoxs">
+            <p class="anyfirstP">
+              Vacuum Method -<br />
+              <span style="font-size: 16px; font-weight: 500"
+                >Tracer Gas Probe Test
+              </span>
+            </p>
+            <p class="anysecondP">
+              This precise approach utilizes tracer gas to detect leaks at low
+              pressures, ensuring even the smallest leaks are accurately
+              identified in sensitive components.
+            </p>
+          </div>
+          <div class="anyTextBoxs">
+            <p class="anyfirstP">
+              Evacuation Method -<br />
+              <span style="font-size: 16px; font-weight: 500">Hood Test </span>
+            </p>
+            <p class="anysecondP">
+              In this method, a vacuum hood is placed over the test object to
+              collect any tracer gas escaping from leaks, allowing for pinpoint
+              accuracy in leak detection.
+            </p>
+          </div>
+          <div class="anyTextBoxs">
+            <p class="anyfirstP">
+              Overpressure -<br />
+              <span style="font-size: 16px; font-weight: 500">Hood Test </span>
+            </p>
+            <p class="anysecondP">
+              By applying pressure within the test component and using a hood to
+              capture any escaping tracer gas, this method quickly identifies
+              even subtle leaks.
+            </p>
+          </div>
+          <div class="anyTextBoxs">
+            <p class="anyfirstP">
+              Overpressure Method -<br />
+              <span style="font-size: 16px; font-weight: 500"
+                >Bombing Test
+              </span>
+            </p>
+            <p class="anysecondP">
+              Components are pressurized with tracer gas, allowing for detailed
+              leak detection post-pressurization, ideal for complex or
+              small-scale items.
+            </p>
+          </div>
+          <div class="anyTextBoxs">
+            <p class="anyfirstP">
+              Overpressure Method -<br />
+              <span style="font-size: 16px; font-weight: 500"
+                >Sniffer Test
+              </span>
+            </p>
+            <p class="anysecondP">
+              This handheld sniffer approach detects tracer gas released from
+              leaks, allowing quick identification on high-pressure applications
+              and hard-to-access areas.
+            </p>
+          </div>
+        </div>
+        <div class="anyImg">
+          <img src="./assests/img/ReplaceImage.png" alt="" />
+        </div>
+      </div>
+    </div>
 
-      <div class="future" id="future">
-        <div class="futureGrid">
+       <!--choose  -->
+    <div class="chooses" id="chooses">
+      <div class="chooseHead">
+        <h2>Why Choose Helium Leak Testing?</h2>
+        <p>
+          Helium leak testing ensures unmatched precision for detecting the
+          smallest leaks, boosting product reliability and safety. This quick,
+          non-destructive method is versatile across industries, ideal for
+          applications needing airtight seals and high standards, ultimately
+          enhancing quality assurance in production and maintenance.
+        </p>
+      </div>
+      <div class="chooseBody" id="chooseBody">
+        <div class="choosebodebox">
+          <div>
+            <h5>High Sensitivity</h5>
+            <div class="chooseBoxNum">01</div>
+          </div>
+          <p>
+            Detects even the smallest leaks with precision, ensuring superior
+            performance in all applications.
+          </p>
+        </div>
+        <div class="choosebodebox">
+          <div>
+            <h5>High Sensitivity</h5>
+            <div class="chooseBoxNum">01</div>
+          </div>
+          <p>
+            Detects even the smallest leaks with precision, ensuring superior
+            performance in all applications.
+          </p>
+        </div>
+        <div class="choosebodebox">
+          <div>
+            <h5>High Sensitivity</h5>
+            <div class="chooseBoxNum">01</div>
+          </div>
+          <p>
+            Detects even the smallest leaks with precision, ensuring superior
+            performance in all applications.
+          </p>
+        </div>
+        <div class="choosebodebox">
+          <div>
+            <h5>High Sensitivity</h5>
+            <div class="chooseBoxNum">01</div>
+          </div>
+          <p>
+            Detects even the smallest leaks with precision, ensuring superior
+            performance in all applications.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- service choose -->
+    <div class="choose" id="choose">
+      <div class="serviceHead">
+        <div>
+          <div class="lineText">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="42"
+              height="3"
+              viewBox="0 0 42 3"
+              fill="none"
+            >
+              <path
+                d="M1 1.5H41"
+                stroke="#FFC631"
+                stroke-width="2"
+                stroke-linecap="square"
+              />
+            </svg>
+            <h7>WHAT WE DO</h7>
+          </div>
+          <h1>
+            Why <span style="color: #0da574">Choose</span> Unique Vacuum
+            Solutions
+          </h1>
+        </div>
+        <div class="btnDiv"><button>GET A QUOTE</button></div>
+      </div>
+      <div class="chooseBoxcontainer">
+        <div class="chooseBoxR">
+          <div>
+            <h2>
+              <span style="color: #c8c8c8">01</span>&nbsp;&nbsp;Tailored
+              Engineering Solutions
+            </h2>
+            <p>
+              We customize every project to meet your specific vacuum technology
+              needs.
+            </p>
+          </div>
+          <div>
+            <h2>
+              <span style="color: #c8c8c8">02</span>&nbsp;&nbsp;Commitment to
+              Quality
+            </h2>
+            <p>
+              Certified by ISO 9001-2015, we ensure top-tier quality in all our
+              products and services.
+            </p>
+          </div>
+          <div>
+            <h2>
+              <span style="color: #c8c8c8">03</span>&nbsp;&nbsp;Trusted Global
+              Partnerships
+            </h2>
+            <p>
+              Collaborating with industry leaders like SOLBERG and LAZZERO to
+              bring you world-class vacuum technology.
+            </p>
+          </div>
+        </div>
+        <div class="chooseBoxL">
+          <div>
+            <h2>200 +</h2>
+            <p>Successful Installations across India</p>
+          </div>
+          <div>
+            <h2>98 +</h2>
+            <p>Customer Satisfaction in Service Delivery</p>
+          </div>
+          <div>
+            <h2>20 +</h2>
+            <p>Years of Expertise in Vacuum Technology</p>
+          </div>
+          <div>
+            <h2>150 +</h2>
+            <p>Helium Leak Testing Systems Installed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- future -->
+     <div class="future" id="future">
+    <div class="futureGrid">
           <div class="futureGridBox">
             <div class="lineText">
               <svg
@@ -800,102 +695,154 @@
             </p>
           </div>
         </div>
-        <div class="expertise">
-          <div class="expertHead">
-            <div class="expertHeadtext">
-              <div class="lineText">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="42"
-                  height="3"
-                  viewBox="0 0 42 3"
-                  fill="none"
-                >
-                  <path
-                    d="M1 1.5H41"
-                    stroke="#FFC631"
-                    stroke-width="2"
-                    stroke-linecap="square"
-                  />
-                </svg>
-                <p style="color: white">EXCELLENCE IN VACUUM ENGINEERING</p>
-              </div>
-              <h1 style="color: white">
-                See Our <span style="color: #0da574">Expertise</span> in Action
-              </h1>
-            </div>
-            <div class="expertHeadBtn">
-              <div class="consultBtn">CONSULT NOW</div>
-            </div>
+        </div>
+
+        
+        <!-- partners -->
+    <div class="partners" id="partners">
+        <div class="partnerhead">
+          <div class="lineText">
+              <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="42"
+              height="3"
+              viewBox="0 0 42 3"
+              fill="none"
+              >
+              <path
+              d="M1 1.5H41"
+              stroke="#FFC631"
+              stroke-width="2"
+              stroke-linecap="square"
+              />
+            </svg>
+            <h7>WHAT OUR CLIENTS SAY</h7>
           </div>
-          <div class="futureVideo">
-            <img src="./assests/img/frame.png" alt="" />
-          </div>
-          <div class="futureBot">
-            <div class="futureBotLeft">
-              <p>
-                At Unique Vacuum Solutions, we pride ourselves on delivering
-                innovative, high-performance vacuum technology solutions
-                tailored to meet diverse industry needs. With over 20 years of
-                experience, we continue to set the standard in precision
-                engineering, offering unmatched quality and service across
-                India.
-              </p>
-              <div>
-                <p>
-                  <span style="color: #0da574">✓ </span>Certified Quality; ISO
-                  9001-2015 certified
-                </p>
-                <p>
-                  <span style="color: #0da574">✓ </span>Global Partnerships;
-                  Trusted partners with SOLBERG and LAZZERO
-                </p>
-                <p>
-                  <span style="color: #0da574">✓ </span>End-to-End Solutions;
-                  From design and manufacturing to installation
-                </p>
-                <p>
-                  <span style="color: #0da574">✓ </span>Specialized Expertise;
-                  trusted by diverse industries.
-                </p>
-              </div>
-            </div>
-            <div class="futureBotRight">
-              <p>
-                When we started in 2001, our mission was clear: to bring
-                precision and reliability to the field of vacuum technology.
-                Today, we continue to innovate and serve as a trusted partner to
-                industries across India.
-              </p>
-              <div class="founder">
-                <div>
-                  <img src="./assests/img/founder.png" alt="" />
-                  <p>Nagendra N Utpath <br />Founder</p>
-                </div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="85"
-                  height="74"
-                  viewBox="0 0 85 74"
-                  fill="none"
-                >
-                  <path
-                    d="M48.2012 0.5V37H72.7336C72.7336 50.4171 61.7281 61.3333 48.2012 61.3333V73.5C68.4932 73.5 84.9999 57.1273 84.9999 37V0.5L48.2012 0.5Z"
-                    fill="#0DA574"
-                  />
-                  <path
-                    d="M0.158691 37H24.6911C24.6911 50.4171 13.6856 61.3333 0.158691 61.3333V73.5C20.4507 73.5 36.9574 57.1273 36.9574 37V0.5H0.158691V37Z"
-                    fill="#0DA574"
-                  />
-                </svg>
-              </div>
+          <h1>
+            Testimonials from Trusted <span style="color: #0da574;" >Partners</span> 
+          </h1>
+        </div>
+        <div class="partnerBox">
+          <div class="owl-carousel owl-theme carouselSection-owl">
+            <div class="item reviewerCar">
+              <div class="caroselBox" style="flex: 0 0 48%; margin-right: 2%;">
+          <div class="star">⭐⭐⭐⭐⭐</div>
+          <p>Unique Vacuum Solutions exceeded our expectations with their reliable helium leak detection systems. Their after-sales support has been exceptional.</p>
+          <div style="display: flex; gap: 10px;">
+            <img src="./assests/img/reviewer.png" style="width: 60px;" alt="">
+            <div>
+              <p>Amit Desai</p>
+              <p style="font-size: 10px;">Project Manager, TechAero Systems</p>
             </div>
           </div>
         </div>
-      </div>
-      <!-- </div> -->
-      <!-- accordion -->
+            </div>
+            <div class="item reviewerCar">
+              <div class="caroselBox" style="flex: 0 0 48%; margin-right: 2%;">
+          <div class="star">⭐⭐⭐⭐⭐</div>
+          <p>Unique Vacuum Solutions exceeded our expectations with their reliable helium leak detection systems. Their after-sales support has been exceptional.</p>
+          <div style="display: flex; gap: 10px;">
+            <img src="./assests/img/reviewer.png" style="width: 60px;" alt="">
+            <div>
+              <p>Amit Desai</p>
+              <p style="font-size: 10px;">Project Manager, TechAero Systems</p>
+            </div>
+          </div>
+        </div>
+            </div>
+            <div class="item reviewerCar">
+              <div class="caroselBox" style="flex: 0 0 48%; margin-right: 2%;">
+          <div class="star">⭐⭐⭐⭐⭐</div>
+          <p>Unique Vacuum Solutions exceeded our expectations with their reliable helium leak detection systems. Their after-sales support has been exceptional.</p>
+          <div class="reviewImage" style="display: flex; gap: 10px;">
+            <img src="./assests/img/reviewer.png" style="width: 60px;" alt="">
+            <div>
+              <p>Amit Desai</p>
+              <p style="font-size: 10px;">Project Manager, TechAero Systems</p>
+            </div>
+          </div>
+        </div>
+            </div>
+          </div>
+        </div>
+    </div>
 
+      <!-- offering -->
+    <div class="offering" id="offering">
+      <div class="lineText">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="42"
+          height="3"
+          viewBox="0 0 42 3"
+          fill="none"
+        >
+          <path
+            d="M1 1.5H41"
+            stroke="#FFC631"
+            stroke-width="2"
+            stroke-linecap="square"
+          />
+        </svg>
+        <h7>WHAT WE DO</h7>
+      </div>
+      <h1 style="margin-bottom: 40px;">
+        Why <span style="color: #0da574">Choose</span> Unique Vacuum Solutions
+      </h1>
+
+      <div class="offeringBoxs">
+        <div class="gridBox">
+          <img src="./assests/img/Frame601.png" alt="" />
+          <h3>Advanced Vacuum Measurement Instruments</h3>
+          <div class="Gline"></div>
+          <p>
+            Our vacuum measurement instruments deliver precise readings,
+            designed to meet industry standards for monitoring and controlling
+            vacuum levels in diverse applications.
+          </p>
+          <div class="gridBtn">
+            <a href="/">VIEW PRODUCT</a>
+          </div>
+        </div>
+        <div class="gridBox">
+          <img src="./assests/img/Frame602.png" alt="" />
+          <h3>Advanced Vacuum Measurement Instruments</h3>
+          <div class="Gline"></div>
+          <p>
+            Our vacuum measurement instruments deliver precise readings,
+            designed to meet industry standards for monitoring and controlling
+            vacuum levels in diverse applications.
+          </p>
+          <div class="gridBtn">
+            <a href="/">VIEW PRODUCT</a>
+          </div>
+        </div>
+        <div class="gridBox">
+          <img src="./assests/img/Frame677.png" alt="" />
+          <h3>Advanced Vacuum Measurement Instruments</h3>
+          <div class="Gline"></div>
+          <p>
+            Our vacuum measurement instruments deliver precise readings,
+            designed to meet industry standards for monitoring and controlling
+            vacuum levels in diverse applications.
+          </p>
+          <div class="gridBtn">
+            <a href="/">VIEW PRODUCT</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <!-- ready transform -->
+     <div class="transform" id="transform">
+          <div class="transBox">
+            <h1>Elevate Your Vacuum Solutions</h1>
+            <p>Discover precision-engineered vacuum technology tailored for your industry’s needs.</p>
+            <div class="transBtn">Explore Our SERVICES</div>
+          </div>
+        </div>
+
+         <!-- accordion -->
       <div class="accordion" id="accordion">
         <div class="accordionLeft">
           <div class="lineText">
@@ -1072,217 +1019,21 @@
           </div>
         </div>
       </div>
-      
-      <!-- </div> -->
-      <!-- curve image -->
-      <div class="curveImg">
-        <img src="./assests/img/partners.png" class="img-fluid" alt="" />
-      </div>
-      <!-- </div> -->
+    
 
-      <!-- innovation -->
-
-      <div class="innovation" id="innovation">
-        <div class="innovationHead">
-          <div>
-            <div class="lineText">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="42"
-                height="3"
-                viewBox="0 0 42 3"
-                fill="none"
-              >
-                <path
-                  d="M1 1.5H41"
-                  stroke="#FFC631"
-                  stroke-width="2"
-                  stroke-linecap="square"
-                />
-              </svg>
-              <p>Innovations in Vacuum Technology</p>
-            </div>
-            <h1>
-              Insights from Our
-              <span style="color: #0da574">Expertise</span>
-            </h1>
-          </div>
-          <div class="innovationHeadBtn">OUR BLOG</div>
-        </div>
-        <div class="innovationbody">
-          <div class="innovationbodyBox">
-            <img src="./assests/img/frame1.png" alt="" />
-            <p class="innovationbodyBoxP1">
-              <strong>TECHNOLOGIES </strong>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="5"
-                height="6"
-                viewBox="0 0 5 6"
-                fill="none"
-              >
-                <circle cx="2.5" cy="3" r="2.5" fill="#FFC631" />
-              </svg>
-              12 JANUARY 2023
-            </p>
-            <h3>Advancements in Helium Leak Detection</h3>
-            <p class="innovationbodyBoxP2">
-              Explore the latest innovations in helium leak detection technology
-              that enhance precision and reliability. Discover how these
-              advancements are revolutionizing industries by ensuring the
-              integrity of vacuum systems.
-            </p>
-            <div class="innovationbodyBoxline"></div>
-            <h6>READ BLOG ➔</h6>
-          </div>
-          <div class="innovationbodyBox">
-            <img src="./assests/img/frame2.png" alt="" />
-            <p class="innovationbodyBoxP1">
-              <strong>TECHNOLOGIES </strong>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="5"
-                height="6"
-                viewBox="0 0 5 6"
-                fill="none"
-              >
-                <circle cx="2.5" cy="3" r="2.5" fill="#FFC631" />
-              </svg>
-              12 JANUARY 2023
-            </p>
-            <h3>Advancements in Helium Leak Detection</h3>
-            <p class="innovationbodyBoxP2">
-              Explore the latest innovations in helium leak detection technology
-              that enhance precision and reliability. Discover how these
-              advancements are revolutionizing industries by ensuring the
-              integrity of vacuum systems.
-            </p>
-            <div class="innovationbodyBoxline"></div>
-            <h6>READ BLOG ➔</h6>
-          </div>
-          <div class="innovationbodyBox">
-            <img src="./assests/img/frame3.png" alt="" />
-            <p class="innovationbodyBoxP1">
-              <strong>TECHNOLOGIES </strong>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="5"
-                height="6"
-                viewBox="0 0 5 6"
-                fill="none"
-              >
-                <circle cx="2.5" cy="3" r="2.5" fill="#FFC631" />
-              </svg>
-              12 JANUARY 2023
-            </p>
-            <h3>Advancements in Helium Leak Detection</h3>
-            <p class="innovationbodyBoxP2">
-              Explore the latest innovations in helium leak detection technology
-              that enhance precision and reliability. Discover how these
-              advancements are revolutionizing industries by ensuring the
-              integrity of vacuum systems.
-            </p>
-            <div class="innovationbodyBoxline"></div>
-            <h6>READ BLOG ➔</h6>
-          </div>
-        </div>
-      </div>
-      <!-- </div> -->
-
-      <!-- map google-->
-
-      <div class="map1">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.492957307724!2d77.50464110315308!3d13.004249543213893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3d4acfdcd891%3A0xc9ad02c248a47bbc!2sSTARLET%20CORPORATION!5e0!3m2!1sen!2sin!4v1734001036634!5m2!1sen!2sin"
-          width="100%"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
-      <!-- </div> -->
-
-      <!-- contact -->
-      <div class="contact" id="contact">
-        <div class="contactForm">
-          <div class="lineText">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="42"
-              height="3"
-              viewBox="0 0 42 3"
-              fill="none"
-            >
-              <path
-                d="M1 1.5H41"
-                stroke="#FFC631"
-                stroke-width="2"
-                stroke-linecap="square"
-              />
-            </svg>
-            <p>CONTACT US</p>
-          </div>
-          <h1>
-            Do You Have any
-            <span style="color: #0da574">Question ?</span>
-          </h1>
-
-          <div class="formBox">
-            <div>
-              <input type="text" placeholder="Name" />
-              <input type="text" name="" id="" placeholder="Phne" />
-            </div>
-            <div>
-              <input type="text" placeholder="Email" name="" id="" />
-            </div>
-            <div class="form-floating">
-              <textarea
-                class="form-control"
-                placeholder="Leave a comment here"
-                id="floatingTextarea2"
-                style="height: 140px"
-              ></textarea>
-              <label for="floatingTextarea2">Massage</label>
-            </div>
-            <button>SEND MESSAGE</button>
-          </div>
-        </div>
-        <div class="contactDetails">
-          <h2>Ready to elevate your vacuum solutions?</h2>
-          <p class="contactDetailsP1">ADDRESS</p>
-          <p class="contactDetailsP2">
-            No. 57, 8th cross, 1st B cross, Doddanna Industrial Estate,
-            Vishwaneedam post,Near Peenya 2nd stage,Bangalore-560091
-          </p>
-          <p class="contactDetailsP1">EMAIL</p>
-          <p class="contactDetailsP2">support@uniquevacuum.co.in</p>
-          <p class="contactDetailsP1">PHONE</p>
-          <p class="contactDetailsP2">9886726920 / 080-28367059</p>
-        </div>
-      </div>
-      
-    </div>
-
-    <!-- footer -->
 
     <footer>
-      <!-- <div class="d-none d-md-block"> -->
-        <div id="foot"></div>
+      <div id="foot"></div>
     </footer>
 
+    <script src="./assests/js/footer.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="./assests/js/script.js"></script>
     <script src="./assests/js/navigation.js"></script>
     <script
       src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"
       defer
     ></script>
     <script src="./OwlCarousel2-master/OwlCarousel2-master/dist/owl.carousel.min.js"></script>
-    <script src="./assests/js/footer.js"></script>
+    <script src="./assests/js/caseStudies.js"></script>
   </body>
 </html>
-
-<!-- <div class="d-none d-md-block">Visible on desktop</div>
-<div class="d-block d-md-none">Visible on mobile</div> -->
