@@ -1,17 +1,42 @@
 const nav = document.getElementById("navBarBox");
 
 nav.innerHTML = `<a href="index.html" class="logoBoxA" ><div class="logo">
-          <img src="./assests/img/logo.png" alt="" />
-          <h1>
-            <span class="white">U</span>
-            <span class="orange">V</span>
-            <span class="green">C</span>
-          </h1>
+          <img src="./assests/img/uvclogo.png" alt="" />
         </div>
         </a>
         <div class="navButtons">
             <div><a href="about.html" id="about" >ABOUT</a></div>
-            <div><a href="product.html" id="product">PRODUCTS +</a></div>
+
+            <div class="dropdown">
+  <a href="product.html" class="dropdown-toggle" id="product" data-bs-toggle="dropdown">PRODUCTS</a>
+  <ul class="dropdown-menu">
+    <li class="dropdown">
+      <a class="dropdown-item dropdown-toggle" href="#">PRECISION VACUUM INSTRUMENTS +</a>
+      <ul class="dropdown-menu">
+        <li class="dropdown">
+          <a class="dropdown-item dropdown-toggle" href="#">DPRG SERIES ></a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="dprgDetail.html?id=1ba">1BA - DPRG</a></li>
+            <li><a class="dropdown-item" href="dprgDetail.html?id=1bb">1BB - DPRG</a></li>
+            <li><a class="dropdown-item" href="dprgDetail.html?id=1bc">1BC - DPRG</a></li>
+            <li><a class="dropdown-item" href="dprgDetail.html?id=1bd">1BD - DPRG</a></li>
+          </ul>
+        </li>
+        <li><a class="dropdown-item" href="#">FLEXA SERIES </a></li>
+        <li><a class="dropdown-item" href="#">HYBRID SERIES</a></li>
+        <li><a class="dropdown-item" href="#">HVP SERIES</a></li>
+
+      </ul>
+    </li>
+    <li><a class="dropdown-item" href="#">PRECISION VACUUM PUMPS & SYSTEMS</a></li>
+    <li><a class="dropdown-item" href="#">HELIUM LEAK DETECTORS</a></li>
+    <li><a class="dropdown-item" href="#">HELIUM TEST SYSTEMS</a></li>
+    <li><a class="dropdown-item" href="#">VACUUM SOLUTIONS & COMPONENTS</a></li>
+  </ul>
+</div>
+
+
+
             <div> <a href="services.html" id="services"> SERVICES + </a></div>
             <div> <a href="/" id="industries">INDUSTRIES SERVED</a></div>
             <div> <a href="caseStudies.html" id="caseStudies">CASE STUDIES</a></div>
@@ -22,7 +47,19 @@ nav.innerHTML = `<a href="index.html" class="logoBoxA" ><div class="logo">
 </svg></div>
         </div>`;
 
-        
+
+        document
+          .getElementById("product")
+          .addEventListener("click", function (e) {
+            if (!this.classList.contains("dropdown-toggle")) {
+              return; // Allow normal behavior
+            }
+            window.location.href = this.href; // Redirect to the link
+          });
+
+
+// <li><hr class="dropdown-divider"></li>
+
 // window.addEventListener("scroll", () => {
 //   const navigationBox = document.querySelector(".navigationBox2");
 

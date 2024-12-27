@@ -8,12 +8,7 @@ box.id = "footer"
 box.innerHTML = ` <div class="footUp">
           <div class="footup1">
             <div class="logo2" style="margin-bottom: 24px;">
-              <img src="./assests/img/logo.png" alt="" />
-              <h1>
-                <span class="white">U</span>
-                <span class="orange">V</span>
-                <span class="green">C</span>
-              </h1>
+              <img src="./assests/img/uvclogo.png" alt="" />
             </div>
             <p>Delivering precision and reliability in every vacuum solution we provide. Trusted by industries across India, we offer comprehensive service from design to after-sales support.</p>
           </div>

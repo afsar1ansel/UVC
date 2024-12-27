@@ -64,6 +64,7 @@ margin-left: 3px;
 .footup-box p {
   display: inline-block;
   vertical-align: top; 
+  /* border: solid 1px red; */
 }
 
 
