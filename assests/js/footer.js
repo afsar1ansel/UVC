@@ -12,17 +12,7 @@ box.innerHTML = ` <div class="footUp">
             </div>
             <p>Delivering precision and reliability in every vacuum solution we provide. Trusted by industries across India, we offer comprehensive service from design to after-sales support.</p>
           </div>
-          <div class="footup2">
-            <h3>Contacts</h3>
-            <div class="footup-box">
-   <img src="./assests/img/call.png" alt="">
-  <p>+91 9886726920 <br> 080 28367059</p>
-</div>
-<div class="footup-box">
-  <img src="./assests/img/mapdot.png" alt="">
-  <p>No. 57, 8th Cross, Doddanna Industrial Estate</p>
-</div>           
-          </div>
+          
           <div class="footup3">
             <h3>Company</h3>
             <div class="footup3box">
@@ -42,13 +32,19 @@ box.innerHTML = ` <div class="footUp">
               <p>CAREERS</p>
             </div>
           </div>
-          <div class="footup4">
-            <h3>Subscribe to our news</h3>
-            <p>Find out about the last days and the latest promotions of our Corporation</p>
-            <div class="input-group mb-3">
-  <input type="text" class="form-control" placeholder="Email" aria-label="Recipient's username" aria-describedby="button-addon2">
-  <button class="btn btn-outline-secondary" type="button" id="button-addon2">SUBSCRIBE</button>
+
+          <div class="footup2">
+            <h3>Contacts</h3>
+            <div class="footup-box">
+   <img src="./assests/img/call.png" alt="">
+  <p>+91 9886726920 <br> 080 28367059</p>
 </div>
+<div class="footup-box">
+  <img src="./assests/img/mapdot.png" alt="">
+  <p>No. 57, 8th Cross, Doddanna Industrial Estate</p>
+</div>           
+          </div>
+         
           </div>
         </div>
         <div class="footline"></div>
@@ -62,5 +58,14 @@ foot.appendChild(box)
 
 
 
+// line 45
+
+//  <div class="footup4">
+//             <h3>Subscribe to our news</h3>
+//             <p>Find out about the last days and the latest promotions of our Corporation</p>
+//             <div class="input-group mb-3">
+//   <input type="text" class="form-control" placeholder="Email" aria-label="Recipient's username" aria-describedby="button-addon2">
+//   <button class="btn btn-outline-secondary" type="button" id="button-addon2">SUBSCRIBE</button>
+// </div>
 
 
