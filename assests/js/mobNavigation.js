@@ -3,14 +3,10 @@ document.addEventListener("DOMContentLoaded", function () {
 const box = document.getElementById("navBarMobile");
 box.innerHTML = ` <nav class="navbar bg-body-tertiary fixed-top" id="navBarMobile">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"
-            ><div class="logo2">
-              <img src="./assests/img/logo.png" alt="" />
-              <h1>
-                <span class="white">U</span>
-                <span class="orange">V</span>
-                <span class="green">C</span>
-              </h1>
+          <a class="navbar-brand" href="index.html"
+            >
+            <div class="logo2">
+              <img src="./assests/img/uvclogo.png" alt="" />
             </div></a
           >
           <button
@@ -30,12 +26,9 @@ box.innerHTML = ` <nav class="navbar bg-body-tertiary fixed-top" id="navBarMobil
             aria-labelledby="offcanvasNavbarLabel"
           >
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                <img src="./assests/img/logo.png" alt="" />
-                <span class="white">U</span>
-                <span class="orange">V</span>
-                <span class="green">C</span>
-              </h5>
+              <div class="offcanvas-title" id="offcanvasNavbarLabel">
+                <img src="./assests/img/uvclogo.png" alt="" />
+              </div>
               <button
                 style="
                   margin-left: auto;

@@ -91,12 +91,13 @@
 
 .image-gallery {
   display: flex;
-  /* flex-direction: center; */
+  justify-content: space-around;
+  flex-direction: center;
   align-items: center;
   margin: auto;
-  gap: 10px;
-  /* border: solid 1px #c8c8c8; */
-  padding: 0;
+  /* gap: 10px; */
+  border: solid 1px #c8c8c8;
+  padding: auto;
   width: 100%;
 }
 
@@ -104,10 +105,10 @@
   width: 400px;
   height: 400px;
   overflow: hidden;
-  /* border: 1px solid #ccc; */
+  /* border: 1px solid red; */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 

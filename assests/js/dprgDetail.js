@@ -18,9 +18,9 @@ DPRG-1GH unit covers the range from 0.001 mbar to 20 mbar.
       "with universal power supply – input voltage from 90 ~ 264VAC, frequency 47 ~ 440Hz",
     ],
     images: [
-      "../../assests/img/DPRG-1GH-exponentialdisplay.jpg",
-      "../../assests/img/DPRG-1GH_back_panel.jpg",
-      "../../assests/img/S-PR-GH_SENSOR.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyfmVt8gVvshz-3ne4f87Sq63BLfEQynWqfNQH98_Ea95oqtx7",
+      "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmgOhwvNzZl-t1NgavwGRFyxWUAlMdOL_ocjhtwP4ctikGKNSx",
+      "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQIZaYaDf_0SeV5q4MuTuSO3a997Qz7XpCUTGkOwJnWx6wnXPB9",
     ],
     specifications: [
       { name: "Number of sensor channels", value: "ONE" },
@@ -86,11 +86,11 @@ point
       "with universal power supply – input voltage from 90 ~ 264VAC, ",
     ],
     images: [
-      "../../assests/img/DPRG-1GH-exponentialdisplay.jpg",
-      "../../assests/img/DRPG-1GH-SPExpo.jpg",
-      "../../assests/img/DPRG-1GH-SP-EXPONENTIALBACKPANEL.jpg",
-      "../../assests/img/S-PR-GH_SENSOR.jpg",
-      "../../assests/img/DPRG-1GH-SP-exponentialfullset.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyfmVt8gVvshz-3ne4f87Sq63BLfEQynWqfNQH98_Ea95oqtx7",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2vneyjPZYmqNHq7bQZcy-X3_JWUIzs6TFPh6BU6H7MjitYLTq",
+      "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSyPd15EBVrBi3zblkMaNAl7VvepQONdNHZwnDKMoL5uivUSQmf",
+      "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQIZaYaDf_0SeV5q4MuTuSO3a997Qz7XpCUTGkOwJnWx6wnXPB9",
+      "https://uniquevacuum.co.in/wp-content/uploads/2022/07/DPRG-2GH-SP-FULL-SET-EXPONENTIAL-scaled-e1657527390321-300x300.jpg",
     ],
     specifications: [
       { name: "Number of sensor channels", value: "ONE" },
@@ -148,9 +148,9 @@ point
       "with universal power supply – input voltage from 90 ~ 264VAC, ",
     ],
     images: [
-      "../../assests/img/DPRG-2GHrearpanel.jpg",
-      "../../assests/img/DPRG-1GH-exponentialdisplay.jpg",
-      "../../assests/img/S-PR-GH_SENSOR.jpg",
+      "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRqGQ4RWrnDpzqV0NbIwlDSMfxB_P4okEa8mzH0VOcUdCC7MFQR",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyfmVt8gVvshz-3ne4f87Sq63BLfEQynWqfNQH98_Ea95oqtx7",
+      "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQIZaYaDf_0SeV5q4MuTuSO3a997Qz7XpCUTGkOwJnWx6wnXPB9",
     ],
     specifications: [
       { name: "Number of sensor channels", value: "TWO" },
@@ -205,18 +205,18 @@ DPRG-1GH-SP unit covers the range from 0.001 m.Bar to 20 m.bar, and controls rel
 point
         `,
     features: [
-  "Measurement range 0.001 to 20 mbar",
-  "Space saving rugged design- 1/8 DIN console",
-  "Space saving rugged design- 1/8 DIN console",
-  "Mounts in any orientation",
-  "Brass body measuring cell with metal-sealed feed through",
-  "With universal power supply – input voltage from 90 ~ 264VAC"
-],
+      "Measurement range 0.001 to 20 mbar",
+      "Space saving rugged design- 1/8 DIN console",
+      "Space saving rugged design- 1/8 DIN console",
+      "Mounts in any orientation",
+      "Brass body measuring cell with metal-sealed feed through",
+      "With universal power supply – input voltage from 90 ~ 264VAC",
+    ],
     images: [
-        "../../assests/img/DPRG-2GH-SP BACKPANEL.jpg",
-        "../../assests/img/DPRG-2GH-SP-FULLSETEXPONENTIAL.jpg",
-        "../../assests/img/DPRG-2GH-SP-backpanelfullset.jpg",
-      "../../assests/img/S-PR-GH_SENSOR.jpg",
+      "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQzJr09k9aZBonwW5tS8fBkBQGD0rVWXYz7SeMO2nQdfNBBbVqH",
+      "https://uniquevacuum.co.in/wp-content/uploads/2022/07/DPRG-2GH-SP-FULL-SET-EXPONENTIAL-scaled-e1657527390321.jpg",
+      "https://uniquevacuum.co.in/wp-content/uploads/2022/07/DPRG-2GH-SP-back-panel-full-set-scaled.jpg",
+      "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQIZaYaDf_0SeV5q4MuTuSO3a997Qz7XpCUTGkOwJnWx6wnXPB9",
     ],
     specifications: [
       { name: "Number of sensor channels", value: "TWO" },
