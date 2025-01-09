@@ -71,6 +71,201 @@ body {
 /* ----------------------- body ---------------------- */
 
 /* hero */
+
+@media (max-width: 580px){
+
+  #heroCarousel{
+    padding: 80px 0 0 8px !important; 
+    /* border: solid 1px red; */
+  }
+
+  .heroBotDiv {
+    flex-direction: column;
+  }
+
+  #heroCarousel .leftBotHero {
+  width: 95%;
+  margin: 0;
+  }
+
+  #heroCarousel .leftBotHero h1 {
+    font-size: 8vw;
+    line-height: 8vw;
+  }
+
+  #heroCarousel .heroBtns {
+  display: flex;
+  gap: 10px;
+  /* border: solid 1px red; */
+}
+
+#heroCarousel .heroBtns button {
+  display: flex;
+  padding: 16px 32px;
+  border: 1px solid rgba(255, 198, 49, 1);
+  background-color: rgba(255, 198, 49, 1);
+  color: #000810;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  gap: 10px;
+}
+
+#heroCarousel .heroBtns button:last-child {
+  background-color: transparent;
+  color: rgba(255, 198, 49, 1);
+}
+
+
+#heroCarousel .heroCredits {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  margin-top: 40px;
+  /* border: solid 1px red; */
+}
+
+#heroCarousel .heroCredits div {
+  width: 180px;
+  /* border: solid 1px red; */
+  padding: 0;
+  align-items: center;
+  text-align: center;
+}
+
+#heroCarousel .heroCredits div h1 {
+  color: #ffc631;
+  /* font-family: Archivo; */
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  /* line-height: 55px; */
+}
+
+#heroCarousel .heroCredits div p {
+  color: var(--off-white, #e9e6e6);
+  /* font-family: Archivo; */
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 25px; /* 131.579% */
+  text-transform: uppercase;
+}
+
+#heroCarousel .rightBotHero {
+  /* width: 35vw; */
+  /* height: 100%; */
+  /* border: solid 1px yellow; */
+  padding: 30px 0 0 0;
+}
+
+#heroCarousel .rightBotHero img {
+  height: 300px;
+  width: 300px;
+}
+
+}
+
+@media (min-width: 580px) and (max-width: 780px){
+
+  #heroCarousel{
+    padding: 80px 0 0 8px !important; 
+    /* border: solid 1px red; */
+  }
+
+  .heroBotDiv {
+    flex-direction: column;
+  }
+
+  #heroCarousel .leftBotHero {
+  width: 95%;
+  margin: 0;
+  }
+
+  #heroCarousel .leftBotHero h1 {
+    font-size: 8vw;
+    line-height: 8vw;
+  }
+
+  #heroCarousel .heroBtns {
+  display: flex;
+  gap: 10px;
+  /* border: solid 1px red; */
+}
+
+#heroCarousel .heroBtns button {
+  display: flex;
+  padding: 16px 32px;
+  border: 1px solid rgba(255, 198, 49, 1);
+  background-color: rgba(255, 198, 49, 1);
+  color: #000810;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  gap: 10px;
+}
+
+#heroCarousel .heroBtns button:last-child {
+  background-color: transparent;
+  color: rgba(255, 198, 49, 1);
+}
+
+
+#heroCarousel .heroCredits {
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 10px;
+  align-items: center;
+  margin-top: 40px;
+  /* border: solid 1px red; */
+}
+
+#heroCarousel .heroCredits div {
+  width: 180px;
+  /* border: solid 1px red; */
+  padding: 0;
+  align-items: center;
+  text-align: center;
+}
+
+#heroCarousel .heroCredits div h1 {
+  color: #ffc631;
+  /* font-family: Archivo; */
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  /* line-height: 55px; */
+}
+
+#heroCarousel .heroCredits div p {
+  color: var(--off-white, #e9e6e6);
+  /* font-family: Archivo; */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 25px; /* 131.579% */
+  text-transform: uppercase;
+}
+
+#heroCarousel .rightBotHero {
+  width: 90%;
+  /* height: 100%; */
+  /* border: solid 1px yellow; */
+  padding: 30px 0 0 0;
+  display: flex;
+  justify-content: end;
+}
+
+#heroCarousel .rightBotHero img {
+  height: 300px;
+  width: 300px;
+}
+
+}
+
+
+
 .hero {
   height: 100%;
   width: 100%;
@@ -212,6 +407,7 @@ body {
   gap: 10px;
   align-items: center;
   margin-top: 40px;
+
 }
 
 .heroCredits div {
