@@ -101,7 +101,7 @@ body {
 
 #heroCarousel .heroBtns button {
   display: flex;
-  padding: 16px 32px;
+  padding: 16px 28px;
   border: 1px solid rgba(255, 198, 49, 1);
   background-color: rgba(255, 198, 49, 1);
   color: #000810;
@@ -163,6 +163,13 @@ body {
 #heroCarousel .rightBotHero img {
   height: 300px;
   width: 300px;
+}
+
+#heroCarousel .arrow {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
 }
 
 }
