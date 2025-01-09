@@ -173,7 +173,8 @@
 
     #innovation{
         width: 100%;
-        padding: 0;
+        padding: 20px 0;
+        
     }
 
     #innovation .innHeadLeft,
@@ -259,7 +260,7 @@
 @media (max-width: 580px) {
   #manage {
     /* border: solid 1px red; */
-    padding: 100px 1vw 0 1vw;
+    padding: 0 1vw 0 1vw;
   }
 
   #manage .manageBox {
@@ -377,15 +378,15 @@ font-weight: 500;
   }
 
   #transform .transBox p {
-    font-size: 2.5vw;
-    line-height: 2.5vw;
+    font-size: 12px;
+    line-height: 12px;
     width: 100%;
   }
 
   #transform .transBtn {
-    font-size: 2vw;
-    width: 28vw;
-    height: 5.5vw;
+    font-size: 10px;
+    width: 140px;
+    height: 30px;
     padding: 2vw 3vw;
   }
 }

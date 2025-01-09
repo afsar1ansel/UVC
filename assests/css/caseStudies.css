@@ -90,6 +90,7 @@
     width: 90%;
     flex-direction: column;
     margin-bottom: 50px;
+    gap: 48px;
   }
 
   #innovative .innovationContainer{
@@ -98,6 +99,8 @@
 
    #innovative h1{
     width: 100%;
+    font-size: 4.5vw;
+    line-height: 4vw;
     margin: 0;
     padding: 0;
   }
@@ -108,11 +111,12 @@
 
 
    #innovative .innovativeLeft p {
-  font-size: 2.8vw;
+  font-size: 3.2vw;
   font-weight: 400;
-  line-height: 3vw;
+  line-height: 3.2vw;
   /* padding: 0; */
   margin: 0;
+  /* border: solid red 1px; */
   }
 
   #innovative .innovativeRight  {
@@ -161,25 +165,30 @@
 
   #innovative .anyMidText h3 {
     /* color: red; */
-    font-size: 3.5vw;
+    font-size: 4vw;
     line-height: 3.5vw;
     width: 100%;
   }
 
   #innovative .anyfirstP {
     /* color: red; */
-    font-size: 2.5vw;
-    line-height: 2.5vw;
+    font-size: 3.2vw;
+    line-height: 3.5vw;
     width: 30%;
   }
 
   #innovative .anysecondP {
     /* color: red; */
-    font-size: 2.5vw;
-    line-height: 2.5vw;
+    font-size: 3.2vw;
+    line-height: 3.2vw;
     width: 60%;
   }
 
+  #innovative .anyImg{
+    width: 100%;
+    height: 100%;
+    /* border: solid 1px red; */
+  }
 
 }
 
@@ -512,7 +521,6 @@ margin: auto;
   color: white;
   display: flex;
   width: 100%;
-  justify-content: center; /* Align items to the start for better scrolling */
   margin-top: 60px;
   overflow-x: auto; /* Enables horizontal scrolling */
   padding: 10px; /* Adds space around the content */
@@ -631,6 +639,18 @@ margin: auto;
     flex-direction: column;
     gap: 20px;
   }
+
+  #choose .serviceHead button{
+height: 50px;
+padding: 10px 20px;
+align-items: center;
+text-align: center;
+background: #FFC631;
+color: #000810;
+font-size: 18px;
+font-weight: 600;
+border: none;
+}
 
 }
 
@@ -822,7 +842,7 @@ border: none;
   #future .futureGridBox {
     /* border: solid 1px red; */
     padding: 20px 12px 10px 30px;
-    width: 80vw;
+    width: 84vw;
   }
 
   #future .futureBotLeft {
@@ -831,9 +851,9 @@ border: none;
   }
 
   #future .futureGridBox1 {
-    /* border: solid 1px red; */
     border: 1px solid #c8c8c8;
-    width: 80vw;
+    /* border: solid 1px red; */
+    width: 84vw;
     padding: 20px 12px 10px 20px;
     display: flex;
     flex-direction: column;
@@ -963,6 +983,11 @@ border: none;
 /* partners */
 
 @media (max-width: 580px){
+
+  #partners{
+   height: 100%;
+    /* border: solid 1px red; */
+  }
  #partners .carouselSection-owl .owl-nav{
   display: none;
  }
@@ -1112,13 +1137,13 @@ padding: 3.1vw;
   }
 
   #offering .gridBox h3{
-    font-size: 3.3vw;
-    line-height: 3vw;
+    font-size: 4.2vw;
+    line-height: 4vw;
   }
 
   #offering .gridBox p{
-    font-size: 2vw;
-    line-height: 2vw;
+    font-size: 3vw;
+    line-height: 3vw;
   }
 
   #offering .gridBtn{
@@ -1245,19 +1270,19 @@ padding: 3.1vw;
   }
 
   #transform .transBox h1 {
-    font-size: 4.5vw;
+    font-size: 5vw;
   }
 
   #transform .transBox p {
-    font-size: 2.5vw;
-    line-height: 2.5vw;
+    font-size: 12px;
+    line-height: 12px;
     width: 100%;
   }
 
   #transform .transBtn {
-    font-size: 2vw;
-    width: 28vw;
-    height: 5.5vw;
+    font-size: 12px;
+    width: 160px;
+    height: 48px;
     padding: 2vw 3vw;
   }
 }
