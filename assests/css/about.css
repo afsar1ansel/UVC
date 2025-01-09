@@ -4,6 +4,21 @@
   /* box-sizing: border-box; */
 }
 
+/* mobile */
+
+#productDropdown{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+#productDropdown a{
+  text-decoration: none;
+}
+
+
 /* nav */
 .navButtons > div:first-child {
   text-decoration: underline;
@@ -13,6 +28,8 @@
 #about{
   color: #ffc642;
 }
+
+
 
 /* nav end */
 
@@ -87,13 +104,13 @@
   display: inline-flex;
   width: 35vw;
   height: 41px;
-  padding: 18px 30px;
+  padding: 18px 22px;
   align-items: center;
   text-align: center;
   /* gap: 10px; */
   flex-shrink: 0;
   background: #ffc631;
-  font-size: 2.2vw;
+  font-size: 12px;
   font-weight: 500;
   z-index: 1;
 }
@@ -240,20 +257,30 @@
 @media (max-width: 580px){
 
    #process .procesImg{
-    width: 100%;
+    width: 80%;
   height: 100%;
+  /* border: solid 1px red; */
+  gap: 10px;
+  padding: 8px 10px 10px 10px;
+    background-size: cover; /* Makes the background image cover the container */
+  background-position: center; /* Ensures the image is centered */
+  background-repeat: no-repeat;
+
   }
 
   #process .procesImg h2 {
     font-size: 7vw;
     margin: 0;
     padding: 0;
+    /* border: solid 1px red; */
   }
 
    #process .procesImg p{
-    font-size: 2.8vw;
+    font-size: 2.6vw;
+    line-height: 100%;
     margin: 0;
     padding: 0;
+    /* border: solid 1px red; */
    }
 
   #process .processHead {
@@ -491,6 +518,7 @@
     padding: auto;
     margin: auto;
     flex-direction: column;
+    margin-top: 24px;
   }
 
   #choose h1{

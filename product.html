@@ -21,25 +21,25 @@
       href="./bootstrap-5.3.3-dist/css/bootstrap.min.css"
     />
   </head>
-   <style>
-  @media (max-width: 1024px) {
-    .d-mobile {
-      display: block !important;
+  <style>
+    @media (max-width: 1024px) {
+      .d-mobile {
+        display: block !important;
+      }
+      .d-desktop {
+        display: none !important;
+      }
     }
-    .d-desktop {
-      display: none !important;
-    }
-  }
 
-  @media (min-width: 1024px) {
-    .d-mobile {
-      display: none !important;
+    @media (min-width: 1024px) {
+      .d-mobile {
+        display: none !important;
+      }
+      .d-desktop {
+        display: block !important;
+      }
     }
-    .d-desktop {
-      display: block !important;
-    }
-  }
-</style>
+  </style>
   <body>
     <nav>
       <div class="d-desktop d-none d-md-block">
@@ -107,34 +107,89 @@
                     >
                   </li>
                   <li class="nav-item dropdown">
-                    <a
-                       class="nav-link"
-                      href="product.html"
-                      role="button"
-                    >
-                      PRODUCTS+
-                    </a>
-                    <!-- <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li>
-                        <a class="dropdown-item" href="#">Another action</a>
-                      </li>
-                      <li>
-                        <hr class="dropdown-divider" />
+                    <p id="productDropdown">
+                      <a class="nav-link" href="product.html" role="button"
+                        >PRODUCTS</a
+                      >
+                      <a href="javascript:void(0);"> +</a>
+                    </p>
+                    <ul class="dropdown-menu" style="background-color: #c7ebf5;">
+                      <li class="dropdown">
+                        <a class="dropdown-item dropdown-toggle" href="#"
+                          >PRECISION VACUUM INSTRUMENTS +</a
+                        >
+                        <ul class="dropdown-menu" style="background-color: #92b2d6;">
+                          <li class="dropdown">
+                            <a class="dropdown-item dropdown-toggle" href="#" 
+                              >DPRG SERIES ></a
+                            >
+                            <ul class="dropdown-menu" style="background-color: rgb(221, 212, 230);">
+                              <li>
+                                <a
+                                  class="dropdown-item"
+                                  href="dprgDetail.html?id=1ba"
+                                  >1BA - DPRG</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="dropdown-item"
+                                  href="dprgDetail.html?id=1bb"
+                                  >1BB - DPRG</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="dropdown-item"
+                                  href="dprgDetail.html?id=1bc"
+                                  >1BC - DPRG</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="dropdown-item"
+                                  href="dprgDetail.html?id=1bd"
+                                  >1BD - DPRG</a
+                                >
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">FLEXA SERIES</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">HYBRID SERIES</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">HVP SERIES</a>
+                          </li>
+                        </ul>
                       </li>
                       <li>
                         <a class="dropdown-item" href="#"
-                          >Something else here</a
+                          >PRECISION VACUUM PUMPS & SYSTEMS</a
                         >
                       </li>
-                    </ul> -->
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >HELIUM LEAK DETECTORS</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >HELIUM TEST SYSTEMS</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >VACUUM SOLUTIONS & COMPONENTS</a
+                        >
+                      </li>
+                    </ul>
                   </li>
+
                   <li class="nav-item dropdown">
-                    <a
-                     class="nav-link"
-                      href="services.html"
-                      role="button"
-                    >
+                    <a class="nav-link" href="services.html" role="button">
                       SERVICES+
                     </a>
                     <ul class="dropdown-menu">
@@ -202,7 +257,7 @@
     <div class="hero" id="hero">
       <img src="./assests/img/Frame343.png" alt="" />
     </div>
-    
+
     <!-- grid -->
     <div class="proGrid" id="proGrid">
       <div class="gridBox">
@@ -215,10 +270,10 @@
           levels in diverse applications.
         </p>
         <div class="gridBtn">
-            <a href="allProduct.html?id=1">VIEW PRODUCT</a>
+          <a href="allProduct.html?id=1">VIEW PRODUCT</a>
         </div>
       </div>
-       <div class="gridBox">
+      <div class="gridBox">
         <img src="./assests/img/Mask3.png" alt="" />
         <h3>Advanced Vacuum Measurement Instruments</h3>
         <div class="Gline"></div>
@@ -228,10 +283,10 @@
           levels in diverse applications.
         </p>
         <div class="gridBtn">
-            <a href="allProduct.html?id=2">VIEW PRODUCT</a>
+          <a href="allProduct.html?id=2">VIEW PRODUCT</a>
         </div>
       </div>
-       <div class="gridBox">
+      <div class="gridBox">
         <img src="./assests/img/Mask3.png" alt="" />
         <h3>Advanced Vacuum Measurement Instruments</h3>
         <div class="Gline"></div>
@@ -241,10 +296,10 @@
           levels in diverse applications.
         </p>
         <div class="gridBtn">
-            <a href="allProduct.html?id=3">VIEW PRODUCT</a>
+          <a href="allProduct.html?id=3">VIEW PRODUCT</a>
         </div>
       </div>
-       <div class="gridBox">
+      <div class="gridBox">
         <img src="./assests/img/Mask3.png" alt="" />
         <h3>Advanced Vacuum Measurement Instruments</h3>
         <div class="Gline"></div>
@@ -254,10 +309,10 @@
           levels in diverse applications.
         </p>
         <div class="gridBtn">
-            <a href="allProduct.html?id=4">VIEW PRODUCT</a>
+          <a href="allProduct.html?id=4">VIEW PRODUCT</a>
         </div>
       </div>
-       <div class="gridBox">
+      <div class="gridBox">
         <img src="./assests/img/Mask3.png" alt="" />
         <h3>Advanced Vacuum Measurement Instruments</h3>
         <div class="Gline"></div>
@@ -267,83 +322,85 @@
           levels in diverse applications.
         </p>
         <div class="gridBtn">
-            <a href="allProduct.html?id=5">VIEW PRODUCT</a>
+          <a href="allProduct.html?id=5">VIEW PRODUCT</a>
         </div>
       </div>
     </div>
 
     <!-- ready transform -->
-     <div class="transform" id="transform">
-          <div class="transBox">
-            <h1>Ready to Elevate Your Vacuum Technology?</h1>
-            <p>Unlock advanced, reliable vacuum solutions designed to meet your industry’s unique demands.</p>
-            <div class="transBtn">EXPLORE OUR SERVICES</div>
-          </div>
-        </div>
+    <div class="transform" id="transform">
+      <div class="transBox">
+        <h1>Ready to Elevate Your Vacuum Technology?</h1>
+        <p>
+          Unlock advanced, reliable vacuum solutions designed to meet your
+          industry’s unique demands.
+        </p>
+        <div class="transBtn">EXPLORE OUR SERVICES</div>
+      </div>
+    </div>
 
-        <!-- contact -->
-         <div class="contact" id="contact">
-        <div class="contactForm">
-          <div class="lineText">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="42"
-              height="3"
-              viewBox="0 0 42 3"
-              fill="none"
-            >
-              <path
-                d="M1 1.5H41"
-                stroke="#FFC631"
-                stroke-width="2"
-                stroke-linecap="square"
-              />
-            </svg>
-            <p>CONTACT US</p>
-          </div>
-          <h1>
-            Do You Have any
-            <span style="color: #0da574">Question ?</span>
-          </h1>
-
-          <div class="formBox">
-            <div>
-              <input type="text" placeholder="Name" />
-              <input type="text" name="" id="" placeholder="Phne" />
-            </div>
-            <div>
-              <input type="text" placeholder="Email" name="" id="" />
-            </div>
-            <div class="form-floating">
-              <textarea
-                class="form-control"
-                placeholder="Leave a comment here"
-                id="floatingTextarea2"
-                style="height: 140px"
-              ></textarea>
-              <label for="floatingTextarea2">Massage</label>
-            </div>
-            <button>SEND MESSAGE</button>
-          </div>
+    <!-- contact -->
+    <div class="contact" id="contact">
+      <div class="contactForm">
+        <div class="lineText">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="42"
+            height="3"
+            viewBox="0 0 42 3"
+            fill="none"
+          >
+            <path
+              d="M1 1.5H41"
+              stroke="#FFC631"
+              stroke-width="2"
+              stroke-linecap="square"
+            />
+          </svg>
+          <p>CONTACT US</p>
         </div>
-        <div class="contactDetails">
-          <h2>Ready to elevate your vacuum solutions?</h2>
-          <p class="contactDetailsP1">ADDRESS</p>
-          <p class="contactDetailsP2">
-            No. 57, 8th cross, 1st B cross, Doddanna Industrial Estate,
-            Vishwaneedam post,Near Peenya 2nd stage,Bangalore-560091
-          </p>
-          <p class="contactDetailsP1">EMAIL</p>
-          <p class="contactDetailsP2">support@uniquevacuum.co.in</p>
-          <p class="contactDetailsP1">PHONE</p>
-          <p class="contactDetailsP2">9886726920 / 080-28367059</p>
+        <h1>
+          Do You Have any
+          <span style="color: #0da574">Question ?</span>
+        </h1>
+
+        <div class="formBox">
+          <div>
+            <input type="text" placeholder="Name" />
+            <input type="text" name="" id="" placeholder="Phne" />
+          </div>
+          <div>
+            <input type="text" placeholder="Email" name="" id="" />
+          </div>
+          <div class="form-floating">
+            <textarea
+              class="form-control"
+              placeholder="Leave a comment here"
+              id="floatingTextarea2"
+              style="height: 140px"
+            ></textarea>
+            <label for="floatingTextarea2">Massage</label>
+          </div>
+          <button>SEND MESSAGE</button>
         </div>
       </div>
+      <div class="contactDetails">
+        <h2>Ready to elevate your vacuum solutions?</h2>
+        <p class="contactDetailsP1">ADDRESS</p>
+        <p class="contactDetailsP2">
+          No. 57, 8th cross, 1st B cross, Doddanna Industrial Estate,
+          Vishwaneedam post,Near Peenya 2nd stage,Bangalore-560091
+        </p>
+        <p class="contactDetailsP1">EMAIL</p>
+        <p class="contactDetailsP2">support@uniquevacuum.co.in</p>
+        <p class="contactDetailsP1">PHONE</p>
+        <p class="contactDetailsP2">9886726920 / 080-28367059</p>
+      </div>
+    </div>
 
-
-      <!-- footer -->
-       <footer>
-        <div id="foot"></div>
+    <!-- footer -->
+    <footer>
+      <div id="foot"></div>
     </footer>
 
     <script src="./assests/js/product.js"></script>
