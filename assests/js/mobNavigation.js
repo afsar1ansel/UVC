@@ -98,9 +98,18 @@ box.innerHTML = ` <nav class="navbar bg-body-tertiary fixed-top" id="navBarMobil
                               </li>
                             </ul>
                           </li>
-                          <li>
-                            <a class="dropdown-item" href="#">FLEXA SERIES</a>
-                          </li>
+                         <li class="dropdown">
+    <a class="dropdown-item dropdown-toggle" href="#" id="flexaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        FLEXA SERIES
+    </a>
+    <ul class="dropdown-menu" style="background-color: rgb(221, 212, 230);" aria-labelledby="flexaDropdown">
+        <li><a class="dropdown-item" href="dprgDetail.html?id=1ba">1BA - DPRG</a></li>
+        <li><a class="dropdown-item" href="dprgDetail.html?id=1bb">1BB - DPRG</a></li>
+        <li><a class="dropdown-item" href="dprgDetail.html?id=1bc">1BC - DPRG</a></li>
+        <li><a class="dropdown-item" href="dprgDetail.html?id=1bd">1BD - DPRG</a></li>
+    </ul>
+</li>
+
                           <li>
                             <a class="dropdown-item" href="#">HYBRID SERIES</a>
                           </li>
@@ -173,8 +182,9 @@ box.innerHTML = ` <nav class="navbar bg-body-tertiary fixed-top" id="navBarMobil
           </div>
         </div>
       </nav>`;
-
 });
+
+
 
 
 // line 148 - 150

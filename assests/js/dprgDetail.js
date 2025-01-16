@@ -266,6 +266,12 @@ the original manufacturer. All makes of vacuum gauges can also be calibrated / r
 The calibration certificates are available only on request at additional cost. Pl contact before ordering. 
  `,
   },
+  {
+    id: "FGD-1GH",
+    code: "FGD-1GH",
+    name: "FLEXA Digital Pirani Vacuum Gauge",
+    title: "Precision Helium Leak Detectors",
+  },
 ];
 
 // Function to get URL parameters
