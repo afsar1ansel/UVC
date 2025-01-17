@@ -269,8 +269,582 @@ The calibration certificates are available only on request at additional cost. P
   {
     id: "FGD-1GH",
     code: "FGD-1GH",
+    name: "Pirani Vacuum Gauge",
+    title: "FLEXA Digital Pirani Vacuum Gauge",
+    description: `The UVS Model FLEXA series Vacuum Pirani Gauge Controller displays vacuum pressure as measured from a
+FG-04 sensor tube. The Model FGD-1GH displays vacuum measurements based on thermal conductivity from
+0.001 m.Bar to 20 m.bar.
+The Advantage Of This Vacuum Gauge FLEXA Series Is The Sensor Tube Has The Built In Zero And Atm
+Adjustments, So That The Sensor Tube Can Be Used As A Transducer, And Each Sensor Is Factory Calibrated
+At Sensor Level.`,
+    features: [
+      "Measurement range 0.001 to 20 mbar",
+      "Space saving rugged design- 1/8 DIN console",
+      "brass body measuring cell with metal-sealed feed through",
+      "interchangeability of the sensor possible without disturbing the display unit.",
+    ],
+    images: [
+      "https://uniquevacuum.co.in/wp-content/uploads/2022/07/20210720_182616-scaled-e1657711862226.jpg",
+    ],
+    specifications: [
+      { name: "Display Range", value: "1000 mBar to 0.001mBar" },
+      { name: "Measuring Range", value: "20 mBar to 0.001mBar" },
+      { name: "Units of Display", value: "m.Bar" },
+      { name: "Vacuum Gauge Head", value: "S-PR-GH sensor tube" },
+      { name: "Temp. Range", value: "+2 to +50 deg. Celsius" },
+      {
+        name: "VAC. Display",
+        value: "Seven segment bright red LED, mantissa and exponential",
+      },
+      {
+        name: "VAC and ATM Adjust",
+        value: "Adjusted by trim pot at the signal conditioner PCB",
+      },
+      { name: "Process Control Set Points", value: "NIL" },
+      {
+        name: "Operating Voltage",
+        value:
+          "Universal power supply, input voltages from 90 ~ 264VAC 50/60 Hz",
+      },
+      { name: "Mounting", value: "¼ DIN 92 x 92 mm (3.62” x 3.62)" },
+      {
+        name: "Environmental Considerations",
+        value: "Not for use with explosive or corrosive gases",
+      },
+      { name: "Overall Dimensions", value: "92mm X 92mm X 110mm Depth" },
+      {
+        name: "Optional Outputs on Request",
+        value: "RS485, 0 -10V DC analog output",
+      },
+      {
+        name: "Sensor Cable",
+        value:
+          "Standard RJ45 male plugs on both ends, 2 meters long. Optional additional lengths available on request.",
+      },
+    ],
+    end: `Unique Vacuum Solutions offers a convenient recalibration service to help users of vacuum measurement pirani/ thermocouple/ full range gauges to maintain all of their vacuum gauges in Certified and peak condition, regardless of the original manufacturer. All makes of vacuum gauges can also be calibrated / repaired if required. 
+The calibration certificates are available only on request at additional cost. Pl contact before ordering
+`,
+  },
+  {
+    id: "FGD-2GH",
+    code: "FGD-2GH",
     name: "FLEXA Digital Pirani Vacuum Gauge",
-    title: "Precision Helium Leak Detectors",
+    title: "FLEXA Digital Pirani Vacuum Gauge FGD-2GH",
+    description: `The UVS Model FLEXA series Vacuum Pirani Gauge Controller displays vacuum pressure as measured from a FG-04 sensor tube. The Model FGD-2GH unit covers the range from 0.001 m.Bar to 20 m.bar, and measures two channels.
+  
+The advantage of this Vacuum Gauge FLEXA Series is the sensor tube has the built-in zero and ATM adjustments, so that the sensor tube can be used as a transducer, and each sensor is factory calibrated at the sensor level.
+With this, a 1:1 replacement of the sensor with the display unit is established, and there is no dependency on vacuum gauge level adjustment in case of sensor replacement.`,
+    features: [
+      "Measurement range 0.001 to 20 mbar",
+      "Two channel measurement",
+      "Space-saving rugged design- 1/8 DIN console",
+      "Mounts in any orientation",
+      "Brass body measuring cell with metal-sealed feedthrough",
+      "Interchangeability of the sensor possible without disturbing the display unit.",
+    ],
+    applications: [
+      "Controlling high vacuum systems",
+      "Fore vacuum pressure monitoring",
+      "Safety circuits in vacuum systems",
+      "General vacuum measurement & control in the fine and rough vacuum range",
+    ],
+    specifications: [
+      { name: "Number of Sensor Channels", value: "TWO" },
+      { name: "Display Range", value: "1000 mBar to 0.001mBar" },
+      { name: "Measuring Range", value: "20 mBar to 0.001mBar" },
+      { name: "Units of Display", value: "m.Bar" },
+      { name: "Vacuum Gauge Head", value: "FG-04 sensor tube" },
+      { name: "Temp. Range", value: "+2 to +50 deg. Celsius" },
+      {
+        name: "VAC. Display",
+        value: "4-digit bright red LED, 14 mm high",
+      },
+      {
+        name: "VAC and ATM Adjust",
+        value:
+          "Adjusted by trim pot at the signal conditioner PCB of the sensor",
+      },
+      { name: "Process Control Set Points", value: "NIL" },
+      { name: "Process Control Relays", value: "NIL" },
+      { name: "Nonvolatile Memory", value: "NIL" },
+      {
+        name: "Operating Voltage",
+        value:
+          "Universal power supply, input voltages from 90 ~ 264VAC 50/60 Hz",
+      },
+      { name: "Mounting", value: "¼ DIN 92 x 92 mm (3.62” x 3.62)" },
+      {
+        name: "Environmental Considerations",
+        value: "Not for use with explosive or corrosive gases",
+      },
+      { name: "Overall Dimensions", value: "92mm X 92mm X 110mm Depth" },
+      {
+        name: "Optional Outputs on Request",
+        value: "RS485, 0 -10V DC analog output (OPTIONAL)",
+      },
+      {
+        name: "Sensor Cable",
+        value:
+          "Standard RJ45 male plugs on both ends, 2 meters long. Optional additional lengths available on request.",
+      },
+    ],
+    end: `Unique Vacuum Solutions offers a convenient recalibration service to help users of vacuum measurement pirani/thermocouple/full range gauges to maintain all of their vacuum gauges in certified and peak condition, regardless of the original manufacturer. All makes of vacuum gauges can also be calibrated/repaired if required.
+The calibration certificates are available only on request at additional cost. Please contact before ordering.`,
+    images: [
+      "https://uniquevacuum.co.in/wp-content/uploads/2022/07/IMG_6307.jpg",
+    ],
+  },
+  {
+    id: "FGD-2GH-SP",
+    code: "FGD-2GH-SP",
+    name: "FLEXA Digital Pirani Vacuum Gauge",
+    title: "FLEXA Digital Pirani Vacuum Gauge FGD-2GH-SP",
+    description: `The UVS Model FLEXA series Vacuum Pirani Gauge Controller displays vacuum pressure as measured from a FG-04 sensor tube. The Model FGD-2GH-SP displays vacuum measurements from 0.001mBar to 20 mBar and has a built-in potential free contact set point relay output, one for each channel.
+
+The advantage of this Vacuum Gauge FLEXA Series is the sensor tube has built-in zero and ATM adjustments, so that the sensor tube can be used as a transducer, and each sensor is factory calibrated at the sensor level.
+
+With this, a 1:1 replacement of the sensor with the display unit is established, and there is no dependency on vacuum gauge level adjustment in case of sensor replacement.`,
+    features: [
+      "Measurement range 0.001 to 20 mbar",
+      "Two channel measurement with independent relay outputs",
+      "Space-saving rugged design- 1/8 DIN console",
+      "Brass body measuring cell with metal-sealed feedthrough",
+      "Universal power supply",
+      "Interchangeability of the sensor possible without disturbing the display unit",
+    ],
+    applications: [
+      "Controlling high vacuum systems",
+      "Fore vacuum pressure monitoring",
+      "Safety circuits in vacuum systems",
+      "General vacuum measurement & control in the fine and rough vacuum range",
+    ],
+    specifications: [
+      { name: "Number of Sensor Channels", value: "TWO" },
+      { name: "Display Range", value: "1000 mBar to 0.001mBar" },
+      { name: "Measuring Range", value: "20 mBar to 0.001mBar" },
+      { name: "Measuring Unit", value: "m.Bar" },
+      { name: "Vacuum Gauge Head", value: "FG-04 sensor tube" },
+      { name: "Temp. Range", value: "+2 to +50 deg. Celsius" },
+      {
+        name: "VAC. Display",
+        value: "4-digit bright red LED, 14 mm high",
+      },
+      {
+        name: "VAC and ATM Adjust",
+        value:
+          "Adjusted by trim pot at the signal conditioner PCB of the sensor",
+      },
+      { name: "Process Control Set Points", value: "One for each channel" },
+      {
+        name: "Process Control Relays",
+        value:
+          "Two relay outputs, potential free contacts; independently available through the DB15 accessory connector on the rear panel",
+      },
+      { name: "Nonvolatile Memory", value: "Only for set points" },
+      {
+        name: "Operating Voltage",
+        value:
+          "Universal power supply, input voltages from 90 ~ 264VAC 50/60 Hz",
+      },
+      { name: "Mounting", value: "¼ DIN 92 x 92 mm (3.62” x 3.62)" },
+      {
+        name: "Environmental Considerations",
+        value: "Not for use with explosive or corrosive gases",
+      },
+      { name: "Overall Dimensions", value: "92mm X 92mm X 110mm Depth" },
+      {
+        name: "Optional Outputs on Request",
+        value: "RS485, 0 -10V DC analog output (optional)",
+      },
+      {
+        name: "Sensor Cable",
+        value:
+          "Standard RJ45 male plugs on both ends, 2 meters long. Optional additional lengths available on request.",
+      },
+    ],
+    end: `Unique Vacuum Solutions offers a convenient recalibration service to help users of vacuum measurement pirani/thermocouple/full range gauges to maintain all of their vacuum gauges in certified and peak condition, regardless of the original manufacturer. All makes of vacuum gauges can also be calibrated/repaired if required.
+The calibration certificates are available only on request at additional cost. Please contact before ordering.`,
+    images: [
+      "https://uniquevacuum.co.in/wp-content/uploads/2022/07/FGD-2GH-SP-COMPLETE-SET-scaled.jpg",
+    ],
+  },
+  {
+    id: "FGD-1GH-2SP",
+    code: "FGD-1GH-2SP",
+    name: "FLEXA Digital Pirani Vacuum Gauge",
+    title: "FLEXA Digital Pirani Vacuum Gauge FGD-1GH-2SP",
+    description: `The UVS Model FLEXA series Vacuum Pirani Gauge Controller displays vacuum pressure as measured from an FG-04 sensor tube. The Model FGD-1GH-2SP displays vacuum measurements from 2000 to 0.1 Pascals and has two built-in potential-free contact set point relay outputs.
+
+The advantage of this Vacuum Gauge FLEXA Series is that the sensor tube has built-in zero and ATM adjustments, so the sensor tube can be used as a transducer, and each sensor is factory calibrated at the sensor level.
+
+With this, a 1:1 replacement of the sensor with the display unit is established, and there is no dependency on vacuum gauge level adjustment in case of sensor replacement.`,
+    features: [
+      "Measurement range 2000 to 0.1 Pascal",
+      "Space-saving rugged design - 1/8 DIN console",
+      "Brass body measuring cell with metal-sealed feedthrough",
+      "Universal power supply",
+      "Interchangeability of the sensor possible without disturbing the display unit",
+    ],
+    applications: [
+      "Controlling high vacuum systems",
+      "Fore vacuum pressure monitoring",
+      "Safety circuits in vacuum systems",
+      "General vacuum measurement & control in the fine and rough vacuum range",
+    ],
+    specifications: [
+      { name: "Number of Sensor Channels", value: "ONE" },
+      { name: "Measuring Range", value: "2000 to 0.1 Pascal" },
+      { name: "Measuring Unit", value: "Pascal" },
+      { name: "Vacuum Gauge Head", value: "FG-04 sensor tube" },
+      { name: "Temp. Range", value: "+2 to +50 deg. Celsius" },
+      {
+        name: "VAC. Display",
+        value: "4-digit bright red LED, 14 mm high",
+      },
+      {
+        name: "VAC and ATM Adjust",
+        value:
+          "Adjusted by trim pot at the signal conditioner PCB of the sensor",
+      },
+      { name: "Process Control Set Points", value: "Two" },
+      {
+        name: "Process Control Relays",
+        value:
+          "Two relay outputs, potential-free contacts; independently available through the DB15 accessory connector on the rear panel",
+      },
+      { name: "Nonvolatile Memory", value: "Only for set points" },
+      {
+        name: "Operating Voltage",
+        value:
+          "Universal power supply, input voltages from 90 ~ 264VAC 50/60 Hz",
+      },
+      { name: "Mounting", value: "¼ DIN 92 x 92 mm (3.62” x 3.62)" },
+      {
+        name: "Environmental Considerations",
+        value: "Not for use with explosive or corrosive gases",
+      },
+      { name: "Overall Dimensions", value: "92mm X 92mm X 110mm Depth" },
+      {
+        name: "Optional Outputs on Request",
+        value: "RS485, 0 -10V DC analog output (optional)",
+      },
+      {
+        name: "Sensor Cable",
+        value:
+          "Standard RJ45 male plugs on both ends, 2 meters long. Optional additional lengths available on request.",
+      },
+    ],
+    end: `Unique Vacuum Solutions offers a convenient recalibration service to help users of vacuum measurement pirani/thermocouple/full range gauges to maintain all of their vacuum gauges in certified and peak condition, regardless of the original manufacturer. All makes of vacuum gauges can also be calibrated/repaired if required.
+The calibration certificates are available only on request at additional cost. Please contact before ordering.`,
+    images: [
+      "https://uniquevacuum.co.in/wp-content/uploads/2022/07/IMG_6299-rotated.jpg",
+    ],
+  },
+  {
+    id: "FGE-1GH",
+    code: "FGE-1GH",
+    name: "FLEXA Digital Pirani Vacuum Gauge",
+    title: "FLEXA Digital Pirani Vacuum Gauge FGE-1GH",
+    description: `The UVS Model FLEXA series Vacuum Pirani Gauge Controller displays vacuum pressure as measured from an FG-04 sensor tube. The Model FGE-1GH displays vacuum measurements based on thermal conductivity from 0.001 m.Bar to 20 m.bar. 
+
+Exponential order display from 2.0X10¹ to 1.0X10⁻³ mbar.
+
+The advantage of this Vacuum Gauge FLEXA Series is that the sensor tube has built-in zero and ATM adjustments, so the sensor tube can be used as a transducer, and each sensor is factory calibrated at the sensor level.
+
+With this, a 1:1 replacement of the sensor with the display unit is established, and there is no dependency on vacuum gauge level adjustment in case of sensor replacement.`,
+    features: [
+      "Measurement range 0.001 to 20 mbar",
+      "Space-saving rugged design - 1/8 DIN console",
+      "Brass body measuring cell with metal-sealed feedthrough",
+      "Interchangeability of the sensor possible without disturbing the display unit",
+    ],
+    applications: [
+      "Controlling high vacuum systems",
+      "Fore vacuum pressure monitoring",
+      "Safety circuits in vacuum systems",
+      "General vacuum measurement & control in the fine and rough vacuum range",
+    ],
+    specifications: [
+      { name: "Number of Sensor Channels", value: "ONE" },
+      { name: "Display Range", value: "1000 mBar to 0.001mBar" },
+      { name: "Measuring Range", value: "20 mBar to 0.001mBar" },
+      { name: "Measuring Unit", value: "m.Bar" },
+      { name: "Vacuum Gauge Head", value: "FG-04 sensor tube" },
+      { name: "Temp. Range", value: "+2 to +50 deg. Celsius" },
+      {
+        name: "VAC. Display",
+        value: "4-digit bright red LED, 14 mm high",
+      },
+      {
+        name: "VAC and ATM Adjust",
+        value:
+          "Adjusted by trim pot at the signal conditioner PCB of the sensor",
+      },
+      { name: "Process Control Set Points", value: "NIL" },
+      {
+        name: "Operating Voltage",
+        value:
+          "Universal power supply, input voltages from 90 ~ 264VAC 50/60 Hz",
+      },
+      { name: "Mounting", value: "¼ DIN 92 x 92 mm (3.62” x 3.62)" },
+      {
+        name: "Environmental Considerations",
+        value: "Not for use with explosive or corrosive gases",
+      },
+      { name: "Overall Dimensions", value: "92mm X 92mm X 110mm Depth" },
+      {
+        name: "Optional Outputs on Request",
+        value: "RS485, 0 -10V DC analog output (optional)",
+      },
+      {
+        name: "Sensor Cable",
+        value:
+          "Standard RJ45 male plugs on both ends, 2 meters long. Optional additional lengths available on request.",
+      },
+    ],
+    end: `Unique Vacuum Solutions offers a convenient recalibration service to help users of vacuum measurement pirani/thermocouple/full range gauges to maintain all of their vacuum gauges in certified and peak condition, regardless of the original manufacturer. All makes of vacuum gauges can also be calibrated/repaired if required.
+The calibration certificates are available only on request at additional cost. Please contact before ordering.`,
+    images: [
+      "https://uniquevacuum.co.in/wp-content/uploads/2022/07/20210721_125447-scaled.jpg",
+    ],
+  },
+  {
+    id: "FGE-1GH-SP",
+    code: "FGE-1GH-SP",
+    name: "FLEXA Digital Pirani Vacuum Gauge",
+    title: "FLEXA Digital Pirani Vacuum Gauge FGE-1GH-SP",
+    description: `The UVS Model FLEXA series Vacuum Pirani Gauge Controller displays vacuum pressure as measured from an FG-04 sensor tube. The Model FGE-1GH-SP displays vacuum measurements and has a built-in potential free contact set point relay output.
+
+Exponential order display from 2.0X10¹ to 1.0X10⁻³ mbar.
+
+The advantage of this Vacuum Gauge FLEXA Series is that the sensor tube has built-in zero and ATM adjustments, so the sensor tube can be used as a transducer, and each sensor is factory calibrated at the sensor level.
+
+With this, a 1:1 replacement of the sensor with the display unit is established, and there is no dependency on vacuum gauge level adjustment in case of sensor replacement.`,
+    features: [
+      "Measurement range 0.001 to 20 mbar",
+      "Space-saving rugged design - 1/8 DIN console",
+      "Brass body measuring cell with metal-sealed feedthrough",
+      "Interchangeability of the sensor possible without disturbing the display unit",
+      "Potential free relay output for process control",
+    ],
+    applications: [
+      "Controlling high vacuum systems",
+      "Fore vacuum pressure monitoring",
+      "Safety circuits in vacuum systems",
+      "General vacuum measurement & control in the fine and rough vacuum range",
+    ],
+    specifications: [
+      { name: "Number of Sensor Channels", value: "ONE" },
+      { name: "Display Range", value: "1000 mBar to 0.001mBar" },
+      { name: "Measuring Range", value: "20 mBar to 0.001mBar" },
+      { name: "Measuring Unit", value: "m.Bar" },
+      { name: "Vacuum Gauge Head", value: "FG-04 sensor tube" },
+      { name: "Temp. Range", value: "+2 to +50 deg. Celsius" },
+      {
+        name: "VAC. Display",
+        value: "4-digit bright red LED, 14 mm high",
+      },
+      {
+        name: "VAC and ATM Adjust",
+        value:
+          "Adjusted by trim pot at the signal conditioner PCB of the sensor",
+      },
+      { name: "Process Control Set Points", value: "One" },
+      {
+        name: "Process Control Relays",
+        value:
+          "One relay output, potential free contacts, available through DB15 accessory connector",
+      },
+      { name: "Nonvolatile Memory", value: "Only for set points" },
+      {
+        name: "Operating Voltage",
+        value:
+          "Universal power supply, input voltages from 90 ~ 264VAC 50/60 Hz",
+      },
+      { name: "Mounting", value: "¼ DIN 92 x 92 mm (3.62” x 3.62)" },
+      {
+        name: "Environmental Considerations",
+        value: "Not for use with explosive or corrosive gases",
+      },
+      { name: "Overall Dimensions", value: "92mm X 92mm X 110mm Depth" },
+      {
+        name: "Optional Outputs on Request",
+        value: "RS485, 0 -10V DC analog output (optional)",
+      },
+      {
+        name: "Sensor Cable",
+        value:
+          "Standard RJ45 male plugs on both ends, 2 meters long. Optional additional lengths available on request.",
+      },
+    ],
+    end: `Unique Vacuum Solutions offers a convenient recalibration service to help users of vacuum measurement pirani/thermocouple/full range gauges to maintain all of their vacuum gauges in certified and peak condition, regardless of the original manufacturer. All makes of vacuum gauges can also be calibrated/repaired if required.
+
+The calibration certificates are available only on request at additional cost. Please contact before ordering.`,
+    images: [
+      "https://uniquevacuum.co.in/wp-content/uploads/2022/07/IMG_0670-scaled.jpg",
+    ],
+  },
+  {
+    id: "FG-05A",
+    code: "FG-05A",
+    name: "Pirani Vacuum Sensor",
+    title: "Pirani Vacuum Sensor FG-05A",
+    description: `The UVS Model FG-05A series Vacuum Pirani Gauge measures vacuum pressure in the range from 0.001 mBar to 20 mBar. 
+
+The advantage of this vacuum gauge FLEXA series is that the sensor tube has built-in zero and ATM adjustments, allowing it to function as a transducer. Each sensor is factory-calibrated at the sensor level. 
+
+With this, a 1:1 replacement of the sensor with the display controller unit is established, eliminating the need for vacuum gauge level adjustments when replacing the sensor.`,
+    features: [
+      "Measurement range 0.001 to 20 mbar",
+      "Built-in zero and ATM adjustments for easy transducer functionality",
+      "Factory-calibrated at sensor level",
+      "1:1 sensor replacement compatibility with display controller units",
+    ],
+    applications: [
+      "Controlling high vacuum systems",
+      "Fore vacuum pressure monitoring",
+      "Safety circuits in vacuum systems",
+      "General vacuum measurement & control in the fine and rough vacuum range",
+    ],
+    specifications: [
+      { name: "Vacuum Gauge Head", value: "FG-05A Sensor Tube" },
+      { name: "Measuring Range", value: "20 mBar to 0.001 mBar" },
+      { name: "Temperature Range", value: "+2 to +50 deg. Celsius" },
+      {
+        name: "VAC and ATM Adjustments",
+        value: "Trim pot at the signal conditioner PCB of the sensor",
+      },
+      { name: "Operating Voltage", value: "24V DC" },
+      { name: "Mounting", value: "Vertical" },
+      { name: "Linear Output", value: "1 Volt Per Decade" },
+      { name: "Sensor Cable Connection", value: "4 Pin Metal Shell Connector" },
+      { name: "Output Voltage", value: "0-10V DC" },
+      { name: "Accuracy", value: "Typically ±15% at <20 mBar" },
+      { name: "Maximum Over-Pressure", value: "2 Bar Absolute" },
+      { name: "Power Consumption", value: "1W" },
+      { name: "Output Signal", value: "0 to 10 V DC Nominal" },
+      {
+        name: "Indications",
+        value:
+          "Green LED: Status Indicator (Normal); Red LED: Status Indicator (Fault/Fail Condition)",
+      },
+      {
+        name: "Environmental Considerations",
+        value: "Not for use with explosive or corrosive gases",
+      },
+    ],
+    end: `Unique Vacuum Solutions offers a convenient recalibration service to help users of vacuum measurement pirani/thermocouple/full range gauges maintain all their vacuum gauges in certified and peak condition, regardless of the original manufacturer. 
+
+The calibration certificates are available only on request at additional cost. Please contact before ordering.`,
+    images: [""],
+  },
+  {
+    id: "FGE-2GH-SP",
+    code: "FGE-2GH-SP",
+    name: "FLEXA Digital Pirani Vacuum Gauge",
+    title: "FLEXA Digital Pirani Vacuum Gauge FGE-2GH-SP",
+    description: `The FLEXA FGE-2GH-SP is a two-channel digital vacuum gauge with relay set point controller output. 
+The device displays vacuum measurements from 0.001mBar to 20mBar using FG-04 sensor tubes. Each sensor features built-in zero and ATM adjustments, enabling it to function as a transducer. Sensors are factory-calibrated for easy 1:1 replacement with the display unit, eliminating dependency on gauge-level adjustments during sensor replacement.`,
+    features: [
+      "Measurement range: 0.001 to 20 mBar",
+      "Two-channel readout with relay set point control for each channel",
+      "Built-in zero and ATM adjustments in the sensor",
+      "Factory-calibrated sensor for direct replacement",
+      "Bright 4-digit red LED display",
+      "Universal power supply (90–264VAC, 50/60Hz)",
+      "Compact and rugged 1/8 DIN design",
+    ],
+    applications: [
+      "Controlling high vacuum systems",
+      "Fore vacuum pressure monitoring",
+      "Safety circuits in vacuum systems",
+      "General vacuum measurement & control in the fine and rough vacuum range",
+    ],
+    specifications: [
+      { name: "Number of Sensor Channels", value: "Two" },
+      { name: "Display Range", value: "1000 mBar to 0.001 mBar" },
+      { name: "Measuring Range", value: "20 mBar to 0.001 mBar" },
+      { name: "Measuring Unit", value: "mBar" },
+      { name: "Vacuum Gauge Head", value: "FG-04 sensor tube" },
+      { name: "Temperature Range", value: "+2 to +50°C" },
+      { name: "Display", value: "4-digit bright red LED, 14mm high" },
+      {
+        name: "Process Control Set Points",
+        value: "Upper and lower level set points for each channel",
+      },
+      {
+        name: "Process Control Relays",
+        value: "Two potential-free relay outputs via DB15 accessory connector",
+      },
+      { name: "Nonvolatile Memory", value: "For set points only" },
+      {
+        name: "Operating Voltage",
+        value: "90–264VAC, 50/60Hz (universal power supply)",
+      },
+      { name: "Mounting", value: "¼ DIN (92mm x 92mm x 110mm depth)" },
+      {
+        name: "Environmental Considerations",
+        value: "Not suitable for explosive or corrosive gases",
+      },
+      {
+        name: "Optional Outputs",
+        value: "RS485, 0–10V DC analog output (on request)",
+      },
+      {
+        name: "Sensor Cable",
+        value:
+          "Standard RJ45 male plugs on both ends, 2m long (optional additional lengths available)",
+      },
+    ],
+    end: `Unique Vacuum Solutions offers a convenient recalibration service to help users of vacuum measurement Pirani, thermocouple, or full-range gauges maintain all their vacuum gauges in certified and peak condition, regardless of the original manufacturer. 
+Calibration certificates are available upon request for an additional cost.`,
+    images: [
+      "https://uniquevacuum.co.in/wp-content/uploads/2022/07/17274143-e773-46b0-88c7-f8670d498853-1.jpg",
+    ],
+  },
+  {
+    id: "FG-04",
+    code: "FG-04",
+    name: "FLEXA Digital Pirani Vacuum Sensor",
+    title: "FLEXA Digital Pirani Vacuum Sensor FG-04",
+    description: `The FLEXA Digital Pirani Vacuum Sensor FG-04 is part of the UVS FLEXA series, designed for precise vacuum pressure measurement. 
+This sensor covers the range from 0.001 mBar to 20 mBar and integrates built-in zero and ATM adjustments, allowing it to function as a transducer. Each sensor is factory calibrated for easy 1:1 replacement with the display unit, eliminating the need for vacuum gauge-level adjustments during sensor replacement.`,
+    features: [
+      "Measurement range: 0.001 to 20 mBar",
+      "Built-in zero and ATM adjustments for easy transducer functionality",
+      "Factory-calibrated sensor for direct 1:1 replacement",
+      "Vertical mounting configuration",
+      "Compact design with minimal dependencies on external adjustments",
+    ],
+    applications: [
+      "Controlling high vacuum systems",
+      "Fore vacuum pressure monitoring",
+      "Safety circuits in vacuum systems",
+      "General vacuum measurement & control in fine and rough vacuum ranges",
+    ],
+    specifications: [
+      { name: "Vacuum Gauge Head", value: "FG-04 sensor tube" },
+      { name: "Measuring Range", value: "20 mBar to 0.001 mBar" },
+      { name: "Temperature Range", value: "+2 to +50°C" },
+      {
+        name: "VAC and ATM Adjustments",
+        value: "Trim pot at the signal conditioner PCB of the sensor",
+      },
+      { name: "Operating Voltage", value: "+15V, -15V DC" },
+      { name: "Mounting", value: "Vertical" },
+      {
+        name: "Environmental Considerations",
+        value: "Not suitable for explosive or corrosive gases",
+      },
+      {
+        name: "Sensor Cable",
+        value:
+          "Standard RJ45 male plugs on both ends, 2m long (optional additional lengths available)",
+      },
+    ],
+    end: `Unique Vacuum Solutions offers recalibration services to maintain vacuum sensors in certified, peak condition. Calibration certificates are available upon request at additional cost.`,
+    images: ["https://uniquevacuum.co.in/wp-content/uploads/2022/06/FG-04.jpg"],
   },
 ];
 

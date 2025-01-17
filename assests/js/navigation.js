@@ -27,10 +27,16 @@ nav.innerHTML = `
           <li class="dropdown">
             <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">FLEXA SERIES</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="dprgDetail.html?id=1ba">1BA - FLEXA</a></li>
-              <li><a class="dropdown-item" href="dprgDetail.html?id=1bb">1BB - FLEXA</a></li>
-              <li><a class="dropdown-item" href="dprgDetail.html?id=1bc">1BC - FLEXA</a></li>
-              <li><a class="dropdown-item" href="dprgDetail.html?id=1bd">1BD - FLEXA</a></li>
+              <li><a class="dropdown-item" href="dprgDetail.html?id=FGD-1GH">FGD-1GH - FLEXA</a></li>
+              <li><a class="dropdown-item" href="dprgDetail.html?id=FGD-2GH">FGD-2GH - FLEXA</a></li>
+              <li><a class="dropdown-item" href="dprgDetail.html?id=FGD-2GH-SP">FGD-2GH-SP - FLEXA</a></li>
+              <li><a class="dropdown-item" href="dprgDetail.html?id=FGD-1GH-2SP">FGD-1GH-2SP - FLEXA</a></li>
+               <li><a class="dropdown-item" href="dprgDetail.html?id=FGE-1GH">FGE-1GH - FLEXA</a></li>
+              <li><a class="dropdown-item" href="dprgDetail.html?id=FGE-1GH-SP">FGE-1GH-SP - FLEXA</a></li>
+              <li><a class="dropdown-item" href="dprgDetail.html?id=FG-05A">FG-05A - FLEXA</a></li>
+              <li><a class="dropdown-item" href="dprgDetail.html?id=FG-04">FG-04 - FLEXA</a></li>
+              <li><a class="dropdown-item" href="dprgDetail.html?id=FGE-2GH-SP">FGE-2GH-SP - FLEXA</a></li>
+              <li><a class="dropdown-item" href="dprgDetail.html?id=FG-04">FG-04 - FLEXA</a></li>
             </ul>
           </li>
           <li><a class="dropdown-item" href="#">HYBRID SERIES</a></li>
