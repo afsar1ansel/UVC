@@ -846,6 +846,63 @@ This sensor covers the range from 0.001 mBar to 20 mBar and integrates built-in 
     end: `Unique Vacuum Solutions offers recalibration services to maintain vacuum sensors in certified, peak condition. Calibration certificates are available upon request at additional cost.`,
     images: ["https://uniquevacuum.co.in/wp-content/uploads/2022/06/FG-04.jpg"],
   },
+  {
+    id: "HPRGD-1GH-SP",
+    code: "HPRGD-1GH-SP",
+    name: "Hybrid Pirani Vacuum Gauge",
+    title: "Hybrid Pirani Vacuum Gauge HPRGD-1GH-SP",
+    description: `The HPRGD-1GH-SP Hybrid Pirani Vacuum Gauge is specifically designed for accurate measurement in large volume evacuation vacuum systems. It delivers high accuracy at higher pressures, making it suitable for measurements from 1000 mBar down to 0.001 mBar. Its robust brass body measurement sensor is equipped with a standard KF-10 end fitting, ensuring reliable performance in various applications.`,
+    features: [
+      "Specially designed for large volume evacuation vacuum readouts",
+      "High accuracy at higher pressures (1000 mbar to 1 mbar)",
+      "Suitable for precise measurements from 1000 mbar to 0.001 mbar",
+      "Brass body measurement sensor with standard KF-10 end fitting",
+      "Factory-calibrated for zero and full-scale adjustment",
+      "Accuracy @ 25°C: From 1000 to 1 mbar (+/- 2.5%)",
+      "Accuracy @ 50°C: From 1mbar to 0.001 mbar (+/- 15%)",
+    ],
+    applications: [
+      "Large volume evacuation systems",
+      "Precise vacuum measurement in fine and rough vacuum ranges",
+      "Process monitoring requiring accurate high-pressure vacuum readouts",
+    ],
+    specifications: [
+      { name: "Model", value: "HPRGD-1GH-SP" },
+      { name: "Sensor Channels", value: "One" },
+      { name: "Display Range", value: "1000 mBar to 0.001 mBar" },
+      { name: "Display Type", value: "Single-line decimal display" },
+      {
+        name: "Units of Measurement",
+        value: "mBar (optional: Torr, Pa on request)",
+      },
+      { name: "Vacuum Gauge Head", value: "S-HPR-GH" },
+      { name: "Temperature Range", value: "+2°C to +50°C" },
+      {
+        name: "Zero and Full Scale Adjustment",
+        value:
+          "Factory set for 1000 to 1 mBar; 0.001 to 1 mBar adjustable on sensor",
+      },
+      {
+        name: "Process Control Relay Output",
+        value: "One (potential free NC-COM-CO contacts)",
+      },
+      { name: "Nonvolatile Memory", value: "Only for set points" },
+      { name: "Operating Voltage", value: "96 to 264V AC / 50 Hz" },
+      { name: "Mounting Dimensions", value: "92 mm x 92 mm cutout" },
+      {
+        name: "Environmental Conditions",
+        value:
+          "Not suitable for high moisture levels or corrosive gas evacuation",
+      },
+      { name: "Overall Dimensions", value: "92W x 92H x 110D mm" },
+    ],
+    end: `Factory-calibrated for accurate vacuum measurement, with adjustment options for specific ranges. Calibration certificates are available on request.`,
+    images: [
+      "https://uniquevacuum.co.in/wp-content/uploads/2022/07/hybrid-pirani-HPRGD-1GH-SP-dec-complete-set-LOW-RESOLUTION-scaled.jpg",
+      "https://uniquevacuum.co.in/wp-content/uploads/2022/07/hybrid-sensor-HPRS-03.jpg",
+      "https://uniquevacuum.co.in/wp-content/uploads/2022/07/FGD-1GH-SP-back-panel.jpg",
+    ],
+  },
 ];
 
 // Function to get URL parameters

@@ -39,7 +39,16 @@ nav.innerHTML = `
               <li><a class="dropdown-item" href="dprgDetail.html?id=FG-04">FG-04 - FLEXA</a></li>
             </ul>
           </li>
-          <li><a class="dropdown-item" href="#">HYBRID SERIES</a></li>
+         <li class="dropdown">
+  <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">HYBRID SERIES</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="dprgDetail.html?id=HPRGD-1GH-SP">HPRGD-1GH-SP - HYBRID</a></li>
+    <li><a class="dropdown-item" href="dprgDetail.html?id="> - HYBRID</a></li>
+    <li><a class="dropdown-item" href="dprgDetail.html?id="> - HYBRID</a></li>
+    <li><a class="dropdown-item" href="dprgDetail.html?id="> - HYBRID</a></li>
+  </ul>
+</li>
+
           <li><a class="dropdown-item" href="#">HVP SERIES</a></li>
         </ul>
       </li>
