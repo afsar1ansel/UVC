@@ -991,7 +991,7 @@ The HPRG-1GH-SP Digital Pirani Vacuum Gauge, with the S-EPR-GH sensor, delivers 
     name: "Hybrid Pirani Vacuum Gauge",
     title: "Hybrid Pirani Vacuum Gauge- HPRGE-2GH ",
     description: `The HPRGE-2GH Vacuum Gauge Controller is designed for precise vacuum measurement, offering two independent sensor channels for large volume evacuation applications. It provides high accuracy at higher pressures ranging from 1000 mbar to 1 mbar and is especially effective in measuring vacuum from 1000 mbar to 0.001 mbar. The unit features a brass body measurement sensor with a standard KF-10 end fitting, ensuring durability and reliability. The display shows readings in mantissa and exponential format, with the option to measure in mbar, torr, or Pa upon request. This controller is ideal for advanced vacuum systems requiring accurate and reliable pressure measurements in both the fine and rough vacuum ranges.`,
-    specialFeatures: [
+    features: [
       "Specially designed for large volume evacuation vacuum readouts.",
       "TWO CHANNEL INDEPENDENT VACUUM MEASUREMENT.",
       "High accuracy at higher pressures from 1000 mbar to 1 mbar.",
