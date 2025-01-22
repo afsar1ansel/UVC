@@ -982,7 +982,7 @@ The HPRG-1GH-SP Digital Pirani Vacuum Gauge, with the S-EPR-GH sensor, delivers 
     ],
     end: `Factory-calibrated for accurate vacuum measurement, with adjustment options for specific ranges. Calibration certificates are available on request.`,
     images: [
-      "http://127.0.0.1:5500/assests/img/hybridpiranibackviewassembly.jpg",
+      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/hybridpiranibackviewassembly.jpg",
     ],
   },
   {
@@ -1024,6 +1024,10 @@ The HPRG-1GH-SP Digital Pirani Vacuum Gauge, with the S-EPR-GH sensor, delivers 
           "Not recommended for high moisture levels & corrosive gases evacuation.",
       },
       { name: "Overall Dimensions", value: "92W X 92H X 110D mm" },
+    ],
+    images: [
+      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/20201219_130721.jpg",
+      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/20201219_130924.jpg",
     ],
   },
 ];
