@@ -120,9 +120,8 @@ box.innerHTML = ` <nav class="navbar bg-body-tertiary fixed-top" id="navBarMobil
   <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">HYBRID SERIES</a>
   <ul class="dropdown-menu">
    <li><a class="dropdown-item" href="dprgDetail.html?id=HPRGD-1GH-SP">HPRGD-1GH-SP - DPRG</a></li>
-    <li><a class="dropdown-item" href="dprgDetail.html?id="> - DPRG</a></li>
-    <li><a class="dropdown-item" href="dprgDetail.html?id="> - DPRG</a></li>
-    <li><a class="dropdown-item" href="dprgDetail.html?id="> - DPRG</a></li>
+    <li><a class="dropdown-item" href="dprgDetail.html?id=HPRGE-1GH-SP">HPRGE-1GH-SP - HYBRID</a></li>
+    <li><a class="dropdown-item" href="dprgDetail.html?id=HPRGE-2GH">HPRGE-2GH - HYBRID</a></li>
   </ul>
 </li>
                           <li>

@@ -900,7 +900,130 @@ This sensor covers the range from 0.001 mBar to 20 mBar and integrates built-in 
     images: [
       "https://uniquevacuum.co.in/wp-content/uploads/2022/07/hybrid-pirani-HPRGD-1GH-SP-dec-complete-set-LOW-RESOLUTION-scaled.jpg",
       "https://uniquevacuum.co.in/wp-content/uploads/2022/07/hybrid-sensor-HPRS-03.jpg",
-      "https://uniquevacuum.co.in/wp-content/uploads/2022/07/FGD-1GH-SP-back-panel.jpg",
+      "http://127.0.0.1:5500/assests/img/hybridpiranibackviewassembly.jpg",
+    ],
+  },
+  {
+    id: "HPRGE-1GH-SP",
+    code: "HPRGE-1GH-SP",
+    name: "Digital Pirani Vacuum Gauge",
+    title: "Digital Pirani Vacuum Gauge- HPRGE-1GH-SP",
+    description: `
+The HPRG-1GH-SP Digital Pirani Vacuum Gauge, with the S-EPR-GH sensor, delivers high-precision vacuum measurement from 1000 mBar to 1x10e-4 mBar. Designed for large-volume evacuation systems, it features a brass body sensor with standard NW10 fittings (optional NW16/KF-25), an exponential display, and RS485 Modbus communication. With high accuracy at higher pressures, process control relay output, and universal power input, it is ideal for fine and rough vacuum applications, excluding corrosive or high-moisture environments.`,
+    features: [
+      "specially designed for large volume evacuation vacuum readouts.",
+      "High Accuracy At Higher Pressures from 1000 mbar to 1 mbar",
+      "Very useful for accurate measurement of vacuum from 1000 mbar to 1X10e-4 mbar",
+      "Brass body measurement sensor with standard KF-10 / KF-16 optional KF-25 end fitting.",
+    ],
+    applications: [
+      "Large volume evacuation systems",
+      "Precise vacuum measurement in fine and rough vacuum ranges",
+      "Process monitoring requiring accurate high-pressure vacuum readouts",
+    ],
+    specifications: [
+      { name: "Sensor Model", value: "S-EPR-GH" },
+      { name: "Sensor Display Range", value: "1000 mbar to 1X10e-4 mbar" },
+      {
+        name: "Sensor Display Type",
+        value: "Exponential format display (x.ye-z)",
+      },
+      { name: "Sensor Units of Measurement", value: "Mbar" },
+      { name: "Sensor Temperature Range", value: "+2 to 50°C" },
+      {
+        name: "Sensor End Connection",
+        value: "Standard NW10 (optional NW16/25 available)",
+      },
+      { name: "Sensor Output", value: "4 to 20 mA" },
+      {
+        name: "Sensor Digital Interfacing",
+        value: "RS485 (standard RTU Modbus protocol)",
+      },
+      {
+        name: "Sensor Zero & Span Adjustment",
+        value: "Through push button (at sensor end)",
+      },
+      { name: "Sensor Operating Voltage", value: "+15V, 0, -15V DC" },
+      { name: "Sensor Mounting Orientation", value: "Vertical only" },
+      {
+        name: "Sensor Environmental Conditions for Operation",
+        value:
+          "Not recommended for high moisture levels & corrosive gases evacuation",
+      },
+      { name: "Display Controller Model", value: "HPRG-1GH-SP" },
+      { name: "Number of Sensor Channels", value: "One" },
+      { name: "Display Controller Range", value: "1000 mbar to 1X10e-4 mbar" },
+      {
+        name: "Display Controller Type",
+        value: "7-segment exponential order display (x.ye-z)",
+      },
+      { name: "Display Controller Units of Measurement", value: "Mbar" },
+      { name: "Vacuum Gauge Head Compatibility", value: "S-EPR-GH" },
+      { name: "Display Controller Temperature Range", value: "+2 to 50°C" },
+      { name: "Zero and Full Scale Adjustment", value: "At sensor end" },
+      {
+        name: "Process Control Relay Set Point Output",
+        value: "One (potential-free NC-COM-CO contacts)",
+      },
+      { name: "Non-volatile Memory", value: "Only for setpoints" },
+      {
+        name: "Display Controller Input Signal",
+        value: "RS485 Modbus output from sensor S-EPR-GH",
+      },
+      {
+        name: "Display Controller Operating Voltage",
+        value: "From 96 to 264V AC / 50 Hz",
+      },
+      {
+        name: "Display Controller Overall Dimensions",
+        value: "92W x 92H x 110D mm",
+      },
+      { name: "Display Controller Input Supply Voltage", value: "220V, 50 Hz" },
+    ],
+    end: `Factory-calibrated for accurate vacuum measurement, with adjustment options for specific ranges. Calibration certificates are available on request.`,
+    images: [
+      "http://127.0.0.1:5500/assests/img/hybridpiranibackviewassembly.jpg",
+    ],
+  },
+  {
+    id: "HPRGE-2GH",
+    code: "HPRGE-2GH",
+    name: "Hybrid Pirani Vacuum Gauge",
+    title: "Hybrid Pirani Vacuum Gauge- HPRGE-2GH ",
+    description: `The HPRGE-2GH Vacuum Gauge Controller is designed for precise vacuum measurement, offering two independent sensor channels for large volume evacuation applications. It provides high accuracy at higher pressures ranging from 1000 mbar to 1 mbar and is especially effective in measuring vacuum from 1000 mbar to 0.001 mbar. The unit features a brass body measurement sensor with a standard KF-10 end fitting, ensuring durability and reliability. The display shows readings in mantissa and exponential format, with the option to measure in mbar, torr, or Pa upon request. This controller is ideal for advanced vacuum systems requiring accurate and reliable pressure measurements in both the fine and rough vacuum ranges.`,
+    specialFeatures: [
+      "Specially designed for large volume evacuation vacuum readouts.",
+      "TWO CHANNEL INDEPENDENT VACUUM MEASUREMENT.",
+      "High accuracy at higher pressures from 1000 mbar to 1 mbar.",
+      "Very useful for accurate measurement of vacuum from 1000 mbar to 0.001 mbar.",
+      "Brass body measurement sensor with standard KF-10 end fitting.",
+    ],
+    specifications: [
+      { name: "Model", value: "HPRGE-2GH" },
+      { name: "Number of Sensor Channels", value: "TWO" },
+      { name: "Display Range", value: "1000 mbar to 0.001 mbar" },
+      { name: "Display Type", value: "Mantissa & exponential order display" },
+      {
+        name: "Units of Measurement",
+        value: "Mbar (optional Torr, Pa on request)",
+      },
+      { name: "Vacuum Gauge Head", value: "S-HPR-GH" },
+      { name: "Temperature Range", value: "+2 to 50°C" },
+      {
+        name: "Zero & Full Scale Adjustment",
+        value:
+          "Factory set for range between 1000 to 1 mbar; 0.001 to 1 mbar calibration adjustment on sensor.",
+      },
+      { name: "Process Control Relay Set Point Output", value: "NIL" },
+      { name: "Non-Volatile Memory", value: "NIL" },
+      { name: "Operating Voltage", value: "From 96 to 264V AC / 50 Hz" },
+      { name: "Mounting Dimensions", value: "92 X 92 mm cut-out" },
+      {
+        name: "Environmental Conditions for Operation",
+        value:
+          "Not recommended for high moisture levels & corrosive gases evacuation.",
+      },
+      { name: "Overall Dimensions", value: "92W X 92H X 110D mm" },
     ],
   },
 ];
