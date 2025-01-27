@@ -60,7 +60,7 @@ box.innerHTML = ` <nav class="navbar bg-body-tertiary fixed-top" id="navBarMobil
                     <ul class="dropdown-menu" style="background-color: #c7ebf5;">
                       <li class="dropdown">
                         <a class="dropdown-item dropdown-toggle" href="#"
-                          >PRECISION VACUUM INSTRUMENTS +</a
+                          >Vacuum Measurement</a
                         >
                         <ul class="dropdown-menu" style="background-color: #92b2d6;">
                           <li class="dropdown">
@@ -129,26 +129,10 @@ box.innerHTML = ` <nav class="navbar bg-body-tertiary fixed-top" id="navBarMobil
                           </li>
                         </ul>
                       </li>
-                      <li>
-                        <a class="dropdown-item" href="#"
-                          >PRECISION VACUUM PUMPS & SYSTEMS</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#"
-                          >HELIUM LEAK DETECTORS</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#"
-                          >HELIUM TEST SYSTEMS</a
-                        >
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#"
-                          >VACUUM SOLUTIONS & COMPONENTS</a
-                        >
-                      </li>
+                      <li><a class="dropdown-item" href="#">Vacuum Pumps & Systems</a></li>
+      <li><a class="dropdown-item" href="#">Helium Leak Detectors</a></li>
+      <li><a class="dropdown-item" href="#">Helium Test Systems</a></li>
+      <li><a class="dropdown-item" href="#">Vacuum Components & Supplies</a></li>
                     </ul>
                   </li>
                 <li class="nav-item dropdown">
