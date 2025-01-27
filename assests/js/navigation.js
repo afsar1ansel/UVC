@@ -13,7 +13,7 @@ nav.innerHTML = `
     <a href="product.html" class="dropdown-toggle" id="product" data-bs-toggle="dropdown">PRODUCTS</a>
     <ul class="dropdown-menu">
       <li class="dropdown">
-        <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">PRECISION VACUUM INSTRUMENTS +</a>
+        <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">Vacuum Measurement</a>
         <ul class="dropdown-menu">
           <li class="dropdown">
             <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">DPRG SERIES ></a>
@@ -51,10 +51,10 @@ nav.innerHTML = `
           <li><a class="dropdown-item" href="#">HVP SERIES</a></li>
         </ul>
       </li>
-      <li><a class="dropdown-item" href="#">PRECISION VACUUM PUMPS & SYSTEMS</a></li>
-      <li><a class="dropdown-item" href="#">HELIUM LEAK DETECTORS</a></li>
-      <li><a class="dropdown-item" href="#">HELIUM TEST SYSTEMS</a></li>
-      <li><a class="dropdown-item" href="#">VACUUM SOLUTIONS & COMPONENTS</a></li>
+      <li><a class="dropdown-item" href="#">Vacuum Pumps & Systems</a></li>
+      <li><a class="dropdown-item" href="#">Helium Leak Detectors</a></li>
+      <li><a class="dropdown-item" href="#">Helium Test Systems</a></li>
+      <li><a class="dropdown-item" href="#">Vacuum Components & Supplies</a></li>
     </ul>
   </div>
 
