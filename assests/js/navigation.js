@@ -20,8 +20,8 @@ nav.innerHTML = `
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="dprgDetail.html?id=1ba">1GH - DPRG</a></li>
               <li><a class="dropdown-item" href="dprgDetail.html?id=1bb">2GH - DPRG</a></li>
-              <li><a class="dropdown-item" href="dprgDetail.html?id=1bc">1BC - DPRG</a></li>
-              <li><a class="dropdown-item" href="dprgDetail.html?id=1bd">1BD - DPRG</a></li>
+              <li><a class="dropdown-item" href="dprgDetail.html?id=1bc">1GH-SP - DPRG</a></li>
+              <li><a class="dropdown-item" href="dprgDetail.html?id=1bd">1GH-2SP - DPRG</a></li>
               <li><a class="dropdown-item" href="dprgDetail.html?id=4ba">2GH-SP - DPRG</a></li>
             </ul>
           </li>
