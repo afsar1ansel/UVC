@@ -18,8 +18,8 @@ nav.innerHTML = `
           <li class="dropdown">
             <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">DPRG SERIES ></a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="dprgDetail.html?id=1ba">1BA - DPRG</a></li>
-              <li><a class="dropdown-item" href="dprgDetail.html?id=1bb">1BB - DPRG</a></li>
+              <li><a class="dropdown-item" href="dprgDetail.html?id=1ba">1GH - DPRG</a></li>
+              <li><a class="dropdown-item" href="dprgDetail.html?id=1bb">2GH - DPRG</a></li>
               <li><a class="dropdown-item" href="dprgDetail.html?id=1bc">1BC - DPRG</a></li>
               <li><a class="dropdown-item" href="dprgDetail.html?id=1bd">1BD - DPRG</a></li>
             </ul>
@@ -27,16 +27,18 @@ nav.innerHTML = `
           <li class="dropdown">
             <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">FLEXA SERIES</a>
             <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="dprgDetail.html?id=FG-04">FG-04 - FLEXA</a></li>
+              <li><a class="dropdown-item" href="dprgDetail.html?id=FG-04">FG-04 - FLEXA</a></li>
+              <li><a class="dropdown-item" href="dprgDetail.html?id=FG-05A">FG-05A - FLEXA</a></li>
               <li><a class="dropdown-item" href="dprgDetail.html?id=FGD-1GH">FGD-1GH - FLEXA</a></li>
+              <li><a class="dropdown-item" href="dprgDetail.html?id=FGD-1GH-SP">FGD-1GH-SP - FLEXA</a></li>
+              <li><a class="dropdown-item" href="dprgDetail.html?id=FGD-1GH-2SP">FGD-1GH-2SP - FLEXA</a></li>
               <li><a class="dropdown-item" href="dprgDetail.html?id=FGD-2GH">FGD-2GH - FLEXA</a></li>
               <li><a class="dropdown-item" href="dprgDetail.html?id=FGD-2GH-SP">FGD-2GH-SP - FLEXA</a></li>
-              <li><a class="dropdown-item" href="dprgDetail.html?id=FGD-1GH-2SP">FGD-1GH-2SP - FLEXA</a></li>
-               <li><a class="dropdown-item" href="dprgDetail.html?id=FGE-1GH">FGE-1GH - FLEXA</a></li>
+              <li><a class="dropdown-item" href="dprgDetail.html?id=FGE-1GH">FGE-1GH - FLEXA</a></li>
+              <li><a class="dropdown-item" href="dprgDetail.html?id=FGE-2GH">FGE-2GH - FLEXA</a></li>
               <li><a class="dropdown-item" href="dprgDetail.html?id=FGE-1GH-SP">FGE-1GH-SP - FLEXA</a></li>
-              <li><a class="dropdown-item" href="dprgDetail.html?id=FG-05A">FG-05A - FLEXA</a></li>
-              <li><a class="dropdown-item" href="dprgDetail.html?id=FG-04">FG-04 - FLEXA</a></li>
               <li><a class="dropdown-item" href="dprgDetail.html?id=FGE-2GH-SP">FGE-2GH-SP - FLEXA</a></li>
-              <li><a class="dropdown-item" href="dprgDetail.html?id=FG-04">FG-04 - FLEXA</a></li>
             </ul>
           </li>
          <li class="dropdown">
@@ -48,7 +50,16 @@ nav.innerHTML = `
   </ul>
 </li>
 
-          <li><a class="dropdown-item" href="#">HVP SERIES</a></li>
+          <li class="dropdown">
+  <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">HVP SERIES</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="dprgDetail.html?id=HVP-4">HVP-4 </a></li>
+    <li><a class="dropdown-item" href="dprgDetail.html?id=HVP-5">HVP-5 </a></li>
+    <li><a class="dropdown-item" href="dprgDetail.html?id=HVP-7AT">HVP-7AT </a></li>
+    <li><a class="dropdown-item" href="dprgDetail.html?id=DVG-1S">DVG-1S </a></li>
+
+  </ul>
+</li>
         </ul>
       </li>
       <li><a class="dropdown-item" href="#">Vacuum Pumps & Systems</a></li>
@@ -71,9 +82,13 @@ nav.innerHTML = `
 </div>
 `;
 
-document.getElementById("product").addEventListener("click", function (e) {
-  if (!this.classList.contains("dropdown-toggle")) {
-    return; // Allow normal behavior
-  }
-  e.preventDefault(); // Prevent default link behavior
-});
+// Remove the hover functionality for dropdowns
+// document.querySelectorAll('.dropdown').forEach((dropdown) => {
+//   dropdown.addEventListener('mouseenter', () => {
+//     dropdown.querySelector('.dropdown-menu').style.display = 'block';
+//   });
+
+//   dropdown.addEventListener('mouseleave', () => {
+//     dropdown.querySelector('.dropdown-menu').style.display = 'none';
+//   });
+// });

@@ -1,12 +1,12 @@
-/* navigation */
+/* Navigation */
 
-.logoBoxA{
+.logoBoxA {
   text-decoration: none;
 }
 
 .navigationBox {
   position: absolute;
-  top: 1;
+  top: 0;
   width: 100%;
   z-index: 1000;
   display: flex;
@@ -22,7 +22,6 @@
 
 .navigationBox.scrolled {
   background-color: #272361;
-  /* background-color: red; */
   top: 0;
 }
 
@@ -37,26 +36,6 @@
   width: auto;
 }
 
-/* .logo h1 {
-  font-size: 2.5vw;
-  font-weight: 800;
-  line-height: 48px;
-  margin: 0;
-  display: flex;
-}
-
-.logo h1 .white {
-  color: white;
-}
-
-.logo h1 .orange {
-  color: #e67817;
-}
-
-.logo h1 .green {
-  color: #005534;
-} */
-
 .navButtons {
   display: flex;
   align-items: center;
@@ -64,7 +43,7 @@
   color: white;
 }
 
-.navButtons div a{
+.navButtons div a {
   cursor: pointer;
   font-size: 0.829vw;
   font-weight: 600;
@@ -84,26 +63,21 @@
   margin-left: 10px;
 }
 
-.container-fluid{
-  /* border: solid 1px red; */
+.container-fluid {
   position: absolute;
   top: 0;
-  /* padding: 0; */
-  /* margin: 0; */
   background-color: #001F3F;
 }
 
+/* Mobile Nav */
 
-/* mobile nav */
-
-.navbar-toggler{
+.navbar-toggler {
   color: #ffc631 !important;
   font-size: 58px;
   font-weight: bolder;
   border: solid 1.9px #ffc631 !important;
   padding: 5px 10px 8px 10px !important;
 }
-
 
 .logo2 {
   display: flex;
@@ -136,23 +110,21 @@
   color: #005534;
 }
 
-
-.offcanvas-header{
+.offcanvas-header {
   background-color: #001F3F;
 }
 
-.btn-close{
+.btn-close {
   color: #fff !important;
   font-size: 30px;
   font-weight: bolder;
 }
 
-.offcanvas-body{
-  /* border: solid 1px red; */
+.offcanvas-body {
   background: #001F3F;
 }
 
-.offcanvas-body a{
+.offcanvas-body a {
   color: #fff;
 }
 
@@ -168,10 +140,9 @@
   color: #005534;
 }
 
-#offcanvasNavbarLabel img{
+#offcanvasNavbarLabel img {
   height: 30px;
 }
-
 
 #getQuoteM {
   display: flex;
@@ -183,15 +154,19 @@
   padding: 8px 16px;
   font-weight: 600;
   margin-top: 30px;
-  /* margin-left: 10px; */
 }
 
-/* drop box */
+/* Dropdown Menu */
 
 .dropdown-menu {
   display: none;
   opacity: 0;
-  transition: opacity 1s ease-in-out;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 0.5rem 0;
+  min-width: 200px;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .dropdown:hover > .dropdown-menu,
@@ -199,25 +174,31 @@
   display: block;
   opacity: 1;
 }
-/*  */
-.dropdown:hover > .dropdown-menu {
-  display: block;
-}
-
-
-.dropdown-menu > .dropdown:hover > .dropdown-menu {
-  display: block;
-}
-
-.dropdown-menu {
-  position: absolute;
-}
 
 .dropdown-menu .dropdown-menu {
   left: 100%;
   top: 0;
 }
 
-.dropdown-menu .dropdown-item{
+.dropdown-menu .dropdown-item {
   color: black;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #f8f9fa;
+}
+
+/* Ensure nested dropdowns work on hover */
+.dropdown-menu .dropdown:hover > .dropdown-menu {
+  display: block;
+  opacity: 1;
+}
+
+/* Hover Dropdown */
+.hover-dropdown:hover > .dropdown-menu {
+  display: block;
+  margin-top: 0;
 }

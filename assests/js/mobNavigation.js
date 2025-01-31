@@ -103,16 +103,17 @@ box.innerHTML = ` <nav class="navbar bg-body-tertiary fixed-top" id="navBarMobil
         FLEXA SERIES
     </a>
     <ul class="dropdown-menu" style="background-color: rgb(221, 212, 230);" aria-labelledby="flexaDropdown">
-        <li><a class="dropdown-item" href="dprgDetail.html?id=FGD-1GH">FGD-1GH - FLEXA</a></li>
-              <li><a class="dropdown-item" href="dprgDetail.html?id=FGD-2GH">FGD-2GH - FLEXA</a></li>
-              <li><a class="dropdown-item" href="dprgDetail.html?id=FGD-2GH-SP">FGD-2GH-SP - FLEXA</a></li>
-              <li><a class="dropdown-item" href="dprgDetail.html?id=FGD-1GH-2SP">FGD-1GH-2SP - FLEXA</a></li>
-               <li><a class="dropdown-item" href="dprgDetail.html?id=FGE-1GH">FGE-1GH - FLEXA</a></li>
-              <li><a class="dropdown-item" href="dprgDetail.html?id=FGE-1GH-SP">FGE-1GH-SP - FLEXA</a></li>
-              <li><a class="dropdown-item" href="dprgDetail.html?id=FG-05A">FG-05A - FLEXA</a></li>
-              <li><a class="dropdown-item" href="dprgDetail.html?id=FG-04">FG-04 - FLEXA</a></li>
-              <li><a class="dropdown-item" href="dprgDetail.html?id=FGE-2GH-SP">FGE-2GH-SP - FLEXA</a></li>
-              <li><a class="dropdown-item" href="dprgDetail.html?id=FG-04">FG-04 - FLEXA</a></li>
+      <li><a class="dropdown-item" href="dprgDetail.html?id=FG-04">FG-04 - FLEXA</a></li>
+<li><a class="dropdown-item" href="dprgDetail.html?id=FG-04">FG-04 - FLEXA</a></li>
+<li><a class="dropdown-item" href="dprgDetail.html?id=FG-05A">FG-05A - FLEXA</a></li>
+<li><a class="dropdown-item" href="dprgDetail.html?id=FGD-1GH">FGD-1GH - FLEXA</a></li>
+<li><a class="dropdown-item" href="dprgDetail.html?id=FGD-1GH-2SP">FGD-1GH-2SP - FLEXA</a></li>
+<li><a class="dropdown-item" href="dprgDetail.html?id=FGD-2GH">FGD-2GH - FLEXA</a></li>
+<li><a class="dropdown-item" href="dprgDetail.html?id=FGD-2GH-SP">FGD-2GH-SP - FLEXA</a></li>
+<li><a class="dropdown-item" href="dprgDetail.html?id=FGE-1GH">FGE-1GH - FLEXA</a></li>
+<li><a class="dropdown-item" href="dprgDetail.html?id=FGE-1GH-SP">FGE-1GH-SP - FLEXA</a></li>
+<li><a class="dropdown-item" href="dprgDetail.html?id=FGE-2GH-SP">FGE-2GH-SP - FLEXA</a></li>
+
     </ul>
 </li>
 
