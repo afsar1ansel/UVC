@@ -874,7 +874,7 @@ This sensor covers the range from 0.001 mBar to 20 mBar and integrates built-in 
   {
     id: "HPRGD-1GH-SP",
     code: "HPRGD-1GH-SP",
-    name: "Hybrid Pirani Vacuum Gauge",
+    name: "DECIMAL DISPLAY",
     title: "Hybrid Pirani Vacuum Gauge HPRGD-1GH-SP",
     description: `The HPRGD-1GH-SP Hybrid Pirani Vacuum Gauge is specifically designed for accurate measurement in large volume evacuation vacuum systems. It delivers high accuracy at higher pressures, making it suitable for measurements from 1000 mBar down to 0.001 mBar. Its robust brass body measurement sensor is equipped with a standard KF-10 end fitting, ensuring reliable performance in various applications.`,
     features: [
@@ -925,13 +925,14 @@ This sensor covers the range from 0.001 mBar to 20 mBar and integrates built-in 
     images: [
       "https://uniquevacuum.co.in/wp-content/uploads/2022/07/hybrid-pirani-HPRGD-1GH-SP-dec-complete-set-LOW-RESOLUTION-scaled.jpg",
       "https://uniquevacuum.co.in/wp-content/uploads/2022/07/hybrid-sensor-HPRS-03.jpg",
-      "http://127.0.0.1:5500/assests/img/hybridpiranibackviewassembly.jpg",
+      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/hybridpiranibackviewassembly.jpg",
+      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/IMG_3820.jpg",
     ],
   },
   {
     id: "HPRGE-1GH-SP",
     code: "HPRGE-1GH-SP",
-    name: "Digital Pirani Vacuum Gauge",
+    name: "EXPONENTIAL DISPLAY",
     title: "Digital Pirani Vacuum Gauge- HPRGE-1GH-SP",
     description: `
 The HPRG-1GH-SP Digital Pirani Vacuum Gauge, with the S-EPR-GH sensor, delivers high-precision vacuum measurement from 1000 mBar to 1x10e-4 mBar. Designed for large-volume evacuation systems, it features a brass body sensor with standard NW10 fittings (optional NW16/KF-25), an exponential display, and RS485 Modbus communication. With high accuracy at higher pressures, process control relay output, and universal power input, it is ideal for fine and rough vacuum applications, excluding corrosive or high-moisture environments.`,
@@ -1013,7 +1014,8 @@ The HPRG-1GH-SP Digital Pirani Vacuum Gauge, with the S-EPR-GH sensor, delivers 
   {
     id: "HPRGE-2GH",
     code: "HPRGE-2GH",
-    name: "Hybrid Pirani Vacuum Gauge",
+    name: "EXPONENTIAL DISPLAY",
+    description: ``,
     title: "Hybrid Pirani Vacuum Gauge- HPRGE-2GH ",
     end: `The HPRGE-2GH Vacuum Gauge Controller is designed for precise vacuum measurement, offering two independent sensor channels for large volume evacuation applications. It provides high accuracy at higher pressures ranging from 1000 mbar to 1 mbar and is especially effective in measuring vacuum from 1000 mbar to 0.001 mbar. The unit features a brass body measurement sensor with a standard KF-10 end fitting, ensuring durability and reliability. The display shows readings in mantissa and exponential format, with the option to measure in mbar, torr, or Pa upon request. This controller is ideal for advanced vacuum systems requiring accurate and reliable pressure measurements in both the fine and rough vacuum ranges.`,
     features: [
