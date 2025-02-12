@@ -126,7 +126,7 @@ point
       "with universal power supply – input voltage from 90 ~ 264VAC, ",
     ],
     images: [
-      "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRqGQ4RWrnDpzqV0NbIwlDSMfxB_P4okEa8mzH0VOcUdCC7MFQR",
+      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/DPRG-1GH-SP-EXPONENTIALBACKPANEL",
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyfmVt8gVvshz-3ne4f87Sq63BLfEQynWqfNQH98_Ea95oqtx7",
       "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQIZaYaDf_0SeV5q4MuTuSO3a997Qz7XpCUTGkOwJnWx6wnXPB9",
     ],
@@ -245,9 +245,8 @@ The calibration certificates are available only on request at additional cost. P
       "Two independent relay setpoints for process control",
     ],
     images: [
-      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/DPRG-2GH-SPBACKPANEL.jpg",
-      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/S-PR-GH_SENSOR.jpg",
       "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/DPRG-2GH-SP-backpanelfullset.jpg",
+      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/S-PR-GH_SENSOR.jpg",
       "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/DPRG-2GH-SPDECIMALFRONTPANEL.jpg",
     ],
     specifications: [
@@ -290,6 +289,276 @@ The calibration certificates are available only on request at additional cost. P
       },
     ],
     end: "Unique Vacuum Solutions offers a convenient recalibration service to help users of vacuum measurement pirani/ thermocouple/ full range gauges to maintain all of their vacuum gauges in Certified and peak condition, regardless of the original manufacturer. All makes of vacuum gauges can also be calibrated / repaired if required. The calibration certificates are available only on request at additional cost. Please contact before ordering.",
+  },
+  {
+    id: "DPRG-1GH",
+    code: "DPRG-1GH",
+    name: "Digital Pirani Vacuum Gauge",
+    title: "Digital Pirani Vacuum Gauge – DPRG-1GH",
+    description:
+      "The UVS Model DPRG series Vacuum Pirani Gauge Controller displays vacuum pressure as measured from a S-PR-GH sensor tube. It displays vacuum measurements based on thermal conductivity of gases. The Model DPRG-1GH unit covers the range from 0.001 mbar to 20 mbar.",
+    features: [
+      "Measurement range 0.001 to 20 mbar",
+      "Space saving rugged design- 1/8 DIN console",
+      "Mounts in any orientation",
+      "Brass body measuring cell with metal-sealed feed through",
+      "With universal power supply – input voltage from 90 ~ 264VAC, frequency 47 ~ 440Hz",
+    ],
+    images: [
+      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/DPRG-1GH-exponentialdisplay.jpg",
+      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/DPRG-1GH_back_panel.jpg",
+      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/S-PR-GH_SENSOR.jpg",
+    ],
+    specifications: [
+      { name: "Number of sensor channels", value: "ONE" },
+      { name: "Display Range", value: "1000 mBar to 0.001mBar" },
+      { name: "Measuring Range", value: "20 mBar to 0.001mBar" },
+      { name: "Units of Display", value: "m.Bar" },
+      { name: "Vacuum Gauge Head", value: "S-PR-GH sensor tube" },
+      { name: "Temp. Range", value: "+2 to +50 deg. Celsius" },
+      {
+        name: "VAC. Display",
+        value: "Seven segment bright red LED, mantissa and exponential",
+      },
+      {
+        name: "VAC and ATM Adjust",
+        value: "Adjusted by trim pot at the signal conditioner PCB",
+      },
+      {
+        name: "Operating Voltage",
+        value:
+          "Universal power supply, input voltages from 90 ~ 264VAC 50/60 Hz",
+      },
+      { name: "Mounting", value: "¼ DIN 92 x 92 mm (3.62” x 3.62)" },
+      {
+        name: "Environmental Considerations",
+        value: "Not for use with explosive or corrosive gases",
+      },
+      { name: "Overall Dimensions", value: "92mm X 92mm X 110mm Depth" },
+      {
+        name: "Optional Outputs on Request",
+        value: "RS485, 0 -10V DC analog output",
+      },
+    ],
+    applications: [
+      "Controlling high vacuum systems",
+      "Fore vacuum pressure monitoring",
+      "Safety circuits in vacuum systems",
+      "General vacuum measurement & control in the fine and rough vacuum range",
+    ],
+    end: "Unique Vacuum Solutions offers a convenient recalibration service to help users of vacuum measurement pirani/ thermocouple/ full range gauges to maintain all of their vacuum gauges in Certified and peak condition, regardless of the original manufacturer. All makes of vacuum gauges can also be calibrated / repaired if required. The calibration certificates are available only on request at additional cost. Please contact before ordering.",
+  },
+  {
+    id: "DPRG-1GH-SP",
+    code: "DPRG-1GH-SP",
+    name: "Digital Pirani Vacuum Gauge",
+    title: "Digital Pirani Vacuum Gauge – DPRG-1GH-SP",
+    description:
+      "The UVS Model DPRG series Vacuum Pirani Gauge Controller displays vacuum pressure as measured from a S-PR-GH sensor tube. It displays vacuum measurements based on thermal conductivity of gases. The Model DPRG-1GH-SP unit covers the range from 0.001 m.Bar to 20 m.bar, and controls relay with independent set point.",
+    features: [
+      "Measurement range 0.001 to 20 mbar",
+      "Space saving rugged design- 1/8 DIN console",
+      "Mounts in any orientation",
+      "Brass body measuring cell with metal-sealed feed through",
+      "With universal power supply – input voltage from 90 ~ 264VAC",
+    ],
+    images: [
+      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/DPRG-1GH-exponentialdisplay.jpg",
+      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/DPRG-1GH-SP-EXPONENTIALBACKPANEL.jpg",
+      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/DPRG-1GH-SP-exponentialfullset.jpg",
+      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/S-PR-GH_SENSOR.jpg",
+    ],
+    specifications: [
+      { name: "Number of sensor channels", value: "ONE" },
+      { name: "Display Range", value: "1000 mBar to 0.001mBar" },
+      { name: "Measuring Range", value: "20 mBar to 0.001mBar" },
+      { name: "Units of Display", value: "m.Bar" },
+      { name: "Vacuum Gauge Head", value: "S-PR-GH sensor tube" },
+      { name: "Temp. Range", value: "+2 to +50 deg. Celsius" },
+      {
+        name: "VAC. Display",
+        value: "Seven segment bright red LED, mantissa and exponential",
+      },
+      {
+        name: "VAC and ATM Adjust",
+        value: "Adjusted by trim pot at the signal conditioner PCB",
+      },
+      {
+        name: "Process control set points",
+        value: "One",
+      },
+      {
+        name: "Process Control Relays",
+        value:
+          "One relay output, potential free contacts; independent available through the DB15 accessory connector on the rear panel",
+      },
+      {
+        name: "Nonvolatile Memory",
+        value: "Only for set points",
+      },
+      {
+        name: "Operating Voltage",
+        value:
+          "Universal power supply, input voltages from 90 ~ 264VAC 50/60 Hz",
+      },
+      { name: "Mounting", value: "¼ DIN 92 x 92 mm (3.62” x 3.62)" },
+      {
+        name: "Environmental Considerations",
+        value: "Not for use with explosive or corrosive gases",
+      },
+      { name: "Overall Dimensions", value: "92mm X 92mm X 110mm Depth" },
+      {
+        name: "Optional Outputs on Request",
+        value: "RS485, 0 -10V DC analog output",
+      },
+    ],
+    applications: [
+      "Controlling high vacuum systems",
+      "Fore vacuum pressure monitoring",
+      "Safety circuits in vacuum systems",
+      "General vacuum measurement & control in the fine and rough vacuum range",
+    ],
+    end: "Unique Vacuum Solutions offers a convenient recalibration service to help users of vacuum measurement pirani/ thermocouple/ full range gauges to maintain all of their vacuum gauges in Certified and peak condition, regardless of the original manufacturer. All makes of vacuum gauges can also be calibrated / repaired if required. The calibration certificates are available only on request at additional cost. Please contact before ordering.",
+  },
+  {
+    id: "DPRG-2GH-SP",
+    code: "DPRG-2GH-SP",
+    name: "Digital Pirani Vacuum Gauge",
+    title: "Digital Pirani Vacuum Gauge – DPRG-2GH-SP",
+    description:
+      "The UVS Model DPRG series Vacuum Pirani Gauge Controller displays vacuum pressure as measured from a S-PR-GH sensor tube. It displays vacuum measurements based on thermal conductivity of gases. The Model DPRG-2GH-SP unit covers the range from 0.001 mbar to 20 mbar, and controls relay with independent set point.",
+    features: [
+      "Measurement range 0.001 to 20 mbar",
+      "Space saving rugged design- 1/8 DIN console",
+      "Mounts in any orientation",
+      "Brass body measuring cell with metal-sealed feed through",
+      "With universal power supply – input voltage from 90 ~ 264VAC",
+    ],
+    images: [
+      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/DPRG-2GH-SP BACKPANEL.jpg",
+      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/DPRG-2GH-SP-FULLSETEXPONENTIAL.jpg",
+      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/DPRG-2GH-SP-backpanelfullset.jpg",
+      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/S-PR-GH_SENSOR.jpg",
+    ],
+    specifications: [
+      { name: "Number of sensor channels", value: "TWO" },
+      { name: "Display Range", value: "1000 mBar to 0.001mBar" },
+      { name: "Measuring Range", value: "20 mBar to 0.001mBar" },
+      { name: "Units of Display", value: "m.Bar" },
+      { name: "Vacuum Gauge Head", value: "S-PR-GH sensor tube" },
+      { name: "Temp. Range", value: "+2 to +50 deg. Celsius" },
+      {
+        name: "VAC. Display",
+        value: "Seven segment bright red LED, mantissa and exponential",
+      },
+      {
+        name: "Channel selection",
+        value: "Through front panel selection switch",
+      },
+      {
+        name: "VAC and ATM Adjust",
+        value: "Adjusted by trim pot at the signal conditioner PCB",
+      },
+      {
+        name: "Process control set points",
+        value: "Two",
+      },
+      {
+        name: "Process Control Relays",
+        value:
+          "Two relays, potential free contacts; independent available through the DB15 accessory connector on the rear panel",
+      },
+      {
+        name: "Nonvolatile Memory",
+        value: "Only for set points",
+      },
+      {
+        name: "Operating Voltage",
+        value:
+          "Universal power supply, input voltages from 90 ~ 264VAC 50/60 Hz",
+      },
+      { name: "Mounting", value: "¼ DIN 92 x 92 mm (3.62” x 3.62)" },
+      {
+        name: "Environmental Considerations",
+        value: "Not for use with explosive or corrosive gases",
+      },
+      { name: "Overall Dimensions", value: "92mm X 92mm X 110mm Depth" },
+      {
+        name: "Optional Outputs on Request",
+        value: "RS485, 0 -10V DC analog output",
+      },
+    ],
+    applications: [
+      "Controlling high vacuum systems",
+      "Fore vacuum pressure monitoring",
+      "Safety circuits in vacuum systems",
+      "General vacuum measurement & control in the fine and rough vacuum range",
+    ],
+    calibration:
+      "Unique Vacuum Solutions offers a convenient recalibration service to help users of vacuum measurement pirani/ thermocouple/ full range gauges to maintain all of their vacuum gauges in Certified and peak condition, regardless of the original manufacturer. All makes of vacuum gauges can also be calibrated / repaired if required. The calibration certificates are available only on request at additional cost. Please contact before ordering.",
+  },
+  {
+    id: "DPRG-2GH",
+    code: "DPRG-2GH",
+    name: "Digital Pirani Vacuum Gauge",
+    title: "Digital Pirani Vacuum Gauge DPRG-2GH",
+    description:
+      "The UVS Model DPRG series Vacuum Pirani Gauge Controller displays vacuum pressure as measured from a S-PR-GH sensor tube. It displays vacuum measurements based on thermal conductivity of gases. The Model DPRG-2GH unit covers the range from 0.001 mbar to 20 mbar, and controls relay with independent set point.",
+    features: [
+      "Measurement range 0.001 to 20 mbar",
+      "Space saving rugged design- 1/8 DIN console",
+      "Mounts in any orientation",
+      "Brass body measuring cell with metal-sealed feed through",
+      "With universal power supply – input voltage from 90 ~ 264VAC, frequency 47 ~ 440Hz",
+    ],
+    images: [
+      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/DPRG-2GHrearpanel.jpg",
+      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/DPRG-2GHexpentialdisplayfullset.jpg",
+      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/S-PR-GH_SENSOR.jpg",
+    ],
+    specifications: [
+      { name: "Number of sensor channels", value: "TWO" },
+      { name: "Display Range", value: "1000 mBar to 0.001mBar" },
+      { name: "Measuring Range", value: "20 mBar to 0.001mBar" },
+      { name: "Units of Display", value: "m.Bar" },
+      { name: "Vacuum Gauge Head", value: "S-PR-GH sensor tube" },
+      {
+        name: "Channel selection",
+        value: "Through selection switch provided on the front panel",
+      },
+      { name: "Temp. Range", value: "+2 to +50 deg. Celsius" },
+      {
+        name: "VAC. Display",
+        value: "Seven segment bright red LED, mantissa and exponential",
+      },
+      {
+        name: "VAC and ATM Adjust",
+        value: "Adjusted by trim pot at the signal conditioner PCB",
+      },
+      {
+        name: "Operating Voltage",
+        value:
+          "Universal power supply, input voltages from 90 ~ 264VAC 50/60 Hz",
+      },
+      { name: "Mounting", value: "¼ DIN 92 x 92 mm (3.62” x 3.62)" },
+      {
+        name: "Environmental Considerations",
+        value: "Not for use with explosive or corrosive gases",
+      },
+      { name: "Overall Dimensions", value: "92mm X 92mm X 110mm Depth" },
+      {
+        name: "Optional Outputs on Request",
+        value: "RS485, 0 -10V DC analog output",
+      },
+    ],
+    applications: [
+      "Controlling high vacuum systems",
+      "Fore vacuum pressure monitoring",
+      "Safety circuits in vacuum systems",
+      "General vacuum measurement & control in the fine and rough vacuum range",
+    ],
+    calibration:
+      "Unique Vacuum Solutions offers a convenient recalibration service to help users of vacuum measurement pirani/ thermocouple/ full range gauges to maintain all of their vacuum gauges in Certified and peak condition, regardless of the original manufacturer. All makes of vacuum gauges can also be calibrated / repaired if required. The calibration certificates are available only on request at additional cost. Please contact before ordering.",
   },
   {
     id: "FGD-1GH",
@@ -923,8 +1192,9 @@ This sensor covers the range from 0.001 mBar to 20 mBar and integrates built-in 
     ],
     end: `Factory-calibrated for accurate vacuum measurement, with adjustment options for specific ranges. Calibration certificates are available on request.`,
     images: [
-      "https://uniquevacuum.co.in/wp-content/uploads/2022/07/hybrid-pirani-HPRGD-1GH-SP-dec-complete-set-LOW-RESOLUTION-scaled.jpg",
-      "https://uniquevacuum.co.in/wp-content/uploads/2022/07/hybrid-sensor-HPRS-03.jpg",
+      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/IMG_3822.jpg",
+      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/IMG_3825.jpg",
+      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/IMG_3823.jpg",
       "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/hybridpiranibackviewassembly.jpg",
       "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/IMG_3820.jpg",
     ],
@@ -1868,6 +2138,149 @@ The HVP-4 OnePirani is a reliable, robust, and cost-effective solution for preci
     images: [
       "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/HVP5photo.jpg",
     ],
+  },
+  {
+    id: "10mmhgFS",
+    code: "DVG-1S",
+    name: "Diaphragm Vacuum Gauge",
+    title: "DVG-1S Diaphragm Vacuum Gauge",
+    description:
+      "The DVG-1S Diaphragm Vacuum Gauge is a high-accuracy sensor with excellent chemical resistance and robustness, featuring a ceramic diaphragm sensor for precise vacuum measurement. It provides a wide measuring range from 0.1 to 1333 mbar (0.1 to 1000 Torr) and offers programmable output options such as 4-20 mA and 0-10 VDC. Its high repeatability and temperature compensation circuit make it ideal for harsh environments and critical applications in industries like PVD coating, mass spectrometers, freeze drying, and sterilization.",
+    features: [
+      "mercuryChargeRequired: gms",
+      "scale : 1 to 0.001 mm of Hg -10 to 0.01 mm of Hg",
+      "vacuumTestPerformanceCheck : OK",
+    ],
+
+    specifications: [
+      {
+        name: "equipment Model",
+        value: "UVG/1 , UVG/2",
+      },
+      {
+        name: "issued To",
+        value: "M/s.",
+      },
+      {
+        name: "instrument",
+        value: "UVG/1, UVG/2",
+      },
+      {
+        name: "mercury Charge Required",
+        value: "gms",
+      },
+    ],
+    end: "Calibration of gauge was checked with full scale in-house McLeod Gauge. Suitable to measure higher range of vacuum.",
+    images: [
+      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/Mcleodgaugerearview.jpg",
+      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/Mcleodgauge10to0.001torr.jpg",
+      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/IMG-20150430-WA0009.jpg",
+      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/20210715_130540.jpg",
+    ],
+  },
+  {
+    id: "1mmhgFS",
+    code: "10mm hg FS",
+    name: "Miniature McLeod Gauge: Tilting Type on Stand",
+    title: "UVS McLEOD GAUGES",
+    description:
+      "This is a unique miniature McLeod gauge, based on a direct application of Boyle's Law. The gauge is available in two pressure ranges: Model- UVG/1 as a range from 1mm to 0.001mm of mercury and Model: UVG/2 as a range from 10mm to 0.01 mm of mercury. The scale attached to a gauge is calibrated in mm of mercury and accurate pressure readings within range may be taken. The normal position is horizontal. It is simply turned through 90° when the measure of pressure in a system is desired. This isolates a fixed volume of gas in the bulb and closed capillary which is compressed by mercury to a much smaller volume. The pressure of the vacuum system is read on the scale from the level of mercury at B in the closed capillary, when the level in the open capillary connected to the system, is at the Zero point A.",
+    features: [
+      "mercury Charge Required: gms",
+      "scale : 1 to 0.001 mm of Hg - 10 to 0.01 mm of Hg",
+      "vacuum Test Performance Check: OK",
+    ],
+
+    specifications: [
+      {
+        name: "equipment Model",
+        value: "UVG/1 , UVG/2",
+      },
+      {
+        name: "issued To",
+        value: "M/s.",
+      },
+      {
+        name: "instrument",
+        value: "UVG/1, UVG/2",
+      },
+      {
+        name: "mercury Charge Required",
+        value: "gms",
+      },
+    ],
+    end: "Calibration of gauge was checked with full scale in-house McLeod Gauge. Suitable to measure higher range of vacuum.",
+    images: [
+      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/Mcleodgaugerearview.jpg",
+      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/Mcleodgauge1torwithmercury .jpg",
+      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/20210715_131653.jpg",
+      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/1mmofHgMcleodgaugewithoutmecurysideview.jpg",
+    ],
+  },
+  {
+    id: "2gh",
+    code: "UVGE-2GH-SP",
+    name: "exponential catalog",
+    title: "Precision Helium Leak Detectors",
+    description:
+      "The UVS Model UVGE series Vacuum Pirani Gauge Controller displays vacuum pressure as measured from FG-05A sensor tube. It displays vacuum measurements based on the thermal conductivity of gases. The Model UVGE-2GH-SP unit covers the range from 0.001 mbar to 100 mbar, and controls relay with independent set point.",
+    features: [
+      "Measurement range 0.001 to 100 mbar",
+      "Space saving rugged design- 1/8 DIN console",
+      "Space saving rugged design- 1/8 DIN console",
+      "Mounts in any orientation",
+      "With universal power supply – input voltage from 90 ~ 264VAC",
+    ],
+    images: [
+      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/IMG_2830.jpg",
+      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/IMG_2827.jpg",
+    ],
+    specifications: [
+      { name: "Number of sensor channels", value: "TWO" },
+      { name: "Display Range", value: "1000 mBar to 0.001mBar" },
+      { name: "Measuring Range", value: "100 mBar to 0.001mBar" },
+      { name: "Units of Display", value: "m.Bar" },
+      { name: "Vacuum Gauge Head", value: "FG-05A sensor tube" },
+      { name: "Temp. Range", value: "+2 to +50 deg. Celsius" },
+      {
+        name: "VAC. Display",
+        value: "Seven segment bright red LED, mantissa and exponential",
+      },
+      {
+        name: "VAC and ATM Adjust",
+        value:
+          "Adjusted by trim pot at the signal conditioner PCB at the sensor",
+      },
+      {
+        name: "Process control set points",
+        value: "Two (one for each channel)",
+      },
+      {
+        name: "Process Control Relays",
+        value:
+          "Two relays, potential free contacts; independent available through the DB15 accessory connector on the rear panel",
+      },
+      {
+        name: "Nonvolatile Memory",
+        value: "Only for set points",
+      },
+      {
+        name: "Operating Voltage",
+        value:
+          "Universal power supply, input voltages from 90 ~ 264VAC 50/60 Hz",
+      },
+      { name: "Mounting", value: "¼ DIN 92 x 92 mm (3.62” x 3.62)" },
+      {
+        name: "Environmental Considerations",
+        value: "Not for use with explosive or corrosive gases",
+      },
+      { name: "Overall Dimensions", value: "92mm X 92mm X 110mm Depth" },
+      {
+        name: "Optional Outputs on Request",
+        value: "RS485, 0 -10V DC analog output",
+      },
+    ],
+    end: "Unique Vacuum Solutions offers a convenient recalibration service to help users of vacuum measurement pirani/ thermocouple/ full range gauges to maintain all of their vacuum gauges in Certified and peak condition, regardless of the original manufacturer. All makes of vacuum gauges can also be calibrated / repaired if required. The calibration certificates are available only on request at additional cost. Please contact before ordering.",
   },
 ];
 
