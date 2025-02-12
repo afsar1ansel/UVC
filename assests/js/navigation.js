@@ -19,45 +19,45 @@ nav.innerHTML = `
             <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">DPRG SERIES ></a>
             <ul class="dropdown-menu" style="width: 200px;" >
             <p class="headDiv"> Decimal Display ───────</p>
-              <li><a class="dropdown-item deci" href="dprgDetail.html?id=1ba">1GH - DPRG</a></li> 
-              <li><a class="dropdown-item deci" href="dprgDetail.html?id=1bb">2GH - DPRG</a></li>
-              <li><a class="dropdown-item deci" href="dprgDetail.html?id=1bc">1GH-SP - DPRG</a></li>
-              <li><a class="dropdown-item deci" href="dprgDetail.html?id=1bd">1GH-2SP - DPRG</a></li>
-              <li><a class="dropdown-item deci" href="dprgDetail.html?id=4ba">2GH-SP - DPRG</a></li>
+              <li><a class="dropdown-item deci" href="dprgDetail.html?id=1ba">DPRG - 1GH</a></li> 
+              <li><a class="dropdown-item deci" href="dprgDetail.html?id=1bb">DPRG - 2GH</a></li>
+              <li><a class="dropdown-item deci" href="dprgDetail.html?id=1bc">DPRG - 1GH-SP</a></li>
+              <li><a class="dropdown-item deci" href="dprgDetail.html?id=1bd">DPRG - 1GH-2SP</a></li>
+              <li><a class="dropdown-item deci" href="dprgDetail.html?id=4ba">DPRG - 2GH-SP</a></li>
               <p class="headDiv"> Exponential Display ─────</p>
-              <li><a class="dropdown-item expo" href="dprgDetail.html?id=DPRG-1GH">1GH - DPRG</a></li>
-              <li><a class="dropdown-item expo" href="dprgDetail.html?id=DPRG-1GH-SP">1GH-SP - DPRG</a></li>
-              <li><a class="dropdown-item expo" href="dprgDetail.html?id=DPRG-2GH-SP">2GH-SP - DPRG</a></li>
-              <li><a class="dropdown-item expo" href="dprgDetail.html?id=DPRG-2GH">DPRG-2GH - DPRG</a></li>  
+              <li><a class="dropdown-item expo" href="dprgDetail.html?id=DPRG-1GH">DPRG - 1GH</a></li>
+              <li><a class="dropdown-item expo" href="dprgDetail.html?id=DPRG-1GH-SP">DPRG - 1GH-SP</a></li>
+              <li><a class="dropdown-item expo" href="dprgDetail.html?id=DPRG-2GH-SP">DPRG - 2GH-SP</a></li>
+              <li><a class="dropdown-item expo" href="dprgDetail.html?id=DPRG-2GH">DPRG - 2GH</a></li>  
             </ul>
           </li>
           <li class="dropdown">
             <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">FLEXA SERIES</a>
             <ul class="dropdown-menu" style="width: 200px;" >
-            <li><a class="dropdown-item" href="dprgDetail.html?id=FG-05A">FG-05A - FLEXA</a></li>
+            <li><a class="dropdown-item" href="dprgDetail.html?id=FG-05A">FG-05A </a></li>
             <p class="headDiv"> Decimal Display ───────</p>
-              <li><a class="dropdown-item deci" href="dprgDetail.html?id=FG-04">FG-04 - FLEXA</a></li>
-              <li><a class="dropdown-item deci" href="dprgDetail.html?id=FGD-1GH">FGD-1GH - FLEXA</a></li>
-              <li><a class="dropdown-item deci" href="dprgDetail.html?id=FGD-1GH-SP">FGD-1GH-SP - FLEXA</a></li>
-              <li><a class="dropdown-item deci" href="dprgDetail.html?id=FGD-1GH-2SP">FGD-1GH-2SP - FLEXA</a></li>
-              <li><a class="dropdown-item deci" href="dprgDetail.html?id=FGD-2GH">FGD-2GH - FLEXA</a></li>
-              <li><a class="dropdown-item deci" href="dprgDetail.html?id=FGD-2GH-SP">FGD-2GH-SP - FLEXA</a></li>
+              <li><a class="dropdown-item deci" href="dprgDetail.html?id=FG-04">FG-04 </a></li>
+              <li><a class="dropdown-item deci" href="dprgDetail.html?id=FGD-1GH">FGD-1GH </a></li>
+              <li><a class="dropdown-item deci" href="dprgDetail.html?id=FGD-1GH-SP">FGD-1GH-SP </a></li>
+              <li><a class="dropdown-item deci" href="dprgDetail.html?id=FGD-1GH-2SP">FGD-1GH-2SP </a></li>
+              <li><a class="dropdown-item deci" href="dprgDetail.html?id=FGD-2GH">FGD-2GH </a></li>
+              <li><a class="dropdown-item deci" href="dprgDetail.html?id=FGD-2GH-SP">FGD-2GH-SP </a></li>
               <p class="headDiv"> Exponential Display ─────</p>
-              <li><a class="dropdown-item expo" href="dprgDetail.html?id=FG-04">FG-04 - FLEXA</a></li>
-              <li><a class="dropdown-item expo" href="dprgDetail.html?id=FGE-1GH">FGE-1GH - FLEXA</a></li>
-              <li><a class="dropdown-item expo" href="dprgDetail.html?id=FGE-2GH">FGE-2GH - FLEXA</a></li>
-              <li><a class="dropdown-item expo" href="dprgDetail.html?id=FGE-1GH-SP">FGE-1GH-SP - FLEXA</a></li>
-              <li><a class="dropdown-item expo" href="dprgDetail.html?id=FGE-2GH-SP">FGE-2GH-SP - FLEXA</a></li> 
+              <li><a class="dropdown-item expo" href="dprgDetail.html?id=FG-04">FG-04 </a></li>
+              <li><a class="dropdown-item expo" href="dprgDetail.html?id=FGE-1GH">FGE-1GH </a></li>
+              <li><a class="dropdown-item expo" href="dprgDetail.html?id=FGE-2GH">FGE-2GH </a></li>
+              <li><a class="dropdown-item expo" href="dprgDetail.html?id=FGE-1GH-SP">FGE-1GH-SP </a></li>
+              <li><a class="dropdown-item expo" href="dprgDetail.html?id=FGE-2GH-SP">FGE-2GH-SP </a></li> 
             </ul>
           </li>
          <li class="dropdown">
   <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">HYBRID SERIES</a>
   <ul class="dropdown-menu">
   <p class="headDiv"> Decimal Display ───────</p>
-    <li><a class="dropdown-item deci" href="dprgDetail.html?id=HPRGD-1GH-SP">HPRGD-1GH-SP - HYBRID</a></li>
+    <li><a class="dropdown-item deci" href="dprgDetail.html?id=HPRGD-1GH-SP">HPRGD-1GH-SP </a></li>
     <p class="headDiv"> Exponential Display ─────</p>
-    <li><a class="dropdown-item expo" href="dprgDetail.html?id=HPRGE-1GH-SP">HPRGE-1GH-SP - HYBRID</a></li>
-    <li><a class="dropdown-item expo" href="dprgDetail.html?id=HPRGE-2GH">HPRGE-2GH - HYBRID</a></li>
+    <li><a class="dropdown-item expo" href="dprgDetail.html?id=HPRGE-1GH-SP">HPRGE-1GH-SP </a></li>
+    <li><a class="dropdown-item expo" href="dprgDetail.html?id=HPRGE-2GH">HPRGE-2GH </a></li>
   </ul>
 </li>
 
@@ -136,41 +136,3 @@ nav.innerHTML = `
 </div>
 `;
 
-// Remove the hover functionality for dropdowns
-// document.querySelectorAll('.dropdown').forEach((dropdown) => {
-//   dropdown.addEventListener('mouseenter', () => {
-//     dropdown.querySelector('.dropdown-menu').style.display = 'block';
-//   });
-
-//   dropdown.addEventListener('mouseleave', () => {
-//     dropdown.querySelector('.dropdown-menu').style.display = 'none';
-//   });
-// });
-//between svg
-
-
-
-
-{/* <ul class="dropdown-menu">
-  <p>Exponential Display</p>
-  <li>
-    <a class="dropdown-item" href="dprgDetail.html?id=FGE-1GH">
-      FGE-1GH - FLEXA
-    </a>
-  </li>
-  <li>
-    <a class="dropdown-item" href="dprgDetail.html?id=FGE-2GH">
-      FGE-2GH - FLEXA
-    </a>
-  </li>
-  <li>
-    <a class="dropdown-item" href="dprgDetail.html?id=FGE-1GH-SP">
-      FGE-1GH-SP - FLEXA
-    </a>
-  </li>
-  <li>
-    <a class="dropdown-item" href="dprgDetail.html?id=FGE-2GH-SP">
-      FGE-2GH-SP - FLEXA
-    </a>
-  </li>
-</ul>; */}
