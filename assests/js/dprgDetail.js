@@ -1138,7 +1138,9 @@ This sensor covers the range from 0.001 mBar to 20 mBar and integrates built-in 
       },
     ],
     end: `Unique Vacuum Solutions offers recalibration services to maintain vacuum sensors in certified, peak condition. Calibration certificates are available upon request at additional cost.`,
-    images: ["https://uniquevacuum.co.in/wp-content/uploads/2022/06/FG-04.jpg"],
+    images: [
+      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/flexasensor.jpg",
+    ],
   },
   {
     id: "HPRGD-1GH-SP",
@@ -1602,7 +1604,9 @@ The HVP-4 OnePirani Vacuum Transducer is a MEMS-based Pirani sensor designed for
     ],
     end: `
 The HVP-4 OnePirani is a reliable, robust, and cost-effective solution for precision vacuum measurement in a variety of industrial and research applications. With its advanced MEMS technology, programmable features, and ease of use, it provides a modern alternative to conventional ionization gauges.`,
-    images: ["https://staging.thirdeyegfx.in/UVC/UVC/assests/img/HVP4photojpg"],
+    images: [
+      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/HVP4photo.jpg",
+    ],
   },
   {
     id: "HVP-5",

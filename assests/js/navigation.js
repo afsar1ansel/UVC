@@ -52,7 +52,7 @@ nav.innerHTML = `
           </li>
          <li class="dropdown">
   <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">HYBRID SERIES</a>
-  <ul class="dropdown-menu">
+  <ul class="dropdown-menu" style="width: 200px;">
   <p class="headDiv"> Decimal Display ───────</p>
     <li><a class="dropdown-item deci" href="dprgDetail.html?id=HPRGD-1GH-SP">HPRGD-1GH-SP </a></li>
     <p class="headDiv"> Exponential Display ─────</p>
