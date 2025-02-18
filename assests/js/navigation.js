@@ -99,7 +99,7 @@ nav.innerHTML = `
               class="dropdown-item dropdown-toggle"
               href="#"
               data-bs-toggle="dropdown"
-              >McLeod SERIES></a
+              >UVGE SERIES></a
             >
             <ul class="dropdown-menu" style="width: 200px">
               <li>
