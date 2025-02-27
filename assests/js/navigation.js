@@ -34,16 +34,16 @@ nav.innerHTML = `
           <li class="dropdown">
             <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">FLEXA SERIES</a>
             <ul class="dropdown-menu" style="width: 200px;" >
-            <li><a class="dropdown-item" href="dprgDetail.html?id=FG-05A">FG-05A </a></li>
+            <li><a class="dropdown-item" href="dprgDetail.html?id=FG-05A">FG-05A sensor</a></li>
+              <li><a class="dropdown-item " href="dprgDetail.html?id=FG-04">FG-04 sensor</a></li>
+
             <p class="headDiv"> Decimal Display ───────</p>
-              <li><a class="dropdown-item deci" href="dprgDetail.html?id=FG-04">FG-04 </a></li>
               <li><a class="dropdown-item deci" href="dprgDetail.html?id=FGD-1GH">FGD-1GH </a></li>
               <li><a class="dropdown-item deci" href="dprgDetail.html?id=FGD-1GH-SP">FGD-1GH-SP </a></li>
               <li><a class="dropdown-item deci" href="dprgDetail.html?id=FGD-1GH-2SP">FGD-1GH-2SP </a></li>
               <li><a class="dropdown-item deci" href="dprgDetail.html?id=FGD-2GH">FGD-2GH </a></li>
               <li><a class="dropdown-item deci" href="dprgDetail.html?id=FGD-2GH-SP">FGD-2GH-SP </a></li>
               <p class="headDiv"> Exponential Display ─────</p>
-              <li><a class="dropdown-item expo" href="dprgDetail.html?id=FG-04">FG-04 </a></li>
               <li><a class="dropdown-item expo" href="dprgDetail.html?id=FGE-1GH">FGE-1GH </a></li>
               <li><a class="dropdown-item expo" href="dprgDetail.html?id=FGE-2GH">FGE-2GH </a></li>
               <li><a class="dropdown-item expo" href="dprgDetail.html?id=FGE-1GH-SP">FGE-1GH-SP </a></li>
@@ -79,14 +79,16 @@ nav.innerHTML = `
               >McLeod SERIES></a
             >
             <ul class="dropdown-menu" style="width: 200px">
-              <li>
-                <a class="dropdown-item" href="dprgDetail.html?id=10mmhgFS"
-                  >10mm of Hg FS</a
-                >
-              </li>
+             
               <li>
                 <a class="dropdown-item" href="dprgDetail.html?id=1mmhgFS"
-                  >1mm of Hg FS</a
+                  > UVG-1 : 1mm of Hg FS</a
+                >
+              </li>
+
+                <li>
+                <a class="dropdown-item" href="dprgDetail.html?id=10mmhgFS"
+                  > UVG-2 : 10mm of Hg FS</a
                 >
               </li>
              
@@ -99,7 +101,7 @@ nav.innerHTML = `
               class="dropdown-item dropdown-toggle"
               href="#"
               data-bs-toggle="dropdown"
-              >UVGE SERIES></a
+              >UVG Display Controlers></a
             >
             <ul class="dropdown-menu" style="width: 200px">
               <li>
@@ -107,10 +109,21 @@ nav.innerHTML = `
                   >UVGE 2GH - SP</a
                 >
               </li>
+
+                <li>
+                <a class="dropdown-item" href="dprgDetail.html?id="
+                  >UVGE 1GH - SP</a
+                >
+              </li>
+
+               <li>
+                <a class="dropdown-item" href="dprgDetail.html?id="
+                  >UVGS 1GH - SP</a
+                >
+              </li>
              
             </ul>
           </li>
-
         </ul>
       </li>
       <li><a class="dropdown-item" href="#">Vacuum Pumps & Systems</a></li>

@@ -2145,79 +2145,79 @@ The HVP-4 OnePirani is a reliable, robust, and cost-effective solution for preci
   },
   {
     id: "10mmhgFS",
-    code: "DVG-1S",
+    code: "UVG-2",
     name: "Diaphragm Vacuum Gauge",
-    title: "DVG-1S Diaphragm Vacuum Gauge",
+    title: "UVS McLEOD GAUGES",
     description:
-      "The DVG-1S Diaphragm Vacuum Gauge is a high-accuracy sensor with excellent chemical resistance and robustness, featuring a ceramic diaphragm sensor for precise vacuum measurement. It provides a wide measuring range from 0.1 to 1333 mbar (0.1 to 1000 Torr) and offers programmable output options such as 4-20 mA and 0-10 VDC. Its high repeatability and temperature compensation circuit make it ideal for harsh environments and critical applications in industries like PVD coating, mass spectrometers, freeze drying, and sterilization.",
+      "This is a unique miniature McLeod gauge, based on a direct application of Boyle's Law. The gauge is available in two pressure ranges: Model- UVG/1 as a range from 1mm to 0.001mm of mercury and Model: UVG/2 as a range from 10mm to 0.01 mm of mercury. The scale attached to a gauge is calibrated in mm of mercury and accurate pressure readings within range may be taken. The normal position is horizontal. It is simply turned through 90° when the measure of pressure in a system is desired. This isolates a fixed volume of gas in the bulb and closed capillary which is compressed by mercury to a much smaller volume. The pressure of the vacuum system is read on the scale from the level of mercury at B in the closed capillary, when the level in the open capillary connected to the system, is at the Zero point A.",
     features: [
-      "mercuryChargeRequired: gms",
-      "scale : 1 to 0.001 mm of Hg -10 to 0.01 mm of Hg",
+      "mercuryChargeRequired: (95-130)gms",
+      "scale : 10 to 0.01 mm of Hg",
       "vacuumTestPerformanceCheck : OK",
     ],
 
-    specifications: [
-      {
-        name: "equipment Model",
-        value: "UVG/1 , UVG/2",
-      },
-      {
-        name: "issued To",
-        value: "M/s.",
-      },
-      {
-        name: "instrument",
-        value: "UVG/1, UVG/2",
-      },
-      {
-        name: "mercury Charge Required",
-        value: "gms",
-      },
-    ],
-    end: "Calibration of gauge was checked with full scale in-house McLeod Gauge. Suitable to measure higher range of vacuum.",
+    // specifications: [
+    //   {
+    //     name: "equipment Model",
+    //     value: "UVG/1 , UVG/2",
+    //   },
+    //   {
+    //     name: "issued To",
+    //     value: "M/s.",
+    //   },
+    //   {
+    //     name: "instrument",
+    //     value: "UVG/1, UVG/2",
+    //   },
+    //   {
+    //     name: "mercury Charge Required",
+    //     value: "gms",
+    //   },
+    // ],
+    // end: "Calibration of gauge was checked with full scale in-house McLeod Gauge. Suitable to measure higher range of vacuum.",
     images: [
+      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/IMG-20150430-WA0009.jpg",
       "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/Mcleodgaugerearview.jpg",
       "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/Mcleodgauge10to0.001torr.jpg",
-      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/IMG-20150430-WA0009.jpg",
       "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/20210715_130540.jpg",
     ],
   },
   {
     id: "1mmhgFS",
-    code: "10mm hg FS",
+    code: "UVG - 1",
     name: "Miniature McLeod Gauge: Tilting Type on Stand",
     title: "UVS McLEOD GAUGES",
     description:
       "This is a unique miniature McLeod gauge, based on a direct application of Boyle's Law. The gauge is available in two pressure ranges: Model- UVG/1 as a range from 1mm to 0.001mm of mercury and Model: UVG/2 as a range from 10mm to 0.01 mm of mercury. The scale attached to a gauge is calibrated in mm of mercury and accurate pressure readings within range may be taken. The normal position is horizontal. It is simply turned through 90° when the measure of pressure in a system is desired. This isolates a fixed volume of gas in the bulb and closed capillary which is compressed by mercury to a much smaller volume. The pressure of the vacuum system is read on the scale from the level of mercury at B in the closed capillary, when the level in the open capillary connected to the system, is at the Zero point A.",
     features: [
-      "mercury Charge Required: gms",
-      "scale : 1 to 0.001 mm of Hg - 10 to 0.01 mm of Hg",
+      "mercury Charge Required: (95-130)gms",
+      "scale : 1 to 0.001 mm of Hg ",
       "vacuum Test Performance Check: OK",
     ],
 
-    specifications: [
-      {
-        name: "equipment Model",
-        value: "UVG/1 , UVG/2",
-      },
-      {
-        name: "issued To",
-        value: "M/s.",
-      },
-      {
-        name: "instrument",
-        value: "UVG/1, UVG/2",
-      },
-      {
-        name: "mercury Charge Required",
-        value: "gms",
-      },
-    ],
-    end: "Calibration of gauge was checked with full scale in-house McLeod Gauge. Suitable to measure higher range of vacuum.",
+    // specifications: [
+    //   // {
+    //   //   name: "equipment Model",
+    //   //   value: "UVG/1 , UVG/2",
+    //   // },
+    //   // {
+    //   //   name: "issued To",
+    //   //   value: "M/s.",
+    //   // },
+    //   // {
+    //   //   name: "instrument",
+    //   //   value: "UVG/1, UVG/2",
+    //   // },
+    //   // {
+    //   //   name: "mercury Charge Required",
+    //   //   value: "gms",
+    //   // },
+    // ],
+    // end: "Calibration of gauge was checked with full scale in-house McLeod Gauge. Suitable to measure higher range of vacuum.",
     images: [
-      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/Mcleodgaugerearview.jpg",
-      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/Mcleodgauge1torwithmercury .jpg",
       "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/20210715_131653.jpg",
+      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/Mcleodgaugerearview.jpg",
+      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/Mcleodgauge1torwithmercury.jpg",
       "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/1mmofHgMcleodgaugewithoutmecurysideview.jpg",
     ],
   },
@@ -2357,7 +2357,8 @@ if (product) {
       `;
   prod.innerHTML = html;
 
-    const tableHtml = `
+  if(product.specifications){
+     const tableHtml = `
         <div class="product-table">
           <h2>Technical Specifications</h2>
           <div class="tableBox">
@@ -2376,8 +2377,11 @@ if (product) {
           </div>
         </div>
       `;
-    productTable.innerHTML = tableHtml;
+     productTable.innerHTML = tableHtml;
+  }
 
+   
+  if(product.end){
     const endHtml = `
     <div class="end">
     <h2>Calibration: </h2>
@@ -2385,6 +2389,8 @@ if (product) {
     </div>
     `;
     end.innerHTML = endHtml;
+  }
+
 
   // Initialize the gallery functionality
   initializeGallery();
