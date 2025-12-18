@@ -138,7 +138,7 @@
 
       <!-- solutions -->
 
-      <div class="solutions" id="solutions">
+        <div class="solutions" id="solutions">
         <div class="lineText">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -162,62 +162,33 @@
             <span style="color: #0da574">Solutions</span>
           </h1>
         </div>
-        <div class="solutionGrid">
-          <div class="solutionGridBox">
-            <h1>01</h1>
-            <p class="solGridpara1">ISO 9001-2015 Accredited for Quality</p>
-            <p class="solGridpara2">
-              We deliver high-quality solutions, certified by ISO 9001-2015,
-              ensuring excellence across all processes and products.
-            </p>
-            <p class="solGridpara3">DETAILS ➝</p>
-          </div>
-          <div class="solutionGridBox">
-            <h1>01</h1>
-            <p class="solGridpara1">ISO 9001-2015 Accredited for Quality</p>
-            <p class="solGridpara2">
-              We deliver high-quality solutions, certified by ISO 9001-2015,
-              ensuring excellence across all processes and products.
-            </p>
-            <p class="solGridpara3">DETAILS ➝</p>
-          </div>
-          <div class="solutionGridBox">
-            <h1>01</h1>
-            <p class="solGridpara1">ISO 9001-2015 Accredited for Quality</p>
-            <p class="solGridpara2">
-              We deliver high-quality solutions, certified by ISO 9001-2015,
-              ensuring excellence across all processes and products.
-            </p>
-            <p class="solGridpara3">DETAILS ➝</p>
-          </div>
-          <div class="solutionGridBox">
-            <h1>01</h1>
-            <p class="solGridpara1">ISO 9001-2015 Accredited for Quality</p>
-            <p class="solGridpara2">
-              We deliver high-quality solutions, certified by ISO 9001-2015,
-              ensuring excellence across all processes and products.
-            </p>
-            <p class="solGridpara3">DETAILS ➝</p>
-          </div>
-          <div class="solutionGridBox">
-            <h1>01</h1>
-            <p class="solGridpara1">ISO 9001-2015 Accredited for Quality</p>
-            <p class="solGridpara2">
-              We deliver high-quality solutions, certified by ISO 9001-2015,
-              ensuring excellence across all processes and products.
-            </p>
-            <p class="solGridpara3">DETAILS ➝</p>
-          </div>
-          <div class="solutionGridBox">
-            <h1>01</h1>
-            <p class="solGridpara1">ISO 9001-2015 Accredited for Quality</p>
-            <p class="solGridpara2">
-              We deliver high-quality solutions, certified by ISO 9001-2015,
-              ensuring excellence across all processes and products.
-            </p>
-            <p class="solGridpara3">DETAILS ➝</p>
-          </div>
+        <div class="solutionGrid" id="solutionGrid">
+          <!-- Solutions will be rendered here dynamically -->
         </div>
+        <script src="./js/solutions.js"></script>
+        <script>
+          const solutionGridContainer = document.getElementById('solutionGrid');
+          
+          if (solutionGridContainer && typeof solutions !== 'undefined') {
+            solutions.forEach((solution, index) => {
+              const solutionBox = document.createElement('div');
+              solutionBox.className = 'solutionGridBox';
+              
+              // Pad index with leading zero (01, 02, etc.)
+              const num = (index + 1).toString().padStart(2, '0');
+
+              solutionBox.innerHTML = `
+                <h1>${num}</h1>
+                <p class="solGridpara1">${solution.title}</p>
+                <p class="solGridpara2">
+                  ${solution.shortDescription}
+                </p>
+                <p class="solGridpara3" onclick="window.location.href = 'details.html?id=${solution.id}'" style="cursor: pointer;">DETAILS ➝</p>
+              `;
+              solutionGridContainer.appendChild(solutionBox);
+            });
+          }
+        </script>
       </div>
       <!-- </div> -->
       <!-- product -->
