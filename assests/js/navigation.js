@@ -134,7 +134,7 @@ nav.innerHTML = `
   </div>
 
   <div><a href="services.html" id="services">SERVICES +</a></div>
-  <div><a href="/" id="industries">INDUSTRIES SERVED</a></div>
+  <div><a href="index.html#solutions" id="industries">INDUSTRIES SERVED</a></div>
 
   <div><a href="/" id="blog">DOWNLOAD</a></div>
   <div><a href="contact.html" id="contactUs">CONTACT US</a></div>
