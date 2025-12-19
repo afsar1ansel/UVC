@@ -154,12 +154,12 @@
               stroke-linecap="square"
             />
           </svg>
-          <p>LEADING WITH PRECISION</p>
+          <p>INDUSTRY APPLICATIONS</p>
         </div>
         <div class="solutionsheading">
           <h1>
-            Comprehensive Vacuum Technology
-            <span style="color: #0da574">Solutions</span>
+            Vacuum solutions engineered to support critical 
+            <span style="color: #0da574">processes.</span>
           </h1>
         </div>
         <div class="solutionGrid" id="solutionGrid">
@@ -183,7 +183,7 @@
                 <p class="solGridpara2">
                   ${solution.shortDescription}
                 </p>
-                <p class="solGridpara3" onclick="window.location.href = 'details.html?id=${solution.id}'" style="cursor: pointer;">DETAILS ➝</p>
+                <p class="solGridpara3" onclick="window.location.href = 'details.html?id=${solution.id}'" style="cursor: pointer;">FIND OUT HOW ➝</p>
               `;
               solutionGridContainer.appendChild(solutionBox);
             });
@@ -209,21 +209,21 @@
               stroke-linecap="square"
             />
           </svg>
-          <p style="color: white">ENGINEERING EXCELLENCE</p>
+          <p style="color: white">OUR CAPABILITIES</p>
         </div>
         <div class="productHead">
           <div class="producth1">
             <h1>
-              Our Engineered
-              <span style="color: #0da574">Products</span>
+              Vacuum Engineering 
+              <span style="color: #0da574">Solutions</span>
             </h1>
           </div>
           <div class="productHeadBtn">
-            <div>OUR PRODUCTS</div>
-            <div class="productHeadBtn2">OUR PARTNERS</div>
+            <div id="btnProducts" onclick="toggleProductTab('products')">PRODUCTS</div>
+            <div id="btnServices" class="productHeadBtn2" onclick="toggleProductTab('services')">SERVICES</div>
           </div>
         </div>
-        <div class="productGrid">
+        <div class="productGrid" id="productsContent">
           <div class="productGridBox">
             <div class="productGridImg">
               <img src="./assests/img/Mask.png" class="productImgs" alt="" />
@@ -231,7 +231,7 @@
                 <div class="text">View Details</div>
               </div>
             </div>
-            <h1>Vacuum components and Service</h1>
+            <h1>Vacuum Measurement</h1>
             <div class="productBoxLine">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -255,7 +255,79 @@
                 <div class="text">View Details</div>
               </div>
             </div>
-            <h1>Vacuum components and Services</h1>
+            <h1>Vacuum Pumps & Systems</h1>
+            <div class="productBoxLine">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="100%"
+                height="1"
+                viewBox="0 0 627 1"
+                fill="none"
+              >
+                <path d="M1 0.5H626" stroke="#A9A9A9" stroke-linecap="square" />
+              </svg>
+            </div>
+            <p>
+             Reliable vacuum pumps and integrated systems engineered for consistent performance in industrial processes.
+            </p>
+          </div>
+          <div class="productGridBox">
+            <div class="productGridImg">
+              <img src="./assests/img/Mask.png" class="productImgs" alt="" />
+              <div class="productImgMiddle">
+                <div class="text">View Details</div>
+              </div>
+            </div>
+            <h1>Helium Leak Testing</h1>
+            <div class="productBoxLine">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="100%"
+                height="1"
+                viewBox="0 0 627 1"
+                fill="none"
+              >
+                <path d="M1 0.5H626" stroke="#A9A9A9" stroke-linecap="square" />
+              </svg>
+            </div>
+            <p>
+              High-sensitivity helium leak detection solutions for ensuring system integrity and leak-tightness.
+            </p>
+          </div>
+          <div class="productGridBox">
+            <div class="productGridImg">
+              <img src="./assests/img/Mask.png" class="productImgs" alt="" />
+              <div class="productImgMiddle">
+                <div class="text">View Details</div>
+              </div>
+            </div>
+            <h1>Vacuum Components</h1>
+            <div class="productBoxLine">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="100%"
+                height="1"
+                viewBox="0 0 627 1"
+                fill="none"
+              >
+                <path d="M1 0.5H626" stroke="#A9A9A9" stroke-linecap="square" />
+              </svg>
+            </div>
+            <p>
+             Precision-manufactured vacuum components designed for compatibility, durability, and system reliability.
+            </p>
+          </div>
+        </div>
+
+        <div class="productGrid" id="servicesContent" style="display: none;">
+          <div class="productGridBox">
+            <div class="productGridImg">
+              <img src="./assests/img/Mask.png" class="productImgs" alt="" />
+              <div class="productImgMiddle">
+                <div class="text">View Details</div>
+              </div>
+            </div>
+            <h1>Vacuum Measurement*</h1>
             <div class="productBoxLine">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -279,7 +351,7 @@
                 <div class="text">View Details</div>
               </div>
             </div>
-            <h1>Vacuum components and Services</h1>
+            <h1>Vacuum Pumps & Systems*</h1>
             <div class="productBoxLine">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -292,8 +364,7 @@
               </svg>
             </div>
             <p>
-              We provide high-quality vacuum components and expert services for
-              efficient system performance and maintenance.
+             Reliable vacuum pumps and integrated systems engineered for consistent performance in industrial processes.
             </p>
           </div>
           <div class="productGridBox">
@@ -303,7 +374,7 @@
                 <div class="text">View Details</div>
               </div>
             </div>
-            <h1>Vacuum components and Services</h1>
+            <h1>Helium Leak Testing*</h1>
             <div class="productBoxLine">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -316,8 +387,30 @@
               </svg>
             </div>
             <p>
-              We provide high-quality vacuum components and expert services for
-              efficient system performance and maintenance.
+              High-sensitivity helium leak detection solutions for ensuring system integrity and leak-tightness.
+            </p>
+          </div>
+          <div class="productGridBox">
+            <div class="productGridImg">
+              <img src="./assests/img/Mask.png" class="productImgs" alt="" />
+              <div class="productImgMiddle">
+                <div class="text">View Details</div>
+              </div>
+            </div>
+            <h1>Vacuum Components*</h1>
+            <div class="productBoxLine">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="100%"
+                height="1"
+                viewBox="0 0 627 1"
+                fill="none"
+              >
+                <path d="M1 0.5H626" stroke="#A9A9A9" stroke-linecap="square" />
+              </svg>
+            </div>
+            <p>
+             Precision-manufactured vacuum components designed for compatibility, durability, and system reliability.
             </p>
           </div>
         </div>
@@ -1106,6 +1199,34 @@
     ></script>
     <script src="./OwlCarousel2-master/OwlCarousel2-master/dist/owl.carousel.min.js"></script>
     <script src="./assests/js/footer.js"></script>
+    <script>
+      function toggleProductTab(tab) {
+        const btnProducts = document.getElementById('btnProducts');
+        const btnServices = document.getElementById('btnServices');
+        const productsContent = document.getElementById('productsContent');
+        const servicesContent = document.getElementById('servicesContent');
+
+        if (tab === 'products') {
+          // Make Products active (remove class productHeadBtn2 - filled style)
+          btnProducts.classList.remove('productHeadBtn2');
+          // Make Services inactive (add class productHeadBtn2 - transparent style)
+          btnServices.classList.add('productHeadBtn2');
+          
+          // Show products content, hide services content
+          productsContent.style.display = 'grid'; // Assuming 'grid' based on CSS
+          servicesContent.style.display = 'none';
+        } else if (tab === 'services') {
+          // Make Services active (remove class productHeadBtn2 - filled style)
+          btnServices.classList.remove('productHeadBtn2');
+          // Make Products inactive (add class productHeadBtn2 - transparent style)
+          btnProducts.classList.add('productHeadBtn2');
+          
+          // Show services content, hide products content
+          servicesContent.style.display = 'grid'; // Assuming 'grid' based on CSS
+          productsContent.style.display = 'none';
+        }
+      }
+    </script>
   </body>
 </html>
 

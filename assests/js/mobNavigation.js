@@ -144,7 +144,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <a class="nav-link" href="#">INDUSTRIES SERVED</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="caseStudies.html">CASE STUDIES+</a>
+              
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">DOWNLOADS</a>
@@ -195,3 +195,13 @@ document.addEventListener("DOMContentLoaded", function () {
 //     </a>
 //   </li>
 // </ul>;
+
+// between these :  <li class="nav-item">
+              //   <a class="nav-link" href="#">INDUSTRIES SERVED</a>
+              // </li>
+              // <li class="nav-item">
+              // here 
+              // </li>
+              // <li class="nav-item">
+              //   <a class="nav-link" href="#">DOWNLOADS</a>
+  // <a class="nav-link" href="caseStudies.html">CASE STUDIES+</a>
