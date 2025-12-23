@@ -3,7 +3,7 @@ const solutions = [
     id: 1,
     title: "Battery Manufacturing",
     shortDescription: "Critical vacuum solutions for removing air and moisture, ensuring product quality, performance, and safety in battery production.",
-    image: "./assests/img/Mask.png",
+    image: "./assests/img/details/Battery_Manufacturing.webp",
     details: {
       intro: "Vacuum applications in battery manufacturing are critical for removing air and moisture, which ensures product quality, performance, and safety. Key applications include mixing electrodes, drying solvents and moisture from electrodes, filling cells with electrolyte, and degassing electrolytes to prevent bubbles from hindering ion movement. Vacuum technology is also essential for leak detection during testing and in recycling processes.",
       sections: [
@@ -27,7 +27,7 @@ const solutions = [
     id: 2,
     title: "Power Industry & High Vacuum",
     shortDescription: "Supporting manufacturing of solar cells, batteries, switch gears, and transformer oil filtration systems with high vacuum technology.",
-    image: "./assests/img/Mask.png",
+    image: "./assests/img/details/Power_Industry_&_High_Vacuum.webp",
     details: {
       intro: "High vacuum technology is applied in the power industry to support the manufacturing of components like solar cells, batteries, manufacture of switch gears, T&D sector, high power tap changers, transformer oil filtration systems etc. UVS has been meeting the requirements of Power industries in delivery high quality vacuum pumps, vacuum measurement instruments such as Pirani & capacitance absolute monometers which measures pressure from ATM down to 10-4 mbar and Helium Leak Test stations.",
       sections: [
@@ -55,7 +55,7 @@ const solutions = [
     id: 3,
     title: "Semiconductor Manufacturing",
     shortDescription: "Crucial for ultra-clean environments in thin-film deposition, etching, and ion implantation for high-precision microchips.",
-    image: "./assests/img/Mask.png",
+    image: "./assests/img/details/Semiconductor_Manufacturing.webp",
     details: {
       intro: "High vacuum technology is crucial in semiconductor manufacturing for creating ultra-clean environments for processes like thin-film deposition, etching, and ion implantation, which are essential for producing high-precision microchips. It prevents contamination, allows for the precise creation of nanostructures, and is used in handling and transport to ensure the integrity of delicate wafers and components.",
       sections: [
@@ -80,7 +80,7 @@ const solutions = [
     id: 4,
     title: "Bio & Pharma Industry",
     shortDescription: "Essential for freeze-drying, solvent removal, and drying to preserve sensitive biologicals and pharmaceuticals.",
-    image: "./assests/img/Mask.png",
+    image: "./assests/img/details/Bio_&_Pharma_Industry.webp",
     details: {
       intro: "High vacuum technology is applied in the bio and pharma industry for freeze-drying (lyophilization), solvent removal, and drying, which preserves sensitive biologicals and pharmaceuticals by lowering boiling points. It is also critical for degassing liquids to improve purity, and in vacuum conveying for safe, clean, and efficient transfer of dry bulk materials. Furthermore, high vacuum systems are used in mass spectrometry and electron microscopy for accurate analysis, and to create controlled environments in gloveboxes for handling delicate biomaterials.",
       sections: [
@@ -103,7 +103,7 @@ const solutions = [
     id: 5,
     title: "HVAC & Refrigeration",
     shortDescription: "Ensuring efficiency and longevity through system evacuation to remove air and moisture.",
-    image: "./assests/img/Mask.png",
+    image: "./assests/img/details/HVAC_&_Refrigeration.webp",
     details: {
       intro: "High vacuum technology in the HVAC / REFRIGERATION industry is primarily used for system evacuation to remove air and moisture, ensuring efficiency and longevity. This process is essential during manufacturing, installation, and repairs to remove non-condensable gases and water that would otherwise cause corrosion, system inefficiency, and ice formation. Vacuum is also applied in the manufacturing of specific components, such as vacuum-insulated panels.",
       sections: [
@@ -132,7 +132,7 @@ const solutions = [
     id: 6,
     title: "Vacuum Heat Treatment",
     shortDescription: "Creating clean, oxidation-free environments for annealing, brazing, hardening, and sintering.",
-    image: "./assests/img/Mask.png",
+    image: "./assests/img/details/Vacuum_Heat_Treatment.webp",
     details: {
       intro: "High vacuum technology enables a range of vacuum heat treatment applications, including annealing, brazing, hardening, carburizing, and sintering, by creating a clean, oxidation-free environment. This is crucial for high-end sectors like aerospace and automotive, where it improves the strength, hardness, fatigue resistance, and corrosion resistance of critical components like engine blades, transmission parts, and surgical instruments. The process is also favored for its environmental benefits, energy efficiency, and ability to minimize distortion and improve surface quality.",
       sections: [
