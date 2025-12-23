@@ -25,9 +25,9 @@ const solutions = [
   },
   {
     id: 2,
-    title: "Power Industry & High Vacuum",
+    title: "Power Industry",
     shortDescription: "Supporting manufacturing of solar cells, batteries, switch gears, and transformer oil filtration systems with high vacuum technology.",
-    image: "./assests/img/details/Power_Industry_&_High_Vacuum.webp",
+    image: "./assests/img/details/Power_Industry.webp",
     details: {
       intro: "High vacuum technology is applied in the power industry to support the manufacturing of components like solar cells, batteries, manufacture of switch gears, T&D sector, high power tap changers, transformer oil filtration systems etc. UVS has been meeting the requirements of Power industries in delivery high quality vacuum pumps, vacuum measurement instruments such as Pirani & capacitance absolute monometers which measures pressure from ATM down to 10-4 mbar and Helium Leak Test stations.",
       sections: [
