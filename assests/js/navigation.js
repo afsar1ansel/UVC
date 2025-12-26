@@ -136,7 +136,7 @@ nav.innerHTML = `
   <div><a href="services.html" id="services">SERVICES +</a></div>
   <div><a href="index.html#solutions" id="industries">INDUSTRIES SERVED</a></div>
 
-  <div><a href="./assests/download/UVS - VACUUM GAUGES PRODUCT CATALOG 2025.pdf" id="blog" download>DOWNLOAD</a></div>
+  <div><a href="download.html" id="blog">DOWNLOAD</a></div>
   <div><a href="contact.html" id="contactUs">CONTACT US</a></div>
   <div id="getQuote">GET A QUOTE 
     <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">

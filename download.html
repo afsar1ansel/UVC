@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Downloads | Unique Vacuum Solutions</title>
+    <meta name="description" content="Download technical catalogs and product specifications for Unique Vacuum Solutions." />
+    <link rel="stylesheet" href="./assests/css/style.css" />
+    <link rel="stylesheet" href="./assests/css/navigation.css" />
+    <link rel="stylesheet" href="./assests/css/footer.css">
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.3.3-dist/css/bootstrap.min.css"
+    />
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f8f9fa;
+        }
+        
+        .download-wrapper {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding-top: 100px; /* Space for fixed header */
+        }
+
+        .download-header {
+            background-color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 1px solid #e0e0e0;
+            margin-bottom: 20px;
+        }
+
+        .download-header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .download-header p {
+            color: #666;
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .content-container {
+            display: flex;
+            max-width: 1400px;
+            margin: 0 auto;
+            width: 100%;
+            padding: 0 20px 60px;
+            gap: 30px;
+            flex: 1;
+        }
+
+        /* Sidebar Styles */
+        .sidebar {
+            width: 300px;
+            flex-shrink: 0;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            padding: 20px;
+            height: fit-content;
+            position: sticky;
+            top: 120px;
+        }
+
+        .sidebar-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .folder-tree {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .folder-item {
+            margin-bottom: 5px;
+        }
+
+        .folder-btn {
+            width: 100%;
+            text-align: left;
+            background: none;
+            border: none;
+            padding: 12px 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #555;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .folder-btn:hover {
+            background-color: #f0f7f4;
+            color: #0da574;
+        }
+
+        .folder-btn.active {
+            background-color: #e6f6ee;
+            color: #0da574;
+            font-weight: 600;
+        }
+
+        .folder-icon {
+            width: 20px;
+            height: 20px;
+            color: #FFC631; /* Yellow folder */
+            fill: currentColor;
+        }
+
+        /* Main Content Styles */
+        .main-content {
+            flex: 1;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            padding: 30px;
+            min-height: 500px;
+        }
+
+        .current-path {
+            font-size: 0.9rem;
+            color: #888;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .folder-view-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            color: #333;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .folder-view-title .folder-icon {
+            width: 32px;
+            height: 32px;
+        }
+
+        .file-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .file-card {
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #fff;
+            height: 100%;
+        }
+
+        .file-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+            border-color: #0da574;
+            color: #0da574;
+        }
+
+        .file-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            color: #dc3545; /* PDF Red */
+        }
+
+        .file-name {
+            font-size: 0.95rem;
+            line-height: 1.4;
+            word-break: break-word;
+            flex: 1; /* Push download text to bottom */
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .download-hint {
+            margin-top: 15px;
+            font-size: 0.8rem;
+            color: #888;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .file-card:hover .download-hint {
+            color: #0da574;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 50px;
+            color: #999;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 900px) {
+            .content-container {
+                flex-direction: column;
+            }
+            .sidebar {
+                width: 100%;
+                position: static;
+                margin-bottom: 20px;
+            }
+            .file-grid {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar placeholder -->
+    <div class="d-desktop d-none d-md-block">
+       <nav>
+      <div class="d-desktop d-none d-md-block">
+        <div class="navigationBox scrolled" id="navBarBox"></div>
+      </div>
+
+    
+     <!-- nav mobile -->
+    <div class="d-mobile d-block d-md-none" id="navBarMobile">
+    </div>
+    </nav>
+    </div>
+    <div class="d-mobile d-block d-md-none" id="navBarMobile"></div>
+
+    <div class="download-wrapper">
+        <div class="download-header">
+            <h1>Download Center</h1>
+            <p>Access our complete library of product catalogs, technical specifications, and brochures.</p>
+        </div>
+
+        <div class="content-container">
+            <!-- Sidebar Navigation -->
+            <aside class="sidebar">
+                <div class="sidebar-title">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path>
+                    </svg>
+                    Categories
+                </div>
+                <ul class="folder-tree" id="folderTree">
+                    <!-- Populated by JS -->
+                </ul>
+            </aside>
+
+            <!-- Main Content Area -->
+            <main class="main-content">
+                <div id="fileView">
+                    <!-- Populated by JS -->
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Footer container -->
+    <footer> 
+        <div id="foot"></div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assests/js/script.js"></script>
+    <script src="./assests/js/navigation.js"></script>
+    <script src="./assests/js/mobNavigation.js"></script>
+    <script src="./assests/js/footer.js"></script>
+    
+    <script>
+        const downloadData = {
+            "DPRG": [
+                "DPRG-1GH exponential catalog.pdf",
+                "DPRG-1GH-2SP decimal catalog.pdf",
+                "DPRG-1GH-SP exponential catalog.pdf",
+                "DPRG-2GH decimal catalog.pdf",
+                "DPRG-2GH exponential catalog.pdf",
+                "DPRG-2GH-SP decimal catalog.pdf",
+                "DPRG-2GH-SP exponential catalog.pdf"
+            ],
+            "DVG100A": [
+                "DVG 100 with DVG-1S vacuum gauge.pdf",
+                "DVG-1S.pdf",
+                "UDG-2S.pdf"
+            ],
+            "FLEXA": [
+                "FG-05A CATALOG.pdf",
+                "FGD-1GH catalog.pdf",
+                "FGD-1GH-2SP PASCALS catalog.pdf",
+                "FGD-1GH-SP decimal catalog.pdf",
+                "FGD-2GH decimal catalog.pdf",
+                "FGD-2GH-SP catalog.pdf",
+                "FGE-1GH catalog.pdf",
+                "FGE-1GH-SP decimal catalog.pdf",
+                "FGE-2GH catalog.pdf",
+                "FGE-2GH-SP catalog.pdf",
+                "FLEXA sensor FG-04 catalog.pdf"
+            ],
+            "HYBRID": [
+                "hybrid pirani gauge model HPRGD-1GH catalog.pdf",
+                "hybrid pirani gauge model HPRGD-1GH-2SP CATALOG.pdf",
+                "hybrid pirani gauge model HPRGD-1GH-SP.pdf",
+                "hybrid pirani gauge model HPRGD-2GH CATALOG.pdf",
+                "hybrid pirani gauge model HPRGD-2GH-SP CATALOG.pdf",
+                "hybrid pirani gauge model HPRGE-1GH CATALOG.pdf",
+                "hybrid pirani gauge model HPRGE-1GH-2SP CATALOG.pdf",
+                "hybrid pirani gauge model HPRGE-1GH-SP exponential.pdf",
+                "hybrid pirani gauge model HPRGE-2GH.pdf"
+            ],
+            "OnePirani": [
+                "HVP-4.pdf",
+                "HVP-5.pdf",
+                "HVP-7AT.pdf"
+            ],
+            "UVGE": [
+                "UVGE-2GH-SP exponential catalog.pdf"
+            ]
+        };
+
+        const folderTree = document.getElementById('folderTree');
+        const fileView = document.getElementById('fileView');
+        const basePath = './assests/download/VACUUM_GAUGES _CATALOGS_DOWNLOAD_FOLDER/';
+
+        // Initialize with the first folder opened
+        let activeFolder = Object.keys(downloadData)[0];
+
+        function renderSidebar() {
+            folderTree.innerHTML = '';
+            
+            Object.keys(downloadData).forEach(folder => {
+                const li = document.createElement('li');
+                li.className = 'folder-item';
+                
+                const btn = document.createElement('button');
+                btn.className = `folder-btn ${folder === activeFolder ? 'active' : ''}`;
+                btn.onclick = () => {
+                    activeFolder = folder;
+                    renderSidebar();
+                    renderFiles(folder);
+                };
+
+                btn.innerHTML = `
+                    <svg class="folder-icon" viewBox="0 0 24 24">
+                        <path d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z"/>
+                    </svg>
+                    ${folder}
+                `;
+                
+                li.appendChild(btn);
+                folderTree.appendChild(li);
+            });
+        }
+
+        function renderFiles(folder) {
+            const files = downloadData[folder];
+            
+            let html = `
+                <div class="current-path">
+                    Downloads / ${folder}
+                </div>
+                <h2 class="folder-view-title">
+                    <svg class="folder-icon" viewBox="0 0 24 24">
+                        <path d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z"/>
+                    </svg>
+                    ${folder}
+                </h2>
+                <div class="file-grid">
+            `;
+
+            if (files.length === 0) {
+                html += `<div class="empty-state">No files in this folder.</div>`;
+            } else {
+                files.forEach(file => {
+                    html += `
+                        <a href="${basePath}${folder}/${file}" class="file-card" download>
+                            <div class="file-icon">📄</div>
+                            <div class="file-name">${file}</div>
+                            <div class="download-hint">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                                </svg>
+                                Download
+                            </div>
+                        </a>
+                    `;
+                });
+            }
+
+            html += `</div>`;
+            fileView.innerHTML = html;
+        }
+
+        // Initial Render
+        renderSidebar();
+        renderFiles(activeFolder);
+    </script>
+  </body>
+</html>
