@@ -149,4 +149,128 @@ nav.innerHTML = `
 </div>
 `;
 
-  // <div><a href="caseStudies.html" id="caseStudies">CASE STUDIES</a></div>
+
+// Enquiry Modal Implementation
+const modalHTML = `
+<div id="enquiryModal" class="modal-overlay">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h2>For Enquiry</h2>
+    <form id="enquiryForm" onsubmit="event.preventDefault(); alert('Thank you! We will get back to you soon.'); document.getElementById('enquiryModal').style.display='none';">
+      <div class="form-group">
+        <label for="enquiryName">Name</label>
+        <input type="text" id="enquiryName" required placeholder="Your Name">
+      </div>
+      <div class="form-group">
+        <label for="enquiryEmail">Email</label>
+        <input type="email" id="enquiryEmail" required placeholder="Your Email">
+      </div>
+      <div class="form-group">
+        <label for="enquiryPhone">Phone</label>
+        <input type="tel" id="enquiryPhone" required placeholder="Your Phone Number">
+      </div>
+      <div class="form-group">
+        <label for="enquiryCompany">Company</label>
+        <input type="text" id="enquiryCompany" placeholder="Company Name">
+      </div>
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </div>
+</div>
+`;
+
+const modalStyles = `
+<style>
+  .modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  .close-modal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+  }
+  .modal-content h2 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  .form-group {
+    margin-bottom: 15px;
+  }
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 500;
+  }
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  .submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #ffc631;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .submit-btn:hover {
+    background-color: #e6b22c;
+  }
+</style>
+`;
+
+document.body.insertAdjacentHTML('beforeend', modalHTML);
+document.head.insertAdjacentHTML('beforeend', modalStyles);
+
+// Modal Logic
+window.openEnquiryModal = function() {
+  document.getElementById('enquiryModal').style.display = 'flex';
+}
+
+document.querySelector('.close-modal').addEventListener('click', function() {
+  document.getElementById('enquiryModal').style.display = 'none';
+});
+
+window.addEventListener('click', function(event) {
+  if (event.target == document.getElementById('enquiryModal')) {
+    document.getElementById('enquiryModal').style.display = 'none';
+  }
+});
+
+// Attach to Get Quote button
+const getQuoteBtn = document.getElementById('getQuote');
+if (getQuoteBtn) {
+    getQuoteBtn.addEventListener('click', function() {
+        openEnquiryModal();
+    });
+    getQuoteBtn.style.cursor = 'pointer';
+}
