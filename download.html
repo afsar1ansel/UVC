@@ -42,11 +42,48 @@
             margin-bottom: 10px;
         }
 
+
+
         .download-header p {
             color: #666;
             font-size: 1.1rem;
             max-width: 600px;
             margin: 0 auto;
+        }
+
+        .btn-brochure {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background-color: #0da574;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            position: absolute;
+            right: 40px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .btn-brochure:hover {
+            background-color: #0a875f;
+            color: white;
+            transform: translateY(-50%) scale(1.02);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        @media (max-width: 768px) {
+            .btn-brochure {
+                position: static;
+                margin-top: 20px;
+                transform: none;
+            }
+            .btn-brochure:hover {
+                transform: scale(1.02);
+            }
         }
 
         .content-container {
@@ -71,6 +108,7 @@
             position: sticky;
             top: 120px;
         }
+
 
         .sidebar-title {
             font-size: 1.1rem;
@@ -202,6 +240,7 @@
             flex: 1; /* Push download text to bottom */
             display: -webkit-box;
             -webkit-line-clamp: 3;
+            line-clamp: 3;
             -webkit-box-orient: vertical;
             overflow: hidden;
         }
@@ -259,8 +298,16 @@
 
     <div class="download-wrapper">
         <div class="download-header">
-            <h1>Download Center</h1>
-            <p>Access our complete library of product catalogs, technical specifications, and brochures.</p>
+            <div style="max-width: 1400px; margin: 0 auto; position: relative;">
+                <h1>Download Center</h1>
+                <p>Access our complete library of product catalogs, technical specifications, and brochures.</p>
+                <a href="./assests/download/VACUUM_GAUGES _CATALOGS_DOWNLOAD_FOLDER/Company Broacher.pdf" class="btn-brochure" download>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                    </svg>
+                    Download Company Brochure
+                </a>
+            </div>
         </div>
 
         <div class="content-container">
