@@ -8,7 +8,7 @@ box.id = "footer"
 box.innerHTML = ` <div class="footUp">
           <div class="footup1">
             <div class="logo2" style="margin-bottom: 24px;">
-              <img src="./assests/img/uvclogo.png" alt="" />
+              <img src="./assests/img/uvclogo.png" alt="" style="width: 200px; height: 70px;" />
             </div>
             <p>Delivering precision and reliability in every vacuum solution we provide. Trusted by industries across India, we offer comprehensive service from design to after-sales support.</p>
           </div>
@@ -17,19 +17,19 @@ box.innerHTML = ` <div class="footUp">
             <h3>Company</h3>
             <div class="footup3box">
               <img src="./assests/img/right.png" alt="">
-              <p>ABOUT</p>
+              <a href="about.html"><p>ABOUT</p></a>
             </div>
             <div class="footup3box">
               <img src="./assests/img/right.png" alt="">
-              <p>SERVICES</p>
+              <a href="services.html"><p>SERVICES</p></a>
             </div>
             <div class="footup3box">
               <img src="./assests/img/right.png" alt="">
-              <p>PRODUCTS</p>
+              <a href="product.html"><p>PRODUCTS</p></a>
             </div>
             <div class="footup3box">
               <img src="./assests/img/right.png" alt="">
-              <p>CAREERS</p>
+              <a href="contact.html"><p>CAREERS</p></a>
             </div>
           </div>
 
