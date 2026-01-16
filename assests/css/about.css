@@ -444,30 +444,43 @@
 .processLing .dotBox {
   margin: auto;
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
-  gap: 18vw;
   position: absolute;
   top: -9px;
   left: 0;
   right: 0;
-  width: 76vw;
+  width: 84vw;
+  gap: 8px; /* Match processBot gap */
 }
 
 .procesDot {
+  /* Wrapper to match card width */
+  width: 18vw; 
+  height: 20px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align dot to start of text */
+}
+
+.procesDot::before {
+  content: "";
   height: 20px;
   width: 20px;
   background-color: #ffc642;
   border-radius: 50%;
+  display: block;
 }
 
 .processBot {
   margin: auto;
-  width: 76vw;
+  width: 84vw;
   margin-top: 40px;
   /* border: solid 2px yellow; */
   display: flex;
   justify-content: space-between;
+  gap: 8px;
 }
 
 .pbcard {
@@ -521,6 +534,7 @@
   #choose .chooseBoxL {
     width: 95%;
     /* padding: 10vw 2vw 10vw 2vw; */
+    border: solid 1px red;
   }
 
   #choose .chooseBoxL div h2 {
