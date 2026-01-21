@@ -247,14 +247,17 @@
 @media (max-width: 580px) {
   #process .procesImg {
     width: 80%;
-    height: 100%;
+    height: auto;
     /* border: solid 1px red; */
-    gap: 10px;
-    padding: 8px 10px 10px 10px;
+    gap: 20px;
+    padding: 30px 10px;
     background-size: cover; /* Makes the background image cover the container */
     background-position: center; /* Ensures the image is centered */
     background-repeat: no-repeat;
   }
+
+
+
 
   #process .procesImg h2 {
     font-size: 7vw;
@@ -324,7 +327,8 @@
 @media (min-width: 580px) and (max-width: 770px) {
   #process .procesImg {
     width: 100%;
-    height: 100%;
+    height: auto;
+    padding: 30px 10px;
   }
 
   #process .procesImg h2 {
@@ -394,14 +398,17 @@
   background-size: contain;
   margin: auto;
   width: 65.729vw;
-  height: 12.917vw;
+  height: auto;
+  min-height: 12.917vw;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  gap: 50px;
+  gap: 20px;
   align-items: center;
   position: relative;
   transform: translateY(-50%);
   z-index: 1;
+  padding: 2vw 0;
 }
 
 .procesImg h2 {
