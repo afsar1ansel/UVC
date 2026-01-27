@@ -401,8 +401,10 @@ body {
 }
 
 .rightBotHero img {
-  height: 35vw;
-  width: 45vw;
+  height: 28vw;
+  width: 38vw;
+  margin: 0 28vw 0 auto;
+  /* border: solid 1px red; */
 }
 
 .heroCredits {

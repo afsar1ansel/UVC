@@ -40,11 +40,10 @@ box.innerHTML = ` <div class="footUp">
   <p>+91 9886726920 <br> 080 28367059</p>
 </div>
 <div class="footup-box">
-  <img src="./assests/img/mapdot.png" alt="">
-  <p>No. 57, 8th Cross, Doddanna Industrial Estate</p>
+  <img src="./assests/img/msg.svg" alt="">
+  <p>support@uniquevacuum.co.in</p>
 </div>           
           </div>
-         
           </div>
         </div>
         <div class="footline"></div>
