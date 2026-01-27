@@ -60,11 +60,15 @@ line-height: 23px;
 margin-left: 3px;
 }
 
-.footup-box img,
+.footup-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
 .footup-box p {
-  display: inline-block;
-  vertical-align: top; 
-  /* border: solid 1px red; */
+  margin: 0;
 }
 
 
