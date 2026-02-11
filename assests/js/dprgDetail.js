@@ -10,15 +10,14 @@ const products = [
     features: [
       "Measurement range 0.001 to 20 mbar",
       "Space saving rugged design- 1/8 DIN console",
-      "Space saving rugged design- 1/8 DIN console",
-      "Brass body measuring cell with metal-sealed feed through",
+      "Brass body measuring cell with glass metal-sealed feed through",
       "With universal power supply – input voltage from 90 ~ 264VAC, frequency 47 ~ 440Hz",
     ],
     images: [
-      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/DPRG1GH-FRONTPANELMINIDECIMAL.jpg",
-      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/dprg-1ghdecimalFULLSET.jpg",
-      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/DPRG-1GH_back_panel.jpg",
-      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/S-PR-GH_SENSOR.jpg",
+      "./assests/img/products/dprg1gh/DPRG1GH-FRONTPANELMINIDECIMAL.jpg",
+      "./assests/img/products/dprg1gh/dprg1ghdecimalFULLSET.jpg",
+      "./assests/img/products/dprg1gh/DPRG-1GH_back_panel.jpg",
+      "./assests/img/products/dprg1gh/S-PR-GH_SENSOR.jpg",
     ],
     specifications: [
       { name: "Number of sensor channels", value: "ONE" },
@@ -2303,8 +2302,8 @@ const product = products.find((p) => p.id === id);
 
 // Reference to the container where the gallery will be injected
 const prod = document.getElementById("producter");
- const productTable = document.getElementById("productTable");
- const end = document.getElementById("end");
+const productTable = document.getElementById("productTable");
+const end = document.getElementById("end");
 
 if (product) {
   // Generate dynamic HTML based on the product data
@@ -2320,7 +2319,7 @@ if (product) {
                 alt="Thumbnail ${index + 1}"
                 data-full="${img}"
               />
-            `
+            `,
               )
               .join("")}
           </div>
@@ -2349,7 +2348,7 @@ if (product) {
                *
                 <p>${feature}</p>
               </div>
-            `
+            `,
               )
               .join("")}
           </div>
@@ -2357,8 +2356,8 @@ if (product) {
       `;
   prod.innerHTML = html;
 
-  if(product.specifications){
-     const tableHtml = `
+  if (product.specifications) {
+    const tableHtml = `
         <div class="product-table">
           <h2>Technical Specifications</h2>
           <div class="tableBox">
@@ -2370,18 +2369,17 @@ if (product) {
                   <th>${spec.name}</th>
                   <td>${spec.value}</td>
                 </tr>
-              `
+              `,
                 )
                 .join("")}
             </table>
           </div>
         </div>
       `;
-     productTable.innerHTML = tableHtml;
+    productTable.innerHTML = tableHtml;
   }
 
-   
-  if(product.end){
+  if (product.end) {
     const endHtml = `
     <div class="end">
     <h2>Calibration: </h2>
@@ -2390,7 +2388,6 @@ if (product) {
     `;
     end.innerHTML = endHtml;
   }
-
 
   // Initialize the gallery functionality
   initializeGallery();
@@ -2418,25 +2415,9 @@ function initializeGallery() {
   });
 }
 
-
-
 // table
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// main image container inside it 
+// main image container inside it
 //  <div class="Product_btns">
 //    <div class="productBrochure">
 //      <img src="../../assests/img/bookLines.svg" alt="Brochure Icon" /> Product
