@@ -19,6 +19,7 @@ const products = [
       "./assests/img/products/dprg1gh/DPRG-1GH_back_panel.jpg",
       "./assests/img/products/dprg1gh/S-PR-GH_SENSOR.jpg",
     ],
+    pdf: "./assests/download/VACUUM_GAUGES _CATALOGS_DOWNLOAD_FOLDER/DPRG/DPRG-1GH exponential catalog.pdf",
     specifications: [
       { name: "Number of sensor channels", value: "ONE" },
       { name: "Display Range", value: "1000 mBar to 0.001mBar" },
@@ -2333,9 +2334,18 @@ if (product) {
           </div>
         </div>
         <div class="product-details">
-          <div style="display: flex; gap: 12px">
+          <div style="display: flex; gap: 12px; align-items: center;">
             <div class="productCode">${product.code}</div>
             <div class="productCode">${product.name}</div>
+             ${
+               product.pdf
+                 ? `<a href="${product.pdf}" download style="text-decoration: none;">
+                      <div class="downloadBtn">
+                        <img src="./assests/img/bookLines.svg" alt="" /> Download Brochure
+                      </div>
+                    </a>`
+                 : ""
+             }
           </div>
           <h2>${product.title}</h2>
           <p>${product.description}</p>
