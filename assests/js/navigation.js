@@ -16,7 +16,7 @@ nav.innerHTML = `
         <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">Vacuum Measurement</a>
         <ul class="dropdown-menu">
           <li class="dropdown">
-            <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">DPRG SERIES ></a>
+            <a class="dropdown-item dropdown-toggle" href="seriesDetail.html?series=DPRG">DPRG SERIES ></a>
             <ul class="dropdown-menu" style="width: 200px;" >
             <p class="headDiv"> Decimal Display ───────</p>
               <li><a class="dropdown-item deci" href="dprgDetail.html?id=1ba">DPRG - 1GH</a></li> 
@@ -32,7 +32,7 @@ nav.innerHTML = `
             </ul>
           </li>
           <li class="dropdown">
-            <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">FLEXA SERIES</a>
+            <a class="dropdown-item dropdown-toggle" href="seriesDetail.html?series=FLEXA">FLEXA SERIES</a>
             <ul class="dropdown-menu" style="width: 200px;" >
             <li><a class="dropdown-item" href="dprgDetail.html?id=FG-05A">FG-05A sensor</a></li>
               <li><a class="dropdown-item " href="dprgDetail.html?id=FG-04">FG-04 sensor</a></li>
@@ -51,7 +51,7 @@ nav.innerHTML = `
             </ul>
           </li>
          <li class="dropdown">
-  <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">HYBRID SERIES</a>
+  <a class="dropdown-item dropdown-toggle" href="seriesDetail.html?series=HYBRID">HYBRID SERIES</a>
   <ul class="dropdown-menu" style="width: 200px;">
   <p class="headDiv"> Decimal Display ───────</p>
     <li><a class="dropdown-item deci" href="dprgDetail.html?id=HPRGD-1GH-SP">HPRGD-1GH-SP </a></li>
@@ -62,7 +62,7 @@ nav.innerHTML = `
 </li>
 
           <li class="dropdown">
-  <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">OnePirani SERIES</a>
+  <a class="dropdown-item dropdown-toggle" href="seriesDetail.html?series=ONEPIRANI">OnePirani SERIES</a>
   <ul class="dropdown-menu">
     <li><a class="dropdown-item" href="dprgDetail.html?id=HVP-4">HVP-4 </a></li>
     <li><a class="dropdown-item" href="dprgDetail.html?id=HVP-5">HVP-5 </a></li>
@@ -74,8 +74,7 @@ nav.innerHTML = `
 <li class="dropdown">
             <a
               class="dropdown-item dropdown-toggle"
-              href="#"
-              data-bs-toggle="dropdown"
+              href="seriesDetail.html?series=MCLEOD"
               >McLeod SERIES></a
             >
             <ul class="dropdown-menu" style="width: 200px">
@@ -99,8 +98,7 @@ nav.innerHTML = `
           <li class="dropdown">
             <a
               class="dropdown-item dropdown-toggle"
-              href="#"
-              data-bs-toggle="dropdown"
+              href="seriesDetail.html?series=UVG_DISPLAY"
               >UVG Display Controlers></a
             >
             <ul class="dropdown-menu" style="width: 200px">

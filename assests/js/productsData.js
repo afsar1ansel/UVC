@@ -4,7 +4,7 @@ const products = [
     id: "1ba",
     code: "DPRG-1GH",
     name: "DECIMAL DISPLAY",
-    title: "Precision Helium Leak Detectors",
+    title: "Digital Pirani Vacuum Gauge",
     description:
       "The UVS Model DPRG series Vacuum Pirani Gauge Controller displays vacuum pressure as measured from a S-PR-GH sensor tube. It displays vacuum measurements based on the thermal conductivity of gases. The Model DPRG-1GH unit covers the range from 0.001 mbar to 20 mbar.",
     features: [
