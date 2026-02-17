@@ -19,7 +19,7 @@ const products = [
       "./assests/img/products/dprg1gh/DPRG-1GH_back_panel.jpg",
       "./assests/img/products/dprg1gh/S-PR-GH_SENSOR.jpg",
     ],
-    pdf: "./assests/download/VACUUM_GAUGES _CATALOGS_DOWNLOAD_FOLDER/DPRG/DPRG-1GH exponential catalog.pdf",
+    pdf: "./assests/download/VACUUM_GAUGES _CATALOGS_DOWNLOAD_FOLDER/DPRG/DPRG_1GH_deciamal_catalog.pdf",
     specifications: [
       { name: "Number of sensor channels", value: "ONE" },
       { name: "Display Range", value: "1000 mBar to 0.001mBar" },
