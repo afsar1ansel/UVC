@@ -68,10 +68,11 @@ const products = [
       "With universal power supply – input voltage from 90 ~ 264VAC, frequency 47 ~ 440Hz",
     ],
     images: [
-      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/DPRG-2GHdecimaldisplayfullset.jpg",
-      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/S-PR-GH_SENSOR.jpg",
-      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/DPRG-2GHrearpanel.jpg",
+      "./assests/img/products/DECIMAL_DISPLAY/DECIMAL DISPLAY/DPRG-2GH/DPRG 2GH decimal display full set.jpg",
+      "./assests/img/products/DECIMAL_DISPLAY/DECIMAL DISPLAY/DPRG-2GH/S-PR-GH SENSOR.jpg",
+      "./assests/img/products/DECIMAL_DISPLAY/DECIMAL DISPLAY/DPRG-2GH/DPRG 2GH rear panel.jpg",
     ],
+    pdf: "./assests/download/VACUUM_GAUGES _CATALOGS_DOWNLOAD_FOLDER/DPRG/DPRG-2GH decimal catalog.pdf",
     specifications: [
       { name: "Number of sensor channels", value: "TWO" },
       { name: "Display Range", value: "1000 mBar to 0.001mBar" },
