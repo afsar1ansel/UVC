@@ -432,7 +432,7 @@ The calibration certificates are available only on request at additional cost. P
   {
     id: "DPRG-2GH-SP",
     code: "DPRG-2GH-SP",
-    name: "Digital Pirani Vacuum Gauge",
+    name: "Digital Pirani Vacuum Gauge - Exponential Display",
     title: "Digital Pirani Vacuum Gauge – DPRG-2GH-SP",
     description:
       "The UVS Model DPRG series Vacuum Pirani Gauge Controller displays vacuum pressure as measured from a S-PR-GH sensor tube. It displays vacuum measurements based on thermal conductivity of gases. The Model DPRG-2GH-SP unit covers the range from 0.001 mbar to 20 mbar, and controls relay with independent set point.",
@@ -444,11 +444,12 @@ The calibration certificates are available only on request at additional cost. P
       "With universal power supply – input voltage from 90 ~ 264VAC",
     ],
     images: [
-      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/DPRG-2GH-SP BACKPANEL.jpg",
-      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/DPRG-2GH-SP-FULLSETEXPONENTIAL.jpg",
-      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/DPRG-2GH-SP-backpanelfullset.jpg",
-      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/S-PR-GH_SENSOR.jpg",
+      "./assests/img/products/DECIMAL_DISPLAY/EXPONENTIAL_DISPLAY/EXPONENTIAL DISPLAY/DPRG-2GH-SP/DPRG-2GH-SP FULL SET EXPONENTIAL.jpg",
+      "./assests/img/products/DECIMAL_DISPLAY/EXPONENTIAL_DISPLAY/EXPONENTIAL DISPLAY/DPRG-2GH-SP/DPRG-2GH-SP back panel full set.jpg",
+      "./assests/img/products/DECIMAL_DISPLAY/EXPONENTIAL_DISPLAY/EXPONENTIAL DISPLAY/DPRG-2GH-SP/DPRG-2GH-SP BACK PANEL.jpg",
+      "./assests/img/products/DECIMAL_DISPLAY/EXPONENTIAL_DISPLAY/EXPONENTIAL DISPLAY/DPRG-2GH-SP/S-PR-GH SENSOR.jpg",
     ],
+    pdf: "./assests/img/products/DECIMAL_DISPLAY/EXPONENTIAL_DISPLAY/EXPONENTIAL DISPLAY/DPRG-2GH-SP/DPRG_2GH_SP_exponential_catalog.pdf",
     specifications: [
       { name: "Number of sensor channels", value: "TWO" },
       { name: "Display Range", value: "1000 mBar to 0.001mBar" },
@@ -509,7 +510,7 @@ The calibration certificates are available only on request at additional cost. P
   {
     id: "DPRG-2GH",
     code: "DPRG-2GH",
-    name: "Digital Pirani Vacuum Gauge",
+    name: "Digital Pirani Vacuum Gauge - Exponential Display",
     title: "Digital Pirani Vacuum Gauge DPRG-2GH",
     description:
       "The UVS Model DPRG series Vacuum Pirani Gauge Controller displays vacuum pressure as measured from a S-PR-GH sensor tube. It displays vacuum measurements based on thermal conductivity of gases. The Model DPRG-2GH unit covers the range from 0.001 mbar to 20 mbar, and controls relay with independent set point.",
@@ -521,10 +522,11 @@ The calibration certificates are available only on request at additional cost. P
       "With universal power supply – input voltage from 90 ~ 264VAC, frequency 47 ~ 440Hz",
     ],
     images: [
-      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/DPRG-2GHrearpanel.jpg",
-      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/DPRG-2GHexpentialdisplayfullset.jpg",
-      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/S-PR-GH_SENSOR.jpg",
+      "./assests/img/products/DECIMAL_DISPLAY/EXPONENTIAL_DISPLAY/EXPONENTIAL DISPLAY/DPRG-2GH/DPRG 2GH expential display full set.jpg",
+      "./assests/img/products/DECIMAL_DISPLAY/EXPONENTIAL_DISPLAY/EXPONENTIAL DISPLAY/DPRG-2GH/DPRG 2GH rear panel.jpg",
+      "./assests/img/products/DECIMAL_DISPLAY/EXPONENTIAL_DISPLAY/EXPONENTIAL DISPLAY/DPRG-2GH/S-PR-GH SENSOR.jpg",
     ],
+    pdf: "./assests/img/products/DECIMAL_DISPLAY/EXPONENTIAL_DISPLAY/EXPONENTIAL DISPLAY/DPRG-2GH/DPRG_2GH_exponential_catalog.pdf",
     specifications: [
       { name: "Number of sensor channels", value: "TWO" },
       { name: "Display Range", value: "1000 mBar to 0.001mBar" },
