@@ -121,16 +121,18 @@ point
     features: [
       "Measurement range 0.001 to 20 mbar",
       "Space saving rugged design- 1/8 DIN console ",
-      "Space saving rugged design- 1/8 DIN console",
       "Mounts in any orientation ",
       "brass body measuring cell with metal-sealed feed through ",
       "with universal power supply – input voltage from 90 ~ 264VAC, ",
     ],
     images: [
-      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/DPRG-1GH-SP-EXPONENTIALBACKPANEL",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyfmVt8gVvshz-3ne4f87Sq63BLfEQynWqfNQH98_Ea95oqtx7",
-      "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQIZaYaDf_0SeV5q4MuTuSO3a997Qz7XpCUTGkOwJnWx6wnXPB9",
+      "./assests/img/products/DECIMAL_DISPLAY/DECIMAL DISPLAY/DPRG-1GH-SP/DPRG 1GH SP decimal display full set.jpg",
+      "./assests/img/products/DECIMAL_DISPLAY/DECIMAL DISPLAY/DPRG-1GH-SP/DPRG-1GH-SP decimal front panel.jpg",
+      "./assests/img/products/DECIMAL_DISPLAY/DECIMAL DISPLAY/DPRG-1GH-SP/DPRG-1GH-SP DECIMAL BACK PANEL.jpg",
+      "./assests/img/products/DECIMAL_DISPLAY/DECIMAL DISPLAY/DPRG-1GH-SP/Digital Pirani Guage - DPRG-1GH-SP microns.jpg",
+      "./assests/img/products/DECIMAL_DISPLAY/DECIMAL DISPLAY/DPRG-1GH-SP/S-PR-GH SENSOR.jpg",
     ],
+    pdf: "./assests/img/products/DECIMAL_DISPLAY/DECIMAL DISPLAY/DPRG-1GH-SP/DPRG_1GH_SP_decimal_catalog.pdf",
     specifications: [
       { name: "Number of sensor channels", value: "TWO" },
       { name: "Display Range", value: "1000 mBar to 0.001mBar." },
@@ -192,6 +194,7 @@ The calibration certificates are available only on request at additional cost. P
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyfmVt8gVvshz-3ne4f87Sq63BLfEQynWqfNQH98_Ea95oqtx7",
       "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQIZaYaDf_0SeV5q4MuTuSO3a997Qz7XpCUTGkOwJnWx6wnXPB9",
     ],
+    pdf: "./assests/img/products/DECIMAL_DISPLAY/DECIMAL DISPLAY/DPRG-1GH-2SP/DPRG-1GH-2SP decimal catalog.pdf",
     specifications: [
       { name: "Number of sensor channels", value: "ONE" },
       { name: "Display Range", value: "1000 mBar to 0.001mBar" },
@@ -246,10 +249,12 @@ The calibration certificates are available only on request at additional cost. P
       "Two independent relay setpoints for process control",
     ],
     images: [
-      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/DPRG-2GH-SP-backpanelfullset.jpg",
-      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/S-PR-GH_SENSOR.jpg",
-      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/DPRG-2GH-SPDECIMALFRONTPANEL.jpg",
+      "./assests/img/products/DECIMAL_DISPLAY/DECIMAL DISPLAY/DPRG-2GH-SP/DPRG-2GH-SP decimal full set.jpg",
+      "./assests/img/products/DECIMAL_DISPLAY/DECIMAL DISPLAY/DPRG-2GH-SP/DPRG-2GH-SP DECIMAL FRONT PANEL.jpg",
+      "./assests/img/products/DECIMAL_DISPLAY/DECIMAL DISPLAY/DPRG-2GH-SP/DPRG-2GH-SP BACK PANEL.jpg",
+      "./assests/img/products/DECIMAL_DISPLAY/DECIMAL DISPLAY/DPRG-2GH-SP/S-PR-GH SENSOR.jpg",
     ],
+    pdf: "./assests/img/products/DECIMAL_DISPLAY/DECIMAL DISPLAY/DPRG-2GH-SP/DPRG_2GH_SP_decimal_catalog.pdf",
     specifications: [
       { name: "Number of sensor channels", value: "TWO" },
       { name: "Display Range", value: "1000 mBar to 0.001mBar" },
