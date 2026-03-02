@@ -60,9 +60,23 @@ document.addEventListener("DOMContentLoaded", () => {
           imgSrc = product.images[0];
         }
 
+        let contentHtml = `<h3>${product.title || product.name} </h3>
+                      <p>${product.description ? product.description.substring(0, 100) + "..." : ""}</p>`;
+
+        if (product.gridDetails && product.gridDetails.length > 0) {
+          contentHtml =
+            product.gridDetails
+              .map((detail, index) => {
+                if (index === 0) return `<h3>${detail}</h3>`;
+                if (index === 1)
+                  return `<h4 style="margin: 5px 0 10px 0; font-size: 1em;">${detail}</h4>`;
+                return `<p style="margin: 2px 0;">${detail}</p>`;
+              })
+              .join("") + `<div style="margin-bottom: 15px;"></div>`;
+        }
+
         div.innerHTML = ` <img src="${imgSrc}" alt="${product.name}" style="height: 200px; object-fit: contain;">
-                      <h3>${product.title || product.name} </h3>
-                      <p>${product.description ? product.description.substring(0, 100) + "..." : ""}</p>
+                      ${contentHtml}
                       <div class="gridBtn" ><a href="dprgDetail.html?id=${product.id}">View Product</a></div>`;
 
         gridBox.appendChild(div);

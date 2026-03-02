@@ -5,6 +5,12 @@ const products = [
     code: "DPRG-1GH",
     name: "DECIMAL DISPLAY",
     title: "Digital Pirani Vacuum Gauge",
+    gridDetails: [
+      "DPRG-1GH",
+      "Single line Display",
+      "Single Channel",
+      "20 mBar to 10-3 mBar",
+    ],
     description:
       "The UVS Model DPRG series Vacuum Pirani Gauge Controller displays vacuum pressure as measured from a S-PR-GH sensor tube. It displays vacuum measurements based on the thermal conductivity of gases. The Model DPRG-1GH unit covers the range from 0.001 mbar to 20 mbar.",
     features: [
@@ -58,6 +64,12 @@ const products = [
     code: "DPRG-2GH",
     name: "DECIMAL DISPLAY",
     title: "Precision Helium Leak Detectors",
+    gridDetails: [
+      "DPRG-2GH",
+      "Single line Display",
+      "Dual Channel",
+      "20 mBar to 10-3 mBar",
+    ],
     description:
       "The UVS Model DPRG series Vacuum Pirani Gauge Controller displays vacuum pressure as measured from a S-PR-GH sensor tube. It displays vacuum measurements based on the thermal conductivity of gases. The Model DPRG-2GH unit covers the range from 0.001 mbar to 20 mbar, and measures two channels simultaneously with channel selection via a switch on the front bezel.",
     features: [
@@ -112,6 +124,12 @@ const products = [
     code: "DPRG-1GH-SP",
     name: "DPRG Single Line Display",
     title: "Digital Pirani Vacuum Gauge",
+    gridDetails: [
+      "DPRG-1GH-SP",
+      "Single line Display",
+      "Single Channel With Setpoint.",
+      "20 mBar to 10-3 mBar",
+    ],
     description: `
         The UVS Model DPRG series Vacuum Pirani Gauge Controller displays vacuum pressure as measured from a
 S-PR-GH sensor tube. It displays vacuum measurements based on thermal conductivity of gases. The Model
@@ -179,6 +197,12 @@ The calibration certificates are available only on request at additional cost. P
     code: "DPRG-1GH-2SP",
     name: "DPRG Single Line Display with Dual Setpoints",
     title: "Precision Helium Leak Detectors",
+    gridDetails: [
+      "DPRG-1GH-2SP",
+      "Single line Display",
+      "Single Channel With Dual Setpoint.",
+      "20 mBar to 10-3 mBar",
+    ],
     description:
       "The UVS Model DPRG series Vacuum Pirani Gauge Controller displays vacuum pressure as measured from a S-PR-GH sensor tube. It displays vacuum measurements based on the thermal conductivity of gases. The Model DPRG-1GH-2SP unit covers the range from 0.001 m.Bar to 20 m.Bar, and controls relay with independent dual set points for HI & LO values.",
     features: [
@@ -237,6 +261,12 @@ The calibration certificates are available only on request at additional cost. P
     code: "DPRG-2GH-SP",
     name: "DPRG Dual Line Display with Setpoints",
     title: "Precision Helium Leak Detectors",
+    gridDetails: [
+      "DPRG-2GH-SP",
+      "Single line Display",
+      "Dual Channel With Setpoint.",
+      "20 mBar to 10-3 mBar",
+    ],
     description:
       "The UVS Model DPRG series Vacuum Pirani Gauge Controller displays vacuum pressure as measured from a S-PR-GH sensor tube. It displays vacuum measurements based on thermal conductivity of gases. The Model DPRG-2GH-SP unit covers the range from 0.001 mBar to 20 mBar, and controls relay with independent set points. It is a dual channel gauge with channel selection via the front bezel membrane switch.",
     features: [
@@ -301,6 +331,12 @@ The calibration certificates are available only on request at additional cost. P
     code: "DPRG-1GH",
     name: "Digital Pirani Vacuum Gauge - Exponential Display",
     title: "Digital Pirani Vacuum Gauge – DPRG-1GH",
+    gridDetails: [
+      "DPRG-1GH",
+      "Exponential Display",
+      "Single Channel",
+      "20 mBar to 10-3 mBar",
+    ],
     description:
       "The UVS Model DPRG series Vacuum Pirani Gauge Controller displays vacuum pressure as measured from a S-PR-GH sensor tube. It displays vacuum measurements based on thermal conductivity of gases. The Model DPRG-1GH unit covers the range from 0.001 mbar to 20 mbar.",
     features: [
@@ -360,6 +396,12 @@ The calibration certificates are available only on request at additional cost. P
     code: "DPRG-1GH-SP",
     name: "Digital Pirani Vacuum Gauge - Exponential Display",
     title: "Digital Pirani Vacuum Gauge – DPRG-1GH-SP",
+    gridDetails: [
+      "DPRG-1GH-SP",
+      "Exponential Display",
+      "Single Channel with Setpoint",
+      "20 mBar to 10-3 mBar",
+    ],
     description:
       "The UVS Model DPRG series Vacuum Pirani Gauge Controller displays vacuum pressure as measured from a S-PR-GH sensor tube. It displays vacuum measurements based on thermal conductivity of gases. The Model DPRG-1GH-SP unit covers the range from 0.001 m.Bar to 20 m.bar, and controls relay with independent set point.",
     features: [
@@ -434,6 +476,12 @@ The calibration certificates are available only on request at additional cost. P
     code: "DPRG-2GH-SP",
     name: "Digital Pirani Vacuum Gauge - Exponential Display",
     title: "Digital Pirani Vacuum Gauge – DPRG-2GH-SP",
+    gridDetails: [
+      "DPRG-2GH-SP",
+      "Exponential Display",
+      "Dual Channel with Setpoint",
+      "20 mBar to 10-3 mBar",
+    ],
     description:
       "The UVS Model DPRG series Vacuum Pirani Gauge Controller displays vacuum pressure as measured from a S-PR-GH sensor tube. It displays vacuum measurements based on thermal conductivity of gases. The Model DPRG-2GH-SP unit covers the range from 0.001 mbar to 20 mbar, and controls relay with independent set point.",
     features: [
@@ -512,6 +560,12 @@ The calibration certificates are available only on request at additional cost. P
     code: "DPRG-2GH",
     name: "Digital Pirani Vacuum Gauge - Exponential Display",
     title: "Digital Pirani Vacuum Gauge DPRG-2GH",
+    gridDetails: [
+      "DPRG-2GH",
+      "Exponential Display",
+      "Dual Channel",
+      "20 mBar to 10-3 mBar",
+    ],
     description:
       "The UVS Model DPRG series Vacuum Pirani Gauge Controller displays vacuum pressure as measured from a S-PR-GH sensor tube. It displays vacuum measurements based on thermal conductivity of gases. The Model DPRG-2GH unit covers the range from 0.001 mbar to 20 mbar, and controls relay with independent set point.",
     features: [
@@ -582,6 +636,12 @@ FG-04 sensor tube. The Model FGD-1GH displays vacuum measurements based on therm
 The Advantage Of This Vacuum Gauge FLEXA Series Is The Sensor Tube Has The Built In Zero And Atm
 Adjustments, So That The Sensor Tube Can Be Used As A Transducer, And Each Sensor Is Factory Calibrated
 At Sensor Level.`,
+    gridDetails: [
+      "FGD-1GH",
+      "Single line Display",
+      "Single Channel",
+      "20 mBar to 10-3 mBar",
+    ],
     features: [
       "Measurement range 0.001 to 20 mbar",
       "Space saving rugged design- 1/8 DIN console",
@@ -640,6 +700,12 @@ The calibration certificates are available only on request at additional cost. P
   
 The advantage of this Vacuum Gauge FLEXA Series is the sensor tube has the built-in zero and ATM adjustments, so that the sensor tube can be used as a transducer, and each sensor is factory calibrated at the sensor level.
 With this, a 1:1 replacement of the sensor with the display unit is established, and there is no dependency on vacuum gauge level adjustment in case of sensor replacement.`,
+    gridDetails: [
+      "FGD-2GH",
+      "Single line Display",
+      "Dual Channel",
+      "20 mBar to 10-3 mBar",
+    ],
     features: [
       "Measurement range 0.001 to 20 mbar",
       "Two channel measurement",
@@ -710,6 +776,12 @@ The calibration certificates are available only on request at additional cost. P
 The advantage of this Vacuum Gauge FLEXA Series is the sensor tube has built-in zero and ATM adjustments, so that the sensor tube can be used as a transducer, and each sensor is factory calibrated at the sensor level.
 
 With this, a 1:1 replacement of the sensor with the display unit is established, and there is no dependency on vacuum gauge level adjustment in case of sensor replacement.`,
+    gridDetails: [
+      "FGD-2GH-SP",
+      "Single line Display",
+      "Dual Channel with Setpoint",
+      "20 mBar to 10-3 mBar",
+    ],
     features: [
       "Measurement range 0.001 to 20 mbar",
       "Two channel measurement with independent relay outputs",
@@ -784,6 +856,12 @@ The calibration certificates are available only on request at additional cost. P
 The advantage of this Vacuum Gauge FLEXA Series is that the sensor tube has built-in zero and ATM adjustments, so the sensor tube can be used as a transducer, and each sensor is factory calibrated at the sensor level.
 
 With this, a 1:1 replacement of the sensor with the display unit is established, and there is no dependency on vacuum gauge level adjustment in case of sensor replacement.`,
+    gridDetails: [
+      "FGD-1GH-2SP",
+      "Single line Display",
+      "Single Channel with Dual Setpoint",
+      "20 mBar to 10-3 mBar",
+    ],
     features: [
       "Measurement range 2000 to 0.1 Pascal",
       "Space-saving rugged design - 1/8 DIN console",
@@ -858,6 +936,12 @@ Exponential order display from 2.0X10¹ to 1.0X10⁻³ mbar.
 The advantage of this Vacuum Gauge FLEXA Series is that the sensor tube has built-in zero and ATM adjustments, so the sensor tube can be used as a transducer, and each sensor is factory calibrated at the sensor level.
 
 With this, a 1:1 replacement of the sensor with the display unit is established, and there is no dependency on vacuum gauge level adjustment in case of sensor replacement.`,
+    gridDetails: [
+      "FGE-1GH",
+      "Exponential Display",
+      "Single Channel",
+      "20 mBar to 10-3 mBar",
+    ],
     features: [
       "Measurement range 0.001 to 20 mbar",
       "Space-saving rugged design - 1/8 DIN console",
@@ -926,6 +1010,12 @@ Exponential order display from 2.0X10¹ to 1.0X10⁻³ mbar.
 The advantage of this Vacuum Gauge FLEXA Series is that the sensor tube has built-in zero and ATM adjustments, so the sensor tube can be used as a transducer, and each sensor is factory calibrated at the sensor level.
 
 With this, a 1:1 replacement of the sensor with the display unit is established, and there is no dependency on vacuum gauge level adjustment in case of sensor replacement.`,
+    gridDetails: [
+      "FGE-1GH-SP",
+      "Exponential Display",
+      "Single Channel with Setpoint",
+      "20 mBar to 10-3 mBar",
+    ],
     features: [
       "Measurement range 0.001 to 20 mbar",
       "Space-saving rugged design - 1/8 DIN console",
@@ -1051,6 +1141,12 @@ The calibration certificates are available only on request at additional cost. P
     title: "EXPONENTIAL DISPLAY FGE-2GH-SP",
     description: `The FLEXA FGE-2GH-SP is a two-channel digital vacuum gauge with relay set point controller output. 
 The device displays vacuum measurements from 0.001mBar to 20mBar using FG-04 sensor tubes. Each sensor features built-in zero and ATM adjustments, enabling it to function as a transducer. Sensors are factory-calibrated for easy 1:1 replacement with the display unit, eliminating dependency on gauge-level adjustments during sensor replacement.`,
+    gridDetails: [
+      "FGE-2GH-SP",
+      "Exponential Display",
+      "Dual Channel with Setpoint",
+      "20 mBar to 10-3 mBar",
+    ],
     features: [
       "Measurement range: 0.001 to 20 mBar",
       "Two-channel readout with relay set point control for each channel",
@@ -1158,6 +1254,12 @@ This sensor covers the range from 0.001 mBar to 20 mBar and integrates built-in 
     code: "HPRGD-1GH-SP",
     name: "DECIMAL DISPLAY",
     title: "Hybrid Pirani Vacuum Gauge HPRGD-1GH-SP",
+    gridDetails: [
+      "HPRGD-1GH-SP",
+      "Single line Display",
+      "Single Channel with Setpoint",
+      "1000 mBar to 10-3 mBar",
+    ],
     description: `The HPRGD-1GH-SP Hybrid Pirani Vacuum Gauge is specifically designed for accurate measurement in large volume evacuation vacuum systems. It delivers high accuracy at higher pressures, making it suitable for measurements from 1000 mBar down to 0.001 mBar. Its robust brass body measurement sensor is equipped with a standard KF-10 end fitting, ensuring reliable performance in various applications.`,
     features: [
       "Specially designed for large volume evacuation vacuum readouts",
@@ -1217,6 +1319,12 @@ This sensor covers the range from 0.001 mBar to 20 mBar and integrates built-in 
     code: "HPRGE-1GH-SP",
     name: "EXPONENTIAL DISPLAY",
     title: "Digital Pirani Vacuum Gauge- HPRGE-1GH-SP",
+    gridDetails: [
+      "HPRGE-1GH-SP",
+      "Exponential Display",
+      "Single Channel with Setpoint",
+      "1000 mBar to 10-3 mBar",
+    ],
     description: `
 The HPRG-1GH-SP Digital Pirani Vacuum Gauge, with the S-EPR-GH sensor, delivers high-precision vacuum measurement from 1000 mBar to 1x10e-4 mBar. Designed for large-volume evacuation systems, it features a brass body sensor with standard NW10 fittings (optional NW16/KF-25), an exponential display, and RS485 Modbus communication. With high accuracy at higher pressures, process control relay output, and universal power input, it is ideal for fine and rough vacuum applications, excluding corrosive or high-moisture environments.`,
     features: [
@@ -1300,6 +1408,12 @@ The HPRG-1GH-SP Digital Pirani Vacuum Gauge, with the S-EPR-GH sensor, delivers 
     name: "EXPONENTIAL DISPLAY",
     description: ``,
     title: "Hybrid Pirani Vacuum Gauge- HPRGE-2GH ",
+    gridDetails: [
+      "HPRGE-2GH",
+      "Exponential Display",
+      "Dual Channel ",
+      "1000 mBar to 10-3 mBar",
+    ],
     end: `The HPRGE-2GH Vacuum Gauge Controller is designed for precise vacuum measurement, offering two independent sensor channels for large volume evacuation applications. It provides high accuracy at higher pressures ranging from 1000 mbar to 1 mbar and is especially effective in measuring vacuum from 1000 mbar to 0.001 mbar. The unit features a brass body measurement sensor with a standard KF-10 end fitting, ensuring durability and reliability. The display shows readings in mantissa and exponential format, with the option to measure in mbar, torr, or Pa upon request. This controller is ideal for advanced vacuum systems requiring accurate and reliable pressure measurements in both the fine and rough vacuum ranges.`,
     features: [
       "Specially designed for large volume evacuation vacuum readouts.",
@@ -1347,6 +1461,12 @@ The HPRG-1GH-SP Digital Pirani Vacuum Gauge, with the S-EPR-GH sensor, delivers 
     title: "EXPONENTIAL DISPLAY - FGE-2GH",
     description: `
 The FLEXA FGE-2GH Digital Pirani Vacuum Gauge Controller provides precise and reliable vacuum measurement for two independent channels. Designed to work with FG-04 sensor tubes, it offers a measurement range from 0.001 mBar to 20 mBar with exponential order display. The built-in zero and atmosphere adjustment features ensure easy sensor calibration, eliminating the need for gauge-level adjustments during sensor replacement. Ideal for fine and rough vacuum applications, it is suitable for controlling high vacuum systems and monitoring fore vacuum pressures.`,
+    gridDetails: [
+      "FGE-2GH",
+      "Exponential Display",
+      "Dual Channel",
+      "20 mBar to 10-3 mBar",
+    ],
     features: [
       "Measurement range of 0.001 mBar to 20 mBar.",
       "Supports two independent sensor channels.",
@@ -1407,6 +1527,12 @@ Factory-calibrated sensors ensure accurate measurements with minimal dependency 
     title: "DECIMAL DISPLAY - FG-1GH-SP",
     description: `
 The FLEXA FG-1GH-SP Digital Pirani Vacuum Gauge Controller is designed for precise vacuum pressure measurement using the FG-04 sensor tube. With a measurement range from 0.001 mBar to 20 mBar, it is equipped with a potential-free contact set point relay output for process control. The built-in zero and atmosphere adjustment at the sensor level allows for seamless sensor replacement without additional gauge-level calibration. The FLEXA series is ideal for fine and rough vacuum applications, offering reliability and efficiency in vacuum measurement.`,
+    gridDetails: [
+      "FGD-1GH-SP",
+      "Single line Display",
+      "Single Channel with Setpoint",
+      "20 mBar to 10-3 mBar",
+    ],
     features: [
       "Measurement range from 0.001 mBar to 20 mBar.",
       "Compact 1/8 DIN console design for space-saving installation.",
