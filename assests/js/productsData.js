@@ -648,7 +648,9 @@ At Sensor Level.`,
       "brass body measuring cell with metal-sealed feed through",
       "interchangeability of the sensor possible without disturbing the display unit.",
     ],
-    images: [],
+    images: [
+      "./assests/img/products/FLEXA_SERIES/FLEXA SERIES/DECIMAL DISPLAY/FGD-1GH/FGD 1GH/FGD!Gh.jpeg",
+    ],
     pdf: "./assests/download/VACUUM_GAUGES _CATALOGS_DOWNLOAD_FOLDER/FLEXA/FGD-1GH catalog.pdf",
     specifications: [
       { name: "Display Range", value: "1000 mBar to 0.001mBar" },
@@ -842,7 +844,9 @@ With this, a 1:1 replacement of the sensor with the display unit is established,
     ],
     end: `Unique Vacuum Solutions offers a convenient recalibration service to help users of vacuum measurement pirani/thermocouple/full range gauges to maintain all of their vacuum gauges in certified and peak condition, regardless of the original manufacturer. All makes of vacuum gauges can also be calibrated/repaired if required.
 The calibration certificates are available only on request at additional cost. Please contact before ordering.`,
-    images: [],
+    images: [
+      "./assests/img/products/FLEXA_SERIES/FLEXA SERIES/DECIMAL DISPLAY/FGD-2GH-SP/FGD 2GH SP/fdg2ghsp.jpeg",
+    ],
     pdf: "./assests/download/VACUUM_GAUGES _CATALOGS_DOWNLOAD_FOLDER/FLEXA/FGD-2GH-SP catalog.pdf",
   },
   {
@@ -919,7 +923,9 @@ With this, a 1:1 replacement of the sensor with the display unit is established,
     ],
     end: `Unique Vacuum Solutions offers a convenient recalibration service to help users of vacuum measurement pirani/thermocouple/full range gauges to maintain all of their vacuum gauges in certified and peak condition, regardless of the original manufacturer. All makes of vacuum gauges can also be calibrated/repaired if required.
 The calibration certificates are available only on request at additional cost. Please contact before ordering.`,
-    images: [],
+    images: [
+      "./assests/img/products/FLEXA_SERIES/FLEXA SERIES/DECIMAL DISPLAY/FGD-1GH-2SP/FGD 1GH 2SP/fgd1gh2sp.jpeg",
+    ],
     pdf: "./assests/download/VACUUM_GAUGES _CATALOGS_DOWNLOAD_FOLDER/FLEXA/FGD-1GH-2SP PASCALS catalog.pdf",
   },
   {
@@ -1075,7 +1081,9 @@ With this, a 1:1 replacement of the sensor with the display unit is established,
     end: `Unique Vacuum Solutions offers a convenient recalibration service to help users of vacuum measurement pirani/thermocouple/full range gauges to maintain all of their vacuum gauges in certified and peak condition, regardless of the original manufacturer. All makes of vacuum gauges can also be calibrated/repaired if required.
 
 The calibration certificates are available only on request at additional cost. Please contact before ordering.`,
-    images: [],
+    images: [
+      "./assests/img/products/FLEXA_SERIES/FLEXA SERIES/EXPONENTIAL DISPLAY/FGE-1GH-SP/FGE 1GH SP/FGE-1GH-SP.jpeg",
+    ],
     pdf: "./assests/download/VACUUM_GAUGES _CATALOGS_DOWNLOAD_FOLDER/FLEXA/FGE-1GH-SP decimal catalog.pdf",
   },
   {
