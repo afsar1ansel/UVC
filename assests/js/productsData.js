@@ -764,6 +764,7 @@ With this, a 1:1 replacement of the sensor with the display unit is established,
     end: `Unique Vacuum Solutions offers a convenient recalibration service to help users of vacuum measurement pirani/thermocouple/full range gauges to maintain all of their vacuum gauges in certified and peak condition, regardless of the original manufacturer. All makes of vacuum gauges can also be calibrated/repaired if required.
 The calibration certificates are available only on request at additional cost. Please contact before ordering.`,
     images: [
+      "./assests/img/products/FLEXA_SERIES/FLEXA SERIES/DECIMAL DISPLAY/FGD-2GH/FGD 2GH/fdg-2gh.jpeg",
       "./assests/img/products/FLEXA_SERIES/FLEXA SERIES/DECIMAL DISPLAY/FGD-2GH/FGD 2GH/FGD-2GH backpanel.jpg",
     ],
     pdf: "./assests/download/VACUUM_GAUGES _CATALOGS_DOWNLOAD_FOLDER/FLEXA/FGD-2GH decimal catalog.pdf",
@@ -999,6 +1000,7 @@ With this, a 1:1 replacement of the sensor with the display unit is established,
     end: `Unique Vacuum Solutions offers a convenient recalibration service to help users of vacuum measurement pirani/thermocouple/full range gauges to maintain all of their vacuum gauges in certified and peak condition, regardless of the original manufacturer. All makes of vacuum gauges can also be calibrated/repaired if required.
 The calibration certificates are available only on request at additional cost. Please contact before ordering.`,
     images: [
+      "./assests/img/products/FLEXA_SERIES/FLEXA SERIES/EXPONENTIAL DISPLAY/FGE-1GH/FGE 1GH/fge-1gh.jpeg",
       "./assests/img/products/FLEXA_SERIES/FLEXA SERIES/EXPONENTIAL DISPLAY/FGE-1GH/FGE 1GH/flexa pirani back view complete set.jpg",
     ],
     pdf: "./assests/download/VACUUM_GAUGES _CATALOGS_DOWNLOAD_FOLDER/FLEXA/FGE-1GH catalog.pdf",
@@ -1139,8 +1141,7 @@ With this, a 1:1 replacement of the sensor with the display controller unit is e
 
 The calibration certificates are available only on request at additional cost. Please contact before ordering.`,
     images: [
-      "./assests/img/products/FLEXA_SERIES/FLEXA SERIES/FG-05A LINEAR OUTPUT SENSOR/FG-05A output formula.png",
-      "./assests/img/products/FLEXA_SERIES/FLEXA SERIES/FG-04 SENSOR/FLEXA SENSOR FG-04/flexa sensor.jpg",
+      "./assests/img/products/FLEXA_SERIES/FLEXA SERIES/FG-05A LINEAR OUTPUT SENSOR/fg05a.jpeg",
     ],
     pdf: "./assests/download/VACUUM_GAUGES _CATALOGS_DOWNLOAD_FOLDER/FLEXA/FG-05A CATALOG.pdf",
   },
@@ -1211,6 +1212,7 @@ The device displays vacuum measurements from 0.001mBar to 20mBar using FG-04 sen
     end: `Unique Vacuum Solutions offers a convenient recalibration service to help users of vacuum measurement Pirani, thermocouple, or full-range gauges maintain all their vacuum gauges in certified and peak condition, regardless of the original manufacturer. 
 Calibration certificates are available upon request for an additional cost.`,
     images: [
+      "./assests/img/products/FLEXA_SERIES/FLEXA SERIES/EXPONENTIAL DISPLAY/FGE-2GH-SP/FGE-2GH-SP/FGE-2GH-SP.jpeg",
       "./assests/img/products/FLEXA_SERIES/FLEXA SERIES/EXPONENTIAL DISPLAY/FGE-2GH/FGE 2GH/FGD-2GH backpanel.jpg",
     ],
     pdf: "./assests/download/VACUUM_GAUGES _CATALOGS_DOWNLOAD_FOLDER/FLEXA/FGE-2GH-SP catalog.pdf",
@@ -1529,6 +1531,7 @@ The FLEXA FGE-2GH Digital Pirani Vacuum Gauge Controller provides precise and re
     end: `
 Factory-calibrated sensors ensure accurate measurements with minimal dependency on adjustments. Optional calibration services and certificates are available on request at additional cost.`,
     images: [
+      "./assests/img/products/FLEXA_SERIES/FLEXA SERIES/EXPONENTIAL DISPLAY/FGE-2GH/FGE 2GH/FGE-2GH.jpeg",
       "./assests/img/products/FLEXA_SERIES/FLEXA SERIES/EXPONENTIAL DISPLAY/FGE-2GH/FGE 2GH/FGD-2GH backpanel.jpg",
     ],
     pdf: "./assests/download/VACUUM_GAUGES _CATALOGS_DOWNLOAD_FOLDER/FLEXA/FGE-2GH catalog.pdf",
