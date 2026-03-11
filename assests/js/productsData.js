@@ -1321,12 +1321,15 @@ This sensor covers the range from 0.001 mBar to 20 mBar and integrates built-in 
     ],
     end: `Factory-calibrated for accurate vacuum measurement, with adjustment options for specific ranges. Calibration certificates are available on request.`,
     images: [
-      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/IMG_3822.jpg",
-      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/IMG_3825.jpg",
-      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/IMG_3823.jpg",
-      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/hybridpiranibackviewassembly.jpg",
-      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/IMG_3820.jpg",
+      "./assests/img/products/HYBRID SERIES/DECIMAL DISPLAY/HPRGD-1GH-SP/HPRGD-1GH-SP/IMG_3820.jpg",
+      "./assests/img/products/HYBRID SERIES/DECIMAL DISPLAY/HPRGD-1GH-SP/HPRGD-1GH-SP/IMG_3821.jpg",
+      "./assests/img/products/HYBRID SERIES/DECIMAL DISPLAY/HPRGD-1GH-SP/HPRGD-1GH-SP/IMG_3822.jpg",
+      "./assests/img/products/HYBRID SERIES/DECIMAL DISPLAY/HPRGD-1GH-SP/HPRGD-1GH-SP/IMG_3823.jpg",
+      "./assests/img/products/HYBRID SERIES/DECIMAL DISPLAY/HPRGD-1GH-SP/HPRGD-1GH-SP/IMG_3824.jpg",
+      "./assests/img/products/HYBRID SERIES/DECIMAL DISPLAY/HPRGD-1GH-SP/HPRGD-1GH-SP/IMG_3825.jpg",
+      "./assests/img/products/HYBRID SERIES/DECIMAL DISPLAY/HPRGD-1GH-SP/HPRGD-1GH-SP/hybrid pirani back view assembly.jpg",
     ],
+    pdf: "./assests/download/VACUUM_GAUGES _CATALOGS_DOWNLOAD_FOLDER/HYBRID/hybrid pirani gauge model HPRGD-1GH-SP.pdf",
   },
   {
     id: "HPRGE-1GH-SP",
@@ -1413,8 +1416,9 @@ The HPRG-1GH-SP Digital Pirani Vacuum Gauge, with the S-EPR-GH sensor, delivers 
     ],
     end: `Factory-calibrated for accurate vacuum measurement, with adjustment options for specific ranges. Calibration certificates are available on request.`,
     images: [
-      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/hybridpiranibackviewassembly.jpg",
+      "./assests/img/products/HYBRID SERIES/EXPONENTIAL DISPLAY/HPRGE-1GH-SP/HPRGE-1GH-SP/hybrid pirani back view assembly.jpg",
     ],
+    pdf: "./assests/download/VACUUM_GAUGES _CATALOGS_DOWNLOAD_FOLDER/HYBRID/hybrid pirani gauge model HPRGE-1GH-SP exponential.pdf",
   },
   {
     id: "HPRGE-2GH",
@@ -1464,9 +1468,11 @@ The HPRG-1GH-SP Digital Pirani Vacuum Gauge, with the S-EPR-GH sensor, delivers 
       { name: "Overall Dimensions", value: "92W X 92H X 110D mm" },
     ],
     images: [
-      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/20201219_130721.jpg",
-      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/20201219_130924.jpg",
+      "./assests/img/products/HYBRID SERIES/EXPONENTIAL DISPLAY/HPRGE-2GH/HPRGE-2GH/20201219_130721.jpg",
+      "./assests/img/products/HYBRID SERIES/EXPONENTIAL DISPLAY/HPRGE-2GH/HPRGE-2GH/20201219_130848.jpg",
+      "./assests/img/products/HYBRID SERIES/EXPONENTIAL DISPLAY/HPRGE-2GH/HPRGE-2GH/20201219_130924.jpg",
     ],
+    pdf: "./assests/download/VACUUM_GAUGES _CATALOGS_DOWNLOAD_FOLDER/HYBRID/hybrid pirani gauge model HPRGE-2GH.pdf",
   },
   {
     id: "FGE-2GH",
