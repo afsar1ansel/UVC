@@ -48,6 +48,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
       return false;
     });
+    
+    // Inject series description
+    const seriesDescription = document.getElementById("seriesDescription");
+    if (seriesDescription) {
+      const firstWithDesc = filteredProducts.find(p => p.description && p.description.trim() !== "");
+      if (firstWithDesc) {
+        seriesDescription.innerHTML = `<p>${firstWithDesc.description}</p>`;
+      } else {
+        seriesDescription.innerHTML = "";
+      }
+    }
 
     if (filteredProducts.length > 0) {
       filteredProducts.forEach((product) => {
