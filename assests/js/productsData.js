@@ -1765,8 +1765,10 @@ The HVP-4 OnePirani Vacuum Transducer is a MEMS-based Pirani sensor designed for
     end: `
 The HVP-4 OnePirani is a reliable, robust, and cost-effective solution for precision vacuum measurement in a variety of industrial and research applications. With its advanced MEMS technology, programmable features, and ease of use, it provides a modern alternative to conventional ionization gauges.`,
     images: [
-      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/HVP4photo.jpg",
+      "./assests/img/products/OnePirani-SERIES/HVP-4/HVP4photo.jpg",
+      "./assests/img/products/OnePirani-SERIES/HVP-4/HVP4part-number-selection-guide.jpg",
     ],
+    pdf: "./assests/download/VACUUM_GAUGES _CATALOGS_DOWNLOAD_FOLDER/OnePirani/HVP-4.pdf",
   },
   {
     id: "HVP-5",
@@ -1945,8 +1947,10 @@ The HVP-4 OnePirani is a reliable, robust, and cost-effective solution for preci
     ],
     end: "The HVP-5 OnePirani is a reliable, ultra-wide-range vacuum transducer that provides excellent performance for a variety of industrial and research applications. Its advanced technology, broad compatibility, and ease of use make it an ideal solution for precise and cost-effective vacuum measurement.",
     images: [
-      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/HVP5photo.jpg",
+      "./assests/img/products/OnePirani-SERIES/HVP-5/HVP5 photo.jpg",
+      "./assests/img/products/OnePirani-SERIES/HVP-5/HVP5 part number selection guide.jpg",
     ],
+    pdf: "./assests/download/VACUUM_GAUGES _CATALOGS_DOWNLOAD_FOLDER/OnePirani/HVP-5.pdf",
   },
   {
     id: "HVP-7AT",
@@ -2163,8 +2167,10 @@ The HVP-4 OnePirani is a reliable, robust, and cost-effective solution for preci
     ],
     end: "The HVP-7AT OnePirani is an advanced vacuum transducer offering precise control and measurement capabilities for various demanding applications. With integrated barometric, Pirani, and diaphragm sensors, along with the option for protective coatings, it’s ideal for harsh environments and applications like load-lock systems and semiconductor processing.",
     images: [
-      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/HVP5photo.jpg",
+      "./assests/img/products/OnePirani-SERIES/HVP-7/HVP7AT photo.jpg",
+      "./assests/img/products/OnePirani-SERIES/HVP-7/HVP7AT part number selection guide.jpg",
     ],
+    pdf: "./assests/download/VACUUM_GAUGES _CATALOGS_DOWNLOAD_FOLDER/OnePirani/HVP-7AT.pdf",
   },
   {
     id: "DVG-1S",
@@ -2300,8 +2306,9 @@ The HVP-4 OnePirani is a reliable, robust, and cost-effective solution for preci
     ],
     end: "The DVG-1S is a reliable and cost-effective solution for applications that require high accuracy and repeatability. Its versatile output options, robust design, and wide range of applications make it an ideal choice for a wide variety of vacuum measurement needs in harsh environments.",
     images: [
-      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/HVP5photo.jpg",
+      "./assests/img/products/OnePirani-SERIES/DVG-1S/dvg-1s.jpeg",
     ],
+    pdf: "./assests/img/products/OnePirani-SERIES/DVG-1S/DVG-1S.pdf",
   },
   {
     id: "10mmhgFS",
