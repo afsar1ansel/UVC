@@ -1620,7 +1620,7 @@ Unique Vacuum Solutions offers recalibration services to ensure your vacuum gaug
     name: "OnePirani Vacuum Transducer",
     title: "HVP-4 OnePirani Vacuum Transducer",
     description: `
-The HVP-4 OnePirani Vacuum Transducer is a MEMS-based Pirani sensor designed for precise vacuum measurement across a wide range (1×10⁻⁶ to 13.33 mbar / 7.5×10⁻⁷ to 10 Torr). Its advanced MEMS thermal conductivity technology, combined with precision digital signal processing and robust design, makes it ideal for critical vacuum applications and processes. The HVP-4 eliminates the need for expensive ionization gauges in many scenarios and offers excellent cost-effectiveness with high accuracy and repeatability.`,
+The HVP4 OnePirani Vacuum Transducer is a MEMS-based Pirani sensor designed for precise vacuum measurement across a wide range (1×10⁻⁶ to 13.33 mbar / 7.5×10⁻⁷ to 10 Torr). Its advanced MEMS thermal conductivity technology, combined with precision digital signal processing and robust design, makes it ideal for critical vacuum applications and processes. The HVP-4 eliminates the need for expensive ionization gauges in many scenarios and offers excellent cost-effectiveness with high accuracy and repeatability.`,
     features: [
       "Wide measurement range: 1×10⁻⁶ to 13.33 mbar (7.5×10⁻⁷ to 10 Torr).",
       "MEMS Pirani thermal conductivity sensor with zero drift compensation.",
