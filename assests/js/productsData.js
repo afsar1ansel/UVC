@@ -1619,6 +1619,12 @@ Unique Vacuum Solutions offers recalibration services to ensure your vacuum gaug
     code: "HVP-4",
     name: "OnePirani Vacuum Transducer",
     title: "HVP-4 OnePirani Vacuum Transducer",
+    gridDetails: [
+      "HVP-4",
+      "OnePirani Vacuum Transducer",
+      "MEMS Pirani sensor",
+      "1×10⁻⁶ to 13.33 mbar",
+    ],
     description: `
 The HVP4 OnePirani Vacuum Transducer is a MEMS-based Pirani sensor designed for precise vacuum measurement across a wide range (1×10⁻⁶ to 13.33 mbar / 7.5×10⁻⁷ to 10 Torr). Its advanced MEMS thermal conductivity technology, combined with precision digital signal processing and robust design, makes it ideal for critical vacuum applications and processes. The HVP-4 eliminates the need for expensive ionization gauges in many scenarios and offers excellent cost-effectiveness with high accuracy and repeatability.`,
     features: [
@@ -1775,6 +1781,12 @@ The HVP-4 OnePirani is a reliable, robust, and cost-effective solution for preci
     code: "HVP-5",
     name: "OnePirani Vacuum Transducer",
     title: "HVP-5 OnePirani Vacuum Transducer",
+    gridDetails: [
+      "HVP-5",
+      "OnePirani Vacuum Transducer",
+      "Piezo Diaphragm / MEMS Pirani",
+      "1×10⁻⁶ to 1333 mbar",
+    ],
     description:
       "The HVP-5 OnePirani Vacuum Transducer is a MEMS-based Pirani sensor combined with a diaphragm piezo transducer, designed for precise vacuum measurement across an ultra-wide range (1×10⁻⁶ to 1333 mbar / 7.5×10⁻⁷ to 1000 Torr). Its advanced sensing technology, including MEMS Pirani, piezo resistive diaphragm, and precision digital signal processing, offers excellent accuracy and repeatability for critical vacuum applications and processes. The HVP-5 is a cost-effective alternative to conventional hot cathode and cold cathode ionization gauges.",
     features: [
@@ -1957,6 +1969,12 @@ The HVP-4 OnePirani is a reliable, robust, and cost-effective solution for preci
     code: "HVP-7AT",
     name: "OnePirani Vacuum Transducer",
     title: "HVP-7AT OnePirani Vacuum Transducer",
+    gridDetails: [
+      "HVP-7AT",
+      "OnePirani Vacuum Transducer",
+      "Atmospheric Switch Function",
+      "1×10⁻⁶ to 1333 mbar",
+    ],
     description:
       "The HVP-7AT OnePirani Vacuum Transducer is designed for ultra-precise vacuum measurement across a wide range (1×10⁻⁶ to 1333 mbar). It combines MEMS Pirani, diaphragm piezo resistive transducers, and atmospheric switch functionality for highly accurate pressure monitoring and control. This device is ideal for applications in load-lock systems, mass spectrometers, and semiconductor processing, with optional ceramic or Parylene protection for harsh environments.",
     features: [
@@ -2177,6 +2195,12 @@ The HVP-4 OnePirani is a reliable, robust, and cost-effective solution for preci
     code: "DVG-1S",
     name: "Diaphragm Vacuum Gauge",
     title: "DVG-1S Diaphragm Vacuum Gauge",
+    gridDetails: [
+      "DVG-1S",
+      "Diaphragm Vacuum Gauge",
+      "Ceramic Diaphragm Sensor",
+      "0.1 to 1333 mbar",
+    ],
     description:
       "The DVG-1S Diaphragm Vacuum Gauge is a high-accuracy sensor with excellent chemical resistance and robustness, featuring a ceramic diaphragm sensor for precise vacuum measurement. It provides a wide measuring range from 0.1 to 1333 mbar (0.1 to 1000 Torr) and offers programmable output options such as 4-20 mA and 0-10 VDC. Its high repeatability and temperature compensation circuit make it ideal for harsh environments and critical applications in industries like PVD coating, mass spectrometers, freeze drying, and sterilization.",
     features: [
