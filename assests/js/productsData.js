@@ -2335,82 +2335,47 @@ The HVP-4 OnePirani is a reliable, robust, and cost-effective solution for preci
     pdf: "./assests/img/products/OnePirani-SERIES/DVG-1S/DVG-1S.pdf",
   },
   {
-    id: "10mmhgFS",
-    code: "UVG-2",
-    name: "Diaphragm Vacuum Gauge",
-    title: "UVS McLEOD GAUGES",
+    id: "mcleod-gauge",
+    code: "UVG-1 / UVG-2",
+    name: "Mercury McLeod Vacuum Gauge",
+    title: "UVS Mercury McLeod Gauge",
+    gridDetails: [
+      "UVG-1 / UVG-2",
+      "Primary Standard Gauge",
+      "Mercury McLeod Gauge",
+      "10 to 0.001 mm of Hg",
+    ],
     description:
-      "This is a unique miniature McLeod gauge, based on a direct application of Boyle's Law. The gauge is available in two pressure ranges: Model- UVG/1 as a range from 1mm to 0.001mm of mercury and Model: UVG/2 as a range from 10mm to 0.01 mm of mercury. The scale attached to a gauge is calibrated in mm of mercury and accurate pressure readings within range may be taken. The normal position is horizontal. It is simply turned through 90° when the measure of pressure in a system is desired. This isolates a fixed volume of gas in the bulb and closed capillary which is compressed by mercury to a much smaller volume. The pressure of the vacuum system is read on the scale from the level of mercury at B in the closed capillary, when the level in the open capillary connected to the system, is at the Zero point A.",
+      "UVS Industry standard Mercury McLeod Gauge is a precision instrument used to measure vacuum measurements up to 0.001 mm of Hg. It operates using a mercury column on a calibrated scale, mounted on a metal base structure. They work on Boyle's Law, compressing a gas sample to calculate pressure, and constructed in glass with mercury reservoir. Used extensively in labs, pharmaceutical, and chemical industries for accurate readings. This gauge is a primary standard vacuum gauge, meaning it measures pressure based on physical principles and does not require calibration against another device.",
     features: [
-      "mercuryChargeRequired: (95-130)gms",
-      "scale : 10 to 0.01 mm of Hg",
-      "vacuumTestPerformanceCheck : OK",
+      "Precision instrument for measurements up to 0.001 mm of Hg.",
+      "Operates using a mercury column on a calibrated scale, based on Boyle's Law.",
+      "Readings obtained by tilting the scale to 90° effortlessly.",
+      "Primary standard vacuum gauge, does not require calibration.",
+      "Typically made of glass, featuring a capillary tube, bulb, and a mercury reservoir.",
+      "Supplied with first charge of high purity triple distilled mercury.",
+      "Mounted on a metal base structure / stand for stability.",
     ],
-
-    // specifications: [
-    //   {
-    //     name: "equipment Model",
-    //     value: "UVG/1 , UVG/2",
-    //   },
-    //   {
-    //     name: "issued To",
-    //     value: "M/s.",
-    //   },
-    //   {
-    //     name: "instrument",
-    //     value: "UVG/1, UVG/2",
-    //   },
-    //   {
-    //     name: "mercury Charge Required",
-    //     value: "gms",
-    //   },
-    // ],
-    // end: "Calibration of gauge was checked with full scale in-house McLeod Gauge. Suitable to measure higher range of vacuum.",
     images: [
-      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/IMG-20150430-WA0009.jpg",
-      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/Mcleodgaugerearview.jpg",
-      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/Mcleodgauge10to0.001torr.jpg",
-      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/20210715_130540.jpg",
+      "./assests/img/products/macleod/1mm of Hg Mcleod gauge with mercury front view.jpg",
+      "./assests/img/products/macleod/20210715_130555.jpg",
     ],
-  },
-  {
-    id: "1mmhgFS",
-    code: "UVG - 1",
-    name: "Miniature McLeod Gauge: Tilting Type on Stand",
-    title: "UVS McLEOD GAUGES",
-    description:
-      "This is a unique miniature McLeod gauge, based on a direct application of Boyle's Law. The gauge is available in two pressure ranges: Model- UVG/1 as a range from 1mm to 0.001mm of mercury and Model: UVG/2 as a range from 10mm to 0.01 mm of mercury. The scale attached to a gauge is calibrated in mm of mercury and accurate pressure readings within range may be taken. The normal position is horizontal. It is simply turned through 90° when the measure of pressure in a system is desired. This isolates a fixed volume of gas in the bulb and closed capillary which is compressed by mercury to a much smaller volume. The pressure of the vacuum system is read on the scale from the level of mercury at B in the closed capillary, when the level in the open capillary connected to the system, is at the Zero point A.",
-    features: [
-      "mercury Charge Required: (95-130)gms",
-      "scale : 1 to 0.001 mm of Hg ",
-      "vacuum Test Performance Check: OK",
+    pdf: "./assests/img/products/macleod/McLeod UVG1 and UVG2 catalog (1).pdf",
+    specifications: [
+      { name: "Vacuum Gauge", value: "Mercury McLeod vacuum gauge" },
+      {
+        name: "Features",
+        value: "Graduated scale, Readings obtained by tilting the scale by 90°",
+      },
+      { name: "Measuring Range UVG-1", value: "1 to 0.001 mm of Hg" },
+      { name: "Measuring Range UVG-2", value: "10 to 0.01 mm of Hg" },
+      {
+        name: "Overall Dimension of the Gauge",
+        value: "180mm X 115mm X 35mm (excluding stand)",
+      },
+      { name: "Mercury", value: "High purity Triple distilled" },
     ],
-
-    // specifications: [
-    //   // {
-    //   //   name: "equipment Model",
-    //   //   value: "UVG/1 , UVG/2",
-    //   // },
-    //   // {
-    //   //   name: "issued To",
-    //   //   value: "M/s.",
-    //   // },
-    //   // {
-    //   //   name: "instrument",
-    //   //   value: "UVG/1, UVG/2",
-    //   // },
-    //   // {
-    //   //   name: "mercury Charge Required",
-    //   //   value: "gms",
-    //   // },
-    // ],
-    // end: "Calibration of gauge was checked with full scale in-house McLeod Gauge. Suitable to measure higher range of vacuum.",
-    images: [
-      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/20210715_131653.jpg",
-      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/Mcleodgaugerearview.jpg",
-      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/Mcleodgauge1torwithmercury.jpg",
-      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/1mmofHgMcleodgaugewithoutmecurysideview.jpg",
-    ],
+    end: "These Gauges are supplied with first charge of high purity triple distilled mercury. Calibration certificate is not required as it is a primary standard vacuum gauge, meaning it measures pressure based on physical principles.",
   },
   {
     id: "2gh",

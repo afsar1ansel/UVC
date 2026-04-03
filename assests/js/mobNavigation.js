@@ -114,12 +114,8 @@ document.addEventListener("DOMContentLoaded", function () {
                           <li><a class="dropdown-item" href="dprgDetail.html?id=DVG-1S">DVG-1S </a></li>
                         </ul>
                       </li>
-                      <li class="dropdown">
-                        <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">McLeod SERIES</a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="dprgDetail.html?id=10mmhgFS">10mm of Hg FS</a></li>
-                          <li><a class="dropdown-item" href="dprgDetail.html?id=1mmhgFS">1mm of Hg FS</a></li>
-                        </ul>
+                      <li>
+                        <a class="dropdown-item" href="dprgDetail.html?id=mcleod-gauge">Mercury McLeod Vacuum Gauge</a>
                       </li>
                       <li class="dropdown">
                         <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">UVGE SERIES</a>

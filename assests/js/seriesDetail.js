@@ -52,11 +52,23 @@ document.addEventListener("DOMContentLoaded", () => {
     // Inject series description
     const seriesDescription = document.getElementById("seriesDescription");
     if (seriesDescription) {
-      const firstWithDesc = filteredProducts.find(p => p.description && p.description.trim() !== "");
+      seriesDescription.style.textAlign = "left"; // Align text to the start (left)
+      const firstWithDesc = filteredProducts.find(
+        (p) => p.description && p.description.trim() !== "",
+      );
       if (firstWithDesc) {
-        seriesDescription.innerHTML = `<p>${firstWithDesc.description}</p>`;
+        seriesDescription.innerHTML = `
+          <h2 style="color: #000810; font-size: 2rem; font-weight: 700; margin-bottom: 10px; text-transform: uppercase;">
+            <span style="color: #0da574">${series}</span> SERIES
+          </h2>
+          <p style="margin-bottom: 30px;">${firstWithDesc.description}</p>
+        `;
       } else {
-        seriesDescription.innerHTML = "";
+        seriesDescription.innerHTML = `
+          <h2 style="color: #000810; font-size: 2rem; font-weight: 700; margin-bottom: 10px; text-transform: uppercase;">
+            <span style="color: #0da574">${series}</span> SERIES
+          </h2>
+        `;
       }
     }
 
