@@ -84,25 +84,17 @@ nav.innerHTML = `
               href="seriesDetail.html?series=UVG_DISPLAY"
               >UVG Display Controlers></a
             >
-            <ul class="dropdown-menu" style="width: 200px">
+            <ul class="dropdown-menu" style="width: 250px">
               <li>
-                <a class="dropdown-item" href="dprgDetail.html?id=2gh"
-                  >UVGE 2GH - SP</a
+                <a class="dropdown-item" href="dprgDetail.html?id=uvge-2gh-sp"
+                  >UVGE - 2GH - SP</a
                 >
               </li>
-
-                <li>
-                <a class="dropdown-item" href="dprgDetail.html?id="
-                  >UVGE 1GH - SP</a
+              <li>
+                <a class="dropdown-item" href="dprgDetail.html?id=uvgs-1gh-sp"
+                  >UVGS - 1GH - SP</a
                 >
               </li>
-
-               <li>
-                <a class="dropdown-item" href="dprgDetail.html?id="
-                  >UVGS 1GH - SP</a
-                >
-              </li>
-             
             </ul>
           </li>
         </ul>

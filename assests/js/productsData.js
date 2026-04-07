@@ -2376,27 +2376,26 @@ The HVP-4 OnePirani is a reliable, robust, and cost-effective solution for preci
     end: "These Gauges are supplied with first charge of high purity triple distilled mercury. Calibration certificate is not required as it is a primary standard vacuum gauge, meaning it measures pressure based on physical principles.",
   },
   {
-    id: "2gh",
+    id: "uvge-2gh-sp",
     code: "UVGE-2GH-SP",
-    name: "exponential catalog",
-    title: "Precision Helium Leak Detectors",
-    description:
-      "The UVS Model UVGE series Vacuum Pirani Gauge Controller displays vacuum pressure as measured from FG-05A sensor tube. It displays vacuum measurements based on the thermal conductivity of gases. The Model UVGE-2GH-SP unit covers the range from 0.001 mbar to 100 mbar, and controls relay with independent set point.",
+    name: "Digital Pirani Vacuum Gauge",
+    title: "Digital Pirani Vacuum Gauge UVGE-2GH-SP",
+    description: `The UVS Model UVGE series Vacuum Pirani Gauge Controller displays vacuum pressure as measured from FG-05A sensor tube OR any 0-10V linear vacuum transmitters or gauges.`,
     features: [
-      "Measurement range 0.001 to 100 mbar",
-      "Space saving rugged design- 1/8 DIN console",
-      "Space saving rugged design- 1/8 DIN console",
+      "Measurement range 10³ to 10⁻³ mbar",
+      "Space saving rugged design - 1/8 DIN console",
       "Mounts in any orientation",
       "With universal power supply – input voltage from 90 ~ 264VAC",
     ],
     images: [
-      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/IMG_2830.jpg",
-      "https://staging.thirdeyegfx.in/UVC/UVC/assests/img/IMG_2827.jpg",
+      "./assests/img/products/UVG/UVGE-2GH-SP/IMG_2829.jpg",
+      "./assests/img/products/UVG/UVGE-2GH-SP/IMG_2831.jpg",
     ],
+    pdf: "./assests/img/products/UVG/UVGE-2GH-SP/UVGE-2GH-SP exponential catalog.pdf",
     specifications: [
       { name: "Number of sensor channels", value: "TWO" },
-      { name: "Display Range", value: "1000 mBar to 0.001mBar" },
-      { name: "Measuring Range", value: "100 mBar to 0.001mBar" },
+      { name: "Display Range", value: "10³ to 10⁻³ mbar" },
+      { name: "Measuring Range", value: "10³ to 10⁻³ mbar" },
       { name: "Units of Display", value: "m.Bar" },
       { name: "Vacuum Gauge Head", value: "FG-05A sensor tube" },
       { name: "Temp. Range", value: "+2 to +50 deg. Celsius" },
@@ -2416,7 +2415,7 @@ The HVP-4 OnePirani is a reliable, robust, and cost-effective solution for preci
       {
         name: "Process Control Relays",
         value:
-          "Two relays, potential free contacts; independent available through the DB15 accessory connector on the rear panel",
+          "Two relays, potential free contacts; available through 6 pin metal shell connector on the rear panel",
       },
       {
         name: "Nonvolatile Memory",
@@ -2427,7 +2426,63 @@ The HVP-4 OnePirani is a reliable, robust, and cost-effective solution for preci
         value:
           "Universal power supply, input voltages from 90 ~ 264VAC 50/60 Hz",
       },
-      { name: "Mounting", value: "¼ DIN 92 x 92 mm (3.62” x 3.62)" },
+      { name: "Mounting", value: "¼ DIN 92 x 92 mm (3.62” x 3.62\")" },
+      {
+        name: "Environmental Considerations",
+        value: "Not for use with explosive or corrosive gases",
+      },
+      { name: "Overall Dimensions", value: "92mm X 92mm X 110mm Depth" },
+      {
+        name: "Optional Outputs on Request",
+        value: "RS485, 0 -10V DC analog output",
+      },
+    ],
+  },
+  {
+    id: "uvgs-1gh-sp",
+    code: "UVGS-1GH-SP",
+    name: "Digital Pirani Vacuum Gauge",
+    title: "Digital Pirani Vacuum Gauge UVGS-1GH-SP",
+    description: `The UVS Model UVGS series Vacuum Pirani Gauge Controller displays vacuum pressure as measured from HVP-5 sensor OR any 0-10V linear vacuum transmitters or gauges.`,
+    features: [
+      "Measurement range 10³ to 10⁻⁶ mbar",
+      "Space saving rugged design - 1/8 DIN console",
+      "Mounts in any orientation",
+      "With universal power supply – input voltage from 90 ~ 264VAC",
+    ],
+    images: [
+      "./assests/img/products/UVG/UVGE-2GH-SP/IMG_2829.jpg",
+    ],
+    pdf: "./assests/img/products/UVG/UVGS-1GH-SP/UVGS-1GH-SP exponential catalog.pdf",
+    specifications: [
+      { name: "Sensor channels", value: "ONE" },
+      { name: "Measuring Range", value: "10³ to 10⁻⁶ mbar" },
+      { name: "Units of Display", value: "m.Bar" },
+      { name: "Vacuum Gauge Head", value: "HVP-4, HVP-5, HVP-7AT" },
+      { name: "Temp. Range", value: "+2 to +50 deg. Celsius" },
+      {
+        name: "VAC. Display",
+        value: "Seven segment bright red LED, mantissa and exponential",
+      },
+      {
+        name: "Process control set points",
+        value: "ONE",
+      },
+      {
+        name: "Process Control Relays",
+        value:
+          "One relay, potential free contacts; available through 6 pin metal shell connector on the rear panel",
+      },
+      {
+        name: "Nonvolatile Memory",
+        value: "Only for set points",
+      },
+      {
+        name: "Operating Voltage",
+        value:
+          "Universal power supply, input voltages from 90 ~ 264VAC 50/60 Hz",
+      },
+      { name: "Mounting", value: "¼ DIN 92 x 92 mm (3.62” x 3.62\")" },
       {
         name: "Environmental Considerations",
         value: "Not for use with explosive or corrosive gases",
