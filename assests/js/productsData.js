@@ -2388,8 +2388,8 @@ The HVP-4 OnePirani is a reliable, robust, and cost-effective solution for preci
       "With universal power supply – input voltage from 90 ~ 264VAC",
     ],
     images: [
-      "./assests/img/products/UVG/UVGE-2GH-SP/IMG_2829.jpg",
       "./assests/img/products/UVG/UVGE-2GH-SP/IMG_2831.jpg",
+      "./assests/img/products/UVG/UVGE-2GH-SP/IMG_2829.jpg",
     ],
     pdf: "./assests/img/products/UVG/UVGE-2GH-SP/UVGE-2GH-SP exponential catalog.pdf",
     specifications: [
@@ -2451,7 +2451,7 @@ The HVP-4 OnePirani is a reliable, robust, and cost-effective solution for preci
       "With universal power supply – input voltage from 90 ~ 264VAC",
     ],
     images: [
-      "./assests/img/products/UVG/UVGE-2GH-SP/IMG_2829.jpg",
+      "./assests/img/products/UVG/UVGS-1GH-SP/uv.jpeg",
     ],
     pdf: "./assests/img/products/UVG/UVGS-1GH-SP/UVGS-1GH-SP exponential catalog.pdf",
     specifications: [
