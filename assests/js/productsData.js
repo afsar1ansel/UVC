@@ -630,12 +630,9 @@ The calibration certificates are available only on request at additional cost. P
     code: "FGD-1GH",
     name: "Pirani Vacuum Gauge",
     title: "FLEXA Digital Pirani Vacuum Gauge",
-    description: `The UVS Model FLEXA series Vacuum Pirani Gauge Controller displays vacuum pressure as measured from a
-FG-04 sensor tube. The Model FGD-1GH displays vacuum measurements based on thermal conductivity from
-0.001 m.Bar to 20 m.bar.
-The Advantage Of This Vacuum Gauge FLEXA Series Is The Sensor Tube Has The Built In Zero And Atm
-Adjustments, So That The Sensor Tube Can Be Used As A Transducer, And Each Sensor Is Factory Calibrated
-At Sensor Level.`,
+    description: `The UVS Model FLEXA series vacuum pirani gauge controller displays vacuum pressure as measured from a FG-04 sensor tube. The Model FGD-1GH displays vacuum measurements based on thermal conductivity from 0.001 m.Bar to 20 m.bar. 
+
+The advantage of this vacuum gauge FLEXA series is that the sensor tube has built-in zero and ATM adjustments, allowing it to function as a transducer. Each sensor is factory-calibrated at the sensor level.`,
     gridDetails: [
       "FGD-1GH",
       "Single line Display",
@@ -697,9 +694,9 @@ The calibration certificates are available only on request at additional cost. P
     code: "FGD-2GH",
     name: "FLEXA Digital Pirani Vacuum Gauge",
     title: "FLEXA Digital Pirani Vacuum Gauge FGD-2GH",
-    description: `The UVS Model FLEXA series Vacuum Pirani Gauge Controller displays vacuum pressure as measured from a FG-04 sensor tube. The Model FGD-2GH unit covers the range from 0.001 m.Bar to 20 m.bar, and measures two channels.
+    description: `The UVS Model FLEXA series vacuum pirani gauge controller displays vacuum pressure as measured from a FG-04 sensor tube. The Model FGD-2GH unit covers the range from 0.001 m.Bar to 20 m.bar, and measures two channels.
   
-The advantage of this Vacuum Gauge FLEXA Series is the sensor tube has the built-in zero and ATM adjustments, so that the sensor tube can be used as a transducer, and each sensor is factory calibrated at the sensor level.
+The advantage of this vacuum gauge FLEXA series is that the sensor tube has the built-in zero and ATM adjustments, so that the sensor tube can be used as a transducer, and each sensor is factory calibrated at the sensor level.
 With this, a 1:1 replacement of the sensor with the display unit is established, and there is no dependency on vacuum gauge level adjustment in case of sensor replacement.`,
     gridDetails: [
       "FGD-2GH",
@@ -774,9 +771,9 @@ The calibration certificates are available only on request at additional cost. P
     code: "FGD-2GH-SP",
     name: "FLEXA Digital Pirani Vacuum Gauge",
     title: "FLEXA Digital Pirani Vacuum Gauge FGD-2GH-SP",
-    description: `The UVS Model FLEXA series Vacuum Pirani Gauge Controller displays vacuum pressure as measured from a FG-04 sensor tube. The Model FGD-2GH-SP displays vacuum measurements from 0.001mBar to 20 mBar and has a built-in potential free contact set point relay output, one for each channel.
+    description: `The UVS Model FLEXA series vacuum pirani gauge controller displays vacuum pressure as measured from a FG-04 sensor tube. The Model FGD-2GH-SP displays vacuum measurements from 0.001mBar to 20 mBar and has a built-in potential-free contact set point relay output, one for each channel.
 
-The advantage of this Vacuum Gauge FLEXA Series is the sensor tube has built-in zero and ATM adjustments, so that the sensor tube can be used as a transducer, and each sensor is factory calibrated at the sensor level.
+The advantage of this vacuum gauge FLEXA series is that the sensor tube has built-in zero and ATM adjustments, so that the sensor tube can be used as a transducer, and each sensor is factory calibrated at the sensor level.
 
 With this, a 1:1 replacement of the sensor with the display unit is established, and there is no dependency on vacuum gauge level adjustment in case of sensor replacement.`,
     gridDetails: [
@@ -855,9 +852,9 @@ The calibration certificates are available only on request at additional cost. P
     code: "FGD-1GH-2SP",
     name: "FLEXA Digital Pirani Vacuum Gauge",
     title: "FLEXA Digital Pirani Vacuum Gauge FGD-1GH-2SP",
-    description: `The UVS Model FLEXA series Vacuum Pirani Gauge Controller displays vacuum pressure as measured from an FG-04 sensor tube. The Model FGD-1GH-2SP displays vacuum measurements from 2000 to 0.1 Pascals and has two built-in potential-free contact set point relay outputs.
+    description: `The UVS Model FLEXA series vacuum pirani gauge controller displays vacuum pressure as measured from an FG-04 sensor tube. The Model FGD-1GH-2SP displays vacuum measurements from 2000 to 0.1 Pascals and has two built-in potential-free contact set point relay outputs.
 
-The advantage of this Vacuum Gauge FLEXA Series is that the sensor tube has built-in zero and ATM adjustments, so the sensor tube can be used as a transducer, and each sensor is factory calibrated at the sensor level.
+The advantage of this vacuum gauge FLEXA series is that the sensor tube has built-in zero and ATM adjustments, so the sensor tube can be used as a transducer, and each sensor is factory calibrated at the sensor level.
 
 With this, a 1:1 replacement of the sensor with the display unit is established, and there is no dependency on vacuum gauge level adjustment in case of sensor replacement.`,
     gridDetails: [
@@ -934,11 +931,11 @@ The calibration certificates are available only on request at additional cost. P
     code: "FGE-1GH",
     name: "FLEXA Digital Pirani Vacuum Gauge",
     title: "EXPONENTIAL DISPLAY FGE-1GH",
-    description: `The UVS Model FLEXA series Vacuum Pirani Gauge Controller displays vacuum pressure as measured from an FG-04 sensor tube. The Model FGE-1GH displays vacuum measurements based on thermal conductivity from 0.001 m.Bar to 20 m.bar. 
+    description: `The UVS Model FLEXA series vacuum pirani gauge controller displays vacuum pressure as measured from an FG-04 sensor tube. The Model FGE-1GH displays vacuum measurements based on thermal conductivity from 0.001 mbar to 20 mbar. 
 
-Exponential order display from 2.0X10¹ to 1.0X10⁻³ mbar.
+Exponential order display from 2.0x10¹ to 1.0x10⁻³ mbar.
 
-The advantage of this Vacuum Gauge FLEXA Series is that the sensor tube has built-in zero and ATM adjustments, so the sensor tube can be used as a transducer, and each sensor is factory calibrated at the sensor level.
+The advantage of this vacuum gauge FLEXA series is that the sensor tube has built-in zero and ATM adjustments, so the sensor tube can be used as a transducer, and each sensor is factory calibrated at the sensor level.
 
 With this, a 1:1 replacement of the sensor with the display unit is established, and there is no dependency on vacuum gauge level adjustment in case of sensor replacement.`,
     gridDetails: [
@@ -1010,11 +1007,11 @@ The calibration certificates are available only on request at additional cost. P
     code: "FGE-1GH-SP",
     name: "FLEXA Digital Pirani Vacuum Gauge",
     title: "EXPONENTIAL DISPLAY FGE-1GH-SP",
-    description: `The UVS Model FLEXA series Vacuum Pirani Gauge Controller displays vacuum pressure as measured from an FG-04 sensor tube. The Model FGE-1GH-SP displays vacuum measurements and has a built-in potential free contact set point relay output.
+    description: `The UVS Model FLEXA series vacuum pirani gauge controller displays vacuum pressure as measured from an FG-04 sensor tube. The Model FGE-1GH-SP displays vacuum measurements and has a built-in potential-free contact set point relay output.
 
-Exponential order display from 2.0X10¹ to 1.0X10⁻³ mbar.
+Exponential order display from 2.0x10¹ to 1.0x10⁻³ mbar.
 
-The advantage of this Vacuum Gauge FLEXA Series is that the sensor tube has built-in zero and ATM adjustments, so the sensor tube can be used as a transducer, and each sensor is factory calibrated at the sensor level.
+The advantage of this vacuum gauge FLEXA series is that the sensor tube has built-in zero and ATM adjustments, so the sensor tube can be used as a transducer, and each sensor is factory calibrated at the sensor level.
 
 With this, a 1:1 replacement of the sensor with the display unit is established, and there is no dependency on vacuum gauge level adjustment in case of sensor replacement.`,
     gridDetails: [
@@ -1416,6 +1413,7 @@ The HPRG-1GH-SP Digital Pirani Vacuum Gauge, with the S-EPR-GH sensor, delivers 
     ],
     end: `Factory-calibrated for accurate vacuum measurement, with adjustment options for specific ranges. Calibration certificates are available on request.`,
     images: [
+      "./assests/img/products/HYBRID SERIES/EXPONENTIAL DISPLAY/HPRGE-1GH-SP/HPRGE-1GH-SP/hprge_gh_sp1.jpeg",
       "./assests/img/products/HYBRID SERIES/EXPONENTIAL DISPLAY/HPRGE-1GH-SP/HPRGE-1GH-SP/hybrid pirani back view assembly.jpg",
     ],
     pdf: "./assests/download/VACUUM_GAUGES _CATALOGS_DOWNLOAD_FOLDER/HYBRID/hybrid pirani gauge model HPRGE-1GH-SP exponential.pdf",
