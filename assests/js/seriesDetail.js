@@ -63,6 +63,13 @@ document.addEventListener("DOMContentLoaded", () => {
           </h2>
           <p style="margin-bottom: 30px;">The UVS Model UVGE series Vacuum Pirani Gauge Controller displays vacuum pressure as measured from FG-05A sensor tube. It displays vacuum measurements based on the thermal conductivity of gases. The Model UVGE-2GH-SP unit covers the range from 0.001 mbar to 100 mbar, and controls relay with independent set point. <br><br> The UVS Model UVGS series Vacuum Pirani Gauge Controller displays vacuum pressure as measured from HVP series sensor tubes. It displays vacuum measurements based on the thermal conductivity of gases. The Model UVGS-1GH-SP unit covers the range from 0.001 mbar to 10e-6 mbar, and controls relay with independent set point.</p>
         `;
+      } else if (series === "MCLEOD") {
+        seriesDescription.innerHTML = `
+          <h2 style="color: #000810; font-size: 2rem; font-weight: 700; margin-bottom: 10px; text-transform: uppercase;">
+            <span style="color: #0da574">McLeod</span> SERIES
+          </h2>
+          <p style="margin-bottom: 30px;">${firstWithDesc ? firstWithDesc.description : ""}</p>
+        `;
       } else if (firstWithDesc) {
         seriesDescription.innerHTML = `
           <h2 style="color: #000810; font-size: 2rem; font-weight: 700; margin-bottom: 10px; text-transform: uppercase;">

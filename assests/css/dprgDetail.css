@@ -51,6 +51,52 @@
   width: 100%;
 }
 
+/* Back Button Styles */
+.back-btn-container {
+  width: 85vw;
+  margin: 20px auto 10px auto;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.back-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: transparent;
+  color: #001f3f;
+  border: 1.5px solid #001f3f;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.back-btn:hover {
+  background-color: #001f3f;
+  color: #ffffff;
+  transform: translateX(-5px);
+}
+
+.back-btn svg {
+  transition: transform 0.3s ease;
+}
+
+.back-btn:hover svg {
+  transform: translateX(-2px);
+}
+
+@media (max-width: 580px) {
+  .back-btn-container {
+    width: 95vw;
+    margin: 15px auto;
+  }
+}
+
 /* hero end */
 
 /* product */

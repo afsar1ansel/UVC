@@ -71,10 +71,19 @@ nav.innerHTML = `
   </ul>
 </li>
 
-          <li>
-            <a class="dropdown-item" href="dprgDetail.html?id=mcleod-gauge"
-              >Mercury McLeod Vacuum Gauge</a
+          <li class="dropdown">
+            <a
+              class="dropdown-item dropdown-toggle"
+              href="seriesDetail.html?series=MCLEOD"
+              >McLeod SERIES ></a
             >
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="dprgDetail.html?id=mcleod-gauge"
+                  >UVG-1 / UVG-2</a
+                >
+              </li>
+            </ul>
           </li>
 
 
