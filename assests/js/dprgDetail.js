@@ -47,9 +47,8 @@ if (product) {
         </div>
         <div class="product-details">
           <div style="display: flex; gap: 12px; align-items: center;">
-            <div class="productCode">${product.code}</div>
             <div class="productCode">${product.name}</div>
-             ${
+             ${ 
                product.pdf
                  ? `<a href="${product.pdf}" download style="text-decoration: none;">
                       <div class="downloadBtn">
@@ -77,6 +76,12 @@ if (product) {
         </div>
       `;
   prod.innerHTML = html;
+
+  // Inject Item Code into the header placeholder
+  const itemCodeHeader = document.getElementById("item-code-header");
+  if (itemCodeHeader) {
+    itemCodeHeader.innerHTML = `<h1 class="item-code-heading">${product.code}</h1>`;
+  }
 
   if (product.specifications) {
     const tableHtml = `
