@@ -118,6 +118,7 @@ if (product) {
 
   // Initialize the gallery functionality
   initializeGallery();
+  initializeZoom();
 } else {
   // Show a message if the product is not found
   prod.innerHTML = "<p>Product not found!</p>";
@@ -140,6 +141,28 @@ function initializeGallery() {
       thumbnail.classList.add("active");
     });
   });
+}
+
+// Function to handle image zoom (Amazon-style)
+function initializeZoom() {
+  const container = document.querySelector(".main-image-container");
+  const img = document.getElementById("main-image");
+
+  if (container && img) {
+    container.addEventListener("mousemove", (e) => {
+      const { left, top, width, height } = container.getBoundingClientRect();
+      const x = ((e.clientX - left) / width) * 100;
+      const y = ((e.clientY - top) / height) * 100;
+
+      img.style.transformOrigin = `${x}% ${y}%`;
+      img.style.transform = "scale(2)";
+    });
+
+    container.addEventListener("mouseleave", () => {
+      img.style.transform = "scale(1)";
+      img.style.transformOrigin = "center center";
+    });
+  }
 }
 
 // table
