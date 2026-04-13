@@ -219,7 +219,7 @@ The calibration certificates are available only on request at additional cost. P
     ],
     images: [
       "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRqGQ4RWrnDpzqV0NbIwlDSMfxB_P4okEa8mzH0VOcUdCC7MFQR",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyfmVt8gVvshz-3ne4f87Sq63BLfEQynWqfNQH98_Ea95oqtx7",
+      "./assests/img/products/DECIMAL_DISPLAY/DECIMAL DISPLAY/DPRG-1GH-2SP/1gh2sp.png",
       "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQIZaYaDf_0SeV5q4MuTuSO3a997Qz7XpCUTGkOwJnWx6wnXPB9",
     ],
     pdf: "./assests/img/products/DECIMAL_DISPLAY/DECIMAL DISPLAY/DPRG-1GH-2SP/DPRG-1GH-2SP decimal catalog.pdf",

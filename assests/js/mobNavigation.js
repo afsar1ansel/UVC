@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 </p>
                 <ul class="dropdown-menu" style="background-color: #c7ebf5;">
                   <li class="dropdown">
-                    <a class="dropdown-item dropdown-toggle" href="#">Vacuum Measurement</a>
+                    <a class="dropdown-item dropdown-toggle" href="seriesDetail.html?series=DPRG">Vacuum Measurement</a>
                     <ul class="dropdown-menu" style="background-color: #92b2d6;">
                       <li class="dropdown">
                         <a class="dropdown-item dropdown-toggle" href="#">DPRG SERIES ></a>
