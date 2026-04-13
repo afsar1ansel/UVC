@@ -2,6 +2,7 @@
 const products = [
   {
     id: "1ba",
+    sequence: 1,
     code: "DPRG-1GH",
     name: "DECIMAL DISPLAY",
     title: "Digital Pirani Vacuum Gauge",
@@ -61,6 +62,7 @@ const products = [
   },
   {
     id: "1bb",
+    sequence: 2,
     code: "DPRG-2GH",
     name: "DECIMAL DISPLAY",
     title: "Precision Helium Leak Detectors",
@@ -121,6 +123,7 @@ const products = [
   },
   {
     id: "1bc",
+    sequence: 3,
     code: "DPRG-1GH-SP",
     name: "DPRG Single Line Display",
     title: "Digital Pirani Vacuum Gauge",
@@ -194,6 +197,7 @@ The calibration certificates are available only on request at additional cost. P
   },
   {
     id: "1bd",
+    sequence: 4,
     code: "DPRG-1GH-2SP",
     name: "DPRG Single Line Display with Dual Setpoints",
     title: "Precision Helium Leak Detectors",
@@ -258,6 +262,7 @@ The calibration certificates are available only on request at additional cost. P
   },
   {
     id: "4ba",
+    sequence: 5,
     code: "DPRG-2GH-SP",
     name: "DPRG Dual Line Display with Setpoints",
     title: "Precision Helium Leak Detectors",
@@ -328,6 +333,7 @@ The calibration certificates are available only on request at additional cost. P
   },
   {
     id: "DPRG-1GH",
+    sequence: 6,
     code: "DPRG-1GH",
     name: "Digital Pirani Vacuum Gauge - Exponential Display",
     title: "Digital Pirani Vacuum Gauge – DPRG-1GH",
@@ -393,6 +399,7 @@ The calibration certificates are available only on request at additional cost. P
   },
   {
     id: "DPRG-1GH-SP",
+    sequence: 7,
     code: "DPRG-1GH-SP",
     name: "Digital Pirani Vacuum Gauge - Exponential Display",
     title: "Digital Pirani Vacuum Gauge – DPRG-1GH-SP",
@@ -473,6 +480,7 @@ The calibration certificates are available only on request at additional cost. P
   },
   {
     id: "DPRG-2GH-SP",
+    sequence: 8,
     code: "DPRG-2GH-SP",
     name: "Digital Pirani Vacuum Gauge - Exponential Display",
     title: "Digital Pirani Vacuum Gauge – DPRG-2GH-SP",
@@ -557,6 +565,7 @@ The calibration certificates are available only on request at additional cost. P
   },
   {
     id: "DPRG-2GH",
+    sequence: 9,
     code: "DPRG-2GH",
     name: "Digital Pirani Vacuum Gauge - Exponential Display",
     title: "Digital Pirani Vacuum Gauge DPRG-2GH",
@@ -627,6 +636,7 @@ The calibration certificates are available only on request at additional cost. P
   },
   {
     id: "FGD-1GH",
+    sequence: 12,
     code: "FGD-1GH",
     name: "Pirani Vacuum Gauge",
     title: "FLEXA Digital Pirani Vacuum Gauge",
@@ -691,6 +701,7 @@ The calibration certificates are available only on request at additional cost. P
   },
   {
     id: "FGD-2GH",
+    sequence: 15,
     code: "FGD-2GH",
     name: "FLEXA Digital Pirani Vacuum Gauge",
     title: "FLEXA Digital Pirani Vacuum Gauge FGD-2GH",
@@ -768,6 +779,7 @@ The calibration certificates are available only on request at additional cost. P
   },
   {
     id: "FGD-2GH-SP",
+    sequence: 16,
     code: "FGD-2GH-SP",
     name: "FLEXA Digital Pirani Vacuum Gauge",
     title: "FLEXA Digital Pirani Vacuum Gauge FGD-2GH-SP",
@@ -849,6 +861,7 @@ The calibration certificates are available only on request at additional cost. P
   },
   {
     id: "FGD-1GH-2SP",
+    sequence: 14,
     code: "FGD-1GH-2SP",
     name: "FLEXA Digital Pirani Vacuum Gauge",
     title: "FLEXA Digital Pirani Vacuum Gauge FGD-1GH-2SP",
@@ -928,6 +941,7 @@ The calibration certificates are available only on request at additional cost. P
   },
   {
     id: "FGE-1GH",
+    sequence: 17,
     code: "FGE-1GH",
     name: "FLEXA Digital Pirani Vacuum Gauge",
     title: "EXPONENTIAL DISPLAY FGE-1GH",
@@ -1004,6 +1018,7 @@ The calibration certificates are available only on request at additional cost. P
   },
   {
     id: "FGE-1GH-SP",
+    sequence: 19,
     code: "FGE-1GH-SP",
     name: "FLEXA Digital Pirani Vacuum Gauge",
     title: "EXPONENTIAL DISPLAY FGE-1GH-SP",
@@ -1087,6 +1102,7 @@ The calibration certificates are available only on request at additional cost. P
   },
   {
     id: "FG-05A",
+    sequence: 10,
     code: "FG-05A",
     name: "LINEAR OUTPUT SENSOR",
     title: "LINEAR OUTPUT SENSOR FG-05A",
@@ -1144,6 +1160,7 @@ The calibration certificates are available only on request at additional cost. P
   },
   {
     id: "FGE-2GH-SP",
+    sequence: 20,
     code: "FGE-2GH-SP",
     name: "FLEXA Digital Pirani Vacuum Gauge",
     title: "EXPONENTIAL DISPLAY FGE-2GH-SP",
@@ -1216,6 +1233,7 @@ Calibration certificates are available upon request for an additional cost.`,
   },
   {
     id: "FG-04",
+    sequence: 11,
     code: "FG-04",
     name: "FLEXA Digital Pirani Vacuum Sensor",
     title: "FLEXA SENSOR FG-04",
@@ -1262,6 +1280,7 @@ This sensor covers the range from 0.001 mBar to 20 mBar and integrates built-in 
   },
   {
     id: "HPRGD-1GH-SP",
+    sequence: 21,
     code: "HPRGD-1GH-SP",
     name: "DECIMAL DISPLAY",
     title: "Hybrid Pirani Vacuum Gauge HPRGD-1GH-SP",
@@ -1330,6 +1349,7 @@ This sensor covers the range from 0.001 mBar to 20 mBar and integrates built-in 
   },
   {
     id: "HPRGE-1GH-SP",
+    sequence: 22,
     code: "HPRGE-1GH-SP",
     name: "EXPONENTIAL DISPLAY",
     title: "Digital Pirani Vacuum Gauge- HPRGE-1GH-SP",
@@ -1420,6 +1440,7 @@ The HPRG-1GH-SP Digital Pirani Vacuum Gauge, with the S-EPR-GH sensor, delivers 
   },
   {
     id: "HPRGE-2GH",
+    sequence: 23,
     code: "HPRGE-2GH",
     name: "EXPONENTIAL DISPLAY",
     description: ``,
@@ -1474,6 +1495,7 @@ The HPRG-1GH-SP Digital Pirani Vacuum Gauge, with the S-EPR-GH sensor, delivers 
   },
   {
     id: "FGE-2GH",
+    sequence: 18,
     code: "FGE-2GH",
     name: "FLEXA Digital Pirani Vacuum Gauge",
     title: "EXPONENTIAL DISPLAY - FGE-2GH",
@@ -1542,6 +1564,7 @@ Factory-calibrated sensors ensure accurate measurements with minimal dependency 
   },
   {
     id: "FGD-1GH-SP",
+    sequence: 13,
     code: "FG-1GH-SP",
     name: "DECIMAL DISPLAY",
     title: "DECIMAL DISPLAY - FG-1GH-SP",
@@ -1614,6 +1637,7 @@ Unique Vacuum Solutions offers recalibration services to ensure your vacuum gaug
   },
   {
     id: "HVP-4",
+    sequence: 24,
     code: "HVP-4",
     name: "OnePirani Vacuum Transducer",
     title: "HVP-4 OnePirani Vacuum Transducer",
@@ -1776,6 +1800,7 @@ The HVP-4 OnePirani is a reliable, robust, and cost-effective solution for preci
   },
   {
     id: "HVP-5",
+    sequence: 25,
     code: "HVP-5",
     name: "OnePirani Vacuum Transducer",
     title: "HVP-5 OnePirani Vacuum Transducer",
@@ -1964,6 +1989,7 @@ The HVP-4 OnePirani is a reliable, robust, and cost-effective solution for preci
   },
   {
     id: "HVP-7AT",
+    sequence: 26,
     code: "HVP-7AT",
     name: "OnePirani Vacuum Transducer",
     title: "HVP-7AT OnePirani Vacuum Transducer",
@@ -2190,6 +2216,7 @@ The HVP-4 OnePirani is a reliable, robust, and cost-effective solution for preci
   },
   {
     id: "DVG-1S",
+    sequence: 27,
     code: "DVG-1S",
     name: "Diaphragm Vacuum Gauge",
     title: "DVG-1S Diaphragm Vacuum Gauge",
@@ -2334,6 +2361,7 @@ The HVP-4 OnePirani is a reliable, robust, and cost-effective solution for preci
   },
   {
     id: "mcleod-gauge",
+    sequence: 28,
     code: "UVG-1 / UVG-2",
     name: "Mercury McLeod Vacuum Gauge",
     title: "UVS Mercury McLeod Gauge",
@@ -2377,6 +2405,7 @@ The HVP-4 OnePirani is a reliable, robust, and cost-effective solution for preci
   },
   {
     id: "uvge-2gh-sp",
+    sequence: 29,
     code: "UVGE-2GH-SP",
     name: "Digital Pirani Vacuum Gauge",
     title: "Digital Pirani Vacuum Gauge UVGE-2GH-SP",
@@ -2440,6 +2469,7 @@ The HVP-4 OnePirani is a reliable, robust, and cost-effective solution for preci
   },
   {
     id: "uvgs-1gh-sp",
+    sequence: 30,
     code: "UVGS-1GH-SP",
     name: "Digital Pirani Vacuum Gauge",
     title: "Digital Pirani Vacuum Gauge UVGS-1GH-SP",

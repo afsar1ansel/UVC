@@ -48,6 +48,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
       return false;
     });
+
+    // Sort products based on sequence property
+    filteredProducts.sort((a, b) => (a.sequence || 999) - (b.sequence || 999));
     
     // Inject series description
     const seriesDescription = document.getElementById("seriesDescription");
