@@ -108,8 +108,20 @@ nav.innerHTML = `
           </li>
         </ul>
       </li>
-      <li><a class="dropdown-item" href="#">Vacuum Pumps & Systems</a></li>
-      <li><a class="dropdown-item" href="#">Helium Leak Detectors</a></li>
+      <li class="dropdown">
+        <a class="dropdown-item dropdown-toggle" href="vacuumPumpsAndSystems.html" data-bs-toggle="dropdown">Vacuum Pumps & Systems</a>
+        <ul class="dropdown-menu" style="background-color: rgb(221, 212, 230);">
+          <li class="dropdown">
+            <a class="dropdown-item dropdown-toggle" href="uvsSeries.html">UVS</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="uvsPumpDetail.html?id=UVS-IVP-SERIES">IVP-Series Oil Sealed Belt Drive Rotary Vane Vacuum Pump</a></li>
+              <li><a class="dropdown-item" href="uvsPumpDetail.html?id=UVS-IVPVP-SERIES">IVPVP-Series Two Stage Rotary Piston Vacuum Pump</a></li>
+              <li><a class="dropdown-item" href="uvsPumpDetail.html?id=UVS-IVPVP-ALTERNATE">IVPVP-Series Alternate Brochure</a></li>
+            </ul>
+           </li>
+        </ul>
+      </li>
+       <li><a class="dropdown-item" href="#">Helium Leak Detectors</a></li>
       <li><a class="dropdown-item" href="#">Helium Test Systems</a></li>
       <li><a class="dropdown-item" href="#">Vacuum Components & Supplies</a></li>
     </ul>
