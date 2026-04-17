@@ -4,21 +4,26 @@ function getUrlParameter(name) {
 }
 
 const sidebarSeries = [
-  { name: "DPRG SERIES", id: "DPRG" },
-  { name: "FLEXA SERIES", id: "FLEXA" },
-  { name: "HYBRID SERIES", id: "HYBRID" },
-  { name: "OnePirani SERIES", id: "ONEPIRANI" },
-  { name: "McLeod SERIES", id: "MCLEOD" },
-  { name: "UVG Display Controllers", id: "UVG_DISPLAY" },
+  { name: "DPRG SERIES", id: "DPRG", category: "MEASUREMENT" },
+  { name: "FLEXA SERIES", id: "FLEXA", category: "MEASUREMENT" },
+  { name: "HYBRID SERIES", id: "HYBRID", category: "MEASUREMENT" },
+  { name: "OnePirani SERIES", id: "ONEPIRANI", category: "MEASUREMENT" },
+  { name: "McLeod SERIES", id: "MCLEOD", category: "MEASUREMENT" },
+  { name: "UVG Display Controllers", id: "UVG_DISPLAY", category: "MEASUREMENT" },
+  { name: "VACUUM PUMPS", id: "VACUUM_PUMPS", category: "PUMPS" },
+  { name: "VACUUM PUMPING SYSTEMS", id: "VACUUM_SYSTEMS", category: "PUMPS" },
 ];
 
 function renderSidebar(activeSeries) {
   const sidebar = document.getElementById("seriesSidebar");
   if (!sidebar) return;
 
-  sidebar.innerHTML = "<h4>Vacuum Measurement</h4>";
+  const currentSeries = sidebarSeries.find(s => s.id === activeSeries);
+  const category = currentSeries ? currentSeries.category : "MEASUREMENT";
+
+  sidebar.innerHTML = `<h4>${category === "PUMPS" ? "Vacuum Pumps & Systems" : "Vacuum Measurement"}</h4>`;
   
-  sidebarSeries.forEach((series) => {
+  sidebarSeries.filter(s => s.category === category).forEach((series) => {
     const btn = document.createElement("button");
     btn.className = `sidebar-btn ${series.id === activeSeries ? "active" : ""}`;
     btn.innerHTML = `<span>${series.name}</span>`;
@@ -44,7 +49,13 @@ function renderContent(series) {
   const gridBox = document.getElementById("gridBox");
   if (!gridBox) return;
 
-  const filteredProducts = products.filter((product) => {
+  // Combine products and vacuumPumpsAndSystems if available
+  const allAvailableProducts = [...products];
+  if (typeof vacuumPumpsAndSystems !== "undefined") {
+    allAvailableProducts.push(...vacuumPumpsAndSystems);
+  }
+
+  const filteredProducts = allAvailableProducts.filter((product) => {
     const code = product.code ? product.code.toUpperCase() : "";
     const title = product.title ? product.title.toUpperCase() : "";
     const name = product.name ? product.name.toUpperCase() : "";
@@ -72,6 +83,12 @@ function renderContent(series) {
       );
     } else if (series === "UVG_DISPLAY") {
       return code.startsWith("UVGE") || code.startsWith("UVGS");
+    } else if (series === "VACUUM_PUMPS") {
+      // Show all pumps from vacuumPumpsAndSystems
+      return product.id && product.id.startsWith("UVS-");
+    } else if (series === "VACUUM_SYSTEMS") {
+      // Currently no specific data for systems, maybe filter by keyword in future
+      return false; 
     }
     return false;
   });
@@ -98,6 +115,20 @@ function renderContent(series) {
           <span style="color: #0da574">McLeod</span> SERIES
         </h2>
         <p>${firstWithDesc ? firstWithDesc.description : ""}</p>
+      `;
+    } else if (series === "VACUUM_PUMPS") {
+      seriesDescription.innerHTML = `
+        <h2 style="color: #000810; font-weight: 700; text-transform: uppercase;">
+          <span style="color: #0da574">VACUUM</span> PUMPS
+        </h2>
+        <p>Reliable and high-performance vacuum pumps for various industrial and laboratory applications.</p>
+      `;
+    } else if (series === "VACUUM_SYSTEMS") {
+      seriesDescription.innerHTML = `
+        <h2 style="color: #000810; font-weight: 700; text-transform: uppercase;">
+          <span style="color: #0da574">VACUUM</span> PUMPING SYSTEMS
+        </h2>
+        <p>Custom-engineered vacuum pumping systems designed to meet specific process requirements.</p>
       `;
     } else if (firstWithDesc) {
       seriesDescription.innerHTML = `
@@ -142,9 +173,11 @@ function renderContent(series) {
                       <p>${product.description ? product.description.substring(0, 100) + "..." : ""}</p>`;
       }
 
+      const detailPage = product.id && product.id.startsWith("UVS-") ? "uvsPumpDetail.html" : "dprgDetail.html";
+
       div.innerHTML = ` <img src="${imgSrc}" alt="${product.name}" style="height: 200px; object-fit: contain;">
                     ${contentHtml}
-                    <div class="gridBtn" ><a href="dprgDetail.html?id=${product.id}">View Product</a></div>`;
+                    <div class="gridBtn" ><a href="${detailPage}?id=${product.id}">View Product</a></div>`;
 
       gridBox.appendChild(div);
     });
