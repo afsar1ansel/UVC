@@ -84,6 +84,20 @@ if (product) {
       coolingWater: "Cooling Water",
       weightPump: "Weight of Pump",
       weightWithMotor: "Weight including Motor",
+      diffusionPump: "Diffusion Pump",
+      rotaryPumpModel: "Rotary Pump Model",
+      speedLitMin: "Speed (Lit/Min.)",
+      highVacuumValveSize: "High Vacuum Valve Size",
+      roughingBackingValves: "Roughing/Backing Valves",
+      ultimateVacuum: "Ultimate Vacuum",
+      inletCollarDiameter: "Inlet Collar Diameter",
+      powerRequired: "Power Required",
+      foreRoughPumpRange: "Fore & Rough Pump Range",
+      turboPumpRange: "Turbo Pump Range",
+      mounting: "Mounting",
+      operation: "Operation",
+      rotaryPumpCapacity: "Rotary Pump Capacity",
+      rootsBlowerCapacity: "Roots Blower Capacity",
     };
     return labels[field] || field;
   }

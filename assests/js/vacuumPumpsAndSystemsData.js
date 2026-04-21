@@ -17,7 +17,7 @@ const vacuumPumpsAndSystems = [
       "Capable of achieving ultimate vacuum levels below 1×10⁻³ mbar.",
     ],
     images: ["./assests/img/Mask3.png"],
-    pdf: "./assests/img/products/VacuumePumpsAndSystem/UVS IVP series vacuum pumps.pdf",
+    pdf: "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPS/UVS IVP series vacuum pumps.pdf",
     modelVariants: [
       {
         model: "IVP-100",
@@ -185,7 +185,7 @@ const vacuumPumpsAndSystems = [
       "Heavy-duty construction suited for metallurgy, electrical, chemical, and manufacturing environments.",
     ],
     images: ["./assests/img/Mask3.png"],
-    pdf: "./assests/img/products/VacuumePumpsAndSystem/UVS IVPVP Piston vacuum pumps.pdf",
+    pdf: "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPS/UVS IVPVP Piston vacuum pumps.pdf",
     modelVariants: [
       {
         model: "IVPVP-1.8K",
@@ -250,7 +250,121 @@ const vacuumPumpsAndSystems = [
       "Use the PDF for detailed technical comparison and selection.",
     ],
     images: ["./assests/img/Mask3.png"],
-    pdf: "./assests/img/products/VacuumePumpsAndSystem/UVS IVPVP Piston vacuum pumps (1).pdf",
+    pdf: "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPS/UVS IVPVP Piston vacuum pumps (1).pdf",
+  },
+  {
+    id: "UVS-ROTARY-ROOTS",
+    sequence: 4,
+    code: "ROTARY-ROOTS-SYSTEMS",
+    name: "Rotary Roots Pumping Systems",
+    title: "Two Stage Rotary With Roots Vacuum Pumping Systems",
+    description:
+      "Over the years, Unique Vacuum Solutions has expertised in delivering efficient and effective vacuum pumping systems for various industrial applications. These systems integrate two-stage rotary pumps with roots blowers for high-capacity evacuation.",
+    features: [
+      "Designed for Cryo lines, cryo cans, and cryo cylinders evacuation.",
+      "Capacity range: 1000 LPM Rotary (250 m³/hr roots) to 2000 LPM Rotary (550 m³/hr roots).",
+      "Ultimate vacuum: 1×10⁻⁴ mbar.",
+      "Includes liquid nitrogen trap and inline valves.",
+      "Individual line vacuum measurement for precision monitoring.",
+      "High-performance integrated roots blower for enhanced displacement.",
+    ],
+    modelVariants: [
+      {
+        model: "1000 LPM System",
+        rotaryPumpCapacity: "1000 LPM",
+        rootsBlowerCapacity: "250 m³/hr",
+        ultimateVacuum: "1×10⁻⁴ mbar",
+        applications: "Cryo lines, Cryo cans",
+      },
+      {
+        model: "2000 LPM System",
+        rotaryPumpCapacity: "2000 LPM",
+        rootsBlowerCapacity: "550 m³/hr",
+        ultimateVacuum: "1×10⁻⁴ mbar",
+        applications: "Cryo cylinders evacuation",
+      },
+    ],
+    images: [
+      "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPING SYSTEMS/ROTARY ROOTS/IMG_7133-removebg.png",
+    ],
+    pdf: "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPING SYSTEMS/ROTARY ROOTS/UVS ROTARY ROOTS PUMPING SYSTEMS.docx",
+    end: "These systems are specifically configured for demanding cryogenics and industrial applications requiring reliable high-capacity vacuum performance.",
+  },
+  {
+    id: "UVS-TURBO-PUMPING",
+    sequence: 5,
+    code: "TURBO-PUMPING-SYSTEMS",
+    name: "Turbo Pumping Systems",
+    title: "Turbo High Vacuum Pumping Systems",
+    description:
+      "Over the years, Unique Vacuum Solutions has expertised in delivering efficient and effective high-vacuum Turbo pumping systems for various industrial applications. These systems are designed for high performance, reliability, and precision vacuum control.",
+    features: [
+      "Integrated with high-vacuum measurement instruments and gauges.",
+      "Fore & Rough pump options: from 100 LPM to 1000 LPM.",
+      "Turbo pump options: from 60 LPS to 2000 LPS.",
+      "Ultimate vacuum: better than 10⁻⁷ mbar.",
+      "Fully automated single button operation or semi-automatic options.",
+      "Total assembly mounted on a robust mild steel / stainless steel cart.",
+      "Equipped with roughing/backing valves and evacuation port monitoring.",
+    ],
+    modelVariants: [
+      {
+        model: "Standard Turbo Cart",
+        foreRoughPumpRange: "100 LPM to 1000 LPM",
+        turboPumpRange: "60 LPS to 2000 LPS",
+        ultimateVacuum: "Better than 10⁻⁷ mbar",
+        mounting: "Mild Steel / Stainless Steel Cart",
+        operation: "Fully Automated / Semi-Automatic",
+      },
+    ],
+    images: [
+      "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPING SYSTEMS/TURBO PUMPING SYSTEMS/UPS-250T 004.jpg",
+    ],
+    pdf: "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPING SYSTEMS/TURBO PUMPING SYSTEMS/UVS TURBO PUMPING SYSTEMS.docx",
+    end: "These turbo pumping systems are ideal for applications requiring clean, ultra-high vacuum environments with integrated monitoring and control instrumentation.",
+  },
+  {
+    id: "UVS-DIFFUSION-PUMPING",
+    sequence: 6,
+    code: "DIFFUSION-PUMPING-SYSTEMS",
+    name: "Diffusion Pumping Systems",
+    title: "High Vacuum Standard Pumping Systems",
+    description:
+      "Vacuum Pumping systems are the most reliable and cost-effective means for producing high vacuum. The vacuum pumping systems are trolley mounted for easy movement and capable of achieving an ultimate vacuum of 10⁻⁶ mbar with Liquid nitrogen trap. UVS offers many choices of vacuum pumping systems, with different pumping speeds for various applications, ranging from USP-65D to UPS-300F and custom-built solutions.",
+    features: [
+      "Setting the desired vacuum and single button operation to achieve at the port.",
+      "Vacuum range from 10⁻² to 10⁻⁶ mbar.",
+      "Auto change over from roughing mode to high vacuum mode.",
+      "Auto closure of cycle with load port isolation.",
+      "Fully automatic pumps start with all the safety interlocks.",
+      "Complete cycle monitoring on the HMI screen.",
+      "Data logging of total evacuation cycle.",
+    ],
+    modelVariants: [
+      {
+        model: "UPS-100D",
+        diffusionPump: "OD-114D diffstak 280LPS (un baffled)",
+        rotaryPumpModel: "URP-15",
+        speedLitMin: "280 LPM",
+        highVacuumValveSize: "QSV-4",
+        roughingBackingValves: "QSV-1 – 2nos.",
+        ultimateVacuum: ">1.0E-6 mbar (with Ln2 trap)",
+        inletCollarDiameter: "114mm",
+        powerRequired: "230 V - 50Hz, 1 Phase, 10 A",
+        coolingWater: "2 ltr/min at 25°C",
+      },
+    ],
+    applications: [
+      "Metallurgy and high-vacuum furnaces.",
+      "Industrial coating and thin-film deposition.",
+      "Laboratory research and high-vacuum experiments.",
+      "Custom built solutions for specialized vacuum applications.",
+    ],
+    images: [
+      "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPING SYSTEMS/DIFFUSION PUMPING SYSTEMS/IMG_7088.JPG",
+    ],
+    pdf: "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPING SYSTEMS/DIFFUSION PUMPING SYSTEMS/HIGH VACUUM STANDARD PUMPING SYSTEMS.docx",
+    end: "The standard Vacuum Pumping Systems consists of UVS Rotary Vacuum Pump, Diffusion pumps and other hardware like valves, baffles, collar, gauge and plumbing lines with Pirani Gauge to measure the roughing and backing vacuum & Penning gauge for measuring the high vacuum.",
   },
 ];
 
