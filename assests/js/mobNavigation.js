@@ -133,11 +133,19 @@ document.addEventListener("DOMContentLoaded", function () {
                     <a class="dropdown-item dropdown-toggle" href="vacuumPumpsAndSystems.html" data-bs-toggle="dropdown">Vacuum Pumps & Systems</a>
                     <ul class="dropdown-menu" style="background-color: rgb(221, 212, 230);">
                       <li class="dropdown">
-                        <a class="dropdown-item dropdown-toggle" href="uvsSeries.html">UVS</a>
+                        <a class="dropdown-item dropdown-toggle" href="seriesDetail.html?series=VACUUM_PUMPS">vacuum pumps</a>
                         <ul class="dropdown-menu">
                           <li><a class="dropdown-item" href="uvsPumpDetail.html?id=UVS-IVP-SERIES">IVP-Series Oil Sealed Belt Drive Rotary Vane Vacuum Pump</a></li>
                           <li><a class="dropdown-item" href="uvsPumpDetail.html?id=UVS-IVPVP-SERIES">IVPVP-Series Two Stage Rotary Piston Vacuum Pump</a></li>
                           <li><a class="dropdown-item" href="uvsPumpDetail.html?id=UVS-IVPVP-ALTERNATE">IVPVP-Series Alternate Brochure</a></li>
+                        </ul>
+                      </li>
+                      <li class="dropdown">
+                        <a class="dropdown-item dropdown-toggle" href="seriesDetail.html?series=VACUUM_SYSTEMS">Vacuum pumping systems</a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="uvsPumpDetail.html?id=UVS-ROTARY-ROOTS">Rotary Roots Pumping Systems</a></li>
+                          <li><a class="dropdown-item" href="uvsPumpDetail.html?id=UVS-TURBO-PUMPING">Turbo Pumping Systems</a></li>
+                          <li><a class="dropdown-item" href="uvsPumpDetail.html?id=UVS-DIFFUSION-PUMPING">Diffusion Pumping Systems</a></li>
                         </ul>
                       </li>
                     </ul>

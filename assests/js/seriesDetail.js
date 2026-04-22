@@ -84,11 +84,9 @@ function renderContent(series) {
     } else if (series === "UVG_DISPLAY") {
       return code.startsWith("UVGE") || code.startsWith("UVGS");
     } else if (series === "VACUUM_PUMPS") {
-      // Show all pumps from vacuumPumpsAndSystems
-      return product.id && product.id.startsWith("UVS-");
+      return product.id && (product.id === "UVS-IVP-SERIES" || product.id === "UVS-IVPVP-SERIES" || product.id === "UVS-IVPVP-ALTERNATE");
     } else if (series === "VACUUM_SYSTEMS") {
-      // Currently no specific data for systems, maybe filter by keyword in future
-      return false; 
+      return product.id && (product.id === "UVS-ROTARY-ROOTS" || product.id === "UVS-TURBO-PUMPING" || product.id === "UVS-DIFFUSION-PUMPING");
     }
     return false;
   });

@@ -98,6 +98,7 @@ if (product) {
       operation: "Operation",
       rotaryPumpCapacity: "Rotary Pump Capacity",
       rootsBlowerCapacity: "Roots Blower Capacity",
+      applications: "Applications",
     };
     return labels[field] || field;
   }

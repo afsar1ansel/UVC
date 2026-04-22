@@ -119,7 +119,14 @@ nav.innerHTML = `
               <li><a class="dropdown-item" href="uvsPumpDetail.html?id=UVS-IVPVP-ALTERNATE">IVPVP-Series Alternate Brochure</a></li>
             </ul>
            </li>
-           <li><a class="dropdown-item" href="seriesDetail.html?series=VACUUM_SYSTEMS">Vacuum pumping systems</a></li>
+          <li class="dropdown">
+            <a class="dropdown-item dropdown-toggle" href="seriesDetail.html?series=VACUUM_SYSTEMS">Vacuum pumping systems</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="uvsPumpDetail.html?id=UVS-ROTARY-ROOTS">Rotary Roots Pumping Systems</a></li>
+              <li><a class="dropdown-item" href="uvsPumpDetail.html?id=UVS-TURBO-PUMPING">Turbo Pumping Systems</a></li>
+              <li><a class="dropdown-item" href="uvsPumpDetail.html?id=UVS-DIFFUSION-PUMPING">Diffusion Pumping Systems</a></li>
+            </ul>
+           </li>
         </ul>
       </li>
        <li><a class="dropdown-item" href="#">Helium Leak Detectors</a></li>
