@@ -130,7 +130,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     </ul>
                   </li>
                   <li class="dropdown">
-                    <a class="dropdown-item dropdown-toggle" href="vacuumPumpsAndSystems.html" data-bs-toggle="dropdown">Vacuum Pumps & Systems</a>
+                    <a class="dropdown-item dropdown-toggle" href="seriesDetail.html?series=VACUUM_PUMPS">Vacuum Pumps & Systems</a>
                     <ul class="dropdown-menu" style="background-color: rgb(221, 212, 230);">
                       <li class="dropdown">
                         <a class="dropdown-item dropdown-toggle" href="seriesDetail.html?series=VACUUM_PUMPS">vacuum pumps</a>

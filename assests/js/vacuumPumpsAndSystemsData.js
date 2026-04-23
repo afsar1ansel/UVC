@@ -286,6 +286,10 @@ const vacuumPumpsAndSystems = [
     ],
     images: [
       "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPING SYSTEMS/ROTARY ROOTS/IMG_7133-removebg.png",
+      "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPING SYSTEMS/ROTARY ROOTS/IMG_7246-removebg.png",
+      "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPING SYSTEMS/ROTARY ROOTS/KGWB0060-removebg.png",
+      "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPING SYSTEMS/ROTARY ROOTS/LXKO7545-removebg.png",
+      "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPING SYSTEMS/ROTARY ROOTS/vacuumepumps&System.png",
     ],
     pdf: "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPING SYSTEMS/ROTARY ROOTS/UVS ROTARY ROOTS PUMPING SYSTEMS.docx",
     end: "These systems are specifically configured for demanding cryogenics and industrial applications requiring reliable high-capacity vacuum performance.",
@@ -361,6 +365,7 @@ const vacuumPumpsAndSystems = [
       "Custom built solutions for specialized vacuum applications.",
     ],
     images: [
+      "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPING SYSTEMS/DIFFUSION PUMPING SYSTEMS/IMG_7135.JPG",
       "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPING SYSTEMS/DIFFUSION PUMPING SYSTEMS/IMG_7088.JPG",
     ],
     pdf: "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPING SYSTEMS/DIFFUSION PUMPING SYSTEMS/HIGH VACUUM STANDARD PUMPING SYSTEMS.docx",
