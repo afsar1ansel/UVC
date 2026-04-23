@@ -16,8 +16,11 @@ const vacuumPumpsAndSystems = [
       "Optional intake port with anti-suckback mechanism for improved safety.",
       "Capable of achieving ultimate vacuum levels below 1×10⁻³ mbar.",
     ],
-    images: ["./assests/img/Mask3.png"],
-    pdf: "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPS/UVS IVP series vacuum pumps.pdf",
+    images: [
+      "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPS/ivp1.png",
+      "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPS/ivp2.png"
+    ],
+    pdf: "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPS/OIL SEALED BELT DRIVE ROTARY VANE VACUUM PUMP.pdf",
     modelVariants: [
       {
         model: "IVP-100",
@@ -184,7 +187,10 @@ const vacuumPumpsAndSystems = [
       "Water-cooled design for stable continuous operation.",
       "Heavy-duty construction suited for metallurgy, electrical, chemical, and manufacturing environments.",
     ],
-    images: ["./assests/img/Mask3.png"],
+    images: [
+      "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPS/E1.png",
+      "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPS/E2.png"
+    ],
     pdf: "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPS/UVS IVPVP Piston vacuum pumps.pdf",
     modelVariants: [
       {
@@ -249,8 +255,11 @@ const vacuumPumpsAndSystems = [
       "May contain additional model ranges, dimension data, or cooling requirements.",
       "Use the PDF for detailed technical comparison and selection.",
     ],
-    images: ["./assests/img/Mask3.png"],
-    pdf: "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPS/UVS IVPVP Piston vacuum pumps (1).pdf",
+    images: [
+      "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPS/IVPVP_1.png",
+      "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPS/IVPVP_2.png"
+    ],
+    pdf: "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPS/UVS IVPVP Piston vacuum pumps.pdf",
   },
   {
     id: "UVS-ROTARY-ROOTS",

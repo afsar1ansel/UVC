@@ -180,7 +180,7 @@
 
 .main-image-container img {
   max-width: 100%;
-  max-height: 100%;
+  max-height: calc(100% - 60px);
   transition: transform 0.1s ease-out;
   pointer-events: none; /* Let events fall through to container */
   object-fit: contain;
