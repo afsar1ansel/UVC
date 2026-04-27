@@ -398,6 +398,7 @@ const vacuumPumpsAndSystems = [
     images: [
       "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPS/IVRVP-M-SERIES.png"
     ],
+    pdf: "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPS/IVRVP-M - MAGNETIC ROOTS VACUUM PUMPS.pdf",
     modelVariants: [
       {
         model: "IVRRP 550",
@@ -469,6 +470,7 @@ const vacuumPumpsAndSystems = [
     images: [
       "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPS/IVRVP-SERIES.png"
     ],
+    pdf: "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPS/IVRVP- Roots(water cooled).pdf",
     modelVariants: [
       {
         model: "IVRRP 250",
@@ -552,6 +554,7 @@ const vacuumPumpsAndSystems = [
       "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPS/IVRDP- SERIES1.png",
       "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPS/IVRDP- SERIES2.png"
     ],
+    pdf: "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPS/IVRDP- two stage rotary vane.pdf",
     modelVariants: [
       {
         model: "IVRDP-4",
@@ -673,6 +676,7 @@ const vacuumPumpsAndSystems = [
     images: [
       "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPS/IVSVP.png"
     ],
+    pdf: "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPS/IVSVP-20 Single stage rotary vane vacuum pump.pdf",
     modelVariants: [
       {
         model: "IVSVP-020",
