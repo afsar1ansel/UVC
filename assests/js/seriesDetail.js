@@ -84,7 +84,7 @@ function renderContent(series) {
     } else if (series === "UVG_DISPLAY") {
       return code.startsWith("UVGE") || code.startsWith("UVGS");
     } else if (series === "VACUUM_PUMPS") {
-      return product.id && (product.id === "UVS-IVP-SERIES" || product.id === "UVS-IVPVP-SERIES" || product.id === "UVS-IVRRVP-M-SERIES" || product.id === "UVS-IVRVP-SERIES" || product.id === "UVS-IVRDP-SERIES" || product.id === "UVS-IVPVP-ALTERNATE");
+      return product.id && (product.id === "UVS-IVP-SERIES" || product.id === "UVS-IVPVP-SERIES" || product.id === "UVS-IVRRVP-M-SERIES" || product.id === "UVS-IVRVP-SERIES" || product.id === "UVS-IVRDP-SERIES" || product.id === "UVS-IVSVP-SERIES" || product.id === "UVS-IVPVP-ALTERNATE");
     } else if (series === "VACUUM_SYSTEMS") {
       return product.id && (product.id === "UVS-ROTARY-ROOTS" || product.id === "UVS-TURBO-PUMPING" || product.id === "UVS-DIFFUSION-PUMPING");
     }

@@ -140,6 +140,7 @@ document.addEventListener("DOMContentLoaded", function () {
                           <li><a class="dropdown-item" href="uvsPumpDetail.html?id=UVS-IVRRVP-M-SERIES">IVRRVP-M Series Roots - Air Cooled Vacuum Pumps</a></li>
                           <li><a class="dropdown-item" href="uvsPumpDetail.html?id=UVS-IVRVP-SERIES">IVRVP Series Roots - Water Cooled Vacuum Pumps</a></li>
                           <li><a class="dropdown-item" href="uvsPumpDetail.html?id=UVS-IVRDP-SERIES">IVRDP Series Two Stage Rotary Vane Vacuum Pump</a></li>
+                          <li><a class="dropdown-item" href="uvsPumpDetail.html?id=UVS-IVSVP-SERIES">IVSVP Series Single Stage Vacuum Pumps</a></li>
                           <li><a class="dropdown-item" href="uvsPumpDetail.html?id=UVS-IVPVP-ALTERNATE">IVPVP-Series Alternate Brochure</a></li>
                         </ul>
                       </li>
