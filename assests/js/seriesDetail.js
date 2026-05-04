@@ -9,7 +9,11 @@ const sidebarSeries = [
   { name: "HYBRID SERIES", id: "HYBRID", category: "MEASUREMENT" },
   { name: "OnePirani SERIES", id: "ONEPIRANI", category: "MEASUREMENT" },
   { name: "McLeod SERIES", id: "MCLEOD", category: "MEASUREMENT" },
-  { name: "UVG Display Controllers", id: "UVG_DISPLAY", category: "MEASUREMENT" },
+  {
+    name: "UVG Display Controllers",
+    id: "UVG_DISPLAY",
+    category: "MEASUREMENT",
+  },
   { name: "VACUUM PUMPS", id: "VACUUM_PUMPS", category: "PUMPS" },
   { name: "VACUUM PUMPING SYSTEMS", id: "VACUUM_SYSTEMS", category: "PUMPS" },
 ];
@@ -18,29 +22,31 @@ function renderSidebar(activeSeries) {
   const sidebar = document.getElementById("seriesSidebar");
   if (!sidebar) return;
 
-  const currentSeries = sidebarSeries.find(s => s.id === activeSeries);
+  const currentSeries = sidebarSeries.find((s) => s.id === activeSeries);
   const category = currentSeries ? currentSeries.category : "MEASUREMENT";
 
   sidebar.innerHTML = `<h4>${category === "PUMPS" ? "Vacuum Pumps & Systems" : "Vacuum Measurement"}</h4>`;
-  
-  sidebarSeries.filter(s => s.category === category).forEach((series) => {
-    const btn = document.createElement("button");
-    btn.className = `sidebar-btn ${series.id === activeSeries ? "active" : ""}`;
-    btn.innerHTML = `<span>${series.name}</span>`;
-    btn.onclick = () => loadSeries(series.id);
-    sidebar.appendChild(btn);
-  });
+
+  sidebarSeries
+    .filter((s) => s.category === category)
+    .forEach((series) => {
+      const btn = document.createElement("button");
+      btn.className = `sidebar-btn ${series.id === activeSeries ? "active" : ""}`;
+      btn.innerHTML = `<span>${series.name}</span>`;
+      btn.onclick = () => loadSeries(series.id);
+      sidebar.appendChild(btn);
+    });
 }
 
 function loadSeries(series) {
   // Update URL without reloading
   const newUrl = `${window.location.pathname}?series=${series}`;
   window.history.pushState({ series: series }, "", newUrl);
-  
+
   // Re-render components
   const gridBox = document.getElementById("gridBox");
   if (gridBox) gridBox.innerHTML = "";
-  
+
   renderSidebar(series);
   renderContent(series);
 }
@@ -84,9 +90,23 @@ function renderContent(series) {
     } else if (series === "UVG_DISPLAY") {
       return code.startsWith("UVGE") || code.startsWith("UVGS");
     } else if (series === "VACUUM_PUMPS") {
-      return product.id && (product.id === "UVS-IVP-SERIES" || product.id === "UVS-IVPVP-SERIES" || product.id === "UVS-IVRRVP-M-SERIES" || product.id === "UVS-IVRVP-SERIES" || product.id === "UVS-IVRDP-SERIES" || product.id === "UVS-IVSVP-SERIES" || product.id === "UVS-IVPVP-ALTERNATE");
+      return (
+        product.id &&
+        (product.id === "UVS-IVP-SERIES" ||
+          product.id === "UVS-IVPVP-SERIES" ||
+          product.id === "UVS-IVRVP-M-SERIES" ||
+          product.id === "UVS-IVRVP-SERIES" ||
+          product.id === "UVS-IVRDP-SERIES" ||
+          product.id === "UVS-IVSVP-SERIES" ||
+          product.id === "UVS-E-SERIES")
+      );
     } else if (series === "VACUUM_SYSTEMS") {
-      return product.id && (product.id === "UVS-ROTARY-ROOTS" || product.id === "UVS-TURBO-PUMPING" || product.id === "UVS-DIFFUSION-PUMPING");
+      return (
+        product.id &&
+        (product.id === "UVS-ROTARY-ROOTS" ||
+          product.id === "UVS-TURBO-PUMPING" ||
+          product.id === "UVS-DIFFUSION-PUMPING")
+      );
     }
     return false;
   });
@@ -171,7 +191,10 @@ function renderContent(series) {
                       <p>${product.description ? product.description.substring(0, 100) + "..." : ""}</p>`;
       }
 
-      const detailPage = product.id && product.id.startsWith("UVS-") ? "uvsPumpDetail.html" : "dprgDetail.html";
+      const detailPage =
+        product.id && product.id.startsWith("UVS-")
+          ? "uvsPumpDetail.html"
+          : "dprgDetail.html";
 
       div.innerHTML = ` <img src="${imgSrc}" alt="${product.name}" style="height: 200px; object-fit: contain;">
                     ${contentHtml}
@@ -192,7 +215,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Handle browser back/forward buttons
   window.onpopstate = (event) => {
-    const poppedSeries = event.state ? event.state.series : getUrlParameter("series") || "DPRG";
+    const poppedSeries = event.state
+      ? event.state.series
+      : getUrlParameter("series") || "DPRG";
     renderSidebar(poppedSeries);
     renderContent(poppedSeries);
   };
