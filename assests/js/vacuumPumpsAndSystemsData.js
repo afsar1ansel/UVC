@@ -20,7 +20,7 @@ const vacuumPumpsAndSystems = [
       "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPS/ivp1.png",
       "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPS/ivp2.png"
     ],
-    pdf: "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPS/OIL SEALED BELT DRIVE ROTARY VANE VACUUM PUMP.pdf",
+    pdf: "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPS/UVS IVP series vacuum pumps.pdf",
     modelVariants: [
       {
         model: "IVP-100",
@@ -188,8 +188,8 @@ const vacuumPumpsAndSystems = [
       "Heavy-duty construction suited for metallurgy, electrical, chemical, and manufacturing environments.",
     ],
     images: [
-      "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPS/E1.png",
-      "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPS/E2.png"
+      "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPS/IVPVP_2.png",
+       "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPS/IVPVP_1.png"
     ],
     pdf: "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPS/UVS IVPVP Piston vacuum pumps.pdf",
     modelVariants: [
