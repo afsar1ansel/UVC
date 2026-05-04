@@ -467,7 +467,7 @@ const vacuumPumpsAndSystems = [
       "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPING SYSTEMS/ROTARY ROOTS/LXKO7545-removebg.png",
       "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPING SYSTEMS/ROTARY ROOTS/vacuumepumps&System.png",
     ],
-    pdf: "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPING SYSTEMS/ROTARY ROOTS/UVS ROTARY ROOTS PUMPING SYSTEMS.docx",
+    pdf: "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPING SYSTEMS/ROTARY ROOTS/UVS ROTARY ROOTS PUMPING SYSTEMS.pdf",
     end: "These systems are specifically configured for demanding cryogenics and industrial applications requiring reliable high-capacity vacuum performance.",
   },
   {
@@ -499,8 +499,9 @@ const vacuumPumpsAndSystems = [
     ],
     images: [
       "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPING SYSTEMS/TURBO PUMPING SYSTEMS/UPS-250T 004.jpg",
+      "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPING SYSTEMS/TURBO PUMPING SYSTEMS/vertex TMP system.jpg",
     ],
-    pdf: "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPING SYSTEMS/TURBO PUMPING SYSTEMS/UVS TURBO PUMPING SYSTEMS.docx",
+    pdf: "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPING SYSTEMS/TURBO PUMPING SYSTEMS/UVS TURBO PUMPING SYSTEMS.pdf",
     end: "These turbo pumping systems are ideal for applications requiring clean, ultra-high vacuum environments with integrated monitoring and control instrumentation.",
   },
   {
@@ -544,7 +545,7 @@ const vacuumPumpsAndSystems = [
       "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPING SYSTEMS/DIFFUSION PUMPING SYSTEMS/IMG_7135.JPG",
       "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPING SYSTEMS/DIFFUSION PUMPING SYSTEMS/IMG_7088.JPG",
     ],
-    pdf: "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPING SYSTEMS/DIFFUSION PUMPING SYSTEMS/HIGH VACUUM STANDARD PUMPING SYSTEMS.docx",
+    pdf: "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPING SYSTEMS/DIFFUSION PUMPING SYSTEMS/HIGH VACUUM STANDARD PUMPING SYSTEMS.pdf",
     end: "The standard Vacuum Pumping Systems consists of UVS Rotary Vacuum Pump, Diffusion pumps and other hardware like valves, baffles, collar, gauge and plumbing lines with Pirani Gauge to measure the roughing and backing vacuum & Penning gauge for measuring the high vacuum.",
   },
   {
