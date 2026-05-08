@@ -133,7 +133,17 @@ nav.innerHTML = `
            </li>
         </ul>
       </li>
-       <li><a class="dropdown-item" href="#">Helium Leak Detectors</a></li>
+      <li class="dropdown">
+        <a class="dropdown-item dropdown-toggle" href="heliumLeakDetectors.html">Helium Leak Detectors</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="dprgDetail.html?id=HLD-PFEIFFER-ADIXEN">PFEIFFER ADIXEN ASM</a></li>
+          <li><a class="dropdown-item" href="dprgDetail.html?id=HLD-AGILENT">Agilent Leak Detectors</a></li>
+          <li><a class="dropdown-item" href="dprgDetail.html?id=HLD-LEYBOLD-PHOENIX">LEYBOLD PHOENIX SERIES</a></li>
+          <li><a class="dropdown-item" href="dprgDetail.html?id=HLD-EDWARDS-ELD">Edwards ELD Leak Detectors</a></li>
+          <li><a class="dropdown-item" href="dprgDetail.html?id=HLD-ACCESSORIES">Accessories</a></li>
+          <li><a class="dropdown-item" href="dprgDetail.html?id=HLD-CALIBRATED-LEAKS">CALIBRATED LEAKS</a></li>
+        </ul>
+      </li>
       <li><a class="dropdown-item" href="#">Helium Test Systems</a></li>
       <li><a class="dropdown-item" href="#">Vacuum Components & Supplies</a></li>
     </ul>
