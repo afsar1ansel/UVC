@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail Page</title>
+    <link rel="stylesheet" href="./assests/css/dprgDetail.css" />
+    <link rel="stylesheet" href="./assests/css/navigation.css" />
+    <link rel="stylesheet" href="./assests/css/footer.css" />
+    <link
+      rel="stylesheet"
+      href="./OwlCarousel2-master/OwlCarousel2-master/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./OwlCarousel2-master/OwlCarousel2-master/dist/assets/owl.theme.default.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.3.3-dist/css/bootstrap.min.css"
+    />
+  </head>
+  <style>
+    @media (max-width: 1024px) {
+      .d-mobile {
+        display: block !important;
+      }
+      .d-desktop {
+        display: none !important;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .d-mobile {
+        display: none !important;
+      }
+      .d-desktop {
+        display: block !important;
+      }
+    }
+
+    /* PDF Viewer specific styles */
+    .pdf-viewer-container {
+        width: 100%;
+        height: 120vh; /* Very tall to show the whole PDF clearly */
+        padding: 0 5%;
+        margin-bottom: 50px;
+    }
+    
+    .pdf-frame {
+        width: 100%;
+        height: 100%;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+
+    @media (max-width: 768px) {
+        .pdf-viewer-container {
+            height: 80vh;
+            padding: 0 2%;
+        }
+    }
+  </style>
+  <body>
+    <nav>
+      <div class="d-desktop d-none d-md-block">
+        <div class="navigationBox scrolled" id="navBarBox"></div>
+      </div>
+
+      <!-- nav mobile -->
+      <div class="d-mobile d-block d-md-none" id="navBarMobile"></div>
+    </nav>
+
+    <!-- hero -->
+    <div class="hero" id="hero">
+      <img src="./assests/img/Frame134.png" alt="" />
+    </div>
+
+    <!-- back button and item code -->
+    <div class="back-btn-container">
+      <button class="back-btn" onclick="window.history.back()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+        Back
+      </button>
+      <div id="item-code-header"></div>
+    </div>
+
+    <!-- PDF Viewer Section -->
+    <div class="pdf-viewer-container" id="pdfViewer">
+        <!-- PDF will be injected here -->
+        <div style="display: flex; align-items: center; justify-content: center; height: 100%;">
+            <div class="spinner-border text-success" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+      <div id="foot"></div>
+    </footer>
+
+    <script src="./assests/js/footer.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./assests/js/heliumLeakDetectorsData.js"></script>
+    <script src="./assests/js/navigation.js"></script>
+    <script src="./assests/js/mobNavigation.js"></script>
+    <script
+      src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+    <script src="./OwlCarousel2-master/OwlCarousel2-master/dist/owl.carousel.min.js"></script>
+    <script src="./assests/js/heliumDetail.js" defer></script>
+  </body>
+</html>

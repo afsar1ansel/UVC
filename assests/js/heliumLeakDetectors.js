@@ -13,11 +13,13 @@ function renderProducts() {
       ${products
         .map(
           (product) => `
-        <div class="grids" onclick="window.location.href='dprgDetail.html?id=${product.id}'">
+        <div class="grids" onclick="window.location.href='heliumDetail.html?id=${product.id}'">
           <img src="${product.images && product.images[0] ? product.images[0] : ""}" alt="${product.title}" />
           <h3>${product.title}</h3>
           <p>${product.description}</p>
-          <div class="product-code">${product.code}</div>
+          <div style="display: flex; justify-content: center; align-items: center; margin-top: auto;">
+            <div class="gridBtn" style="background: #ffc642; padding: 8px 25px; border-radius: 4px; font-weight: 600; font-size: 14px; cursor: pointer;">View Details</div>
+          </div>
         </div>
       `,
         )

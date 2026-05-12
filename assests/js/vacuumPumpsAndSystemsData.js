@@ -553,7 +553,7 @@ const vacuumPumpsAndSystems = [
     sequence: 7,
     code: "IVRVP-M-SERIES",
     name: "IVRVP-M Series Roots - Air Cooled Vacuum Pumps",
-    title: "ROOTS - AIR COOLED VACUUM PUMPS",
+    title: " UVS ROOTS - AIR COOLED VACUUM PUMPS",
     description:
       "The IVRVP-M Series consists of air-cooled roots vacuum pumps designed for high-capacity industrial applications requiring efficient displacement and reliable ultimate vacuum performance. These pumps are robustly built for continuous operation in demanding environments.",
     features: [
@@ -626,7 +626,7 @@ const vacuumPumpsAndSystems = [
     sequence: 8,
     code: "IVRVP-SERIES",
     name: "IVRVP Series Roots - Water Cooled Vacuum Pumps",
-    title: "ROOTS - WATER COOLED VACUUM PUMPS",
+    title: "UVS ROOTS - WATER COOLED VACUUM PUMPS",
     description:
       "The IVRVP Series consists of water-cooled roots vacuum pumps designed for high-performance industrial applications. These pumps offer efficient displacement and stable ultimate vacuum levels, with a water-cooled design ensuring reliable continuous operation even in demanding thermal conditions.",
     features: [
@@ -708,7 +708,7 @@ const vacuumPumpsAndSystems = [
     sequence: 9,
     code: "IVRDP-SERIES",
     name: "IVRDP Series Two Stage Rotary Vane Vacuum Pump",
-    title: "TWO STAGE ROTARY VANE VACUUM PUMP",
+    title: "UVS TWO STAGE ROTARY VANE VACUUM PUMP",
     description:
       "The IVRDP Series consists of high-performance two-stage rotary vane vacuum pumps designed for reliability and efficiency in various industrial processes. These pumps feature dual protection against oil anti-sucking back, a forced oil circulation system for stable running, and are built with fewer components for easy maintenance.",
     features: [
@@ -830,7 +830,7 @@ const vacuumPumpsAndSystems = [
     sequence: 10,
     code: "IVSVP-SERIES",
     name: "IVSVP Series Single Stage Vacuum Pump",
-    title: "IVSVP Single Stage Vacuum Pumps",
+    title: "UVS IVSVP Single Stage Vacuum Pumps",
     description:
       "Vacuum technology plays a critical role in the industrial field. The IVSVP Series is designed to meet the most demanding customer requirements, offering high reliability, efficient pumping of condensable gases, and a design that prevents oil exhaust or leakage, ensuring no emulsification of pump oil.",
     features: [
