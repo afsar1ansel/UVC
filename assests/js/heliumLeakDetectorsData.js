@@ -33,13 +33,14 @@ const heliumLeakDetectors = [
     features: ["NIST traceable", "High stability", "Various leak rates available"]
   },
   {
-    id: "HLD-EDWARDS-ELD",
-    title: "About helium leak tester",
-    description: "Edwards ELD series provide reliable and efficient helium leak detection solutions.",
-    code: "ELD SERIES",
+    id: "HLD-ABOUT-HELIUM-LEAK-DETECTORS",
+    title: "About helium leak detectors",
+    description: "Reaching a required vacuum level is often hindered by system leakages. Reducing the chamber’s gas pressure triggers the release of internal molecules or allows external air to enter through structural flaws like cracks, stalling the evacuation process. Identifying and repairing these sources via leak detection techniques is critical for maintaining system integrity.",
+    code: "ABOUT HLD",
     images: ["./assests/img/placeholder.png"],
-    features: ["Compact footprint", "High pumping speed", "Intuitive operation"],
-    pdf: "./assests/img/products/heliumLeakDetectors/About helium leak test methods.pdf"
+    features: ["System integrity check", "Leak source identification", "Evacuation optimization"],
+    pdf: "./assests/img/products/heliumLeakDetectors/About helium leak test methods.pdf",
+    viewPdf: "./assests/img/products/heliumLeakDetectors/About helium leak test methods(page).pdf"
   }
 ];
 
