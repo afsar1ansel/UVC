@@ -79,15 +79,82 @@ async function renderPDF(url, container) {
 
       const viewport = page.getViewport({ scale: scale });
 
+      // 1. Create a temporary off-screen canvas to render the full PDF page
+      const tempCanvas = document.createElement('canvas');
+      tempCanvas.width = viewport.width;
+      tempCanvas.height = viewport.height;
+      const tempContext = tempCanvas.getContext('2d');
+      
+      // Render the full page to the temporary canvas
+      await page.render({ canvasContext: tempContext, viewport: viewport }).promise;
+
+      // 2. SMART CROPPING: Scan the canvas pixels to find where the actual content starts and ends
+      const imgData = tempContext.getImageData(0, 0, tempCanvas.width, tempCanvas.height);
+      const data = imgData.data;
+      
+      let contentTop = 0;
+      let contentBottom = tempCanvas.height;
+      const padding = 20; // 20px padding so text isn't right on the edge
+
+      // Scan from top down to find the first non-white pixel
+      for (let y = 0; y < tempCanvas.height; y += 2) {
+        let isWhiteRow = true;
+        for (let x = 0; x < tempCanvas.width; x += 4) {
+          const i = (y * tempCanvas.width + x) * 4;
+          // Check if pixel is not white (rgb < 250) and not fully transparent
+          if (data[i+3] > 10 && (data[i] < 250 || data[i+1] < 250 || data[i+2] < 250)) {
+            isWhiteRow = false;
+            break;
+          }
+        }
+        if (!isWhiteRow) {
+          contentTop = Math.max(0, y - padding);
+          break;
+        }
+      }
+
+      // Scan from bottom up to find the last non-white pixel
+      for (let y = tempCanvas.height - 1; y >= 0; y -= 2) {
+        let isWhiteRow = true;
+        for (let x = 0; x < tempCanvas.width; x += 4) {
+          const i = (y * tempCanvas.width + x) * 4;
+          if (data[i+3] > 10 && (data[i] < 250 || data[i+1] < 250 || data[i+2] < 250)) {
+            isWhiteRow = false;
+            break;
+          }
+        }
+        if (!isWhiteRow) {
+          contentBottom = Math.min(tempCanvas.height, y + padding);
+          break;
+        }
+      }
+
+      // Fallback if the page is completely blank
+      if (contentTop >= contentBottom) {
+        contentTop = 0;
+        contentBottom = tempCanvas.height;
+      }
+
+      const croppedHeight = contentBottom - contentTop;
+
+      // 3. Create the final canvas that gets added to the webpage
       const canvas = document.createElement('canvas');
       canvas.className = 'pdf-page-canvas';
-      const context = canvas.getContext('2d');
-      canvas.height = viewport.height;
+      canvas.style.display = 'block';
+      canvas.style.margin = '0 auto'; // Center it
       canvas.width = viewport.width;
+      canvas.height = croppedHeight;
+      
+      const context = canvas.getContext('2d');
+      
+      // 4. Draw only the auto-detected inner portion of the canvas
+      context.drawImage(
+        tempCanvas, 
+        0, contentTop, viewport.width, croppedHeight, 
+        0, 0, viewport.width, croppedHeight
+      );
 
       container.appendChild(canvas);
-
-      await page.render({ canvasContext: context, viewport: viewport }).promise;
     }
   } catch (error) {
     console.error("Error rendering PDF:", error);

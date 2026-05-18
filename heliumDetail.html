@@ -60,9 +60,11 @@
         box-shadow: none !important; /* Remove shadows */
         border-radius: 0 !important; /* Remove rounded corners */
         background: white;
-        margin: 0 !important;
+        margin: 0 !important; /* Reset margin since we are cropping via JS */
         padding: 0 !important;
         display: block; /* Ensure no extra space below canvas */
+        position: relative;
+        z-index: 1;
     }
 
     .pdf-loading {
