@@ -136,7 +136,15 @@ nav.innerHTML = `
       <li class="dropdown">
         <a class="dropdown-item dropdown-toggle" href="heliumLeakDetectors.html">Helium Leak Detectors</a>
         <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="heliumDetail.html?id=HLD-PFEIFFER-ADIXEN">PFEIFFER ADIXEN ASM</a></li>
+          <li class="dropdown">
+            <a class="dropdown-item dropdown-toggle" href="heliumDetail.html?id=HLD-ASM-310">PFEIFFER ADIXEN ASM ></a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="heliumDetail.html?id=HLD-ASM-310">ASM 310</a></li>
+              <li><a class="dropdown-item" href="heliumDetail.html?id=HLD-ASM-340">ASM 340</a></li>
+              <li><a class="dropdown-item" href="heliumDetail.html?id=HLD-ASM-390-392">ASM 390 / 392</a></li>
+              <li><a class="dropdown-item" href="heliumDetail.html?id=HLD-ASM-306S">ASM 306 S</a></li>
+            </ul>
+          </li>
           <li><a class="dropdown-item" href="heliumDetail.html?id=HLD-LEYBOLD-PHOENIX">LEYBOLD PHOENIX SERIES</a></li>
           <li><a class="dropdown-item" href="heliumDetail.html?id=HLD-ACCESSORIES">Accessories</a></li>
           <li><a class="dropdown-item" href="heliumDetail.html?id=HLD-CALIBRATED-LEAKS">CALIBRATED LEAKS</a></li>

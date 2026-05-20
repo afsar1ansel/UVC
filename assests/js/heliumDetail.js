@@ -31,23 +31,307 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const pdfViewer = document.getElementById("pdfViewer");
-    if (product.viewPdf) {
-      renderPDF(product.viewPdf, pdfViewer);
-    } else if (product.pdf) {
-      renderPDF(product.pdf, pdfViewer);
+    const structuredContainer = document.getElementById("structuredContainer");
+
+    // Branch logic: Structured specifications view vs PDF brochure view
+    if ((product.technicalSpecifications && product.technicalSpecifications.length > 0) || (product.models && product.models.length > 0)) {
+      // Hide PDF viewer, show structured layout container
+      if (pdfViewer) pdfViewer.style.display = "none";
+      if (structuredContainer) structuredContainer.style.display = "block";
+
+      renderStructuredProduct(product);
     } else {
-      pdfViewer.innerHTML = `
-        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 400px; color: #999; border: 1px dashed #ccc; border-radius: 8px;">
-            <h3>No Brochure Available</h3>
-            <p>A detailed PDF brochure is not yet available for ${product.title}.</p>
-            <button onclick="window.history.back()" style="margin-top: 20px; background: #0da574; color: white; border: none; padding: 10px 25px; border-radius: 5px;">Go Back</button>
-        </div>
-      `;
+      // Keep existing PDF rendering behavior
+      if (pdfViewer) pdfViewer.style.display = "flex";
+      if (structuredContainer) structuredContainer.style.display = "none";
+
+      if (product.viewPdf) {
+        renderPDF(product.viewPdf, pdfViewer);
+      } else if (product.pdf) {
+        renderPDF(product.pdf, pdfViewer);
+      } else {
+        pdfViewer.innerHTML = `
+          <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 400px; color: #999; border: 1px dashed #ccc; border-radius: 8px;">
+              <h3>No Brochure Available</h3>
+              <p>A detailed PDF brochure is not yet available for ${product.title}.</p>
+              <button onclick="window.history.back()" style="margin-top: 20px; background: #0da574; color: white; border: none; padding: 10px 25px; border-radius: 5px;">Go Back</button>
+          </div>
+        `;
+      }
     }
   } else {
-    document.getElementById("pdfViewer").innerHTML = "<h2 style='text-align: center; padding: 50px;'>Product not found!</h2>";
+    const pdfViewer = document.getElementById("pdfViewer");
+    if (pdfViewer) {
+      pdfViewer.innerHTML = "<h2 style='text-align: center; padding: 50px;'>Product not found!</h2>";
+    }
   }
 });
+
+function renderStructuredProduct(product) {
+  const tabsContainer = document.getElementById("modelTabsContainer");
+  const producter = document.getElementById("producter");
+  const productTable = document.getElementById("productTable");
+  const end = document.getElementById("end");
+
+  if (!producter || !productTable || !end) return;
+
+  // Clear any existing tabs
+  if (tabsContainer) {
+    tabsContainer.innerHTML = "";
+    tabsContainer.style.display = "none";
+  }
+
+  // 1. Tier 1: Global Series Navigator (Redirects globally)
+  if (tabsContainer && product.seriesId) {
+    const seriesProducts = window.heliumLeakDetectors.filter(p => p.seriesId === product.seriesId);
+    if (seriesProducts.length > 1) {
+      const globalNav = document.createElement("div");
+      globalNav.className = "d-flex gap-2 flex-wrap w-100";
+      globalNav.style.paddingBottom = "15px";
+      globalNav.style.borderBottom = "1px solid #dee2e6";
+      globalNav.style.marginBottom = "20px";
+      
+      globalNav.innerHTML = seriesProducts
+        .map(
+          (p) => `
+            <button class="series-nav-btn btn ${p.id === product.id ? 'btn-success' : 'btn-outline-secondary'}" 
+                    onclick="window.location.href='heliumDetail.html?id=${p.id}'"
+                    style="padding: 10px 25px; font-weight: 600; border-radius: 30px; transition: all 0.3s; margin-right: 8px; margin-bottom: 8px;">
+              ${p.code}
+            </button>
+          `
+        )
+        .join("");
+      
+      tabsContainer.appendChild(globalNav);
+      tabsContainer.style.display = "block";
+    }
+  }
+
+  // 2. Tier 2: Model Variant Switcher (Toggles variants client-side)
+  if (tabsContainer && product.models && product.models.length > 0) {
+    const variantNav = document.createElement("div");
+    variantNav.className = "d-flex gap-2 flex-wrap w-100";
+    variantNav.style.marginTop = "10px";
+    variantNav.style.marginBottom = "20px";
+    
+    variantNav.innerHTML = product.models
+      .map(
+        (m, index) => `
+          <button class="variant-tab-btn btn ${index === 0 ? 'btn-dark' : 'btn-outline-dark'}" 
+                  data-model-id="${m.id}"
+                  style="padding: 8px 20px; font-weight: 600; border-radius: 4px; transition: all 0.3s; margin-right: 8px; margin-bottom: 8px;">
+            ${m.name}
+          </button>
+        `
+      )
+      .join("");
+    
+    tabsContainer.appendChild(variantNav);
+    tabsContainer.style.display = "block";
+
+    // Set first model as active
+    let activeModel = product.models[0];
+    updateModelView(activeModel, product);
+
+    // Setup variant switcher event listeners
+    const buttons = variantNav.querySelectorAll(".variant-tab-btn");
+    buttons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        buttons.forEach((b) => {
+          b.classList.remove("btn-dark");
+          b.classList.add("btn-outline-dark");
+        });
+        btn.classList.remove("btn-outline-dark");
+        btn.classList.add("btn-dark");
+
+        const modelId = btn.dataset.modelId;
+        activeModel = product.models.find((m) => m.id === modelId);
+        if (activeModel) {
+          updateModelView(activeModel, product);
+        }
+      });
+    });
+  } else {
+    // Single model layout (e.g. ASM 310)
+    updateModelView(product, product);
+  }
+}
+
+function updateModelView(model, parentProduct) {
+  const producter = document.getElementById("producter");
+  const productTable = document.getElementById("productTable");
+  const end = document.getElementById("end");
+
+  if (!producter || !productTable || !end) return;
+
+  // 1. Render primary description, features, image gallery
+  const images = (model.images && model.images.length > 0) ? model.images : parentProduct.images;
+  const thumbnailsHtml = images.length > 1
+    ? `
+      <div class="thumbnail-container">
+        ${images
+          .map(
+            (img, index) => `
+              <img
+                class="thumbnail ${index === 0 ? "active" : ""}"
+                src="${img}"
+                alt="Thumbnail ${index + 1}"
+                data-full="${img}"
+              />
+            `,
+          )
+          .join("")}
+      </div>
+    `
+    : "";
+
+  const seriesSubtitle = parentProduct.seriesId === "PFEIFFER-ADIXEN-ASM" 
+    ? "PFEIFFER ADIXEN ASM SERIES" 
+    : "HELIUM LEAK DETECTOR";
+
+  producter.innerHTML = `
+    <div class="image-gallery" style="flex: 1; min-width: 300px;">
+      ${thumbnailsHtml}
+      <div class="main-image-container" style="border: 1px solid #e1e1e1; background: #fff; padding: 20px; border-radius: 8px;">
+        <img id="main-image" src="${images[0]}" alt="${model.title || model.name || parentProduct.title} Image" style="max-height: 300px; object-fit: contain;" />
+        <div class="Product_btns" style="margin-top: 20px; width: 100%;">
+          ${
+            parentProduct.pdf
+              ? `<a href="${parentProduct.pdf}" download style="text-decoration:none; width: 100%;"><div class="productBrochure" style="width: 100%; justify-content: center; gap: 10px; border-radius: 4px;"><img src="./assests/img/bookLines.svg" alt="Brochure Icon" /> Download Brochure</div></a>`
+              : ""
+          }
+        </div>
+      </div>
+    </div>
+    <div class="product-details" style="flex: 1.2; min-width: 300px;">
+      <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-bottom: 10px;">
+        <div class="productCode" style="background-color: #0da574; border-radius: 3px;">${model.name || parentProduct.code}</div>
+      </div>
+      <h2 style="font-size: 32px; font-weight: 700; color: #001f3f; margin-bottom: 5px;">${model.title || model.name || parentProduct.title}</h2>
+      <h4 style="font-size: 18px; font-weight: 600; color: #0da574; margin-bottom: 20px; font-style: italic;">${model.tagline || seriesSubtitle}</h4>
+      <p style="color: #4d5765; font-size: 16px; line-height: 26px; margin-bottom: 30px; text-align: justify;">
+        ${parentProduct.description}
+      </p>
+      
+      <div class="detailFeatures">
+        <h3 style="font-size: 20px; font-weight: 700; color: #001f3f; margin-bottom: 15px;">Key Features Overview</h3>
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          ${model.highlights
+            .map(
+              (feature) => `
+                <div style="display: flex; gap: 10px; align-items: flex-start;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffc642" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 3px;">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <p style="margin: 0; color: #4d5765; font-size: 15px; font-weight: 500;">${feature}</p>
+                </div>
+              `
+            )
+            .join("")}
+        </div>
+      </div>
+    </div>
+  `;
+
+  // 2. Render Technical Specs Table
+  const headers = model.columns || [model.name || parentProduct.code];
+  const firstColWidth = headers.length > 1 ? "width: 40%;" : "width: 50%;";
+  const colWidth = headers.length > 1 ? `width: ${Math.round(60 / headers.length)}%;` : "width: 50%;";
+  const headerColsHtml = headers.map(h => `<th style="background-color: #f8f9fa; font-weight: 700; color: #333; border: 1px solid #dee2e6; padding: 12px 15px; ${colWidth}">${h}</th>`).join("");
+
+  productTable.innerHTML = `
+    <div class="product-table" style="margin-top: 40px; margin-bottom: 40px; width: 100%;">
+      <h2 style="font-size: 24px; font-weight: 700; margin-bottom: 25px; color: #001f3f;">Technical Specifications</h2>
+      <div class="tableBox" style="overflow-x: auto; width: 100%; border: 1px solid #dee2e6; border-radius: 8px;">
+        <table class="table table-striped table-bordered" style="width: 100%; table-layout: fixed; max-width: 100%; border-collapse: collapse; margin-bottom: 0; background: white;">
+          <thead>
+            <tr>
+              <th style="background-color: #f8f9fa; font-weight: 700; color: #333; border: 1px solid #dee2e6; padding: 12px 15px; ${firstColWidth}">Technicalical data</th>
+              ${headerColsHtml}
+            </tr>
+          </thead>
+          <tbody>
+            ${model.technicalSpecifications
+              .map(
+                (spec) => {
+                  let valueCols = "";
+                  if (Array.isArray(spec.values)) {
+                    valueCols = spec.values.map(val => `<td style="border: 1px solid #dee2e6; padding: 10px 15px; color: #555;">${val}</td>`).join("");
+                  } else {
+                    valueCols = `<td style="border: 1px solid #dee2e6; padding: 10px 15px; color: #555;" colspan="${headers.length}">${spec.value}</td>`;
+                  }
+                  return `
+                    <tr>
+                      <td style="font-weight: 600; border: 1px solid #dee2e6; padding: 10px 15px; color: #444;">${spec.parameter}</td>
+                      ${valueCols}
+                    </tr>
+                  `;
+                }
+              )
+              .join("")}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  `;
+
+  // 3. Render Benefits
+  end.innerHTML = `
+    <div class="end" style="margin-top: 40px; margin-bottom: 50px; width: 100%;">
+      <h2 style="font-size: 24px; font-weight: 700; margin-bottom: 25px; color: #001f3f;">${model.benefitsTitle || 'Benefits'}</h2>
+      <div style="display: flex; flex-direction: column; gap: 15px;">
+        ${model.benefits
+          .map(
+            (para) => `
+          <p style="color: #4d5765; text-align: justify; font-size: 16px; font-style: normal; font-weight: 400; line-height: 26px; margin: 0;">
+            ${para}
+          </p>
+        `
+          )
+          .join("")}
+      </div>
+    </div>
+  `;
+
+  // 4. Initialize interactions
+  initializeGallery();
+  initializeZoom();
+}
+
+function initializeGallery() {
+  const mainImage = document.getElementById("main-image");
+  const thumbnails = document.querySelectorAll(".thumbnail");
+
+  thumbnails.forEach((thumbnail) => {
+    thumbnail.addEventListener("click", () => {
+      mainImage.src = thumbnail.dataset.full;
+      thumbnails.forEach((t) => t.classList.remove("active"));
+      thumbnail.classList.add("active");
+    });
+  });
+}
+
+function initializeZoom() {
+  const container = document.querySelector(".main-image-container");
+  const img = document.getElementById("main-image");
+
+  if (container && img) {
+    container.addEventListener("mousemove", (e) => {
+      const { left, top, width, height } = container.getBoundingClientRect();
+      const x = ((e.clientX - left) / width) * 100;
+      const y = ((e.clientY - top) / height) * 100;
+
+      img.style.transformOrigin = `${x}% ${y}%`;
+      img.style.transform = "scale(2)";
+    });
+
+    container.addEventListener("mouseleave", () => {
+      img.style.transform = "scale(1)";
+      img.style.transformOrigin = "center center";
+    });
+  }
+}
 
 async function renderPDF(url, container) {
   // Set worker source
