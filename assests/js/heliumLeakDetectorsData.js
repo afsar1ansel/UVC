@@ -6,7 +6,7 @@ const heliumLeakDetectors = [
     title: "PFEIFFER ADIXEN ASM 310",
     description: "The compact, lightweight and portable helium leak detector solution. Ideal for maintenance applications, it offers high performance in a small footprint.",
     code: "ASM 310",
-    images: ["./assests/img/placeholder.png"],
+    images: ["./assests/img/products/heliumLeakDetectors/pfeiffer/ASM310.jpeg"],
     highlights: [
       "Ideal for maintenance applications",
       "Small and portable",
@@ -49,7 +49,7 @@ const heliumLeakDetectors = [
     title: "PFEIFFER ADIXEN ASM 340",
     description: "Reliable and high-performance leak detector designed for vacuum or sniffing leak detection under severe test conditions. Highly customizable to meet your specific individual needs.",
     code: "ASM 340",
-    images: ["./assests/img/placeholder.png"],
+    images: ["./assests/img/products/heliumLeakDetectors/pfeiffer/ASM340.jpeg"],
     highlights: [
       "Reliable and high-performance leak detection",
       "Easy operation and smart functions",
@@ -140,7 +140,7 @@ const heliumLeakDetectors = [
     title: "PFEIFFER ADIXEN ASM 390 / 392",
     description: "Rapid pump-down and short response times for large test objects. Fitted with a powerful high vacuum pump and a dry backing pump, they are the ideal tools for leak testing in clean environments.",
     code: "ASM 390 / 392",
-    images: ["./assests/img/placeholder.png"],
+    images: ["./assests/img/products/heliumLeakDetectors/pfeiffer/ASM390_393.jpeg"],
     highlights: [
       "Smart and user-friendly",
       "Superior performance and rapid testing",
@@ -201,7 +201,7 @@ const heliumLeakDetectors = [
     title: "PFEIFFER ADIXEN ASM 306 S",
     description: "The compact but powerful leak detector designed specifically for high-reliability sniffing leak detection in continuous operations.",
     code: "ASM 306 S",
-    images: ["./assests/img/placeholder.png"],
+    images: ["./assests/img/products/heliumLeakDetectors/pfeiffer/ASM306s.jpeg"],
     highlights: [
       "Compact and rugged design",
       "Smart and user-friendly",
