@@ -188,7 +188,9 @@ function updateModelView(model, parentProduct) {
 
   const seriesSubtitle = parentProduct.seriesId === "PFEIFFER-ADIXEN-ASM" 
     ? "PFEIFFER ADIXEN ASM SERIES" 
-    : "HELIUM LEAK DETECTOR";
+    : parentProduct.seriesId === "LEYBOLD-PHOENIX"
+      ? "LEYBOLD PHOENIX SERIES"
+      : "HELIUM LEAK DETECTOR";
 
   producter.innerHTML = `
     <div class="image-gallery" style="flex: 1; min-width: 300px;">

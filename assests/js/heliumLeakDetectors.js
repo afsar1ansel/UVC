@@ -22,6 +22,12 @@ function renderProducts() {
                 Pfeiffer Adixen Series
               </span>
             </div>
+          ` : product.seriesId === "LEYBOLD-PHOENIX" ? `
+            <div style="display: flex; justify-content: center; margin-bottom: 8px;">
+              <span class="badge" style="background-color: #001f3f; color: white; font-size: 11px; padding: 4px 10px; border-radius: 12px; font-weight: 600; text-transform: uppercase;">
+                Leybold Phoenix Series
+              </span>
+            </div>
           ` : ""}
           <p>${product.description}</p>
           <div style="display: flex; justify-content: center; align-items: center; margin-top: auto;">

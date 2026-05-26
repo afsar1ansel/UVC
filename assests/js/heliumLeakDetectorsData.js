@@ -232,12 +232,113 @@ const heliumLeakDetectors = [
     ]
   },
   {
-    id: "HLD-LEYBOLD-PHOENIX",
-    title: "LEYBOLD PHOENIX SERIES",
-    description: "Leybold Phoenix series leak detectors offering superior performance for industrial vacuum systems.",
-    code: "PHOENIX SERIES",
-    images: ["./assests/img/placeholder.png"],
-    features: ["Modular design", "Easy maintenance", "Comprehensive diagnostics"]
+    id: "HLD-LEYBOLD-PHOENIX-QUADRO",
+    seriesId: "LEYBOLD-PHOENIX",
+    title: "LEYBOLD PHOENIX QUADRO SERIES",
+    description: "The PHOENIX Quadro is a state-of-the-art leak detector designed for absolute accuracy, speed, and ease of use. Available in oil-sealed backing pump, dry scroll backing pump (Dry Plus), or modular console (Vario) options.",
+    code: "PHOENIX QUADRO",
+    images: [
+      "./assests/img/products/heliumLeakDetectors/leybold/phoenix_quadro.png",
+      "./assests/img/products/heliumLeakDetectors/leybold/phoenix_quadro_dry_plus.png",
+      "./assests/img/products/heliumLeakDetectors/leybold/phoenix_vario.png"
+    ],
+    highlights: [
+      "Detects very small leaks quickly and reliably",
+      "Very fast operational readiness and short response times",
+      "Convenient remote control via LEYASSIST",
+      "Innovative color touch display"
+    ],
+    benefitsTitle: "Benefits of the PHOENIX Quadro Series",
+    benefits: [
+      "The PHOENIX Quadro series consists of state-of-the-art leak detectors designed for absolute accuracy, speed, and ease of use in a wide variety of industrial and research applications.",
+      `<div class="variantBox" style="margin-top: 25px; background: #f8f9fa; padding: 20px; border-radius: 8px; border-left: 4px solid #0da574;">
+        <h4 style="color: #001f3f; font-weight: 700; margin-bottom: 10px;">PHOENIX Quadro</h4>
+        <p style="color: #4d5765; margin-bottom: 10px; font-size: 15px;">A portable helium leak detector with an oil-sealed backing pump, suitable for a large range of standard applications.</p>
+        <ul style="margin: 0; padding-left: 20px; color: #4d5765; font-size: 14px; line-height: 22px;">
+          <li>Highly reliable leak detection with oil-sealed backing pump</li>
+          <li>Rapid decontamination time and very fast operational readiness</li>
+          <li>Innovative color touch screen with simple, intuitive menu navigation</li>
+          <li>Flexible interfaces and easy data export via USB</li>
+        </ul>
+      </div>`,
+      `<div class="variantBox" style="margin-top: 20px; background: #f8f9fa; padding: 20px; border-radius: 8px; border-left: 4px solid #0da574;">
+        <h4 style="color: #001f3f; font-weight: 700; margin-bottom: 10px;">PHOENIX Quadro Dry Plus</h4>
+        <p style="color: #4d5765; margin-bottom: 10px; font-size: 15px;">High-performance dry helium leak detector delivering clean, oil-free test conditions, backed by Leybold's SCROLLVAC 3 Plus pump.</p>
+        <ul style="margin: 0; padding-left: 20px; color: #4d5765; font-size: 14px; line-height: 22px;">
+          <li>Completely oil-free backing pump system (SCROLLVAC 3 Plus)</li>
+          <li>Eliminates helium accumulation for zero background interference</li>
+          <li>Faster recovery after helium exposure and high test throughput</li>
+          <li>Excellent choice for cleanrooms and semiconductor applications</li>
+        </ul>
+      </div>`,
+      `<div class="variantBox" style="margin-top: 20px; background: #f8f9fa; padding: 20px; border-radius: 8px; border-left: 4px solid #ffc642;">
+        <h4 style="color: #001f3f; font-weight: 700; margin-bottom: 10px;">PHOENIX Vario</h4>
+        <p style="color: #4d5765; margin-bottom: 10px; font-size: 15px;">The smallest and most flexible variant of the PHOENIX 4 range. Designed without an integrated backing pump to allow custom configurations.</p>
+        <ul style="margin: 0; padding-left: 20px; color: #4d5765; font-size: 14px; line-height: 22px;">
+          <li>Extremely small footprint and very lightweight housing</li>
+          <li>Choose your backing pump freely based on process requirements (e.g. ECODRY plus, TRIVAC, SOGEVAC, SCROLLVAC plus)</li>
+          <li>Direct electronic control for SCROLLVAC plus, TRIVAC, or SOGEVAC SV series</li>
+          <li>Perfect for system integration and customized test benches</li>
+        </ul>
+      </div>`
+    ],
+    columns: ["PHOENIX Quadro", "PHOENIX Quadro Dry Plus", "PHOENIX Vario"],
+    technicalSpecifications: [
+      { parameter: "Test method", value: "Vacuum and sniffing leak detection" },
+      { parameter: "Smallest detectable helium leak rate (Vacuum operation)", value: "≤ 5 · 10⁻¹² mbar l/s" },
+      { parameter: "Smallest detectable helium leak rate (Sniffer mode)", value: "< 1 · 10⁻⁹ mbar l/s (*)" },
+      { parameter: "Smallest detectable hydrogen leak rate (Vacuum operation)", value: "≤ 1 · 10⁻⁸ mbar l/s" },
+      { parameter: "Smallest detectable hydrogen leak rate (Sniffer mode)", value: "< 1 · 10⁻⁷ mbar l/s" },
+      { parameter: "Units of measurement (selectable)", value: "Pressure: mbar, Pa, atm, Torr<br>Leak rate: mbar · l/s, Pa · m³/s, Torr · l/s, atm · cc/sec, sft³/yr<br>Sniffer mode: ppm, g/a eq, oz/yr eq" },
+      { parameter: "Leak rate display area", value: "1 · 10⁻¹² to 1 · 10⁻¹ mbar l/s" },
+      { parameter: "Max. inlet pressure (standard / partial flow pump)", value: "15 mbar / 1000 mbar" },
+      { parameter: "Pumping speed during evacuation process (50 Hz)", values: ["2.5 m³/h", "3.0 m³/h", "Depending on backing pump"] },
+      { parameter: "Pumping speed during evacuation process (60 Hz)", values: ["3.0 m³/h", "3.0 m³/h", "Depending on backing pump"] },
+      { parameter: "Helium pumping speed (vacuum mode, FINE Modus)", value: "1.2 l/s" },
+      { parameter: "Helium pumping speed (vacuum mode, ULTRA Modus)", value: "> 3.1 l/s" },
+      { parameter: "Time constant of leak signal (63% final value)", value: "< 1 s" },
+      { parameter: "Run-up time (after switching on)", value: "≤ 110 s" },
+      { parameter: "Mass spectrometer", value: "180° magnetic sector field" },
+      { parameter: "Ion source", value: "2 yttrium/iridium long-term cathodes" },
+      { parameter: "Detectable masses", value: "2, 3 and 4 amu" },
+      { parameter: "Backing pump flange", values: ["-", "-", "2 x DN 25 ISO-KF"] },
+      { parameter: "Inlet flange", value: "25 ISO-KF" },
+      { parameter: "Dimensions (W x H x D)", values: ["495 x 475 x 318 mm", "495 x 475 x 318 mm", "486 x 380 x 313 mm"] },
+      { parameter: "Weight approx.", values: ["41 kg", "42 kg", "25 kg"] },
+      { parameter: "Available languages", value: "EN, DE, ZH, JA, KO, RU, FR, IT, ES & POL" }
+    ]
+  },
+  {
+    id: "HLD-LEYBOLD-PHOENIX-MOBILIS",
+    seriesId: "LEYBOLD-PHOENIX",
+    title: "LEYBOLD PHOENIX MOBILIS",
+    description: "The PHOENIX MOBILIS Ultra is a highly sensitive handheld helium leak detector designed for simple, one-handed operation. Operating perfectly even in environments showing high magnetic fields (such as running MRI systems), it offers exceptional flexibility and performance.",
+    code: "PHOENIX MOBILIS",
+    images: ["./assests/img/products/heliumLeakDetectors/leybold/phoenix_mobilis.png"],
+    highlights: [
+      "Designed for simple, intuitive one-handed operation",
+      "Highly sensitive to ammonia, helium, and hydrogen",
+      "Magnetic field resistant (fully operational while MRI is running)",
+      "Up to 20 hours of operation on a fully charged lithium-ion battery"
+    ],
+    benefitsTitle: "Benefits of the PHOENIX MOBILIS Ultra",
+    benefits: [
+      "The PHOENIX MOBILIS Ultra offers a versatile and inexpensive leak detection solution both on equipment and on consumables/parts, delivering exceptional reliability for field service, plant maintenance, and quality control.",
+      "**Ideal for the car industry & multi-purpose applications:** Anywhere where the leak tightness of a specific gas is important, this device offers a great option to make sure your application is running at the same quality at all times. Its major use cases stretch from R&D to manufacturing, quality assurance, and maintenance departments (including industrial processes, automotive manufacturing, applications using refrigerants, and MRI).",
+      "**Easy to use one-handed leak detector:** The PHOENIX MOBILIS Ultra is designed to be easy to use with just one hand, allowing you to check for leaks in hard-to-reach positions of your equipment. It features a modern, large LCD display that allows easy intuitive navigation and good visibility overall, an audible alarm and flashing display for clear leak indication, and storage of your readings on the device.",
+      "**Highly sensitive & magnetic field resistant:** The PHOENIX MOBILIS Ultra detects leaks at low levels, rapidly and effectively indicating the presence of almost any gas or gas mixture (and is particularly accurate to ammonia, helium, or hydrogen). Maximum sensitivity is provided through small internal flow rates. In addition, it operates perfectly in environments with a high magnetic field, such as in MRI chambers, and can be used without interruptions, even while the MRI is running.",
+      "**Additional key advantages:** When switched on, the PHOENIX MOBILIS Ultra automatically zeros to the ambient surrounding air to make sure it is ready to go right after startup. It includes a large choice of readings in cc/sec, g/yr, mg/m³ so you can decide what's best for your testing needs, and operates for up to 20 hours on a fully charged lithium-ion battery."
+    ],
+    technicalSpecifications: [
+      { parameter: "Test method", value: "Sniffing / Handheld leak detection" },
+      { parameter: "Detectable gases", value: "Almost any gas or gas mixture (particularly accurate to Ammonia, Helium, Hydrogen)" },
+      { parameter: "Battery life", value: "Up to 20 hours on a fully charged battery" },
+      { parameter: "Battery type", value: "Fully rechargeable Lithium-ion battery" },
+      { parameter: "Selectable units", value: "cc/sec, g/yr, mg/m³" },
+      { parameter: "Key features", value: "Audible alarm, flashing display, readings storage, automatic zeroing on startup, MRI magnetic field resistance" },
+      { parameter: "Display type", value: "Modern large LCD display with intuitive navigation" },
+      { parameter: "Inlet flange / probe connector", value: "Quick connect sniffing probe input" }
+    ]
   },
   {
     id: "HLD-ACCESSORIES",
