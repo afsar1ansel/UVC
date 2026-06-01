@@ -341,14 +341,6 @@ const heliumLeakDetectors = [
     ]
   },
   {
-    id: "HLD-ACCESSORIES",
-    title: "Accessories",
-    description: "Essential accessories for helium leak detectors including sniffer probes, hoses, and connectors.",
-    code: "HLD ACCESSORIES",
-    images: ["./assests/img/placeholder.png"],
-    features: ["Wide compatibility", "Durable materials", "Optimized performance"]
-  },
-  {
     id: "HLD-CALIBRATED-LEAKS",
     title: "CALIBRATED LEAKS",
     description: "Precision calibrated leaks for verification and calibration of helium leak detection systems.",
@@ -361,7 +353,7 @@ const heliumLeakDetectors = [
     title: "About helium leak Testing",
     description: "Reaching a required vacuum level is often hindered by system leakages. Reducing the chamber’s gas pressure triggers the release of internal molecules or allows external air to enter through structural flaws like cracks, stalling the evacuation process. Identifying and repairing these sources via leak detection techniques is critical for maintaining system integrity.",
     code: "ABOUT HELIUM LEAK TEST METHODS",
-    images: ["./assests/img/placeholder.png"],
+    images: ["./assests/img/products/heliumLeakDetectors/aboutHeliumLeak.png"],
     features: ["System integrity check", "Leak source identification", "Evacuation optimization"],
     pdf: "./assests/img/products/heliumLeakDetectors/About helium leak test methods.pdf",
     viewPdf: "./assests/img/products/heliumLeakDetectors/About helium leak test methods(page).pdf"
