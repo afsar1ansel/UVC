@@ -345,8 +345,10 @@ const heliumLeakDetectors = [
     title: "CALIBRATED LEAKS",
     description: "Precision calibrated leaks for verification and calibration of helium leak detection systems.",
     code: "CALIBRATED LEAKS",
-    images: ["./assests/img/placeholder.png"],
-    features: ["NIST traceable", "High stability", "Various leak rates available"]
+    images: ["./assests/img/products/heliumLeakDetectors/calibratedLeaks.png"],
+    features: ["NIST traceable", "High stability", "Various leak rates available"],
+    pdf: "./assests/img/products/heliumLeakDetectors/calibrated_leaks.pdf",
+    viewPdf: "./assests/img/products/heliumLeakDetectors/calibrated_leaks.pdf"
   },
   {
     id: "HLD-ABOUT-HELIUM-LEAK-DETECTORS",
