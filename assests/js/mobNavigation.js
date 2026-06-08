@@ -166,7 +166,7 @@ document.addEventListener("DOMContentLoaded", function () {
                           <li><a class="dropdown-item" href="heliumDetail.html?id=HLD-ASM-306S">ASM 306 S</a></li>
                         </ul>
                       </li>
-                      <li><a class="dropdown-item" href="heliumDetail.html?id=HLD-LEYBOLD-PHOENIX">LEYBOLD PHOENIX SERIES</a></li>
+                      <li><a class="dropdown-item" href="heliumDetail.html?id=HLD-LEYBOLD-PHOENIX-QUADRO">LEYBOLD PHOENIX SERIES</a></li>
                       <li><a class="dropdown-item" href="heliumDetail.html?id=HLD-CALIBRATED-LEAKS">CALIBRATED LEAKS</a></li>
                       <li><a class="dropdown-item" href="heliumDetail.html?id=HLD-ABOUT-HELIUM-LEAK-DETECTORS">About helium leak detectors</a></li>
                     </ul>
