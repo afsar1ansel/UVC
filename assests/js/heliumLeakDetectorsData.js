@@ -359,6 +359,16 @@ const heliumLeakDetectors = [
     features: ["System integrity check", "Leak source identification", "Evacuation optimization"],
     pdf: "./assests/img/products/heliumLeakDetectors/About helium leak test methods.pdf",
     viewPdf: "./assests/img/products/heliumLeakDetectors/About helium leak test methods(page).pdf"
+  },
+  {
+    id: "HLD-HELIUM-LEAK-TEST-SYSTEM",
+    title: "Helium Leak Test Systems",
+    description: "High-performance Helium Leak Test Systems designed for fast, automated, and non-destructive industrial leak testing of various products and components.",
+    code: "HELIUM LEAK TEST SYSTEMS",
+    images: ["./assests/img/products/heliumLeakTestSystem/heliumLeakTestSystem.png"],
+    features: ["Automated industrial test systems", "High-accuracy mass spectrometer leak testing", "Optimized cycle times"],
+    pdf: "./assests/img/products/heliumLeakTestSystem/HLTstations.pdf",
+    viewPdf: "./assests/img/products/heliumLeakTestSystem/HLTstations.pdf"
   }
 ];
 

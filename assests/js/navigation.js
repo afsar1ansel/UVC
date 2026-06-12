@@ -150,7 +150,7 @@ nav.innerHTML = `
           <li><a class="dropdown-item" href="heliumDetail.html?id=HLD-ABOUT-HELIUM-LEAK-DETECTORS">About helium leak detectors</a></li>
         </ul>
       </li>
-      <li><a class="dropdown-item" href="#">Helium Test Systems</a></li>
+      <li><a class="dropdown-item" href="heliumDetail.html?id=HLD-HELIUM-LEAK-TEST-SYSTEM">Helium Leak Test Systems</a></li>
       <li><a class="dropdown-item" href="#">Vacuum Components & Supplies</a></li>
     </ul>
   </div>
