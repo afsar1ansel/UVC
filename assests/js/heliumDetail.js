@@ -423,24 +423,61 @@ async function renderPDF(url, container) {
 
       const croppedHeight = contentBottom - contentTop;
 
-      // 3. Create the final canvas that gets added to the webpage
+      // 3. Create a wrapper container for this PDF page (to position textLayer absolute relative to canvas)
+      const pageWrapper = document.createElement('div');
+      pageWrapper.className = 'pdf-page-wrapper';
+      pageWrapper.style.width = `${viewport.width}px`;
+      pageWrapper.style.height = `${croppedHeight}px`;
+
+      // 4. Create the final canvas that gets added to the pageWrapper
       const canvas = document.createElement('canvas');
       canvas.className = 'pdf-page-canvas';
-      canvas.style.display = 'block';
-      canvas.style.margin = '0 auto'; // Center it
+      canvas.style.width = '100%';
+      canvas.style.height = '100%';
       canvas.width = viewport.width;
       canvas.height = croppedHeight;
       
       const context = canvas.getContext('2d');
       
-      // 4. Draw only the auto-detected inner portion of the canvas
+      // 5. Draw only the auto-detected inner portion of the canvas
       context.drawImage(
         tempCanvas, 
         0, contentTop, viewport.width, croppedHeight, 
         0, 0, viewport.width, croppedHeight
       );
+      pageWrapper.appendChild(canvas);
 
-      container.appendChild(canvas);
+      // 6. Create the Text Layer container div
+      const textLayerDiv = document.createElement('div');
+      textLayerDiv.className = 'textLayer';
+      textLayerDiv.style.top = `-${contentTop}px`;
+      textLayerDiv.style.width = `${viewport.width}px`;
+      textLayerDiv.style.height = `${viewport.height}px`;
+      textLayerDiv.style.setProperty('--scale-factor', scale);
+      pageWrapper.appendChild(textLayerDiv);
+
+      // 7. Render Text Content into the Text Layer container
+      try {
+        const textContent = await page.getTextContent();
+        if (typeof pdfjsLib.renderTextLayer === 'function') {
+          await pdfjsLib.renderTextLayer({
+            textContentSource: textContent,
+            container: textLayerDiv,
+            viewport: viewport,
+          }).promise;
+        } else if (pdfjsLib.TextLayer) {
+          const textLayer = new pdfjsLib.TextLayer({
+            textContentSource: textContent,
+            container: textLayerDiv,
+            viewport: viewport,
+          });
+          await textLayer.render();
+        }
+      } catch (err) {
+        console.warn("Failed to render text layer for page " + pageNum, err);
+      }
+
+      container.appendChild(pageWrapper);
     }
   } catch (error) {
     console.error("Error rendering PDF:", error);
