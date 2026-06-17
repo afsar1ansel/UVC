@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (product) {
     const itemCodeHeader = document.getElementById("item-code-header");
     if (itemCodeHeader) {
-      itemCodeHeader.innerHTML = `<h1 class="item-code-heading" style="font-size: 1.5rem; background: #ffcc00; padding: 5px 15px; border-radius: 4px; font-weight: bold; margin-bottom: 0; border-left: none;">${product.code}</h1>`;
+      itemCodeHeader.innerHTML = `<h1 class="item-code-heading" style="font-size: 28px; background: #ffcc00; padding: 5px 15px; border-radius: 4px; font-weight: bold; margin-bottom: 0; border-left: none;">${product.code}</h1>`;
     }
 
     const downloadContainer = document.getElementById("download-header-container");
