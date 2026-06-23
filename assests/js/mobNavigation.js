@@ -172,7 +172,13 @@ document.addEventListener("DOMContentLoaded", function () {
                     </ul>
                   </li>
                   <li><a class="dropdown-item" href="heliumDetail.html?id=HLD-HELIUM-LEAK-TEST-SYSTEM">Helium Test Systems</a></li>
-                  <li><a class="dropdown-item" href="#">Vacuum Components & Supplies</a></li>
+                  <li class="dropdown">
+                    <a class="dropdown-item dropdown-toggle" href="#">Vacuum Components & Supplies</a>
+                    <ul class="dropdown-menu" style="background-color: rgb(221, 212, 230);">
+                      <li><a class="dropdown-item" href="heliumDetail.html?id=VACUUM-COMPONENTS">vacuum Components</a></li>
+                      <li><a class="dropdown-item" href="#">Supplies</a></li>
+                    </ul>
+                  </li>
                 </ul>
               </li>
               <li class="nav-item dropdown">

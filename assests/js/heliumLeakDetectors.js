@@ -6,7 +6,7 @@ function renderProducts() {
   const productGrid = document.getElementById("productGrid");
   if (!productGrid || !window.heliumLeakDetectors) return;
 
-  const products = window.heliumLeakDetectors.filter(p => p.id !== 'HLD-HELIUM-LEAK-TEST-SYSTEM');
+  const products = window.heliumLeakDetectors.filter(p => p.id !== 'HLD-HELIUM-LEAK-TEST-SYSTEM' && p.id !== 'VACUUM-COMPONENTS');
 
   productGrid.innerHTML = `
     <div class="gridBox">

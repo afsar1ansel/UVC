@@ -369,6 +369,16 @@ const heliumLeakDetectors = [
     features: ["Automated industrial test systems", "High-accuracy mass spectrometer leak testing", "Optimized cycle times"],
     pdf: "./assests/img/products/heliumLeakTestSystem/HLTstations.pdf",
     viewPdf: "./assests/img/products/heliumLeakTestSystem/HLTstations.pdf"
+  },
+  {
+    id: "VACUUM-COMPONENTS",
+    title: "Vacuum Components",
+    description: "High-quality vacuum components designed for vacuum systems, ensuring optimal sealing, connection, and stability.",
+    code: "VACUUM COMPONENTS",
+    images: [],
+    features: [],
+    pdf: "./assests/img/products/VACUUM COMPONENTS&supplies/VACUUM COMPONENTS.docx.pdf",
+    viewPdf: "./assests/img/products/VACUUM COMPONENTS&supplies/VACUUM COMPONENTS.docx.pdf"
   }
 ];
 
