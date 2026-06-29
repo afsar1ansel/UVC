@@ -176,7 +176,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <a class="dropdown-item dropdown-toggle" href="#">Vacuum Components & Supplies</a>
                     <ul class="dropdown-menu" style="background-color: rgb(221, 212, 230);">
                       <li><a class="dropdown-item" href="heliumDetail.html?id=VACUUM-COMPONENTS">vacuum Components</a></li>
-                      <li><a class="dropdown-item" href="#">Supplies</a></li>
+                      <li><a class="dropdown-item" href="supplies.html">Supplies</a></li>
                     </ul>
                   </li>
                 </ul>
