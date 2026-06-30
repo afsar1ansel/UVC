@@ -240,5 +240,131 @@ window.suppliesProducts = [
       "Hospital Vacuum Units",
       "Medical gas distribution systems (Certified by independent testing)"
     ]
+  },
+  {
+    id: "spinmeister-st-ct-series",
+    code: "SpinMeister ST / CT Series",
+    title: "SpinMeister® ST/CT Series: Centrifugal Precleaner Filter",
+    images: ["./assests/img/products/VACUUM COMPONENTS&supplies/supplies/spinmeister.png"],
+    tagline: "Centrifugal Precleaner Filter for Blowers & Vacuum Pumps",
+    description: "Solberg's Spinmeister series offers exceptional filtration protection for blower and vacuum pump applications without the need for a replacement filter element. Spinmeister air cleaners uses centrifugal separation to achieve efficiency ratings of 85% for particles of 15 microns in size.<br><br>The Spinmeister can be used as a precleaner to prevent clogging of the primary filter. When paired with a primary particulate filter, the entire filtration system performs well beyond the capabilities of traditional single filter installations.<br><br>The Spinmeister series for vacuum pump systems delivers high performance which stems from Solberg's advanced engineering and material choices. This ensures effective particle capture, ease of serviceability, and longevity of the vacuum pump system. Perfect for CNC wood routing, vacuum hold down, pneumatic conveying, and other applications where powders and bulk solids can overwhelm particulate filters.<br><br><strong>Solberg's SpinMeister ST/CT Series:</strong><br><ul style=\"margin-top: 10px; padding-left: 20px; color: #4d5765; font-size: 15px; line-height: 1.6;\"><li>Prevents clogging of primary filter</li><li>Extends process run times</li><li>Easy to service</li><li>Robust design</li></ul><br><a href=\"https://www.solbergmfg.com/pages/contact-us\" target=\"_blank\">Contact us</a> for more information on our SpinMeister ST/CT series. We're here to help you configure your filtration products to meet your application requirements.",
+    highlights: [
+      "Extreme duty filtration for high dust environments",
+      "Excellent removal for short fibers",
+      "SpinMeister® Precleaner 85%+ efficiency standard to 15 microns",
+      "Durable molded fiber filled composite material",
+      "Pressure drop reduced compared to typical precleaners",
+      "Bucket made from shatter resistant polycarbonate",
+      "Large dirt holding capacity",
+      "Clip release band for easy maintenance",
+      "Black powder coat carbon steel drop down bucket (CT)",
+      "Shatter-resistant polycarbonate drop down bucket (ST)"
+    ],
+    technicalSpecifications: [
+      { parameter: "Vacuum Rating", value: "coarse vacuum service*" },
+      { parameter: "Polyester", value: "99%+ removal efficiency standard to 5 micron" },
+      { parameter: "Paper", value: "99%+ removal efficiency standard to 2 micron" }
+    ],
+    options: [
+      {
+        title: "Available Options & Accessories",
+        points: [
+          "SpinMeisters® available in polished aluminum",
+          "Various media",
+          "Spool piece extender (select models)",
+          "Taps for gauge and mounting brackets",
+          "Pressure drop gauge",
+          "Carbon steel bucket versions"
+        ]
+      }
+    ],
+    applications: [
+      "Pneumatic Conveying Systems",
+      "Vacuum Pumps & Systems",
+      "Woodworking",
+      "Screw Compressors",
+      "Plastics",
+      "Material Handling Systems"
+    ]
+  },
+  {
+    id: "rst-series",
+    code: "RST Series",
+    title: "RST Series: Reverse Pulse Vacuum Pump Filters",
+    images: ["./assests/img/products/VACUUM COMPONENTS&supplies/supplies/RST-series.png"],
+    tagline: "Reverse Pulse Vacuum Pump Filters for Extreme Dust Load Applications",
+    description: "Solberg's RST Series reverse pulse industrial filter is designed for extreme dust load applications. Similar to a reverse pulse style bag house, this heavy-duty vacuum pump filter incorporates split-second bursts of pressurized air to create powerful shock waves that clean the filter element. Quick pulses cause particulate accumulated on the filter element to release and collect in the drop-out area of the filter housing. Pulses can be repeated as required and can occur \"in-process\" because the split-second air bursts have minimal effect on system pressure. Our self-cleaning air filter can be manually controlled or automated based on user preference. (Optional reverse pulse kit available.)<br><br><strong>Solberg's RST Series:</strong><br><ul style=\"margin-top: 10px; padding-left: 20px; color: #4d5765; font-size: 15px; line-height: 1.6;\"><li>Extends the service life of your filter element</li><li>High-efficiency filtration offers enhanced equipment protection</li><li>See-through design allows for instant visual inspection</li><li>Optional automation allows for easy maintenance</li><li>Available extended bucket increases capacity</li></ul><br><a href=\"https://www.solbergmfg.com/pages/contact-us\" target=\"_blank\">Contact us</a> for more information on our Reverse Pulse Vacuum series. We are happy to guide you to the right filtration products for your application.",
+    highlights: [
+      "See-through bucket made from shatter resistant polycarbonate material",
+      "High tensile strength permits dimensional stability",
+      "Integrated inlet baffle",
+      "Tap on center of cast head for optional reverse pulse kit air pulse rod:",
+      "3/8\" NPSC tap on 1\" sizes, 3/4\" NPSC tap on 2 - 4\" sizes",
+      "Sturdy swing \"claw\" bolts clamps bucket to head"
+    ],
+    technicalSpecifications: [],
+    options: [
+      {
+        title: "Available Options & Accessories",
+        points: [
+          "Carbon steel bucket (RCT)",
+          "Extended bucket (RSTD)",
+          "Alternate media"
+        ]
+      }
+    ],
+    applications: [
+      "Ash Handling",
+      "Cement",
+      "Paper Processing",
+      "Pneumatic Conveying Systems",
+      "Vacuum Pumps & Systems",
+      "Woodworking",
+      "Routing Industry"
+    ]
+  },
+  {
+    id: "xcsl-xpsl-series",
+    code: "XCSL / XPSL Series",
+    title: "XCSL / XPSL Series: ATEX Filters for Vacuum Service",
+    images: ["./assests/img/products/VACUUM COMPONENTS&supplies/supplies/XCSL:XPSL-Series.png"],
+    tagline: "ATEX Certified Filters for Potentially Explosive Vacuum Environments",
+    description: "Explosions can occur within applications such as pharmaceutical, chemical, metal, food, plastics, coal, and woodworking industries. Solberg's XCSL Series ATEX filters for vacuum pumps are designed for deployment in potentially explosive environments.<br><br>Our ATEX filters meet the European Union's requirements listed in ATEX Directive 2014/34/EU, and are tested, certified, and bear the 'Ex' and 'CE' marks required.<br><br><strong>Solberg's ATEX Vacuum Filters:</strong><br><ul style=\"margin-top: 10px; padding-left: 20px; color: #4d5765; font-size: 15px; line-height: 1.6;\"><li>Mitigate the risk of explosion in gaseous and dusty environments</li><li>Ideal for both wet and dry vacuum pump technologies</li><li>Protects your pump from ingesting abrasive dust particles</li><li>Right angle configuration offers easy access to the replaceable filter element</li><li>Threaded connections available in 3/8 - 6 inches</li><li>Flanged connections are available in sizes 4 inches and above</li></ul><br><a href=\"https://www.solbergmfg.com/pages/contact-us\" target=\"_blank\">Contact us</a> for more information on our ATEX vacuum filter series. We are happy to guide you to the right filtration products for your application.",
+    highlights: [
+      "Seamless drawn housings designed for low pressure drop",
+      "O-ring seal",
+      "Stainless steel construction",
+      "Stainless steel torsion clips for durability",
+      "ATEX nameplate standard"
+    ],
+    technicalSpecifications: [
+      { parameter: "Vacuum Rating", value: "medium vacuum service*" },
+      { parameter: "Temp (continuous)", value: "min -15°F (-26°C) max 220°F (104°C)" },
+      { parameter: "Filter change out differential", value: "15-20\" H2O (37-50 mbar) over initial Δ P" },
+      { parameter: "Polyester", value: "99%+ removal efficiency standard to 5 micron" },
+      { parameter: "Paper", value: "99%+ removal efficiency standard to 2 micron" }
+    ],
+    options: [
+      {
+        title: "Available Options & Accessories",
+        points: [
+          "Vacuum gauge",
+          "Higher holding capacity configurations available (select models)",
+          "Multiple finishes available",
+          "Support brackets",
+          "Alternative top-to-canister fastening system for low pressure or pulsating systems"
+        ]
+      }
+    ],
+    applications: [
+      "Pharmaceutical Industry",
+      "Chemical Industry",
+      "Metal Processing",
+      "Food Processing",
+      "Plastics Industry",
+      "Coal Handling",
+      "Woodworking Industry",
+      "Explosive Environments"
+    ]
   }
 ];
