@@ -1,5 +1,6 @@
 
 
+var pathPrefix = window.location.pathname.includes('/filters/') ? '../' : '';
 const foot = document.getElementById("foot")
 
 const box = document.createElement("div")
@@ -54,6 +55,23 @@ box.innerHTML = ` <div class="footUp">
           <img src="./assests/img/whapp1.png" alt=""></div>
         </div>`;
 foot.appendChild(box)
+
+// Prefix relative links and images for subpages
+if (pathPrefix) {
+  box.querySelectorAll('a[href]').forEach(a => {
+    const href = a.getAttribute('href');
+    if (href && !href.startsWith('http') && !href.startsWith('#') && !href.startsWith('javascript:')) {
+      a.setAttribute('href', pathPrefix + href);
+    }
+  });
+  box.querySelectorAll('img[src]').forEach(img => {
+    const src = img.getAttribute('src');
+    if (src && !src.startsWith('http') && !src.startsWith('data:')) {
+      const cleanSrc = src.startsWith('./') ? src.slice(2) : src;
+      img.setAttribute('src', pathPrefix + cleanSrc);
+    }
+  });
+}
 
 
 

@@ -366,5 +366,192 @@ window.suppliesProducts = [
       "Woodworking Industry",
       "Explosive Environments"
     ]
+  },
+  {
+    id: "sts-series",
+    code: "STS Series",
+    title: "STS Series: Straight Through Liquid Separator",
+    images: ["./assests/img/products/VACUUM COMPONENTS&supplies/liquid&mistRemoval/STS_Series.png"],
+    tagline: "Straight Through Liquid Separator for Vacuum Systems",
+    description: "Inlet air with potentially harmful liquid and large particulate enters the housing and is separated by a baffle mechanism and directional air flow changes. The larger particles and liquid drop down and collect at the bottom of the separator. The float capsule within the separator screen rises with the liquid level until max capacity and limits the flow, thereby protecting the pump from damage.",
+    highlights: [
+      "Compact design for space restrictions; min. service area",
+      "Inlet above element for extended element life & maintenance intervals",
+      "Corrosive resistant cast aluminum top with machined connections and integrated baffle design",
+      "Shatter-resistant polycarbonate drop down bucket",
+      "Stainless steel float capsule for emergency shut-off",
+      "Stainless steel perforated float tube (SS expanded metal on 1\" to 1 1/2\")",
+      "Clamp style swing bolts on 3\" & 4\" standard",
+      "1\" drain"
+    ],
+    technicalSpecifications: [
+      { parameter: "Vacuum Rating", value: "medium vacuum service" },
+      { parameter: "Temp (continuous)", value: "min -15°F (-26°C) max 220°F (104°C)" }
+    ],
+    options: [
+      {
+        title: "Available Options & Accessories",
+        points: [
+          "Cast head protective coatings",
+          "Heavy duty carbon steel buckets available (CTS Series)",
+          "Clamp style swing bolts on 1\" to 2 1/2\"",
+          "Spool piece extender",
+          "Taps for gauges and mounting brackets",
+          "Pressure drop gauge"
+        ]
+      }
+    ],
+    applications: [
+      "Soil Venting/Remediation",
+      "Vacuum Pumps & Systems",
+      "Food Processing",
+      "Chip Processing"
+    ]
+  },
+  {
+    id: "lrs-series",
+    code: "LRS Series",
+    title: "LRS Series: Right Angle Liquid Separator",
+    images: ["./assests/img/products/VACUUM COMPONENTS&supplies/liquid&mistRemoval/LRS_Series.png"],
+    tagline: "Right Angle Liquid Separator for Vacuum Systems",
+    description: "The inlet air, with liquids and particulate that are potentially harmful to the vacuum pump, enters the highly efficient vacuum filter and is separated by an integrated baffle. The larger particles and liquid drop down to the large capacity lower chamber. The lower chamber has significant liquid/slurry holding capacity. The final stage has a replaceable filter element for particulate that is 99+% efficient before it reaches the vacuum pump.",
+    highlights: [
+      "Corrosive resistant blue powder coat carbon steel",
+      "Integrated baffle",
+      "Expansion chamber",
+      "1/4\" NPSC inlet/outlet taps (select models)",
+      "1\" NPSC drain and sight port (1\" BSPP)",
+      "Simplified vacuum package: 2 functions in 1 (liquid separator & inlet air filter)",
+      "Significant liquid/slurry holding capacity",
+      "Prevents emulsification of oil in oil lubricated systems"
+    ],
+    technicalSpecifications: [
+      { parameter: "Vacuum Rating", value: "rough to medium vacuum service*" },
+      { parameter: "Filter change out differential", value: "15-20\" H2O (37-50 mbar) over initial Δ P" },
+      { parameter: "Polyester", value: "99%+ particulate removal efficiency to 5 micron" }
+    ],
+    options: [
+      {
+        title: "Available Options & Accessories (ATEX Available)",
+        points: [
+          "ASME rated vessels",
+          "Stainless steel construction & various finishes",
+          "Various media",
+          "Extended bucket for additional holding capacity",
+          "Preseparator stainless steel demister",
+          "Vacuum gauges",
+          "Drain packages",
+          "Support legs",
+          "For larger flows, ask about our Knockout Separator Series"
+        ]
+      }
+    ],
+    applications: [
+      "Chemical Processing",
+      "Pharmaceutical Industry",
+      "Vacuum Pumps & Systems",
+      "Food Processing",
+      "Chip Processing",
+      "Air process systems to separate water or solvents before air reaches the pump"
+    ]
+  },
+  {
+    id: "knockout-tank-series",
+    code: "Knockout Tank Series",
+    title: "Knockout Tank Series: Multistage Separator",
+    images: ["./assests/img/products/VACUUM COMPONENTS&supplies/liquid&mistRemoval/KnockoutTankSeries.png"],
+    tagline: "Multistage Separator for Vacuum Systems",
+    description: "Solberg’s Knockout series is a heavy duty multistage liquid and particulate separator to protect vacuum pumps from harmful contaminants. This turn-key solution is readily available and easily configured. Multiple separator pack options are available and adjustable legs are standard for easy installation.",
+    highlights: [
+      {
+        title: "Ports",
+        points: [
+          "2 - 1\" sight glass ports with sight glasses (low/high level)",
+          "1\" upper chamber drain port",
+          "1/4\" plugged differential ports on inlet and outlet",
+          "1/2\" plugged equalization port for use with pneumatic drain system"
+        ]
+      },
+      {
+        title: "Legs",
+        points: [
+          "6 position adjustable legs",
+          "Pre drilled to accept pneumatic drain system option",
+          "Predrilled floor anchor holes",
+          "Legs ship in lowest position"
+        ]
+      },
+      {
+        title: "Other Features",
+        points: [
+          "Nameplate",
+          "2\" drain with brass ball valve included",
+          "Lifting lugs on the tank body"
+        ]
+      }
+    ],
+    technicalSpecifications: [],
+    applications: [],
+    options: [
+      {
+        title: "Available Options & Accessories",
+        points: [
+          "Flange adapters",
+          "STS Series - Benefits:",
+          "  • Prohibit liquid and debris from damaging vacuum valves & pumps",
+          "  • Easy visual inspection with see-through housing",
+          "  • Minimize piping costs with \"T\" style configuration",
+          "  • Compact design for space restricted work areas",
+          "  • Shuts off flow to prevent liquid bypass"
+        ]
+      }
+    ]
+  },
+  {
+    id: "dsp-series",
+    code: "DSP Series",
+    title: "DSP Series: Automatic Pneumatic Drain System",
+    images: ["./assests/img/products/VACUUM COMPONENTS&supplies/liquid&mistRemoval/dps_series.png"],
+    tagline: "Automatic Pneumatic Drain System for Vacuum Systems",
+    description: "Solberg’s DSP Series automatic drain systems for knockout pots are commonly installed with liquid separators, vacuum receiver tanks, vacuum jacketed vessels, and vapor condensing vacuum vessels.<br><br>Our automatic drain systems protect your vacuum pump by allowing collected liquids and slurries to be removed without disrupting your process. We design our systems to minimize vacuum level fluctuations during the drain sequence using valves and compressed air to pneumatically evacuate liquids or slurries captured by the knockout pot or vacuum vessel.<br><br>Contact us for more information on our Pneumatic Drain System series. We are happy to guide you to the right filtration products for your application.",
+    highlights: [
+      {
+        title: "Solberg’s DSP Series Benefits",
+        points: [
+          "Automates critical maintenance processes",
+          "Lessens the requirement for maintenance personnel to service your equipment",
+          "Eliminates transfer pump problems by using compressed air for purging liquids",
+          "Reduces re-entrainment with a separate liquid holding tank",
+          "Minimizes vacuum level fluctuations with integrated vacuum equalization technology"
+        ]
+      },
+      {
+        title: "Key Features",
+        points: [
+          "Meets NFPA 99 requirements for vacuum filtration",
+          "Operating pressure range: atmospheric to full vacuum",
+          "ULPA - UL media - 99.995% @ 0.1 micron; Low air to media ratio minimized pressure loss for optimal pump performance; High dirt holding capacity",
+          "Temp (continuous): min -15°F (-26°C) max 220°F (104°C)",
+          "Corrosive resistant aluminum cast head",
+          "Carbon Steel Hardware",
+          "Brass valve and fittings for contaminated liquid release",
+          "Glass drain flask for easy removal and sterilization",
+          "\"Easy Read\" pressure drop indicator gauge",
+          "Bucket made from shatter resistant polycarbonate",
+          "Biohazard label"
+        ]
+      }
+    ],
+    technicalSpecifications: [
+      { parameter: "Operating Pressure Range", value: "atmospheric to full vacuum" },
+      { parameter: "Temp (continuous)", value: "min -15°F (-26°C) max 220°F (104°C)" }
+    ],
+    options: [],
+    applications: [
+      "Liquid Separators / Knockout Pots",
+      "Vacuum Receiver Tanks",
+      "Vacuum Jacketed Vessels",
+      "Vapor Condensing Vacuum Vessels"
+    ]
   }
 ];

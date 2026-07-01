@@ -1,3 +1,4 @@
+var pathPrefix = window.location.pathname.includes('/filters/') ? '../' : '';
 const nav = document.getElementById("navBarBox");
 
 nav.innerHTML = `
@@ -155,7 +156,14 @@ nav.innerHTML = `
         <a class="dropdown-item dropdown-toggle" href="#">Vacuum Components & Supplies</a>
         <ul class="dropdown-menu">
           <li><a class="dropdown-item" href="heliumDetail.html?id=VACUUM-COMPONENTS">Vacuum Components</a></li>
-          <li><a class="dropdown-item" href="supplies.html">Supplies</a></li>
+          <li class="dropdown">
+            <a class="dropdown-item dropdown-toggle" href="#">Filters</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="filters/particulateFilters.html">Particulate Filters</a></li>
+              <li><a class="dropdown-item" href="filters/liquidMistSeparators.html">Liquid & mist separators</a></li>
+              <li><a class="dropdown-item" href="#">Vapor removal</a></li>
+            </ul>
+          </li>
         </ul>
       </li>
     </ul>
@@ -343,7 +351,7 @@ if (searchInput && searchSuggestions && typeof products !== "undefined") {
         div.classList.add("suggestion-item");
         div.textContent = product.code; // Display only product code
         div.addEventListener("click", () => {
-          window.location.href = `dprgDetail.html?id=${product.id}`;
+          window.location.href = `${pathPrefix}dprgDetail.html?id=${product.id}`;
         });
         searchSuggestions.appendChild(div);
       });
@@ -359,6 +367,23 @@ if (searchInput && searchSuggestions && typeof products !== "undefined") {
       !searchSuggestions.contains(e.target)
     ) {
       searchSuggestions.style.display = "none";
+    }
+  });
+}
+
+// Prefix relative links and images for subpages
+if (pathPrefix) {
+  nav.querySelectorAll('a[href]').forEach(a => {
+    const href = a.getAttribute('href');
+    if (href && !href.startsWith('http') && !href.startsWith('#') && !href.startsWith('javascript:')) {
+      a.setAttribute('href', pathPrefix + href);
+    }
+  });
+  nav.querySelectorAll('img[src]').forEach(img => {
+    const src = img.getAttribute('src');
+    if (src && !src.startsWith('http') && !src.startsWith('data:')) {
+      const cleanSrc = src.startsWith('./') ? src.slice(2) : src;
+      img.setAttribute('src', pathPrefix + cleanSrc);
     }
   });
 }
