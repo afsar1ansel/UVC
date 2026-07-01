@@ -553,5 +553,153 @@ window.suppliesProducts = [
       "Vacuum Jacketed Vessels",
       "Vapor Condensing Vacuum Vessels"
     ]
+  },
+  {
+    id: "jrs-series",
+    code: "JRS Series",
+    title: "JRS Series: Multistage Vapor Condensers",
+    images: ["./assests/img/products/VACUUM COMPONENTS&supplies/vaporCapture/JRSSeries.png"],
+    tagline: "Multistage Vapor Condenser for Vacuum Systems",
+    description: "Solberg’s JRS Multistage Vapor Condenser vacuum filter is a vacuum jacketed vessel designed to protect equipment from harmful vapors and liquids that can break down vacuum pump oil. Vapor removal is accomplished by transitioning a substance from a gaseous state to a liquid or solid state by passing air flow through Solberg’s proprietary cooling technology. Our JRS Series will extend your vacuum pump life and reduce costly downtime.<br><br>Contact us for more information on our Multistage Vapor Condenser series. We’ll guide you to the best filtration products for your setup.",
+    highlights: [
+      {
+        title: "Solberg’s JRS Series Advantages",
+        points: [
+          "Keeps vapor from contaminating vacuum pump oil",
+          "Removable heat exchanger pack for quick cleaning",
+          "Can be used with a variety of coolants, including glycol and water",
+          "2\" NPSC drain port",
+          "Bottom access designs are available"
+        ]
+      },
+      {
+        title: "Key Features",
+        points: [
+          "Removable heat exchanger fin pack for ease of cleaning and long lasting optimum performance",
+          "Coolant flask system",
+          "Corrosive resistant blue powder coat carbon steel",
+          "Coolant inlet and outlet ports",
+          "2\" NPSC drain port"
+        ]
+      }
+    ],
+    technicalSpecifications: [],
+    options: [
+      {
+        title: "Available Options & Accessories (ATEX Available)",
+        points: [
+          "ASME, PED rated vessels",
+          "Stainless steel construction",
+          "Drain packages",
+          "Ports, gauges, leg supports",
+          "Davit arm",
+          "Demister"
+        ]
+      }
+    ],
+    applications: [
+      "Vacuum Jacketed Vessels",
+      "Vacuum Pumps & Systems"
+    ]
+  },
+  {
+    id: "jst-jct-series",
+    code: "JST/JCT Series",
+    title: "JST/JCT Series: Cold Trap for Vacuum Pumps",
+    images: ["./assests/img/products/VACUUM COMPONENTS&supplies/vaporCapture/JST:JCTSeries.png"],
+    tagline: "Cold Trap for Vacuum Pumps",
+    description: "Solberg’s JST & JCT Series cold traps for vacuum pumps are designed to protect equipment from harmful vapors and liquids that can break down vacuum pump oil. These cold traps are heat exchangers that use circulating cooled liquids to create cold surfaces within the trap. Vapor removal is accomplished when vapors in the air stream transition from a gaseous state to a liquid or solid state as the airflow passes through Solberg’s proprietary fin pack design. Our JST & JCT Series will extend the life of your vacuum pump and reduce costly downtime.<br><br>Contact us for more information on our compact vacuum condenser series. We are happy to guide you to the right filtration products for your application.",
+    highlights: [
+      {
+        title: "Solberg’s JST/JCT Series Cold Traps",
+        points: [
+          "Protect your vacuum pump from ingesting harmful vapors that can coat internals",
+          "Keep vapors and liquids from contaminating vacuum pump oil",
+          "Condenses vapors to liquids for easy removal and draining",
+          "Allow for easy visual inspection of condensed vapors through clear view vacuum canister",
+          "Threaded connections are available in 1 - 4 inch sizes"
+        ]
+      },
+      {
+        title: "Key Features",
+        points: [
+          "Removable heat exchanger fin pack for ease of cleaning and long lasting optimum performance",
+          "Coolant flask system",
+          "Stainless steel demister pad",
+          "Compact housing for minimal footprint",
+          "Removable bottom for full accessibility",
+          "Coolant inlet and outlet ports",
+          "JST Series: Durable see-through canister made from shatter resistant polycarbonate",
+          "JCT Series: Corrosive resistant carbon steel bucket"
+        ]
+      }
+    ],
+    technicalSpecifications: [],
+    options: [
+      {
+        title: "Available Options & Accessories (ATEX Available - JCT versions only)",
+        points: [
+          "Additional ports",
+          "Vacuum gauge",
+          "Support frame",
+          "Spool piece/extended bucket (select models/sizes)",
+          "Taps for gauges and mounting brackets"
+        ]
+      }
+    ],
+    applications: [
+      "Vacuum Pumps & Systems",
+      "Vapor Condensation Systems"
+    ]
+  },
+  {
+    id: "lnt-series",
+    code: "LNT Series",
+    title: "LNT Series - Liquid Nitrogen Trap",
+    images: ["./assests/img/products/VACUUM COMPONENTS&supplies/vaporCapture/LNTSeries.png"],
+    tagline: "Liquid Nitrogen Trap for Vacuum Systems",
+    description: "The Solberg LNT is an extremely effective liquid nitrogen trap designed to condense and reclaim target vapors such as ethanol, essential oils, and other high value products. The LNT also captures water, solvents, and other undesirable contaminants to protect the vacuum pump from ingesting harmful vapors and liquids. The LNT is constructed out of 304 stainless steel and comes standard with a laboratory stand and large drain to quickly evacuate captured materials. The innovative Fin Pack™ system provides substantial cold surface area while the offset inlet and outlet design creates a directional shift in flow to increase dwell time. These mechanisms work together to achieve maximum condensing performance in a highly compact design. The LNT includes a quick release v-band style clamp for ease of assembly and quick turnaround.<br><br>Please contact factory for available sizes.",
+    highlights: [
+      {
+        title: "Benefits",
+        points: [
+          "Captures essential oils and other desirable vapors for recovery and collection",
+          "Helps achieve lower base pressure and faster pump-down times",
+          "Protects against ingestion of undesirable, harmful contaminants",
+          "Reduces maintenance costs over the lifetime of the pump"
+        ]
+      },
+      {
+        title: "Key Features",
+        points: [
+          "Large drain port",
+          "Integrated stand",
+          "Easy serviceability",
+          "Fin Pack™ exchanger"
+        ]
+      }
+    ],
+    technicalSpecifications: [
+      { parameter: "Trapping Efficiency", value: "Up to 95%" },
+      { parameter: "Accommodated Flows", value: "Up to 250 CFM (425 m³/h)" },
+      { parameter: "Runtime", value: "Allows up to 6 hours of runtime with single fill system*" },
+      { parameter: "Leak Rate", value: "1x10-5 mbar l/sec" }
+    ],
+    options: [
+      {
+        title: "Available Options & Accessories",
+        points: [
+          "Single or dual fill tubes",
+          "Conical adapters",
+          "Clamps, centering rings, and o-rings",
+          "Other sizes available, please contact factory"
+        ]
+      }
+    ],
+    applications: [
+      "Vapor extraction & recovery (reclaiming target vapors like ethanol, essential oils)",
+      "Laboratory processes",
+      "Vacuum Pumps & Systems"
+    ]
   }
 ];

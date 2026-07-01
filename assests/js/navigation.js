@@ -161,7 +161,7 @@ nav.innerHTML = `
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="filters/particulateFilters.html">Particulate Filters</a></li>
               <li><a class="dropdown-item" href="filters/liquidMistSeparators.html">Liquid & mist separators</a></li>
-              <li><a class="dropdown-item" href="#">Vapor removal</a></li>
+              <li><a class="dropdown-item" href="filters/vaporRemoval.html">Vapor removal</a></li>
             </ul>
           </li>
         </ul>
