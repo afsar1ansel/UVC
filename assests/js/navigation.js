@@ -157,7 +157,7 @@ nav.innerHTML = `
         <ul class="dropdown-menu">
           <li><a class="dropdown-item" href="heliumDetail.html?id=VACUUM-COMPONENTS">Vacuum Components</a></li>
           <li class="dropdown">
-            <a class="dropdown-item dropdown-toggle" href="#">Filters</a>
+            <a class="dropdown-item dropdown-toggle" href="filters.html">Filters</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="filters/particulateFilters.html">Particulate Filters</a></li>
               <li><a class="dropdown-item" href="filters/liquidMistSeparators.html">Liquid & mist separators</a></li>
