@@ -190,9 +190,15 @@ document.addEventListener("DOMContentLoaded", function () {
                 </ul>
               </li>
               <li class="nav-item dropdown">
-                <a href="services.html" role="button" style="text-decoration: none;">
-                  SERVICES+
-                </a>
+                <p id="servicesDropdown">
+                  <a class="nav-link" href="services.html" role="button">SERVICES</a>
+                  <a href="javascript:void(0);"> +</a>
+                </p>
+                <ul class="dropdown-menu" style="background-color: #c7ebf5;">
+                  <li><a class="dropdown-item" href="serviceDetail.html?id=1">Helium Leak Test Services</a></li>
+                  <li><a class="dropdown-item" href="vacuumGaugeCalibrationService.html">Vacuum Gauge Calibration Services</a></li>
+                  <li><a class="dropdown-item" href="leakCalibrationService.html">Leak Calibration Services</a></li>
+                </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="index.html#solutions">INDUSTRIES SERVED</a>
