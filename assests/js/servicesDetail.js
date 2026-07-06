@@ -89,17 +89,19 @@ $(document).ready(function () {
       if (itemCodeHeader) {
         itemCodeHeader.innerHTML = `<h1 class="item-code-heading">LEAK CALIBRATION SERVICES</h1>`;
       }
+      const pdfUrl = "./assests/img/services/leakCalibrationServices/LeakCalibrationServices.pdf";
       if (downloadContainer) {
-        downloadContainer.innerHTML = "";
+        downloadContainer.innerHTML = `
+          <a href="${pdfUrl}" download class="btn btn-success d-flex align-items-center gap-2" style="padding: 10px 20px; font-weight: 600;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+            </svg>
+            Download Brochure
+          </a>
+        `;
       }
       if (pdfViewer) {
-        pdfViewer.innerHTML = `
-          <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 400px; color: #999; border: 1px dashed #ccc; border-radius: 8px; width: 85vw; margin: auto;">
-              <h3>No Brochure Available Yet</h3>
-              <p>A detailed PDF brochure is not yet available for Leak Calibration Services.</p>
-              <button onclick="window.history.back()" style="margin-top: 20px; background: #0da574; color: white; border: none; padding: 10px 25px; border-radius: 5px; cursor: pointer;">Go Back</button>
-          </div>
-        `;
+        renderPDF(pdfUrl, pdfViewer);
       }
     }
   }
