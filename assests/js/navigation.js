@@ -173,8 +173,8 @@ nav.innerHTML = `
     <a href="services.html" id="services">SERVICES +</a>
     <ul class="dropdown-menu">
       <li><a class="dropdown-item" href="serviceDetail.html?id=1">Helium Leak Test Services</a></li>
-      <li><a class="dropdown-item" href="vacuumGaugeCalibrationService.html">Vacuum Gauge Calibration Services</a></li>
-      <li><a class="dropdown-item" href="leakCalibrationService.html">Leak Calibration Services</a></li>
+      <li><a class="dropdown-item" href="serviceDetail.html?id=2">Vacuum Gauge Calibration Services</a></li>
+      <li><a class="dropdown-item" href="serviceDetail.html?id=3">Leak Calibration Services</a></li>
     </ul>
   </div>
   <div><a href="index.html#solutions" id="industries">INDUSTRIES SERVED</a></div>

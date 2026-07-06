@@ -196,8 +196,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 </p>
                 <ul class="dropdown-menu" style="background-color: #c7ebf5;">
                   <li><a class="dropdown-item" href="serviceDetail.html?id=1">Helium Leak Test Services</a></li>
-                  <li><a class="dropdown-item" href="vacuumGaugeCalibrationService.html">Vacuum Gauge Calibration Services</a></li>
-                  <li><a class="dropdown-item" href="leakCalibrationService.html">Leak Calibration Services</a></li>
+                  <li><a class="dropdown-item" href="serviceDetail.html?id=2">Vacuum Gauge Calibration Services</a></li>
+                  <li><a class="dropdown-item" href="serviceDetail.html?id=3">Leak Calibration Services</a></li>
                 </ul>
               </li>
               <li class="nav-item">
