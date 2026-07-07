@@ -54,9 +54,10 @@ $(document).ready(function () {
         itemCodeHeader.innerHTML = `<h1 class="item-code-heading">HELIUM LEAK TEST SERVICES</h1>`;
       }
       const pdfUrl = "./assests/img/services/heliumleaktestservices/HLT SERVICES.pdf";
+      const downloadPdfUrl = "./assests/img/services/heliumleaktestservices/HLT SERVICESdownload.pdf";
       if (downloadContainer) {
         downloadContainer.innerHTML = `
-          <a href="${pdfUrl}" download class="btn btn-success d-flex align-items-center gap-2" style="padding: 10px 20px; font-weight: 600;">
+          <a href="${downloadPdfUrl}" download class="btn btn-success d-flex align-items-center gap-2" style="padding: 10px 20px; font-weight: 600;">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
             </svg>
@@ -71,10 +72,11 @@ $(document).ready(function () {
       if (itemCodeHeader) {
         itemCodeHeader.innerHTML = `<h1 class="item-code-heading">VACUUM GAUGE CALIBRATION SERVICES</h1>`;
       }
-      const pdfUrl = "./assests/img/services/vacuumGaugeCalibrationService/vacuumGaugeCalibrationService.pdf";
+      const pdfUrl = "./assests/img/services/vacuumGaugeCalibrationService/vacuumGaugeCalibrationService.pdf.pdf";
+      const downloadPdfUrl = "./assests/img/services/vacuumGaugeCalibrationService/vacuumGaugeCalibrationServiceDownload.pdf";
       if (downloadContainer) {
         downloadContainer.innerHTML = `
-          <a href="${pdfUrl}" download class="btn btn-success d-flex align-items-center gap-2" style="padding: 10px 20px; font-weight: 600;">
+          <a href="${downloadPdfUrl}" download class="btn btn-success d-flex align-items-center gap-2" style="padding: 10px 20px; font-weight: 600;">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
             </svg>
@@ -90,9 +92,10 @@ $(document).ready(function () {
         itemCodeHeader.innerHTML = `<h1 class="item-code-heading">LEAK CALIBRATION SERVICES</h1>`;
       }
       const pdfUrl = "./assests/img/services/leakCalibrationServices/LeakCalibrationServices.pdf";
+      const downloadPdfUrl = "./assests/img/services/leakCalibrationServices/LeakCalibrationServicesDownload.pdf";
       if (downloadContainer) {
         downloadContainer.innerHTML = `
-          <a href="${pdfUrl}" download class="btn btn-success d-flex align-items-center gap-2" style="padding: 10px 20px; font-weight: 600;">
+          <a href="${downloadPdfUrl}" download class="btn btn-success d-flex align-items-center gap-2" style="padding: 10px 20px; font-weight: 600;">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
             </svg>
