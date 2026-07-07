@@ -347,7 +347,7 @@ const heliumLeakDetectors = [
     code: "CALIBRATED LEAKS",
     images: ["./assests/img/products/heliumLeakDetectors/calibratedLeaks.png"],
     features: ["NIST traceable", "High stability", "Various leak rates available"],
-    pdf: "./assests/img/products/heliumLeakDetectors/calibrated_leaks.pdf",
+    pdf: "./assests/img/products/heliumLeakDetectors/calibrated_leaksDownload.pdf",
     viewPdf: "./assests/img/products/heliumLeakDetectors/calibrated_leaks.pdf"
   },
   {
@@ -377,7 +377,7 @@ const heliumLeakDetectors = [
     code: "VACUUM COMPONENTS",
     images: [],
     features: [],
-    pdf: "./assests/img/products/VACUUM COMPONENTS&supplies/VACUUM COMPONENTS.docx.pdf",
+    pdf: "./assests/img/products/VACUUM COMPONENTS&supplies/VACUUM COMPONENTS.docxdownload.pdf",
     viewPdf: "./assests/img/products/VACUUM COMPONENTS&supplies/VACUUM COMPONENTS.docx.pdf"
   }
 ];
