@@ -330,13 +330,109 @@ if (getQuoteBtn) {
   getQuoteBtn.style.cursor = "pointer";
 }
 
-// Search Logic
+// Search Logic & Dynamic Script Indexing
 const searchInput = document.getElementById("searchInput");
 const searchSuggestions = document.getElementById("searchSuggestions");
 
-if (searchInput && searchSuggestions && typeof products !== "undefined") {
-  searchInput.addEventListener("input", function () {
-    const query = this.value.toLowerCase().trim();
+if (searchInput && searchSuggestions) {
+  let isDataLoaded = false;
+  let loadingPromise = null;
+
+  // Helper function to load script dynamically
+  function loadScript(src) {
+    return new Promise((resolve) => {
+      const script = document.createElement("script");
+      script.src = src;
+      script.onload = () => resolve(true);
+      script.onerror = () => resolve(false);
+      document.head.appendChild(script);
+    });
+  }
+
+  // Load all search data sources
+  function loadAllSearchData() {
+    if (loadingPromise) return loadingPromise;
+    loadingPromise = Promise.all([
+      loadScript(pathPrefix + "assests/js/productsData.js"),
+      loadScript(pathPrefix + "assests/js/heliumLeakDetectorsData.js"),
+      loadScript(pathPrefix + "assests/js/vacuumPumpsAndSystemsData.js"),
+      loadScript(pathPrefix + "assests/js/suppliesData.js"),
+      loadScript(pathPrefix + "assests/js/servicesData.js")
+    ]).then(() => {
+      isDataLoaded = true;
+    });
+    return loadingPromise;
+  }
+
+  // Deep recursive object string match
+  function objectContainsQuery(obj, query) {
+    for (let key in obj) {
+      if (obj.hasOwnProperty(key)) {
+        if (['images', 'image', 'id', 'downloadPdf', 'pdf', 'url'].includes(key)) continue;
+        const val = obj[key];
+        if (typeof val === 'string' && val.toLowerCase().includes(query)) {
+          return true;
+        }
+        if (Array.isArray(val)) {
+          for (let item of val) {
+            if (typeof item === 'string' && item.toLowerCase().includes(query)) {
+              return true;
+            }
+            if (typeof item === 'object' && item !== null && objectContainsQuery(item, query)) {
+              return true;
+            }
+          }
+        }
+        if (typeof val === 'object' && val !== null && objectContainsQuery(val, query)) {
+          return true;
+        }
+      }
+    }
+    return false;
+  }
+
+  // Static pages catalog
+  const staticPages = [
+    {
+      title: "Home / Welcome",
+      description: "Unique Vacuum Solutions - expert vacuum chamber engineering, helium leak test systems, and calibration services.",
+      url: "index.html"
+    },
+    {
+      title: "About Unique Vacuum Solutions",
+      description: "Our legacy of precision vacuum engineering, industrial expertise, and NPL/NIST calibration commitment since 2001.",
+      url: "about.html"
+    },
+    {
+      title: "Contact Us & Request Quote",
+      description: "Get in touch with UVS. Request a quote or get technical support for your vacuum systems.",
+      url: "contact.html"
+    },
+    {
+      title: "Product Catalog",
+      description: "Browse our complete range of vacuum products, gauges, pumps, leak detectors, custom systems, and supplies.",
+      url: "product.html"
+    },
+    {
+      title: "Services & Support",
+      description: "Overview of our Helium Leak Test Services, Vacuum Gauge Calibration, and Leak Standard Calibration services.",
+      url: "services.html"
+    },
+    {
+      title: "Vacuum Components & Supplies",
+      description: "Explore our range of vacuum fittings, flanges, clamps, quick-couplings, flexible bellows, and traps.",
+      url: "vacuumComponentsAndSupplies.html"
+    },
+    {
+      title: "Helium Leak Detectors & Custom Stations",
+      description: "Explore calibration leaks, component specs, and custom leak test systems.",
+      url: "heliumLeakDetectors.html"
+    }
+  ];
+
+  // Perform search & suggestion rendering
+  async function performSearch() {
+    const query = searchInput.value.toLowerCase().trim();
     searchSuggestions.innerHTML = "";
 
     if (query.length === 0) {
@@ -344,28 +440,155 @@ if (searchInput && searchSuggestions && typeof products !== "undefined") {
       return;
     }
 
-    const filteredProducts = products.filter(
-      (product) =>
-        (product.name && product.name.toLowerCase().includes(query)) ||
-        (product.code && product.code.toLowerCase().includes(query)) ||
-        (product.title && product.title.toLowerCase().includes(query)),
-    );
-
-    if (filteredProducts.length > 0) {
+    // Ensure all data files are loaded
+    if (!isDataLoaded) {
       searchSuggestions.style.display = "block";
-      filteredProducts.forEach((product) => {
-        const div = document.createElement("div");
-        div.classList.add("suggestion-item");
-        div.textContent = product.code; // Display only product code
-        div.addEventListener("click", () => {
-          window.location.href = `${pathPrefix}dprgDetail.html?id=${product.id}`;
-        });
-        searchSuggestions.appendChild(div);
-      });
-    } else {
-      searchSuggestions.style.display = "none";
+      searchSuggestions.innerHTML = `<div style="padding: 12px 16px; color: #9ca3af; font-size: 13px; text-align: center;">Searching database...</div>`;
+      await loadAllSearchData();
+      // If query changed during loading, perform search again
+      if (searchInput.value.toLowerCase().trim() !== query) return;
+      searchSuggestions.innerHTML = "";
     }
-  });
+
+    const matchedPages = [];
+    const matchedProducts = [];
+    const matchedServices = [];
+
+    // 1. Search Static Pages
+    staticPages.forEach(page => {
+      if (page.title.toLowerCase().includes(query) || page.description.toLowerCase().includes(query)) {
+        matchedPages.push({
+          title: page.title,
+          desc: page.description,
+          url: pathPrefix + page.url
+        });
+      }
+    });
+
+    // 2. Search Products
+    // Products from productsData.js
+    const activeProducts = (typeof products !== "undefined") ? products : (window.products || []);
+    activeProducts.forEach(p => {
+      if (objectContainsQuery(p, query)) {
+        matchedProducts.push({
+          title: p.code || p.name,
+          desc: p.title || p.description,
+          url: `${pathPrefix}dprgDetail.html?id=${p.id}`
+        });
+      }
+    });
+
+    // Products from vacuumPumpsAndSystemsData.js
+    const activePumps = (typeof vacuumPumpsAndSystems !== "undefined") ? vacuumPumpsAndSystems : (window.vacuumPumpsAndSystems || []);
+    activePumps.forEach(p => {
+      if (objectContainsQuery(p, query)) {
+        matchedProducts.push({
+          title: p.code || p.name,
+          desc: p.title || p.description,
+          url: `${pathPrefix}uvsPumpDetail.html?id=${p.id}`
+        });
+      }
+    });
+
+    // Products from heliumLeakDetectorsData.js
+    const activeHLDs = (typeof heliumLeakDetectors !== "undefined") ? heliumLeakDetectors : (window.heliumLeakDetectors || []);
+    activeHLDs.forEach(p => {
+      if (objectContainsQuery(p, query)) {
+        matchedProducts.push({
+          title: p.code || p.title,
+          desc: p.description || p.title,
+          url: `${pathPrefix}heliumDetail.html?id=${p.id}`
+        });
+      }
+    });
+
+    // Products from suppliesData.js
+    const activeSupplies = (typeof suppliesProducts !== "undefined") ? suppliesProducts : (window.suppliesProducts || []);
+    activeSupplies.forEach(p => {
+      if (objectContainsQuery(p, query)) {
+        matchedProducts.push({
+          title: p.code || p.title,
+          desc: p.description || p.title,
+          url: `${pathPrefix}suppliesDetail.html?id=${p.id}`
+        });
+      }
+    });
+
+    // 3. Search Services
+    const activeServices = (typeof servicesData !== "undefined") ? servicesData : (window.servicesData || []);
+    activeServices.forEach(s => {
+      if (objectContainsQuery(s, query)) {
+        matchedServices.push({
+          title: s.title,
+          desc: s.description || s.code,
+          url: `${pathPrefix}serviceDetail.html?id=${s.id}`
+        });
+      }
+    });
+
+    const hasResults = matchedPages.length > 0 || matchedProducts.length > 0 || matchedServices.length > 0;
+
+    if (hasResults) {
+      searchSuggestions.style.display = "block";
+
+      // Render Categories
+      if (matchedPages.length > 0) {
+        const header = document.createElement("div");
+        header.className = "suggestion-category-header";
+        header.textContent = "Pages & Guides";
+        searchSuggestions.appendChild(header);
+
+        matchedPages.forEach(item => renderSuggestionItem(item));
+      }
+
+      if (matchedProducts.length > 0) {
+        const header = document.createElement("div");
+        header.className = "suggestion-category-header";
+        header.textContent = "Products & Components";
+        searchSuggestions.appendChild(header);
+
+        matchedProducts.forEach(item => renderSuggestionItem(item));
+      }
+
+      if (matchedServices.length > 0) {
+        const header = document.createElement("div");
+        header.className = "suggestion-category-header";
+        header.textContent = "Services & Support";
+        searchSuggestions.appendChild(header);
+
+        matchedServices.forEach(item => renderSuggestionItem(item));
+      }
+    } else {
+      searchSuggestions.style.display = "block";
+      searchSuggestions.innerHTML = `<div style="padding: 12px 16px; color: #9ca3af; font-size: 13px; text-align: center;">No results found for "${query}"</div>`;
+    }
+  }
+
+  function renderSuggestionItem(item) {
+    const div = document.createElement("div");
+    div.className = "suggestion-item";
+
+    const titleDiv = document.createElement("div");
+    titleDiv.className = "suggestion-title";
+    titleDiv.textContent = item.title;
+
+    const descDiv = document.createElement("div");
+    descDiv.className = "suggestion-desc";
+    descDiv.textContent = item.desc || "";
+
+    div.appendChild(titleDiv);
+    div.appendChild(descDiv);
+
+    div.addEventListener("click", () => {
+      window.location.href = item.url;
+    });
+
+    searchSuggestions.appendChild(div);
+  }
+
+  // Bind Listeners
+  searchInput.addEventListener("focus", loadAllSearchData);
+  searchInput.addEventListener("input", performSearch);
 
   // Close suggestions when clicking outside
   document.addEventListener("click", function (e) {
