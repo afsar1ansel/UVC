@@ -3,6 +3,12 @@ function getUrlParameter(name) {
   return urlParams.get(name);
 }
 
+function getFullPumpContext(product) {
+  const isSystem = ["UVS-ROTARY-ROOTS", "UVS-TURBO-PUMPING", "UVS-DIFFUSION-PUMPING"].includes(product.id);
+  const category = isSystem ? "Vacuum Pumping Systems" : "Vacuum Pumps";
+  return `Vacuum Pumps & Systems - ${category} - ${product.code}`;
+}
+
 const id = getUrlParameter("id");
 const product = window.vacuumPumpsAndSystems?.find((item) => item.id === id);
 const prod = document.getElementById("producter");
@@ -27,14 +33,19 @@ if (product) {
           )
           .join("")}
       </div>
-      <div class="main-image-container">
-        <img id="main-image" src="${product.images[0]}" alt="Product Image" />
-        <div class="Product_btns">
+      <div style="display: flex; flex-direction: column; gap: 15px; align-items: center;">
+        <div class="main-image-container">
+          <img id="main-image" src="${product.images[0]}" alt="Product Image" />
+        </div>
+        <div class="Product_btns" style="display: flex; flex-direction: column; gap: 10px; width: 100%; align-items: center;">
           ${
             product.pdf
-              ? `<a href="${product.pdf}" download style="text-decoration:none;"><div class="productBrochure"><img src="./assests/img/bookLines.svg" alt="Brochure Icon" /> Download Brochure</div></a>`
+              ? `<a href="${product.pdf}" download style="text-decoration:none; width: 100%; max-width: 250px;"><div class="productBrochure" style="width: 100%; display: flex; justify-content: center; gap: 10px;"><img src="./assests/img/bookLines.svg" alt="Brochure Icon" /> Download Brochure</div></a>`
               : ""
           }
+          <div class="productBrochure" onclick="openEnquiryModal('${getFullPumpContext(product)}')" style="width: 100%; max-width: 250px; background-color: #ffc631; color: #000810; font-weight: bold; display: flex; justify-content: center; cursor: pointer; border: none; align-items: center; gap: 10px;">
+            Request Enquiry / Quote
+          </div>
         </div>
       </div>
     </div>

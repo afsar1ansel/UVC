@@ -6,6 +6,20 @@ function getUrlParameter(name) {
   return urlParams.get(name);
 }
 
+function getFullProductContext(product) {
+  const code = product.code ? product.code.toUpperCase() : "";
+  let series = "";
+  if (code.includes("DPRG")) series = "DPRG Series";
+  else if (code.startsWith("FG")) series = "FLEXA Series";
+  else if (code.includes("HPRG")) series = "Hybrid Series";
+  else if (code.startsWith("HVP") || code.startsWith("DVG")) series = "One Pirani Series";
+  else if (code.startsWith("UVG-1") || code.startsWith("UVG-2")) series = "McLeod Series";
+  else if (code.startsWith("UVGE") || code.startsWith("UVGS")) series = "UVG Display Controllers";
+  else series = "Other Gauges";
+  
+  return `Vacuum Measurement - ${series} - ${product.code || product.name}`;
+}
+
 // Get the product ID from the URL
 const id = getUrlParameter("id");
 console.log("Product ID:", id);
@@ -46,7 +60,7 @@ if (product) {
           </div>
         </div>
         <div class="product-details">
-          <div style="display: flex; gap: 12px; align-items: center;">
+          <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap;">
             <div class="productCode">${product.name}</div>
              ${ 
                product.pdf
@@ -57,6 +71,9 @@ if (product) {
                     </a>`
                  : ""
              }
+             <div class="downloadBtn" onclick="openEnquiryModal('${getFullProductContext(product)}')" style="background-color: #ffc631; color: #000810; font-weight: bold; cursor: pointer; border: none;">
+               Request Enquiry / Quote
+             </div>
           </div>
           <h2>${product.title}</h2>
           <p>${product.description}</p>

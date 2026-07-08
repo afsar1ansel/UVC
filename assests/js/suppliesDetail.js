@@ -3,6 +3,16 @@ function getUrlParameter(name) {
   return urlParams.get(name);
 }
 
+function getFullSuppliesContext(product) {
+  const img = (product.images && product.images.length > 0) ? product.images[0] : "";
+  let subCat = "Vacuum Supplies";
+  if (img.includes("/supplies/")) subCat = "Filters & Traps";
+  else if (img.includes("/liquid&mistRemoval/")) subCat = "Liquid & Mist Removal";
+  else if (img.includes("/vaporCapture/")) subCat = "Vapor Capture";
+  
+  return `Vacuum Components & Supplies - ${subCat} - ${product.code}`;
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   const id = getUrlParameter("id");
   if (!window.suppliesProducts) {
@@ -176,7 +186,7 @@ function renderPrimaryDetails(product) {
       ${highlightsHtml}
       
       <div class="Product_btns" style="margin-top: 30px; width: 100%;">
-        <div class="requestQuote" onclick="openEnquiryModal()" style="width: 100%; max-width: 300px; justify-content: center; border-radius: 4px; font-weight: 600;">Request Enquiry / Quote</div>
+        <div class="requestQuote" onclick="openEnquiryModal('${getFullSuppliesContext(product)}')" style="width: 100%; max-width: 300px; justify-content: center; border-radius: 4px; font-weight: 600;">Request Enquiry / Quote</div>
       </div>
     </div>
   `;

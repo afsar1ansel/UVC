@@ -3,6 +3,17 @@ function getUrlParameter(name) {
   return urlParams.get(name);
 }
 
+function getFullHeliumContext(parentProduct, model) {
+  const pId = parentProduct.id;
+  let series = "";
+  if (pId === "HLD-HELIUM-LEAK-TEST-SYSTEM") series = "Helium Leak Test Systems";
+  else if (pId === "HLD-CALIBRATED-LEAKS") series = "Calibrated Leaks";
+  else if (pId === "VACUUM-COMPONENTS") series = "Vacuum Components";
+  else series = parentProduct.title || "Helium Leak Testing";
+  
+  return `Helium Leak Detectors & Systems - ${series} - ${model.name || parentProduct.code}`;
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   const id = getUrlParameter("id");
   if (!window.heliumLeakDetectors) {
@@ -19,14 +30,23 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const downloadContainer = document.getElementById("download-header-container");
-    if (downloadContainer && product.pdf) {
+    if (downloadContainer) {
       downloadContainer.innerHTML = `
-        <a href="${product.pdf}" download class="btn btn-success d-flex align-items-center gap-2" style="padding: 10px 20px; font-weight: 600;">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
-          </svg>
-          Download Brochure
-        </a>
+        <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+          ${
+            product.pdf
+              ? `<a href="${product.pdf}" download class="btn btn-success d-flex align-items-center gap-2" style="padding: 10px 20px; font-weight: 600; text-decoration: none; border-radius: 4px;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                  </svg>
+                  Download Brochure
+                </a>`
+              : ""
+          }
+          <div class="downloadBtn" onclick="openEnquiryModal('${getFullHeliumContext(product, {})}')" style="display: flex; align-items: center; gap: 10px; background: #ffc631; color: #000810; padding: 10px 20px; border-radius: 4px; cursor: pointer; font-size: 14px; font-weight: bold; text-transform: uppercase; border: none;">
+            Request Enquiry / Quote
+          </div>
+        </div>
       `;
     }
 
@@ -242,6 +262,9 @@ function updateModelView(model, parentProduct) {
                </a>`
             : ""
         }
+        <div class="downloadBtn" onclick="openEnquiryModal('${getFullHeliumContext(parentProduct, model)}')" style="display: flex; align-items: center; gap: 10px; background: #ffc631; color: #000810; padding: 6px 15px; border-radius: 3px; cursor: pointer; font-size: 12px; font-weight: bold; text-transform: uppercase;">
+          Request Enquiry / Quote
+        </div>
       </div>
       <h2 style="font-size: 32px; font-weight: 700; color: #001f3f; margin-bottom: 5px;">${model.title || model.name || parentProduct.title}</h2>
       <h4 style="font-size: 18px; font-weight: 600; color: #0da574; margin-bottom: 20px; font-style: italic;">${model.tagline || seriesSubtitle}</h4>

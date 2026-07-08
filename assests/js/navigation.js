@@ -211,22 +211,30 @@ const modalHTML = `
   <div class="modal-content">
     <span class="close-modal">&times;</span>
     <h2>For Enquiry</h2>
-    <form id="enquiryForm" onsubmit="event.preventDefault(); alert('Thank you! We will get back to you soon.'); document.getElementById('enquiryModal').style.display='none';">
+    <form action="https://forms.zohopublic.com/nagendrautpathunique1/form/test/formperma/SteUfj-mKUH9-yO8901F-L0tZY9Yx8wA0dg9YJ0mPxc/htmlRecords/submit" 
+          name="form" id="enquiryForm" method="POST" accept-charset="UTF-8" enctype="multipart/form-data">
+      
+      <!-- Zoho CRM Hidden Integration Inputs -->
+      <input type="hidden" name="zf_referrer_name" value="">
+      <input type="hidden" name="zf_redirect_url" id="zf_redirect_url" value="">
+      <input type="hidden" name="zc_gad" value="">
+      <input type="hidden" name="SingleLine" id="enquiryProduct" value="">
+
       <div class="form-group">
         <label for="enquiryName">Name</label>
-        <input type="text" id="enquiryName" required placeholder="Your Name">
+        <input type="text" id="enquiryName" name="SingleLine2" required placeholder="Your Name">
       </div>
       <div class="form-group">
         <label for="enquiryEmail">Email</label>
-        <input type="email" id="enquiryEmail" required placeholder="Your Email">
+        <input type="email" id="enquiryEmail" name="Email" required placeholder="Your Email">
       </div>
       <div class="form-group">
         <label for="enquiryPhone">Phone</label>
-        <input type="tel" id="enquiryPhone" required placeholder="Your Phone Number">
+        <input type="text" id="enquiryPhone" name="PhoneNumber_countrycode" required placeholder="Your Phone Number">
       </div>
       <div class="form-group">
         <label for="enquiryCompany">Company</label>
-        <input type="text" id="enquiryCompany" placeholder="Company Name">
+        <input type="text" id="enquiryCompany" name="SingleLine1" placeholder="Company Name">
       </div>
       <button type="submit" class="submit-btn">Submit</button>
     </form>
@@ -307,7 +315,17 @@ document.body.insertAdjacentHTML("beforeend", modalHTML);
 document.head.insertAdjacentHTML("beforeend", modalStyles);
 
 // Modal Logic
-window.openEnquiryModal = function () {
+window.openEnquiryModal = function (productCode) {
+  const productInput = document.getElementById("enquiryProduct");
+  if (productInput) {
+    productInput.value = productCode || "General Inquiry";
+  }
+
+  const redirectInput = document.getElementById("zf_redirect_url");
+  if (redirectInput) {
+    redirectInput.value = window.location.href.split("?")[0] + "?enquiry=success";
+  }
+
   document.getElementById("enquiryModal").style.display = "flex";
 };
 
@@ -320,6 +338,104 @@ window.addEventListener("click", function (event) {
     document.getElementById("enquiryModal").style.display = "none";
   }
 });
+
+// Check for redirect success status
+if (window.location.search.includes("enquiry=success")) {
+  alert("Thank you! Your enquiry has been submitted successfully. We will get back to you soon.");
+  const cleanUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
+  window.history.replaceState({ path: cleanUrl }, '', cleanUrl);
+}
+
+// Temporary Submit Inspector
+const formElement = document.getElementById("enquiryForm");
+if (formElement) {
+  formElement.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const formData = new FormData(this);
+    const payload = {};
+    formData.forEach((value, key) => {
+      payload[key] = value;
+    });
+
+    console.log("----- ZOHO SUBMIT PAYLOAD -----");
+    console.log(JSON.stringify(payload, null, 2));
+    console.log("--------------------------------");
+
+    // Display payload temporarily on screen
+    const payloadDiv = document.createElement("div");
+    payloadDiv.style.position = "fixed";
+    payloadDiv.style.top = "10px";
+    payloadDiv.style.left = "10px";
+    payloadDiv.style.width = "400px";
+    payloadDiv.style.padding = "20px";
+    payloadDiv.style.backgroundColor = "rgba(0, 0, 0, 0.95)";
+    payloadDiv.style.color = "#00ff00";
+    payloadDiv.style.fontFamily = "monospace";
+    payloadDiv.style.fontSize = "12px";
+    payloadDiv.style.borderRadius = "8px";
+    payloadDiv.style.boxShadow = "0 10px 25px rgba(0,0,0,0.5)";
+    payloadDiv.style.zIndex = "100001";
+    payloadDiv.style.maxHeight = "90vh";
+    payloadDiv.style.overflowY = "auto";
+    
+    payloadDiv.innerHTML = `
+      <h3 style="color: #fff; margin-bottom: 10px; font-size: 14px; font-weight: bold; border-bottom: 1px solid #333; padding-bottom: 5px;">[UVS Dev Tool] Zoho Form Payload</h3>
+      <pre style="white-space: pre-wrap; word-wrap: break-word; color: #00ff00;">${JSON.stringify(payload, null, 2)}</pre>
+      <p style="color: #ffc631; margin-top: 15px; font-size: 11px; font-weight: bold; animation: pulse 1s infinite alternate;">📤 Posting to Zoho in 4 seconds...</p>
+      <button id="cancelSubmit" style="margin-top: 10px; padding: 6px 12px; background: #dc3545; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">Cancel Submission</button>
+    `;
+    document.body.appendChild(payloadDiv);
+
+    const submitTimeout = setTimeout(() => {
+      payloadDiv.remove();
+      formElement.submit();
+    }, 4000);
+
+    document.getElementById("cancelSubmit").addEventListener("click", () => {
+      clearTimeout(submitTimeout);
+      const cancelMsg = document.createElement("p");
+      cancelMsg.style.color = "#ff4d4d";
+      cancelMsg.style.marginTop = "8px";
+      cancelMsg.style.fontWeight = "bold";
+      cancelMsg.textContent = "❌ Submission paused. Form will not be submitted.";
+      payloadDiv.appendChild(cancelMsg);
+      document.getElementById("cancelSubmit").style.display = "none";
+      
+      // Add a manual submit button
+      const manualSubmit = document.createElement("button");
+      manualSubmit.style.marginTop = "10px";
+      manualSubmit.style.padding = "6px 12px";
+      manualSubmit.style.background = "#0da574";
+      manualSubmit.style.color = "white";
+      manualSubmit.style.border = "none";
+      manualSubmit.style.borderRadius = "4px";
+      manualSubmit.style.cursor = "pointer";
+      manualSubmit.style.fontWeight = "bold";
+      manualSubmit.textContent = "Submit Now";
+      manualSubmit.onclick = () => {
+        payloadDiv.remove();
+        formElement.submit();
+      };
+      payloadDiv.appendChild(manualSubmit);
+      
+      // Add a close/clear button
+      const closeBtn = document.createElement("button");
+      closeBtn.style.marginTop = "10px";
+      closeBtn.style.marginLeft = "10px";
+      closeBtn.style.padding = "6px 12px";
+      closeBtn.style.background = "#555";
+      closeBtn.style.color = "white";
+      closeBtn.style.border = "none";
+      closeBtn.style.borderRadius = "4px";
+      closeBtn.style.cursor = "pointer";
+      closeBtn.style.fontWeight = "bold";
+      closeBtn.textContent = "Close Panel";
+      closeBtn.onclick = () => payloadDiv.remove();
+      payloadDiv.appendChild(closeBtn);
+    });
+  });
+}
 
 // Attach to Get Quote button
 const getQuoteBtn = document.getElementById("getQuote");
