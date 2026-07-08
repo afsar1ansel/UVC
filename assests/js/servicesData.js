@@ -4,7 +4,7 @@ const servicesData = [
     id: "1",
     title: "Helium Leak Test Services",
     code: "HELIUM LEAK TEST SERVICES",
-    downloadPdf: "./assests/img/services/heliumleaktestservices/HLT SERVICESdownload.pdf",
+    downloadPdf: "./assests/img/services/heliumleaktestservices/HLT_SERVICES_download.pdf",
     description: "Helium Leak Testing and Leak Detection has been the cornerstone of our business since we began in the year 2001. With UVS equipment and staff, we are capable of performing on-site field testing as well as in-house testing. We have the necessary equipment to perform all leak testing services in industry environments as well as laboratory conditions. UVS can perform almost any helium leak test method on a customer’s site.",
     description2: "UVS competent engineering staff has the necessary knowledge and experience to develop testing procedures specific to customer requirements. This allows UVS the ability to accommodate all of our customers’ needs in regards to leak testing.",
     description3: "We are equipped with state of the art- highly reliable helium leak detector which is compatible for all the types and methods of helium leak testing. The helium leak detector usable range is from 10⁻¹¹ std CC/sec to 10⁻³ std CC/sec depending on the type of test and the test object.",
