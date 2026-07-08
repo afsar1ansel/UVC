@@ -343,12 +343,152 @@ const heliumLeakDetectors = [
   {
     id: "HLD-CALIBRATED-LEAKS",
     title: "CALIBRATED LEAKS",
-    description: "Precision calibrated leaks for verification and calibration of helium leak detection systems.",
+    description: "Unique Vacuum Solutions deals with four models of Calibrated Leak Standards (Manufactured by VTI , California ) for calibrating Helium Leak Detectors and Leak Testing Systems so that one is sure to meet your particular requirements. Many other models of Leak Standards are available with Unique Vacuum Solutions, including some that are specifically for calibrating Sniffer-type Leak Detectors, as detailed in other brochures and a Selection Guide. The GPP, GPPT, GPC and CLP Model Calibrators compared here have different types of Leak Elements to control the flow rate of Helium, and this results in different features as shown below. Another difference is that the GPP, GPPT and GPC Leaks are \"general purpose\" models for calibrating leak detectors and systems, and the CLP Leak is a \"high-precision\" model with an all-metal valve for use in critical applications, use with UHV systems, and use as a Calibration Transfer Standard. It is to be noted, however, that all four models demonstrate long-term flow rate stability, have low depletion rates and last for years without refilling. As an exception, the 10-3 and larger GPC Leaks have higher depletion rates and, therefore, are designed to be conveniently refilled by the user. Also, all four models are simple to operate and are provided with Certifications of the NIST-traceable A2LA-accredited Calibrations.",
     code: "CALIBRATED LEAKS",
-    images: ["./assests/img/products/heliumLeakDetectors/calibratedLeaks.png"],
+    images: ["./assests/img/products/heliumLeakDetectors/calibratedLeaks/image_page_2_1_X12.jpg"],
     features: ["NIST traceable", "High stability", "Various leak rates available"],
     pdf: "./assests/img/products/heliumLeakDetectors/calibrated_leaksDownload.pdf",
-    viewPdf: "./assests/img/products/heliumLeakDetectors/calibrated_leaks.pdf"
+    models: [
+      {
+        id: "GPP-MODEL",
+        name: "GPP model",
+        title: "GPP Model Calibrated Leak Standards",
+        tagline: "Glass-Permeation Helium Calibrated Leak Standard",
+        images: ["./assests/img/products/heliumLeakDetectors/calibratedLeaks/image_page_2_1_X12.jpg"],
+        description: "These GPP Model Helium Calibrated Leak Standards have glass-permeation type leak elements and are the most common ones used to tune and calibrate helium mass spectrometer leak detectors, leak testing systems and vacuum systems. They are part of a family of Calibrators including the GPPT, GPC and CLP Models that cover leak rates from 10-12 up to 10-3 atm-cc/sec and larger. The GPP Accu-Flow™ Calibrated Leaks are based on the principle that helium flows through certain materials at a measurable rate depending on the material thickness, driving pressure and temperature. Depending on the leak rate required in the GPP Leaks, the permeation material is Pyrex or Quartz. The GPP Leaks feature an all-welded stainless steel construction for reliability. Most leaks require a shut-off \"isolation\" valve to zero the leak signal during tuning and calibration. Unique Vacuum Solutions offers the GPP Leaks both with and without a Teflon®-packed stainless steel shut-off valve. The inlet port of the brand of leak detector or vacuum system determines the termination of the leak. The most common termination of the GPP Leaks is a 1-1/8\" diameter tube which mates directly to many Varian, Veeco and VIC leak detectors. All leaks are available with QF (NW, KF) and many other types of fittings. All GPP Leaks are provided with certifications of the NIST-traceable calibrations performed in our A2LA-accredited Calibration Laboratory.",
+        highlights: [
+          "WILL NOT CLOG - glass-permeation leak element.",
+          "LONG TERM STABILITY - Low depletion rate.",
+          "WIDE LEAK-RATE CHOICE - 10⁻⁵ to 10⁻⁹ range.",
+          "NEVER NEEDS REFILL - Lasts for years.",
+          "SIMPLE TO OPERATE - minimal user training.",
+          "MEETS ISO REQUIREMENTS - NIST-traceable, A2LA-accredited Calibration Certification."
+        ],
+        benefitsTitle: "Key Features & Benefits",
+        benefits: [
+          "Glass-permeation type leak elements that will not clog under normal operating conditions.",
+          "Helium flows through materials at a measurable rate depending on thickness, driving pressure, and temperature (using Pyrex or Quartz).",
+          "All-welded stainless steel construction for maximum reliability, available with or without Teflon®-packed stainless steel shut-off valves.",
+          "Mates directly to major leak detector brands with various fittings like QF (NW, KF)."
+        ],
+        columns: ["GPP Model Specifications"],
+        technicalSpecifications: [
+          { parameter: "Leak Element Type", value: "Glass-permeation type (Pyrex or Quartz)" },
+          { parameter: "Helium Leak Rate Range", value: "10⁻¹² to 10⁻³ atm-cc/sec" },
+          { parameter: "Primary Leak Rates", value: "10⁻⁶ to 10⁻⁹, especially 10⁻⁷ and 10⁻⁸" },
+          { parameter: "Temperature Coefficient", value: "4% per °C (requires stable temperature environment)" },
+          { parameter: "Durability / Handling", value: "Avoid rough handling (could break the glass element)" },
+          { parameter: "Clogging Resistance", value: "Excellent (Will not clog)" },
+          { parameter: "Valving Options", value: "Available with or without Teflon®-packed stainless steel shut-off valve" },
+          { parameter: "Fitting Types", value: "QF (NW, KF), 1-1/8\" tube, and custom options" }
+        ]
+      },
+      {
+        id: "GPPT-MODEL",
+        name: "GPPT model",
+        title: "GPPT Model Calibrated Leak Standards",
+        tagline: "Teflon®-Permeation Helium Calibrated Leak Standard",
+        images: ["./assests/img/products/heliumLeakDetectors/calibratedLeaks/image_page_3_1_X12.jpg"],
+        description: "These GPPT Model Helium Calibrated Leak Standards have Teflon®-permeation type leak elements and are widely used to tune and calibrate helium mass spectrometer leak detectors and leak testing systems. They are part of a family of Calibrators including the GPP, GPC and CLP Models offered by Unique Vacuum Solutions that cover leak rates from 10-12 up to 10-3 atm-cc/sec and larger. The GPPT Accu-Flow™ Calibrated Leaks use a Teflon® membrane as the flow rate control element. The Helium reservoir is under pressure, and the gas permeates through the Teflon® from the pressure side to the exhaust side of the element. This yields a precise, constant flow rate which is then used for calibrating helium leak detectors and other applications. The GPPT Leaks feature an all-welded stainless steel construction for reliability. Most leaks require a shut-off \"isolation\" valve to zero the leak signal during tuning and calibration. UVS offers the GPPT Leaks both with and without a Teflon®-packed stainless steel shut-off valve. The inlet port of the brand of leak detector or vacuum system determines the termination of the leak. All leaks are available with QF (NW, KF), Normal Pipe Thread, VCR® and many other types of fittings. All GPPT Leaks are provided with certifications of the NIST-traceable calibrations performed in A2LA-accredited Calibration Laboratory.",
+        highlights: [
+          "WILL NOT CLOG - permeation leak element.",
+          "VIRTUALLY UNBREAKABLE - Teflon® element minimizes repairs.",
+          "LONG TERM STABILITY - Low depletion rate.",
+          "WIDE LEAK-RATE CHOICE - 10⁻⁴ to 10⁻⁹ range.",
+          "NEVER NEEDS REFILL - Lasts for years.",
+          "SIMPLE TO OPERATE - minimal user training.",
+          "MEETS ISO REQUIREMENTS - NIST-traceable, A2LA-accredited Calibration Certification."
+        ],
+        benefitsTitle: "Key Features & Benefits",
+        benefits: [
+          "Teflon®-permeation type leak elements that will not clog under normal operating conditions.",
+          "Teflon® membrane control element yields a precise, constant flow rate.",
+          "Virtually unbreakable design that minimizes repairs and maintenance.",
+          "Available with QF (NW, KF), Normal Pipe Thread, VCR® and other fittings."
+        ],
+        columns: ["GPPT Model Specifications"],
+        technicalSpecifications: [
+          { parameter: "Leak Element Type", value: "Teflon®-permeation type membrane" },
+          { parameter: "Helium Leak Rate Range", value: "10⁻¹² to 10⁻³ atm-cc/sec" },
+          { parameter: "Primary Leak Rates", value: "10⁻⁴ to 10⁻⁸" },
+          { parameter: "Temperature Coefficient", value: "3% per °C" },
+          { parameter: "Durability / Handling", value: "Virtually unbreakable (minimizes repairs)" },
+          { parameter: "Clogging Resistance", value: "Excellent (Will not clog)" },
+          { parameter: "Valving Options", value: "Available with or without Teflon®-packed stainless steel shut-off valve" },
+          { parameter: "Fitting Types", value: "QF (NW, KF), Normal Pipe Thread, VCR®, and custom options" }
+        ]
+      },
+      {
+        id: "GPC-MODEL",
+        name: "GPC model",
+        title: "GPC Model Calibrated Leak Standards",
+        tagline: "Capillary Helium Calibrated Leak Standard",
+        images: ["./assests/img/products/heliumLeakDetectors/calibratedLeaks/image_page_4_1_X19.jpg"],
+        description: "The GPC Model Helium Calibrated Leak Standards have crimped stainless-steel capillary leak elements and are widely used to tune and calibrate helium mass-spectrometer leak detectors and leak testing systems. They are part of a family of Helium Calibrators offered by Unique Vacuum Solutions including the GPP, GPPT and CLP Models detailed in other brochures. Together they cover a wide range of leak rates from 10-12 to 10-2 atm-cc/sec and larger. The GPC Accu-Flow™ Helium Leaks, due to the capillary leak element, can be manufactured for larger leak rates than permeation-type leaks. They are often used therefore in calibrating detectors in the \"gross leak\" mode. Also, capillary-type leaks have a very low temperature coefficient of 0.2%/ °C, as compared to 3 to 4% for permeation-type leaks. This reduces the possibility of calibration error in applications where ambient temperatures vary widely. As compared to some leaks that are made with glass capillary leak elements, the GPC Leaks with their stainless steel capillaries are unbreakable. In applications where these capillary-type leaks are exposed to dirt, water or oil vapor, clogging of the leak element can be a problem, particularly for leak rates of 10-6 atm-cc/sec and smaller. For this reason, the shut-off valve on the leak should be closed when not in use, especially when venting the vacuum system or detector to which it is attached. While GPC Leaks can be made without shut-off valves, it is not usually recommended. As with all of our Helium Calibrators, the GPC Model Leaks are available with QF (NW, KF), pipe thread and many other types of attachment fittings, and are provided with Certifications of the NIST-traceable Calibrations performed in A2LA Calibration Laboratory.",
+        highlights: [
+          "LOW TEMPERATURE COEFFICIENT - 0.2% per °C.",
+          "WIDE LEAK-RATE CHOICE - 10⁻³ to 10⁻⁶ range.",
+          "LONG TERM STABILITY - Low depletion rate.",
+          "UNBREAKABLE - stainless steel capillary leak element.",
+          "NEVER NEEDS REFILL - Lasts for years.",
+          "CLOGGING POSSIBLE - in unclean environments.",
+          "MEETS ISO REQUIREMENTS - NIST-traceable, A2LA-accredited Calibration Certification."
+        ],
+        benefitsTitle: "Key Features & Benefits",
+        benefits: [
+          "Crimped stainless-steel capillary leak elements suitable for larger leak rates.",
+          "Extremely low temperature coefficient of 0.2% per °C minimizes calibration error.",
+          "Unbreakable stainless steel capillary construction.",
+          "NIST-traceable, A2LA-accredited Calibration Certification included."
+        ],
+        columns: ["GPC Model Specifications"],
+        technicalSpecifications: [
+          { parameter: "Leak Element Type", value: "Crimped stainless-steel capillary" },
+          { parameter: "Helium Leak Rate Range", value: "10⁻¹² to 10⁻² atm-cc/sec" },
+          { parameter: "Primary Leak Rates", value: "10⁻⁶ to 10⁻³ and larger, especially 10⁻⁵ and larger" },
+          { parameter: "Temperature Coefficient", value: "0.2% per °C (very low, highly stable)" },
+          { parameter: "Durability / Handling", value: "Unbreakable stainless steel capillary" },
+          { parameter: "Clogging Resistance", value: "Clogging possible in unclean environments (dirt, water, or oil vapor)" },
+          { parameter: "Valving Options", value: "Shut-off valve strongly recommended (close when not in use)" },
+          { parameter: "Fitting Types", value: "QF (NW, KF), pipe thread, and custom options" }
+        ]
+      },
+      {
+        id: "CLP-MODEL",
+        name: "CLP model",
+        title: "CLP Model Calibrated Leak Standards",
+        tagline: "High-Precision Glass-Permeation Helium Calibrated Leak Standard",
+        images: ["./assests/img/products/heliumLeakDetectors/calibratedLeaks/image_page_5_1_X22.jpg"],
+        description: "The CLP Helium Calibrated Leaks are high-precision Standards for use in critical calibrations of leak detectors and systems, in Ultra-High Vacuum systems, and as Transfer Standards for calibrating other Helium Leaks. They feature all-welded stainless steel construction, a premium all-metal shut-off valve, a glass-permeation leak element, and are bakeable for UHV applications. These models cover leak rates from 10-12 up to 10-3 atm-cc/sec and larger, as detailed in other brochures. The CLP Model is available with leak rates of 10-6 to 10-12 and is the only model made for the very low rates of 10-10 to 10-12 atm-cc/sec. The CLP Accu-Flow™ Calibrated Leaks are based on the principle that helium flows through certain materials at a measurable rate depending on the material thickness, driving pressure and temperature, and use Quartz or Pyrex as the permeation material for the leak element. These leaks are available with or without the leak shut-off valve, but the latter is rare, and with many types of attachment fittings such as QF (NW,KF), Conflat®, VCR® and others. All CLP Leaks are provided with Certifications of the NIST-traceable calibrations performed in A2LA-accredited Calibration Laboratory.",
+        highlights: [
+          "WILL NOT CLOG - glass-permeation leak element.",
+          "LONG TERM STABILITY - Low depletion rate.",
+          "WIDE LEAK-RATE CHOICE - 10⁻⁶ to 10⁻¹² range.",
+          "BAKEABLE FOR UHV USE - premium all-metal valve.",
+          "NEVER NEEDS REFILL - Lasts for years.",
+          "SIMPLE TO OPERATE - minimal user training.",
+          "MEETS ISO REQUIREMENTS - NIST-traceable, A2LA-accredited Calibration Certification."
+        ],
+        benefitsTitle: "Key Features & Benefits",
+        benefits: [
+          "High-precision standards ideal for critical calibrations and transfer standards.",
+          "Premium all-metal shut-off valve making it bakeable for UHV applications.",
+          "Capable of achieving very low leak rates from 10⁻¹⁰ to 10⁻¹² atm-cc/sec.",
+          "All-welded stainless steel construction with Conflat®, VCR®, QF fittings."
+        ],
+        columns: ["CLP Model Specifications"],
+        technicalSpecifications: [
+          { parameter: "Leak Element Type", value: "Glass-permeation type (Quartz or Pyrex)" },
+          { parameter: "Helium Leak Rate Range", value: "10⁻¹² to 10⁻³ atm-cc/sec" },
+          { parameter: "Low-Range Specialization", value: "Available in ultra-low rates of 10⁻¹⁰ to 10⁻¹² atm-cc/sec" },
+          { parameter: "Temperature Coefficient", value: "4% per °C" },
+          { parameter: "Durability / Handling", value: "Avoid rough handling (could break the glass element)" },
+          { parameter: "Clogging Resistance", value: "Excellent (Will not clog)" },
+          { parameter: "Valving Options", value: "Premium all-metal shut-off valve (Standard; bakeable for UHV use)" },
+          { parameter: "Fitting Types", value: "QF (NW, KF), Conflat®, VCR®, and custom options" }
+        ]
+      }
+    ]
   },
   {
     id: "HLD-ABOUT-HELIUM-LEAK-DETECTORS",

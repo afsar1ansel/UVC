@@ -75,6 +75,22 @@ function renderStructuredProduct(product) {
 
   if (!producter || !productTable || !end) return;
 
+  const parentDesc = document.getElementById("parentDescription");
+  if (parentDesc) {
+    if (product.models && product.models.length > 0) {
+      parentDesc.style.display = "block";
+      parentDesc.innerHTML = `
+        <h2 style="font-size: 26px; font-weight: 700; color: #001f3f; margin-bottom: 15px;">
+          ${product.id === "HLD-CALIBRATED-LEAKS" ? "CHOOSING A CALIBRATOR FOR HELIUM LEAK DETECTORS" : "About the " + product.title}
+        </h2>
+        <p style="color: #4d5765; font-size: 16px; line-height: 26px; text-align: justify; margin-bottom: 0;">${product.description}</p>
+      `;
+    } else {
+      parentDesc.style.display = "none";
+      parentDesc.innerHTML = "";
+    }
+  }
+
   // Clear any existing tabs
   if (tabsContainer) {
     tabsContainer.innerHTML = "";
@@ -195,25 +211,27 @@ function updateModelView(model, parentProduct) {
   producter.innerHTML = `
     <div class="image-gallery" style="flex: 1; min-width: 300px;">
       ${thumbnailsHtml}
-      <div class="main-image-container" style="border: 1px solid #e1e1e1; background: #fff; padding: 20px; border-radius: 8px;">
+      <div class="main-image-container" style="border: none; background: transparent; padding: 0; display: flex; justify-content: center; align-items: center;">
         <img id="main-image" src="${images[0]}" alt="${model.title || model.name || parentProduct.title} Image" style="max-height: 300px; object-fit: contain;" />
-        <div class="Product_btns" style="margin-top: 20px; width: 100%;">
-          ${
-            parentProduct.pdf
-              ? `<a href="${parentProduct.pdf}" download style="text-decoration:none; width: 100%;"><div class="productBrochure" style="width: 100%; justify-content: center; gap: 10px; border-radius: 4px;"><img src="./assests/img/bookLines.svg" alt="Brochure Icon" /> Download Brochure</div></a>`
-              : ""
-          }
-        </div>
       </div>
     </div>
     <div class="product-details" style="flex: 1.2; min-width: 300px;">
       <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-bottom: 10px;">
-        <div class="productCode" style="background-color: #0da574; border-radius: 3px;">${model.name || parentProduct.code}</div>
+        <div class="productCode" style="background-color: #0da574; border-radius: 3px; font-size: 12px; font-weight: 500; padding: 6px;">${model.name || parentProduct.code}</div>
+        ${
+          parentProduct.pdf
+            ? `<a href="${parentProduct.pdf}" download style="text-decoration: none;">
+                 <div class="downloadBtn" style="display: flex; align-items: center; gap: 10px; background: #0da574; color: white; padding: 6px 15px; border-radius: 3px; cursor: pointer; font-size: 12px; font-weight: 500; text-transform: uppercase;">
+                   <img src="./assests/img/bookLines.svg" alt="" style="filter: brightness(0) invert(1); width: 14px; height: 14px;" /> Download Brochure
+                 </div>
+               </a>`
+            : ""
+        }
       </div>
       <h2 style="font-size: 32px; font-weight: 700; color: #001f3f; margin-bottom: 5px;">${model.title || model.name || parentProduct.title}</h2>
       <h4 style="font-size: 18px; font-weight: 600; color: #0da574; margin-bottom: 20px; font-style: italic;">${model.tagline || seriesSubtitle}</h4>
       <p style="color: #4d5765; font-size: 16px; line-height: 26px; margin-bottom: 30px; text-align: justify;">
-        ${parentProduct.description}
+        ${model.description || parentProduct.description}
       </p>
       
       <div class="detailFeatures">
