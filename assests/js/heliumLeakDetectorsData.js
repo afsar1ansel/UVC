@@ -493,12 +493,161 @@ const heliumLeakDetectors = [
   {
     id: "HLD-ABOUT-HELIUM-LEAK-DETECTORS",
     title: "About helium leak Testing",
-    description: "Reaching a required vacuum level is often hindered by system leakages. Reducing the chamber’s gas pressure triggers the release of internal molecules or allows external air to enter through structural flaws like cracks, stalling the evacuation process. Identifying and repairing these sources via leak detection techniques is critical for maintaining system integrity.",
     code: "ABOUT HELIUM LEAK TEST METHODS",
-    images: ["./assests/img/products/heliumLeakDetectors/aboutHeliumLeak.png"],
-    features: ["System integrity check", "Leak source identification", "Evacuation optimization"],
     pdf: "./assests/img/products/heliumLeakDetectors/About helium leak test methods.pdf",
-    viewPdf: "./assests/img/products/heliumLeakDetectors/About helium leak test methods(page).pdf"
+    isEducational: true,
+    sections: {
+      intro: {
+        title: "TYPES OF LEAKS: REAL & VIRTUAL",
+        description: "Reaching a required vacuum level is often hindered by system leakages. Reducing the chamber’s gas pressure triggers the release of internal molecules or allows external air to enter through structural flaws like cracks, stalling the evacuation process. Identifying and repairing these sources via leak detection techniques is critical for maintaining system integrity.",
+        indicatorsTitle: "Identifying Vacuum Leaks",
+        indicatorsDesc: "Early detection of leakages is vital to prevent significant system damage. Common indicators of a compromised vacuum chamber include:",
+        indicators: [
+          "An unexpected rise in internal pressure (loss of vacuum).",
+          "Failure to achieve the system's target vacuum levels.",
+          "Visible oil discharge, mist, or smoke at the pump exhaust.",
+          "Audible whistling or hissing noises.",
+          "Unusual scents, such as oil or solvent odors.",
+          "Visible structural degradation, including cracks, fractures, or corrosion."
+        ],
+        categorizationTitle: "Categorization of Leakage",
+        categorizationDesc: "Vacuum leaks are categorized as either Real (external atmosphere entering) or Virtual (internal gas traps).",
+        realLeaksTitle: "Primary Sources of Real Leaks",
+        realLeaks: [
+          { name: "Mechanical Failures", desc: "Disconnected hoses or physical holes and cracks." },
+          { name: "Sealing Issues", desc: "Degraded gaskets, insufficient seal lubrication, or mismatched fittings." },
+          { name: "Environmental Factors", desc: "Material failure due to extreme operating temperatures." }
+        ],
+        virtualLeaksTitle: "Virtual Leaks",
+        virtualLeaksDesc: "Virtual leaks occur when gas is physically trapped within internal voids, such as microscopic weld cracks or the dead space at the bottom of a fastener’s threaded hole. These pockets have extremely low conductance paths to the main chamber, meaning the trapped gas cannot be evacuated quickly. Consequently, as the chamber pressure drops, these hidden reservoirs act as a continuous gas load, slowly bleeding air and contaminants back into the system and artificially inflating the base pressure.",
+        image: "./assests/img/products/heliumLeakDetectors/aboutHeliumLeak/image_page_1_1_X9.png"
+      },
+      behavior: {
+        title: "Vacuum Behavior & System Impacts",
+        description: "Distinct leakage sources result in varying pressure profiles during the evacuation and venting cycles, as illustrated in the schematic curve in Figure 2.",
+        image: "./assests/img/products/heliumLeakDetectors/aboutHeliumLeak/image_page_2_1_X17.png",
+        consequencesTitle: "Consequences of System Leaks",
+        consequencesDesc: "Failure to achieve the target ultimate pressure due to leakages can severely compromise several operational factors:",
+        consequences: [
+          { name: "Operational Safety", desc: "Risks to both personnel and the integrity of the end products." },
+          { name: "System Longevity", desc: "Increased strain that shortens the vacuum system's service life." },
+          { name: "Process Efficiency", desc: "Delays and inefficiencies in achieving production goals." },
+          { name: "Product Purity", desc: "Increased risk of contamination due to poor vacuum quality." },
+          { name: "Compliance", desc: "Failure to meet strict quality and environmental standards." }
+        ]
+      },
+      adaptedMethod: {
+        title: "Method Of Testing Adapted",
+        description: "The most commonly applied process in testing these types of aluminum auto parts are OVER PRESSURE OR INSIDE OUT METHODE. Here in this method the device under test (DUT) will be placed inside a vacuum chamber and the DUT is pressurized with helium gas. In case of any leakages, the helium gas gets in to the vacuum region because of the differential pressure. The helium leak detector mass spectrometer is connected in line with the vacuum chamber and vacuum pumping line. So the traces of helium that is the helium leak rate is measured."
+      },
+      technicalAdvantages: {
+        title: "Technical Advantages",
+        subtitle: "WHY HELIUM IS USED AS THE TRACE GAS?",
+        reasons: [
+          "Helium is a safe and harmless gas that does not threaten the human body or the environment.",
+          "Helium is non-combustible and therefore safe.",
+          "Helium molecules are small and light and so can easily escape through the smallest holes or openings.",
+          "Helium is only present in tiny quantities in the normal atmosphere and so can easily be identified as different from leakage test helium. Approximately 5ppm.",
+          "Helium is a chemically inert gas and so will not cause metal to rust."
+        ],
+        propertiesTitle: "Helium Properties (He, Atomic #2, Atomic weight: 4.003)",
+        propertiesDesc: "It is a colourless, odourless, tasteless, non-toxic, inert monatomic gas that heads the noble gas group in the periodic table.",
+        properties: [
+          { parameter: "Melting point", value: "-272.2°C (26 atm)" },
+          { parameter: "Boiling point", value: "268.9°C" },
+          { parameter: "Critical temperature", value: "-268.0°C" },
+          { parameter: "Critical pressure", value: "2.25 atm" },
+          { parameter: "Density", value: "0.179 g/dm³ (0°C, 1 atm)" },
+          { parameter: "Liquid density", value: "0.125 g/cm³ (-269.0°C)" }
+        ]
+      },
+      tracerMethods: {
+        title: "TRACER GAS METHODS",
+        methods: [
+          {
+            name: "PRESSURE DECAY METHOD",
+            image: "./assests/img/products/heliumLeakDetectors/aboutHeliumLeak/image_page_3_1_X20.png",
+            advantages: [
+              "Equipment is comparatively simple",
+              "Can measure leakage in entire work piece being tested"
+            ],
+            disadvantages: [
+              "Work piece temperature exerts a large effect",
+              "Ambient temperature exerts a large effect",
+              "Poor sensitivity",
+              "Cannot identify the leakage points"
+            ],
+            range: "10⁻⁴ [Pa · m³/sec] during actual operation. The lower the leak rate, the more time that is needed."
+          },
+          {
+            name: "WATER BUBBLE LEAK TEST",
+            image: "./assests/img/products/heliumLeakDetectors/aboutHeliumLeak/image_page_3_2_X22.png",
+            advantages: [
+              "Equipment is simple and so is operation",
+              "Leakage can be directly checked",
+              "Low running costs"
+            ],
+            disadvantages: [
+              "Requires experience (problems are easily overlooked)",
+              "Immersed test item has to be cleaned/dried later on",
+              "Requires controlling the water transparency, etc.",
+              "Cannot quantitatively monitor the leak rate",
+              "Poor work environment",
+              "Difficult to automate the process",
+              "Man-made errors are possible"
+            ],
+            range: "10⁻⁴ [Pa · m³/sec] during actual operation. The lower the leak rate, the more time that is needed."
+          },
+          {
+            name: "SNIFFER METHOD",
+            image: "./assests/img/products/heliumLeakDetectors/aboutHeliumLeak/image_page_3_3_X24.png",
+            advantages: [
+              "Directly finds the leak points",
+              "Installation is simple (needs little space)",
+              "Inexpensive equipment costs"
+            ],
+            disadvantages: [
+              "Cannot measure leak unless probe directly contacts the leakage point",
+              "Operating the probe requires considerable experience",
+              "Cannot measure leakage quantity for entire work piece"
+            ],
+            range: "10⁻⁶ [Pa · m³/sec] (pinpoint) in actual operation."
+          },
+          {
+            name: "VACUUM CHAMBER METHOD",
+            image: "./assests/img/products/heliumLeakDetectors/aboutHeliumLeak/image_page_3_4_X25.png",
+            advantages: [
+              "Reliably identifies overall leakage",
+              "Fast leakage measurements",
+              "No man-made errors",
+              "Process is easy to automate",
+              "Helium needs no purification to remove contaminants"
+            ],
+            disadvantages: [
+              "Equipment is large-scale [We offer separate, simplified models (detection performance subject to certain conditions)]",
+              "Cannot identify separate individual leak positions"
+            ],
+            range: "10⁻⁸ [Pa · m³/sec] (paschal cubic meters per second) or more in actual operation."
+          }
+        ]
+      },
+      lowVacuumAdvantages: {
+        title: "BIG ADVANTAGES FROM MAKING LEAK TESTS IN A LOW VACUUM",
+        advantages: [
+          "Time for vacuuming in the chamber stable and not affected much by the environment (humidity, moisture, etc.).",
+          "Maintenance of chamber to maintain vacuum is easy.",
+          "Recovers quickly from large helium leakage.",
+          "Time for vacuuming is short since unit needs no roughing vacuum or main vacuum, space-saving system design allows flexibility during installation.",
+          "Allows use of high durability vacuum pumps.",
+          "Lowers the initial cost of vacuum pump.",
+          "Few or minimal restrictions on system installation site, such as on space or floor weight-bearing strength."
+        ],
+        extraInfo: [
+          "UVS has the original technique that reduces the residual helium in the air of the chamber.",
+          "Unit utilizes a helium leak detector capable of making leak tests under a low vacuum."
+        ]
+      }
+    }
   },
   {
     id: "HLD-HELIUM-LEAK-TEST-SYSTEM",

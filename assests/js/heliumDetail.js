@@ -33,8 +33,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const pdfViewer = document.getElementById("pdfViewer");
     const structuredContainer = document.getElementById("structuredContainer");
 
-    // Branch logic: Structured specifications view vs PDF brochure view
-    if ((product.technicalSpecifications && product.technicalSpecifications.length > 0) || (product.models && product.models.length > 0)) {
+    // Branch logic: Educational content vs Structured specifications view vs PDF brochure view
+    if (product.isEducational) {
+      if (pdfViewer) pdfViewer.style.display = "none";
+      if (structuredContainer) structuredContainer.style.display = "block";
+
+      renderAboutHeliumLeakTesting(product);
+    } else if ((product.technicalSpecifications && product.technicalSpecifications.length > 0) || (product.models && product.models.length > 0)) {
       // Hide PDF viewer, show structured layout container
       if (pdfViewer) pdfViewer.style.display = "none";
       if (structuredContainer) structuredContainer.style.display = "block";
@@ -333,10 +338,12 @@ function initializeGallery() {
 }
 
 function initializeZoom() {
-  const container = document.querySelector(".main-image-container");
-  const img = document.getElementById("main-image");
+  const containers = document.querySelectorAll(".main-image-container");
 
-  if (container && img) {
+  containers.forEach((container) => {
+    const img = container.querySelector("img");
+    if (!img) return;
+
     container.addEventListener("mousemove", (e) => {
       const { left, top, width, height } = container.getBoundingClientRect();
       const x = ((e.clientX - left) / width) * 100;
@@ -350,7 +357,7 @@ function initializeZoom() {
       img.style.transform = "scale(1)";
       img.style.transformOrigin = "center center";
     });
-  }
+  });
 }
 
 async function renderPDF(url, container) {
@@ -507,4 +514,266 @@ async function renderPDF(url, container) {
       </div>
     `;
   }
+}
+
+function renderAboutHeliumLeakTesting(product) {
+  const parentDesc = document.getElementById("parentDescription");
+  const tabsContainer = document.getElementById("modelTabsContainer");
+  const producter = document.getElementById("producter");
+  const productTable = document.getElementById("productTable");
+  const end = document.getElementById("end");
+
+  if (parentDesc) parentDesc.style.display = "none";
+  if (tabsContainer) tabsContainer.style.display = "none";
+
+  const sec = product.sections;
+
+  // 1. Render Intro & Behavior in producter
+  producter.innerHTML = `
+    <div style="width: 100%; display: flex; flex-direction: column; gap: 40px; color: #000810;">
+      
+      <!-- Section 1: Types of Leaks (Real & Virtual) -->
+      <div style="display: flex; gap: 30px; flex-wrap: wrap;">
+        <!-- Left: Text content -->
+        <div style="flex: 1.2; min-width: 300px;">
+          <h2 style="font-size: 28px; font-weight: 700; color: #001f3f; margin-bottom: 20px; border-left: 5px solid #ffc631; padding-left: 15px;">${sec.intro.title}</h2>
+          <p style="color: #4d5765; font-size: 16px; line-height: 26px; margin-bottom: 20px; text-align: justify;">
+            ${sec.intro.description}
+          </p>
+          
+          <!-- Identifying Vacuum Leaks Card -->
+          <div style="background: #f8f9fa; border: 1px solid #dee2e6; border-radius: 8px; padding: 20px; margin-bottom: 25px;">
+            <h4 style="font-size: 18px; font-weight: 700; color: #001f3f; margin-bottom: 15px;">${sec.intro.indicatorsTitle}</h4>
+            <p style="color: #4d5765; font-size: 14.5px; margin-bottom: 15px; font-style: italic;">${sec.intro.indicatorsDesc}</p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 10px;">
+              ${sec.intro.indicators.map(ind => `
+                <div style="display: flex; gap: 10px; align-items: flex-start;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#dc3545" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 3px;">
+                    <polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"></polygon>
+                    <line x1="12" y1="8" x2="12" y2="12"></line>
+                    <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                  </svg>
+                  <p style="margin: 0; color: #4d5765; font-size: 14px; font-weight: 500;">${ind}</p>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+
+          <!-- Real vs Virtual Info Grid -->
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+            <!-- Real Leaks -->
+            <div style="background: #eef9f5; border: 1px solid #d4edda; border-radius: 8px; padding: 20px;">
+              <h4 style="font-size: 17px; font-weight: 700; color: #0da574; margin-bottom: 12px;">${sec.intro.realLeaksTitle}</h4>
+              <p style="color: #4d5765; font-size: 14px; margin-bottom: 12px;">${sec.intro.categorizationDesc}</p>
+              <div style="display: flex; flex-direction: column; gap: 8px;">
+                ${sec.intro.realLeaks.map(rl => `
+                  <div style="font-size: 13.5px; color: #4d5765; line-height: 1.5;">
+                    <strong style="color: #001f3f;">• ${rl.name}:</strong> ${rl.desc}
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+            <!-- Virtual Leaks -->
+            <div style="background: #fffdf5; border: 1px solid #ffeeba; border-radius: 8px; padding: 20px;">
+              <h4 style="font-size: 17px; font-weight: 700; color: #b58900; margin-bottom: 12px;">${sec.intro.virtualLeaksTitle}</h4>
+              <p style="color: #4d5765; font-size: 13.5px; line-height: 1.6; text-align: justify; margin: 0;">
+                ${sec.intro.virtualLeaksDesc}
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Right: Figure 1 image with zoom -->
+        <div style="flex: 0.8; min-width: 300px; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; gap: 15px;">
+          <div class="main-image-container" style="border: 1px solid #dee2e6; background: #fff; padding: 20px; border-radius: 8px; width: 100%; height: auto; max-height: none;">
+            <img src="${sec.intro.image}" alt="Figure 1: Gas Sources" style="width: 100%; max-height: 450px; object-fit: contain;" />
+          </div>
+          <span style="font-size: 13px; font-weight: 600; color: #777; font-style: italic; text-align: center;">Figure 1: Summary of Real & Virtual Gas Sources in Vacuum Chamber</span>
+        </div>
+      </div>
+
+      <!-- Adapted Method Alert Banner -->
+      <div style="background: linear-gradient(135deg, #001f3f 0%, #003366 100%); color: #fff; padding: 30px; border-radius: 8px; border-left: 5px solid #0da574; box-shadow: 0 10px 20px rgba(0,0,0,0.05); margin-top: 10px;">
+        <h3 style="font-size: 20px; font-weight: 700; margin-bottom: 12px; color: #ffc642; text-transform: uppercase;">${sec.adaptedMethod.title}</h3>
+        <p style="font-size: 15px; line-height: 1.7; margin: 0; text-align: justify; font-style: italic; opacity: 0.95;">
+          ${sec.adaptedMethod.description}
+        </p>
+      </div>
+
+      <!-- Section 2: Vacuum Behavior & System Impacts -->
+      <div style="display: flex; gap: 30px; flex-wrap: wrap; margin-top: 20px;">
+        <!-- Left: Graph image -->
+        <div style="flex: 0.8; min-width: 300px; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; gap: 15px;">
+          <div class="main-image-container" style="border: 1px solid #dee2e6; background: #fff; padding: 20px; border-radius: 8px; width: 100%; height: auto; max-height: none;">
+            <img src="${sec.behavior.image}" alt="Figure 2: Pressure curves" style="width: 100%; max-height: 350px; object-fit: contain;" />
+          </div>
+          <span style="font-size: 13px; font-weight: 600; color: #777; font-style: italic; text-align: center;">Figure 2: Evacuation Pressure Curves (Leakage vs Outgassing)</span>
+        </div>
+
+        <!-- Right: Behavior text & Consequences cards -->
+        <div style="flex: 1.2; min-width: 300px;">
+          <h2 style="font-size: 24px; font-weight: 700; color: #001f3f; margin-bottom: 15px;">${sec.behavior.title}</h2>
+          <p style="color: #4d5765; font-size: 16px; line-height: 26px; margin-bottom: 25px; text-align: justify;">
+            ${sec.behavior.description}
+          </p>
+
+          <h4 style="font-size: 18px; font-weight: 700; color: #001f3f; margin-bottom: 12px;">${sec.behavior.consequencesTitle}</h4>
+          <p style="color: #4d5765; font-size: 14.5px; margin-bottom: 15px;">${sec.behavior.consequencesDesc}</p>
+          
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px;">
+            ${sec.behavior.consequences.map(con => `
+              <div style="background: #fff; border: 1px solid #e2e8f0; border-radius: 6px; padding: 15px; display: flex; gap: 12px; align-items: flex-start; box-shadow: 0 4px 6px rgba(0,0,0,0.02);">
+                <div style="background: #dc3545; color: #fff; border-radius: 50%; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; flex-shrink: 0; margin-top: 2px;">!</div>
+                <div>
+                  <h5 style="font-size: 15px; font-weight: 700; color: #001f3f; margin-bottom: 4px;">${con.name}</h5>
+                  <p style="margin: 0; color: #555; font-size: 13.5px; line-height: 1.4;">${con.desc}</p>
+                </div>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      </div>
+
+    </div>
+  `;
+
+  // 2. Render Tracer Gas Methods Grid in productTable
+  productTable.innerHTML = `
+    <div style="margin-top: 30px; margin-bottom: 40px; width: 100%;">
+      <h2 style="font-size: 28px; font-weight: 700; margin-bottom: 30px; color: #001f3f; border-left: 5px solid #0da574; padding-left: 15px; text-transform: uppercase;">
+        ${product.sections.tracerMethods.title}
+      </h2>
+      
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(480px, 1fr)); gap: 30px;">
+        ${sec.tracerMethods.methods.map(m => `
+          <div style="background: #fff; border: 1px solid #dee2e6; border-radius: 8px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.04); display: flex; flex-direction: column;">
+            <!-- Header bar -->
+            <div style="background: #001f3f; color: #fff; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center;">
+              <h3 style="font-size: 16px; font-weight: 700; margin: 0; letter-spacing: 0.5px;">${m.name}</h3>
+            </div>
+            
+            <!-- Diagram & details row -->
+            <div style="padding: 20px; display: flex; gap: 20px; flex-wrap: wrap; flex-grow: 1;">
+              <!-- Diagram box -->
+              <div class="main-image-container" style="flex: 1; min-width: 180px; height: 200px; border: 1px solid #f0f0f0; background: #fafafa; border-radius: 6px; display: flex; justify-content: center; align-items: center; cursor: zoom-in; overflow: hidden; padding: 10px; position: relative; max-width: none; max-height: none;">
+                <img src="${m.image}" alt="${m.name} diagram" style="max-width: 100%; max-height: 100%; object-fit: contain; transition: transform 0.1s ease-out;" />
+              </div>
+              
+              <!-- Lists box -->
+              <div style="flex: 1.5; min-width: 220px; display: flex; flex-direction: column; gap: 15px;">
+                <!-- Advantages -->
+                <div>
+                  <h5 style="font-size: 14px; font-weight: 700; color: #0da574; margin-bottom: 6px; text-transform: uppercase;">Advantages</h5>
+                  <div style="display: flex; flex-direction: column; gap: 4px;">
+                    ${m.advantages.map(adv => `
+                      <div style="display: flex; gap: 6px; align-items: flex-start; font-size: 12.5px; color: #555;">
+                        <span style="color: #0da574; font-weight: bold; flex-shrink: 0;">✔</span>
+                        <span>${adv}</span>
+                      </div>
+                    `).join('')}
+                  </div>
+                </div>
+
+                <!-- Disadvantages -->
+                <div>
+                  <h5 style="font-size: 14px; font-weight: 700; color: #dc3545; margin-bottom: 6px; text-transform: uppercase;">Disadvantages</h5>
+                  <div style="display: flex; flex-direction: column; gap: 4px;">
+                    ${m.disadvantages.map(dis => `
+                      <div style="display: flex; gap: 6px; align-items: flex-start; font-size: 12.5px; color: #555;">
+                        <span style="color: #dc3545; font-weight: bold; flex-shrink: 0;">✘</span>
+                        <span>${dis}</span>
+                      </div>
+                    `).join('')}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Range pill footer -->
+            <div style="background: #fafafa; border-top: 1px solid #eee; padding: 12px 20px; font-size: 13px; color: #555; display: flex; align-items: center; gap: 8px;">
+              <span style="background: #ffe699; color: #856404; font-size: 10.5px; font-weight: 700; padding: 3px 8px; border-radius: 20px; text-transform: uppercase; flex-shrink: 0;">Range</span>
+              <strong style="font-weight: 600;">${m.range}</strong>
+            </div>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+  `;
+
+  // 3. Render Technical Advantages & Low Vacuum Testing in end
+  const propertiesHtml = sec.technicalAdvantages.properties.map(p => `
+    <tr style="border-bottom: 1px solid #eee;">
+      <td style="font-weight: 600; padding: 8px 12px; color: #001f3f; font-size: 13.5px; border: 1px solid #eee !important; width: 45%;">${p.parameter}</td>
+      <td style="padding: 8px 12px; color: #555; font-size: 13.5px; border: 1px solid #eee !important; width: 55%;">${p.value}</td>
+    </tr>
+  `).join('');
+
+  end.innerHTML = `
+    <div style="margin-top: 40px; margin-bottom: 50px; width: 100%; display: flex; gap: 30px; flex-wrap: wrap;">
+      
+      <!-- Left Card: Trace Gas Technical Advantages & Properties -->
+      <div style="flex: 1.1; min-width: 300px; background: #fff; border: 1px solid #dee2e6; border-radius: 8px; padding: 25px; box-shadow: 0 5px 15px rgba(0,0,0,0.03);">
+        <h3 style="font-size: 20px; font-weight: 700; color: #001f3f; margin-bottom: 8px; border-bottom: 2px solid #001f3f; padding-bottom: 10px;">
+          ${sec.technicalAdvantages.title}
+        </h3>
+        <h5 style="font-size: 14.5px; font-weight: 700; color: #0da574; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 0.5px;">
+          ${sec.technicalAdvantages.subtitle}
+        </h5>
+        
+        <div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 25px;">
+          ${sec.technicalAdvantages.reasons.map(reason => `
+            <div style="display: flex; gap: 10px; align-items: flex-start;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0da574" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <p style="margin: 0; color: #4d5765; font-size: 14px; font-weight: 500; text-align: justify;">${reason}</p>
+            </div>
+          `).join('')}
+        </div>
+
+        <h4 style="font-size: 15px; font-weight: 700; color: #001f3f; margin-bottom: 8px;">${sec.technicalAdvantages.propertiesTitle}</h4>
+        <p style="color: #777; font-size: 13px; font-style: italic; margin-bottom: 12px;">${sec.technicalAdvantages.propertiesDesc}</p>
+        
+        <table style="width: 100%; border-collapse: collapse; border: 1px solid #dee2e6;">
+          <tbody>
+            ${propertiesHtml}
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Right Card: Low Vacuum Testing Advantages -->
+      <div style="flex: 0.9; min-width: 300px; background: #fdfdfd; border: 1px solid #dee2e6; border-radius: 8px; padding: 25px; box-shadow: 0 5px 15px rgba(0,0,0,0.03); display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <h3 style="font-size: 20px; font-weight: 700; color: #001f3f; margin-bottom: 15px; border-bottom: 2px solid #ffc631; padding-bottom: 10px;">
+            LOW VACUUM ADVANTAGES
+          </h3>
+          <p style="font-size: 13.5px; color: #777; font-style: italic; margin-bottom: 20px;">
+            Making leak tests under a low vacuum provides significant benefits over standard vacuum testing:
+          </p>
+
+          <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 25px;">
+            ${sec.lowVacuumAdvantages.advantages.map(adv => `
+              <div style="display: flex; gap: 10px; align-items: flex-start;">
+                <span style="background: #e6f7ff; color: #1890ff; border-radius: 50%; width: 20px; height: 20px; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: bold; flex-shrink: 0; margin-top: 1px;">✓</span>
+                <p style="margin: 0; color: #4d5765; font-size: 14px; font-weight: 500; text-align: justify;">${adv}</p>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+
+        <div style="background: #eefaf6; border: 1px dashed #0da574; border-radius: 6px; padding: 15px;">
+          ${sec.lowVacuumAdvantages.extraInfo.map(info => `
+            <p style="font-size: 13.5px; color: #2e7d32; line-height: 1.5; margin-bottom: 10px; font-weight: 600; text-align: justify; display: flex; gap: 8px;">
+              <span style="color: #0da574;">★</span>
+              <span>${info}</span>
+            </p>
+          `).join('')}
+        </div>
+      </div>
+
+    </div>
+  `;
+
+  // 4. Initialize image interactions
+  initializeZoom();
 }
