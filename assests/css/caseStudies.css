@@ -858,7 +858,7 @@ border: none;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 24px;
+    gap: 0;
   }
 
   #future .futureGridBox p {
@@ -902,7 +902,7 @@ border: none;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 24px;
+    gap: 0;
   }
 
 
@@ -940,7 +940,10 @@ border: none;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 24px;
+}
+
+.futureGridBox1 > *:not(:last-child) {
+  margin-bottom: 24px;
 }
 
 .futureBoxicon {
@@ -951,10 +954,13 @@ border: none;
 
 .futureGridBox1 h5 {
   color: white;
+  font-size: 18px;
+  margin-bottom: 8px !important;
 }
 
 .futureGridBox1 p {
   color: white;
+  margin: 0;
 }
 
 .futureGridBox h1 {

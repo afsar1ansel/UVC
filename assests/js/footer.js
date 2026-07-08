@@ -49,7 +49,7 @@ box.innerHTML = ` <div class="footUp">
         </div>
         <div class="footline"></div>
         <div class="footBottom">
-            <p>Unique Vacuum Solutions © Third Eye Creatives All rights reserved Copyrights 2024</p>
+            <p>Unique Vacuum Solutions ©  All rights reserved Copyrights 2024</p>
             
         </div>`;
 foot.appendChild(box)
