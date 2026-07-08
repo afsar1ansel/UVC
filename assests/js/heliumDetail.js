@@ -33,12 +33,17 @@ document.addEventListener("DOMContentLoaded", () => {
     const pdfViewer = document.getElementById("pdfViewer");
     const structuredContainer = document.getElementById("structuredContainer");
 
-    // Branch logic: Educational content vs Structured specifications view vs PDF brochure view
+    // Branch logic: Educational content vs Systems Showcase vs Structured specifications view vs PDF brochure view
     if (product.isEducational) {
       if (pdfViewer) pdfViewer.style.display = "none";
       if (structuredContainer) structuredContainer.style.display = "block";
 
       renderAboutHeliumLeakTesting(product);
+    } else if (product.isSystemsPage) {
+      if (pdfViewer) pdfViewer.style.display = "none";
+      if (structuredContainer) structuredContainer.style.display = "block";
+
+      renderHeliumLeakTestSystems(product);
     } else if ((product.technicalSpecifications && product.technicalSpecifications.length > 0) || (product.models && product.models.length > 0)) {
       // Hide PDF viewer, show structured layout container
       if (pdfViewer) pdfViewer.style.display = "none";
@@ -777,3 +782,202 @@ function renderAboutHeliumLeakTesting(product) {
   // 4. Initialize image interactions
   initializeZoom();
 }
+
+function renderHeliumLeakTestSystems(product) {
+  const parentDesc = document.getElementById("parentDescription");
+  const tabsContainer = document.getElementById("modelTabsContainer");
+  const producter = document.getElementById("producter");
+  const productTable = document.getElementById("productTable");
+  const end = document.getElementById("end");
+
+  if (parentDesc) parentDesc.style.display = "none";
+  if (tabsContainer) tabsContainer.style.display = "none";
+
+  // 1. Render Intro, Solutions points & Services description in producter
+  producter.innerHTML = `
+    <div style="width: 100%; display: flex; flex-direction: column; gap: 40px; color: #000810;">
+      
+      <!-- Section 1: Overview & Solutions -->
+      <div style="display: flex; gap: 30px; flex-wrap: wrap;">
+        <!-- Left Column: Intro & Checklist -->
+        <div style="flex: 1.2; min-width: 300px;">
+          <h2 style="font-size: 28px; font-weight: 700; color: #001f3f; margin-bottom: 20px; border-left: 5px solid #0da574; padding-left: 15px;">${product.title}</h2>
+          <p style="color: #4d5765; font-size: 16px; line-height: 26px; margin-bottom: 25px; text-align: justify;">
+            ${product.description}
+          </p>
+
+          <div style="background: #f8f9fa; border: 1px solid #dee2e6; border-radius: 8px; padding: 25px;">
+            <h4 style="font-size: 18px; font-weight: 700; color: #001f3f; margin-bottom: 15px;">${product.oneStopPointsTitle}</h4>
+            <div style="display: flex; flex-direction: column; gap: 10px;">
+              ${product.oneStopPoints.map(pt => `
+                <div style="display: flex; gap: 10px; align-items: flex-start;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0da574" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 3px;">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <p style="margin: 0; color: #4d5765; font-size: 14.5px; font-weight: 500;">${pt}</p>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Welcome Hero Box -->
+        <div style="flex: 0.8; min-width: 300px; display: flex; flex-direction: column; justify-content: stretch;">
+          <div style="background: linear-gradient(135deg, #001f3f 0%, #003366 100%); color: #fff; padding: 30px; border-radius: 8px; display: flex; flex-direction: column; justify-content: center; height: 100%; box-shadow: 0 10px 20px rgba(0,0,0,0.05);">
+            <h3 style="font-size: 22px; font-weight: 700; color: #ffc642; margin-bottom: 15px;">CUSTOM BUILT VACUUM SYSTEMS</h3>
+            <p style="font-size: 14.5px; line-height: 1.6; margin-bottom: 20px; opacity: 0.95; text-align: justify;">
+              Unique Vacuum Solutions has designed, fabricated, and installed vacuum test chambers and systems tailored to extreme industrial environments since 2001. We deliver state-of-the-art mass spectrometer leak testing equipment that guarantees system integrity.
+            </p>
+            <div style="display: flex; align-items: center; gap: 10px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 15px;">
+              <span style="background: #0da574; color: white; padding: 5px 12px; font-size: 11px; font-weight: 700; border-radius: 3px;">ESTABLISHED 2001</span>
+              <span style="font-size: 12.5px; color: #ffc642; font-weight: 600;">ISO COMPLIANT STATIONS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 2: Services Detail & Specializations Grid -->
+      <div style="display: flex; gap: 30px; flex-wrap: wrap; margin-top: 10px;">
+        <!-- Left column: more about leak testing services -->
+        <div style="flex: 1.1; min-width: 300px;">
+          <h3 style="font-size: 22px; font-weight: 700; color: #001f3f; margin-bottom: 15px; border-bottom: 2px solid #eee; padding-bottom: 8px;">
+            ${product.aboutServicesTitle}
+          </h3>
+          <p style="color: #4d5765; font-size: 15px; line-height: 25px; text-align: justify; margin: 0;">
+            ${product.aboutServicesDesc}
+          </p>
+        </div>
+
+        <!-- Right column: Specializations checkmarks card -->
+        <div style="flex: 0.9; min-width: 300px; background: #eefaf6; border: 1px solid #d4edda; border-radius: 8px; padding: 25px; display: flex; flex-direction: column; justify-content: center;">
+          <h4 style="font-size: 17px; font-weight: 700; color: #0da574; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 0.5px;">
+            ${product.specializationsTitle}
+          </h4>
+          <div style="display: flex; flex-direction: column; gap: 12px;">
+            ${product.specializations.map(spec => `
+              <div style="display: flex; gap: 10px; align-items: flex-start;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0da574" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 2px;">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <p style="margin: 0; color: #1b5e20; font-size: 14.5px; font-weight: 600;">${spec}</p>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      </div>
+
+    </div>
+  `;
+
+  // 2. Render Custom Testing Stations Grid in productTable
+  const stationsHtml = product.stations.map(st => {
+    let imageSectionHtml = '';
+    
+    if (st.images && st.images.length > 0) {
+      const mainImg = st.images[0];
+      const thumbnailStripHtml = st.images.length > 1
+        ? `
+          <div style="display: flex; gap: 6px; margin-top: 10px; justify-content: flex-start; overflow-x: auto; padding-bottom: 5px;">
+            ${st.images.map((img, idx) => `
+              <img
+                class="station-thumbnail ${idx === 0 ? 'active' : ''}"
+                src="${img}"
+                alt="Thumbnail"
+                style="width: 45px; height: 45px; object-fit: cover; cursor: pointer; border: 1.5px solid ${idx === 0 ? '#0da574' : '#dee2e6'}; border-radius: 3px; transition: border-color 0.2s;"
+                onclick="updateStationImage(this, '${st.num}')"
+              />
+            `).join('')}
+          </div>
+        `
+        : '';
+
+      imageSectionHtml = `
+        <div style="width: 100%; display: flex; flex-direction: column; align-items: stretch; margin-bottom: 15px;">
+          <div class="main-image-container" style="width: 100%; height: 260px; border: 1px solid #dee2e6; background: #fafafa; border-radius: 6px; display: flex; justify-content: center; align-items: center; cursor: zoom-in; overflow: hidden; padding: 10px; position: relative; max-width: none; max-height: none; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+            <img class="station-main-img" src="${mainImg}" alt="${st.title}" style="max-width: 100%; max-height: 100%; object-fit: contain; transition: transform 0.1s ease-out;" />
+          </div>
+          ${thumbnailStripHtml}
+        </div>
+      `;
+    } else {
+      imageSectionHtml = `
+        <div style="width: 100%; height: 260px; border: 1px dashed #ccc; background: #fafafa; border-radius: 6px; display: flex; flex-direction: column; justify-content: center; align-items: center; margin-bottom: 15px; color: #999;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 10px; opacity: 0.7;">
+            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+            <circle cx="8.5" cy="8.5" r="1.5"/>
+            <polyline points="21 15 16 10 5 21"/>
+          </svg>
+          <span style="font-size: 13.5px; font-weight: 500; font-style: italic;">Image Not Available</span>
+        </div>
+      `;
+    }
+
+    return `
+      <div id="station-card-${st.num}" style="background: #fff; border: 1px solid #dee2e6; border-radius: 8px; padding: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.03); display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <!-- Title with index number -->
+          <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 15px;">
+            <span style="background: #001f3f; color: #fff; border-radius: 50%; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; flex-shrink: 0;">${st.num}</span>
+            <h3 style="font-size: 15.5px; font-weight: 700; color: #001f3f; margin: 0; line-height: 1.4;">${st.title}</h3>
+          </div>
+          
+          <!-- Image block -->
+          ${imageSectionHtml}
+        </div>
+        
+        <!-- Description -->
+        <p style="color: #555; font-size: 13.5px; line-height: 1.6; margin: 0; text-align: justify;">
+          ${st.desc}
+        </p>
+      </div>
+    `;
+  }).join('');
+
+  productTable.innerHTML = `
+    <div style="margin-top: 30px; margin-bottom: 40px; width: 100%;">
+      <h2 style="font-size: 28px; font-weight: 700; margin-bottom: 30px; color: #001f3f; border-left: 5px solid #0da574; padding-left: 15px; text-transform: uppercase;">
+        ${product.stationsTitle}
+      </h2>
+      
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 30px;">
+        ${stationsHtml}
+      </div>
+    </div>
+  `;
+
+  // 3. Render Mission Statement in end
+  end.innerHTML = `
+    <div style="margin-top: 40px; margin-bottom: 50px; width: 100%;">
+      <div style="background: linear-gradient(135deg, #001f3f 0%, #0da574 100%); color: #fff; padding: 40px; border-radius: 8px; border-left: 5px solid #ffc631; box-shadow: 0 10px 25px rgba(0,0,0,0.06); text-align: center;">
+        <h3 style="font-size: 22px; font-weight: 700; color: #ffc642; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px;">
+          ${product.missionTitle}
+        </h3>
+        <p style="font-size: 16px; line-height: 1.8; margin: 0 auto; max-width: 800px; text-align: justify; font-style: italic; text-align-last: center; opacity: 0.95;">
+          "${product.missionDesc}"
+        </p>
+      </div>
+    </div>
+  `;
+
+  // Define dynamic image swapper global handler
+  window.updateStationImage = function(thumbElement, stationNum) {
+    const card = document.getElementById(`station-card-${stationNum}`);
+    if (card) {
+      const mainImg = card.querySelector(".station-main-img");
+      if (mainImg) {
+        mainImg.src = thumbElement.src;
+      }
+      const thumbs = card.querySelectorAll(".station-thumbnail");
+      thumbs.forEach(t => {
+        t.style.borderColor = "#dee2e6";
+        t.classList.remove("active");
+      });
+      thumbElement.style.borderColor = "#0da574";
+      thumbElement.classList.add("active");
+    }
+  };
+
+  // 4. Initialize image interactions
+  initializeZoom();
+}
+

@@ -496,6 +496,8 @@ const heliumLeakDetectors = [
     code: "ABOUT HELIUM LEAK TEST METHODS",
     pdf: "./assests/img/products/heliumLeakDetectors/About helium leak test methods.pdf",
     isEducational: true,
+    description: "Learn about the types of vacuum leaks (real vs. virtual), tracer gas leak testing methods (pressure decay, sniffer, vacuum chamber), and the physical properties of Helium.",
+    images: ["./assests/img/products/heliumLeakDetectors/aboutHeliumLeak/image_page_1_1_X9.png"],
     sections: {
       intro: {
         title: "TYPES OF LEAKS: REAL & VIRTUAL",
@@ -652,12 +654,128 @@ const heliumLeakDetectors = [
   {
     id: "HLD-HELIUM-LEAK-TEST-SYSTEM",
     title: "Helium Leak Test Systems",
-    description: "High-performance Helium Leak Test Systems designed for fast, automated, and non-destructive industrial leak testing of various products and components.",
     code: "HELIUM LEAK TEST SYSTEMS",
-    images: ["./assests/img/products/heliumLeakTestSystem/heliumLeakTestSystem.png"],
-    features: ["Automated industrial test systems", "High-accuracy mass spectrometer leak testing", "Optimized cycle times"],
     pdf: "./assests/img/products/heliumLeakTestSystem/HLTstations.pdf",
-    viewPdf: "./assests/img/products/heliumLeakTestSystem/HLTstations.pdf"
+    isSystemsPage: true,
+    description: "Unique Vacuum Solutions has been in the field of Vacuum Technology & helium leak testing equipment building and testing services, vacuum measurement instruments and related calibration services since 2001. This includes, manufacturing and supply of custom built and standard vacuum systems / helium leak testing stations / components to the various R&D Organisations, Institutional & Industrial customers across the country.",
+    oneStopPointsTitle: "UVS is a one stop solution for all the needs of:",
+    oneStopPoints: [
+      "Helium leak detection services (mass spectrometer helium leak testing)",
+      "Helium leak detectors",
+      "Helium calibrated leaks",
+      "Helium bombing stations",
+      "Helium leak test stations for various applications like aluminum castings, battery industry automobile components, etc.",
+      "High vacuum products such as vacuum components, vacuum valves, flex metal bellows & hoses, spares",
+      "Vacuum measurement instruments like pirani gauges, penning gauges, Digital Thickness Monitors, and so on."
+    ],
+    aboutServicesTitle: "More about our helium leak test services",
+    aboutServicesDesc: "Helium Leak Testing and Leak Detection has been the cornerstone of our business since we began in the year 2001. With UVS equipment and staff, we are capable of performing on-site field testing as well as in-house testing. We have the necessary equipment to perform all leak testing services in industry environments as well as laboratory conditions. UVS can perform almost any helium leak test method on a customer’s site.<br><br>UVS competent engineering staff has the necessary knowledge and experience to develop testing procedures specific to customer requirements. This allows UVS the ability to accommodate all of our customers’ needs in regards to leak testing.<br><br>We are equipped with state of the art, highly reliable helium leak detector which is compatible for all the types and methods of helium leak testing. The helium leak detector usable range is from 10⁻¹¹ std CC/sec to 10⁻³ std CC/sec depending on the type of test and the test object.",
+    specializationsTitle: "UVS has specialized in conducting the helium leak testing in:",
+    specializations: [
+      "Evacuation or vacuum method - tracer gas probe test",
+      "Evacuation method - hood test",
+      "Over pressure - hood test",
+      "Over pressure method - bombing test",
+      "Over pressure method - sniffer test"
+    ],
+    missionTitle: "Our Mission Statement",
+    missionDesc: "Unique Vacuum Solutions is dedicated to provide Quality leak detection services and helium leak test stations. We shall support our customers with calibration services for helium leaks & vacuum measurement gauges, and also support customer with service and repair of high vacuum product.",
+    stationsTitle: "HELIUM LEAK TESTING STATIONS BY UVS FOR VARIOUS APPLICATIONS",
+    stations: [
+      {
+        num: 1,
+        title: "For aluminium castings in vacuum chamber method",
+        images: [
+          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_2_4_X22.png",
+          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_2_1_X18.jpg",
+          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_2_2_X20.jpg",
+          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_2_3_X21.jpg"
+        ],
+        desc: "Custom built industrial vacuum chamber system designed specifically for high-accuracy helium leak detection in aluminum castings, ensuring structural and pressure integrity."
+      },
+      {
+        num: 2,
+        title: "For Long aluminum fabricated tubes with vacuum method",
+        images: [
+          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_3_1_X26.jpg"
+        ],
+        desc: "Specialized mobile vacuum pumping systems built for leak testing long fabricated aluminum tubes and piping networks."
+      },
+      {
+        num: 3,
+        title: "For VRLA batteries in vacuum chamber method",
+        images: [
+          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_4_2_X30.png",
+          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_4_1_X29.jpg"
+        ],
+        desc: "Dedicated test station utilizing vacuum chamber methods to ensure perfect hermetic sealing for VRLA battery enclosures."
+      },
+      {
+        num: 4,
+        title: "For sealed components in Bombing method",
+        images: [
+          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_5_5_X40.png",
+          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_5_1_X36.jpg",
+          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_5_2_X37.jpg",
+          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_5_3_X38.jpg",
+          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_5_4_X39.jpg"
+        ],
+        desc: "Helium bombing systems equipped with high-pressure chambers to check hermetic sealing of completely sealed electronic and mechanical components."
+      },
+      {
+        num: 5,
+        title: "Helium leak detector carts for multipurpose applications",
+        images: [
+          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_6_1_X44.jpg",
+          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_6_2_X45.jpg"
+        ],
+        desc: "Heavy duty mobile carts designed to mount leak detectors, pumps, gauges, and gas cylinders for flexible, multipurpose industrial use."
+      },
+      {
+        num: 6,
+        title: "For Control Valves",
+        images: [
+          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_6_3_X46.jpg"
+        ],
+        desc: "Precision test bench designed to verify seal integrity and seat leakage rates in industrial control valves."
+      },
+      {
+        num: 7,
+        title: "For Sealed compressors leak testing in sniffer method",
+        images: [
+          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_7_1_X49.jpg"
+        ],
+        desc: "Sniffer-type test station built to check leakages at welds and connections of fully sealed refrigeration and industrial compressors."
+      },
+      {
+        num: 8,
+        title: "For Li-Ion cells leak testing in vacuum chamber method",
+        images: [
+          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_7_2_X50.jpg"
+        ],
+        desc: "Vacuum chamber leak detection system specifically optimized to check leak rates in Lithium-Ion battery cells to prevent electrolyte leakage."
+      },
+      {
+        num: 9,
+        title: "For Rupture Disc helium leak testing",
+        images: [
+          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_8_1_X53.jpg"
+        ],
+        desc: "Testing station with dedicated fixtures to evaluate rupture disc response and check leakage before deployment in safety systems."
+      },
+      {
+        num: 10,
+        title: "Pressure decay test and gas filling station for compressors and gas lines",
+        images: [],
+        desc: "Combined pressure decay leak testing and precise tracer gas filling station designed for manufacturing lines of compressors and piping systems."
+      },
+      {
+        num: 11,
+        title: "Vacuum decay test system",
+        images: [],
+        desc: "High-sensitivity vacuum decay system for component testing, measuring pressure rise over time to isolate micro-leaks."
+      }
+    ]
   },
   {
     id: "VACUUM-COMPONENTS",
