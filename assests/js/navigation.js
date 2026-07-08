@@ -11,7 +11,7 @@ nav.innerHTML = `
   <div><a href="about.html" id="about">ABOUT</a></div>
 
   <div class="dropdown">
-    <a href="product.html" class="dropdown-toggle" id="product" data-bs-toggle="dropdown">PRODUCTS</a>
+    <a href="product.html" class="dropdown-toggle" id="product">PRODUCTS</a>
     <ul class="dropdown-menu">
       <li class="dropdown">
         <a class="dropdown-item dropdown-toggle" href="seriesDetail.html?series=DPRG">Vacuum Measurement</a>
