@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const pdfViewer = document.getElementById("pdfViewer");
     const structuredContainer = document.getElementById("structuredContainer");
 
-    // Branch logic: Educational content vs Systems Showcase vs Structured specifications view vs PDF brochure view
+    // Branch logic: Educational content vs Systems Showcase vs Components Showcase vs Structured specifications view vs PDF brochure view
     if (product.isEducational) {
       if (pdfViewer) pdfViewer.style.display = "none";
       if (structuredContainer) structuredContainer.style.display = "block";
@@ -44,6 +44,11 @@ document.addEventListener("DOMContentLoaded", () => {
       if (structuredContainer) structuredContainer.style.display = "block";
 
       renderHeliumLeakTestSystems(product);
+    } else if (product.isComponentsPage) {
+      if (pdfViewer) pdfViewer.style.display = "none";
+      if (structuredContainer) structuredContainer.style.display = "block";
+
+      renderVacuumComponents(product);
     } else if ((product.technicalSpecifications && product.technicalSpecifications.length > 0) || (product.models && product.models.length > 0)) {
       // Hide PDF viewer, show structured layout container
       if (pdfViewer) pdfViewer.style.display = "none";
@@ -980,4 +985,131 @@ function renderHeliumLeakTestSystems(product) {
   // 4. Initialize image interactions
   initializeZoom();
 }
+
+function renderVacuumComponents(product) {
+  const parentDesc = document.getElementById("parentDescription");
+  const tabsContainer = document.getElementById("modelTabsContainer");
+  const producter = document.getElementById("producter");
+  const productTable = document.getElementById("productTable");
+  const end = document.getElementById("end");
+
+  if (parentDesc) {
+    parentDesc.innerHTML = product.description;
+    parentDesc.style.display = "block";
+  }
+  
+  if (tabsContainer) {
+    tabsContainer.style.display = "flex";
+    tabsContainer.innerHTML = product.categories.map((cat, idx) => `
+      <button 
+        class="category-tab ${idx === 0 ? 'active' : ''}" 
+        id="cat-tab-${cat.id}"
+        style="padding: 10px 22px; font-size: 14.5px; font-weight: 600; border-radius: 25px; border: 1.5px solid ${idx === 0 ? '#001f3f' : '#dee2e6'}; background: ${idx === 0 ? '#001f3f' : '#fff'}; color: ${idx === 0 ? '#fff' : '#001f3f'}; cursor: pointer; transition: all 0.2s;"
+        onclick="switchCategory('${cat.id}')"
+      >
+        ${cat.name}
+      </button>
+    `).join('');
+  }
+
+  // Clear Table and End views
+  if (productTable) productTable.innerHTML = '';
+  if (end) end.innerHTML = '';
+
+  // Render components list
+  window.switchCategory = function(catId) {
+    // 1. Update active tab styling
+    const tabs = document.querySelectorAll(".category-tab");
+    tabs.forEach(tab => {
+      tab.style.background = "#fff";
+      tab.style.color = "#001f3f";
+      tab.style.borderColor = "#dee2e6";
+    });
+    const activeTab = document.getElementById(`cat-tab-${catId}`);
+    if (activeTab) {
+      activeTab.style.background = "#001f3f";
+      activeTab.style.color = "#fff";
+      activeTab.style.borderColor = "#001f3f";
+    }
+
+    // 2. Filter components
+    const category = product.categories.find(cat => cat.id === catId);
+    if (!category) return;
+
+    producter.innerHTML = `
+      <div style="width: 100%; display: flex; flex-direction: column; gap: 35px; color: #000810; margin-top: 15px;">
+        <h2 style="font-size: 24px; font-weight: 700; color: #001f3f; border-left: 5px solid #0da574; padding-left: 15px; text-transform: uppercase; margin-bottom: 20px;">
+          ${category.name}
+        </h2>
+        
+        <div style="display: grid; grid-template-columns: 1fr; gap: 30px;">
+          ${category.components.map(comp => {
+            const tableHeadersHtml = comp.headers.map(h => `
+              <th style="background: #f8f9fa; color: #001f3f; font-weight: 700; padding: 8px 12px; font-size: 12.5px; border: 1px solid #dee2e6 !important; text-align: center;">${h}</th>
+            `).join('');
+
+            const tableRowsHtml = comp.rows.map(row => `
+              <tr style="border-bottom: 1px solid #eee;">
+                ${row.map(cell => `
+                  <td style="padding: 8px 12px; color: #555; font-size: 13px; border: 1px solid #dee2e6 !important; text-align: center;">${cell}</td>
+                `).join('')}
+              </tr>
+            `).join('');
+
+            return `
+              <div style="background: #fff; border: 1px solid #dee2e6; border-radius: 8px; padding: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.02); display: flex; gap: 30px; flex-wrap: wrap;">
+                
+                <!-- Left side: Images (Line drawing & photo) -->
+                <div style="flex: 1; min-width: 320px; display: flex; flex-direction: column; justify-content: flex-start; gap: 10px;">
+                  <h3 style="font-size: 16px; font-weight: 700; color: #001f3f; margin-bottom: 15px;">${comp.title}</h3>
+                  <div style="display: flex; gap: 15px;">
+                    <div class="main-image-container" style="flex: 1; height: 180px; border: 1px solid #dee2e6; border-radius: 6px; display: flex; justify-content: center; align-items: center; cursor: zoom-in; overflow: hidden; padding: 10px; background: #fafafa; position: relative;">
+                      <img src="${comp.drawing}" alt="${comp.title} technical drawing" style="max-width: 100%; max-height: 100%; object-fit: contain; transition: transform 0.1s ease-out;" />
+                    </div>
+                    <div class="main-image-container" style="flex: 1; height: 180px; border: 1px solid #dee2e6; border-radius: 6px; display: flex; justify-content: center; align-items: center; cursor: zoom-in; overflow: hidden; padding: 10px; background: #fafafa; position: relative;">
+                      <img src="${comp.photo}" alt="${comp.title} real photo" style="max-width: 100%; max-height: 100%; object-fit: contain; transition: transform 0.1s ease-out;" />
+                    </div>
+                  </div>
+                  <span style="font-size: 11.5px; font-weight: 600; color: #999; font-style: italic; text-align: center;">Left: Technical Drawing | Right: Product Photo (Hover to zoom)</span>
+                </div>
+
+                <!-- Right side: Description & Dimensions table -->
+                <div style="flex: 1.2; min-width: 320px; display: flex; flex-direction: column; justify-content: space-between; gap: 20px;">
+                  <div style="display: flex; flex-direction: column; gap: 12px;">
+                    <h4 style="font-size: 14px; font-weight: 700; color: #0da574; margin: 0; text-transform: uppercase;">Description & Specifications</h4>
+                    <p style="color: #555; font-size: 14px; line-height: 1.5; margin: 0; text-align: justify;">
+                      ${comp.desc}
+                    </p>
+                  </div>
+
+                  <!-- Dimensions table -->
+                  <div style="overflow-x: auto; width: 100%;">
+                    <table style="width: 100%; border-collapse: collapse; border: 1px solid #dee2e6;">
+                      <thead>
+                        <tr>${tableHeadersHtml}</tr>
+                      </thead>
+                      <tbody>
+                        ${tableRowsHtml}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+              </div>
+            `;
+          }).join('')}
+        </div>
+      </div>
+    `;
+
+    // 3. Re-initialize image interactions
+    initializeZoom();
+  };
+
+  // Initial category load
+  if (product.categories && product.categories.length > 0) {
+    window.switchCategory(product.categories[0].id);
+  }
+}
+
 

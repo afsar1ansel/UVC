@@ -714,11 +714,9 @@ const heliumLeakDetectors = [
         num: 4,
         title: "For sealed components in Bombing method",
         images: [
-          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_5_5_X40.png",
           "./assests/img/products/heliumLeakTestSystem/extracted/image_page_5_1_X36.jpg",
           "./assests/img/products/heliumLeakTestSystem/extracted/image_page_5_2_X37.jpg",
-          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_5_3_X38.jpg",
-          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_5_4_X39.jpg"
+          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_5_3_X38.jpg"
         ],
         desc: "Helium bombing systems equipped with high-pressure chambers to check hermetic sealing of completely sealed electronic and mechanical components."
       },
@@ -726,8 +724,8 @@ const heliumLeakDetectors = [
         num: 5,
         title: "Helium leak detector carts for multipurpose applications",
         images: [
-          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_6_1_X44.jpg",
-          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_6_2_X45.jpg"
+          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_5_4_X39.jpg",
+          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_5_5_X40.png"
         ],
         desc: "Heavy duty mobile carts designed to mount leak detectors, pumps, gauges, and gas cylinders for flexible, multipurpose industrial use."
       },
@@ -735,7 +733,7 @@ const heliumLeakDetectors = [
         num: 6,
         title: "For Control Valves",
         images: [
-          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_6_3_X46.jpg"
+          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_6_1_X44.jpg"
         ],
         desc: "Precision test bench designed to verify seal integrity and seat leakage rates in industrial control valves."
       },
@@ -743,7 +741,7 @@ const heliumLeakDetectors = [
         num: 7,
         title: "For Sealed compressors leak testing in sniffer method",
         images: [
-          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_7_1_X49.jpg"
+          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_6_2_X45.jpg"
         ],
         desc: "Sniffer-type test station built to check leakages at welds and connections of fully sealed refrigeration and industrial compressors."
       },
@@ -751,7 +749,7 @@ const heliumLeakDetectors = [
         num: 8,
         title: "For Li-Ion cells leak testing in vacuum chamber method",
         images: [
-          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_7_2_X50.jpg"
+          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_6_3_X46.jpg"
         ],
         desc: "Vacuum chamber leak detection system specifically optimized to check leak rates in Lithium-Ion battery cells to prevent electrolyte leakage."
       },
@@ -759,20 +757,24 @@ const heliumLeakDetectors = [
         num: 9,
         title: "For Rupture Disc helium leak testing",
         images: [
-          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_8_1_X53.jpg"
+          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_7_1_X49.jpg"
         ],
         desc: "Testing station with dedicated fixtures to evaluate rupture disc response and check leakage before deployment in safety systems."
       },
       {
         num: 10,
         title: "Pressure decay test and gas filling station for compressors and gas lines",
-        images: [],
+        images: [
+          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_7_2_X50.jpg"
+        ],
         desc: "Combined pressure decay leak testing and precise tracer gas filling station designed for manufacturing lines of compressors and piping systems."
       },
       {
         num: 11,
         title: "Vacuum decay test system",
-        images: [],
+        images: [
+          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_8_1_X53.jpg"
+        ],
         desc: "High-sensitivity vacuum decay system for component testing, measuring pressure rise over time to isolate micro-leaks."
       }
     ]
@@ -780,12 +782,380 @@ const heliumLeakDetectors = [
   {
     id: "VACUUM-COMPONENTS",
     title: "Vacuum Components",
-    description: "High-quality vacuum components designed for vacuum systems, ensuring optimal sealing, connection, and stability.",
     code: "VACUUM COMPONENTS",
-    images: [],
-    features: [],
     pdf: "./assests/img/products/VACUUM COMPONENTS&supplies/VACUUM COMPONENTS.docxdownload.pdf",
-    viewPdf: "./assests/img/products/VACUUM COMPONENTS&supplies/VACUUM COMPONENTS.docx.pdf"
+    isComponentsPage: true,
+    description: "The ISO KF range of vacuum flanges and fittings are made from high quality stainless steel grades like SS304, SS304L, SS316, SS316L and so on. The general purpose high vacuum applications are from SS304 material and the same are available ex – stock for most of the part numbers.<br><br>This method of KF assembly utilize a metal aluminum clamp for holding two similar flanges along with the centre ring and an rubber O ring, the wing nut clamp is used to dismantle the assembly as and when required, just by rotating the wing nut without using any tool. The tight vacuum seal is possible by applying the pressure on the 15° tapered surface of the flange.<br><br>The mating parts of the two flanges compresses the O ring (held in between the two flanges by a metal centre ring) making the assembly possible to work at vacuum levels up to 10⁻⁷ mbar and baked up to 200°C.",
+    categories: [
+      {
+        id: "flanges-fittings",
+        name: "Flanges & Fittings",
+        components: [
+          {
+            title: "NW BLANK FLANGES",
+            desc: "Blank flanges used to seal unused ports in vacuum chambers or pipe lines, available in Stainless Steel and Aluminum.",
+            drawing: "./assests/img/products/VACUUM COMPONENTS&supplies/extracted/image_page_4_1_X26.png",
+            photo: "./assests/img/products/VACUUM COMPONENTS&supplies/extracted/image_page_4_2_X27.png",
+            headers: ["PART NUMBER (SS)", "PNEUROP", "A", "D1", "D2", "PART NUMBER (AL)"],
+            rows: [
+              ["SS-BLK-KF10", "NW10", "6 (0.24)", "30 (1.18)", "12 (0.47)", "AL-BLK-KF10"],
+              ["SS-BLK-KF16", "NW16", "6 (0.24)", "30 (1.18)", "17.2 (0.68)", "AL-BLK -KF16"],
+              ["SS-BLK-KF25", "NW25", "6 (0.24)", "40 (1.57)", "26.2 (1.03)", "AL-BLK -KF25"],
+              ["SS-BLK-KF40", "NW40", "6 (0.24)", "55 (2.17)", "41.2 (1.62)", "AL-BLK -KF40"],
+              ["SS-BLK-KF50", "NW50", "6 (0.24)", "75 (2.95)", "52.2 (2.06)", "AL-BLK -KF50"]
+            ]
+          },
+          {
+            title: "NW SOCKET WELD FLANGE – STAINLESS STEEL",
+            desc: "Socket weld flanges for joining stainless steel vacuum pipe lines, allowing easy welding installation.",
+            drawing: "./assests/img/products/VACUUM COMPONENTS&supplies/extracted/image_page_4_3_X28.png",
+            photo: "./assests/img/products/VACUUM COMPONENTS&supplies/extracted/image_page_4_4_X29.png",
+            headers: ["PART NUMBER", "PNEUROP", "A", "D1", "D2", "T"],
+            rows: [
+              ["SS-SWF-KF-16A", "NW16", "12.7 (0.5)", "30 (1.18)", "15.5 (0.61)", "1.25 (0.05)"],
+              ["SS-SWF-KF-16", "NW16", "12.7 (0.5)", "30 (1.18)", "22.1 (0.87)", "1.40 (0.06)"],
+              ["SS-SWF-KF-25", "NW25", "12.7 (0.5)", "40 (1.57)", "28.6 (1.13)", "1.35 (0.05)"],
+              ["SS-SWF-KF-40", "NW40", "12.7 (0.5)", "55 (2.17)", "44.5 (1.75)", "2.95 (0.12)"],
+              ["SS-SWF-KF-50", "NW50", "12.7 (0.5)", "75 (2.95)", "57.2 (2.25)", "2.95 (0.12)"]
+            ]
+          },
+          {
+            title: "NW TUBULATION SHORT WELD FLANGE – STAINLESS STEEL",
+            desc: "Short tubulation weld flanges for quick-coupling vacuum lines via welding processes.",
+            drawing: "./assests/img/products/VACUUM COMPONENTS&supplies/extracted/image_page_5_1_X32.png",
+            photo: "./assests/img/products/VACUUM COMPONENTS&supplies/extracted/image_page_5_2_X33.png",
+            headers: ["PART NUMBER", "PNEUROP", "A", "D1", "D2", "T"],
+            rows: [
+              ["SS-TSWF-KF10", "NW10", "30.0 (1.18)", "30.0 (1.18)", "14.0 (0.55)", "2.0 (0.08)"],
+              ["SS-TSWF-KF16", "NW16", "30.0 (1.18)", "30.0 (1.18)", "20.0 (0.79)", "2.0 (0.08)"],
+              ["SS-TSWF-KF25", "NW25", "30.0 (1.18)", "40 (1.57)", "28.0 (1.10)", "2.0 (0.08)"],
+              ["SS-TSWF-KF40", "NW40", "30.0 (1.18)", "55 (2.17)", "44.5 (1.75)", "1.6 (0.06)"],
+              ["SS-TSWF-KF50", "NW50", "30.0 (1.18)", "75 (2.95)", "57.0 (2.24)", "3.0 (0.12)"],
+              ["SS-TSWF-KF10THN", "NW10", "12.7 (0.50)", "30.0 (1.18)", "14.0 (0.55)", "1.7 (0.07)"],
+              ["SS-TSWF-KF16THN", "NW16", "12.7 (0.50)", "30.0 (1.18)", "19.1 (0.75)", "1.7 (0.07)"],
+              ["SS-TSWF-KF25THN", "NW25", "12.7 (0.50)", "40 (1.57)", "25.4 (1.00)", "1.7 (0.07)"],
+              ["SS-TSWF-KF40THN", "NW40", "19.0 (0.75)", "55 (2.17)", "38.1 (1.50)", "1.7 (0.07)"],
+              ["SS-TSWF-KF50THN", "NW50", "19.0 (0.75)", "75 (2.95)", "50.8 (2.00)", "1.7 (0.07)"]
+            ]
+          },
+          {
+            title: "NW TUBULATION LONG WELD FLANGE – STAINLESS STEEL",
+            desc: "Long tubulation weld flanges for connecting vacuum hardware over extended lengths.",
+            drawing: "./assests/img/products/VACUUM COMPONENTS&supplies/extracted/image_page_5_3_X34.png",
+            photo: "./assests/img/products/VACUUM COMPONENTS&supplies/extracted/image_page_5_4_X35.png",
+            headers: ["PART NUMBER", "PNEUROP", "A", "D1", "D2", "T"],
+            rows: [
+              ["SS-TLWF-KF10", "NW10", "70 (2.76)", "30.0 (1.18)", "14.0 (0.55)", "2.0 (0.08)"],
+              ["SS-TLWF-KF16", "NW16", "70 (2.76)", "30.0 (1.18)", "20.0 (0.79)", "2.0 (0.08)"],
+              ["SS-TLWF-KF25", "NW25", "70 (2.76)", "40 (1.57)", "28.0 (1.10)", "2.0 (0.08)"],
+              ["SS-TLWF-KF40", "NW40", "70 (2.76)", "55 (2.17)", "44.5 (1.75)", "2.0 (0.08)"],
+              ["SS-TLWF-KF50", "NW50", "70 (2.76)", "75 (2.95)", "57.0 (2.24)", "3.0 (0.12)"],
+              ["SS-TLWF-KF10THN", "NW10", "40 (1.57)", "30.0 (1.18)", "14.0 (0.55)", "1.7 (0.07)"],
+              ["SS-TLWF-KF16THN", "NW16", "40 (1.57)", "30.0 (1.18)", "19.1 (0.75)", "1.7 (0.07)"],
+              ["SS-TLWF-KF25THN", "NW25", "40 (1.57)", "40 (1.57)", "25.4 (1.00)", "1.7 (0.07)"],
+              ["SS-TLWF-KF40THN", "NW40", "40 (1.57)", "55 (2.17)", "38.1 (1.50)", "1.7 (0.07)"],
+              ["SS-TLWF-KF50THN", "NW50", "40 (1.57)", "75 (2.95)", "50.8 (2.00)", "1.7 (0.07)"]
+            ]
+          }
+        ]
+      },
+      {
+        id: "clamps-seals",
+        name: "Clamps & Seals",
+        components: [
+          {
+            title: "NW QUICK CLAMP – ALUMINIUM",
+            desc: "Aluminum quick clamp with wing nut mechanism for tool-free assembly and dismantling of KF flanges.",
+            drawing: "./assests/img/products/VACUUM COMPONENTS&supplies/extracted/image_page_1_1_X10.png",
+            photo: "./assests/img/products/VACUUM COMPONENTS&supplies/extracted/image_page_1_2_X12.png",
+            headers: ["PART NUMBER", "PNEUROP", "A", "B"],
+            rows: [
+              ["AL-CL-KF1016", "NW16", "40 (1.57)", "64 (2.52)"],
+              ["AL-CL-KF-25", "NW25", "50 (1.97)", "74 (2.91)"],
+              ["AL-CL-KF-40", "NW40", "65 (2.56)", "89 (3.50)"],
+              ["AL-CL-KF-50", "NW50", "87 (3.43)", "109 (4.29)"]
+            ]
+          },
+          {
+            title: "NW CENTERING RINGS WITH O-RINGS",
+            desc: "Centering rings with integrated Viton or Nitrile O-rings, providing high vacuum seal integrity.",
+            drawing: "./assests/img/products/VACUUM COMPONENTS&supplies/extracted/image_page_1_3_X13.png",
+            photo: "./assests/img/products/VACUUM COMPONENTS&supplies/extracted/image_page_1_4_X14.png",
+            headers: ["PART NUMBER (SS + VITON)", "PNEUROP", "A", "B", "D1", "D2"],
+            rows: [
+              ["SS-CR-VIT-KF10", "NW10", "8 (0.31)", "3.9 (0.15)", "10 (0.39)", "12 (0.47)"],
+              ["SS-CR-VIT-KF16", "NW16", "8 (0.31)", "3.9 (0.15)", "16 (0.63)", "17 (0.67)"],
+              ["SS-CR-VIT-KF25", "NW25", "8 (0.31)", "3.9 (0.15)", "25 (0.98)", "26 (1.02)"],
+              ["SS-CR-VIT-KF40", "NW40", "8 (0.31)", "3.9 (0.15)", "40 (1.57)", "41 (1.61)"],
+              ["SS-CR-VIT-KF50", "NW50", "8 (0.31)", "3.9 (0.15)", "50 (1.97)", "52 (2.05)"]
+            ]
+          },
+          {
+            title: "NW ADAPTER CENTERING RING",
+            desc: "Adapter centering rings for transitioning between different KF flange sizes.",
+            drawing: "./assests/img/products/VACUUM COMPONENTS&supplies/extracted/image_page_2_1_X18.png",
+            photo: "./assests/img/products/VACUUM COMPONENTS&supplies/extracted/image_page_2_2_X19.png",
+            headers: ["PART NUMBER (SS + VITON)", "PNEUROP", "A", "B", "D1", "D2"],
+            rows: [
+              ["SS-ACR-VIT-KF1016", "NW10/16", "8 (0.31)", "3.9 (0.15)", "17 (0.67)", "12 (0.47)"],
+              ["SS-ACR-VIT-KF2025", "NW20/25", "8 (0.31)", "3.9 (0.15)", "26 (1.02)", "22 (0.87)"],
+              ["SS-ACR-VIT-KF3240", "NW32/40", "8 (0.31)", "3.9 (0.15)", "41 (1.61)", "34 (1.34)"]
+            ]
+          },
+          {
+            title: "NW O-RING - VITON / NITRILE",
+            desc: "Replacement elastic seals for KF quick-release couplings, operating in pressure ranges 10⁻⁷ mbar to 1 bar absolute.",
+            drawing: "./assests/img/products/VACUUM COMPONENTS&supplies/extracted/image_page_3_1_X22.png",
+            photo: "./assests/img/products/VACUUM COMPONENTS&supplies/extracted/image_page_3_2_X23.png",
+            headers: ["PART NUMBER (VITON)", "PNEUROP", "A", "D1", "PART NUMBER (NITRILE)"],
+            rows: [
+              ["OR-VIT-KF-10", "NW10", "5 (0.20)", "15 (0.59)", "OR-NIT-KF-10"],
+              ["OR-VIT-KF-16", "NW16", "5 (0.20)", "18 (0.71)", "OR-NIT-KF-16"],
+              ["OR-VIT-KF-25", "NW25", "5 (0.20)", "28 (1.10)", "OR-NIT-KF-25"],
+              ["OR-VIT-KF-40", "NW40", "5 (0.20)", "42 (1.65)", "OR-NIT-KF-40"],
+              ["OR-VIT-KF-50", "NW50", "5 (0.20)", "55 (2.17)", "OR-NIT-KF-50"]
+            ]
+          }
+        ]
+      },
+      {
+        id: "connectors-adaptors",
+        name: "Connectors & Adaptors",
+        components: [
+          {
+            title: "NW HOSE CONNECTORS - PVC / STAINLESS STEEL",
+            desc: "Rigid connectors to link flexible plastic or metallic hoses to standard NW flanges.",
+            drawing: "./assests/img/products/VACUUM COMPONENTS&supplies/extracted/image_page_6_3_X40.png",
+            photo: "./assests/img/products/VACUUM COMPONENTS&supplies/extracted/image_page_6_4_X41.png",
+            headers: ["PART NUMBER", "PNEUROP", "A", "D1 NOMINAL BORE"],
+            rows: [
+              ["PVC-HC-KF10-250", "NW10", "250 (9.84)", "30 (1.18)"],
+              ["PVC-HC-KF10-500", "NW10", "500 (19.69)", "30 (1.18)"],
+              ["PVC-HC-KF10-750", "NW10", "750 (29.53)", "30 (1.18)"],
+              ["PVC-HC-KF10-1000", "NW10", "1000 (39.37)", "30 (1.18)"]
+            ]
+          },
+          {
+            title: "NW HOSE NOZZLE CONNECTOR – STAINLESS STEEL",
+            desc: "Barbed hose nozzle connectors for coupling soft vinyl tubing or rubber hoses.",
+            drawing: "./assests/img/products/VACUUM COMPONENTS&supplies/extracted/image_page_7_1_X44.png",
+            photo: "./assests/img/products/VACUUM COMPONENTS&supplies/extracted/image_page_7_2_X45.png",
+            headers: ["PART NUMBER", "PNEUROP", "A", "D1", "D2", "T"],
+            rows: [
+              ["SS-HNC-KF10", "NW10", "40 (1.57)", "30.0 (1.18)", "7 (0.28)", "12.0 (0.47)"],
+              ["SS-HNC-KF16", "NW16", "40 (1.57)", "30.0 (1.18)", "7 (0.28)", "12.0 (0.47)"],
+              ["SS-HNC-KF25", "NW25", "40 (1.57)", "40 (1.57)", "7 (0.28)", "12.0 (0.47)"],
+              ["SS-HNC-KF40", "NW40", "40 (1.57)", "55 (2.17)", "7 (0.28)", "12.0 (0.47)"],
+              ["SS-HNC-KF50", "NW50", "40 (1.57)", "75 (2.95)", "7 (0.28)", "12.0 (0.47)"]
+            ]
+          },
+          {
+            title: "NW STRAIGHT CONNECTOR - STAINLESS STEEL",
+            desc: "Straight spool pieces used to bridge spacing gaps between vacuum components.",
+            drawing: "./assests/img/products/VACUUM COMPONENTS&supplies/extracted/image_page_7_3_X46.png",
+            photo: "./assests/img/products/VACUUM COMPONENTS&supplies/extracted/image_page_7_4_X47.png",
+            headers: ["PART NUMBER", "PNEUROP", "A", "D1", "D2", "T"],
+            rows: [
+              ["SS-SC-KF10", "NW10", "80 (3.15)", "30.0 (1.18)", "20 (0.79)", "2 (0.08)"],
+              ["SS-SC-KF16", "NW16", "80 (3.15)", "30.0 (1.18)", "20 (0.79)", "2 (0.08)"],
+              ["SS-SC-KF25", "NW25", "100 (3.94)", "40 (1.57)", "28 (1.10)", "2 (0.08)"],
+              ["SS-SC-KF40", "NW40", "130 (5.12)", "55 (2.17)", "44.5 (1.75)", "1.6 (0.06)"],
+              ["SS-SC-KF50", "NW50", "140 (5.51)", "75 (2.95)", "57.0 (2.24)", "3.0 (0.12)"]
+            ]
+          },
+          {
+            title: "NW REDUCER ADAPTOR - STAINLESS STEEL",
+            desc: "Reducer couplers to connect smaller KF flange lines to larger ones.",
+            drawing: "./assests/img/products/VACUUM COMPONENTS&supplies/extracted/image_page_8_1_X51.png",
+            photo: "./assests/img/products/VACUUM COMPONENTS&supplies/extracted/image_page_8_2_X52.png",
+            headers: ["PART NUMBER", "PNEUROP", "A", "D1", "D2", "D3", "T"],
+            rows: [
+              ["SS-RD-KF2516", "NW25/16", "28 (1.1)", "40 (1.57)", "30 (1.18)", "20.0 (0.79)", "2 (0.08)"],
+              ["SS-RD-KF4016", "NW40/16", "28 (1.1)", "55 (2.17)", "30 (1.18)", "20.0 (0.79)", "2 (0.08)"],
+              ["SS-RD-KF5016", "NW50/16", "28 (1.1)", "75 (2.95)", "30 (1.18)", "20.0 (0.79)", "2 (0.08)"],
+              ["SS-RD-KF4025", "NW40/25", "28 (1.1)", "55 (2.17)", "40 (1.57)", "28 (1.1)", "2 (0.08)"],
+              ["SS-RD-KF5025", "NW50/25", "28 (1.1)", "75 (2.95)", "40 (1.57)", "28 (1.1)", "2 (0.08)"],
+              ["SS-RD-KF5040", "NW50/40", "28 (1.1)", "75 (2.95)", "55 (2.17)", "44.5 (1.75)", "2 (0.08)"]
+            ]
+          },
+          {
+            title: "NW TO CF REDUCER ADAPTOR",
+            desc: "Adaptor pieces designed to link high-vacuum KF hardware with ultra-high vacuum CF (ConFlat) hardware.",
+            drawing: "./assests/img/products/VACUUM COMPONENTS&supplies/extracted/image_page_8_3_X53.png",
+            photo: "./assests/img/products/VACUUM COMPONENTS&supplies/extracted/image_page_8_4_X54.png",
+            headers: ["PART NUMBER", "PNEUROP", "A", "D1", "D2", "D3", "T"],
+            rows: [
+              ["SS-RD-CF16KF16", "CF16/NW16", "36 (1.42)", "34 (1.34)", "30 (1.18)", "20.0 (0.79)", "2 (0.08)"],
+              ["SS-RD-CF35KF16", "CF35/NW16", "36 (1.42)", "70 (2.76)", "30 (1.18)", "20.0 (0.79)", "2 (0.08)"]
+            ]
+          },
+          {
+            title: "ISO TO NW ADAPTOR - STAINLESS STEEL",
+            desc: "Transitions between larger bolted ISO flanges and smaller quick-release KF flanges.",
+            drawing: "./assests/img/products/VACUUM COMPONENTS&supplies/extracted/image_page_9_1_X57.png",
+            photo: "./assests/img/products/VACUUM COMPONENTS&supplies/extracted/image_page_9_2_X58.png",
+            headers: ["PART NUMBER", "PNEUROP", "A", "D1", "D2", "D3", "T"],
+            rows: [
+              ["SS-RD-ISO63KF25", "ISO63/NW25", "50 (1.97)", "95 (3.74)", "40 (1.57)", "28.0 (1.10)", "2 (0.08)"],
+              ["SS-RD-ISO63KF40", "ISO63/NW40", "50 (1.97)", "95 (3.74)", "55 (2.17)", "44.5 (1.75)", "2 (0.08)"],
+              ["SS-RD-ISO63KF50", "ISO63/NW50", "50 (1.97)", "95 (3.74)", "75 (2.95)", "57.0 (2.24)", "3 (0.12)"]
+            ]
+          },
+          {
+            title: "ASA TO NW ADAPTOR - STAINLESS STEEL",
+            desc: "Adapters to connect standard ASA (ANSI) flanged components to quick-release NW vacuum lines.",
+            drawing: "./assests/img/products/VACUUM COMPONENTS&supplies/extracted/image_page_10_1_X61.png",
+            photo: "./assests/img/products/VACUUM COMPONENTS&supplies/extracted/image_page_10_2_X62.png",
+            headers: ["PART NUMBER", "PNEUROP", "A", "D1", "D2", "D3", "T"],
+            rows: [
+              ["SS-RD-ASA15KF40", "ASA1.5\"/NW40", "46 (1.81)", "127 (5.00)", "55 (2.17)", "44.5 (1.75)", "2 (0.08)"],
+              ["SS-RD-ASA2KF40", "ASA2.0\"/NW40", "46 (1.81)", "152 (5.98)", "55 (2.17)", "44.5 (1.75)", "2 (0.08)"],
+              ["SS-RD-ASA3KF40", "ASA3.0\"/NW40", "46 (1.81)", "191 (7.52)", "55 (2.17)", "44.5 (1.75)", "2 (0.08)"]
+            ]
+          }
+        ]
+      },
+      {
+        id: "elbows-tees-crosses",
+        name: "Elbows, Tees & Crosses",
+        components: [
+          {
+            title: "NW 90 DEGREE RADIUS ELBOW - STAINLESS STEEL",
+            desc: "90-degree elbows for clean directional turns in vacuum lines.",
+            drawing: "./assests/img/products/VACUUM COMPONENTS&supplies/extracted/image_page_10_3_X63.png",
+            photo: "./assests/img/products/VACUUM COMPONENTS&supplies/extracted/image_page_10_4_X64.png",
+            headers: ["PART NUMBER", "PNEUROP", "A", "D1", "R"],
+            rows: [
+              ["SS-ELR-KF16", "NW16", "40 (1.57)", "20.0 (0.79)", "27 (1.06)"],
+              ["SS-ELR-KF25", "NW25", "50 (1.97)", "28.0 (1.10)", "37 (1.46)"],
+              ["SS-ELR-KF40", "NW40", "65 (2.56)", "44.5 (1.75)", "60 (2.36)"],
+              ["SS-ELR-KF50", "NW50", "70 (2.76)", "57.0 (2.24)", "65 (2.56)"]
+            ]
+          },
+          {
+            title: "NW LONG RADIUS ELBOW – STAINLESS STEEL",
+            desc: "Long sweep 90-degree elbows to minimize conductance restrictions in pump-down pathways.",
+            drawing: "./assests/img/products/VACUUM COMPONENTS&supplies/extracted/image_page_11_1_X67.png",
+            photo: "./assests/img/products/VACUUM COMPONENTS&supplies/extracted/image_page_11_2_X68.png",
+            headers: ["PART NUMBER", "PNEUROP", "A", "D1", "R", "T"],
+            rows: [
+              ["SS-LREL-KF40", "NW40", "130 (5.12)", "44.5 (1.75)", "60 (2.36)", "2 (0.08)"],
+              ["SS-LREL-KF50", "NW50", "140 (5.51)", "57.0 (2.24)", "126 (4.96)", "3 (0.12)"]
+            ]
+          },
+          {
+            title: "NW 45 DEGREE RADIUS ELBOW - STAINLESS STEEL",
+            desc: "45-degree elbows for directional piping offsets in vacuum assemblies.",
+            drawing: "./assests/img/products/VACUUM COMPONENTS&supplies/extracted/image_page_11_3_X69.png",
+            photo: "./assests/img/products/VACUUM COMPONENTS&supplies/extracted/image_page_11_4_X70.png",
+            headers: ["PART NUMBER", "PNEUROP", "R"],
+            rows: [
+              ["SS-EL45-KF16", "NW16", "40 (1.57)"],
+              ["SS-EL45-KF25", "NW25", "45 (1.77)"],
+              ["SS-EL45-KF40", "NW40", "51 (2.01)"],
+              ["SS-EL45-KF50", "NW50", "75 (2.95)"]
+            ]
+          },
+          {
+            title: "NW TEE - STAINLESS STEEL",
+            desc: "Symmetrical three-way equal tees to split or branch vacuum flow lines.",
+            drawing: "./assests/img/products/VACUUM COMPONENTS&supplies/extracted/image_page_12_1_X73.png",
+            photo: "./assests/img/products/VACUUM COMPONENTS&supplies/extracted/image_page_12_2_X74.png",
+            headers: ["PART NUMBER", "PNEUROP", "A", "B", "D1", "D2", "T"],
+            rows: [
+              ["SS-TEE-KF16", "NW16", "40 (1.57)", "40 (1.57)", "30 (1.18)", "20.0 (0.79)", "2 (0.08)"],
+              ["SS-TEE-KF25", "NW25", "50 (1.97)", "50 (1.97)", "40 (1.57)", "28.0 (1.1)", "2 (0.08)"],
+              ["SS-TEE-KF40", "NW40", "65 (2.56)", "65 (2.56)", "55 (2.17)", "44.5 (1.75)", "2 (0.08)"],
+              ["SS-TEE-KF50", "NW50", "70 (2.76)", "70 (2.76)", "75 (2.95)", "57.0 (2.24)", "3 (0.12)"]
+            ]
+          },
+          {
+            title: "NW UNEQUAL TEE - STAINLESS STEEL",
+            desc: "Three-way branching tees with smaller branching port configurations.",
+            drawing: "./assests/img/products/VACUUM COMPONENTS&supplies/extracted/image_page_12_3_X75.png",
+            photo: "./assests/img/products/VACUUM COMPONENTS&supplies/extracted/image_page_12_4_X76.png",
+            headers: ["PART NUMBER", "PNEUROP", "A", "B", "D1", "D2", "T"],
+            rows: [
+              ["SS-UTEE-KF2516", "NW25/16", "50 (1.97)", "40 (1.57)", "40 (1.57)", "28.0 (1.10)", "2 (0.08)"],
+              ["SS-UTEE-KF4016", "NW40/16", "65 (2.56)", "40 (1.57)", "55 (2.17)", "44.5 (1.75)", "2 (0.08)"],
+              ["SS-UTEE-KF4025", "NW40/25", "65 (2.56)", "50 (1.97)", "55 (2.17)", "44.5 (1.75)", "2 (0.08)"]
+            ]
+          },
+          {
+            title: "NW 4-WAY CROSS - STAINLESS STEEL",
+            desc: "Symmetrical cross couplers providing four ports for advanced manifolds.",
+            drawing: "./assests/img/products/VACUUM COMPONENTS&supplies/extracted/image_page_13_1_X79.png",
+            photo: "./assests/img/products/VACUUM COMPONENTS&supplies/extracted/image_page_13_2_X80.png",
+            headers: ["PART NUMBER", "PNEUROP", "A", "B", "D1", "D2", "T"],
+            rows: [
+              ["SS-4WCR-KF16", "NW16", "40 (1.57)", "40 (1.57)", "30 (1.18)", "20.0 (0.79)", "2 (0.08)"],
+              ["SS-4WCR-KF25", "NW25", "50 (1.97)", "50 (1.97)", "40 (1.57)", "28.0 (1.10)", "2 (0.08)"],
+              ["SS-4WCR-KF40", "NW40", "65 (2.56)", "65 (2.56)", "55 (2.17)", "44.5 (1.75)", "2 (0.08)"],
+              ["SS-4WCR-KF50", "NW50", "70 (2.76)", "70 (2.76)", "75 (2.95)", "57.0 (2.24)", "3 (0.12)"]
+            ]
+          },
+          {
+            title: "NW 5-WAY CROSS - STAINLESS STEEL",
+            desc: "Star-shaped five-way couplers for complex vacuum distribution manifolds.",
+            drawing: "./assests/img/products/VACUUM COMPONENTS&supplies/extracted/image_page_13_3_X81.png",
+            photo: "./assests/img/products/VACUUM COMPONENTS&supplies/extracted/image_page_13_4_X82.png",
+            headers: ["PART NUMBER", "PNEUROP", "A", "B", "D1", "D2", "T"],
+            rows: [
+              ["SS-5WCR-KF16", "NW16", "40 (1.57)", "40 (1.57)", "30 (1.18)", "20.0 (0.79)", "2 (0.08)"],
+              ["SS-5WCR-KF25", "NW25", "50 (1.97)", "50 (1.97)", "40 (1.57)", "28.0 (1.10)", "2 (0.08)"],
+              ["SS-5WCR-KF40", "NW40", "65 (2.56)", "65 (2.56)", "55 (2.17)", "44.5 (1.75)", "2 (0.08)"],
+              ["SS-5WCR-KF50", "NW50", "70 (2.76)", "70 (2.76)", "75 (2.95)", "57.0 (2.24)", "3 (0.12)"]
+            ]
+          }
+        ]
+      },
+      {
+        id: "hoses-bellows",
+        name: "Hoses & Bellows",
+        components: [
+          {
+            title: "NW WIRE REINFORCED HOSE – PVC",
+            desc: "Flexible PVC tubing reinforced with steel spiral wire, operating down to high-vacuum levels.",
+            drawing: "./assests/img/products/VACUUM COMPONENTS&supplies/extracted/image_page_6_1_X38.png",
+            photo: "./assests/img/products/VACUUM COMPONENTS&supplies/extracted/image_page_6_2_X39.png",
+            headers: ["PART NUMBER", "PNEUROP", "A", "D1 NOMINAL BORE"],
+            rows: [
+              ["PVC10", "NW10", "1000 (39.37)", "14.0 (0.55)"],
+              ["PVC16", "NW16", "1000 (39.37)", "19.05 (0.75)"],
+              ["PVC25", "NW25", "1000 (39.37)", "25.40 (1.00)"],
+              ["PVC40", "PVC50", "1000 (39.37)", "38.10 (1.50)"],
+              ["PVC50", "NW50", "1000 (39.37)", "50.80 (2.00)"]
+            ]
+          },
+          {
+            title: "NW FLEXIBLE BELLOWS – STAINLESS STEEL",
+            desc: "Flexible bellows in SS304/SS316, permitting high vacuum connections and compensating for thermal expansion.",
+            drawing: "./assests/img/products/VACUUM COMPONENTS&supplies/extracted/image_page_14_1_X85.png",
+            photo: "./assests/img/products/VACUUM COMPONENTS&supplies/extracted/image_page_14_2_X86.png",
+            headers: ["PART NUMBER", "PNEUROP", "A", "B", "D1", "D2", "T1", "T2"],
+            rows: [
+              ["SS-FXB-KF16", "NW16", "121 (4.76)", "88.0 (3.46)", "30 (1.18)", "20.0 (0.79)", "2.0 (0.08)", "0.10 (0.01)"],
+              ["SS-FXB-KF25", "NW25", "121 (4.76)", "85.7 (3.37)", "40 (1.57)", "27.0 (1.06)", "1.5 (0.06)", "0.15 (0.01)"],
+              ["SS-FXB-KF40", "NW40", "121 (4.76)", "83.0 (3.27)", "55 (2.17)", "44.5 (1.75)", "1.6 (0.06)", "0.20 (0.01)"],
+              ["SS-FXB-KF50", "NW50", "110 (4.33)", "76.0 (2.99)", "75 (2.95)", "57.0 (2.24)", "3.0 (0.12)", "0.25 (0.01)"]
+            ]
+          },
+          {
+            title: "NW FLEXIBLE HOSE – STAINLESS STEEL",
+            desc: "Braided or unbraided flexible metal hoses for custom layout alignment under high vacuum.",
+            drawing: "./assests/img/products/VACUUM COMPONENTS&supplies/extracted/image_page_14_3_X87.png",
+            photo: "./assests/img/products/VACUUM COMPONENTS&supplies/extracted/image_page_14_4_X88.png",
+            headers: ["PART NUMBER", "PNEUROP", "A", "B", "D1", "D2", "T1", "T2"],
+            rows: [
+              ["SS-LFXB-KF1625", "NW16", "250 (9.84)", "220 (8.66)", "30 (1.18)", "20.0 (0.79)", "2.0 (0.08)", "0.23 (0.01)"],
+              ["SS-LFXB-KF1650", "NW16", "500 (19.69)", "470 (18.5)", "30 (1.18)", "20.0 (0.79)", "2.0 (0.08)", "0.23 (0.01)"],
+              ["SS-LFXB-KF1675", "NW16", "750 (29.53)", "720 (28.35)", "30 (1.18)", "20.0 (0.79)", "2.0 (0.08)", "0.23 (0.01)"],
+              ["SS-LFXB-KF16100", "NW16", "1000 (39.37)", "970 (38.19)", "30 (1.18)", "20.0 (0.79)", "2.0 (0.08)", "0.23 (0.01)"]
+            ]
+          }
+        ]
+      }
+    ]
   }
 ];
 
