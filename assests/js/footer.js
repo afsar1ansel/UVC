@@ -50,9 +50,7 @@ box.innerHTML = ` <div class="footUp">
         <div class="footline"></div>
         <div class="footBottom">
             <p>Unique Vacuum Solutions © Third Eye Creatives All rights reserved Copyrights 2024</p>
-            <div><img src="./assests/img/1fb.png" alt=""><img src="./assests/img/insta1.png" alt="">
-            <img src="./assests/img/twitter1.png" alt="">
-          <img src="./assests/img/whapp1.png" alt=""></div>
+            
         </div>`;
 foot.appendChild(box)
 
@@ -72,7 +70,10 @@ if (pathPrefix) {
     }
   });
 }
-
+//53
+// <div><img src="./assests/img/1fb.png" alt=""><img src="./assests/img/insta1.png" alt="">
+//             <img src="./assests/img/twitter1.png" alt="">
+//           <img src="./assests/img/whapp1.png" alt=""></div>
 
 
 // line 45

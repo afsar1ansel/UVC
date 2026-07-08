@@ -39,25 +39,25 @@ $(document).ready(function () {
       structuredContainer.style.display = "none";
     }
 
-    // Show PDF view
     const backBtnContainer = document.getElementById("backBtnContainer");
-    const pdfViewer = document.getElementById("pdfViewer");
+    const dynamicServiceContainer = document.getElementById("dynamicServiceContainer");
     
     if (backBtnContainer) backBtnContainer.style.display = "flex";
-    if (pdfViewer) pdfViewer.style.display = "flex";
+    if (dynamicServiceContainer) dynamicServiceContainer.style.display = "block";
 
     const itemCodeHeader = document.getElementById("item-code-header");
     const downloadContainer = document.getElementById("download-header-container");
 
-    if (id === "1") {
+    // Find service data
+    const service = window.servicesData ? window.servicesData.find(s => s.id === id) : null;
+    if (service) {
       if (itemCodeHeader) {
-        itemCodeHeader.innerHTML = `<h1 class="item-code-heading">HELIUM LEAK TEST SERVICES</h1>`;
+        itemCodeHeader.innerHTML = `<h1 class="item-code-heading">${service.code}</h1>`;
       }
-      const pdfUrl = "./assests/img/services/heliumleaktestservices/HLT SERVICES.pdf";
-      const downloadPdfUrl = "./assests/img/services/heliumleaktestservices/HLT SERVICESdownload.pdf";
+      
       if (downloadContainer) {
         downloadContainer.innerHTML = `
-          <a href="${downloadPdfUrl}" download class="btn btn-success d-flex align-items-center gap-2" style="padding: 10px 20px; font-weight: 600;">
+          <a href="${service.downloadPdf}" download class="btn btn-success d-flex align-items-center gap-2" style="padding: 10px 20px; font-weight: 600;">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
             </svg>
@@ -65,50 +65,209 @@ $(document).ready(function () {
           </a>
         `;
       }
-      if (pdfViewer) {
-        renderPDF(pdfUrl, pdfViewer);
-      }
-    } else if (id === "2") {
-      if (itemCodeHeader) {
-        itemCodeHeader.innerHTML = `<h1 class="item-code-heading">VACUUM GAUGE CALIBRATION SERVICES</h1>`;
-      }
-      const pdfUrl = "./assests/img/services/vacuumGaugeCalibrationService/vacuumGaugeCalibrationService.pdf.pdf";
-      const downloadPdfUrl = "./assests/img/services/vacuumGaugeCalibrationService/vacuumGaugeCalibrationServiceDownload.pdf";
-      if (downloadContainer) {
-        downloadContainer.innerHTML = `
-          <a href="${downloadPdfUrl}" download class="btn btn-success d-flex align-items-center gap-2" style="padding: 10px 20px; font-weight: 600;">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
-            </svg>
-            Download Brochure
-          </a>
-        `;
-      }
-      if (pdfViewer) {
-        renderPDF(pdfUrl, pdfViewer);
-      }
-    } else if (id === "3") {
-      if (itemCodeHeader) {
-        itemCodeHeader.innerHTML = `<h1 class="item-code-heading">LEAK CALIBRATION SERVICES</h1>`;
-      }
-      const pdfUrl = "./assests/img/services/leakCalibrationServices/LeakCalibrationServices.pdf";
-      const downloadPdfUrl = "./assests/img/services/leakCalibrationServices/LeakCalibrationServicesDownload.pdf";
-      if (downloadContainer) {
-        downloadContainer.innerHTML = `
-          <a href="${downloadPdfUrl}" download class="btn btn-success d-flex align-items-center gap-2" style="padding: 10px 20px; font-weight: 600;">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
-            </svg>
-            Download Brochure
-          </a>
-        `;
-      }
-      if (pdfViewer) {
-        renderPDF(pdfUrl, pdfViewer);
+
+      if (dynamicServiceContainer) {
+        dynamicServiceContainer.innerHTML = renderServiceDetail(service);
       }
     }
   }
 });
+
+function renderServiceDetail(service) {
+  let html = '';
+
+  // 1. About / Description Section
+  html += `
+    <div class="service-about-section">
+      <p>${service.description}</p>
+      ${service.description2 ? `<p>${service.description2}</p>` : ''}
+      ${service.description3 ? `<p>${service.description3}</p>` : ''}
+    </div>
+  `;
+
+  // 2. Specialized Methods Section (ID 1)
+  if (service.methods && service.methods.length > 0) {
+    html += `
+      <div class="service-section">
+        <h2 class="section-title">${service.methodsTitle || 'Specialized Methods'}</h2>
+        <div class="methods-grid">
+          ${service.methods.map(m => `
+            <div class="method-card">
+              <h4>${m.name}</h4>
+              <p>${m.desc}</p>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+    `;
+  }
+
+  // 3. Objectives Section (ID 2)
+  if (service.objectives && service.objectives.length > 0) {
+    html += `
+      <div class="service-section">
+        <h2 class="section-title">${service.objectivesTitle || 'Calibration Objectives'}</h2>
+        <div class="methods-grid">
+          ${service.objectives.map(obj => `
+            <div class="method-card">
+              <p style="font-size: 15px; font-weight: 500; color: #001f3f; margin: 0;">${obj}</p>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+    `;
+  }
+
+  // 4. Calibration references / ranges (ID 2 & 3)
+  if (service.gaugeTypes || service.references || service.offerings) {
+    html += `
+      <div class="service-list-grid">
+    `;
+
+    // Calibration ranges / types
+    if (service.gaugeTypes && service.gaugeTypes.length > 0) {
+      html += `
+        <div class="service-list-box">
+          <h3>${service.whyChooseTitle || 'Calibrated Equipment Types'}</h3>
+          ${service.whyChooseDesc ? `<p style="font-size:14.5px; color:#4d5765; margin-bottom:15px;">${service.whyChooseDesc}</p>` : ''}
+          <ul class="custom-bullet-list">
+            ${service.gaugeTypes.map(g => `<li>${g}</li>`).join('')}
+          </ul>
+          ${service.scheduling ? `<p style="font-size:14px; font-style:italic; color:#4d5765; margin-top:20px; border-top:1px solid #eee; padding-top:15px;">${service.scheduling}</p>` : ''}
+        </div>
+      `;
+    }
+
+    // Job Execution & References
+    if (service.references && service.references.length > 0) {
+      html += `
+        <div class="service-list-box">
+          <h3>${service.executionTitle || 'Job Execution'}</h3>
+          ${service.executionDesc ? `<p style="font-size:14.5px; color:#4d5765; margin-bottom:15px;">${service.executionDesc}</p>` : ''}
+          <h5 style="font-size:15px; font-weight:700; color:#001f3f; margin-bottom:12px;">${service.referencesTitle}</h5>
+          <ul class="custom-bullet-list">
+            ${service.references.map(r => `<li>${r}</li>`).join('')}
+          </ul>
+          ${service.features ? `
+            <div style="margin-top:20px; border-top:1px solid #eee; padding-top:15px;">
+              ${service.features.map(f => `<p style="font-size:14px; color:#4d5765; margin-bottom:10px; font-weight:500;">• ${f}</p>`).join('')}
+            </div>
+          ` : ''}
+        </div>
+      `;
+    }
+
+    // Offerings (ID 3)
+    if (service.offerings && service.offerings.length > 0) {
+      html += `
+        <div class="service-list-box" style="grid-column: 1 / -1;">
+          <h3>${service.whyChooseTitle || 'Our Offerings'}</h3>
+          <ul class="custom-bullet-list" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px;">
+            ${service.offerings.map(o => `<li>${o}</li>`).join('')}
+          </ul>
+        </div>
+      `;
+    }
+
+    html += `
+      </div>
+    `;
+  }
+
+  // 5. On-Site Procedure (ID 2)
+  if (service.procedureSteps && service.procedureSteps.length > 0) {
+    html += `
+      <div class="service-section">
+        <h2 class="section-title">${service.procedureTitle || 'Procedure'}</h2>
+        <div class="service-about-section" style="border-left-color: #ffc631; padding: 30px;">
+          <p>${service.procedureDesc}</p>
+          <ul class="custom-bullet-list procedure-list" style="margin-top: 20px;">
+            ${service.procedureSteps.map((step, idx) => `
+              <li data-step="${idx + 1}">${step}</li>
+            `).join('')}
+          </ul>
+        </div>
+      </div>
+    `;
+  }
+
+  // 6. On-site areas and additional services lists (ID 1)
+  if (service.onSiteAreas || service.additionalServices) {
+    html += `
+      <div class="service-list-grid">
+    `;
+
+    if (service.onSiteAreas && service.onSiteAreas.length > 0) {
+      html += `
+        <div class="service-list-box">
+          <h3>${service.onSiteAreasTitle}</h3>
+          <ul class="custom-bullet-list">
+            ${service.onSiteAreas.map(area => `<li>${area}</li>`).join('')}
+          </ul>
+        </div>
+      `;
+    }
+
+    if (service.additionalServices && service.additionalServices.length > 0) {
+      html += `
+        <div class="service-list-box">
+          <h3>${service.additionalServicesTitle}</h3>
+          <ul class="custom-bullet-list">
+            ${service.additionalServices.map(s => `<li>${s}</li>`).join('')}
+          </ul>
+        </div>
+      `;
+    }
+
+    html += `
+      </div>
+    `;
+  }
+
+  // 7. Recent Projects Gallery / Photos Section (ID 1 & ID 2)
+  if (service.projects && service.projects.length > 0) {
+    html += `
+      <div class="service-section">
+        <h2 class="section-title">${service.projectsTitle || 'Project Gallery'}</h2>
+        <div class="projects-grid">
+          ${service.projects.map(proj => `
+            <div class="project-card">
+              <div class="project-card-content">
+                <h4 style="margin-bottom: 15px;">${proj.name}</h4>
+                <div class="project-images-gallery ${proj.images.length === 1 ? 'single-img' : ''}">
+                  ${proj.images.map(img => `
+                    <div class="project-img-wrapper">
+                      <img src="${img}" alt="${proj.name}" loading="lazy" />
+                    </div>
+                  `).join('')}
+                </div>
+              </div>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+    `;
+  }
+
+  // 8. Mission Statement / Tagline / Footer Card
+  if (service.mission) {
+    html += `
+      <div class="highlight-card">
+        <h3>Our Mission</h3>
+        <p style="margin: 0;">${service.mission}</p>
+      </div>
+    `;
+  } else if (service.tagline) {
+    html += `
+      <div class="highlight-card">
+        <h3>Precision & Reliability</h3>
+        <p style="margin: 0;">${service.tagline}</p>
+      </div>
+    `;
+  }
+
+  return html;
+}
 
 async function renderPDF(url, container) {
   // Set worker source
