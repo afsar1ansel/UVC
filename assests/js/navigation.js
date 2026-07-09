@@ -346,6 +346,7 @@ if (window.location.search.includes("enquiry=success")) {
   window.history.replaceState({ path: cleanUrl }, '', cleanUrl);
 }
 
+/*
 // Temporary Submit Inspector
 const formElement = document.getElementById("enquiryForm");
 if (formElement) {
@@ -436,6 +437,7 @@ if (formElement) {
     });
   });
 }
+*/
 
 // Attach to Get Quote button
 const getQuoteBtn = document.getElementById("getQuote");

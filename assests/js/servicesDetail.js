@@ -66,12 +66,21 @@ $(document).ready(function () {
       
       if (downloadContainer) {
         downloadContainer.innerHTML = `
-          <a href="${service.downloadPdf}" download class="btn btn-success d-flex align-items-center gap-2" style="padding: 10px 20px; font-weight: 600;">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
-            </svg>
-            Download Brochure
-          </a>
+          <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+            ${
+              service.downloadPdf
+                ? `<a href="${service.downloadPdf}" download class="btn btn-success d-flex align-items-center gap-2" style="padding: 10px 20px; font-weight: 600; text-decoration: none; border-radius: 4px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                    </svg>
+                    Download Brochure
+                  </a>`
+                : ""
+            }
+            <button class="btn btn-warning d-flex align-items-center gap-2" onclick="openEnquiryModal('Service - ${service.title || service.code}')" style="padding: 10px 20px; font-weight: 600; cursor: pointer; background-color: #ffc631; border: none; color: #000; border-radius: 4px; font-size: 16px;">
+              Request Enquiry / Quote
+            </button>
+          </div>
         `;
       }
 
