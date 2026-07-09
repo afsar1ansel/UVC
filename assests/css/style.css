@@ -801,6 +801,7 @@ body {
   opacity: 1;
   transition: 0.5s ease;
   backface-visibility: hidden;
+  border: 1px solid #e2e8f0;
 }
 
 .productImgMiddle {

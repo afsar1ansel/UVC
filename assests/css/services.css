@@ -109,6 +109,10 @@
 
 .servImg img {
   width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: contain;
+  background-color: white;
+  border: 1px solid #e2e8f0;
 }
 
 .servText {
