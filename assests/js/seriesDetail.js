@@ -54,14 +54,14 @@ function loadSeries(series) {
 function renderContent(series) {
   const matchedSeries = sidebarSeries.find((s) => s.id === series);
   if (matchedSeries) {
-    document.title = `${matchedSeries.name} Vacuum Equipment | Unique Vacuum Solutions`;
-    let metaDesc = document.querySelector('meta[name="description"]');
-    if (!metaDesc) {
-      metaDesc = document.createElement('meta');
-      metaDesc.setAttribute('name', 'description');
-      document.head.appendChild(metaDesc);
+    if (typeof window.updateMetaTags === "function") {
+      window.updateMetaTags(
+        `${matchedSeries.name} Vacuum Equipment | Unique Vacuum Solutions`,
+        `Explore our complete range of high-performance ${matchedSeries.name} vacuum measurement gauges, pumps, and systems in India.`
+      );
+    } else {
+      document.title = `${matchedSeries.name} Vacuum Equipment | Unique Vacuum Solutions`;
     }
-    metaDesc.setAttribute('content', `Explore our complete range of high-performance ${matchedSeries.name} vacuum measurement gauges, pumps, and systems in India.`);
   }
 
   const gridBox = document.getElementById("gridBox");

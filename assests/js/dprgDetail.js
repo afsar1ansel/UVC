@@ -33,14 +33,14 @@ const productTable = document.getElementById("productTable");
 const end = document.getElementById("end");
 
 if (product) {
-  document.title = `${product.title} (${product.code || product.name}) - Vacuum Gauge | UVS India`;
-  let metaDesc = document.querySelector('meta[name="description"]');
-  if (!metaDesc) {
-    metaDesc = document.createElement('meta');
-    metaDesc.setAttribute('name', 'description');
-    document.head.appendChild(metaDesc);
+  if (typeof window.updateMetaTags === "function") {
+    window.updateMetaTags(
+      `${product.title} (${product.code || product.name}) - Vacuum Gauge | UVS India`,
+      `Technical specifications, features, and brochures for the ${product.title} (${product.code || product.name}) digital Pirani vacuum measurement gauge.`
+    );
+  } else {
+    document.title = `${product.title} (${product.code || product.name}) - Vacuum Gauge | UVS India`;
   }
-  metaDesc.setAttribute('content', `Technical specifications, features, and brochures for the ${product.title} (${product.code || product.name}) digital Pirani vacuum measurement gauge.`);
   // Generate dynamic HTML based on the product data
   const html = `
         <div class="image-gallery">

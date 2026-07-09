@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Solution Details | UVC</title>
+    <title>Custom Vacuum Chamber Systems & Solutions | Unique Vacuum Solutions</title>
+    <meta name="description" content="Explore our custom vacuum chambers, thermal vacuum systems, and automated helium leak detection engineering solutions in India." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.uniquevacuum.co.in/details.html" />
+    <meta property="og:title" content="Custom Vacuum Chamber Systems & Solutions | Unique Vacuum Solutions" />
+    <meta property="og:description" content="Explore our custom vacuum chambers, thermal vacuum systems, and automated helium leak detection engineering solutions in India." />
+    <meta property="og:image" content="assests/img/OG/uvc.jpg" />
     <link rel="stylesheet" href="./assests/css/style.css" />
     <link rel="stylesheet" href="./assests/css/navigation.css" />
     <link rel="stylesheet" href="./assests/css/footer.css" />
@@ -154,15 +160,15 @@
         if (solutionId && typeof solutions !== "undefined") {
           const solution = solutions.find((s) => s.id === solutionId);
           if (solution) {
-            document.title = `${solution.title} | Unique Vacuum Solutions`;
-            let metaDesc = document.querySelector('meta[name="description"]');
-            if (!metaDesc) {
-              metaDesc = document.createElement('meta');
-              metaDesc.setAttribute('name', 'description');
-              document.head.appendChild(metaDesc);
-            }
             const cleanDesc = solution.details.intro.replace(/<[^>]*>/g, '').substring(0, 160);
-            metaDesc.setAttribute('content', cleanDesc);
+            if (typeof window.updateMetaTags === "function") {
+              window.updateMetaTags(
+                `${solution.title} | Unique Vacuum Solutions`,
+                cleanDesc
+              );
+            } else {
+              document.title = `${solution.title} | Unique Vacuum Solutions`;
+            }
 
             let html = `
               <div class="detail-image-container" style="background-image: url('${solution.image}');"></div>
