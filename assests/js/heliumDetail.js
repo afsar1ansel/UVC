@@ -23,15 +23,26 @@ document.addEventListener("DOMContentLoaded", () => {
   
   const product = window.heliumLeakDetectors.find((p) => p.id === id);
 
-  if (product) {
-    if (typeof window.updateMetaTags === "function") {
-      window.updateMetaTags(
-        `${product.title} (${product.code}) - Helium Leak Testing | UVS India`,
-        `Learn about the ${product.title} (${product.code}) helium mass spectrometer leak testing equipment, systems, calibration standards, and components.`
-      );
-    } else {
-      document.title = `${product.title} (${product.code}) - Helium Leak Testing | UVS India`;
-    }
+    if (product) {
+      if (typeof window.updateMetaTags === "function") {
+        window.updateMetaTags(
+          `${product.title} (${product.code}) - Helium Leak Testing | UVS India`,
+          `Learn about the ${product.title} (${product.code}) helium mass spectrometer leak testing equipment, systems, calibration standards, and components.`
+        );
+      } else {
+        document.title = `${product.title} (${product.code}) - Helium Leak Testing | UVS India`;
+      }
+
+      const heroImg = document.querySelector("#hero img");
+      if (heroImg) {
+        if (id === "HLD-HELIUM-LEAK-TEST-SYSTEM") {
+          heroImg.src = "./assests/img/products/HeliumLeakTestSystems.png";
+        } else if (id === "VACUUM-COMPONENTS") {
+          heroImg.src = "./assests/img/products/Filter&VacuumComponents.png";
+        } else {
+          heroImg.src = "./assests/img/products/HeliumLeakDetectors.png";
+        }
+      }
 
     const itemCodeHeader = document.getElementById("item-code-header");
     if (itemCodeHeader) {

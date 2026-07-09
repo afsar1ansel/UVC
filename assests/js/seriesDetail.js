@@ -62,6 +62,15 @@ function renderContent(series) {
     } else {
       document.title = `${matchedSeries.name} Vacuum Equipment | Unique Vacuum Solutions`;
     }
+
+    const heroImg = document.querySelector("#hero img");
+    if (heroImg) {
+      if (matchedSeries.category === "MEASUREMENT") {
+        heroImg.src = "./assests/img/products/vacuum_measurement.png";
+      } else {
+        heroImg.src = "./assests/img/products/Vacuum_Pumps&Systems.png";
+      }
+    }
   }
 
   const gridBox = document.getElementById("gridBox");

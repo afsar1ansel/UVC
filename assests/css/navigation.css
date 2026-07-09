@@ -332,3 +332,9 @@
   text-overflow: ellipsis;
   max-width: 100%;
 }
+
+/* Responsive Hero Banners with Natural Scaling */
+.hero img {
+  width: 100% !important;
+  height: 64vh !important;
+}
