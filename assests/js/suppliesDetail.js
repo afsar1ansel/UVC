@@ -9,8 +9,8 @@ function getFullSuppliesContext(product) {
   if (img.includes("/supplies/")) subCat = "Filters & Traps";
   else if (img.includes("/liquid&mistRemoval/")) subCat = "Liquid & Mist Removal";
   else if (img.includes("/vaporCapture/")) subCat = "Vapor Capture";
-  
-  return `Vacuum Components & Supplies - ${subCat} - ${product.code}`;
+
+  return `Filters & Vacuum Components  - ${subCat} - ${product.code}`;
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -71,14 +71,14 @@ function renderPrimaryDetails(product) {
   if (!producter) return;
 
   const images = product.images && product.images.length > 0 ? product.images : ["./assests/img/ReplaceImage.png"];
-  
+
   // Gallery HTML
   const thumbnailsHtml = images.length > 1
     ? `
       <div class="thumbnail-container">
         ${images
-          .map(
-            (img, index) => `
+      .map(
+        (img, index) => `
               <img
                 class="thumbnail ${index === 0 ? "active" : ""}"
                 src="${img}"
@@ -87,8 +87,8 @@ function renderPrimaryDetails(product) {
                 onerror="this.onerror=null; this.src='./assests/img/ReplaceImage.png';"
               />
             `
-          )
-          .join("")}
+      )
+      .join("")}
       </div>
     `
     : "";
@@ -100,8 +100,8 @@ function renderPrimaryDetails(product) {
       <div class="construction-section">
         <h4 class="construction-title">${product.constructionTitle || "Construction Options"}</h4>
         ${product.constructionOptions
-          .map(
-            (opt) => `
+        .map(
+          (opt) => `
             <div class="construction-card">
               <h5>${opt.name}</h5>
               <ul>
@@ -109,8 +109,8 @@ function renderPrimaryDetails(product) {
               </ul>
             </div>
           `
-          )
-          .join("")}
+        )
+        .join("")}
       </div>
     `;
   }
@@ -124,8 +124,8 @@ function renderPrimaryDetails(product) {
           <h3 style="font-size: 20px; font-weight: 700; color: #001f3f; margin-bottom: 15px;">Key Features Overview</h3>
           <div style="display: flex; flex-direction: column; gap: 10px;">
             ${product.highlights
-              .map(
-                (feature) => `
+          .map(
+            (feature) => `
                   <div style="display: flex; gap: 10px; align-items: flex-start;">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffc642" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 3px;">
                       <polyline points="20 6 9 17 4 12"></polyline>
@@ -133,8 +133,8 @@ function renderPrimaryDetails(product) {
                     <p style="margin: 0; color: #4d5765; font-size: 15px; font-weight: 500;">${feature}</p>
                   </div>
                 `
-              )
-              .join("")}
+          )
+          .join("")}
           </div>
         </div>
       `;
@@ -144,14 +144,14 @@ function renderPrimaryDetails(product) {
           <h3 style="font-size: 20px; font-weight: 700; color: #001f3f; margin-bottom: 15px;">Key Features Overview</h3>
           <div style="display: flex; flex-direction: column; gap: 20px;">
             ${product.highlights
-              .map(
-                (section) => `
+          .map(
+            (section) => `
                 <div>
                   <h5 style="color: #001f3f; font-weight: 700; font-size: 16px; margin-bottom: 10px;">${section.title}</h5>
                   <div style="display: flex; flex-direction: column; gap: 10px;">
                     ${section.points
-                      .map(
-                        (pt) => `
+                .map(
+                  (pt) => `
                         <div style="display: flex; gap: 10px; align-items: flex-start;">
                           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ffc642" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0; margin-top: 3px;">
                             <polyline points="20 6 9 17 4 12"></polyline>
@@ -159,13 +159,13 @@ function renderPrimaryDetails(product) {
                           <p style="margin: 0; color: #4d5765; font-size: 15px; font-weight: 500;">${pt}</p>
                         </div>
                       `
-                      )
-                      .join("")}
+                )
+                .join("")}
                   </div>
                 </div>
               `
-              )
-              .join("")}
+          )
+          .join("")}
           </div>
         </div>
       `;
@@ -223,15 +223,15 @@ function renderTechSpecs(product) {
           </thead>
           <tbody>
             ${product.technicalSpecifications
-              .map(
-                (spec) => `
+      .map(
+        (spec) => `
                 <tr>
                   <td style="font-weight: 600; border: 1px solid #dee2e6; padding: 10px 15px; color: #444;">${spec.parameter}</td>
                   <td style="border: 1px solid #dee2e6; padding: 10px 15px; color: #555;">${spec.value}</td>
                 </tr>
               `
-              )
-              .join("")}
+      )
+      .join("")}
           </tbody>
         </table>
       </div>
@@ -253,8 +253,8 @@ function renderApplications(product) {
       <h2 style="font-size: 24px; font-weight: 700; margin-bottom: 20px; color: #001f3f;">Industrial Applications</h2>
       <ul class="applications-list">
         ${product.applications
-          .map(
-            (app) => `
+      .map(
+        (app) => `
             <li>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0da574" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
                 <polyline points="20 6 9 17 4 12"></polyline>
@@ -262,8 +262,8 @@ function renderApplications(product) {
               <span>${app}</span>
             </li>
           `
-          )
-          .join("")}
+      )
+      .join("")}
       </ul>
     </div>
   `;
@@ -284,8 +284,8 @@ function renderOptions(product) {
         <h2 style="font-size: 24px; font-weight: 700; margin-bottom: 20px; color: #001f3f;">Available Options & Accessories</h2>
         <div style="display: flex; flex-direction: column; gap: 20px;">
           ${product.options
-            .map(
-              (opt) => `
+        .map(
+          (opt) => `
               <div>
                 <h5 style="color: #0da574; font-weight: 700; font-size: 16px; margin-bottom: 10px;">${opt.title}</h5>
                 <ul style="margin: 0; padding-left: 20px; color: #4d5765; font-size: 14px; line-height: 1.6;">
@@ -293,8 +293,8 @@ function renderOptions(product) {
                 </ul>
               </div>
             `
-            )
-            .join("")}
+        )
+        .join("")}
         </div>
       </div>
     `;

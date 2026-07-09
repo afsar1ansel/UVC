@@ -35,8 +35,8 @@ nav.innerHTML = `
           <li class="dropdown">
             <a class="dropdown-item dropdown-toggle" href="seriesDetail.html?series=FLEXA">FLEXA SERIES</a>
             <ul class="dropdown-menu" style="width: 200px;" >
-            <li><a class="dropdown-item" href="dprgDetail.html?id=FG-05A">FG-05A sensor</a></li>
-              <li><a class="dropdown-item " href="dprgDetail.html?id=FG-04">FG-04 sensor</a></li>
+            <li><a class="dropdown-item" href="dprgDetail.html?id=FG-05A">FG-05A Sensor</a></li>
+              <li><a class="dropdown-item " href="dprgDetail.html?id=FG-04">FG-04 Sensor</a></li>
 
             <p class="headDiv"> Decimal Display ───────</p>
               <li><a class="dropdown-item deci" href="dprgDetail.html?id=FGD-1GH">FGD-1GH </a></li>
@@ -92,7 +92,7 @@ nav.innerHTML = `
             <a
               class="dropdown-item dropdown-toggle"
               href="seriesDetail.html?series=UVG_DISPLAY"
-              >UVG Display Controlers></a
+              >UVG Display Controllers></a
             >
             <ul class="dropdown-menu" style="width: 250px">
               <li>
@@ -113,7 +113,7 @@ nav.innerHTML = `
         <a class="dropdown-item dropdown-toggle" href="seriesDetail.html?series=VACUUM_PUMPS">Vacuum Pumps & Systems</a>
         <ul class="dropdown-menu" style="background-color: rgb(221, 212, 230);">
           <li class="dropdown">
-            <a class="dropdown-item dropdown-toggle" href="seriesDetail.html?series=VACUUM_PUMPS">vacuum pumps</a>
+            <a class="dropdown-item dropdown-toggle" href="seriesDetail.html?series=VACUUM_PUMPS">Vacuum Pumps</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="uvsPumpDetail.html?id=UVS-IVP-SERIES">IVP-Series Oil Sealed Belt Drive Rotary Vane Vacuum Pump</a></li>
               <li><a class="dropdown-item" href="uvsPumpDetail.html?id=UVS-IVPVP-SERIES">IVPVP-Series Two Stage Rotary Piston Vacuum Pump</a></li>
@@ -125,7 +125,7 @@ nav.innerHTML = `
             </ul>
            </li>
           <li class="dropdown">
-            <a class="dropdown-item dropdown-toggle" href="seriesDetail.html?series=VACUUM_SYSTEMS">Vacuum pumping systems</a>
+            <a class="dropdown-item dropdown-toggle" href="seriesDetail.html?series=VACUUM_SYSTEMS">Vacuum Pumping Systems</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="uvsPumpDetail.html?id=UVS-ROTARY-ROOTS">Rotary Roots Pumping Systems</a></li>
               <li><a class="dropdown-item" href="uvsPumpDetail.html?id=UVS-TURBO-PUMPING">Turbo Pumping Systems</a></li>
@@ -148,19 +148,19 @@ nav.innerHTML = `
           </li>
           <li><a class="dropdown-item" href="heliumDetail.html?id=HLD-LEYBOLD-PHOENIX-QUADRO">LEYBOLD PHOENIX SERIES</a></li>
           <li><a class="dropdown-item" href="heliumDetail.html?id=HLD-CALIBRATED-LEAKS">CALIBRATED LEAKS</a></li>
-          <li><a class="dropdown-item" href="heliumDetail.html?id=HLD-ABOUT-HELIUM-LEAK-DETECTORS">About helium leak detectors</a></li>
+          <li><a class="dropdown-item" href="heliumDetail.html?id=HLD-ABOUT-HELIUM-LEAK-DETECTORS">About Helium Leak Detectors</a></li>
         </ul>
       </li>
       <li><a class="dropdown-item" href="heliumDetail.html?id=HLD-HELIUM-LEAK-TEST-SYSTEM">Helium Leak Test Systems</a></li>
       <li class="dropdown">
-        <a class="dropdown-item dropdown-toggle" href="vacuumComponentsAndSupplies.html">Vacuum Components & Supplies</a>
+        <a class="dropdown-item dropdown-toggle" href="vacuumComponentsAndSupplies.html">Filters & Vacuum Components </a>
         <ul class="dropdown-menu">
           <li><a class="dropdown-item" href="heliumDetail.html?id=VACUUM-COMPONENTS">Vacuum Components</a></li>
           <li class="dropdown">
             <a class="dropdown-item dropdown-toggle" href="filters.html">Filters</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="filters/particulateFilters.html">Particulate Filters</a></li>
-              <li><a class="dropdown-item" href="filters/liquidMistSeparators.html">Liquid & mist separators</a></li>
+              <li><a class="dropdown-item" href="filters/liquidMistSeparators.html">Liquid & Mist Separators</a></li>
               <li><a class="dropdown-item" href="filters/vaporRemoval.html">Vapor removal</a></li>
             </ul>
           </li>
@@ -378,7 +378,7 @@ if (formElement) {
     payloadDiv.style.zIndex = "100001";
     payloadDiv.style.maxHeight = "90vh";
     payloadDiv.style.overflowY = "auto";
-    
+
     payloadDiv.innerHTML = `
       <h3 style="color: #fff; margin-bottom: 10px; font-size: 14px; font-weight: bold; border-bottom: 1px solid #333; padding-bottom: 5px;">[UVS Dev Tool] Zoho Form Payload</h3>
       <pre style="white-space: pre-wrap; word-wrap: break-word; color: #00ff00;">${JSON.stringify(payload, null, 2)}</pre>
@@ -401,7 +401,7 @@ if (formElement) {
       cancelMsg.textContent = "❌ Submission paused. Form will not be submitted.";
       payloadDiv.appendChild(cancelMsg);
       document.getElementById("cancelSubmit").style.display = "none";
-      
+
       // Add a manual submit button
       const manualSubmit = document.createElement("button");
       manualSubmit.style.marginTop = "10px";
@@ -418,7 +418,7 @@ if (formElement) {
         formElement.submit();
       };
       payloadDiv.appendChild(manualSubmit);
-      
+
       // Add a close/clear button
       const closeBtn = document.createElement("button");
       closeBtn.style.marginTop = "10px";
@@ -535,7 +535,7 @@ if (searchInput && searchSuggestions) {
       url: "services.html"
     },
     {
-      title: "Vacuum Components & Supplies",
+      title: "Filters & Vacuum Components ",
       description: "Explore our range of vacuum fittings, flanges, clamps, quick-couplings, flexible bellows, and traps.",
       url: "vacuumComponentsAndSupplies.html"
     },
@@ -737,7 +737,7 @@ if (pathPrefix) {
 // SEO & Open Graph Metadata sync helper
 window.updateMetaTags = function (title, description) {
   document.title = title;
-  
+
   // SEO Meta Description
   let metaDesc = document.querySelector('meta[name="description"]');
   if (!metaDesc) {

@@ -134,7 +134,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <a class="dropdown-item dropdown-toggle" href="seriesDetail.html?series=VACUUM_PUMPS">Vacuum Pumps & Systems</a>
                     <ul class="dropdown-menu" style="background-color: rgb(221, 212, 230);">
                       <li class="dropdown">
-                        <a class="dropdown-item dropdown-toggle" href="seriesDetail.html?series=VACUUM_PUMPS">vacuum pumps</a>
+                        <a class="dropdown-item dropdown-toggle" href="seriesDetail.html?series=VACUUM_PUMPS">Vacuum Pumps</a>
                         <ul class="dropdown-menu">
                           <li><a class="dropdown-item" href="uvsPumpDetail.html?id=UVS-IVP-SERIES">IVP-Series Oil Sealed Belt Drive Rotary Vane Vacuum Pump</a></li>
                           <li><a class="dropdown-item" href="uvsPumpDetail.html?id=UVS-IVPVP-SERIES">IVPVP-Series Two Stage Rotary Piston Vacuum Pump</a></li>
@@ -146,7 +146,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         </ul>
                       </li>
                       <li class="dropdown">
-                        <a class="dropdown-item dropdown-toggle" href="seriesDetail.html?series=VACUUM_SYSTEMS">Vacuum pumping systems</a>
+                        <a class="dropdown-item dropdown-toggle" href="seriesDetail.html?series=VACUUM_SYSTEMS">Vacuum Pumping Systems</a>
                         <ul class="dropdown-menu">
                           <li><a class="dropdown-item" href="uvsPumpDetail.html?id=UVS-ROTARY-ROOTS">Rotary Roots Pumping Systems</a></li>
                           <li><a class="dropdown-item" href="uvsPumpDetail.html?id=UVS-TURBO-PUMPING">Turbo Pumping Systems</a></li>
@@ -169,20 +169,20 @@ document.addEventListener("DOMContentLoaded", function () {
                       </li>
                       <li><a class="dropdown-item" href="heliumDetail.html?id=HLD-LEYBOLD-PHOENIX-QUADRO">LEYBOLD PHOENIX SERIES</a></li>
                       <li><a class="dropdown-item" href="heliumDetail.html?id=HLD-CALIBRATED-LEAKS">CALIBRATED LEAKS</a></li>
-                      <li><a class="dropdown-item" href="heliumDetail.html?id=HLD-ABOUT-HELIUM-LEAK-DETECTORS">About helium leak detectors</a></li>
+                      <li><a class="dropdown-item" href="heliumDetail.html?id=HLD-ABOUT-HELIUM-LEAK-DETECTORS">About Helium Leak Detectors</a></li>
                     </ul>
                   </li>
                   <li><a class="dropdown-item" href="heliumDetail.html?id=HLD-HELIUM-LEAK-TEST-SYSTEM">Helium Test Systems</a></li>
                   <li class="dropdown">
-                    <a class="dropdown-item dropdown-toggle" href="vacuumComponentsAndSupplies.html">Vacuum Components & Supplies</a>
+                    <a class="dropdown-item dropdown-toggle" href="vacuumComponentsAndSupplies.html">Filters & Vacuum Components </a>
                     <ul class="dropdown-menu" style="background-color: rgb(221, 212, 230);">
-                      <li><a class="dropdown-item" href="heliumDetail.html?id=VACUUM-COMPONENTS">vacuum Components</a></li>
+                      <li><a class="dropdown-item" href="heliumDetail.html?id=VACUUM-COMPONENTS">Vacuum Components</a></li>
                       <li class="dropdown">
                         <a class="dropdown-item dropdown-toggle" href="filters.html">Filters</a>
                         <ul class="dropdown-menu" style="background-color: rgb(221, 212, 230);">
                           <li><a class="dropdown-item" href="filters/particulateFilters.html">Particulate Filters</a></li>
-                          <li><a class="dropdown-item" href="filters/liquidMistSeparators.html">Liquid & mist separators</a></li>
-                          <li><a class="dropdown-item" href="filters/vaporRemoval.html">Vapor removal</a></li>
+                          <li><a class="dropdown-item" href="filters/liquidMistSeparators.html">Liquid & Mist Separators</a></li>
+                          <li><a class="dropdown-item" href="filters/vaporRemoval.html">Vapor Removal</a></li>
                         </ul>
                       </li>
                     </ul>
