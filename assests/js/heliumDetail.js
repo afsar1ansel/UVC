@@ -24,6 +24,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const product = window.heliumLeakDetectors.find((p) => p.id === id);
 
   if (product) {
+    document.title = `${product.title} (${product.code}) - Helium Leak Testing | UVS India`;
+    let metaDesc = document.querySelector('meta[name="description"]');
+    if (!metaDesc) {
+      metaDesc = document.createElement('meta');
+      metaDesc.setAttribute('name', 'description');
+      document.head.appendChild(metaDesc);
+    }
+    metaDesc.setAttribute('content', `Learn about the ${product.title} (${product.code}) helium mass spectrometer leak testing equipment, systems, calibration standards, and components.`);
+
     const itemCodeHeader = document.getElementById("item-code-header");
     if (itemCodeHeader) {
       itemCodeHeader.innerHTML = `<h1 class="item-code-heading" style="font-size: 28px; background: #ffcc00; padding: 5px 15px; border-radius: 4px; font-weight: bold; margin-bottom: 0; border-left: none;">${product.code}</h1>`;

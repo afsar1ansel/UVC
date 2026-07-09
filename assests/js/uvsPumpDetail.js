@@ -17,6 +17,15 @@ const productApplications = document.getElementById("productApplications");
 const end = document.getElementById("end");
 
 if (product) {
+  document.title = `${product.title} (${product.code}) - Vacuum Pump | UVS India`;
+  let metaDesc = document.querySelector('meta[name="description"]');
+  if (!metaDesc) {
+    metaDesc = document.createElement('meta');
+    metaDesc.setAttribute('name', 'description');
+    document.head.appendChild(metaDesc);
+  }
+  metaDesc.setAttribute('content', `Specifications, performance curves, and downloads for ${product.title} (${product.code}) rotary vane, piston, or dry scroll vacuum pump.`);
+
   const html = `
     <div class="image-gallery">
       <div class="thumbnail-container">

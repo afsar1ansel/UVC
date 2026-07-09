@@ -51,6 +51,15 @@ $(document).ready(function () {
     // Find service data
     const service = window.servicesData ? window.servicesData.find(s => s.id === id) : null;
     if (service) {
+      document.title = `${service.title} - Calibration & Leak Testing | UVS India`;
+      let metaDesc = document.querySelector('meta[name="description"]');
+      if (!metaDesc) {
+        metaDesc = document.createElement('meta');
+        metaDesc.setAttribute('name', 'description');
+        document.head.appendChild(metaDesc);
+      }
+      metaDesc.setAttribute('content', `Explore our professional service details for ${service.title}, traceable to NPL India and NIST standards with complete reporting.`);
+
       if (itemCodeHeader) {
         itemCodeHeader.innerHTML = `<h1 class="item-code-heading">${service.code}</h1>`;
       }

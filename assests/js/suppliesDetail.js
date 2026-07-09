@@ -23,6 +23,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const product = window.suppliesProducts.find((p) => p.id === id);
 
   if (product) {
+    document.title = `${product.title} - Solberg Vacuum Filters | UVS India`;
+    let metaDesc = document.querySelector('meta[name="description"]');
+    if (!metaDesc) {
+      metaDesc = document.createElement('meta');
+      metaDesc.setAttribute('name', 'description');
+      document.head.appendChild(metaDesc);
+    }
+    metaDesc.setAttribute('content', `Specifications, connection sizing, and datasheets for Solberg ${product.title} inline vacuum pump filters, liquid separators, and traps.`);
+
     // 1. Set item code header
     const itemCodeHeader = document.getElementById("item-code-header");
     if (itemCodeHeader) {
