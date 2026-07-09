@@ -161,6 +161,7 @@
   width: 73.854vw;
   margin: auto;
   display: flex;
+  gap: 4vw;
   position: relative;
   margin-bottom: 300px;
 }
@@ -935,3 +936,44 @@
 }
 
 /* ---------------- body end ---------------- */
+
+/* Fix Consult Now button squeezing and wrapping */
+.innovateBtn, 
+#innovative .innovateBtn {
+  display: inline-flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: auto !important;
+  min-width: 180px !important;
+  max-width: max-content !important;
+  height: 48px !important;
+  padding: 10px 24px !important;
+  background: #ffc631 !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  color: #000810 !important;
+  letter-spacing: 0.5px !important;
+  text-transform: uppercase !important;
+  white-space: nowrap !important;
+  border-radius: 4px !important;
+  transition: all 0.3s ease !important;
+  cursor: pointer !important;
+}
+
+.innovateBtn:hover,
+#innovative .innovateBtn:hover {
+  background: #e6b22c !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1) !important;
+}
+
+@media (max-width: 770px) {
+  #innovative .innovateBtn {
+    margin: 20px auto 0 auto !important; /* Centered on small screens */
+  }
+}
+@media (min-width: 771px) {
+  #innovative .innovateBtn {
+    margin: 25px 0 0 0 !important; /* Left-aligned on large screens */
+  }
+}
