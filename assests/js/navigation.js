@@ -346,98 +346,22 @@ if (window.location.search.includes("enquiry=success")) {
   window.history.replaceState({ path: cleanUrl }, '', cleanUrl);
 }
 
-/*
-// Temporary Submit Inspector
+// Zoho Form Submit Inspector
 const formElement = document.getElementById("enquiryForm");
 if (formElement) {
   formElement.addEventListener("submit", function (e) {
-    e.preventDefault();
-
     const formData = new FormData(this);
     const payload = {};
     formData.forEach((value, key) => {
       payload[key] = value;
     });
 
-    console.log("----- ZOHO SUBMIT PAYLOAD -----");
-    console.log(JSON.stringify(payload, null, 2));
-    console.log("--------------------------------");
-
-    // Display payload temporarily on screen
-    const payloadDiv = document.createElement("div");
-    payloadDiv.style.position = "fixed";
-    payloadDiv.style.top = "10px";
-    payloadDiv.style.left = "10px";
-    payloadDiv.style.width = "400px";
-    payloadDiv.style.padding = "20px";
-    payloadDiv.style.backgroundColor = "rgba(0, 0, 0, 0.95)";
-    payloadDiv.style.color = "#00ff00";
-    payloadDiv.style.fontFamily = "monospace";
-    payloadDiv.style.fontSize = "12px";
-    payloadDiv.style.borderRadius = "8px";
-    payloadDiv.style.boxShadow = "0 10px 25px rgba(0,0,0,0.5)";
-    payloadDiv.style.zIndex = "100001";
-    payloadDiv.style.maxHeight = "90vh";
-    payloadDiv.style.overflowY = "auto";
-
-    payloadDiv.innerHTML = `
-      <h3 style="color: #fff; margin-bottom: 10px; font-size: 14px; font-weight: bold; border-bottom: 1px solid #333; padding-bottom: 5px;">[UVS Dev Tool] Zoho Form Payload</h3>
-      <pre style="white-space: pre-wrap; word-wrap: break-word; color: #00ff00;">${JSON.stringify(payload, null, 2)}</pre>
-      <p style="color: #ffc631; margin-top: 15px; font-size: 11px; font-weight: bold; animation: pulse 1s infinite alternate;">📤 Posting to Zoho in 4 seconds...</p>
-      <button id="cancelSubmit" style="margin-top: 10px; padding: 6px 12px; background: #dc3545; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">Cancel Submission</button>
-    `;
-    document.body.appendChild(payloadDiv);
-
-    const submitTimeout = setTimeout(() => {
-      payloadDiv.remove();
-      formElement.submit();
-    }, 4000);
-
-    document.getElementById("cancelSubmit").addEventListener("click", () => {
-      clearTimeout(submitTimeout);
-      const cancelMsg = document.createElement("p");
-      cancelMsg.style.color = "#ff4d4d";
-      cancelMsg.style.marginTop = "8px";
-      cancelMsg.style.fontWeight = "bold";
-      cancelMsg.textContent = "❌ Submission paused. Form will not be submitted.";
-      payloadDiv.appendChild(cancelMsg);
-      document.getElementById("cancelSubmit").style.display = "none";
-
-      // Add a manual submit button
-      const manualSubmit = document.createElement("button");
-      manualSubmit.style.marginTop = "10px";
-      manualSubmit.style.padding = "6px 12px";
-      manualSubmit.style.background = "#0da574";
-      manualSubmit.style.color = "white";
-      manualSubmit.style.border = "none";
-      manualSubmit.style.borderRadius = "4px";
-      manualSubmit.style.cursor = "pointer";
-      manualSubmit.style.fontWeight = "bold";
-      manualSubmit.textContent = "Submit Now";
-      manualSubmit.onclick = () => {
-        payloadDiv.remove();
-        formElement.submit();
-      };
-      payloadDiv.appendChild(manualSubmit);
-
-      // Add a close/clear button
-      const closeBtn = document.createElement("button");
-      closeBtn.style.marginTop = "10px";
-      closeBtn.style.marginLeft = "10px";
-      closeBtn.style.padding = "6px 12px";
-      closeBtn.style.background = "#555";
-      closeBtn.style.color = "white";
-      closeBtn.style.border = "none";
-      closeBtn.style.borderRadius = "4px";
-      closeBtn.style.cursor = "pointer";
-      closeBtn.style.fontWeight = "bold";
-      closeBtn.textContent = "Close Panel";
-      closeBtn.onclick = () => payloadDiv.remove();
-      payloadDiv.appendChild(closeBtn);
-    });
+    console.log("----- [UVS Form Tracker] Submitting Enquiry Modal Form to Zoho -----");
+    console.log("Action URL:", this.action);
+    console.log("Payload:", payload);
+    console.log("------------------------------------------------------------------");
   });
 }
-*/
 
 // Attach to Get Quote button
 const getQuoteBtn = document.getElementById("getQuote");

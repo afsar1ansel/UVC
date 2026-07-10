@@ -118,6 +118,17 @@ document.addEventListener("DOMContentLoaded", function () {
         if (textarea) {
           form.querySelector(".zf_enquiry_message").value = textarea.value.trim() || "General Inquiry";
         }
+
+        const formData = new FormData(this);
+        const payload = {};
+        formData.forEach((value, key) => {
+          payload[key] = value;
+        });
+
+        console.log("----- [UVS Form Tracker] Submitting Contact Form to Zoho -----");
+        console.log("Action URL:", this.action);
+        console.log("Payload:", payload);
+        console.log("---------------------------------------------------------------");
       });
     }
   }
