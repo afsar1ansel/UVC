@@ -472,13 +472,5 @@
     font-size: 20px !important;
     font-weight: 700 !important;
     padding: 0 10px !important;
-    flex-shrink: 0;
-    text-align: right;
   }
-}
-
-padding: 0 10px !important;
-flex-shrink: 0;
-text-align: right;
-}
 }
