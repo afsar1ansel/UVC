@@ -72,7 +72,7 @@
 /* contact */
 
 @media (max-width: 580px){
-    #contact {
+  #contact {
     /* border: solid 1px red; */
     gap: 20px;
     padding: 2px;
@@ -92,43 +92,70 @@
  
   #contact .contactForm h1{
     width: 100%;
-    font-size: 6vw;
-    line-height: 4.5vw;
+    font-size: 26px;
+    line-height: 32px;
   }
 
   #contact .contactDetails{
     /* border: solid 1px red; */
     width: 100%;
-    
   }
 
   #contact .formBox button {
-  width: 100%;
-  height: 62px;
-  border: none;
-  padding: 18px 30px;
-  background: #ffc631;
-}
+    width: auto;
+    height: 42px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 10px 20px;
+    background: #ffc631;
+    color: #000810;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 4px;
+    align-self: flex-start;
+  }
 
-#contact .formBox input,
-#contact .formBox textarea {
-  height: 44px;
-}
+  #contact .formBox input {
+    height: 58px;
+    flex: none;
+  }
 
-#contact .form-floating textarea{
-  /* border: solid 1px #fd0000; */
-  height: 68px !important;
-}
+  #contact .formBox textarea {
+    height: 120px !important;
+    flex: none;
+  }
 
-#contact .contactDetails h2{
-  font-size: 6vw;
-}
+  #contact .formBox div {
+    flex-direction: column;
+    gap: 15px;
+  }
 
-#contact .contactDetails p {
-  margin: 0;
-  font-size: 3vw;
-}
+  #contact .form-floating textarea{
+    /* border: solid 1px #fd0000; */
+    height: 120px !important;
+    flex: none;
+  }
 
+  #contact .contactDetails h2{
+    font-size: 24px;
+  }
+
+  #contact .contactDetails p {
+    margin: 0;
+  }
+
+  #contact .contactDetails .contactDetailsP1 {
+    font-size: 12px;
+    margin-top: 15px !important;
+  }
+
+  #contact .contactDetails .contactDetailsP2 {
+    font-size: 15px;
+    line-height: 22px;
+    width: 100%;
+  }
 }
 
 @media (min-width: 580px) and (max-width: 770px){

@@ -78,40 +78,63 @@ body {
 
 @media (max-width: 580px) {
   #heroCarousel {
-    padding: 80px 0 0 8px !important;
-    /* border: solid 1px red; */
+    /* Symmetric, clean padding for mobile gutters */
+    padding: 90px 16px 40px 16px !important;
   }
 
   .heroBotDiv {
     flex-direction: column;
+    gap: 30px;
   }
 
   #heroCarousel .leftBotHero {
-    width: 95%;
+    width: 100%;
     margin: 0;
   }
 
   #heroCarousel .leftBotHero h1 {
-    font-size: 8vw;
-    line-height: 8vw;
+    /* Predictable fixed typography with proper line height */
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 800;
+  }
+
+  #heroCarousel .leftBotHero p {
+    /* Optimize the paragraph text on mobile */
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 10px;
+    color: var(--off-white, #e9e6e6);
+  }
+
+  #heroCarousel .lineText p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  #heroCarousel .lineText svg {
+    /* Scale down the decorative line on mobile */
+    width: 40px;
   }
 
   #heroCarousel .heroBtns {
     display: flex;
-    gap: 10px;
-    /* border: solid 1px red; */
+    gap: 12px;
+    margin-top: 15px;
   }
 
   #heroCarousel .heroBtns button {
     display: flex;
-    padding: 16px 28px;
+    /* Clean, modern button padding */
+    padding: 12px 24px;
     border: 1px solid rgba(255, 198, 49, 1);
     background-color: rgba(255, 198, 49, 1);
     color: #000810;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 600;
     text-align: center;
-    gap: 10px;
+    gap: 8px;
+    border-radius: 4px;
   }
 
   #heroCarousel .heroBtns button:last-child {
@@ -122,150 +145,123 @@ body {
   #heroCarousel .heroCredits {
     display: flex;
     justify-content: space-between;
-    gap: 10px;
-    align-items: center;
-    margin-top: 40px;
-    /* border: solid 1px red; */
+    gap: 16px;
+    align-items: flex-start;
+    margin-top: 30px;
   }
 
   #heroCarousel .heroCredits div {
-    width: 180px;
-    /* border: solid 1px red; */
+    /* Distribute space evenly, preventing overflow */
+    flex: 1;
+    min-width: 0;
     padding: 0;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: left;
   }
 
   #heroCarousel .heroCredits div h1 {
     color: #ffc631;
-    /* font-family: Archivo; */
-    font-size: 32px;
-    font-style: normal;
+    font-size: 28px;
     font-weight: 700;
-    /* line-height: 55px; */
+    line-height: 32px;
   }
 
   #heroCarousel .heroCredits div p {
     color: var(--off-white, #e9e6e6);
-    /* font-family: Archivo; */
     font-size: 10px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 25px; /* 131.579% */
+    font-weight: 400;
+    /* Reduced line height to close gap between lines */
+    line-height: 14px; 
     text-transform: uppercase;
+    margin-top: 4px;
   }
 
   #heroCarousel .rightBotHero {
-    /* width: 35vw; */
-    /* height: 100%; */
-    /* border: solid 1px yellow; */
-    padding: 30px 0 0 0;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
 
   #heroCarousel .rightBotHero img {
-    height: 300px;
-    width: 300px;
+    /* Prevent image squeezing while maintaining layout constraints */
+    width: 100% !important;
+    max-width: 320px !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    object-fit: contain !important;
   }
 
   #heroCarousel .arrow {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
-    line-height: 16px;
+    line-height: 14px;
     text-align: center;
+  }
+
+  /* Optimize background size scaling for mobile viewport aspect ratios */
+  body .hero::before {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
 
 @media (min-width: 580px) and (max-width: 780px) {
   #heroCarousel {
-    padding: 80px 0 0 8px !important;
-    /* border: solid 1px red; */
+    padding: 90px 24px 40px 24px !important;
   }
 
   .heroBotDiv {
     flex-direction: column;
+    gap: 30px;
   }
 
   #heroCarousel .leftBotHero {
-    width: 95%;
+    width: 100%;
     margin: 0;
   }
 
   #heroCarousel .leftBotHero h1 {
-    font-size: 8vw;
-    line-height: 8vw;
+    font-size: 36px;
+    line-height: 44px;
   }
 
-  #heroCarousel .heroBtns {
-    display: flex;
-    gap: 10px;
-    /* border: solid 1px red; */
-  }
-
-  #heroCarousel .heroBtns button {
-    display: flex;
-    padding: 16px 32px;
-    border: 1px solid rgba(255, 198, 49, 1);
-    background-color: rgba(255, 198, 49, 1);
-    color: #000810;
-    font-size: 12px;
-    font-weight: 600;
-    text-align: center;
-    gap: 10px;
-  }
-
-  #heroCarousel .heroBtns button:last-child {
-    background-color: transparent;
-    color: rgba(255, 198, 49, 1);
+  #heroCarousel .leftBotHero p {
+    font-size: 16px;
+    line-height: 24px;
   }
 
   #heroCarousel .heroCredits {
     display: flex;
-    /* justify-content: space-between; */
-    gap: 10px;
+    gap: 24px;
     align-items: center;
-    margin-top: 40px;
-    /* border: solid 1px red; */
+    margin-top: 30px;
   }
 
   #heroCarousel .heroCredits div {
-    width: 180px;
-    /* border: solid 1px red; */
+    flex: 1;
+    min-width: 0;
     padding: 0;
-    align-items: center;
-    text-align: center;
-  }
-
-  #heroCarousel .heroCredits div h1 {
-    color: #ffc631;
-    /* font-family: Archivo; */
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 700;
-    /* line-height: 55px; */
-  }
-
-  #heroCarousel .heroCredits div p {
-    color: var(--off-white, #e9e6e6);
-    /* font-family: Archivo; */
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 25px; /* 131.579% */
-    text-transform: uppercase;
+    align-items: flex-start;
+    text-align: left;
   }
 
   #heroCarousel .rightBotHero {
-    width: 90%;
-    /* height: 100%; */
-    /* border: solid 1px yellow; */
-    padding: 30px 0 0 0;
+    width: 100%;
     display: flex;
-    justify-content: end;
+    justify-content: center;
+    padding: 20px 0;
   }
 
   #heroCarousel .rightBotHero img {
-    height: 300px;
-    width: 300px;
+    /* Keep aspect ratio intact on tablets */
+    width: 100% !important;
+    max-width: 450px !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    object-fit: contain !important;
   }
 }
 
@@ -401,10 +397,10 @@ body {
 }
 
 .rightBotHero img {
-  height: 28vw;
-  width: 38vw;
-  margin: 0 28vw 0 auto;
-  /* border: solid 1px red; */
+  height: 28vw !important;
+  width: 38vw !important;
+  margin: 0 28vw 0 auto !important;
+  object-fit: contain !important;
 }
 
 .heroCredits {
@@ -457,8 +453,8 @@ body {
   }
 
   #solutions .solutionsheading h1 {
-    font-size: 5vw;
-    line-height: 25px;
+    font-size: 26px;
+    line-height: 32px;
     margin: 0 !important;
     padding: 0;
   }
@@ -467,6 +463,7 @@ body {
     margin: auto;
     /* border: 1px solid red; */
     width: 90%;
+    padding: 20px 16px;
   }
 
   #solutions .lineText {
@@ -618,13 +615,19 @@ body {
 
   #product .productGridBox {
     width: 82vw;
-    /* border: solid 1px yellow; */
+    margin: 0 auto 20px auto;
   }
 
   #product .productGridImg {
     /* border: solid 1px red; */
     position: relative;
     width: 100%;
+  }
+
+  #product .productGridImg img {
+    width: 100% !important;
+    height: 200px !important;
+    object-fit: contain !important;
   }
 
   #product .productHeadBtn {
@@ -638,8 +641,10 @@ body {
     display: inline-flex;
     height: 50px;
     width: 50%;
-    padding: 10px 22px;
+    padding: 10px 12px;
     align-items: center;
+    justify-content: center;
+    text-align: center;
     gap: 10px;
     flex-shrink: 0;
     background: #ffc631;
@@ -874,9 +879,9 @@ body {
 
   #map .mapLeft .mapTopP {
     color: #202c38;
-    font-size: 3.5vw;
+    font-size: 14px;
     font-weight: 400;
-    line-height: 3.5vw;
+    line-height: 20px;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -886,10 +891,10 @@ body {
     display: grid;
     /* flex-direction: space-between; */
     justify-content: space-between;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     align-items: center;
     /* flex-wrap: wrap; */
-    gap: 3.9vw;
+    gap: 20px;
     /* border: solid 1px red; */
     width: 95%;
   }
@@ -905,17 +910,16 @@ body {
 
   #map .mapLeftNum p {
     color: #202c38;
-    font-size: 3.5vw;
+    font-size: 12px;
     font-weight: 400;
-    line-height: 3.5vw;
-    width: 100px;
+    line-height: 16px;
+    width: auto;
     margin: 0;
     padding: 0;
   }
 
   #map .mapDiv {
     color: #000810;
-    font-size: 10px;
     font-weight: 600;
     height: 45px;
     padding: 8px 12px;
@@ -924,6 +928,9 @@ body {
     text-align: center;
     /* border: solid 3px red; */
     font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -1167,6 +1174,13 @@ body {
     font-size: 16px;
     padding: 0;
     margin: 0;
+  }
+
+  #future .consultBtn {
+    padding: 12px 24px;
+    font-size: 14px;
+    width: auto;
+    display: inline-block;
   }
 }
 
@@ -1729,6 +1743,12 @@ body {
   margin: 100px auto;
 }
 
+@media (max-width: 580px) {
+  .map1 {
+    margin: 40px auto !important;
+  }
+}
+
 /* map end */
 
 /* contact */
@@ -1754,8 +1774,8 @@ body {
 
   #contact .contactForm h1 {
     width: 100%;
-    font-size: 6vw;
-    line-height: 4.5vw;
+    font-size: 26px;
+    line-height: 32px;
   }
 
   #contact .contactDetails {
@@ -1764,30 +1784,59 @@ body {
   }
 
   #contact .formBox button {
-    width: 100%;
-    height: 62px;
+    width: auto;
+    height: 42px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     border: none;
-    padding: 18px 30px;
+    padding: 10px 20px;
     background: #ffc631;
+    color: #000810;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 4px;
+    align-self: flex-start;
   }
 
-  #contact .formBox input,
+  #contact .formBox input {
+    height: 58px;
+    flex: none;
+  }
+
   #contact .formBox textarea {
-    height: 44px;
+    height: 120px !important;
+    flex: none;
+  }
+
+  #contact .formBox div {
+    flex-direction: column;
+    gap: 15px;
   }
 
   #contact .form-floating textarea {
     /* border: solid 1px #fd0000; */
-    height: 68px !important;
+    height: 120px !important;
+    flex: none;
   }
 
   #contact .contactDetails h2 {
-    font-size: 6vw;
+    font-size: 24px;
   }
 
   #contact .contactDetails p {
     margin: 0;
-    font-size: 3vw;
+  }
+
+  #contact .contactDetails .contactDetailsP1 {
+    font-size: 12px;
+    margin-top: 15px !important;
+  }
+
+  #contact .contactDetails .contactDetailsP2 {
+    font-size: 15px;
+    line-height: 22px;
+    width: 100%;
   }
 }
 

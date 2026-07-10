@@ -133,7 +133,33 @@ line-height: 23px;
   width: 2.5vw;
 }
 
+/* Footer Mobile Responsive Overrides */
+@media (max-width: 580px) {
+  .footer {
+    width: 90vw !important;
+    padding: 40px 0 !important;
+  }
+
+  .footUp {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footup1 {
+    width: 100% !important;
+  }
+
+  .logo2 img {
+    max-width: 180px;
+    height: auto !important;
+  }
+
+  .footBottom {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
 
 
 /* mobile nav */
-
