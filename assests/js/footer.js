@@ -70,6 +70,58 @@ if (pathPrefix) {
     }
   });
 }
+
+// Dynamic Zoho Form Integration for standard page Contact Forms
+document.addEventListener("DOMContentLoaded", function () {
+  const formBox = document.querySelector(".formBox");
+  if (formBox && !formBox.closest("form")) {
+    const nameInput = formBox.querySelector('input[placeholder*="Name"]');
+    const phoneInput = formBox.querySelector('input[placeholder*="Phn"]');
+    const emailInput = formBox.querySelector('input[placeholder*="Email"]');
+    const textarea = formBox.querySelector('textarea');
+    const submitBtn = formBox.querySelector('button');
+
+    if (nameInput && emailInput && phoneInput && submitBtn) {
+      nameInput.setAttribute("name", "SingleLine2");
+      nameInput.setAttribute("required", "true");
+      phoneInput.setAttribute("name", "PhoneNumber_countrycode");
+      phoneInput.setAttribute("required", "true");
+      emailInput.setAttribute("name", "Email");
+      emailInput.setAttribute("required", "true");
+
+      const form = document.createElement("form");
+      form.setAttribute("action", "https://forms.zohopublic.com/nagendrautpathunique1/form/test/formperma/SteUfj-mKUH9-yO8901F-L0tZY9Yx8wA0dg9YJ0mPxc/htmlRecords/submit");
+      form.setAttribute("name", "form");
+      form.setAttribute("method", "POST");
+      form.setAttribute("accept-charset", "UTF-8");
+      form.setAttribute("enctype", "multipart/form-data");
+      form.style.display = "contents";
+
+      form.innerHTML = `
+        <input type="hidden" name="zf_referrer_name" value="">
+        <input type="hidden" name="zf_redirect_url" class="zf_redirect_url" value="">
+        <input type="hidden" name="zc_gad" value="">
+        <input type="hidden" name="SingleLine" class="zf_enquiry_message" value="General Inquiry">
+      `;
+
+      while (formBox.firstChild) {
+        form.appendChild(formBox.firstChild);
+      }
+      formBox.appendChild(form);
+
+      submitBtn.setAttribute("type", "submit");
+
+      form.addEventListener("submit", function (e) {
+        const redirectUrl = window.location.href.split("?")[0] + "?enquiry=success";
+        form.querySelector(".zf_redirect_url").value = redirectUrl;
+
+        if (textarea) {
+          form.querySelector(".zf_enquiry_message").value = textarea.value.trim() || "General Inquiry";
+        }
+      });
+    }
+  }
+});
 //53
 // <div><img src="./assests/img/1fb.png" alt=""><img src="./assests/img/insta1.png" alt="">
 //             <img src="./assests/img/twitter1.png" alt="">
