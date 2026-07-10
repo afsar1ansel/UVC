@@ -27,7 +27,9 @@ document.addEventListener("DOMContentLoaded", function () {
         >
           <div class="offcanvas-header">
             <div class="offcanvas-title" id="offcanvasNavbarLabel">
-              <img src="./assests/img/uvclogo.png" alt="" />
+              <a href="index.html">
+                <img src="./assests/img/uvclogo.png" alt="" />
+              </a>
             </div>
             <button
               style="
@@ -53,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
               <li class="nav-item dropdown">
                 <p id="productDropdown">
                   <a class="nav-link" href="product.html" role="button">PRODUCTS</a>
-                  <a href="javascript:void(0);"> +</a>
+                  <a href="javascript:void(0);">+</a>
                 </p>
                 <ul class="dropdown-menu" style="background-color: #c7ebf5;">
                   <li class="dropdown">
@@ -192,7 +194,7 @@ document.addEventListener("DOMContentLoaded", function () {
               <li class="nav-item dropdown">
                 <p id="servicesDropdown">
                   <a class="nav-link" href="services.html" role="button">SERVICES</a>
-                  <a href="javascript:void(0);"> +</a>
+                  <a href="javascript:void(0);">+</a>
                 </p>
                 <ul class="dropdown-menu" style="background-color: #c7ebf5;">
                   <li><a class="dropdown-item" href="serviceDetail.html?id=1">Helium Leak Test Services</a></li>
@@ -232,6 +234,57 @@ document.addEventListener("DOMContentLoaded", function () {
       if (src && !src.startsWith('http') && !src.startsWith('data:')) {
         const cleanSrc = src.startsWith('./') ? src.slice(2) : src;
         img.setAttribute('src', pathPrefix + cleanSrc);
+      }
+    });
+  }
+
+  // Mobile touch dropdown handler: first click opens dropdown, second click navigates
+  const mobileNav = document.getElementById("navBarMobile");
+  if (mobileNav) {
+    const dropdownLinks = mobileNav.querySelectorAll(".dropdown > a, .dropdown > p > a");
+    
+    dropdownLinks.forEach(link => {
+      const parentLi = link.closest(".dropdown");
+      const menu = parentLi ? parentLi.querySelector(":scope > .dropdown-menu") : null;
+      
+      if (menu) {
+        link.addEventListener("click", function (e) {
+          // If the menu is not visible, prevent navigation and open it
+          const isVisible = window.getComputedStyle(menu).display === "block";
+          if (!isVisible) {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            // Close other sibling dropdowns at the same level
+            const siblings = parentLi.parentElement.querySelectorAll(":scope > .dropdown");
+            siblings.forEach(sib => {
+              if (sib !== parentLi) {
+                const sibMenu = sib.querySelector(":scope > .dropdown-menu");
+                if (sibMenu) {
+                  sibMenu.style.display = "none";
+                  sibMenu.style.opacity = "0";
+                }
+              }
+            });
+            
+            // Open this dropdown
+            menu.style.display = "block";
+            menu.style.opacity = "1";
+            menu.style.position = "static";
+          }
+        });
+      }
+    });
+
+    // Close all mobile dropdowns when clicking outside the nav
+    document.addEventListener("click", function (e) {
+      if (!mobileNav.contains(e.target)) {
+        const menus = mobileNav.querySelectorAll(".dropdown-menu");
+        menus.forEach(menu => {
+          menu.style.display = "";
+          menu.style.opacity = "";
+          menu.style.position = "";
+        });
       }
     });
   }

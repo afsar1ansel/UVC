@@ -169,10 +169,12 @@
   transition: opacity 0.3s ease-in-out;
 }
 
-.dropdown:hover > .dropdown-menu,
-.dropdown-menu > .dropdown:hover > .dropdown-menu {
-  display: block;
-  opacity: 1;
+@media (min-width: 1025px) {
+  .dropdown:hover > .dropdown-menu,
+  .dropdown-menu > .dropdown:hover > .dropdown-menu {
+    display: block;
+    opacity: 1;
+  }
 }
 
 .dropdown-menu .dropdown-menu {
@@ -200,15 +202,17 @@
 }
 
 /* Ensure nested dropdowns work on hover */
-.dropdown-menu .dropdown:hover > .dropdown-menu {
-  display: block;
-  opacity: 1;
-}
+@media (min-width: 1025px) {
+  .dropdown-menu .dropdown:hover > .dropdown-menu {
+    display: block;
+    opacity: 1;
+  }
 
-/* Hover Dropdown */
-.hover-dropdown:hover > .dropdown-menu {
-  display: block;
-  margin-top: 0;
+  /* Hover Dropdown */
+  .hover-dropdown:hover > .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
 }
 
 /* .dropdown-menu{
@@ -337,4 +341,119 @@
 .hero img {
   width: 100% !important;
   height: 64vh !important;
+}
+
+/* Mobile Navigation Premium Override Styling */
+@media (max-width: 1024px) {
+  #navBarMobile {
+    background-color: #000810 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .navbar-toggler {
+    color: #ffc631 !important;
+    border: none !important;
+    font-size: 28px !important;
+    padding: 0 !important;
+    outline: none !important;
+  }
+
+  .offcanvas {
+    background-color: #000810 !important;
+    width: 320px !important;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .offcanvas-header {
+    background-color: #000810 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 20px !important;
+  }
+
+  .offcanvas-title img {
+    height: 44px !important;
+  }
+
+  .offcanvas-body {
+    background-color: #000810 !important;
+    padding: 24px 20px !important;
+  }
+
+  .offcanvas-body .navbar-nav {
+    gap: 12px;
+  }
+
+  .offcanvas-body .nav-item > a {
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.05em !important;
+    color: #e9e6e6 !important;
+    padding: 10px 0 !important;
+    display: block;
+    transition: color 0.2s ease;
+  }
+
+  .offcanvas-body .nav-item > a:hover,
+  .offcanvas-body .nav-item > a:focus {
+    color: #ffc631 !important;
+  }
+
+  /* Target mobile dropdown items inside offcanvas */
+  .offcanvas-body .dropdown-menu {
+    background-color: rgba(255, 255, 255, 0.03) !important;
+    border: none !important;
+    border-left: 2px solid #0da574 !important;
+    border-radius: 0 !important;
+    padding: 8px 0 8px 16px !important;
+    margin-top: 4px !important;
+    margin-bottom: 8px !important;
+    box-shadow: none !important;
+    display: none; /* Toggled dynamically via JavaScript */
+  }
+
+  .offcanvas-body .dropdown-item {
+    color: #c9c9c9 !important;
+    font-size: 14px !important;
+    padding: 8px 12px !important;
+    font-weight: 500 !important;
+  }
+
+  .offcanvas-body .dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    color: #ffc631 !important;
+  }
+
+  .offcanvas-body .dropdown-menu .dropdown-menu {
+    border-left: 2px solid #ffc631 !important;
+    background-color: rgba(255, 255, 255, 0.02) !important;
+    margin-left: 8px !important;
+  }
+
+  /* Align the text and plus symbol inside parent dropdown titles */
+  #productDropdown, #servicesDropdown {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    margin-bottom: 0 !important;
+    width: 100% !important;
+  }
+
+  #productDropdown a, #servicesDropdown a {
+    text-decoration: none !important;
+    white-space: nowrap !important;
+  }
+
+  #productDropdown a:first-child, #servicesDropdown a:first-child {
+    flex-grow: 1;
+  }
+
+  #productDropdown a:last-child, #servicesDropdown a:last-child {
+    color: #ffc631 !important;
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    padding: 0 10px !important;
+    flex-shrink: 0;
+    text-align: right;
+  }
 }
