@@ -57,13 +57,13 @@ document.addEventListener("DOMContentLoaded", function () {
                   <a class="nav-link" href="product.html" role="button">PRODUCTS</a>
                   <a href="javascript:void(0);">+</a>
                 </p>
-                <ul class="dropdown-menu" style="background-color: #c7ebf5;">
+                <ul class="dropdown-menu">
                   <li class="dropdown">
                     <a class="dropdown-item dropdown-toggle" href="seriesDetail.html?series=DPRG">Vacuum Measurement</a>
-                    <ul class="dropdown-menu" style="background-color: #92b2d6;">
+                    <ul class="dropdown-menu">
                       <li class="dropdown">
                         <a class="dropdown-item dropdown-toggle" href="#">DPRG SERIES ></a>
-                        <ul class="dropdown-menu" style="background-color: rgb(221, 212, 230);">
+                        <ul class="dropdown-menu">
                           <p class="headDiv"> Decimal Display ───────</p>
                           <li><a class="dropdown-item deci" href="dprgDetail.html?id=1ba">DPRG - 1GH</a></li> 
                           <li><a class="dropdown-item deci" href="dprgDetail.html?id=1bb">DPRG - 2GH</a></li>
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         <a class="dropdown-item dropdown-toggle" href="#" id="flexaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           FLEXA SERIES
                         </a>
-                        <ul class="dropdown-menu" style="background-color: rgb(221, 212, 230);" aria-labelledby="flexaDropdown">
+                        <ul class="dropdown-menu" aria-labelledby="flexaDropdown">
                           <li><a class="dropdown-item" href="dprgDetail.html?id=FG-05A">FG-05A </a></li>
                           <p class="headDiv"> Decimal Display ───────</p>
                           <li><a class="dropdown-item deci" href="dprgDetail.html?id=FG-04">FG-04 </a></li>
@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", function () {
                       </li>
                       <li class="dropdown">
                         <a class="dropdown-item dropdown-toggle" href="seriesDetail.html?series=MCLEOD">McLeod SERIES ></a>
-                        <ul class="dropdown-menu" style="background-color: rgb(221, 212, 230);">
+                        <ul class="dropdown-menu">
                           <li><a class="dropdown-item" href="dprgDetail.html?id=mcleod-gauge">UVG-1 / UVG-2</a></li>
                         </ul>
                       </li>
@@ -134,7 +134,7 @@ document.addEventListener("DOMContentLoaded", function () {
                   </li>
                   <li class="dropdown">
                     <a class="dropdown-item dropdown-toggle" href="seriesDetail.html?series=VACUUM_PUMPS">Vacuum Pumps & Systems</a>
-                    <ul class="dropdown-menu" style="background-color: rgb(221, 212, 230);">
+                    <ul class="dropdown-menu">
                       <li class="dropdown">
                         <a class="dropdown-item dropdown-toggle" href="seriesDetail.html?series=VACUUM_PUMPS">Vacuum Pumps</a>
                         <ul class="dropdown-menu">
@@ -178,11 +178,11 @@ document.addEventListener("DOMContentLoaded", function () {
                   <li><a class="dropdown-item" href="heliumDetail.html?id=HLD-HELIUM-LEAK-TEST-SYSTEM">Helium Test Systems</a></li>
                   <li class="dropdown">
                     <a class="dropdown-item dropdown-toggle" href="vacuumComponentsAndSupplies.html">Filters & Vacuum Components </a>
-                    <ul class="dropdown-menu" style="background-color: rgb(221, 212, 230);">
+                    <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="heliumDetail.html?id=VACUUM-COMPONENTS">Vacuum Components</a></li>
                       <li class="dropdown">
                         <a class="dropdown-item dropdown-toggle" href="filters.html">Filters</a>
-                        <ul class="dropdown-menu" style="background-color: rgb(221, 212, 230);">
+                        <ul class="dropdown-menu">
                           <li><a class="dropdown-item" href="filters/particulateFilters.html">Particulate Filters</a></li>
                           <li><a class="dropdown-item" href="filters/liquidMistSeparators.html">Liquid & Mist Separators</a></li>
                           <li><a class="dropdown-item" href="filters/vaporRemoval.html">Vapor Removal</a></li>
@@ -197,7 +197,7 @@ document.addEventListener("DOMContentLoaded", function () {
                   <a class="nav-link" href="services.html" role="button">SERVICES</a>
                   <a href="javascript:void(0);">+</a>
                 </p>
-                <ul class="dropdown-menu" style="background-color: #c7ebf5;">
+                <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="serviceDetail.html?id=1">Helium Leak Test Services</a></li>
                   <li><a class="dropdown-item" href="serviceDetail.html?id=2">Vacuum Gauge Calibration Services</a></li>
                   <li><a class="dropdown-item" href="serviceDetail.html?id=3">Leak Calibration Services</a></li>

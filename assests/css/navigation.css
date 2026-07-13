@@ -415,7 +415,7 @@
 
   /* Target mobile dropdown items inside offcanvas */
   .offcanvas-body .dropdown-menu {
-    background-color: rgba(255, 255, 255, 0.03) !important;
+    background-color: #000c18 !important; /* Rich deep navy for level 2 */
     border: none !important;
     border-left: 2px solid #0da574 !important;
     border-radius: 0 !important;
@@ -432,6 +432,8 @@
     font-size: 14px !important;
     padding: 8px 12px !important;
     font-weight: 500 !important;
+    white-space: normal !important;
+    line-height: 1.4 !important;
   }
 
   .offcanvas-body .dropdown-item:hover {
@@ -439,10 +441,40 @@
     color: #ffc631 !important;
   }
 
+  /* Level 3 submenus */
   .offcanvas-body .dropdown-menu .dropdown-menu {
     border-left: 2px solid #ffc631 !important;
-    background-color: rgba(255, 255, 255, 0.02) !important;
+    background-color: #001224 !important; /* Slightly lighter navy for level 3 */
     margin-left: 8px !important;
+  }
+
+  /* Level 4 and deeper submenus */
+  .offcanvas-body .dropdown-menu .dropdown-menu .dropdown-menu {
+    border-left: 2px solid #0da574 !important;
+    background-color: #001830 !important; /* Lighter navy for level 4 */
+    margin-left: 8px !important;
+  }
+
+  /* Subtitle head lines color contrast on mobile */
+  .offcanvas-body .headDiv {
+    color: #ffc631 !important;
+    font-weight: 600 !important;
+    font-size: 11px !important;
+    margin-top: 12px !important;
+    margin-bottom: 6px !important;
+    opacity: 0.8;
+  }
+
+  /* Force dark contrast for decimal and exponential list items inside offcanvas */
+  .offcanvas-body .deci,
+  .offcanvas-body .expo {
+    color: #000810 !important;
+  }
+
+  .offcanvas-body .deci:hover,
+  .offcanvas-body .expo:hover {
+    color: #0da574 !important;
+    background-color: #e2dedc !important;
   }
 
   /* Align the text and plus symbol inside parent dropdown titles */
