@@ -288,6 +288,10 @@ body {
     padding: 0;
   }
 
+  #process {
+    padding-top: 60px !important;
+  }
+
   #process .processHead {
     width: 90vw;
     margin: auto;
@@ -308,22 +312,30 @@ body {
   }
 
   #process .processLing {
-    width: 1360px;
+    width: 1400px !important;
   }
 
   #process .processLing .dotBox {
-    width: 1360px;
+    width: 1400px !important;
     margin: 0;
-    gap: 340px;
+    display: flex !important;
+    justify-content: flex-start !important;
+    gap: 40px !important;
+  }
+
+  #process .procesDot {
+    width: 240px !important;
   }
 
   #process .processBot {
-    width: 1360px;
-    gap: 65px;
+    width: 1400px !important;
+    display: flex !important;
+    justify-content: flex-start !important;
+    gap: 40px !important;
   }
 
   #process .pbcard {
-    width: 298px;
+    width: 240px !important;
   }
 
   #process .pbcard h3 {
@@ -364,6 +376,10 @@ body {
     font-size: 6vw;
   }
 
+  #process {
+    padding-top: 60px !important;
+  }
+
   #process .processHead {
     width: 90vw;
     margin: auto;
@@ -379,22 +395,30 @@ body {
   }
 
   #process .processLing {
-    width: 1360px;
+    width: 1400px !important;
   }
 
   #process .processLing .dotBox {
-    width: 1360px;
+    width: 1400px !important;
     margin: 0;
-    gap: 340px;
+    display: flex !important;
+    justify-content: flex-start !important;
+    gap: 40px !important;
+  }
+
+  #process .procesDot {
+    width: 240px !important;
   }
 
   #process .processBot {
-    width: 1360px;
-    gap: 65px;
+    width: 1400px !important;
+    display: flex !important;
+    justify-content: flex-start !important;
+    gap: 40px !important;
   }
 
   #process .pbcard {
-    width: 298px;
+    width: 240px !important;
   }
 
   #process .pbcard h3 {
@@ -552,7 +576,8 @@ body {
 
   #choose h1 {
     width: 100%;
-    font-size: 5vw;
+    font-size: 24px !important;
+    line-height: 1.3 !important;
     padding: 0;
     margin: 0;
   }
@@ -560,39 +585,48 @@ body {
   #choose .chooseBoxcontainer {
     width: 100%;
     flex-direction: column;
-    gap: 50px;
-    /* justify-content: space-between; */
+    gap: 32px;
     padding: 0px 0 40px 0;
   }
 
   #choose .chooseBoxL {
-    width: 95%;
+    width: 100%;
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 24px;
     border: none !important;
     padding: 24px;
+    background: #f8fafc;
+    border-radius: 12px;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);
   }
 
   #choose .chooseBoxL div h2 {
-    font-size: 5.5vw;
+    font-size: 32px !important;
+    margin-bottom: 4px;
   }
 
   #choose .chooseBoxL div p {
-    font-size: 3vw;
+    font-size: 14px !important;
+    line-height: 1.4 !important;
   }
 
   #choose .chooseBoxR {
-    width: 95%;
-    /* padding: 10vw 2vw 10vw 2vw; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 
   #choose .chooseBoxR div h2 {
-    font-size: 4vw;
+    font-size: 18px !important;
+    line-height: 1.4 !important;
   }
 
   #choose .chooseBoxR div p {
-    font-size: 3vw;
-    line-height: 3.3vw;
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+    padding-left: 0 !important;
+    margin-top: 4px;
   }
 }
 
@@ -607,42 +641,53 @@ body {
 
   #choose h1 {
     width: 100%;
-    font-size: 3.5vw;
+    font-size: 28px !important;
+    line-height: 1.3 !important;
   }
 
   #choose .chooseBoxcontainer {
     width: 100%;
-    /* flex-direction: column; */
     justify-content: space-between;
     padding: 0px 0 40px 0;
+    gap: 4vw;
   }
 
   #choose .chooseBoxL {
-    width: 100%;
+    width: 48%;
     grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 24px;
+    gap: 24px;
+    padding: 32px 24px;
+    background: #f8fafc;
+    border-radius: 12px;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);
   }
 
   #choose .chooseBoxL div h2 {
-    font-size: 3.5vw;
+    font-size: 32px !important;
   }
 
   #choose .chooseBoxL div p {
-    font-size: 1.5vw;
+    font-size: 15px !important;
+    line-height: 1.4 !important;
   }
 
   #choose .chooseBoxR {
-    width: 40vw;
-    /* padding: 10vw 2vw 10vw 2vw; */
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 
   #choose .chooseBoxR div h2 {
-    font-size: 2vw;
+    font-size: 18px !important;
+    line-height: 1.4 !important;
   }
 
   #choose .chooseBoxR div p {
-    font-size: 1.5vw;
+    font-size: 15px !important;
+    line-height: 1.5 !important;
+    padding-left: 0 !important;
+    margin-top: 4px;
   }
 }
 
@@ -728,20 +773,32 @@ body {
   }
 
   #transform .transBox h1 {
-    font-size: 4.5vw;
+    font-size: 24px !important;
+    line-height: 1.3 !important;
+    margin-bottom: 12px;
   }
 
   #transform .transBox p {
-    font-size: 3.5vw;
-    line-height: 3.5vw;
+    font-size: 14px !important;
+    line-height: 1.6 !important;
     width: 100%;
+    margin-bottom: 24px !important;
   }
 
   #transform .transBtn {
-    font-size: 2.5vw;
-    width: 32vw;
-    height: 5.5vw;
-    padding: 2.2vw 3vw;
+    display: inline-flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: auto !important;
+    height: auto !important;
+    min-height: 48px !important;
+    padding: 12px 32px !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    color: #202c38 !important;
+    background: #ffc631 !important;
+    border-radius: 4px !important;
+    box-shadow: 0 4px 12px rgba(255, 198, 49, 0.2);
   }
 }
 
@@ -751,20 +808,32 @@ body {
   }
 
   #transform .transBox h1 {
-    font-size: 4.5vw;
+    font-size: 28px !important;
+    line-height: 1.3 !important;
+    margin-bottom: 16px;
   }
 
   #transform .transBox p {
-    font-size: 2.5vw;
-    line-height: 2.5vw;
+    font-size: 15px !important;
+    line-height: 1.6 !important;
     width: 100%;
+    margin-bottom: 28px !important;
   }
 
   #transform .transBtn {
-    font-size: 2vw;
-    width: 28vw;
-    height: 5.5vw;
-    padding: 2vw 3vw;
+    display: inline-flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: auto !important;
+    height: auto !important;
+    min-height: 48px !important;
+    padding: 12px 36px !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    color: #202c38 !important;
+    background: #ffc631 !important;
+    border-radius: 4px !important;
+    box-shadow: 0 4px 12px rgba(255, 198, 49, 0.2);
   }
 }
 
