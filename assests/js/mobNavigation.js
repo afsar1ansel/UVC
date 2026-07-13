@@ -210,7 +210,7 @@ document.addEventListener("DOMContentLoaded", function () {
               
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">DOWNLOADS</a>
+                <a class="nav-link" href="download.html">DOWNLOADS</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="contact.html">CONTACT US</a>
