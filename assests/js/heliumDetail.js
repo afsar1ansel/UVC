@@ -697,7 +697,7 @@ function renderAboutHeliumLeakTesting(product) {
         ${product.sections.tracerMethods.title}
       </h2>
       
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(480px, 1fr)); gap: 30px;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 30px;">
         ${sec.tracerMethods.methods.map(m => `
           <div style="background: #fff; border: 1px solid #dee2e6; border-radius: 8px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.04); display: flex; flex-direction: column;">
             <!-- Header bar -->
@@ -987,7 +987,7 @@ function renderHeliumLeakTestSystems(product) {
         ${product.stationsTitle}
       </h2>
       
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 30px;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
         ${stationsHtml}
       </div>
     </div>
