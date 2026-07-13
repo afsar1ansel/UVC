@@ -1100,10 +1100,10 @@ function renderVacuumComponents(product) {
             `).join('');
 
             return `
-              <div style="background: #fff; border: 1px solid #dee2e6; border-radius: 8px; padding: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.02); display: flex; gap: 30px; flex-wrap: wrap;">
+              <div class="component-card" style="background: #fff; border: 1px solid #dee2e6; border-radius: 8px; padding: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.02); display: flex; gap: 30px; flex-wrap: wrap;">
                 
                 <!-- Left side: Images (Line drawing & photo) -->
-                <div style="flex: 1; min-width: 320px; display: flex; flex-direction: column; justify-content: flex-start; gap: 10px;">
+                <div style="flex: 1; min-width: 270px; display: flex; flex-direction: column; justify-content: flex-start; gap: 10px;">
                   <h3 style="font-size: 16px; font-weight: 700; color: #001f3f; margin-bottom: 15px;">${comp.title}</h3>
                   <div style="display: flex; gap: 15px;">
                     <div class="main-image-container" style="flex: 1; height: 180px; border: 1px solid #dee2e6; border-radius: 6px; display: flex; justify-content: center; align-items: center; cursor: zoom-in; overflow: hidden; padding: 10px; background: #fafafa; position: relative;">
@@ -1117,7 +1117,7 @@ function renderVacuumComponents(product) {
                 </div>
 
                 <!-- Right side: Description & Dimensions table -->
-                <div style="flex: 1.2; min-width: 320px; display: flex; flex-direction: column; justify-content: space-between; gap: 20px;">
+                <div style="flex: 1.2; min-width: 270px; display: flex; flex-direction: column; justify-content: space-between; gap: 20px;">
                   <div style="display: flex; flex-direction: column; gap: 12px;">
                     <h4 style="font-size: 14px; font-weight: 700; color: #0da574; margin: 0; text-transform: uppercase;">Description & Specifications</h4>
                     <p style="color: #555; font-size: 14px; line-height: 1.5; margin: 0; text-align: justify;">
