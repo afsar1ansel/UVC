@@ -2,7 +2,7 @@ var pathPrefix = window.location.pathname.includes('/filters/') ? '../' : '';
 document.addEventListener("DOMContentLoaded", function () {
   const box = document.getElementById("navBarMobile");
   box.innerHTML = ` 
-    <nav class="navbar bg-body-tertiary fixed-top" id="navBarMobile">
+    <nav class="navbar bg-body-tertiary fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
           <div class="logo2">

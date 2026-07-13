@@ -356,13 +356,43 @@
   }
 
   #hero {
-    margin-top: 80px !important;
+    margin-top: 0 !important;
   }
 
   #navBarMobile {
+    height: 60px !important;
+    display: block !important;
+  }
+
+  #navBarMobile .navbar {
     background-color: #000810 !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    height: 60px !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  #navBarMobile .container-fluid {
+    height: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 0 16px !important;
+  }
+
+  #navBarMobile .navbar-brand {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  #navBarMobile .logo2 {
+    gap: 8px !important;
+  }
+
+  #navBarMobile .logo2 img {
+    margin-left: -8px !important;
   }
 
   .navbar-toggler {
