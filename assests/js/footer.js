@@ -83,11 +83,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (nameInput && emailInput && phoneInput && submitBtn) {
       nameInput.setAttribute("name", "SingleLine2");
-      nameInput.setAttribute("required", "true");
       phoneInput.setAttribute("name", "PhoneNumber_countrycode");
-      phoneInput.setAttribute("required", "true");
       emailInput.setAttribute("name", "Email");
-      emailInput.setAttribute("required", "true");
+
+      // Auto-populate saved contact information from LocalStorage
+      const savedName = localStorage.getItem("uvc_contact_name");
+      const savedPhone = localStorage.getItem("uvc_contact_phone");
+      const savedEmail = localStorage.getItem("uvc_contact_email");
+
+      if (savedName) nameInput.value = savedName;
+      if (savedPhone) phoneInput.value = savedPhone;
+      if (savedEmail) emailInput.value = savedEmail;
 
       const form = document.createElement("form");
       form.setAttribute("action", "https://forms.zohopublic.com/nagendrautpathunique1/form/test/formperma/SteUfj-mKUH9-yO8901F-L0tZY9Yx8wA0dg9YJ0mPxc/htmlRecords/submit");
@@ -112,6 +118,11 @@ document.addEventListener("DOMContentLoaded", function () {
       submitBtn.setAttribute("type", "submit");
 
       form.addEventListener("submit", function (e) {
+        // Save inputs to LocalStorage
+        localStorage.setItem("uvc_contact_name", nameInput.value.trim());
+        localStorage.setItem("uvc_contact_phone", phoneInput.value.trim());
+        localStorage.setItem("uvc_contact_email", emailInput.value.trim());
+
         const redirectUrl = window.location.href.split("?")[0] + "?enquiry=success";
         form.querySelector(".zf_redirect_url").value = redirectUrl;
 
@@ -148,5 +159,26 @@ document.addEventListener("DOMContentLoaded", function () {
 //   <input type="text" class="form-control" placeholder="Email" aria-label="Recipient's username" aria-describedby="button-addon2">
 //   <button class="btn btn-outline-secondary" type="button" id="button-addon2">SUBSCRIBE</button>
 // </div>
+
+// Zoho SalesIQ Integration (Chat Widget & Visitor Tracking)
+window.$zoho = window.$zoho || {};
+window.$zoho.salesiq = window.$zoho.salesiq || { ready: function () {} };
+
+// Pre-populate Zoho chat widget with user details from localStorage to avoid re-asking
+window.$zoho.salesiq.ready = function () {
+  const savedName = localStorage.getItem("uvc_contact_name");
+  const savedPhone = localStorage.getItem("uvc_contact_phone");
+  const savedEmail = localStorage.getItem("uvc_contact_email");
+
+  if (savedName) window.$zoho.salesiq.visitor.name(savedName);
+  if (savedPhone) window.$zoho.salesiq.visitor.contactnumber(savedPhone);
+  if (savedEmail) window.$zoho.salesiq.visitor.email(savedEmail);
+};
+
+const zsiqScript = document.createElement("script");
+zsiqScript.id = "zsiqscript";
+zsiqScript.src = "https://salesiq.zohopublic.com/widget?wc=siq7ed805fc3a4ed466ca9a8e55c9afe8d06c4bc321093ce6e6f078f87c18a854f6";
+zsiqScript.defer = true;
+document.body.appendChild(zsiqScript);
 
 
