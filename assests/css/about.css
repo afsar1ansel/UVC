@@ -1,7 +1,12 @@
 * {
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
 }
 
 /* mobile */
@@ -35,14 +40,12 @@
 
 @media (max-width: 580px) {
   #hero {
-    /* border: solid 3px red; */
-    margin: 40px 0 8vw 0;
+    margin: 80px 0 8vw 0;
   }
 }
 @media (min-width: 580px) and (max-width: 770px) {
   #hero {
-    /* border: solid 3px red; */
-    margin: 50px 0 4vw 0;
+    margin: 80px 0 4vw 0;
   }
 }
 
@@ -97,12 +100,13 @@
   #innovative .innovateBtn {
     margin: auto;
     display: inline-flex;
-    width: 35vw;
-    height: 41px;
-    padding: 18px 22px;
+    justify-content: center;
+    width: 45vw;
+    height: auto;
+    min-height: 44px;
+    padding: 12px 20px;
     align-items: center;
     text-align: center;
-    /* gap: 10px; */
     flex-shrink: 0;
     background: #ffc631;
     font-size: 12px;
@@ -139,12 +143,13 @@
   #innovative .innovateBtn {
     margin: auto;
     display: inline-flex;
+    justify-content: center;
     width: 25vw;
-    height: 61.716px;
-    padding: 18px 30px;
+    height: auto;
+    min-height: 48px;
+    padding: 12px 24px;
     align-items: center;
     text-align: center;
-    /* gap: 10px; */
     flex-shrink: 0;
     background: #ffc631;
     font-size: 2vw;
@@ -247,38 +252,45 @@
 
 @media (max-width: 580px) {
   #process .procesImg {
-    width: 80%;
+    width: 90%;
     height: auto;
-    /* border: solid 1px red; */
+    transform: none !important;
+    margin: 40px auto 0 auto !important;
     gap: 20px;
-    padding: 30px 10px;
-    background-size: cover; /* Makes the background image cover the container */
-    background-position: center; /* Ensures the image is centered */
-    background-repeat: no-repeat;
+    padding: 32px 20px;
+    background: linear-gradient(135deg, #0da574 0%, #002c1a 100%) !important;
+    background-image: none !important;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
   }
 
+  #process .procesImg div[style*="display: flex"] {
+    flex-direction: column !important;
+    gap: 20px !important;
+  }
 
-
+  #process .procesImg img {
+    width: 100% !important;
+    max-width: 160px !important;
+    height: auto !important;
+  }
 
   #process .procesImg h2 {
     font-size: 7vw;
     margin: 0;
     padding: 0;
-    /* border: solid 1px red; */
   }
 
   #process .procesImg p {
-    font-size: 2.6vw;
-    line-height: 100%;
+    font-size: 3.5vw;
+    line-height: 120%;
     margin: 0;
     padding: 0;
-    /* border: solid 1px red; */
   }
 
   #process .processHead {
     width: 90vw;
     margin: auto;
-    /* border: solid 1px red; */
   }
 
   #process .processHead h1 {
@@ -290,18 +302,18 @@
     display: flex;
     flex-direction: column;
     overflow-x: auto;
-    /* width: 1900px; */
+    width: 100vw;
+    max-width: 100%;
+    -webkit-overflow-scrolling: touch;
   }
 
   #process .processLing {
-    /* border: solid 1px red; */
     width: 1360px;
   }
 
   #process .processLing .dotBox {
     width: 1360px;
     margin: 0;
-    /* border: solid 1px red; */
     gap: 340px;
   }
 
@@ -312,7 +324,6 @@
 
   #process .pbcard {
     width: 298px;
-    /* border: solid 1px yellow; */
   }
 
   #process .pbcard h3 {
@@ -327,9 +338,26 @@
 
 @media (min-width: 580px) and (max-width: 770px) {
   #process .procesImg {
-    width: 100%;
+    width: 90%;
     height: auto;
-    padding: 30px 10px;
+    transform: none !important;
+    margin: 40px auto 0 auto !important;
+    padding: 32px 20px;
+    background: linear-gradient(135deg, #0da574 0%, #002c1a 100%) !important;
+    background-image: none !important;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  }
+
+  #process .procesImg div[style*="display: flex"] {
+    flex-direction: column !important;
+    gap: 20px !important;
+  }
+
+  #process .procesImg img {
+    width: 100% !important;
+    max-width: 160px !important;
+    height: auto !important;
   }
 
   #process .procesImg h2 {
@@ -342,22 +370,21 @@
   }
 
   #process .processdot-box {
-    /* border: solid 1px red; */
     display: flex;
     flex-direction: column;
     overflow-x: auto;
-    /* width: 1900px; */
+    width: 100vw;
+    max-width: 100%;
+    -webkit-overflow-scrolling: touch;
   }
 
   #process .processLing {
-    /* border: solid 1px red; */
     width: 1360px;
   }
 
   #process .processLing .dotBox {
     width: 1360px;
     margin: 0;
-    /* border: solid 1px red; */
     gap: 340px;
   }
 
@@ -368,7 +395,6 @@
 
   #process .pbcard {
     width: 298px;
-    /* border: solid 1px yellow; */
   }
 
   #process .pbcard h3 {
@@ -541,8 +567,10 @@
 
   #choose .chooseBoxL {
     width: 95%;
-    /* padding: 10vw 2vw 10vw 2vw; */
-    border: solid 1px red;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    border: none !important;
+    padding: 24px;
   }
 
   #choose .chooseBoxL div h2 {
@@ -590,8 +618,10 @@
   }
 
   #choose .chooseBoxL {
-    width: 50vw;
-    /* padding: 10vw 2vw 10vw 2vw; */
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 24px;
   }
 
   #choose .chooseBoxL div h2 {
