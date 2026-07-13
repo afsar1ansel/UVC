@@ -551,7 +551,7 @@ const vacuumPumpsAndSystems = [
   {
     id: "UVS-CENTRALIZED-VACUUM-SYSTEM",
     sequence: 6.5,
-    code: "CENTRALIZED-VACUUM-SYSTEMS",
+    code: "UVS-CVS-SERIES",
     name: "Centralized Vacuum Systems",
     title: "Centralized Vacuum Systems",
     description:
@@ -589,12 +589,11 @@ const vacuumPumpsAndSystems = [
       "Packaging, Canning, and Bottling Operations"
     ],
     images: [
+      "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPING SYSTEMS/CENTRALISEDVACUUMPUMPINGSYSTEMS/extracted_img_1_6.jpg",
       "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPING SYSTEMS/CENTRALISEDVACUUMPUMPINGSYSTEMS/extracted_img_1_3.jpg",
       "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPING SYSTEMS/CENTRALISEDVACUUMPUMPINGSYSTEMS/extracted_img_1_4.jpg",
       "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPING SYSTEMS/CENTRALISEDVACUUMPUMPINGSYSTEMS/extracted_img_1_5.jpg",
-      "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPING SYSTEMS/CENTRALISEDVACUUMPUMPINGSYSTEMS/extracted_img_1_7.jpg",
-      "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPING SYSTEMS/CENTRALISEDVACUUMPUMPINGSYSTEMS/extracted_img_1_2.png",
-      "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPING SYSTEMS/CENTRALISEDVACUUMPUMPINGSYSTEMS/extracted_img_1_6.jpg"
+      "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPING SYSTEMS/CENTRALISEDVACUUMPUMPINGSYSTEMS/extracted_img_1_7.jpg"
     ],
     pdf: "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPING SYSTEMS/CENTRALISEDVACUUMPUMPINGSYSTEMS/UVS CENTRALISED VACUUM SYSTEMS.pdf",
     end: "UVS Centralized Vacuum Systems are engineered to deliver precise vacuum control. In multi-level systems, the controllers systematically scale operation: rough vacuum runs one pump set, medium runs two sets, and fine vacuum activates all three sets automatically to meet the peak demand level.",
