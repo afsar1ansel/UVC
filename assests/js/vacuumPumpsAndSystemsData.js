@@ -549,6 +549,57 @@ const vacuumPumpsAndSystems = [
     end: "The standard Vacuum Pumping Systems consists of UVS Rotary Vacuum Pump, Diffusion pumps and other hardware like valves, baffles, collar, gauge and plumbing lines with Pirani Gauge to measure the roughing and backing vacuum & Penning gauge for measuring the high vacuum.",
   },
   {
+    id: "UVS-CENTRALIZED-VACUUM-SYSTEM",
+    sequence: 6.5,
+    code: "CENTRALIZED-VACUUM-SYSTEMS",
+    name: "Centralized Vacuum Systems",
+    title: "Centralized Vacuum Systems",
+    description:
+      "UVS Centralized Vacuum Systems are high-performance vacuum networks designed for automated and custom pressure regulation across facilities. Available in both Multi-Vacuum and Single-Vacuum configurations, these systems feature advanced setpoint controllers, complete automatic operations, manual override controls, and integrated suction and exhaust oil mist eliminator (OME) filters to ensure clean, efficient, and continuous industrial vacuum supply.",
+    features: [
+      "Multi-pump staging: dynamically cycles pumps based on target setpoints (rough, medium, fine vacuum levels).",
+      "Automatic control: completely automated operation with manual control override facilities.",
+      "Integrated filtration: comes standard with high-efficiency suction and exhaust OME filters.",
+      "Custom setpoints: up to three different vacuum level controllers linked to specific pump configurations.",
+      "High reliability: robust centralized design reduces maintenance overhead and optimizes power consumption."
+    ],
+    modelVariants: [
+      {
+        model: "Multi Vacuum Level Control System",
+        capacity: "3200 Lpm",
+        ultimateVacuum: "1×10⁻³ Mbar",
+        controlLevels: "3 Different Setpoints",
+        operation: "Automatic & Manual Override",
+        filters: "Suction & Exhaust OME Filters"
+      },
+      {
+        model: "Single Vacuum Level Control System",
+        capacity: "2000 Lpm",
+        ultimateVacuum: "1×10⁻³ Mbar",
+        controlLevels: "Single Setpoint",
+        operation: "Automatic & Manual Override",
+        filters: "Suction & Exhaust OME Filters"
+      }
+    ],
+    applications: [
+      "Hospital & Medical Centralized Vacuum Systems",
+      "Industrial Manufacturing & Automated Assembly Lines",
+      "Laboratory and R&D Central Vacuum Networks",
+      "Woodworking, CNC Routing, and Vacuum Clamping Systems",
+      "Packaging, Canning, and Bottling Operations"
+    ],
+    images: [
+      "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPING SYSTEMS/CENTRALISEDVACUUMPUMPINGSYSTEMS/extracted_img_1_3.jpg",
+      "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPING SYSTEMS/CENTRALISEDVACUUMPUMPINGSYSTEMS/extracted_img_1_4.jpg",
+      "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPING SYSTEMS/CENTRALISEDVACUUMPUMPINGSYSTEMS/extracted_img_1_5.jpg",
+      "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPING SYSTEMS/CENTRALISEDVACUUMPUMPINGSYSTEMS/extracted_img_1_7.jpg",
+      "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPING SYSTEMS/CENTRALISEDVACUUMPUMPINGSYSTEMS/extracted_img_1_2.png",
+      "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPING SYSTEMS/CENTRALISEDVACUUMPUMPINGSYSTEMS/extracted_img_1_6.jpg"
+    ],
+    pdf: "./assests/img/products/VacuumePumpsAndSystem/VACUUM PUMPING SYSTEMS/CENTRALISEDVACUUMPUMPINGSYSTEMS/UVS CENTRALISED VACUUM SYSTEMS.pdf",
+    end: "UVS Centralized Vacuum Systems are engineered to deliver precise vacuum control. In multi-level systems, the controllers systematically scale operation: rough vacuum runs one pump set, medium runs two sets, and fine vacuum activates all three sets automatically to meet the peak demand level.",
+  },
+  {
     id: "UVS-IVRVP-M-SERIES",
     sequence: 7,
     code: "IVRVP-M-SERIES",

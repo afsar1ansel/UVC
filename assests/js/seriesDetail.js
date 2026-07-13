@@ -126,7 +126,8 @@ function renderContent(series) {
         product.id &&
         (product.id === "UVS-ROTARY-ROOTS" ||
           product.id === "UVS-TURBO-PUMPING" ||
-          product.id === "UVS-DIFFUSION-PUMPING")
+          product.id === "UVS-DIFFUSION-PUMPING" ||
+          product.id === "UVS-CENTRALIZED-VACUUM-SYSTEM")
       );
     }
     return false;

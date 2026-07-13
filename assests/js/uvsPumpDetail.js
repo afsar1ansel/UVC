@@ -4,7 +4,7 @@ function getUrlParameter(name) {
 }
 
 function getFullPumpContext(product) {
-  const isSystem = ["UVS-ROTARY-ROOTS", "UVS-TURBO-PUMPING", "UVS-DIFFUSION-PUMPING"].includes(product.id);
+  const isSystem = ["UVS-ROTARY-ROOTS", "UVS-TURBO-PUMPING", "UVS-DIFFUSION-PUMPING", "UVS-CENTRALIZED-VACUUM-SYSTEM"].includes(product.id);
   const category = isSystem ? "Vacuum Pumping Systems" : "Vacuum Pumps";
   return `Vacuum Pumps & Systems - ${category} - ${product.code}`;
 }
@@ -119,6 +119,9 @@ if (product) {
       rotaryPumpCapacity: "Rotary Pump Capacity",
       rootsBlowerCapacity: "Roots Blower Capacity",
       applications: "Applications",
+      capacity: "Capacity",
+      controlLevels: "Control Levels",
+      filters: "Filters",
     };
     return labels[field] || field;
   }

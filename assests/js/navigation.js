@@ -130,6 +130,7 @@ nav.innerHTML = `
               <li><a class="dropdown-item" href="uvsPumpDetail.html?id=UVS-ROTARY-ROOTS">Rotary Roots Pumping Systems</a></li>
               <li><a class="dropdown-item" href="uvsPumpDetail.html?id=UVS-TURBO-PUMPING">Turbo Pumping Systems</a></li>
               <li><a class="dropdown-item" href="uvsPumpDetail.html?id=UVS-DIFFUSION-PUMPING">Diffusion Pumping Systems</a></li>
+              <li><a class="dropdown-item" href="uvsPumpDetail.html?id=UVS-CENTRALIZED-VACUUM-SYSTEM">Centralized Vacuum Systems</a></li>
             </ul>
            </li>
         </ul>
