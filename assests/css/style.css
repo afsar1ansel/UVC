@@ -669,6 +669,11 @@ body {
     background-color: transparent;
     color: #ffc631;
   }
+
+  #product .productGridBox h1,
+  #product .productGridBox p {
+    text-align: left !important;
+  }
 }
 
 @media (min-width: 600px) and (max-width: 770px) {
@@ -736,6 +741,11 @@ body {
   #product .text:hover {
     background-color: #ffc631;
     color: black;
+  }
+
+  #product .productGridBox h1,
+  #product .productGridBox p {
+    text-align: left !important;
   }
 }
 
