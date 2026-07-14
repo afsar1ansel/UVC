@@ -428,7 +428,8 @@
 
   .offcanvas-body {
     background-color: #000810 !important;
-    padding: 24px 20px !important;
+    padding: 24px 20px 180px 20px !important;
+    position: relative !important;
   }
 
   .offcanvas-body .navbar-nav {
@@ -482,7 +483,8 @@
 
   /* Target mobile dropdown items inside offcanvas */
   .offcanvas-body .dropdown-menu {
-    background-color: #000c18 !important; /* Rich deep navy for level 2 */
+    background-color: #000c18 !important;
+    /* Rich deep navy for level 2 */
     border: none !important;
     border-left: 2px solid #0da574 !important;
     border-radius: 0 !important;
@@ -511,14 +513,16 @@
   /* Level 3 submenus */
   .offcanvas-body .dropdown-menu .dropdown-menu {
     border-left: 2px solid #ffc631 !important;
-    background-color: #001224 !important; /* Slightly lighter navy for level 3 */
+    background-color: #001224 !important;
+    /* Slightly lighter navy for level 3 */
     margin-left: 8px !important;
   }
 
   /* Level 4 and deeper submenus */
   .offcanvas-body .dropdown-menu .dropdown-menu .dropdown-menu {
     border-left: 2px solid #0da574 !important;
-    background-color: #001830 !important; /* Lighter navy for level 4 */
+    background-color: #001830 !important;
+    /* Lighter navy for level 4 */
     margin-left: 8px !important;
   }
 
@@ -571,5 +575,15 @@
     font-size: 20px !important;
     font-weight: 700 !important;
     padding: 0 10px !important;
+  }
+
+  .mobile-contact-info {
+    position: absolute !important;
+    bottom: 24px !important;
+    left: 20px !important;
+    right: 20px !important;
+    margin-top: 0 !important;
+    background-color: #000810 !important;
+    z-index: 10 !important;
   }
 }

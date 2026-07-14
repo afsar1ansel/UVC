@@ -259,11 +259,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const mobileNav = document.getElementById("navBarMobile");
   if (mobileNav) {
     const dropdownLinks = mobileNav.querySelectorAll(".dropdown > a, .dropdown > p > a");
-    
+
     dropdownLinks.forEach(link => {
       const parentLi = link.closest(".dropdown");
       const menu = parentLi ? parentLi.querySelector(":scope > .dropdown-menu") : null;
-      
+
       if (menu) {
         link.addEventListener("click", function (e) {
           // If the menu is not visible, prevent navigation and open it
@@ -271,7 +271,7 @@ document.addEventListener("DOMContentLoaded", function () {
           if (!isVisible) {
             e.preventDefault();
             e.stopPropagation();
-            
+
             // Close other sibling dropdowns at the same level
             const siblings = parentLi.parentElement.querySelectorAll(":scope > .dropdown");
             siblings.forEach(sib => {
@@ -283,7 +283,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
               }
             });
-            
+
             // Open this dropdown
             menu.style.display = "block";
             menu.style.opacity = "1";
