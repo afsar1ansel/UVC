@@ -355,7 +355,7 @@
     height: auto !important;
   }
 
-  #hero {
+  #hero, .hero {
     margin-top: 0 !important;
   }
 

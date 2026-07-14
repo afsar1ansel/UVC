@@ -339,47 +339,67 @@
 
 @media (max-width: 580px) {
   #transform .transBox {
-    width: 90%;
+    width: 90% !important;
   }
 
   #transform .transBox h1 {
-    font-size: 4.5vw;
+    font-size: 24px !important;
+    line-height: 1.2 !important;
+    margin-bottom: 10px !important;
   }
 
   #transform .transBox p {
-    font-size: 2.5vw;
-    line-height: 2.5vw;
-    width: 100%;
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+    width: 100% !important;
+    margin-bottom: 20px !important;
   }
 
   #transform .transBtn {
-    font-size: 2vw;
-    width: 28vw;
-    height: 5.5vw;
-    padding: 2vw 3vw;
+    font-size: 12px !important;
+    width: auto !important;
+    height: auto !important;
+    min-height: 40px !important;
+    padding: 10px 24px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.5px !important;
+    text-transform: uppercase !important;
   }
 }
 
 @media (min-width: 580px) and (max-width: 780px) {
   #transform .transBox {
-    width: 90%;
+    width: 90% !important;
   }
 
   #transform .transBox h1 {
-    font-size: 4.5vw;
+    font-size: 28px !important;
+    line-height: 1.2 !important;
+    margin-bottom: 10px !important;
   }
 
   #transform .transBox p {
-    font-size: 2.5vw;
-    line-height: 2.5vw;
-    width: 100%;
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    width: 100% !important;
+    margin-bottom: 20px !important;
   }
 
   #transform .transBtn {
-    font-size: 2vw;
-    width: 28vw;
-    height: 5.5vw;
-    padding: 2vw 3vw;
+    font-size: 13px !important;
+    width: auto !important;
+    height: auto !important;
+    min-height: 44px !important;
+    padding: 10px 28px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.5px !important;
+    text-transform: uppercase !important;
   }
 }
 
@@ -654,6 +674,35 @@
   font-style: normal;
   font-weight: 500;
   line-height: 26px;
+}
+
+/* Responsive overrides for page headings and card copy */
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 26px !important;
+    line-height: 1.3 !important;
+    margin-bottom: 12px !important;
+    margin-top: 15px !important;
+  }
+
+  .page-description {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+    margin-bottom: 24px !important;
+    padding: 0 15px !important;
+  }
+
+  .grids h3 {
+    font-size: 17px !important;
+    line-height: 1.4 !important;
+    min-height: auto !important;
+    margin-top: 10px !important;
+  }
+
+  .grids p {
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+  }
 }
 
 /* ------------------ body end ----------------------- */
