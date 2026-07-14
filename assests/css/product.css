@@ -60,66 +60,79 @@
 /* grid */
 @media (max-width: 580px){
   #proGrid{
-    /* border: solid 1px red; */
-  grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    width: 90vw !important;
+    gap: 30px !important;
   }
 
   #proGrid .gridBox{
-    width: 80vw;
+    width: 100% !important;
+    padding: 20px !important;
   }
 
   #proGrid .gridBox h3{
-    font-size: 3.3vw;
-    line-height: 3vw;
-    margin-top: 4px;
+    font-size: 18px !important;
+    line-height: 1.3 !important;
+    margin-top: 10px !important;
+    min-height: auto !important;
   }
 
   #proGrid .gridBox p{
-    font-size: 10px;
-    line-height: 10px;
+    font-size: 14px !important;
+    line-height: 1.5 !important;
   }
 
   #proGrid .gridBtn{
-    width: 36vw;
-    font-size: 2vw;
+    width: auto !important;
+    max-width: 160px !important;
+    display: flex !important;
+    justify-content: center !important;
+    padding: 10px 16px !important;
+    height: 42px !important;
   }
 
   #proGrid .gridBtn a{
-    font-size: 3vw;
+    font-size: 13px !important;
+    white-space: nowrap !important;
   }
 }
 
-
-
 @media (min-width: 580px) and (max-width: 772px) {
   #proGrid{
-    /* border: solid 1px red; */
-  grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    width: 90vw !important;
+    gap: 30px !important;
   }
 
   #proGrid .gridBox{
-    width: 35vw;
+    width: 100% !important;
+    padding: 20px !important;
   }
 
   #proGrid .gridBox h3{
-    font-size: 2.5vw;
-    line-height: 2.5vw;
+    font-size: 18px !important;
+    line-height: 1.3 !important;
+    min-height: auto !important;
   }
 
   #proGrid .gridBox p{
-    font-size: 1.5vw;
-    line-height: 1.5vw;
+    font-size: 14px !important;
+    line-height: 1.5 !important;
   }
 
   #proGrid .gridBtn{
-    width: 20vw;
-    font-size: 1.5vw;
+    width: auto !important;
+    max-width: 160px !important;
+    display: flex !important;
+    justify-content: center !important;
+    padding: 10px 16px !important;
+    height: 42px !important;
   }
 
   #proGrid .gridBtn a{
-    font-size: 1.5vw;
+    font-size: 13px !important;
+    white-space: nowrap !important;
   }
-
 }
 .proGrid {
   /* border: solid 1px red; */
@@ -202,47 +215,67 @@
 
 @media (max-width: 580px) {
   #transform .transBox {
-    width: 90%;
+    width: 90% !important;
   }
 
   #transform .transBox h1 {
-    font-size: 4.5vw;
+    font-size: 24px !important;
+    line-height: 1.2 !important;
+    margin-bottom: 10px !important;
   }
 
   #transform .transBox p {
-    font-size: 3.5vw;
-    line-height: 3.5vw;
-    width: 100%;
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+    width: 100% !important;
+    margin-bottom: 20px !important;
   }
 
   #transform .transBtn {
-    font-size: 10px;
-    width: 120px;
-    height: 5.5vw;
-    padding: 2vw 1vw;
+    font-size: 12px !important;
+    width: auto !important;
+    height: auto !important;
+    min-height: 40px !important;
+    padding: 10px 24px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.5px !important;
+    text-transform: uppercase !important;
   }
 }
 
 @media (min-width: 580px) and (max-width: 780px) {
   #transform .transBox {
-    width: 90%;
+    width: 90% !important;
   }
 
   #transform .transBox h1 {
-    font-size: 4.5vw;
+    font-size: 28px !important;
+    line-height: 1.2 !important;
+    margin-bottom: 10px !important;
   }
 
   #transform .transBox p {
-    font-size: 2.5vw;
-    line-height: 2.5vw;
-    width: 100%;
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    width: 100% !important;
+    margin-bottom: 20px !important;
   }
 
   #transform .transBtn {
-    font-size: 2vw;
-    width: 28vw;
-    height: 5.5vw;
-    padding: 2vw 3vw;
+    font-size: 13px !important;
+    width: auto !important;
+    height: auto !important;
+    min-height: 44px !important;
+    padding: 10px 28px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.5px !important;
+    text-transform: uppercase !important;
   }
 }
 
