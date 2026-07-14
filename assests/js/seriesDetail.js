@@ -66,9 +66,9 @@ function renderContent(series) {
     const heroImg = document.querySelector("#hero img");
     if (heroImg) {
       if (matchedSeries.category === "MEASUREMENT") {
-        heroImg.src = "./assests/img/products/vacuum_measurement.png";
+        heroImg.src = "./assests/img/products/vacuum measurement 1920x570.png";
       } else {
-        heroImg.src = "./assests/img/products/Vacuum_Pumps&Systems.png";
+        heroImg.src = "./assests/img/products/vacuum pumps and systems 1920x570.png";
       }
     }
   }

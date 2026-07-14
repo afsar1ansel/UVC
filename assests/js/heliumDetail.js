@@ -36,11 +36,11 @@ document.addEventListener("DOMContentLoaded", () => {
       const heroImg = document.querySelector("#hero img");
       if (heroImg) {
         if (id === "HLD-HELIUM-LEAK-TEST-SYSTEM") {
-          heroImg.src = "./assests/img/products/HeliumLeakTestSystems.png";
+          heroImg.src = "./assests/img/products/Helium leak test systems 1920x570.png";
         } else if (id === "VACUUM-COMPONENTS") {
-          heroImg.src = "./assests/img/products/Filter&VacuumComponents.png";
+          heroImg.src = "./assests/img/products/Filter & vacuum components 1920x570.png";
         } else {
-          heroImg.src = "./assests/img/products/HeliumLeakDetectors.png";
+          heroImg.src = "./assests/img/products/Helium leak detectors 1920x570.png";
         }
       }
 
