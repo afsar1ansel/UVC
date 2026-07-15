@@ -31,7 +31,7 @@ body {
   height: 40px;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 5vw 5px 5vw;
+  padding: 0 5vw;
   background-color: rgba(14, 18, 29, 1);
 }
 
@@ -41,23 +41,27 @@ body {
 }
 
 .contanctNav img {
-  height: 20px;
+  height: 14px;
 }
 
 .contanctNav p {
   color: #888c97;
   font-size: 0.729vw;
   font-weight: 500;
+  margin: 0 !important;
 }
 
 .contacts {
   display: flex;
   gap: 10px;
+  align-items: center;
+  color: #888c97;
 }
 
 .contacts div {
   display: flex;
   gap: 10px;
+  align-items: center;
 }
 
 .socialNav {
