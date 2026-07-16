@@ -17,7 +17,7 @@ nav.innerHTML = `
         <a class="dropdown-item dropdown-toggle" href="seriesDetail.html?series=DPRG">Vacuum Measurement</a>
         <ul class="dropdown-menu">
           <li class="dropdown">
-            <a class="dropdown-item dropdown-toggle" href="seriesDetail.html?series=DPRG">DPRG SERIES ></a>
+            <a class="dropdown-item dropdown-toggle" href="seriesDetail.html?series=DPRG">DPRG SERIES </a>
             <ul class="dropdown-menu" style="width: 200px;" >
             <p class="headDiv"> Decimal Display ───────</p>
               <li><a class="dropdown-item deci" href="dprgDetail.html?id=1ba">DPRG - 1GH</a></li> 
@@ -76,7 +76,7 @@ nav.innerHTML = `
             <a
               class="dropdown-item dropdown-toggle"
               href="seriesDetail.html?series=MCLEOD"
-              >McLeod SERIES ></a
+              >McLeod SERIES </a
             >
             <ul class="dropdown-menu">
               <li>
@@ -139,7 +139,7 @@ nav.innerHTML = `
         <a class="dropdown-item dropdown-toggle" href="heliumLeakDetectors.html">Helium Leak Detectors</a>
         <ul class="dropdown-menu">
           <li class="dropdown">
-            <a class="dropdown-item dropdown-toggle" href="heliumDetail.html?id=HLD-ASM-310">PFEIFFER ADIXEN ASM ></a>
+            <a class="dropdown-item dropdown-toggle" href="heliumDetail.html?id=HLD-ASM-310">PFEIFFER ADIXEN ASM </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="heliumDetail.html?id=HLD-ASM-310">ASM 310</a></li>
               <li><a class="dropdown-item" href="heliumDetail.html?id=HLD-ASM-340">ASM 340</a></li>
@@ -171,7 +171,7 @@ nav.innerHTML = `
   </div>
 
   <div class="dropdown">
-    <a href="services.html" id="services">SERVICES +</a>
+    <a href="services.html" class="dropdown-toggle" id="services">SERVICES</a>
     <ul class="dropdown-menu">
       <li><a class="dropdown-item" href="serviceDetail.html?id=1">Helium Leak Test Services</a></li>
       <li><a class="dropdown-item" href="serviceDetail.html?id=2">Vacuum Gauge Calibration Services</a></li>
