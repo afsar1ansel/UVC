@@ -227,9 +227,9 @@
 .servImg img {
   width: 100%;
   aspect-ratio: 16 / 10;
-  object-fit: contain;
-  background-color: white;
+  object-fit: cover;
   border: 1px solid #e2e8f0;
+  border-radius: 8px;
 }
 
 .servText {

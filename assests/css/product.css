@@ -162,6 +162,9 @@
 
 .gridBox img {
   width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: 4px;
 }
 
 .gridBox h3 {
