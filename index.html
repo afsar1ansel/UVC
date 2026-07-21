@@ -821,7 +821,15 @@
             </div>
           </div>
           <div class="futureVideo">
-            <!-- <img src="./assests/img/frame.png" alt="" /> -->
+            <iframe
+              id="futureVideoIframe"
+              src="https://www.youtube.com/embed/-NRY75lCEpU?enablejsapi=1&mute=1&loop=1&playlist=-NRY75lCEpU"
+              title="Unique Vacuum Solutions Video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
           </div>
           <div class="futureBot">
             <div class="futureBotLeft">
@@ -1323,6 +1331,37 @@
           productsContent.style.display = "none";
         }
       }
+
+      // Autoplay video on scroll into view
+      document.addEventListener("DOMContentLoaded", function () {
+        const videoContainer = document.querySelector(".futureVideo");
+        const videoIframe = document.getElementById("futureVideoIframe");
+
+        if (videoContainer && videoIframe) {
+          let hasPlayed = false;
+          const observer = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  videoIframe.contentWindow.postMessage(
+                    '{"event":"command","func":"playVideo","args":""}',
+                    "*"
+                  );
+                  hasPlayed = true;
+                } else if (hasPlayed) {
+                  videoIframe.contentWindow.postMessage(
+                    '{"event":"command","func":"pauseVideo","args":""}',
+                    "*"
+                  );
+                }
+              });
+            },
+            { threshold: 0.3 }
+          );
+
+          observer.observe(videoContainer);
+        }
+      });
     </script>
   </body>
 </html>
