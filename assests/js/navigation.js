@@ -4,7 +4,7 @@ const nav = document.getElementById("navBarBox");
 nav.innerHTML = `
 <a href="index.html" class="logoBoxA">
   <div class="logo">
-     <img src="./assests/img/common/uvclogo.webp" alt="" />
+     <img src="./assests/img/common/uvclogo.webp" alt="" width="818" height="281" />
   </div>
 </a>
 <div class="navButtons">

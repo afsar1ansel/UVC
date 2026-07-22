@@ -5,23 +5,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Detail Page</title>
+    <link rel="preload" href="./assests/css/productDetails.css" as="style" />
     <link rel="stylesheet" href="./assests/css/productDetails.css" />
-    <link rel="stylesheet" href="./assests/css/navigation.css" />
-    <link rel="stylesheet" href="./assests/css/footer.css" />
-    <link
-      rel="stylesheet"
-      href="./OwlCarousel2-master/OwlCarousel2-master/dist/assets/owl.carousel.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="./OwlCarousel2-master/OwlCarousel2-master/dist/assets/owl.theme.default.min.css"
-    />
+    <link rel="preload" href="./assests/css/footer.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="./assests/css/footer.css"></noscript>
+    <link rel="preload" href="./OwlCarousel2-master/OwlCarousel2-master/dist/assets/owl.carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="./OwlCarousel2-master/OwlCarousel2-master/dist/assets/owl.carousel.min.css"></noscript>
+    <link rel="preload" href="./OwlCarousel2-master/OwlCarousel2-master/dist/assets/owl.theme.default.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="./OwlCarousel2-master/OwlCarousel2-master/dist/assets/owl.theme.default.min.css"></noscript>
 
-    <link
-      rel="stylesheet"
-      href="./bootstrap-5.3.3-dist/css/bootstrap.min.css"
-    />
-  </head>
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assests/css/navigation.css" />
+    </head>
   <style>
     @media (max-width: 1024px) {
       .d-mobile {
@@ -54,7 +49,7 @@
 
     <!-- hero -->
     <div class="hero" id="hero">
-      <img src="./assests/img/banners/Frame343.webp" alt="Product Details" />
+      <img src="./assests/img/banners/Frame343.webp" alt="Product Details" width="1920" height="570" />
     </div>
 
     <!-- product -->
@@ -66,35 +61,35 @@
             src="./assests/img/banners/frame1.webp"
             alt="Thumbnail 1"
             data-full="./assests/img/banners/frame1.webp"
-          />
+ width="400" height="337" />
           <img
             class="thumbnail"
             src="./assests/img/banners/frame3.webp"
             alt="Thumbnail 2"
             data-full="./assests/img/banners/frame3.webp"
-          />
+ width="400" height="337" />
           <img
             class="thumbnail"
             src="./assests/img/banners/frame2.webp"
             alt="Thumbnail 3"
             data-full="./assests/img/banners/frame2.webp"
-          />
+ width="400" height="337" />
           <img
             class="thumbnail"
             src="./assests/img/banners/Frame677.webp"
             alt="Thumbnail 4"
             data-full="./assests/img/banners/Frame677.webp"
-          />
+ width="358" height="358" />
         </div>
         <div class="main-image-container">
           <img
             id="main-image"
             src="./assests/img/banners/frame1.webp"
             alt="Main Product Image"
-          />
+ width="400" height="337" />
           <div class="Product_btns">
             <div class="productBrochure">
-              <img src="./assests/img/common/bookLines.svg" alt="" /> Product Brochure
+              <img src="./assests/img/common/bookLines.svg" alt="" width="21" height="28" /> Product Brochure
             </div>
             <div class="requestQuote">Request a Quote</div>
           </div>
@@ -256,7 +251,7 @@
     <div class="manage" id="manage">
       <div class="manageBox">
         <div class="mImgBox">
-          <img src="./assests/img/banners/Frame664.webp" alt="" />
+          <img src="./assests/img/banners/Frame664.webp" alt="" width="676" height="577" />
         </div>
         <div class="mText">
           <h2>Management of High Vacuum Systems</h2>
@@ -287,7 +282,7 @@
           </p>
         </div>
         <div class="mImgBox">
-          <img src="./assests/img/banners/Frame664.webp" alt="" />
+          <img src="./assests/img/banners/Frame664.webp" alt="" width="676" height="577" />
         </div>
       </div>
     </div>
@@ -322,7 +317,7 @@
         </div>
       </div>
       <div class="futureVideo">
-        <img src="./assests/img/banners/frame.webp" alt="" />
+        <img src="./assests/img/banners/frame.webp" alt="" width="1321" height="600" />
       </div>
     </div>
 
@@ -354,7 +349,7 @@
         <div class="owl-carousel owl-theme carouselSection-owl">
           <div class="item reviewerCar">
             <div class="caroselBox" style="flex: 0 0 48%; margin-right: 2%">
-              <img src="./assests/img/banners/Frame774.webp" alt="" />
+              <img src="./assests/img/banners/Frame774.webp" alt="" width="358" height="358" />
               <h4>DPRG Single Line Display</h4>
               <p>Range: 20 mbar to 0.001 mbar</p>
               <div>View Product</div>
@@ -546,16 +541,16 @@
       <div id="foot"></div>
     </footer>
 
-    <script src="./assests/js/footer.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="./assests/js/productsData.js"></script>
-    <script src="./assests/js/navigation.js"></script>
-    <script src="./assests/js/mobNavigation.js"></script>
+    <script src="./assests/js/footer.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <script src="./assests/js/productsData.js" defer></script>
+    <script src="./assests/js/navigation.js" defer></script>
+    <script src="./assests/js/mobNavigation.js" defer></script>
     <script
       src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"
       defer
     ></script>
-    <script src="./OwlCarousel2-master/OwlCarousel2-master/dist/owl.carousel.min.js"></script>
-    <script src="./assests/js/productDetails.js"></script>
+    <script src="./OwlCarousel2-master/OwlCarousel2-master/dist/owl.carousel.min.js" defer></script>
+    <script src="./assests/js/productDetails.js" defer></script>
   </body>
 </html>

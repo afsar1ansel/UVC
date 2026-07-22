@@ -14,13 +14,17 @@
   <meta property="og:description"
     content="Unique Vacuum Solutions is the trusted supplier of Solberg inline vacuum filters, liquid/mist separators, and vapor capture traps for industrial pumps in India." />
   <meta property="og:image" content="assests/img/products/uvc.webp" />
-  <link rel="stylesheet" href="./assests/css/allProduct.css" />
-  <link rel="stylesheet" href="./assests/css/navigation.css" />
-  <link rel="stylesheet" href="./assests/css/footer.css" />
-  <link rel="stylesheet" href="./OwlCarousel2-master/OwlCarousel2-master/dist/assets/owl.carousel.min.css" />
-  <link rel="stylesheet" href="./OwlCarousel2-master/OwlCarousel2-master/dist/assets/owl.theme.default.min.css" />
+  <link rel="preload" href="./assests/css/allProduct.css" as="style" />
+    <link rel="stylesheet" href="./assests/css/allProduct.css" />
+  <link rel="preload" href="./assests/css/footer.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="./assests/css/footer.css"></noscript>
+  <link rel="preload" href="./OwlCarousel2-master/OwlCarousel2-master/dist/assets/owl.carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="./OwlCarousel2-master/OwlCarousel2-master/dist/assets/owl.carousel.min.css"></noscript>
+  <link rel="preload" href="./OwlCarousel2-master/OwlCarousel2-master/dist/assets/owl.theme.default.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="./OwlCarousel2-master/OwlCarousel2-master/dist/assets/owl.theme.default.min.css"></noscript>
   <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css" />
-</head>
+    <link rel="stylesheet" href="./assests/css/navigation.css" />
+    </head>
 <style>
   @media (max-width: 1024px) {
     .d-mobile {
@@ -87,7 +91,7 @@
   <div class="hero">
     <picture>
       <source media="(max-width: 768px)" srcset="./assests/img/products/Filter&VacuumComponents.webp" />
-      <img src="./assests/img/products/Filter_&_vacuum_components_1920x570.webp" alt="Filters & Vacuum Components " />
+      <img src="./assests/img/products/Filter_&_vacuum_components_1920x570.webp" alt="Filters & Vacuum Components " width="800" height="237" />
     </picture>
   </div>
 
@@ -111,7 +115,7 @@
             <!-- Item 1: Vacuum Components -->
             <div class="grids" onclick="window.location.href='heliumDetail.html?id=VACUUM-COMPONENTS'">
               <img src="./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_1_4_X14.webp"
-                alt="Vacuum Components & Fittings" />
+                alt="Vacuum Components & Fittings" width="800" height="723" />
               <h3>Vacuum Components & Fittings</h3>
               <div style="display: flex; justify-content: center; margin-bottom: 8px;">
                 <span class="badge"
@@ -130,7 +134,7 @@
 
             <!-- Item 2: Filters -->
             <div class="grids" onclick="window.location.href='filters.html'">
-              <img src="./assests/img/services/filterandcomponents.webp" alt="Vacuum Filters & Traps" />
+              <img src="./assests/img/services/filterandcomponents.webp" alt="Vacuum Filters & Traps" width="800" height="406" />
               <h3>Vacuum Filters & Traps</h3>
               <div style="display: flex; justify-content: center; margin-bottom: 8px;">
                 <span class="badge"
@@ -214,11 +218,11 @@
     <div id="foot"></div>
   </footer>
 
-  <script src="./assests/js/footer.js"></script>
-  <script src="./assests/js/navigation.js"></script>
-  <script src="./assests/js/mobNavigation.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="./OwlCarousel2-master/OwlCarousel2-master/dist/owl.carousel.min.js"></script>
+  <script src="./assests/js/footer.js" defer></script>
+  <script src="./assests/js/navigation.js" defer></script>
+  <script src="./assests/js/mobNavigation.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+  <script src="./OwlCarousel2-master/OwlCarousel2-master/dist/owl.carousel.min.js" defer></script>
   <script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js" defer></script>
 </body>
 

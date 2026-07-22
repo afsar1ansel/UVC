@@ -9,7 +9,7 @@ box.id = "footer"
 box.innerHTML = ` <div class="footUp">
           <div class="footup1">
             <div class="logo2" style="margin-bottom: 24px;">
-              <img src="./assests/img/common/uvclogo.webp" alt="" style="width: 200px; height: 70px;" />
+              <img src="./assests/img/common/uvclogo.webp" alt="" style="width: 200px; height: 70px;" width="818" height="281" />
             </div>
             <p>Delivering precision and reliability in every vacuum solution we provide. Trusted by industries across India, we offer comprehensive service from design to after-sales support.</p>
           </div>
@@ -17,19 +17,19 @@ box.innerHTML = ` <div class="footUp">
           <div class="footup3">
             <h3>Company</h3>
             <div class="footup3box">
-              <img src="./assests/img/common/right.webp" alt="">
+              <img src="./assests/img/common/right.webp" alt="" width="5" height="8">
               <a href="about.html"><p>ABOUT</p></a>
             </div>
             <div class="footup3box">
-              <img src="./assests/img/common/right.webp" alt="">
+              <img src="./assests/img/common/right.webp" alt="" width="5" height="8">
               <a href="services.html"><p>SERVICES</p></a>
             </div>
             <div class="footup3box">
-              <img src="./assests/img/common/right.webp" alt="">
+              <img src="./assests/img/common/right.webp" alt="" width="5" height="8">
               <a href="product.html"><p>PRODUCTS</p></a>
             </div>
             <div class="footup3box">
-              <img src="./assests/img/common/right.webp" alt="">
+              <img src="./assests/img/common/right.webp" alt="" width="5" height="8">
               <a href="contact.html"><p>CAREERS</p></a>
             </div>
           </div>
@@ -37,11 +37,11 @@ box.innerHTML = ` <div class="footUp">
           <div class="footup2">
             <h3>Contacts</h3>
             <div class="footup-box">
-   <img src="./assests/img/common/call.webp" alt="">
+   <img src="./assests/img/common/call.webp" alt="" width="18" height="19">
   <p>+91 9886726920 <br> 080 28367059</p>
 </div>
 <div class="footup-box">
-  <img src="./assests/img/common/msg.svg" alt="">
+  <img src="./assests/img/common/msg.svg" alt="" width="14" height="11">
   <p>support@uniquevacuum.co.in</p>
 </div>           
           </div>
@@ -145,9 +145,9 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 //53
-// <div><img src="./assests/img/common/1fb.webp" alt=""><img src="./assests/img/common/insta1.webp" alt="">
-//             <img src="./assests/img/common/twitter1.webp" alt="">
-//           <img src="./assests/img/common/whapp1.webp" alt=""></div>
+// <div><img src="./assests/img/common/1fb.webp" alt="" width="40" height="40"><img src="./assests/img/common/insta1.webp" alt="" width="40" height="40">
+//             <img src="./assests/img/common/twitter1.webp" alt="" width="40" height="40">
+//           <img src="./assests/img/common/whapp1.webp" alt="" width="40" height="40"></div>
 
 
 // line 45

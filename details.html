@@ -11,13 +11,8 @@
     <meta property="og:title" content="Custom Vacuum Chamber Systems & Solutions | Unique Vacuum Solutions" />
     <meta property="og:description" content="Explore our custom vacuum chambers, thermal vacuum systems, and automated helium leak detection engineering solutions in India." />
     <meta property="og:image" content="assests/img/products/uvc.webp" />
-    <link rel="stylesheet" href="./assests/css/style.css" />
-    <link rel="stylesheet" href="./assests/css/navigation.css" />
-    <link rel="stylesheet" href="./assests/css/footer.css" />
-    <link
-      rel="stylesheet"
-      href="./bootstrap-5.3.3-dist/css/bootstrap.min.css"
-    />
+    <link rel="preload" href="./assests/css/footer.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="./assests/css/footer.css"></noscript>
     <style>
       body {
         font-family: "Inter", sans-serif;
@@ -118,7 +113,10 @@
         }
       }
     </style>
-  </head>
+  <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assests/css/navigation.css" />
+    <link rel="stylesheet" href="./assests/css/style.css" />
+    </head>
   <body>
     <!-- Nav Structure matching product.html -->
     <nav>
@@ -144,13 +142,13 @@
       <div id="foot"></div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="./assests/js/productsData.js"></script>
-    <script src="./assests/js/navigation.js"></script>
-    <script src="./assests/js/mobNavigation.js"></script>
-    <script src="./assests/js/footer.js"></script>
-    <script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./js/solutions.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+    <script src="./assests/js/productsData.js" defer></script>
+    <script src="./assests/js/navigation.js" defer></script>
+    <script src="./assests/js/mobNavigation.js" defer></script>
+    <script src="./assests/js/footer.js" defer></script>
+    <script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="./js/solutions.js" defer></script>
 
     <script>
       document.addEventListener("DOMContentLoaded", () => {
