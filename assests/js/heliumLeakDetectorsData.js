@@ -6,7 +6,7 @@ const heliumLeakDetectors = [
     title: "PFEIFFER ADIXEN ASM 310",
     description: "The compact, lightweight and portable helium leak detector solution. Ideal for maintenance applications, it offers high performance in a small footprint.",
     code: "ASM 310",
-    images: ["./assests/img/products/heliumLeakDetectors/pfeiffer/ASM310.jpeg"],
+    images: ["./assests/img/products/heliumLeakDetectors/pfeiffer/ASM310.webp"],
     highlights: [
       "Ideal for maintenance applications",
       "Small and portable",
@@ -49,7 +49,7 @@ const heliumLeakDetectors = [
     title: "PFEIFFER ADIXEN ASM 340",
     description: "Reliable and high-performance leak detector designed for vacuum or sniffing leak detection under severe test conditions. Highly customizable to meet your specific individual needs.",
     code: "ASM 340",
-    images: ["./assests/img/products/heliumLeakDetectors/pfeiffer/ASM340.jpeg"],
+    images: ["./assests/img/products/heliumLeakDetectors/pfeiffer/ASM340.webp"],
     highlights: [
       "Reliable and high-performance leak detection",
       "Easy operation and smart functions",
@@ -140,7 +140,7 @@ const heliumLeakDetectors = [
     title: "PFEIFFER ADIXEN ASM 390 / 392",
     description: "Rapid pump-down and short response times for large test objects. Fitted with a powerful high vacuum pump and a dry backing pump, they are the ideal tools for leak testing in clean environments.",
     code: "ASM 390 / 392",
-    images: ["./assests/img/products/heliumLeakDetectors/pfeiffer/ASM390_393.jpeg"],
+    images: ["./assests/img/products/heliumLeakDetectors/pfeiffer/ASM390_393.webp"],
     highlights: [
       "Smart and user-friendly",
       "Superior performance and rapid testing",
@@ -201,7 +201,7 @@ const heliumLeakDetectors = [
     title: "PFEIFFER ADIXEN ASM 306 S",
     description: "The compact but powerful leak detector designed specifically for high-reliability sniffing leak detection in continuous operations.",
     code: "ASM 306 S",
-    images: ["./assests/img/products/heliumLeakDetectors/pfeiffer/ASM306s.jpeg"],
+    images: ["./assests/img/products/heliumLeakDetectors/pfeiffer/ASM306s.webp"],
     highlights: [
       "Compact and rugged design",
       "Smart and user-friendly",
@@ -238,9 +238,9 @@ const heliumLeakDetectors = [
     description: "The PHOENIX Quadro is a state-of-the-art leak detector designed for absolute accuracy, speed, and ease of use. Available in oil-sealed backing pump, dry scroll backing pump (Dry Plus), or modular console (Vario) options.",
     code: "PHOENIX QUADRO",
     images: [
-      "./assests/img/products/heliumLeakDetectors/leybold/phoenix_quadro.png",
-      "./assests/img/products/heliumLeakDetectors/leybold/phoenix_quadro_dry_plus.png",
-      "./assests/img/products/heliumLeakDetectors/leybold/phoenix_vario.png"
+      "./assests/img/products/heliumLeakDetectors/leybold/phoenix_quadro.webp",
+      "./assests/img/products/heliumLeakDetectors/leybold/phoenix_quadro_dry_plus.webp",
+      "./assests/img/products/heliumLeakDetectors/leybold/phoenix_vario.webp"
     ],
     highlights: [
       "Detects very small leaks quickly and reliably",
@@ -314,7 +314,7 @@ const heliumLeakDetectors = [
     title: "LEYBOLD PHOENIX MOBILIS",
     description: "The PHOENIX MOBILIS Ultra is a highly sensitive handheld helium leak detector designed for simple, one-handed operation. Operating perfectly even in environments showing high magnetic fields (such as running MRI systems), it offers exceptional flexibility and performance.",
     code: "PHOENIX MOBILIS",
-    images: ["./assests/img/products/heliumLeakDetectors/leybold/phoenix_mobilis.png"],
+    images: ["./assests/img/products/heliumLeakDetectors/leybold/phoenix_mobilis.webp"],
     highlights: [
       "Designed for simple, intuitive one-handed operation",
       "Highly sensitive to ammonia, helium, and hydrogen",
@@ -345,7 +345,7 @@ const heliumLeakDetectors = [
     title: "CALIBRATED LEAKS",
     description: "Unique Vacuum Solutions deals with four models of Calibrated Leak Standards (Manufactured by VTI , California ) for calibrating Helium Leak Detectors and Leak Testing Systems so that one is sure to meet your particular requirements. Many other models of Leak Standards are available with Unique Vacuum Solutions, including some that are specifically for calibrating Sniffer-type Leak Detectors, as detailed in other brochures and a Selection Guide. The GPP, GPPT, GPC and CLP Model Calibrators compared here have different types of Leak Elements to control the flow rate of Helium, and this results in different features as shown below. Another difference is that the GPP, GPPT and GPC Leaks are \"general purpose\" models for calibrating leak detectors and systems, and the CLP Leak is a \"high-precision\" model with an all-metal valve for use in critical applications, use with UHV systems, and use as a Calibration Transfer Standard. It is to be noted, however, that all four models demonstrate long-term flow rate stability, have low depletion rates and last for years without refilling. As an exception, the 10-3 and larger GPC Leaks have higher depletion rates and, therefore, are designed to be conveniently refilled by the user. Also, all four models are simple to operate and are provided with Certifications of the NIST-traceable A2LA-accredited Calibrations.",
     code: "CALIBRATED LEAKS",
-    images: ["./assests/img/products/heliumLeakDetectors/calibratedLeaks/image_page_2_1_X12.jpg"],
+    images: ["./assests/img/products/heliumLeakDetectors/calibratedLeaks/image_page_2_1_X12.webp"],
     features: ["NIST traceable", "High stability", "Various leak rates available"],
     pdf: "./assests/img/products/heliumLeakDetectors/calibrated_leaksDownload.pdf",
     models: [
@@ -354,7 +354,7 @@ const heliumLeakDetectors = [
         name: "GPP model",
         title: "GPP Model Calibrated Leak Standards",
         tagline: "Glass-Permeation Helium Calibrated Leak Standard",
-        images: ["./assests/img/products/heliumLeakDetectors/calibratedLeaks/image_page_2_1_X12.jpg"],
+        images: ["./assests/img/products/heliumLeakDetectors/calibratedLeaks/image_page_2_1_X12.webp"],
         description: "These GPP Model Helium Calibrated Leak Standards have glass-permeation type leak elements and are the most common ones used to tune and calibrate helium mass spectrometer leak detectors, leak testing systems and vacuum systems. They are part of a family of Calibrators including the GPPT, GPC and CLP Models that cover leak rates from 10-12 up to 10-3 atm-cc/sec and larger. The GPP Accu-Flow™ Calibrated Leaks are based on the principle that helium flows through certain materials at a measurable rate depending on the material thickness, driving pressure and temperature. Depending on the leak rate required in the GPP Leaks, the permeation material is Pyrex or Quartz. The GPP Leaks feature an all-welded stainless steel construction for reliability. Most leaks require a shut-off \"isolation\" valve to zero the leak signal during tuning and calibration. Unique Vacuum Solutions offers the GPP Leaks both with and without a Teflon®-packed stainless steel shut-off valve. The inlet port of the brand of leak detector or vacuum system determines the termination of the leak. The most common termination of the GPP Leaks is a 1-1/8\" diameter tube which mates directly to many Varian, Veeco and VIC leak detectors. All leaks are available with QF (NW, KF) and many other types of fittings. All GPP Leaks are provided with certifications of the NIST-traceable calibrations performed in our A2LA-accredited Calibration Laboratory.",
         highlights: [
           "WILL NOT CLOG - glass-permeation leak element.",
@@ -388,7 +388,7 @@ const heliumLeakDetectors = [
         name: "GPPT model",
         title: "GPPT Model Calibrated Leak Standards",
         tagline: "Teflon®-Permeation Helium Calibrated Leak Standard",
-        images: ["./assests/img/products/heliumLeakDetectors/calibratedLeaks/image_page_3_1_X12.jpg"],
+        images: ["./assests/img/products/heliumLeakDetectors/calibratedLeaks/image_page_3_1_X12.webp"],
         description: "These GPPT Model Helium Calibrated Leak Standards have Teflon®-permeation type leak elements and are widely used to tune and calibrate helium mass spectrometer leak detectors and leak testing systems. They are part of a family of Calibrators including the GPP, GPC and CLP Models offered by Unique Vacuum Solutions that cover leak rates from 10-12 up to 10-3 atm-cc/sec and larger. The GPPT Accu-Flow™ Calibrated Leaks use a Teflon® membrane as the flow rate control element. The Helium reservoir is under pressure, and the gas permeates through the Teflon® from the pressure side to the exhaust side of the element. This yields a precise, constant flow rate which is then used for calibrating helium leak detectors and other applications. The GPPT Leaks feature an all-welded stainless steel construction for reliability. Most leaks require a shut-off \"isolation\" valve to zero the leak signal during tuning and calibration. UVS offers the GPPT Leaks both with and without a Teflon®-packed stainless steel shut-off valve. The inlet port of the brand of leak detector or vacuum system determines the termination of the leak. All leaks are available with QF (NW, KF), Normal Pipe Thread, VCR® and many other types of fittings. All GPPT Leaks are provided with certifications of the NIST-traceable calibrations performed in A2LA-accredited Calibration Laboratory.",
         highlights: [
           "WILL NOT CLOG - permeation leak element.",
@@ -423,7 +423,7 @@ const heliumLeakDetectors = [
         name: "GPC model",
         title: "GPC Model Calibrated Leak Standards",
         tagline: "Capillary Helium Calibrated Leak Standard",
-        images: ["./assests/img/products/heliumLeakDetectors/calibratedLeaks/image_page_4_1_X19.jpg"],
+        images: ["./assests/img/products/heliumLeakDetectors/calibratedLeaks/image_page_4_1_X19.webp"],
         description: "The GPC Model Helium Calibrated Leak Standards have crimped stainless-steel capillary leak elements and are widely used to tune and calibrate helium mass-spectrometer leak detectors and leak testing systems. They are part of a family of Helium Calibrators offered by Unique Vacuum Solutions including the GPP, GPPT and CLP Models detailed in other brochures. Together they cover a wide range of leak rates from 10-12 to 10-2 atm-cc/sec and larger. The GPC Accu-Flow™ Helium Leaks, due to the capillary leak element, can be manufactured for larger leak rates than permeation-type leaks. They are often used therefore in calibrating detectors in the \"gross leak\" mode. Also, capillary-type leaks have a very low temperature coefficient of 0.2%/ °C, as compared to 3 to 4% for permeation-type leaks. This reduces the possibility of calibration error in applications where ambient temperatures vary widely. As compared to some leaks that are made with glass capillary leak elements, the GPC Leaks with their stainless steel capillaries are unbreakable. In applications where these capillary-type leaks are exposed to dirt, water or oil vapor, clogging of the leak element can be a problem, particularly for leak rates of 10-6 atm-cc/sec and smaller. For this reason, the shut-off valve on the leak should be closed when not in use, especially when venting the vacuum system or detector to which it is attached. While GPC Leaks can be made without shut-off valves, it is not usually recommended. As with all of our Helium Calibrators, the GPC Model Leaks are available with QF (NW, KF), pipe thread and many other types of attachment fittings, and are provided with Certifications of the NIST-traceable Calibrations performed in A2LA Calibration Laboratory.",
         highlights: [
           "LOW TEMPERATURE COEFFICIENT - 0.2% per °C.",
@@ -458,7 +458,7 @@ const heliumLeakDetectors = [
         name: "CLP model",
         title: "CLP Model Calibrated Leak Standards",
         tagline: "High-Precision Glass-Permeation Helium Calibrated Leak Standard",
-        images: ["./assests/img/products/heliumLeakDetectors/calibratedLeaks/image_page_5_1_X22.jpg"],
+        images: ["./assests/img/products/heliumLeakDetectors/calibratedLeaks/image_page_5_1_X22.webp"],
         description: "The CLP Helium Calibrated Leaks are high-precision Standards for use in critical calibrations of leak detectors and systems, in Ultra-High Vacuum systems, and as Transfer Standards for calibrating other Helium Leaks. They feature all-welded stainless steel construction, a premium all-metal shut-off valve, a glass-permeation leak element, and are bakeable for UHV applications. These models cover leak rates from 10-12 up to 10-3 atm-cc/sec and larger, as detailed in other brochures. The CLP Model is available with leak rates of 10-6 to 10-12 and is the only model made for the very low rates of 10-10 to 10-12 atm-cc/sec. The CLP Accu-Flow™ Calibrated Leaks are based on the principle that helium flows through certain materials at a measurable rate depending on the material thickness, driving pressure and temperature, and use Quartz or Pyrex as the permeation material for the leak element. These leaks are available with or without the leak shut-off valve, but the latter is rare, and with many types of attachment fittings such as QF (NW,KF), Conflat®, VCR® and others. All CLP Leaks are provided with Certifications of the NIST-traceable calibrations performed in A2LA-accredited Calibration Laboratory.",
         highlights: [
           "WILL NOT CLOG - glass-permeation leak element.",
@@ -497,7 +497,7 @@ const heliumLeakDetectors = [
     pdf: "./assests/img/products/heliumLeakDetectors/About_helium_leak_test_methods.pdf",
     isEducational: true,
     description: "Learn about the types of vacuum leaks (real vs. virtual), tracer gas leak testing methods (pressure decay, sniffer, vacuum chamber), and the physical properties of Helium.",
-    images: ["./assests/img/products/heliumLeakDetectors/aboutHeliumLeak/image_page_1_1_X9.png"],
+    images: ["./assests/img/products/heliumLeakDetectors/aboutHeliumLeak/image_page_1_1_X9.webp"],
     sections: {
       intro: {
         title: "TYPES OF LEAKS: REAL & VIRTUAL",
@@ -522,12 +522,12 @@ const heliumLeakDetectors = [
         ],
         virtualLeaksTitle: "Virtual Leaks",
         virtualLeaksDesc: "Virtual leaks occur when gas is physically trapped within internal voids, such as microscopic weld cracks or the dead space at the bottom of a fastener’s threaded hole. These pockets have extremely low conductance paths to the main chamber, meaning the trapped gas cannot be evacuated quickly. Consequently, as the chamber pressure drops, these hidden reservoirs act as a continuous gas load, slowly bleeding air and contaminants back into the system and artificially inflating the base pressure.",
-        image: "./assests/img/products/heliumLeakDetectors/aboutHeliumLeak/image_page_1_1_X9.png"
+        image: "./assests/img/products/heliumLeakDetectors/aboutHeliumLeak/image_page_1_1_X9.webp"
       },
       behavior: {
         title: "Vacuum Behavior & System Impacts",
         description: "Distinct leakage sources result in varying pressure profiles during the evacuation and venting cycles, as illustrated in the schematic curve in Figure 2.",
-        image: "./assests/img/products/heliumLeakDetectors/aboutHeliumLeak/image_page_2_1_X17.png",
+        image: "./assests/img/products/heliumLeakDetectors/aboutHeliumLeak/image_page_2_1_X17.webp",
         consequencesTitle: "Consequences of System Leaks",
         consequencesDesc: "Failure to achieve the target ultimate pressure due to leakages can severely compromise several operational factors:",
         consequences: [
@@ -568,7 +568,7 @@ const heliumLeakDetectors = [
         methods: [
           {
             name: "PRESSURE DECAY METHOD",
-            image: "./assests/img/products/heliumLeakDetectors/aboutHeliumLeak/image_page_3_1_X20.png",
+            image: "./assests/img/products/heliumLeakDetectors/aboutHeliumLeak/image_page_3_1_X20.webp",
             advantages: [
               "Equipment is comparatively simple",
               "Can measure leakage in entire work piece being tested"
@@ -583,7 +583,7 @@ const heliumLeakDetectors = [
           },
           {
             name: "WATER BUBBLE LEAK TEST",
-            image: "./assests/img/products/heliumLeakDetectors/aboutHeliumLeak/image_page_3_2_X22.png",
+            image: "./assests/img/products/heliumLeakDetectors/aboutHeliumLeak/image_page_3_2_X22.webp",
             advantages: [
               "Equipment is simple and so is operation",
               "Leakage can be directly checked",
@@ -602,7 +602,7 @@ const heliumLeakDetectors = [
           },
           {
             name: "SNIFFER METHOD",
-            image: "./assests/img/products/heliumLeakDetectors/aboutHeliumLeak/image_page_3_3_X24.png",
+            image: "./assests/img/products/heliumLeakDetectors/aboutHeliumLeak/image_page_3_3_X24.webp",
             advantages: [
               "Directly finds the leak points",
               "Installation is simple (needs little space)",
@@ -617,7 +617,7 @@ const heliumLeakDetectors = [
           },
           {
             name: "VACUUM CHAMBER METHOD",
-            image: "./assests/img/products/heliumLeakDetectors/aboutHeliumLeak/image_page_3_4_X25.png",
+            image: "./assests/img/products/heliumLeakDetectors/aboutHeliumLeak/image_page_3_4_X25.webp",
             advantages: [
               "Reliably identifies overall leakage",
               "Fast leakage measurements",
@@ -686,10 +686,10 @@ const heliumLeakDetectors = [
         num: 1,
         title: "For aluminium castings in vacuum chamber method",
         images: [
-          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_2_4_X22.png",
-          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_2_1_X18.jpg",
-          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_2_2_X20.jpg",
-          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_2_3_X21.jpg"
+          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_2_4_X22.webp",
+          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_2_1_X18.webp",
+          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_2_2_X20.webp",
+          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_2_3_X21.webp"
         ],
         desc: "Custom built industrial vacuum chamber system designed specifically for high-accuracy helium leak detection in aluminum castings, ensuring structural and pressure integrity."
       },
@@ -697,7 +697,7 @@ const heliumLeakDetectors = [
         num: 2,
         title: "For Long aluminum fabricated tubes with vacuum method",
         images: [
-          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_3_1_X26.jpg"
+          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_3_1_X26.webp"
         ],
         desc: "Specialized mobile vacuum pumping systems built for leak testing long fabricated aluminum tubes and piping networks."
       },
@@ -705,8 +705,8 @@ const heliumLeakDetectors = [
         num: 3,
         title: "For VRLA batteries in vacuum chamber method",
         images: [
-          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_4_2_X30.png",
-          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_4_1_X29.jpg"
+          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_4_2_X30.webp",
+          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_4_1_X29.webp"
         ],
         desc: "Dedicated test station utilizing vacuum chamber methods to ensure perfect hermetic sealing for VRLA battery enclosures."
       },
@@ -714,9 +714,9 @@ const heliumLeakDetectors = [
         num: 4,
         title: "For sealed components in Bombing method",
         images: [
-          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_5_1_X36.jpg",
-          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_5_2_X37.jpg",
-          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_5_3_X38.jpg"
+          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_5_1_X36.webp",
+          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_5_2_X37.webp",
+          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_5_3_X38.webp"
         ],
         desc: "Helium bombing systems equipped with high-pressure chambers to check hermetic sealing of completely sealed electronic and mechanical components."
       },
@@ -724,8 +724,8 @@ const heliumLeakDetectors = [
         num: 5,
         title: "Helium leak detector carts for multipurpose applications",
         images: [
-          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_5_4_X39.jpg",
-          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_5_5_X40.png"
+          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_5_4_X39.webp",
+          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_5_5_X40.webp"
         ],
         desc: "Heavy duty mobile carts designed to mount leak detectors, pumps, gauges, and gas cylinders for flexible, multipurpose industrial use."
       },
@@ -733,7 +733,7 @@ const heliumLeakDetectors = [
         num: 6,
         title: "For Control Valves",
         images: [
-          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_6_1_X44.jpg"
+          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_6_1_X44.webp"
         ],
         desc: "Precision test bench designed to verify seal integrity and seat leakage rates in industrial control valves."
       },
@@ -741,7 +741,7 @@ const heliumLeakDetectors = [
         num: 7,
         title: "For Sealed compressors leak testing in sniffer method",
         images: [
-          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_6_2_X45.jpg"
+          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_6_2_X45.webp"
         ],
         desc: "Sniffer-type test station built to check leakages at welds and connections of fully sealed refrigeration and industrial compressors."
       },
@@ -749,7 +749,7 @@ const heliumLeakDetectors = [
         num: 8,
         title: "For Li-Ion cells leak testing in vacuum chamber method",
         images: [
-          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_6_3_X46.jpg"
+          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_6_3_X46.webp"
         ],
         desc: "Vacuum chamber leak detection system specifically optimized to check leak rates in Lithium-Ion battery cells to prevent electrolyte leakage."
       },
@@ -757,7 +757,7 @@ const heliumLeakDetectors = [
         num: 9,
         title: "For Rupture Disc helium leak testing",
         images: [
-          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_7_1_X49.jpg"
+          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_7_1_X49.webp"
         ],
         desc: "Testing station with dedicated fixtures to evaluate rupture disc response and check leakage before deployment in safety systems."
       },
@@ -765,7 +765,7 @@ const heliumLeakDetectors = [
         num: 10,
         title: "Pressure decay test and gas filling station for compressors and gas lines",
         images: [
-          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_7_2_X50.jpg"
+          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_7_2_X50.webp"
         ],
         desc: "Combined pressure decay leak testing and precise tracer gas filling station designed for manufacturing lines of compressors and piping systems."
       },
@@ -773,7 +773,7 @@ const heliumLeakDetectors = [
         num: 11,
         title: "Vacuum decay test system",
         images: [
-          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_8_1_X53.jpg"
+          "./assests/img/products/heliumLeakTestSystem/extracted/image_page_8_1_X53.webp"
         ],
         desc: "High-sensitivity vacuum decay system for component testing, measuring pressure rise over time to isolate micro-leaks."
       }
@@ -794,8 +794,8 @@ const heliumLeakDetectors = [
           {
             title: "NW BLANK FLANGES",
             desc: "Blank flanges used to seal unused ports in vacuum chambers or pipe lines, available in Stainless Steel and Aluminum.",
-            drawing: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_4_1_X26.png",
-            photo: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_4_2_X27.png",
+            drawing: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_4_1_X26.webp",
+            photo: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_4_2_X27.webp",
             headers: ["PART NUMBER (SS)", "PNEUROP", "A", "D1", "D2", "PART NUMBER (AL)"],
             rows: [
               ["SS-BLK-KF10", "NW10", "6 (0.24)", "30 (1.18)", "12 (0.47)", "AL-BLK-KF10"],
@@ -808,8 +808,8 @@ const heliumLeakDetectors = [
           {
             title: "NW SOCKET WELD FLANGE – STAINLESS STEEL",
             desc: "Socket weld flanges for joining stainless steel vacuum pipe lines, allowing easy welding installation.",
-            drawing: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_4_3_X28.png",
-            photo: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_4_4_X29.png",
+            drawing: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_4_3_X28.webp",
+            photo: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_4_4_X29.webp",
             headers: ["PART NUMBER", "PNEUROP", "A", "D1", "D2", "T"],
             rows: [
               ["SS-SWF-KF-16A", "NW16", "12.7 (0.5)", "30 (1.18)", "15.5 (0.61)", "1.25 (0.05)"],
@@ -822,8 +822,8 @@ const heliumLeakDetectors = [
           {
             title: "NW TUBULATION SHORT WELD FLANGE – STAINLESS STEEL",
             desc: "Short tubulation weld flanges for quick-coupling vacuum lines via welding processes.",
-            drawing: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_5_1_X32.png",
-            photo: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_5_2_X33.png",
+            drawing: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_5_1_X32.webp",
+            photo: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_5_2_X33.webp",
             headers: ["PART NUMBER", "PNEUROP", "A", "D1", "D2", "T"],
             rows: [
               ["SS-TSWF-KF10", "NW10", "30.0 (1.18)", "30.0 (1.18)", "14.0 (0.55)", "2.0 (0.08)"],
@@ -841,8 +841,8 @@ const heliumLeakDetectors = [
           {
             title: "NW TUBULATION LONG WELD FLANGE – STAINLESS STEEL",
             desc: "Long tubulation weld flanges for connecting vacuum hardware over extended lengths.",
-            drawing: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_5_3_X34.png",
-            photo: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_5_4_X35.png",
+            drawing: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_5_3_X34.webp",
+            photo: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_5_4_X35.webp",
             headers: ["PART NUMBER", "PNEUROP", "A", "D1", "D2", "T"],
             rows: [
               ["SS-TLWF-KF10", "NW10", "70 (2.76)", "30.0 (1.18)", "14.0 (0.55)", "2.0 (0.08)"],
@@ -866,8 +866,8 @@ const heliumLeakDetectors = [
           {
             title: "NW QUICK CLAMP – ALUMINIUM",
             desc: "Aluminum quick clamp with wing nut mechanism for tool-free assembly and dismantling of KF flanges.",
-            drawing: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_1_1_X10.png",
-            photo: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_1_2_X12.png",
+            drawing: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_1_1_X10.webp",
+            photo: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_1_2_X12.webp",
             headers: ["PART NUMBER", "PNEUROP", "A", "B"],
             rows: [
               ["AL-CL-KF1016", "NW16", "40 (1.57)", "64 (2.52)"],
@@ -879,8 +879,8 @@ const heliumLeakDetectors = [
           {
             title: "NW CENTERING RINGS WITH O-RINGS",
             desc: "Centering rings with integrated Viton or Nitrile O-rings, providing high vacuum seal integrity.",
-            drawing: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_1_3_X13.png",
-            photo: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_1_4_X14.png",
+            drawing: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_1_3_X13.webp",
+            photo: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_1_4_X14.webp",
             headers: ["PART NUMBER (SS + VITON)", "PNEUROP", "A", "B", "D1", "D2"],
             rows: [
               ["SS-CR-VIT-KF10", "NW10", "8 (0.31)", "3.9 (0.15)", "10 (0.39)", "12 (0.47)"],
@@ -893,8 +893,8 @@ const heliumLeakDetectors = [
           {
             title: "NW ADAPTER CENTERING RING",
             desc: "Adapter centering rings for transitioning between different KF flange sizes.",
-            drawing: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_2_1_X18.png",
-            photo: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_2_2_X19.png",
+            drawing: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_2_1_X18.webp",
+            photo: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_2_2_X19.webp",
             headers: ["PART NUMBER (SS + VITON)", "PNEUROP", "A", "B", "D1", "D2"],
             rows: [
               ["SS-ACR-VIT-KF1016", "NW10/16", "8 (0.31)", "3.9 (0.15)", "17 (0.67)", "12 (0.47)"],
@@ -905,8 +905,8 @@ const heliumLeakDetectors = [
           {
             title: "NW O-RING - VITON / NITRILE",
             desc: "Replacement elastic seals for KF quick-release couplings, operating in pressure ranges 10⁻⁷ mbar to 1 bar absolute.",
-            drawing: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_3_1_X22.png",
-            photo: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_3_2_X23.png",
+            drawing: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_3_1_X22.webp",
+            photo: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_3_2_X23.webp",
             headers: ["PART NUMBER (VITON)", "PNEUROP", "A", "D1", "PART NUMBER (NITRILE)"],
             rows: [
               ["OR-VIT-KF-10", "NW10", "5 (0.20)", "15 (0.59)", "OR-NIT-KF-10"],
@@ -925,8 +925,8 @@ const heliumLeakDetectors = [
           {
             title: "NW HOSE CONNECTORS - PVC / STAINLESS STEEL",
             desc: "Rigid connectors to link flexible plastic or metallic hoses to standard NW flanges.",
-            drawing: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_6_3_X40.png",
-            photo: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_6_4_X41.png",
+            drawing: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_6_3_X40.webp",
+            photo: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_6_4_X41.webp",
             headers: ["PART NUMBER", "PNEUROP", "A", "D1 NOMINAL BORE"],
             rows: [
               ["PVC-HC-KF10-250", "NW10", "250 (9.84)", "30 (1.18)"],
@@ -938,8 +938,8 @@ const heliumLeakDetectors = [
           {
             title: "NW HOSE NOZZLE CONNECTOR – STAINLESS STEEL",
             desc: "Barbed hose nozzle connectors for coupling soft vinyl tubing or rubber hoses.",
-            drawing: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_7_1_X44.png",
-            photo: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_7_2_X45.png",
+            drawing: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_7_1_X44.webp",
+            photo: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_7_2_X45.webp",
             headers: ["PART NUMBER", "PNEUROP", "A", "D1", "D2", "T"],
             rows: [
               ["SS-HNC-KF10", "NW10", "40 (1.57)", "30.0 (1.18)", "7 (0.28)", "12.0 (0.47)"],
@@ -952,8 +952,8 @@ const heliumLeakDetectors = [
           {
             title: "NW STRAIGHT CONNECTOR - STAINLESS STEEL",
             desc: "Straight spool pieces used to bridge spacing gaps between vacuum components.",
-            drawing: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_7_3_X46.png",
-            photo: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_7_4_X47.png",
+            drawing: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_7_3_X46.webp",
+            photo: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_7_4_X47.webp",
             headers: ["PART NUMBER", "PNEUROP", "A", "D1", "D2", "T"],
             rows: [
               ["SS-SC-KF10", "NW10", "80 (3.15)", "30.0 (1.18)", "20 (0.79)", "2 (0.08)"],
@@ -966,8 +966,8 @@ const heliumLeakDetectors = [
           {
             title: "NW REDUCER ADAPTOR - STAINLESS STEEL",
             desc: "Reducer couplers to connect smaller KF flange lines to larger ones.",
-            drawing: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_8_1_X51.png",
-            photo: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_8_2_X52.png",
+            drawing: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_8_1_X51.webp",
+            photo: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_8_2_X52.webp",
             headers: ["PART NUMBER", "PNEUROP", "A", "D1", "D2", "D3", "T"],
             rows: [
               ["SS-RD-KF2516", "NW25/16", "28 (1.1)", "40 (1.57)", "30 (1.18)", "20.0 (0.79)", "2 (0.08)"],
@@ -981,8 +981,8 @@ const heliumLeakDetectors = [
           {
             title: "NW TO CF REDUCER ADAPTOR",
             desc: "Adaptor pieces designed to link high-vacuum KF hardware with ultra-high vacuum CF (ConFlat) hardware.",
-            drawing: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_8_3_X53.png",
-            photo: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_8_4_X54.png",
+            drawing: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_8_3_X53.webp",
+            photo: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_8_4_X54.webp",
             headers: ["PART NUMBER", "PNEUROP", "A", "D1", "D2", "D3", "T"],
             rows: [
               ["SS-RD-CF16KF16", "CF16/NW16", "36 (1.42)", "34 (1.34)", "30 (1.18)", "20.0 (0.79)", "2 (0.08)"],
@@ -992,8 +992,8 @@ const heliumLeakDetectors = [
           {
             title: "ISO TO NW ADAPTOR - STAINLESS STEEL",
             desc: "Transitions between larger bolted ISO flanges and smaller quick-release KF flanges.",
-            drawing: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_9_1_X57.png",
-            photo: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_9_2_X58.png",
+            drawing: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_9_1_X57.webp",
+            photo: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_9_2_X58.webp",
             headers: ["PART NUMBER", "PNEUROP", "A", "D1", "D2", "D3", "T"],
             rows: [
               ["SS-RD-ISO63KF25", "ISO63/NW25", "50 (1.97)", "95 (3.74)", "40 (1.57)", "28.0 (1.10)", "2 (0.08)"],
@@ -1004,8 +1004,8 @@ const heliumLeakDetectors = [
           {
             title: "ASA TO NW ADAPTOR - STAINLESS STEEL",
             desc: "Adapters to connect standard ASA (ANSI) flanged components to quick-release NW vacuum lines.",
-            drawing: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_10_1_X61.png",
-            photo: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_10_2_X62.png",
+            drawing: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_10_1_X61.webp",
+            photo: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_10_2_X62.webp",
             headers: ["PART NUMBER", "PNEUROP", "A", "D1", "D2", "D3", "T"],
             rows: [
               ["SS-RD-ASA15KF40", "ASA1.5\"/NW40", "46 (1.81)", "127 (5.00)", "55 (2.17)", "44.5 (1.75)", "2 (0.08)"],
@@ -1022,8 +1022,8 @@ const heliumLeakDetectors = [
           {
             title: "NW 90 DEGREE RADIUS ELBOW - STAINLESS STEEL",
             desc: "90-degree elbows for clean directional turns in vacuum lines.",
-            drawing: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_10_3_X63.png",
-            photo: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_10_4_X64.png",
+            drawing: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_10_3_X63.webp",
+            photo: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_10_4_X64.webp",
             headers: ["PART NUMBER", "PNEUROP", "A", "D1", "R"],
             rows: [
               ["SS-ELR-KF16", "NW16", "40 (1.57)", "20.0 (0.79)", "27 (1.06)"],
@@ -1035,8 +1035,8 @@ const heliumLeakDetectors = [
           {
             title: "NW LONG RADIUS ELBOW – STAINLESS STEEL",
             desc: "Long sweep 90-degree elbows to minimize conductance restrictions in pump-down pathways.",
-            drawing: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_11_1_X67.png",
-            photo: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_11_2_X68.png",
+            drawing: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_11_1_X67.webp",
+            photo: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_11_2_X68.webp",
             headers: ["PART NUMBER", "PNEUROP", "A", "D1", "R", "T"],
             rows: [
               ["SS-LREL-KF40", "NW40", "130 (5.12)", "44.5 (1.75)", "60 (2.36)", "2 (0.08)"],
@@ -1046,8 +1046,8 @@ const heliumLeakDetectors = [
           {
             title: "NW 45 DEGREE RADIUS ELBOW - STAINLESS STEEL",
             desc: "45-degree elbows for directional piping offsets in vacuum assemblies.",
-            drawing: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_11_3_X69.png",
-            photo: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_11_4_X70.png",
+            drawing: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_11_3_X69.webp",
+            photo: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_11_4_X70.webp",
             headers: ["PART NUMBER", "PNEUROP", "R"],
             rows: [
               ["SS-EL45-KF16", "NW16", "40 (1.57)"],
@@ -1059,8 +1059,8 @@ const heliumLeakDetectors = [
           {
             title: "NW TEE - STAINLESS STEEL",
             desc: "Symmetrical three-way equal tees to split or branch vacuum flow lines.",
-            drawing: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_12_1_X73.png",
-            photo: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_12_2_X74.png",
+            drawing: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_12_1_X73.webp",
+            photo: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_12_2_X74.webp",
             headers: ["PART NUMBER", "PNEUROP", "A", "B", "D1", "D2", "T"],
             rows: [
               ["SS-TEE-KF16", "NW16", "40 (1.57)", "40 (1.57)", "30 (1.18)", "20.0 (0.79)", "2 (0.08)"],
@@ -1072,8 +1072,8 @@ const heliumLeakDetectors = [
           {
             title: "NW UNEQUAL TEE - STAINLESS STEEL",
             desc: "Three-way branching tees with smaller branching port configurations.",
-            drawing: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_12_3_X75.png",
-            photo: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_12_4_X76.png",
+            drawing: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_12_3_X75.webp",
+            photo: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_12_4_X76.webp",
             headers: ["PART NUMBER", "PNEUROP", "A", "B", "D1", "D2", "T"],
             rows: [
               ["SS-UTEE-KF2516", "NW25/16", "50 (1.97)", "40 (1.57)", "40 (1.57)", "28.0 (1.10)", "2 (0.08)"],
@@ -1084,8 +1084,8 @@ const heliumLeakDetectors = [
           {
             title: "NW 4-WAY CROSS - STAINLESS STEEL",
             desc: "Symmetrical cross couplers providing four ports for advanced manifolds.",
-            drawing: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_13_1_X79.png",
-            photo: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_13_2_X80.png",
+            drawing: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_13_1_X79.webp",
+            photo: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_13_2_X80.webp",
             headers: ["PART NUMBER", "PNEUROP", "A", "B", "D1", "D2", "T"],
             rows: [
               ["SS-4WCR-KF16", "NW16", "40 (1.57)", "40 (1.57)", "30 (1.18)", "20.0 (0.79)", "2 (0.08)"],
@@ -1097,8 +1097,8 @@ const heliumLeakDetectors = [
           {
             title: "NW 5-WAY CROSS - STAINLESS STEEL",
             desc: "Star-shaped five-way couplers for complex vacuum distribution manifolds.",
-            drawing: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_13_3_X81.png",
-            photo: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_13_4_X82.png",
+            drawing: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_13_3_X81.webp",
+            photo: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_13_4_X82.webp",
             headers: ["PART NUMBER", "PNEUROP", "A", "B", "D1", "D2", "T"],
             rows: [
               ["SS-5WCR-KF16", "NW16", "40 (1.57)", "40 (1.57)", "30 (1.18)", "20.0 (0.79)", "2 (0.08)"],
@@ -1116,8 +1116,8 @@ const heliumLeakDetectors = [
           {
             title: "NW WIRE REINFORCED HOSE – PVC",
             desc: "Flexible PVC tubing reinforced with steel spiral wire, operating down to high-vacuum levels.",
-            drawing: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_6_1_X38.png",
-            photo: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_6_2_X39.png",
+            drawing: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_6_1_X38.webp",
+            photo: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_6_2_X39.webp",
             headers: ["PART NUMBER", "PNEUROP", "A", "D1 NOMINAL BORE"],
             rows: [
               ["PVC10", "NW10", "1000 (39.37)", "14.0 (0.55)"],
@@ -1130,8 +1130,8 @@ const heliumLeakDetectors = [
           {
             title: "NW FLEXIBLE BELLOWS – STAINLESS STEEL",
             desc: "Flexible bellows in SS304/SS316, permitting high vacuum connections and compensating for thermal expansion.",
-            drawing: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_14_1_X85.png",
-            photo: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_14_2_X86.png",
+            drawing: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_14_1_X85.webp",
+            photo: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_14_2_X86.webp",
             headers: ["PART NUMBER", "PNEUROP", "A", "B", "D1", "D2", "T1", "T2"],
             rows: [
               ["SS-FXB-KF16", "NW16", "121 (4.76)", "88.0 (3.46)", "30 (1.18)", "20.0 (0.79)", "2.0 (0.08)", "0.10 (0.01)"],
@@ -1143,8 +1143,8 @@ const heliumLeakDetectors = [
           {
             title: "NW FLEXIBLE HOSE – STAINLESS STEEL",
             desc: "Braided or unbraided flexible metal hoses for custom layout alignment under high vacuum.",
-            drawing: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_14_3_X87.png",
-            photo: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_14_4_X88.png",
+            drawing: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_14_3_X87.webp",
+            photo: "./assests/img/products/VACUUM_COMPONENTS&supplies/extracted/image_page_14_4_X88.webp",
             headers: ["PART NUMBER", "PNEUROP", "A", "B", "D1", "D2", "T1", "T2"],
             rows: [
               ["SS-LFXB-KF1625", "NW16", "250 (9.84)", "220 (8.66)", "30 (1.18)", "20.0 (0.79)", "2.0 (0.08)", "0.23 (0.01)"],

@@ -68,7 +68,7 @@ function renderContent(series) {
       if (matchedSeries.category === "MEASUREMENT") {
         heroImg.src = "./assests/img/products/vacuum_measurement_1920x570.webp";
       } else {
-        heroImg.src = "./assests/img/products/vacuum_pumps_and_systems_1920x570.png";
+        heroImg.src = "./assests/img/products/vacuum_pumps_and_systems_1920x570.webp";
       }
     }
   }
@@ -192,7 +192,7 @@ function renderContent(series) {
       let div = document.createElement("div");
       div.classList.add("grids");
 
-      let imgSrc = "./assests/img/banners/Frame677.png";
+      let imgSrc = "./assests/img/banners/Frame677.webp";
       if (product.images && product.images.length > 0) {
         imgSrc = product.images[0];
       }
@@ -218,7 +218,7 @@ function renderContent(series) {
           ? "uvsPumpDetail.html"
           : "dprgDetail.html";
 
-      div.innerHTML = ` <img src="${imgSrc}" alt="${product.name}" style="height: 200px; object-fit: contain;">
+      div.innerHTML = ` <img src="${imgSrc}" alt="${product.name}" width="300" height="200" loading="lazy" style="height: 200px; object-fit: contain;">
                     ${contentHtml}
                     <div class="gridBtn" ><a href="${detailPage}?id=${product.id}">View Product</a></div>`;
 

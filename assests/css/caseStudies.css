@@ -301,7 +301,7 @@
 
 .innovative::before {
   content: "";
-  background-image: url(../img/products/unique.png);
+  background-image: url(../img/products/unique.webp);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -336,7 +336,7 @@
 
 .innovativeRight {
   /* border: solid 2px yellow; */
-  background-image: url(../img/banners/Background2.png);
+  background-image: url(../img/banners/Background2.webp);
   background-repeat: no-repeat;
   background-position: left bottom; /* Position at the end (right) and bottom */
   background-size: auto 50%;

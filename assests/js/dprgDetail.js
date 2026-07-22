@@ -53,6 +53,9 @@ if (product) {
                 src="${img}"
                 alt="Thumbnail ${index + 1}"
                 data-full="${img}"
+                width="60"
+                height="60"
+                loading="lazy"
               />
             `,
               )
@@ -63,8 +66,9 @@ if (product) {
               id="main-image"
               src="${product.images[0]}"
               alt="Main Product Image"
+              width="400"
+              height="340"
             />
-           
           </div>
         </div>
         <div class="product-details">

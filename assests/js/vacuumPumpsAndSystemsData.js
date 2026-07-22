@@ -17,8 +17,8 @@ const vacuumPumpsAndSystems = [
       "Capable of achieving ultimate vacuum levels below 1×10⁻³ mbar.",
     ],
     images: [
-      "./assests/img/products/VacuumePumpsAndSystem/VACUUM_PUMPS/ivp1.png",
-      "./assests/img/products/VacuumePumpsAndSystem/VACUUM_PUMPS/ivp2.png"
+      "./assests/img/products/VacuumePumpsAndSystem/VACUUM_PUMPS/ivp1.webp",
+      "./assests/img/products/VacuumePumpsAndSystem/VACUUM_PUMPS/ivp2.webp"
     ],
     pdf: "./assests/img/products/VacuumePumpsAndSystem/VACUUM_PUMPS/UVS_IVP_series_vacuum_pumps.pdf",
     modelVariants: [
@@ -188,8 +188,8 @@ const vacuumPumpsAndSystems = [
       "Heavy-duty construction suited for metallurgy, electrical, chemical, and manufacturing environments.",
     ],
     images: [
-      "./assests/img/products/VacuumePumpsAndSystem/VACUUM_PUMPS/IVPVP_2.png",
-       "./assests/img/products/VacuumePumpsAndSystem/VACUUM_PUMPS/IVPVP_1.png"
+      "./assests/img/products/VacuumePumpsAndSystem/VACUUM_PUMPS/IVPVP_2.webp",
+       "./assests/img/products/VacuumePumpsAndSystem/VACUUM_PUMPS/IVPVP_1.webp"
     ],
     pdf: "./assests/img/products/VacuumePumpsAndSystem/VACUUM_PUMPS/UVS_IVPVP_Piston_vacuum_pumps.pdf",
     modelVariants: [
@@ -263,8 +263,8 @@ const vacuumPumpsAndSystems = [
       "Ready availability of spares, backed by nationwide efficient after sales service.",
     ],
     images: [
-      "./assests/img/products/VacuumePumpsAndSystem/VACUUM_PUMPS/E1.png",
-      "./assests/img/products/VacuumePumpsAndSystem/VACUUM_PUMPS/E2.png"
+      "./assests/img/products/VacuumePumpsAndSystem/VACUUM_PUMPS/E1.webp",
+      "./assests/img/products/VacuumePumpsAndSystem/VACUUM_PUMPS/E2.webp"
     ],
     pdf: "./assests/img/products/VacuumePumpsAndSystem/VACUUM_PUMPS/OIL_SEALED_BELT_DRIVE_ROTARY_VANE_VACUUM_PUMP.pdf",
     modelVariants: [
@@ -461,11 +461,11 @@ const vacuumPumpsAndSystems = [
       },
     ],
     images: [
-      "./assests/img/banners/IMG_7133-removebg.png",
-      "./assests/img/banners/IMG_7246-removebg.png",
-      "./assests/img/banners/KGWB0060-removebg.png",
-      "./assests/img/banners/LXKO7545-removebg.png",
-      "./assests/img/products/VacuumePumpsAndSystem/VACUUM_PUMPING_SYSTEMS/ROTARY_ROOTS/vacuumepumps&System.png",
+      "./assests/img/banners/IMG_7133-removebg.webp",
+      "./assests/img/banners/IMG_7246-removebg.webp",
+      "./assests/img/banners/KGWB0060-removebg.webp",
+      "./assests/img/banners/LXKO7545-removebg.webp",
+      "./assests/img/products/VacuumePumpsAndSystem/VACUUM_PUMPING_SYSTEMS/ROTARY_ROOTS/vacuumepumps&System.webp",
     ],
     pdf: "./assests/img/products/VacuumePumpsAndSystem/VACUUM_PUMPING_SYSTEMS/ROTARY_ROOTS/UVS_ROTARY_ROOTS_PUMPING_SYSTEMS.pdf",
     end: "These systems are specifically configured for demanding cryogenics and industrial applications requiring reliable high-capacity vacuum performance.",
@@ -498,8 +498,8 @@ const vacuumPumpsAndSystems = [
       },
     ],
     images: [
-      "./assests/img/products/VacuumePumpsAndSystem/VACUUM_PUMPING_SYSTEMS/TURBO_PUMPING_SYSTEMS/UPS-250T_004.jpg",
-      "./assests/img/products/VacuumePumpsAndSystem/VACUUM_PUMPING_SYSTEMS/TURBO_PUMPING_SYSTEMS/vertex_TMP_system.jpg",
+      "./assests/img/products/VacuumePumpsAndSystem/VACUUM_PUMPING_SYSTEMS/TURBO_PUMPING_SYSTEMS/UPS-250T_004.webp",
+      "./assests/img/products/VacuumePumpsAndSystem/VACUUM_PUMPING_SYSTEMS/TURBO_PUMPING_SYSTEMS/vertex_TMP_system.webp",
     ],
     pdf: "./assests/img/products/VacuumePumpsAndSystem/VACUUM_PUMPING_SYSTEMS/TURBO_PUMPING_SYSTEMS/UVS_TURBO_PUMPING_SYSTEMS.pdf",
     end: "These turbo pumping systems are ideal for applications requiring clean, ultra-high vacuum environments with integrated monitoring and control instrumentation.",
@@ -542,8 +542,8 @@ const vacuumPumpsAndSystems = [
       "Custom built solutions for specialized vacuum applications.",
     ],
     images: [
-      "./assests/img/products/VacuumePumpsAndSystem/VACUUM_PUMPING_SYSTEMS/DIFFUSION_PUMPING_SYSTEMS/IMG_7135.JPG",
-      "./assests/img/products/VacuumePumpsAndSystem/VACUUM_PUMPING_SYSTEMS/DIFFUSION_PUMPING_SYSTEMS/IMG_7088.JPG",
+      "./assests/img/products/VacuumePumpsAndSystem/VACUUM_PUMPING_SYSTEMS/DIFFUSION_PUMPING_SYSTEMS/IMG_7135.webp",
+      "./assests/img/products/VacuumePumpsAndSystem/VACUUM_PUMPING_SYSTEMS/DIFFUSION_PUMPING_SYSTEMS/IMG_7088.webp",
     ],
     pdf: "./assests/img/products/VacuumePumpsAndSystem/VACUUM_PUMPING_SYSTEMS/DIFFUSION_PUMPING_SYSTEMS/HIGH_VACUUM_STANDARD_PUMPING_SYSTEMS.pdf",
     end: "The standard Vacuum Pumping Systems consists of UVS Rotary Vacuum Pump, Diffusion pumps and other hardware like valves, baffles, collar, gauge and plumbing lines with Pirani Gauge to measure the roughing and backing vacuum & Penning gauge for measuring the high vacuum.",
@@ -589,11 +589,11 @@ const vacuumPumpsAndSystems = [
       "Packaging, Canning, and Bottling Operations"
     ],
     images: [
-      "./assests/img/products/VacuumePumpsAndSystem/VACUUM_PUMPING_SYSTEMS/CENTRALISEDVACUUMPUMPINGSYSTEMS/extracted_img_1_6.jpg",
-      "./assests/img/products/VacuumePumpsAndSystem/VACUUM_PUMPING_SYSTEMS/CENTRALISEDVACUUMPUMPINGSYSTEMS/extracted_img_1_3.jpg",
-      "./assests/img/products/VacuumePumpsAndSystem/VACUUM_PUMPING_SYSTEMS/CENTRALISEDVACUUMPUMPINGSYSTEMS/extracted_img_1_4.jpg",
-      "./assests/img/products/VacuumePumpsAndSystem/VACUUM_PUMPING_SYSTEMS/CENTRALISEDVACUUMPUMPINGSYSTEMS/extracted_img_1_5.jpg",
-      "./assests/img/products/VacuumePumpsAndSystem/VACUUM_PUMPING_SYSTEMS/CENTRALISEDVACUUMPUMPINGSYSTEMS/extracted_img_1_7.jpg"
+      "./assests/img/products/VacuumePumpsAndSystem/VACUUM_PUMPING_SYSTEMS/CENTRALISEDVACUUMPUMPINGSYSTEMS/extracted_img_1_6.webp",
+      "./assests/img/products/VacuumePumpsAndSystem/VACUUM_PUMPING_SYSTEMS/CENTRALISEDVACUUMPUMPINGSYSTEMS/extracted_img_1_3.webp",
+      "./assests/img/products/VacuumePumpsAndSystem/VACUUM_PUMPING_SYSTEMS/CENTRALISEDVACUUMPUMPINGSYSTEMS/extracted_img_1_4.webp",
+      "./assests/img/products/VacuumePumpsAndSystem/VACUUM_PUMPING_SYSTEMS/CENTRALISEDVACUUMPUMPINGSYSTEMS/extracted_img_1_5.webp",
+      "./assests/img/products/VacuumePumpsAndSystem/VACUUM_PUMPING_SYSTEMS/CENTRALISEDVACUUMPUMPINGSYSTEMS/extracted_img_1_7.webp"
     ],
     pdf: "./assests/img/products/VacuumePumpsAndSystem/VACUUM_PUMPING_SYSTEMS/CENTRALISEDVACUUMPUMPINGSYSTEMS/UVS_CENTRALISED_VACUUM_SYSTEMS.pdf",
     end: "UVS Centralized Vacuum Systems are engineered to deliver precise vacuum control. In multi-level systems, the controllers systematically scale operation: rough vacuum runs one pump set, medium runs two sets, and fine vacuum activates all three sets automatically to meet the peak demand level.",
@@ -614,7 +614,7 @@ const vacuumPumpsAndSystems = [
       "Energy-efficient performance across a wide range of models.",
     ],
     images: [
-      "./assests/img/products/VacuumePumpsAndSystem/VACUUM_PUMPS/IVRVP-M-SERIES.png"
+      "./assests/img/products/VacuumePumpsAndSystem/VACUUM_PUMPS/IVRVP-M-SERIES.webp"
     ],
     // pdf: "./assests/img/products/VacuumePumpsAndSystem/VACUUM_PUMPS/IVRVP-M_-_MAGNETIC_ROOTS_VACUUM_PUMPS.pdf",
     pdf: "./assests/img/products/VacuumePumpsAndSystem/VACUUM_PUMPS/UVS-IVRVP-M-SERIES.pdf",
@@ -687,7 +687,7 @@ const vacuumPumpsAndSystems = [
       "High efficiency and reliable performance for metallurgy, chemical, and industrial applications.",
     ],
     images: [
-      "./assests/img/products/VacuumePumpsAndSystem/VACUUM_PUMPS/IVRVP-SERIES.png"
+      "./assests/img/products/VacuumePumpsAndSystem/VACUUM_PUMPS/IVRVP-SERIES.webp"
     ],
     pdf: "./assests/img/products/VacuumePumpsAndSystem/VACUUM_PUMPS/IVRVP-_Roots(water_cooled).pdf",
     modelVariants: [
@@ -770,8 +770,8 @@ const vacuumPumpsAndSystems = [
       "Extremely low noise levels and low operating temperatures.",
     ],
     images: [
-      "./assests/img/products/VacuumePumpsAndSystem/VACUUM_PUMPS/IVRDP-_SERIES1.png",
-      "./assests/img/products/VacuumePumpsAndSystem/VACUUM_PUMPS/IVRDP-_SERIES2.png"
+      "./assests/img/products/VacuumePumpsAndSystem/VACUUM_PUMPS/IVRDP-_SERIES1.webp",
+      "./assests/img/products/VacuumePumpsAndSystem/VACUUM_PUMPS/IVRDP-_SERIES2.webp"
     ],
     pdf: "./assests/img/products/VacuumePumpsAndSystem/VACUUM_PUMPS/IVRDP-_two_stage_rotary_vane.pdf",
     modelVariants: [
@@ -893,7 +893,7 @@ const vacuumPumpsAndSystems = [
       "Extremely low noise and operating temperatures.",
     ],
     images: [
-      "./assests/img/products/VacuumePumpsAndSystem/VACUUM_PUMPS/IVSVP.png"
+      "./assests/img/products/VacuumePumpsAndSystem/VACUUM_PUMPS/IVSVP.webp"
     ],
     pdf: "./assests/img/products/VacuumePumpsAndSystem/VACUUM_PUMPS/UVS_IVSVP_-_Single_stage_vacuum_pumps.pdf",
     modelVariants: [

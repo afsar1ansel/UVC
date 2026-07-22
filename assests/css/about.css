@@ -173,7 +173,7 @@ body {
 
 .innovative::before {
   content: "";
-  background-image: url(../img/products/unique.png);
+  background-image: url(../img/products/unique.webp);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -208,7 +208,7 @@ body {
 
 .innovativeRight {
   /* border: solid 2px yellow; */
-  background-image: url(../img/banners/BackgroundGreen.png);
+  background-image: url(../img/banners/BackgroundGreen.webp);
   background-repeat: no-repeat;
   background-position: right bottom; /* Position at the end (right) and bottom */
   background-size: auto 50%;
@@ -443,7 +443,7 @@ body {
 
 .procesImg {
   /* border: solid 1px yellow; */
-  background-image: url(../img/banners/Rectcurve.png);
+  background-image: url(../img/banners/Rectcurve.webp);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;

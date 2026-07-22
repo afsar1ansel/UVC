@@ -35,66 +35,66 @@ const servicesData = [
     projects: [
       {
         name: "High pressure filters helium leak testing",
-        images: ["./assests/img/services/heliumleaktestservices/image_page_1_1_X10.jpg"]
+        images: ["./assests/img/services/heliumleaktestservices/image_page_1_1_X10.webp"]
       },
       {
         name: "Turbine generator electrical terminal cooling system leak testing",
-        images: ["./assests/img/services/heliumleaktestservices/image_page_1_2_X12.jpg"]
+        images: ["./assests/img/services/heliumleaktestservices/image_page_1_2_X12.webp"]
       },
       {
         name: "Lyophilizers and Deep freezers leak testing",
         images: [
-          "./assests/img/services/heliumleaktestservices/image_page_2_1_X20.jpg",
-          "./assests/img/services/heliumleaktestservices/image_page_2_2_X21.jpg",
-          "./assests/img/services/heliumleaktestservices/image_page_2_3_X22.jpg",
-          "./assests/img/services/heliumleaktestservices/image_page_2_4_X23.jpg"
+          "./assests/img/services/heliumleaktestservices/image_page_2_1_X20.webp",
+          "./assests/img/services/heliumleaktestservices/image_page_2_2_X21.webp",
+          "./assests/img/services/heliumleaktestservices/image_page_2_3_X22.webp",
+          "./assests/img/services/heliumleaktestservices/image_page_2_4_X23.webp"
         ]
       },
       {
         name: "Truck fuel tank leak testing",
-        images: ["./assests/img/services/heliumleaktestservices/image_page_2_5_X24.jpg"]
+        images: ["./assests/img/services/heliumleaktestservices/image_page_2_5_X24.webp"]
       },
       {
         name: "Glass to metal Hermitical seals leak testing (at elevated vacuum levels up to 10⁻⁵ mbar)",
         images: [
-          "./assests/img/services/heliumleaktestservices/image_page_2_6_X25.png",
-          "./assests/img/services/heliumleaktestservices/image_page_2_7_X27.jpg"
+          "./assests/img/services/heliumleaktestservices/image_page_2_6_X25.webp",
+          "./assests/img/services/heliumleaktestservices/image_page_2_7_X27.webp"
         ]
       },
       {
         name: "Speciality Gas lines helium leak testing",
         images: [
-          "./assests/img/services/heliumleaktestservices/image_page_3_1_X30.jpg",
-          "./assests/img/services/heliumleaktestservices/image_page_3_2_X31.jpg"
+          "./assests/img/services/heliumleaktestservices/image_page_3_1_X30.webp",
+          "./assests/img/services/heliumleaktestservices/image_page_3_2_X31.webp"
         ]
       },
       {
         name: "Vacuum furnace leak testing",
-        images: ["./assests/img/services/heliumleaktestservices/image_page_3_3_X32.jpg"]
+        images: ["./assests/img/services/heliumleaktestservices/image_page_3_3_X32.webp"]
       },
       {
         name: "Air dryer assembly leak testing",
-        images: ["./assests/img/services/heliumleaktestservices/image_page_3_4_X33.jpg"]
+        images: ["./assests/img/services/heliumleaktestservices/image_page_3_4_X33.webp"]
       },
       {
         name: "Helium leak test of control valves at cryo temperatures",
-        images: ["./assests/img/services/heliumleaktestservices/image_page_3_5_X34.jpg"]
+        images: ["./assests/img/services/heliumleaktestservices/image_page_3_5_X34.webp"]
       },
       {
         name: "Aluminum castings Helium Leak testing",
-        images: ["./assests/img/services/heliumleaktestservices/image_page_4_1_X37.jpg"]
+        images: ["./assests/img/services/heliumleaktestservices/image_page_4_1_X37.webp"]
       },
       {
         name: "Helium leak testing of Turbine Balancing Facility vacuum system",
-        images: ["./assests/img/services/heliumleaktestservices/image_page_4_2_X38.jpg"]
+        images: ["./assests/img/services/heliumleaktestservices/image_page_4_2_X38.webp"]
       },
       {
         name: "Heat exchanger helium leak testing",
-        images: ["./assests/img/services/heliumleaktestservices/image_page_4_3_X39.jpg"]
+        images: ["./assests/img/services/heliumleaktestservices/image_page_4_3_X39.webp"]
       },
       {
         name: "Pharma / Bio Reactor vessels leak testing",
-        images: ["./assests/img/services/heliumleaktestservices/image_page_5_1_X43.jpg"]
+        images: ["./assests/img/services/heliumleaktestservices/image_page_5_1_X43.webp"]
       }
     ],
     onSiteAreasTitle: "On-Site Leak Detection Service Areas",
@@ -166,11 +166,11 @@ const servicesData = [
     projects: [
       {
         name: "On-Site Sensor Calibration Unit Setup",
-        images: ["./assests/img/services/vacuumGaugeCalibrationService/image_page_2_1_X17.jpg"]
+        images: ["./assests/img/services/vacuumGaugeCalibrationService/image_page_2_1_X17.webp"]
       },
       {
         name: "Calibration Connections on Chamber System",
-        images: ["./assests/img/services/vacuumGaugeCalibrationService/image_page_2_2_X19.jpg"]
+        images: ["./assests/img/services/vacuumGaugeCalibrationService/image_page_2_2_X19.webp"]
       }
     ]
   },

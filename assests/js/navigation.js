@@ -4,7 +4,7 @@ const nav = document.getElementById("navBarBox");
 nav.innerHTML = `
 <a href="index.html" class="logoBoxA">
   <div class="logo">
-     <img src="./assests/img/common/uvclogo.png" alt="" />
+     <img src="./assests/img/common/uvclogo.webp" alt="" />
   </div>
 </a>
 <div class="navButtons">
@@ -700,7 +700,7 @@ window.updateMetaTags = function (title, description) {
     document.head.appendChild(ogImg);
   }
   const prefix = typeof pathPrefix !== 'undefined' ? pathPrefix : '';
-  ogImg.setAttribute('content', prefix + 'assests/img/products/uvc.jpg');
+  ogImg.setAttribute('content', prefix + 'assests/img/products/uvc.webp');
 
   // OG URL (Absolute URL)
   let ogUrl = document.querySelector('meta[property="og:url"]');

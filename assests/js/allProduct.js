@@ -31,31 +31,31 @@ const datas = [
     {
       title: "Vacuum Measurement ID 1",
       description: "Range: 20 mbar to 0.001 mbar",
-      image: "../img/banners/Frame677.png",
+      image: "../img/banners/Frame677.webp",
       id: 1
     },
     {
       title: "Vacuum Measurement ID 1",
       description: "Range: 20 mbar to 0.001 mbar",
-      image: "../img/banners/Frame677.png",
+      image: "../img/banners/Frame677.webp",
       id: 2
     },
     {
       title: "Vacuum Measurement ID 1",
       description: "Range: 20 mbar to 0.001 mbar",
-      image: "../img/banners/Frame677.png",
+      image: "../img/banners/Frame677.webp",
       id: 3
     },
     {
       title: "Vacuum Measurement ID 1",
       description: "Range: 20 mbar to 0.001 mbar",
-      image: "../img/banners/Frame677.png",
+      image: "../img/banners/Frame677.webp",
       id: 4
     },
     {
       title: "Vacuum Measurement ID 1",
       description: "Range: 20 mbar to 0.001 mbar",
-      image: "../img/banners/Frame677.png",
+      image: "../img/banners/Frame677.webp",
       id: 5
     },
   ],
@@ -63,31 +63,31 @@ const datas = [
     {
       title: "Vacuum Measurement ID 2",
       description: "Range: 20 mbar to 0.001 mbar",
-      image: "../img/banners/Frame677.png",
+      image: "../img/banners/Frame677.webp",
       id: 6
     },
     {
       title: "Vacuum Measurement ID 2",
       description: "Range: 20 mbar to 0.001 mbar",
-      image: "../img/banners/Frame677.png",
+      image: "../img/banners/Frame677.webp",
       id: 7
     },
     {
       title: "Vacuum Measurement ID 2",
       description: "Range: 20 mbar to 0.001 mbar",
-      image: "../img/banners/Frame677.png",
+      image: "../img/banners/Frame677.webp",
       id: 8
     },
     {
       title: "Vacuum Measurement ID 2",
       description: "Range: 20 mbar to 0.001 mbar",
-      image: "../img/banners/Frame677.png",
+      image: "../img/banners/Frame677.webp",
       id: 9
     },
     {
       title: "Vacuum Measurement ID 2",
       description: "Range: 20 mbar to 0.001 mbar",
-      image: "../img/banners/Frame677.png",
+      image: "../img/banners/Frame677.webp",
       id: 10
     },
   ],
@@ -95,31 +95,31 @@ const datas = [
     {
       title: "Vacuum Measurement ID 3",
       description: "Range: 30 mbar to 0.001 mbar",
-      image: "../img/banners/Frame677.png",
+      image: "../img/banners/Frame677.webp",
       id: 11
     },
     {
       title: "Vacuum Measurement ID 3",
       description: "Range: 30 mbar to 0.001 mbar",
-      image: "../img/banners/Frame677.png",
+      image: "../img/banners/Frame677.webp",
       id: 12
     },
     {
       title: "Vacuum Measurement ID 3",
       description: "Range: 30 mbar to 0.001 mbar",
-      image: "../img/banners/Frame677.png",
+      image: "../img/banners/Frame677.webp",
       id: 13
     },
     {
       title: "Vacuum Measurement ID 3",
       description: "Range: 30 mbar to 0.001 mbar",
-      image: "../img/banners/Frame677.png",
+      image: "../img/banners/Frame677.webp",
       id: 14
     },
     {
       title: "Vacuum Measurement ID 3",
       description: "Range: 30 mbar to 0.001 mbar",
-      image: "../img/banners/Frame677.png",
+      image: "../img/banners/Frame677.webp",
       id: 15
     },
   ],
@@ -127,31 +127,31 @@ const datas = [
     {
       title: "Vacuum Measurement ID 4",
       description: "Range: 30 mbar to 0.001 mbar",
-      image: "../img/banners/Frame677.png",
+      image: "../img/banners/Frame677.webp",
       id: 16
     },
     {
       title: "Vacuum Measurement ID 4",
       description: "Range: 30 mbar to 0.001 mbar",
-      image: "../img/banners/Frame677.png",
+      image: "../img/banners/Frame677.webp",
       id: 17
     },
     {
       title: "Vacuum Measurement ID 4",
       description: "Range: 20 mbar to 0.001 mbar",
-      image: "../img/banners/Frame677.png",
+      image: "../img/banners/Frame677.webp",
       id: 18
     },
     {
       title: "Vacuum Measurement ID 4",
       description: "Range: 20 mbar to 0.001 mbar",
-      image: "../img/banners/Frame677.png",
+      image: "../img/banners/Frame677.webp",
       id: 19
     },
     {
       title: "Vacuum Measurement ID 4",
       description: "Range: 20 mbar to 0.001 mbar",
-      image: "../img/banners/Frame677.png",
+      image: "../img/banners/Frame677.webp",
       id: 20
     },
   ],
@@ -159,31 +159,31 @@ const datas = [
     {
       title: "Vacuum Measurement ID 5",
       description: "Range: 20 mbar to 0.001 mbar",
-      image: "../img/banners/Frame677.png",
+      image: "../img/banners/Frame677.webp",
       id: 21
     },
     {
       title: "Vacuum Measurement ID 5",
       description: "Range: 20 mbar to 0.001 mbar",
-      image: "../img/banners/Frame677.png",
+      image: "../img/banners/Frame677.webp",
       id: 22
     },
     {
       title: "Vacuum Measurement ID 5",
       description: "Range: 20 mbar to 0.001 mbar",
-      image: "../img/banners/Frame677.png",
+      image: "../img/banners/Frame677.webp",
       id: 23
     },
     {
       title: "Vacuum Measurement ID 5",
       description: "Range: 20 mbar to 0.001 mbar",
-      image: "../img/banners/Frame677.png",
+      image: "../img/banners/Frame677.webp",
       id: 24
     },
     {
       title: "Vacuum Measurement ID 5",
       description: "Range: 20 mbar to 0.001 mbar",
-      image: "../img/banners/Frame677.png",
+      image: "../img/banners/Frame677.webp",
       id: 25
     },
   ],
@@ -201,7 +201,7 @@ const datas = [
     let div = document.createElement("div");
     div.classList.add("grids");
     // console.log(data);
-    div.innerHTML = ` <img src="./assests/img/banners/Frame677.png" alt="">
+    div.innerHTML = ` <img src="./assests/img/banners/Frame677.webp" alt="">
               <h3>${data.title} </h3>
               <p>${data.description}</p>
               <div class="gridBtn" ><a href="productDetails.html?id=${data.id}">View Product</a></div>`;

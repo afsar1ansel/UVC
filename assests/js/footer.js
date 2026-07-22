@@ -9,7 +9,7 @@ box.id = "footer"
 box.innerHTML = ` <div class="footUp">
           <div class="footup1">
             <div class="logo2" style="margin-bottom: 24px;">
-              <img src="./assests/img/common/uvclogo.png" alt="" style="width: 200px; height: 70px;" />
+              <img src="./assests/img/common/uvclogo.webp" alt="" style="width: 200px; height: 70px;" />
             </div>
             <p>Delivering precision and reliability in every vacuum solution we provide. Trusted by industries across India, we offer comprehensive service from design to after-sales support.</p>
           </div>
@@ -17,19 +17,19 @@ box.innerHTML = ` <div class="footUp">
           <div class="footup3">
             <h3>Company</h3>
             <div class="footup3box">
-              <img src="./assests/img/common/right.png" alt="">
+              <img src="./assests/img/common/right.webp" alt="">
               <a href="about.html"><p>ABOUT</p></a>
             </div>
             <div class="footup3box">
-              <img src="./assests/img/common/right.png" alt="">
+              <img src="./assests/img/common/right.webp" alt="">
               <a href="services.html"><p>SERVICES</p></a>
             </div>
             <div class="footup3box">
-              <img src="./assests/img/common/right.png" alt="">
+              <img src="./assests/img/common/right.webp" alt="">
               <a href="product.html"><p>PRODUCTS</p></a>
             </div>
             <div class="footup3box">
-              <img src="./assests/img/common/right.png" alt="">
+              <img src="./assests/img/common/right.webp" alt="">
               <a href="contact.html"><p>CAREERS</p></a>
             </div>
           </div>
@@ -37,7 +37,7 @@ box.innerHTML = ` <div class="footUp">
           <div class="footup2">
             <h3>Contacts</h3>
             <div class="footup-box">
-   <img src="./assests/img/common/call.png" alt="">
+   <img src="./assests/img/common/call.webp" alt="">
   <p>+91 9886726920 <br> 080 28367059</p>
 </div>
 <div class="footup-box">
@@ -145,9 +145,9 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 //53
-// <div><img src="./assests/img/common/1fb.png" alt=""><img src="./assests/img/common/insta1.png" alt="">
-//             <img src="./assests/img/common/twitter1.png" alt="">
-//           <img src="./assests/img/common/whapp1.png" alt=""></div>
+// <div><img src="./assests/img/common/1fb.webp" alt=""><img src="./assests/img/common/insta1.webp" alt="">
+//             <img src="./assests/img/common/twitter1.webp" alt="">
+//           <img src="./assests/img/common/whapp1.webp" alt=""></div>
 
 
 // line 45
