@@ -341,7 +341,7 @@ cursor: pointer;
   /* height: 590px; */
   padding: 4vw 0;
   background-color: var(--brand-colour-2, #001F3F); /* Solid background color */
-  background-image: url(../img/Group.png); 
+  background-image: url(../img/products/Group.png); 
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1070,7 +1070,7 @@ border: none;
   /* height: 590px; */
   padding: 4vw 0;
   background: linear-gradient(85deg, #0da574 0%, #001f3f 100%),
-    url(../img/Group.png);
+    url(../img/products/Group.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

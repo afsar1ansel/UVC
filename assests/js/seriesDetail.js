@@ -66,9 +66,9 @@ function renderContent(series) {
     const heroImg = document.querySelector("#hero img");
     if (heroImg) {
       if (matchedSeries.category === "MEASUREMENT") {
-        heroImg.src = "./assests/img/products/vacuum measurement 1920x570.png";
+        heroImg.src = "./assests/img/products/vacuum_measurement_1920x570.png";
       } else {
-        heroImg.src = "./assests/img/products/vacuum pumps and systems 1920x570.png";
+        heroImg.src = "./assests/img/products/vacuum_pumps_and_systems_1920x570.png";
       }
     }
   }
@@ -192,7 +192,7 @@ function renderContent(series) {
       let div = document.createElement("div");
       div.classList.add("grids");
 
-      let imgSrc = "./assests/img/Frame677.png";
+      let imgSrc = "./assests/img/banners/Frame677.png";
       if (product.images && product.images.length > 0) {
         imgSrc = product.images[0];
       }

@@ -26,7 +26,7 @@ const products = [
       "./assests/img/products/dprg1gh/DPRG-1GH_back_panel.jpg",
       "./assests/img/products/dprg1gh/S-PR-GH_SENSOR.jpg",
     ],
-    pdf: "./assests/img/products/DECIMAL_DISPLAY/DECIMAL DISPLAY/DPRG-1GH/DPRG-1GH decimal/DPRG_1GH_deciamal_catalog.pdf",
+    pdf: "./assests/img/products/DECIMAL_DISPLAY/DECIMAL_DISPLAY/DPRG-1GH/DPRG-1GH_decimal/DPRG_1GH_deciamal_catalog.pdf",
     specifications: [
       { name: "Number of sensor channels", value: "ONE" },
       { name: "Display Range", value: "1000 mBar to 0.001mBar" },
@@ -82,11 +82,11 @@ const products = [
       "With universal power supply – input voltage from 90 ~ 264VAC, frequency 47 ~ 440Hz",
     ],
     images: [
-      "./assests/img/products/DECIMAL_DISPLAY/DECIMAL DISPLAY/DPRG-2GH/DPRG 2GH decimal display full set.jpg",
-      "./assests/img/products/DECIMAL_DISPLAY/DECIMAL DISPLAY/DPRG-2GH/S-PR-GH SENSOR.jpg",
-      "./assests/img/products/DECIMAL_DISPLAY/DECIMAL DISPLAY/DPRG-2GH/DPRG 2GH rear panel.jpg",
+      "./assests/img/products/DECIMAL_DISPLAY/DECIMAL_DISPLAY/DPRG-2GH/DPRG_2GH_decimal_display_full_set.jpg",
+      "./assests/img/products/DECIMAL_DISPLAY/DECIMAL_DISPLAY/DPRG-2GH/S-PR-GH_SENSOR.jpg",
+      "./assests/img/products/DECIMAL_DISPLAY/DECIMAL_DISPLAY/DPRG-2GH/DPRG_2GH_rear_panel.jpg",
     ],
-    pdf: "./assests/img/products/DECIMAL_DISPLAY/DECIMAL DISPLAY/DPRG-2GH/DPRG_2GH_decimal_catalog.pdf",
+    pdf: "./assests/img/products/DECIMAL_DISPLAY/DECIMAL_DISPLAY/DPRG-2GH/DPRG_2GH_decimal_catalog.pdf",
     specifications: [
       { name: "Number of sensor channels", value: "TWO" },
       { name: "Display Range", value: "1000 mBar to 0.001mBar" },
@@ -147,13 +147,13 @@ point
       "with universal power supply – input voltage from 90 ~ 264VAC, ",
     ],
     images: [
-      "./assests/img/products/DECIMAL_DISPLAY/DECIMAL DISPLAY/DPRG-1GH-SP/DPRG 1GH SP decimal display full set.jpg",
-      "./assests/img/products/DECIMAL_DISPLAY/DECIMAL DISPLAY/DPRG-1GH-SP/DPRG-1GH-SP decimal front panel.jpg",
-      "./assests/img/products/DECIMAL_DISPLAY/DECIMAL DISPLAY/DPRG-1GH-SP/DPRG-1GH-SP DECIMAL BACK PANEL.jpg",
-      "./assests/img/products/DECIMAL_DISPLAY/DECIMAL DISPLAY/DPRG-1GH-SP/Digital Pirani Guage - DPRG-1GH-SP microns.jpg",
-      "./assests/img/products/DECIMAL_DISPLAY/DECIMAL DISPLAY/DPRG-1GH-SP/S-PR-GH SENSOR.jpg",
+      "./assests/img/products/DECIMAL_DISPLAY/DECIMAL_DISPLAY/DPRG-1GH-SP/DPRG_1GH_SP_decimal_display_full_set.jpg",
+      "./assests/img/products/DECIMAL_DISPLAY/DECIMAL_DISPLAY/DPRG-1GH-SP/DPRG-1GH-SP_decimal_front_panel.jpg",
+      "./assests/img/products/DECIMAL_DISPLAY/DECIMAL_DISPLAY/DPRG-1GH-SP/DPRG-1GH-SP_DECIMAL_BACK_PANEL.jpg",
+      "./assests/img/products/DECIMAL_DISPLAY/DECIMAL_DISPLAY/DPRG-1GH-SP/Digital_Pirani_Guage_-_DPRG-1GH-SP_microns.jpg",
+      "./assests/img/products/DECIMAL_DISPLAY/DECIMAL_DISPLAY/DPRG-1GH-SP/S-PR-GH_SENSOR.jpg",
     ],
-    pdf: "./assests/img/products/DECIMAL_DISPLAY/DECIMAL DISPLAY/DPRG-1GH-SP/DPRG_1GH_SP_decimal_catalog.pdf",
+    pdf: "./assests/img/products/DECIMAL_DISPLAY/DECIMAL_DISPLAY/DPRG-1GH-SP/DPRG_1GH_SP_decimal_catalog.pdf",
     specifications: [
       { name: "Number of sensor channels", value: "TWO" },
       { name: "Display Range", value: "1000 mBar to 0.001mBar." },
@@ -219,10 +219,10 @@ The calibration certificates are available only on request at additional cost. P
     ],
     images: [
       "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRqGQ4RWrnDpzqV0NbIwlDSMfxB_P4okEa8mzH0VOcUdCC7MFQR",
-      "./assests/img/products/DECIMAL_DISPLAY/DECIMAL DISPLAY/DPRG-1GH-2SP/1gh2sp.png",
+      "./assests/img/products/DECIMAL_DISPLAY/DECIMAL_DISPLAY/DPRG-1GH-2SP/1gh2sp.png",
       "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQIZaYaDf_0SeV5q4MuTuSO3a997Qz7XpCUTGkOwJnWx6wnXPB9",
     ],
-    pdf: "./assests/img/products/DECIMAL_DISPLAY/DECIMAL DISPLAY/DPRG-1GH-2SP/DPRG-1GH-2SP decimal catalog.pdf",
+    pdf: "./assests/img/products/DECIMAL_DISPLAY/DECIMAL_DISPLAY/DPRG-1GH-2SP/DPRG-1GH-2SP_decimal_catalog.pdf",
     specifications: [
       { name: "Number of sensor channels", value: "ONE" },
       { name: "Display Range", value: "1000 mBar to 0.001mBar" },
@@ -284,12 +284,12 @@ The calibration certificates are available only on request at additional cost. P
       "Two independent relay setpoints for process control",
     ],
     images: [
-      "./assests/img/products/DECIMAL_DISPLAY/DECIMAL DISPLAY/DPRG-2GH-SP/DPRG-2GH-SP decimal full set.jpg",
-      "./assests/img/products/DECIMAL_DISPLAY/DECIMAL DISPLAY/DPRG-2GH-SP/DPRG-2GH-SP DECIMAL FRONT PANEL.jpg",
-      "./assests/img/products/DECIMAL_DISPLAY/DECIMAL DISPLAY/DPRG-2GH-SP/DPRG-2GH-SP BACK PANEL.jpg",
-      "./assests/img/products/DECIMAL_DISPLAY/DECIMAL DISPLAY/DPRG-2GH-SP/S-PR-GH SENSOR.jpg",
+      "./assests/img/products/DECIMAL_DISPLAY/DECIMAL_DISPLAY/DPRG-2GH-SP/DPRG-2GH-SP_decimal_full_set.jpg",
+      "./assests/img/products/DECIMAL_DISPLAY/DECIMAL_DISPLAY/DPRG-2GH-SP/DPRG-2GH-SP_DECIMAL_FRONT_PANEL.jpg",
+      "./assests/img/products/DECIMAL_DISPLAY/DECIMAL_DISPLAY/DPRG-2GH-SP/DPRG-2GH-SP_BACK_PANEL.jpg",
+      "./assests/img/products/DECIMAL_DISPLAY/DECIMAL_DISPLAY/DPRG-2GH-SP/S-PR-GH_SENSOR.jpg",
     ],
-    pdf: "./assests/img/products/DECIMAL_DISPLAY/DECIMAL DISPLAY/DPRG-2GH-SP/DPRG_2GH_SP_decimal_catalog.pdf",
+    pdf: "./assests/img/products/DECIMAL_DISPLAY/DECIMAL_DISPLAY/DPRG-2GH-SP/DPRG_2GH_SP_decimal_catalog.pdf",
     specifications: [
       { name: "Number of sensor channels", value: "TWO" },
       { name: "Display Range", value: "1000 mBar to 0.001mBar" },
@@ -353,11 +353,11 @@ The calibration certificates are available only on request at additional cost. P
       "With universal power supply – input voltage from 90 ~ 264VAC, frequency 47 ~ 440Hz",
     ],
     images: [
-      "./assests/img/products/DECIMAL_DISPLAY/EXPONENTIAL_DISPLAY/EXPONENTIAL DISPLAY/DPRG-1GH/DPRG 1GH exponential display  full set.jpg",
-      "./assests/img/products/DECIMAL_DISPLAY/EXPONENTIAL_DISPLAY/EXPONENTIAL DISPLAY/DPRG-1GH/DPRG-1GH back panel.jpg",
-      "./assests/img/products/DECIMAL_DISPLAY/EXPONENTIAL_DISPLAY/EXPONENTIAL DISPLAY/DPRG-1GH/S-PR-GH SENSOR.jpg",
+      "./assests/img/products/DECIMAL_DISPLAY/EXPONENTIAL_DISPLAY/EXPONENTIAL_DISPLAY/DPRG-1GH/DPRG_1GH_exponential_display__full_set.jpg",
+      "./assests/img/products/DECIMAL_DISPLAY/EXPONENTIAL_DISPLAY/EXPONENTIAL_DISPLAY/DPRG-1GH/DPRG-1GH_back_panel.jpg",
+      "./assests/img/products/DECIMAL_DISPLAY/EXPONENTIAL_DISPLAY/EXPONENTIAL_DISPLAY/DPRG-1GH/S-PR-GH_SENSOR.jpg",
     ],
-    pdf: "./assests/img/products/DECIMAL_DISPLAY/EXPONENTIAL_DISPLAY/EXPONENTIAL DISPLAY/DPRG-1GH/DPRG_1GH_EXPONENTIAL.pdf",
+    pdf: "./assests/img/products/DECIMAL_DISPLAY/EXPONENTIAL_DISPLAY/EXPONENTIAL_DISPLAY/DPRG-1GH/DPRG_1GH_EXPONENTIAL.pdf",
     specifications: [
       { name: "Number of sensor channels", value: "ONE" },
       { name: "Display Range", value: "1000 mBar to 0.001mBar" },
@@ -419,13 +419,13 @@ The calibration certificates are available only on request at additional cost. P
       "With universal power supply – input voltage from 90 ~ 264VAC",
     ],
     images: [
-      "./assests/img/products/DECIMAL_DISPLAY/EXPONENTIAL_DISPLAY/EXPONENTIAL DISPLAY/DPRG-1GH-SP/DPRG 1GH SP exponential display full set.jpg",
-      "./assests/img/products/DECIMAL_DISPLAY/EXPONENTIAL_DISPLAY/EXPONENTIAL DISPLAY/DPRG-1GH-SP/DPRG-1GH-SP  exponential full set.jpg",
-      "./assests/img/products/DECIMAL_DISPLAY/EXPONENTIAL_DISPLAY/EXPONENTIAL DISPLAY/DPRG-1GH-SP/DPRG-1GH-SP EXPONENTIAL BACK PANEL.jpg",
-      "./assests/img/products/DECIMAL_DISPLAY/EXPONENTIAL_DISPLAY/EXPONENTIAL DISPLAY/DPRG-1GH-SP/DRPG-1GH-SP Expo Dis.jpg",
-      "./assests/img/products/DECIMAL_DISPLAY/EXPONENTIAL_DISPLAY/EXPONENTIAL DISPLAY/DPRG-1GH-SP/S-PR-GH SENSOR.jpg",
+      "./assests/img/products/DECIMAL_DISPLAY/EXPONENTIAL_DISPLAY/EXPONENTIAL_DISPLAY/DPRG-1GH-SP/DPRG_1GH_SP_exponential_display_full_set.jpg",
+      "./assests/img/products/DECIMAL_DISPLAY/EXPONENTIAL_DISPLAY/EXPONENTIAL_DISPLAY/DPRG-1GH-SP/DPRG-1GH-SP__exponential_full_set.jpg",
+      "./assests/img/products/DECIMAL_DISPLAY/EXPONENTIAL_DISPLAY/EXPONENTIAL_DISPLAY/DPRG-1GH-SP/DPRG-1GH-SP_EXPONENTIAL_BACK_PANEL.jpg",
+      "./assests/img/products/DECIMAL_DISPLAY/EXPONENTIAL_DISPLAY/EXPONENTIAL_DISPLAY/DPRG-1GH-SP/DRPG-1GH-SP_Expo_Dis.jpg",
+      "./assests/img/products/DECIMAL_DISPLAY/EXPONENTIAL_DISPLAY/EXPONENTIAL_DISPLAY/DPRG-1GH-SP/S-PR-GH_SENSOR.jpg",
     ],
-    pdf: "./assests/img/products/DECIMAL_DISPLAY/EXPONENTIAL_DISPLAY/EXPONENTIAL DISPLAY/DPRG-1GH-SP/DPRG_1GH_SP_EXPONENTIAL.pdf",
+    pdf: "./assests/img/products/DECIMAL_DISPLAY/EXPONENTIAL_DISPLAY/EXPONENTIAL_DISPLAY/DPRG-1GH-SP/DPRG_1GH_SP_EXPONENTIAL.pdf",
     specifications: [
       { name: "Number of sensor channels", value: "ONE" },
       { name: "Display Range", value: "1000 mBar to 0.001mBar" },
@@ -500,12 +500,12 @@ The calibration certificates are available only on request at additional cost. P
       "With universal power supply – input voltage from 90 ~ 264VAC",
     ],
     images: [
-      "./assests/img/products/DECIMAL_DISPLAY/EXPONENTIAL_DISPLAY/EXPONENTIAL DISPLAY/DPRG-2GH-SP/DPRG-2GH-SP FULL SET EXPONENTIAL.jpg",
-      "./assests/img/products/DECIMAL_DISPLAY/EXPONENTIAL_DISPLAY/EXPONENTIAL DISPLAY/DPRG-2GH-SP/DPRG-2GH-SP back panel full set.jpg",
-      "./assests/img/products/DECIMAL_DISPLAY/EXPONENTIAL_DISPLAY/EXPONENTIAL DISPLAY/DPRG-2GH-SP/DPRG-2GH-SP BACK PANEL.jpg",
-      "./assests/img/products/DECIMAL_DISPLAY/EXPONENTIAL_DISPLAY/EXPONENTIAL DISPLAY/DPRG-2GH-SP/S-PR-GH SENSOR.jpg",
+      "./assests/img/products/DECIMAL_DISPLAY/EXPONENTIAL_DISPLAY/EXPONENTIAL_DISPLAY/DPRG-2GH-SP/DPRG-2GH-SP_FULL_SET_EXPONENTIAL.jpg",
+      "./assests/img/products/DECIMAL_DISPLAY/EXPONENTIAL_DISPLAY/EXPONENTIAL_DISPLAY/DPRG-2GH-SP/DPRG-2GH-SP_back_panel_full_set.jpg",
+      "./assests/img/products/DECIMAL_DISPLAY/EXPONENTIAL_DISPLAY/EXPONENTIAL_DISPLAY/DPRG-2GH-SP/DPRG-2GH-SP_BACK_PANEL.jpg",
+      "./assests/img/products/DECIMAL_DISPLAY/EXPONENTIAL_DISPLAY/EXPONENTIAL_DISPLAY/DPRG-2GH-SP/S-PR-GH_SENSOR.jpg",
     ],
-    pdf: "./assests/img/products/DECIMAL_DISPLAY/EXPONENTIAL_DISPLAY/EXPONENTIAL DISPLAY/DPRG-2GH-SP/DPRG_2GH_SP_exponential_catalog.pdf",
+    pdf: "./assests/img/products/DECIMAL_DISPLAY/EXPONENTIAL_DISPLAY/EXPONENTIAL_DISPLAY/DPRG-2GH-SP/DPRG_2GH_SP_exponential_catalog.pdf",
     specifications: [
       { name: "Number of sensor channels", value: "TWO" },
       { name: "Display Range", value: "1000 mBar to 0.001mBar" },
@@ -585,11 +585,11 @@ The calibration certificates are available only on request at additional cost. P
       "With universal power supply – input voltage from 90 ~ 264VAC, frequency 47 ~ 440Hz",
     ],
     images: [
-      "./assests/img/products/DECIMAL_DISPLAY/EXPONENTIAL_DISPLAY/EXPONENTIAL DISPLAY/DPRG-2GH/DPRG 2GH expential display full set.jpg",
-      "./assests/img/products/DECIMAL_DISPLAY/EXPONENTIAL_DISPLAY/EXPONENTIAL DISPLAY/DPRG-2GH/DPRG 2GH rear panel.jpg",
-      "./assests/img/products/DECIMAL_DISPLAY/EXPONENTIAL_DISPLAY/EXPONENTIAL DISPLAY/DPRG-2GH/S-PR-GH SENSOR.jpg",
+      "./assests/img/products/DECIMAL_DISPLAY/EXPONENTIAL_DISPLAY/EXPONENTIAL_DISPLAY/DPRG-2GH/DPRG_2GH_expential_display_full_set.jpg",
+      "./assests/img/products/DECIMAL_DISPLAY/EXPONENTIAL_DISPLAY/EXPONENTIAL_DISPLAY/DPRG-2GH/DPRG_2GH_rear_panel.jpg",
+      "./assests/img/products/DECIMAL_DISPLAY/EXPONENTIAL_DISPLAY/EXPONENTIAL_DISPLAY/DPRG-2GH/S-PR-GH_SENSOR.jpg",
     ],
-    pdf: "./assests/img/products/DECIMAL_DISPLAY/EXPONENTIAL_DISPLAY/EXPONENTIAL DISPLAY/DPRG-2GH/DPRG_2GH_exponential_catalog.pdf",
+    pdf: "./assests/img/products/DECIMAL_DISPLAY/EXPONENTIAL_DISPLAY/EXPONENTIAL_DISPLAY/DPRG-2GH/DPRG_2GH_exponential_catalog.pdf",
     specifications: [
       { name: "Number of sensor channels", value: "TWO" },
       { name: "Display Range", value: "1000 mBar to 0.001mBar" },
@@ -656,7 +656,7 @@ The advantage of this vacuum gauge FLEXA series is that the sensor tube has buil
       "interchangeability of the sensor possible without disturbing the display unit.",
     ],
     images: [
-      "./assests/img/products/FLEXA_SERIES/FLEXA SERIES/DECIMAL DISPLAY/FGD-1GH/FGD 1GH/FGD!Gh.jpeg",
+      "./assests/img/products/FLEXA_SERIES/FLEXA_SERIES/DECIMAL_DISPLAY/FGD-1GH/FGD_1GH/FGD!Gh.jpeg",
     ],
     pdf: "./assests/download/VACUUM_GAUGES _CATALOGS_DOWNLOAD_FOLDER/FLEXA/FGD-1GH catalog.pdf",
     specifications: [
@@ -772,8 +772,8 @@ With this, a 1:1 replacement of the sensor with the display unit is established,
     end: `Unique Vacuum Solutions offers a convenient recalibration service to help users of vacuum measurement pirani/thermocouple/full range gauges to maintain all of their vacuum gauges in certified and peak condition, regardless of the original manufacturer. All makes of vacuum gauges can also be calibrated/repaired if required.
 The calibration certificates are available only on request at additional cost. Please contact before ordering.`,
     images: [
-      "./assests/img/products/FLEXA_SERIES/FLEXA SERIES/DECIMAL DISPLAY/FGD-2GH/FGD 2GH/fdg-2gh.jpeg",
-      "./assests/img/products/FLEXA_SERIES/FLEXA SERIES/DECIMAL DISPLAY/FGD-2GH/FGD 2GH/FGD-2GH backpanel.jpg",
+      "./assests/img/products/FLEXA_SERIES/FLEXA_SERIES/DECIMAL_DISPLAY/FGD-2GH/FGD_2GH/fdg-2gh.jpeg",
+      "./assests/img/products/FLEXA_SERIES/FLEXA_SERIES/DECIMAL_DISPLAY/FGD-2GH/FGD_2GH/FGD-2GH_backpanel.jpg",
     ],
     pdf: "./assests/download/VACUUM_GAUGES _CATALOGS_DOWNLOAD_FOLDER/FLEXA/FGD-2GH decimal catalog.pdf",
   },
@@ -855,7 +855,7 @@ With this, a 1:1 replacement of the sensor with the display unit is established,
     end: `Unique Vacuum Solutions offers a convenient recalibration service to help users of vacuum measurement pirani/thermocouple/full range gauges to maintain all of their vacuum gauges in certified and peak condition, regardless of the original manufacturer. All makes of vacuum gauges can also be calibrated/repaired if required.
 The calibration certificates are available only on request at additional cost. Please contact before ordering.`,
     images: [
-      "./assests/img/products/FLEXA_SERIES/FLEXA SERIES/DECIMAL DISPLAY/FGD-2GH-SP/FGD 2GH SP/fdg2ghsp.jpeg",
+      "./assests/img/products/FLEXA_SERIES/FLEXA_SERIES/DECIMAL_DISPLAY/FGD-2GH-SP/FGD_2GH_SP/fdg2ghsp.jpeg",
     ],
     pdf: "./assests/download/VACUUM_GAUGES _CATALOGS_DOWNLOAD_FOLDER/FLEXA/FGD-2GH-SP catalog.pdf",
   },
@@ -935,7 +935,7 @@ With this, a 1:1 replacement of the sensor with the display unit is established,
     end: `Unique Vacuum Solutions offers a convenient recalibration service to help users of vacuum measurement pirani/thermocouple/full range gauges to maintain all of their vacuum gauges in certified and peak condition, regardless of the original manufacturer. All makes of vacuum gauges can also be calibrated/repaired if required.
 The calibration certificates are available only on request at additional cost. Please contact before ordering.`,
     images: [
-      "./assests/img/products/FLEXA_SERIES/FLEXA SERIES/DECIMAL DISPLAY/FGD-1GH-2SP/FGD 1GH 2SP/fgd1gh2sp.jpeg",
+      "./assests/img/products/FLEXA_SERIES/FLEXA_SERIES/DECIMAL_DISPLAY/FGD-1GH-2SP/FGD_1GH_2SP/fgd1gh2sp.jpeg",
     ],
     pdf: "./assests/download/VACUUM_GAUGES _CATALOGS_DOWNLOAD_FOLDER/FLEXA/FGD-1GH-2SP PASCALS catalog.pdf",
   },
@@ -1011,8 +1011,8 @@ With this, a 1:1 replacement of the sensor with the display unit is established,
     end: `Unique Vacuum Solutions offers a convenient recalibration service to help users of vacuum measurement pirani/thermocouple/full range gauges to maintain all of their vacuum gauges in certified and peak condition, regardless of the original manufacturer. All makes of vacuum gauges can also be calibrated/repaired if required.
 The calibration certificates are available only on request at additional cost. Please contact before ordering.`,
     images: [
-      "./assests/img/products/FLEXA_SERIES/FLEXA SERIES/EXPONENTIAL DISPLAY/FGE-1GH/FGE 1GH/fge-1gh.jpeg",
-      "./assests/img/products/FLEXA_SERIES/FLEXA SERIES/EXPONENTIAL DISPLAY/FGE-1GH/FGE 1GH/flexa pirani back view complete set.jpg",
+      "./assests/img/products/FLEXA_SERIES/FLEXA_SERIES/EXPONENTIAL_DISPLAY/FGE-1GH/FGE_1GH/fge-1gh.jpeg",
+      "./assests/img/products/FLEXA_SERIES/FLEXA_SERIES/EXPONENTIAL_DISPLAY/FGE-1GH/FGE_1GH/flexa_pirani_back_view_complete_set.jpg",
     ],
     pdf: "./assests/download/VACUUM_GAUGES _CATALOGS_DOWNLOAD_FOLDER/FLEXA/FGE-1GH catalog.pdf",
   },
@@ -1096,7 +1096,7 @@ With this, a 1:1 replacement of the sensor with the display unit is established,
 
 The calibration certificates are available only on request at additional cost. Please contact before ordering.`,
     images: [
-      "./assests/img/products/FLEXA_SERIES/FLEXA SERIES/EXPONENTIAL DISPLAY/FGE-1GH-SP/FGE 1GH SP/FGE-1GH-SP.jpeg",
+      "./assests/img/products/FLEXA_SERIES/FLEXA_SERIES/EXPONENTIAL_DISPLAY/FGE-1GH-SP/FGE_1GH_SP/FGE-1GH-SP.jpeg",
     ],
     pdf: "./assests/download/VACUUM_GAUGES _CATALOGS_DOWNLOAD_FOLDER/FLEXA/FGE-1GH-SP decimal catalog.pdf",
   },
@@ -1154,7 +1154,7 @@ With this, a 1:1 replacement of the sensor with the display controller unit is e
 
 The calibration certificates are available only on request at additional cost. Please contact before ordering.`,
     images: [
-      "./assests/img/products/FLEXA_SERIES/FLEXA SERIES/FG-05A LINEAR OUTPUT SENSOR/fg05a.jpeg",
+      "./assests/img/products/FLEXA_SERIES/FLEXA_SERIES/FG-05A_LINEAR_OUTPUT_SENSOR/fg05a.jpeg",
     ],
     pdf: "./assests/download/VACUUM_GAUGES _CATALOGS_DOWNLOAD_FOLDER/FLEXA/FG-05A CATALOG.pdf",
   },
@@ -1226,8 +1226,7 @@ The device displays vacuum measurements from 0.001mBar to 20mBar using FG-04 sen
     end: `Unique Vacuum Solutions offers a convenient recalibration service to help users of vacuum measurement Pirani, thermocouple, or full-range gauges maintain all their vacuum gauges in certified and peak condition, regardless of the original manufacturer. 
 Calibration certificates are available upon request for an additional cost.`,
     images: [
-      "./assests/img/products/FLEXA_SERIES/FLEXA SERIES/EXPONENTIAL DISPLAY/FGE-2GH-SP/FGE-2GH-SP/FGE-2GH-SP.jpeg",
-      "./assests/img/products/FLEXA_SERIES/FLEXA SERIES/EXPONENTIAL DISPLAY/FGE-2GH/FGE 2GH/FGD-2GH backpanel.jpg",
+      "./assests/img/products/FLEXA_SERIES/FLEXA_SERIES/EXPONENTIAL_DISPLAY/FGE-2GH-SP/FGE-2GH-SP/FGE-2GH-SP.jpeg",
     ],
     pdf: "./assests/download/VACUUM_GAUGES _CATALOGS_DOWNLOAD_FOLDER/FLEXA/FGE-2GH-SP catalog.pdf",
   },
@@ -1274,7 +1273,7 @@ This sensor covers the range from 0.001 mBar to 20 mBar and integrates built-in 
     ],
     end: `Unique Vacuum Solutions offers recalibration services to maintain vacuum sensors in certified, peak condition. Calibration certificates are available upon request at additional cost.`,
     images: [
-      "./assests/img/products/FLEXA_SERIES/FLEXA SERIES/FG-04 SENSOR/FLEXA SENSOR FG-04/flexa sensor.jpg",
+      "./assests/img/products/FLEXA_SERIES/FLEXA_SERIES/FG-04_SENSOR/FLEXA_SENSOR_FG-04/flexa_sensor.jpg",
     ],
     pdf: "./assests/download/VACUUM_GAUGES _CATALOGS_DOWNLOAD_FOLDER/FLEXA/FLEXA sensor FG-04 catalog.pdf",
   },
@@ -1337,13 +1336,13 @@ This sensor covers the range from 0.001 mBar to 20 mBar and integrates built-in 
     ],
     end: `Factory-calibrated for accurate vacuum measurement, with adjustment options for specific ranges. Calibration certificates are available on request.`,
     images: [
-      "./assests/img/products/HYBRID SERIES/DECIMAL DISPLAY/HPRGD-1GH-SP/HPRGD-1GH-SP/IMG_3820.jpg",
-      "./assests/img/products/HYBRID SERIES/DECIMAL DISPLAY/HPRGD-1GH-SP/HPRGD-1GH-SP/IMG_3821.jpg",
-      "./assests/img/products/HYBRID SERIES/DECIMAL DISPLAY/HPRGD-1GH-SP/HPRGD-1GH-SP/IMG_3822.jpg",
-      "./assests/img/products/HYBRID SERIES/DECIMAL DISPLAY/HPRGD-1GH-SP/HPRGD-1GH-SP/IMG_3823.jpg",
-      "./assests/img/products/HYBRID SERIES/DECIMAL DISPLAY/HPRGD-1GH-SP/HPRGD-1GH-SP/IMG_3824.jpg",
-      "./assests/img/products/HYBRID SERIES/DECIMAL DISPLAY/HPRGD-1GH-SP/HPRGD-1GH-SP/IMG_3825.jpg",
-      "./assests/img/products/HYBRID SERIES/DECIMAL DISPLAY/HPRGD-1GH-SP/HPRGD-1GH-SP/hybrid pirani back view assembly.jpg",
+      "./assests/img/products/HYBRID_SERIES/DECIMAL_DISPLAY/HPRGD-1GH-SP/HPRGD-1GH-SP/IMG_3820.jpg",
+      "./assests/img/products/HYBRID_SERIES/DECIMAL_DISPLAY/HPRGD-1GH-SP/HPRGD-1GH-SP/IMG_3821.jpg",
+      "./assests/img/products/HYBRID_SERIES/DECIMAL_DISPLAY/HPRGD-1GH-SP/HPRGD-1GH-SP/IMG_3822.jpg",
+      "./assests/img/products/HYBRID_SERIES/DECIMAL_DISPLAY/HPRGD-1GH-SP/HPRGD-1GH-SP/IMG_3823.jpg",
+      "./assests/img/products/HYBRID_SERIES/DECIMAL_DISPLAY/HPRGD-1GH-SP/HPRGD-1GH-SP/IMG_3824.jpg",
+      "./assests/img/products/HYBRID_SERIES/DECIMAL_DISPLAY/HPRGD-1GH-SP/HPRGD-1GH-SP/IMG_3825.jpg",
+      "./assests/img/products/HYBRID_SERIES/DECIMAL_DISPLAY/HPRGD-1GH-SP/HPRGD-1GH-SP/hybrid_pirani_back_view_assembly.jpg",
     ],
     pdf: "./assests/download/VACUUM_GAUGES _CATALOGS_DOWNLOAD_FOLDER/HYBRID/hybrid pirani gauge model HPRGD-1GH-SP.pdf",
   },
@@ -1433,8 +1432,8 @@ The HPRG-1GH-SP Digital Pirani Vacuum Gauge, with the S-EPR-GH sensor, delivers 
     ],
     end: `Factory-calibrated for accurate vacuum measurement, with adjustment options for specific ranges. Calibration certificates are available on request.`,
     images: [
-      "./assests/img/products/HYBRID SERIES/EXPONENTIAL DISPLAY/HPRGE-1GH-SP/HPRGE-1GH-SP/hprge_gh_sp1.jpeg",
-      "./assests/img/products/HYBRID SERIES/EXPONENTIAL DISPLAY/HPRGE-1GH-SP/HPRGE-1GH-SP/hybrid pirani back view assembly.jpg",
+      "./assests/img/products/HYBRID_SERIES/EXPONENTIAL_DISPLAY/HPRGE-1GH-SP/HPRGE-1GH-SP/hprge_gh_sp1.jpeg",
+      "./assests/img/products/HYBRID_SERIES/EXPONENTIAL_DISPLAY/HPRGE-1GH-SP/HPRGE-1GH-SP/hybrid_pirani_back_view_assembly.jpg",
     ],
     pdf: "./assests/download/VACUUM_GAUGES _CATALOGS_DOWNLOAD_FOLDER/HYBRID/hybrid pirani gauge model HPRGE-1GH-SP exponential.pdf",
   },
@@ -1487,9 +1486,9 @@ The HPRG-1GH-SP Digital Pirani Vacuum Gauge, with the S-EPR-GH sensor, delivers 
       { name: "Overall Dimensions", value: "92W X 92H X 110D mm" },
     ],
     images: [
-      "./assests/img/products/HYBRID SERIES/EXPONENTIAL DISPLAY/HPRGE-2GH/HPRGE-2GH/20201219_130721.jpg",
-      "./assests/img/products/HYBRID SERIES/EXPONENTIAL DISPLAY/HPRGE-2GH/HPRGE-2GH/20201219_130848.jpg",
-      "./assests/img/products/HYBRID SERIES/EXPONENTIAL DISPLAY/HPRGE-2GH/HPRGE-2GH/20201219_130924.jpg",
+      "./assests/img/products/HYBRID_SERIES/EXPONENTIAL_DISPLAY/HPRGE-2GH/HPRGE-2GH/20201219_130721.jpg",
+      "./assests/img/products/HYBRID_SERIES/EXPONENTIAL_DISPLAY/HPRGE-2GH/HPRGE-2GH/20201219_130848.jpg",
+      "./assests/img/products/HYBRID_SERIES/EXPONENTIAL_DISPLAY/HPRGE-2GH/HPRGE-2GH/20201219_130924.jpg",
     ],
     pdf: "./assests/download/VACUUM_GAUGES _CATALOGS_DOWNLOAD_FOLDER/HYBRID/hybrid pirani gauge model HPRGE-2GH.pdf",
   },
@@ -1557,8 +1556,7 @@ The FLEXA FGE-2GH Digital Pirani Vacuum Gauge Controller provides precise and re
     end: `
 Factory-calibrated sensors ensure accurate measurements with minimal dependency on adjustments. Optional calibration services and certificates are available on request at additional cost.`,
     images: [
-      "./assests/img/products/FLEXA_SERIES/FLEXA SERIES/EXPONENTIAL DISPLAY/FGE-2GH/FGE 2GH/FGE-2GH.jpeg",
-      "./assests/img/products/FLEXA_SERIES/FLEXA SERIES/EXPONENTIAL DISPLAY/FGE-2GH/FGE 2GH/FGD-2GH backpanel.jpg",
+      "./assests/img/products/FLEXA_SERIES/FLEXA_SERIES/EXPONENTIAL_DISPLAY/FGE-2GH/FGE_2GH/FGE-2GH.jpeg",
     ],
     pdf: "./assests/download/VACUUM_GAUGES _CATALOGS_DOWNLOAD_FOLDER/FLEXA/FGE-2GH catalog.pdf",
   },
@@ -1628,10 +1626,10 @@ The FLEXA FG-1GH-SP Digital Pirani Vacuum Gauge Controller is designed for preci
     end: `
 Unique Vacuum Solutions offers recalibration services to ensure your vacuum gauge remains in certified and peak condition. Calibration certificates are available on request at an additional cost.`,
     images: [
-      "./assests/img/products/FLEXA_SERIES/FLEXA SERIES/DECIMAL DISPLAY/FGD-1GH-SP/FGD 1GH SP/flexa pirani FGD-1GH-SP complete set dec.jpg",
-      "./assests/img/products/FLEXA_SERIES/FLEXA SERIES/DECIMAL DISPLAY/FGD-1GH-SP/FGD 1GH SP/flexa pirani gauge FGD-1GH-SP dec front bazel.jpg",
-      "./assests/img/products/FLEXA_SERIES/FLEXA SERIES/DECIMAL DISPLAY/FGD-1GH-SP/FGD 1GH SP/flexa pirani back view complete set.jpg",
-      "./assests/img/products/FLEXA_SERIES/FLEXA SERIES/DECIMAL DISPLAY/FGD-1GH-SP/FGD 1GH SP/flexa sensor.jpg",
+      "./assests/img/products/FLEXA_SERIES/FLEXA_SERIES/DECIMAL_DISPLAY/FGD-1GH-SP/FGD_1GH_SP/flexa_pirani_FGD-1GH-SP_complete_set_dec.jpg",
+      "./assests/img/products/FLEXA_SERIES/FLEXA_SERIES/DECIMAL_DISPLAY/FGD-1GH-SP/FGD_1GH_SP/flexa_pirani_gauge_FGD-1GH-SP_dec_front_bazel.jpg",
+      "./assests/img/products/FLEXA_SERIES/FLEXA_SERIES/DECIMAL_DISPLAY/FGD-1GH-SP/FGD_1GH_SP/flexa_pirani_back_view_complete_set.jpg",
+      "./assests/img/products/FLEXA_SERIES/FLEXA_SERIES/DECIMAL_DISPLAY/FGD-1GH-SP/FGD_1GH_SP/flexa_sensor.jpg",
     ],
     pdf: "./assests/download/VACUUM_GAUGES _CATALOGS_DOWNLOAD_FOLDER/FLEXA/FGD-1GH-SP decimal catalog.pdf",
   },
@@ -1982,8 +1980,8 @@ The HVP-4 OnePirani is a reliable, robust, and cost-effective solution for preci
     ],
     end: "The HVP-5 OnePirani is a reliable, ultra-wide-range vacuum transducer that provides excellent performance for a variety of industrial and research applications. Its advanced technology, broad compatibility, and ease of use make it an ideal solution for precise and cost-effective vacuum measurement.",
     images: [
-      "./assests/img/products/OnePirani-SERIES/HVP-5/HVP5 photo.jpg",
-      "./assests/img/products/OnePirani-SERIES/HVP-5/HVP5 part number selection guide.jpg",
+      "./assests/img/products/OnePirani-SERIES/HVP-5/HVP5_photo.jpg",
+      "./assests/img/products/OnePirani-SERIES/HVP-5/HVP5_part_number_selection_guide.jpg",
     ],
     pdf: "./assests/download/VACUUM_GAUGES _CATALOGS_DOWNLOAD_FOLDER/OnePirani/HVP-5.pdf",
   },
@@ -2209,8 +2207,8 @@ The HVP-4 OnePirani is a reliable, robust, and cost-effective solution for preci
     ],
     end: "The HVP-7AT OnePirani is an advanced vacuum transducer offering precise control and measurement capabilities for various demanding applications. With integrated barometric, Pirani, and diaphragm sensors, along with the option for protective coatings, it’s ideal for harsh environments and applications like load-lock systems and semiconductor processing.",
     images: [
-      "./assests/img/products/OnePirani-SERIES/HVP-7/HVP7AT photo.jpg",
-      "./assests/img/products/OnePirani-SERIES/HVP-7/HVP7AT part number selection guide.jpg",
+      "./assests/img/products/OnePirani-SERIES/HVP-7/HVP7AT_photo.jpg",
+      "./assests/img/products/OnePirani-SERIES/HVP-7/HVP7AT_part_number_selection_guide.jpg",
     ],
     pdf: "./assests/download/VACUUM_GAUGES _CATALOGS_DOWNLOAD_FOLDER/OnePirani/HVP-7AT.pdf",
   },
@@ -2383,10 +2381,10 @@ The HVP-4 OnePirani is a reliable, robust, and cost-effective solution for preci
       "Mounted on a metal base structure / stand for stability.",
     ],
     images: [
-      "./assests/img/products/macleod/1mm of Hg Mcleod gauge with mercury front view.jpg",
+      "./assests/img/products/macleod/1mm_of_Hg_Mcleod_gauge_with_mercury_front_view.jpg",
       "./assests/img/products/macleod/20210715_130555.jpg",
     ],
-    pdf: "./assests/img/products/macleod/McLeod UVG1 and UVG2 catalog (1).pdf",
+    pdf: "./assests/img/products/macleod/McLeod_UVG1_and_UVG2_catalog_(1).pdf",
     specifications: [
       { name: "Vacuum Gauge", value: "Mercury McLeod vacuum gauge" },
       {
@@ -2420,7 +2418,7 @@ The HVP-4 OnePirani is a reliable, robust, and cost-effective solution for preci
       "./assests/img/products/UVG/UVGE-2GH-SP/IMG_2831.jpg",
       "./assests/img/products/UVG/UVGE-2GH-SP/IMG_2829.jpg",
     ],
-    pdf: "./assests/img/products/UVG/UVGE-2GH-SP/UVGE-2GH-SP exponential catalog.pdf",
+    pdf: "./assests/img/products/UVG/UVGE-2GH-SP/UVGE-2GH-SP_exponential_catalog.pdf",
     specifications: [
       { name: "Number of sensor channels", value: "TWO" },
       { name: "Display Range", value: "10³ to 10⁻³ mbar" },
@@ -2483,7 +2481,7 @@ The HVP-4 OnePirani is a reliable, robust, and cost-effective solution for preci
     images: [
       "./assests/img/products/UVG/UVGS-1GH-SP/uv.jpeg",
     ],
-    pdf: "./assests/img/products/UVG/UVGS-1GH-SP/UVGS-1GH-SP exponential catalog.pdf",
+    pdf: "./assests/img/products/UVG/UVGS-1GH-SP/UVGS-1GH-SP_exponential_catalog.pdf",
     specifications: [
       { name: "Sensor channels", value: "ONE" },
       { name: "Measuring Range", value: "10³ to 10⁻⁶ mbar" },
@@ -2529,7 +2527,7 @@ The HVP-4 OnePirani is a reliable, robust, and cost-effective solution for preci
 // main image container inside it
 //  <div class="Product_btns">
 //    <div class="productBrochure">
-//      <img src="../../assests/img/bookLines.svg" alt="Brochure Icon" /> Product
+//      <img src="../img/common/bookLines.svg" alt="Brochure Icon" /> Product
 //      Brochure
 //    </div>
 //    <div class="requestQuote">Request a Quote</div>

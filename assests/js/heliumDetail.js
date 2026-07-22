@@ -36,11 +36,11 @@ document.addEventListener("DOMContentLoaded", () => {
       const heroImg = document.querySelector("#hero img");
       if (heroImg) {
         if (id === "HLD-HELIUM-LEAK-TEST-SYSTEM") {
-          heroImg.src = "./assests/img/products/Helium leak test systems 1920x570.png";
+          heroImg.src = "./assests/img/products/Helium_leak_test_systems_1920x570.png";
         } else if (id === "VACUUM-COMPONENTS") {
-          heroImg.src = "./assests/img/products/Filter & vacuum components 1920x570.png";
+          heroImg.src = "./assests/img/products/Filter_&_vacuum_components_1920x570.png";
         } else {
-          heroImg.src = "./assests/img/products/Helium leak detectors 1920x570.png";
+          heroImg.src = "./assests/img/products/Helium_leak_detectors_1920x570.png";
         }
       }
 
@@ -277,7 +277,7 @@ function updateModelView(model, parentProduct) {
           parentProduct.pdf
             ? `<a href="${parentProduct.pdf}" download style="text-decoration: none;">
                  <div class="downloadBtn" style="display: flex; align-items: center; gap: 10px; background: #0da574; color: white; padding: 6px 15px; border-radius: 3px; cursor: pointer; font-size: 12px; font-weight: 500; text-transform: uppercase;">
-                   <img src="./assests/img/bookLines.svg" alt="" style="filter: brightness(0) invert(1); width: 14px; height: 14px;" /> Download Brochure
+                   <img src="./assests/img/common/bookLines.svg" alt="" style="filter: brightness(0) invert(1); width: 14px; height: 14px;" /> Download Brochure
                  </div>
                </a>`
             : ""

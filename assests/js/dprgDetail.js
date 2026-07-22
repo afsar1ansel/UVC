@@ -74,7 +74,7 @@ if (product) {
                product.pdf
                  ? `<a href="${product.pdf}" download style="text-decoration: none;">
                       <div class="downloadBtn">
-                        <img src="./assests/img/bookLines.svg" alt="" /> Download Brochure
+                        <img src="./assests/img/common/bookLines.svg" alt="" /> Download Brochure
                       </div>
                     </a>`
                  : ""
@@ -195,7 +195,7 @@ function initializeZoom() {
 // main image container inside it
 //  <div class="Product_btns">
 //    <div class="productBrochure">
-//      <img src="../../assests/img/bookLines.svg" alt="Brochure Icon" /> Product
+//      <img src="../img/common/bookLines.svg" alt="Brochure Icon" /> Product
 //      Brochure
 //    </div>
 //    <div class="requestQuote">Request a Quote</div>

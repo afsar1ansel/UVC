@@ -4,7 +4,7 @@ window.suppliesProducts = [
     id: "st-ct-series",
     code: "ST / CT Series",
     title: "ST / CT Series: Inline Vacuum Pump Filters",
-    images: ["./assests/img/products/VACUUM COMPONENTS&supplies/supplies/st:sc-Series.png"],
+    images: ["./assests/img/products/VACUUM_COMPONENTS&supplies/supplies/st:sc-Series.png"],
     tagline: "Inline Vacuum Pump Filters for Rough to Medium Vacuum",
     description: "Solberg's ST/CT Series Vacuum Pump Filters are ideal for rough to medium vacuum applications. These inline vacuum filters have compact designs that offer small service footprints, easy access, and the ability to conduct maintenance in tight spaces. These inlet vacuum filters are effective across a broad range of vacuum pump applications, are suitable for heavy particulate loads, and can remove liquid carried over from a process. Multiple filter element media options are available to provide superior protection and longevity for your vacuum pump.",
     constructionTitle: "Solberg's inlet filters offer two construction options:",
@@ -66,7 +66,7 @@ window.suppliesProducts = [
     id: "csl-series",
     code: "CSL Series",
     title: "CSL Series: Right Angle Inlet Vacuum Filters",
-    images: ["./assests/img/products/VACUUM COMPONENTS&supplies/supplies/CSL-Series.png"],
+    images: ["./assests/img/products/VACUUM_COMPONENTS&supplies/supplies/CSL-Series.png"],
     tagline: "Right Angle Inlet Vacuum Filters for Vacuum Pumps and Blowers",
     description: "The small CSL/HDL line will be undergoing a product update beginning in Q4 of 2025. Learn about the update <a href=\"https://www.solbergmfg.com/blogs/news-updates/csl-updates-2025\" target=\"_blank\">here</a>.<br><br>Solberg's CSL Series Inlet Filters for vacuum pumps are designed for various industrial vacuum processes where harmful particulates are present. Ideal for protecting the inlet of most vacuum pumps, our CSL Series comes standard with a variety of replaceable filter element options that offer superior protection and longevity for the vacuum system.<br><br><strong>Solberg’s CSL Inlet Vacuum Filter Series:</strong><br><ul style=\"margin-top: 10px; padding-left: 20px; color: #4d5765; font-size: 15px; line-height: 1.6;\"><li>Ideal for both wet and dry vacuum pump technologies</li><li>Protects your pump from ingesting abrasive dust particles</li><li>Right angle configuration offers easy access to the replaceable filter element</li><li>Threaded connections available in 3/8 - 6 inches</li><li>Flanged connections are available in sizes 4 inches and above</li></ul><br><a href=\"contact.html\">Contact us</a> for more information on our CSL Series inlet filters. We are happy to guide you to the right filtration products for your application.",
     highlights: [
@@ -154,7 +154,7 @@ window.suppliesProducts = [
     id: "wl-series",
     code: "WL Series",
     title: "WL Series: Medium to High Vacuum Filters",
-    images: ["./assests/img/products/VACUUM COMPONENTS&supplies/supplies/WL-Series.png"],
+    images: ["./assests/img/products/VACUUM_COMPONENTS&supplies/supplies/WL-Series.png"],
     tagline: "Medium to High Vacuum Filters for Industrial & Semiconductor Processes",
     description: "Solberg's WL Series medium to high vacuum filters are designed for industrial and Semicon processes that require a verified leak rate and operate in medium to high vacuum conditions. The WL Series has various vacuum-specific connection options, including ISO vacuum fittings and numerous filter media options for superior protection and system longevity. Housings in this series are 100% helium-leak tested to ensure vacuum integrity with verified leak rates of 1x 10-5 mbar l/s or better.<br><br><strong>Solberg’s WL Inlet Vacuum Filter Series offers multiple configurations, including:</strong><br><ul style=\"margin-top: 10px; padding-left: 20px; color: #4d5765; font-size: 15px; line-height: 1.6;\"><li>High-Efficiency Filtration</li><li>Chemical Adsorption</li><li>High-Temperature Materials of Construction</li></ul><br><a href=\"https://www.solbergmfg.com/pages/contact-us\" target=\"_blank\">Contact us</a> for more information on our WL Series. We are happy to guide you to the right filtration products for your application.",
     highlights: [
@@ -214,7 +214,7 @@ window.suppliesProducts = [
     id: "hv-series",
     code: "HV Series",
     title: "HV Series: Medical Vacuum Filters",
-    images: ["./assests/img/products/VACUUM COMPONENTS&supplies/supplies/HV-series.png"],
+    images: ["./assests/img/products/VACUUM_COMPONENTS&supplies/supplies/HV-series.png"],
     tagline: "Medical Vacuum Filters for Hospital & Laboratory Applications",
     description: "Solberg’s HV Series Medical vacuum filters offer superior filtration with exceptional pressure drop performance. With its transparent design, optimized element surface area, and compact design, our HV Bacterial Filter Series provides an innovative, high quality, and long-lasting solution that satisfies the strict requirements of the medical industry.<br><br><strong>Solberg’s HV Series meets demanding filtration requirements and complies with global medical vacuum standards, including:</strong><br><ul style=\"margin-top: 10px; padding-left: 20px; color: #4d5765; font-size: 15px; line-height: 1.6;\"><li>ISO 7396-1:2016 Medical gas pipeline systems — Part 1 Pipeline systems for compressed medical gases and vacuum</li><li>NFPA 99:2018 Health Care Facilities Code NFPA 99 requirements for vacuum filtration</li><li>Prevents microbial contamination of vacuum pump oil and the surrounding environment</li><li>Allows for real-time performance monitoring and maintenance checks of the filter with its clear canister design</li><li>Improves safety and awareness with highly-visible Biohazard labeling</li><li>Reduces energy consumption over time with its low-pressure drop design</li><li>Includes isolation valve and reusable glass flask for safe disposal and sterilization</li></ul><br>Third-party verification ensures Solberg’s HEPA and ULPA vacuum filters meet ISO 45H classification as defined in ISO 29463-1. Our HV Series achieves a greater than 99.995% total retention rate, offering an extreme level of protection in the medical, hospital, dental, and laboratory settings.<br><br><a href=\"https://www.solbergmfg.com/pages/contact-us\" target=\"_blank\">Contact us</a> for more information on our medical vacuum pump filtration series. We are happy to guide you to the right filtration products for your application.",
     highlights: [
@@ -245,7 +245,7 @@ window.suppliesProducts = [
     id: "spinmeister-st-ct-series",
     code: "SpinMeister ST / CT Series",
     title: "SpinMeister® ST/CT Series: Centrifugal Precleaner Filter",
-    images: ["./assests/img/products/VACUUM COMPONENTS&supplies/supplies/spinmeister.png"],
+    images: ["./assests/img/products/VACUUM_COMPONENTS&supplies/supplies/spinmeister.png"],
     tagline: "Centrifugal Precleaner Filter for Blowers & Vacuum Pumps",
     description: "Solberg's Spinmeister series offers exceptional filtration protection for blower and vacuum pump applications without the need for a replacement filter element. Spinmeister air cleaners uses centrifugal separation to achieve efficiency ratings of 85% for particles of 15 microns in size.<br><br>The Spinmeister can be used as a precleaner to prevent clogging of the primary filter. When paired with a primary particulate filter, the entire filtration system performs well beyond the capabilities of traditional single filter installations.<br><br>The Spinmeister series for vacuum pump systems delivers high performance which stems from Solberg's advanced engineering and material choices. This ensures effective particle capture, ease of serviceability, and longevity of the vacuum pump system. Perfect for CNC wood routing, vacuum hold down, pneumatic conveying, and other applications where powders and bulk solids can overwhelm particulate filters.<br><br><strong>Solberg's SpinMeister ST/CT Series:</strong><br><ul style=\"margin-top: 10px; padding-left: 20px; color: #4d5765; font-size: 15px; line-height: 1.6;\"><li>Prevents clogging of primary filter</li><li>Extends process run times</li><li>Easy to service</li><li>Robust design</li></ul><br><a href=\"https://www.solbergmfg.com/pages/contact-us\" target=\"_blank\">Contact us</a> for more information on our SpinMeister ST/CT series. We're here to help you configure your filtration products to meet your application requirements.",
     highlights: [
@@ -291,7 +291,7 @@ window.suppliesProducts = [
     id: "rst-series",
     code: "RST Series",
     title: "RST Series: Reverse Pulse Vacuum Pump Filters",
-    images: ["./assests/img/products/VACUUM COMPONENTS&supplies/supplies/RST-series.png"],
+    images: ["./assests/img/products/VACUUM_COMPONENTS&supplies/supplies/RST-series.png"],
     tagline: "Reverse Pulse Vacuum Pump Filters for Extreme Dust Load Applications",
     description: "Solberg's RST Series reverse pulse industrial filter is designed for extreme dust load applications. Similar to a reverse pulse style bag house, this heavy-duty vacuum pump filter incorporates split-second bursts of pressurized air to create powerful shock waves that clean the filter element. Quick pulses cause particulate accumulated on the filter element to release and collect in the drop-out area of the filter housing. Pulses can be repeated as required and can occur \"in-process\" because the split-second air bursts have minimal effect on system pressure. Our self-cleaning air filter can be manually controlled or automated based on user preference. (Optional reverse pulse kit available.)<br><br><strong>Solberg's RST Series:</strong><br><ul style=\"margin-top: 10px; padding-left: 20px; color: #4d5765; font-size: 15px; line-height: 1.6;\"><li>Extends the service life of your filter element</li><li>High-efficiency filtration offers enhanced equipment protection</li><li>See-through design allows for instant visual inspection</li><li>Optional automation allows for easy maintenance</li><li>Available extended bucket increases capacity</li></ul><br><a href=\"https://www.solbergmfg.com/pages/contact-us\" target=\"_blank\">Contact us</a> for more information on our Reverse Pulse Vacuum series. We are happy to guide you to the right filtration products for your application.",
     highlights: [
@@ -327,7 +327,7 @@ window.suppliesProducts = [
     id: "xcsl-xpsl-series",
     code: "XCSL / XPSL Series",
     title: "XCSL / XPSL Series: ATEX Filters for Vacuum Service",
-    images: ["./assests/img/products/VACUUM COMPONENTS&supplies/supplies/XCSL:XPSL-Series.png"],
+    images: ["./assests/img/products/VACUUM_COMPONENTS&supplies/supplies/XCSL:XPSL-Series.png"],
     tagline: "ATEX Certified Filters for Potentially Explosive Vacuum Environments",
     description: "Explosions can occur within applications such as pharmaceutical, chemical, metal, food, plastics, coal, and woodworking industries. Solberg's XCSL Series ATEX filters for vacuum pumps are designed for deployment in potentially explosive environments.<br><br>Our ATEX filters meet the European Union's requirements listed in ATEX Directive 2014/34/EU, and are tested, certified, and bear the 'Ex' and 'CE' marks required.<br><br><strong>Solberg's ATEX Vacuum Filters:</strong><br><ul style=\"margin-top: 10px; padding-left: 20px; color: #4d5765; font-size: 15px; line-height: 1.6;\"><li>Mitigate the risk of explosion in gaseous and dusty environments</li><li>Ideal for both wet and dry vacuum pump technologies</li><li>Protects your pump from ingesting abrasive dust particles</li><li>Right angle configuration offers easy access to the replaceable filter element</li><li>Threaded connections available in 3/8 - 6 inches</li><li>Flanged connections are available in sizes 4 inches and above</li></ul><br><a href=\"https://www.solbergmfg.com/pages/contact-us\" target=\"_blank\">Contact us</a> for more information on our ATEX vacuum filter series. We are happy to guide you to the right filtration products for your application.",
     highlights: [
@@ -371,7 +371,7 @@ window.suppliesProducts = [
     id: "sts-series",
     code: "STS Series",
     title: "STS Series: Straight Through Liquid Separator",
-    images: ["./assests/img/products/VACUUM COMPONENTS&supplies/liquid&mistRemoval/STS_Series.png"],
+    images: ["./assests/img/products/VACUUM_COMPONENTS&supplies/liquid&mistRemoval/STS_Series.png"],
     tagline: "Straight Through Liquid Separator for Vacuum Systems",
     description: "Inlet air with potentially harmful liquid and large particulate enters the housing and is separated by a baffle mechanism and directional air flow changes. The larger particles and liquid drop down and collect at the bottom of the separator. The float capsule within the separator screen rises with the liquid level until max capacity and limits the flow, thereby protecting the pump from damage.",
     highlights: [
@@ -412,7 +412,7 @@ window.suppliesProducts = [
     id: "lrs-series",
     code: "LRS Series",
     title: "LRS Series: Right Angle Liquid Separator",
-    images: ["./assests/img/products/VACUUM COMPONENTS&supplies/liquid&mistRemoval/LRS_Series.png"],
+    images: ["./assests/img/products/VACUUM_COMPONENTS&supplies/liquid&mistRemoval/LRS_Series.png"],
     tagline: "Right Angle Liquid Separator for Vacuum Systems",
     description: "The inlet air, with liquids and particulate that are potentially harmful to the vacuum pump, enters the highly efficient vacuum filter and is separated by an integrated baffle. The larger particles and liquid drop down to the large capacity lower chamber. The lower chamber has significant liquid/slurry holding capacity. The final stage has a replaceable filter element for particulate that is 99+% efficient before it reaches the vacuum pump.",
     highlights: [
@@ -459,7 +459,7 @@ window.suppliesProducts = [
     id: "knockout-tank-series",
     code: "Knockout Tank Series",
     title: "Knockout Tank Series: Multistage Separator",
-    images: ["./assests/img/products/VACUUM COMPONENTS&supplies/liquid&mistRemoval/KnockoutTankSeries.png"],
+    images: ["./assests/img/products/VACUUM_COMPONENTS&supplies/liquid&mistRemoval/KnockoutTankSeries.png"],
     tagline: "Multistage Separator for Vacuum Systems",
     description: "Solberg’s Knockout series is a heavy duty multistage liquid and particulate separator to protect vacuum pumps from harmful contaminants. This turn-key solution is readily available and easily configured. Multiple separator pack options are available and adjustable legs are standard for easy installation.",
     highlights: [
@@ -511,7 +511,7 @@ window.suppliesProducts = [
     id: "dsp-series",
     code: "DSP Series",
     title: "DSP Series: Automatic Pneumatic Drain System",
-    images: ["./assests/img/products/VACUUM COMPONENTS&supplies/liquid&mistRemoval/dps_series.png"],
+    images: ["./assests/img/products/VACUUM_COMPONENTS&supplies/liquid&mistRemoval/dps_series.png"],
     tagline: "Automatic Pneumatic Drain System for Vacuum Systems",
     description: "Solberg’s DSP Series automatic drain systems for knockout pots are commonly installed with liquid separators, vacuum receiver tanks, vacuum jacketed vessels, and vapor condensing vacuum vessels.<br><br>Our automatic drain systems protect your vacuum pump by allowing collected liquids and slurries to be removed without disrupting your process. We design our systems to minimize vacuum level fluctuations during the drain sequence using valves and compressed air to pneumatically evacuate liquids or slurries captured by the knockout pot or vacuum vessel.<br><br>Contact us for more information on our Pneumatic Drain System series. We are happy to guide you to the right filtration products for your application.",
     highlights: [
@@ -558,7 +558,7 @@ window.suppliesProducts = [
     id: "jrs-series",
     code: "JRS Series",
     title: "JRS Series: Multistage Vapor Condensers",
-    images: ["./assests/img/products/VACUUM COMPONENTS&supplies/vaporCapture/JRSSeries.png"],
+    images: ["./assests/img/products/VACUUM_COMPONENTS&supplies/vaporCapture/JRSSeries.png"],
     tagline: "Multistage Vapor Condenser for Vacuum Systems",
     description: "Solberg’s JRS Multistage Vapor Condenser vacuum filter is a vacuum jacketed vessel designed to protect equipment from harmful vapors and liquids that can break down vacuum pump oil. Vapor removal is accomplished by transitioning a substance from a gaseous state to a liquid or solid state by passing air flow through Solberg’s proprietary cooling technology. Our JRS Series will extend your vacuum pump life and reduce costly downtime.<br><br>Contact us for more information on our Multistage Vapor Condenser series. We’ll guide you to the best filtration products for your setup.",
     highlights: [
@@ -606,7 +606,7 @@ window.suppliesProducts = [
     id: "jst-jct-series",
     code: "JST/JCT Series",
     title: "JST/JCT Series: Cold Trap for Vacuum Pumps",
-    images: ["./assests/img/products/VACUUM COMPONENTS&supplies/vaporCapture/JST:JCTSeries.png"],
+    images: ["./assests/img/products/VACUUM_COMPONENTS&supplies/vaporCapture/JST:JCTSeries.png"],
     tagline: "Cold Trap for Vacuum Pumps",
     description: "Solberg’s JST & JCT Series cold traps for vacuum pumps are designed to protect equipment from harmful vapors and liquids that can break down vacuum pump oil. These cold traps are heat exchangers that use circulating cooled liquids to create cold surfaces within the trap. Vapor removal is accomplished when vapors in the air stream transition from a gaseous state to a liquid or solid state as the airflow passes through Solberg’s proprietary fin pack design. Our JST & JCT Series will extend the life of your vacuum pump and reduce costly downtime.<br><br>Contact us for more information on our compact vacuum condenser series. We are happy to guide you to the right filtration products for your application.",
     highlights: [
@@ -656,7 +656,7 @@ window.suppliesProducts = [
     id: "lnt-series",
     code: "LNT Series",
     title: "LNT Series - Liquid Nitrogen Trap",
-    images: ["./assests/img/products/VACUUM COMPONENTS&supplies/vaporCapture/LNTSeries.png"],
+    images: ["./assests/img/products/VACUUM_COMPONENTS&supplies/vaporCapture/LNTSeries.png"],
     tagline: "Liquid Nitrogen Trap for Vacuum Systems",
     description: "The Solberg LNT is an extremely effective liquid nitrogen trap designed to condense and reclaim target vapors such as ethanol, essential oils, and other high value products. The LNT also captures water, solvents, and other undesirable contaminants to protect the vacuum pump from ingesting harmful vapors and liquids. The LNT is constructed out of 304 stainless steel and comes standard with a laboratory stand and large drain to quickly evacuate captured materials. The innovative Fin Pack™ system provides substantial cold surface area while the offset inlet and outlet design creates a directional shift in flow to increase dwell time. These mechanisms work together to achieve maximum condensing performance in a highly compact design. The LNT includes a quick release v-band style clamp for ease of assembly and quick turnaround.<br><br>Please contact factory for available sizes.",
     highlights: [

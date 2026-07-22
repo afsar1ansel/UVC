@@ -49,7 +49,7 @@ if (product) {
         <div class="Product_btns" style="display: flex; flex-direction: column; gap: 10px; width: 100%; align-items: center;">
           ${
             product.pdf
-              ? `<a href="${product.pdf}" download style="text-decoration:none; width: 100%; max-width: 250px;"><div class="productBrochure" style="width: 100%; display: flex; justify-content: center; gap: 10px;"><img src="./assests/img/bookLines.svg" alt="Brochure Icon" /> Download Brochure</div></a>`
+              ? `<a href="${product.pdf}" download style="text-decoration:none; width: 100%; max-width: 250px;"><div class="productBrochure" style="width: 100%; display: flex; justify-content: center; gap: 10px;"><img src="./assests/img/common/bookLines.svg" alt="Brochure Icon" /> Download Brochure</div></a>`
               : ""
           }
           <div class="productBrochure" onclick="openEnquiryModal('${getFullPumpContext(product)}')" style="width: 100%; max-width: 250px; background-color: #ffc631; color: #000810; font-weight: bold; display: flex; justify-content: center; cursor: pointer; border: none; align-items: center; gap: 10px;">

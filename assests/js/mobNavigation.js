@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
           <div class="logo2">
-            <img src="./assests/img/uvclogo.png" alt="" />
+            <img src="./assests/img/common/uvclogo.png" alt="" />
           </div>
         </a>
         <button
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
           <div class="offcanvas-header">
             <div class="offcanvas-title" id="offcanvasNavbarLabel">
               <a href="index.html">
-                <img src="./assests/img/uvclogo.png" alt="" />
+                <img src="./assests/img/common/uvclogo.png" alt="" />
               </a>
             </div>
             <button
@@ -220,15 +220,15 @@ document.addEventListener("DOMContentLoaded", function () {
             <!-- Contact Info for Mobile View -->
             <div class="mobile-contact-info" style="margin-top: 30px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.08); display: flex; flex-direction: column; gap: 15px;">
               <div style="display: flex; align-items: center; gap: 12px; color: #fff; font-size: 13.5px;">
-                <img src="./assests/img/call.png" alt="Phone" style="width: 16px; height: 16px; filter: brightness(0) invert(1);" />
+                <img src="./assests/img/common/call.png" alt="Phone" style="width: 16px; height: 16px; filter: brightness(0) invert(1);" />
                 <span style="opacity: 0.85;">+91 9886726920 / 080-28367059</span>
               </div>
               <div style="display: flex; align-items: center; gap: 12px; color: #fff; font-size: 13.5px;">
-                <img src="./assests/img/mapdot.png" alt="Address" style="width: 16px; height: 16px; filter: brightness(0) invert(1);" />
+                <img src="./assests/img/common/mapdot.png" alt="Address" style="width: 16px; height: 16px; filter: brightness(0) invert(1);" />
                 <span style="opacity: 0.85; line-height: 1.4;">No. 57, 8th Cross, Doddanna Industrial Estate</span>
               </div>
               <div style="display: flex; align-items: center; gap: 12px; color: #fff; font-size: 13.5px;">
-                <img src="./assests/img/msg.svg" alt="Email" style="width: 16px; height: 16px; filter: brightness(0) invert(1);" />
+                <img src="./assests/img/common/msg.svg" alt="Email" style="width: 16px; height: 16px; filter: brightness(0) invert(1);" />
                 <span style="opacity: 0.85;">support@uniquevacuum.co.in</span>
               </div>
             </div>

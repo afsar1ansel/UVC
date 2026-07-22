@@ -70,7 +70,7 @@ function renderPrimaryDetails(product) {
   const producter = document.getElementById("producter");
   if (!producter) return;
 
-  const images = product.images && product.images.length > 0 ? product.images : ["./assests/img/ReplaceImage.png"];
+  const images = product.images && product.images.length > 0 ? product.images : ["./assests/img/products/ReplaceImage.png"];
 
   // Gallery HTML
   const thumbnailsHtml = images.length > 1
@@ -84,7 +84,7 @@ function renderPrimaryDetails(product) {
                 src="${img}"
                 alt="Thumbnail ${index + 1}"
                 data-full="${img}"
-                onerror="this.onerror=null; this.src='./assests/img/ReplaceImage.png';"
+                onerror="this.onerror=null; this.src='./assests/img/products/ReplaceImage.png';"
               />
             `
       )
@@ -176,7 +176,7 @@ function renderPrimaryDetails(product) {
     <div class="image-gallery" style="flex: 1; min-width: 300px; display: flex; flex-direction: row; gap: 15px; border: none; padding: 0; margin: 0; align-self: flex-start;">
       ${thumbnailsHtml}
       <div class="main-image-container" style="flex-grow: 1; border: 1px solid #e1e1e1; background: #fff; padding: 20px; border-radius: 8px; max-height: 400px; overflow: hidden; display: flex; justify-content: center; align-items: center;">
-        <img id="main-image" src="${images[0]}" alt="${product.title} Image" style="max-height: 100%; max-width: 100%; object-fit: contain; transition: transform 0.1s ease-out;" onerror="this.onerror=null; this.src='./assests/img/ReplaceImage.png';" />
+        <img id="main-image" src="${images[0]}" alt="${product.title} Image" style="max-height: 100%; max-width: 100%; object-fit: contain; transition: transform 0.1s ease-out;" onerror="this.onerror=null; this.src='./assests/img/products/ReplaceImage.png';" />
       </div>
     </div>
     
