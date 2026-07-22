@@ -510,6 +510,9 @@ body {
     width: 48vw;
     /* border: solid 1px red; */
   }
+#solutions {
+  min-height: 480px; /* Adjust according to full height of solutions section */
+  display: block;
 }
 
 .solutions {
