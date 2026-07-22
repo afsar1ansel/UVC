@@ -271,6 +271,7 @@ body {
 
 .hero {
   height: 100%;
+  min-height: 500px; /* Adjust according to actual desktop hero height */
   width: 100%;
   margin-top: 0;
   background-color: rgba(0, 31, 63, 1);
@@ -507,11 +508,11 @@ body {
   #solutions .solutionsheading h1 {
     font-size: 4vw;
     line-height: 35px;
-    width: 48vw;
-    /* border: solid 1px red; */
   }
+}
+
 #solutions {
-  min-height: 480px; /* Adjust according to full height of solutions section */
+  min-height: 650px; /* Adjust according to full height of solutions section */
   display: block;
 }
 
@@ -2493,6 +2494,7 @@ body {
 
   .offcanvas-title img {
     height: 44px !important;
+    width: auto !important;
   }
 
   .offcanvas-body {
