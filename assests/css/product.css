@@ -137,14 +137,14 @@
 .proGrid {
   /* border: solid 1px red; */
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-  width: 80vw;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  width: 90vw;
   margin: auto;
 }
 
 .gridBox {
-  width: 24vw;
+  width: 100%;
   border: 1px solid #e2e8f0;
   border-radius: 8px;
   padding: 24px;
@@ -162,53 +162,62 @@
 
 .gridBox img {
   width: 100%;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 16 / 8.5;
   object-fit: cover;
   border-radius: 4px;
 }
 
 .gridBox h3 {
-  font-size: 1.25vw;
+  font-size: 18px;
   font-style: normal;
   font-weight: 700;
-  line-height: 1.67vw;
+  line-height: 1.4;
+  color: #000810;
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
 
 .Gline {
   width: 100%;
-  border: solid 1px #e8e8e8;
+  border: none;
+  height: 1px;
+  background-color: #e2e8f0;
+  margin: 12px 0;
 }
 
 .gridBox p {
-  font-size: 0.83vw;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 1vw;
+  line-height: 1.6;
+  color: #4a5568;
+  text-align: left !important;
 }
 
 .gridBtn {
   border: 1px solid #ffc631;
-  width: 10vw;
-  height: 48px;
-  display: flex;
-  padding: 12px 24px;
+  width: fit-content;
+  height: auto;
+  display: inline-flex;
+  padding: 8px 18px;
   align-items: center;
   gap: 10px;
-  color: #000810;
-  font-size: 0.83vw;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 23px;
-  cursor: pointer;
+  border-radius: 4px;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.gridBtn:hover {
+  background-color: #ffc631;
 }
 
 .gridBtn a {
   text-decoration: none;
   color: #000810;
-  font-size: 0.83vw;
+  font-size: 13px;
   font-style: normal;
   font-weight: 600;
-  line-height: 23px;
+  line-height: 1.5;
   cursor: pointer;
 }
 
