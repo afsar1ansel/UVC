@@ -479,7 +479,7 @@
   /* height: 590px; */
   padding: 4vw 0;
   background-color: var(--brand-colour-2, #001F3F); /* Solid background color */
-  background-image: url(../img/products/Group.png); 
+  background-image: url(../img/products/Group.webp); 
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -911,7 +911,7 @@ border: none;
 .future{
     padding: 4vw 0;
   background-color: var(--brand-colour-2, #001F3F); /* Solid background color */
-  background-image: url(../img/products/Group.png); 
+  background-image: url(../img/products/Group.webp); 
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1326,7 +1326,7 @@ padding: 3.1vw;
   /* height: 590px; */
   padding: 4vw 0;
   background: linear-gradient(85deg, #0da574 0%, #001f3f 100%),
-    url(../img/products/Group.png);
+    url(../img/products/Group.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

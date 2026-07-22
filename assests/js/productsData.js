@@ -2382,7 +2382,7 @@ The HVP-4 OnePirani is a reliable, robust, and cost-effective solution for preci
     ],
     images: [
       "./assests/img/products/macleod/1mm_of_Hg_Mcleod_gauge_with_mercury_front_view.jpg",
-      "./assests/img/products/macleod/20210715_130555.jpg",
+      "./assests/img/products/macleod/20210715_130555.webp",
     ],
     pdf: "./assests/img/products/macleod/McLeod_UVG1_and_UVG2_catalog_(1).pdf",
     specifications: [
@@ -2415,8 +2415,8 @@ The HVP-4 OnePirani is a reliable, robust, and cost-effective solution for preci
       "With universal power supply – input voltage from 90 ~ 264VAC",
     ],
     images: [
-      "./assests/img/products/UVG/UVGE-2GH-SP/IMG_2831.jpg",
-      "./assests/img/products/UVG/UVGE-2GH-SP/IMG_2829.jpg",
+      "./assests/img/products/UVG/UVGE-2GH-SP/IMG_2831.webp",
+      "./assests/img/products/UVG/UVGE-2GH-SP/IMG_2829.webp",
     ],
     pdf: "./assests/img/products/UVG/UVGE-2GH-SP/UVGE-2GH-SP_exponential_catalog.pdf",
     specifications: [

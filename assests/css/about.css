@@ -433,7 +433,7 @@ body {
 
 .process {
   background-color: #162739;
-  background-image: url(../img/products/Group.png);
+  background-image: url(../img/products/Group.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode: overlay;
@@ -847,7 +847,7 @@ body {
   /* height: 590px; */
   padding: 8vw 0;
   background: linear-gradient(85deg, #0da574 0%, #001f3f 100%),
-    url(../img/products/Group.png);
+    url(../img/products/Group.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
